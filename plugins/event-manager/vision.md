@@ -767,12 +767,21 @@ Dazu gehören insbesondere:
 
 ## Related Documents
 
-- `plugins/event-manager/marketing-system.md`
-- `plugins/event-manager/ticketing.md`
-- `plugins/event-manager/event-types.md`
-- `plugins/event-manager/design-system.md`
-- `vision/repository-philosophy.md`
-- `vision/development-principles.md`
+- `marketing-system.md`
+- `ticketing.md`
+- `data-model.md`
+- `../../vision/vision.md`
+- `../../core/core-principles.md`
+- `../../architecture/platform-architecture.md`
+
+## Planned Documents
+
+- `event-types.md`
+- `design-system.md`
+- `requirements.md`
+- `interfaces.md`
+- `roadmap.md`
+- `changelog.md`
 
 ## Future Development
 
@@ -800,3 +809,4 @@ Folgende Bereiche werden schrittweise weiterentwickelt:
 ## In einem Satz
 
 Der Event Manager ist das organisatorische Gedächtnis des Vereins und begleitet jede Veranstaltung von der ersten Idee bis zur dauerhaften Wissenssicherung.
+

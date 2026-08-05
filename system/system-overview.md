@@ -95,14 +95,15 @@ Informationen werden nur einmal gepflegt und anschließend überall genutzt.
 
 ## Related Documents
 
-- vision/vision.md
-- plugins/
-- mitarbeiter/
-- prozesse/
-- wissen/
+- `../vision/vision.md`
+- `../organization/organization-model.md`
+- `../employees/README.md`
+- `../plugins/README.md`
+- `../knowledge/knowledge-model.md`
 
 ---
 
 ## Future Development
 
 Dieses Dokument wird kontinuierlich erweitert, sobald neue Mitarbeiter, Plugins oder Systeme hinzukommen.
+

@@ -33,9 +33,10 @@ Alle Plugins greifen auf diese gemeinsamen Bausteine zu.
 
 ## Relationship to other documents
 
-- `../architektur/platform-architecture.md`
+- `core-object.md`
+- `core-principles.md`
+- `../architecture/platform-architecture.md`
 - `../vision/vision.md`
-- `../plugins/`
 
 ---
 
@@ -44,3 +45,4 @@ Alle Plugins greifen auf diese gemeinsamen Bausteine zu.
 Der Core wächst gemeinsam mit der digitalen Organisation.
 
 Neue Objekte werden nur aufgenommen, wenn sie pluginübergreifend benötigt werden.
+

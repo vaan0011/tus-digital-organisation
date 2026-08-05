@@ -30,9 +30,9 @@ Neue Erkenntnisse werden kontinuierlich ergänzt.
 
 ## Related Documents
 
-- vision.md
-- kultur.md
-- werte.md
+- `vision.md`
+- `../organization/culture.md`
+- `../organization/philosophy.md`
 
 ## Future Development
 

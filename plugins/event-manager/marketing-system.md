@@ -203,10 +203,19 @@ Dadurch kann eine Veranstaltung im nächsten Jahr mit wenigen Klicks erneut bewo
 
 ## Related Documents
 
-- `plugins/event-manager/vision.md`
-- `plugins/event-manager/design-system.md`
-- `plugins/content-hub/content-hub.md`
-- `plugins/sponsor-manager/vision.md`
+- `vision.md`
+- `ticketing.md`
+- `data-model.md`
+- `../../vision/vision.md`
+- `../../core/core-principles.md`
+
+---
+
+## Planned Integrations
+
+- Event Manager Design System
+- Content Hub
+- Partner Manager
 
 ---
 

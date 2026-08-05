@@ -70,7 +70,8 @@ Automatisch erzeugbar:
 
 ## Related Documents
 
-plugins/event-manager/vision.md
+- `vision.md`
+- `data-model.md`
 
 ## Future Development
 

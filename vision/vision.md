@@ -57,10 +57,10 @@ Unser Ziel ist eine Plattform, die nicht nur den TuS Mingolsheim unterstützt, s
 
 ---
 
-## Related Documents
+# Related Documents
 
 - repository-philosophy.md
-- development-principles.md
+- ../organization/guiding-principles.md
 - ../system/system-overview.md
 
 ---

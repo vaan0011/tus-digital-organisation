@@ -1,148 +1,161 @@
-# tus-digital-organisation
-# Digitale Organisation des TuS Mingolsheim - Eine lernende Organisation
+# TuS Digital Organisation
 
-> *"Organisationen werden nicht durch Technologie groß.
+> *"Wir bauen keine Software.
 >
-> Sie werden groß, wenn Menschen, Wissen und Kultur dauerhaft zusammenwirken.
+> Wir bauen eine lernende Organisation.
 >
-> Technologie macht dies lediglich einfacher."*
+> Software ist lediglich ihre Umsetzung."*
 
 ---
 
-## Willkommen
+# Willkommen
 
-Wenn du dieses Repository geöffnet hast, erwartest du vermutlich eine technische Dokumentation.
+Willkommen im Repository der **TuS Digital Organisation**.
 
-Du wirst sie hier nicht finden.
+Dieses Repository dokumentiert nicht in erster Linie Software.
 
-Dieses Repository beschreibt zuerst eine Organisation.
+Es dokumentiert den Aufbau einer digitalen Organisation, die Wissen bewahrt, Menschen unterstützt und den Verein langfristig unabhängig von einzelnen Personen oder Technologien macht.
 
-Erst danach beschreibt es ihre Technologien.
+Unsere Überzeugung ist einfach:
 
-Die digitale Organisation des TuS Mingolsheim verfolgt ein einfaches Ziel:
+> Eine starke Organisation entsteht nicht durch Technologie.
 
-**Menschen und digitale Mitarbeiter arbeiten gemeinsam daran, den Verein nachhaltig zu stärken.**
+> Sie entsteht durch Kultur, Verantwortung, Wissen und Zusammenarbeit.
 
-Technologie ist dabei ein Werkzeug.
+Technologie unterstützt diese Organisation.
 
-Nicht der Zweck.
-
----
-
-# Unsere Überzeugung
-
-Wir glauben, dass erfolgreiche Digitalisierung nicht mit Software beginnt.
-
-Sie beginnt mit einer gemeinsamen Vision, klaren Werten, einer gelebten Kultur und einer Organisation, die Wissen bewahrt und kontinuierlich lernt.
-
-Deshalb entstehen unsere digitalen Mitarbeiter nicht aus Prompts oder Workflows.
-
-Sie entstehen aus einer Organisation mit Identität.
+Sie ersetzt sie nicht.
 
 ---
 
-# Bevor du weitermachst
+# Unsere Vision
 
-Bitte lies diese Dokumente in der folgenden Reihenfolge:
+Wir entwickeln eine digitale Organisation, in der Menschen und digitale Mitarbeiter gemeinsam Verantwortung übernehmen.
 
-1. 📖 Vision
-2. 📖 Leitprinzipien
-3. 📖 Kultur
-4. 📖 Werte
-5. 📖 TuS DNA
-6. 📖 Philosophie
+Unser Ziel ist es,
 
-Diese Dokumente bilden das Fundament der gesamten Organisation.
+- Ehrenamtliche zu entlasten
+- Wissen dauerhaft zu bewahren
+- Zusammenarbeit zu vereinfachen
+- Verantwortung transparent zu machen
+- kontinuierliches Lernen zu ermöglichen
 
-Erst danach folgen Mitarbeiter, Prozesse und technische Systeme.
+Nicht Werkzeuge stehen im Mittelpunkt.
+
+Der Verein steht im Mittelpunkt.
 
 ---
 
-# Unsere Architektur
+# Architektur
 
-Unsere Organisation besteht aus vier Ebenen.
+Unsere digitale Organisation besteht aus vier Ebenen.
 
-```
-                 Menschen
-                     │
-                     ▼
-            Digitale Mitarbeiter
-                     │
-                     ▼
-        Prozesse & Organisation
-                     │
-                     ▼
-      Werkzeuge & Technologien
+```text
+Menschen
+    │
+    ▼
+Digitale Mitarbeiter
+    │
+    ▼
+Organisation & Prozesse
+    │
+    ▼
+Werkzeuge & Technologien
 ```
 
-Wir entwickeln unsere Organisation bewusst von oben nach unten.
+Wir entwickeln immer von oben nach unten.
 
-Nicht umgekehrt.
+Nie umgekehrt.
 
 ---
 
-# Unsere Grundsätze
+# Repository-Struktur
+
+```text
+architecture/
+    Plattformarchitektur
+    Wissensmodell
+    Stabilität
+    Objektlebenszyklus
+
+core/
+    Kernobjekte
+    Grundprinzipien
+    Entscheidungen
+
+organization/
+    Vision
+    Kultur
+    Leitprinzipien
+    Philosophie
+    Organisationsmodell
+    TuS DNA
+    Werte
+
+employees/
+    Digitale Mitarbeiter
+    HR
+    Arbeitszyklen
+
+plugins/
+    Fachliche Plugins
+
+system/
+    Systemübersicht
+
+knowledge/
+    Organisationswissen
+
+standards/
+    Arbeitsstandards
+
+vision/
+    Repository-Vision
+
+HISTORY.md
+manifesto.md
+README.md
+```
+
+---
+
+# Unsere Grundprinzipien
 
 - Organisation vor Technologie.
-- Menschen bleiben im Mittelpunkt.
 - Wissen gehört der Organisation.
-- Prozesse dienen den Menschen.
-- Digitale Mitarbeiter unterstützen – sie ersetzen nicht.
-- Werkzeuge können wechseln.
-- Kultur bleibt.
+- Menschen werden unterstützt.
+- Verantwortung wird übernommen.
+- Informationen werden nur einmal gepflegt.
+- Zusammenarbeit schlägt Silodenken.
+- Einfachheit ist Qualität.
+- Werkzeuge dürfen wechseln.
+- Die Organisation bleibt.
 
 ---
 
-# Was dieses Repository enthält
+# Für neue Entwickler
 
-```
-Organisation/
-    Vision
-    Leitprinzipien
-    Kultur
-    Werte
-    TuS DNA
-    Philosophie
-    Organigramm
+Bitte lies die Dokumente in dieser Reihenfolge:
 
-Mitarbeiter/
-    Sarah
-    Mathias
-    ...
+1. `vision/vision.md`
+2. `organization/guiding-principles.md`
+3. `organization/culture.md`
+4. `organization/values.md`
+5. `organization/organization-dna.md`
+6. `organization/philosophy.md`
+7. `architecture/platform-architecture.md`
+8. `system/system-overview.md`
 
-Wissen/
-
-Prozesse/
-
-Projekte/
-
-Systeme/
-
-Entscheidungen/
-
-Erfahrungen/
-```
+Erst danach solltest du Plugins oder Code entwickeln.
 
 ---
 
-# Unser langfristiges Ziel
+# Langfristiges Ziel
 
-Wir möchten eine Organisation schaffen, die unabhängig von einzelnen Menschen und einzelnen Technologien besteht.
+Diese Organisation soll unabhängig von ihren Gründern funktionieren.
 
-Eine Organisation,
+Sie soll zukünftige Vorstände, Ehrenamtliche und digitale Mitarbeiter genauso unterstützen wie die Menschen, die sie aufgebaut haben.
 
-- die Wissen bewahrt,
-- kontinuierlich lernt,
-- Ehrenamtliche unterstützt,
-- Verantwortung übernimmt,
-- und den TuS Mingolsheim über Generationen hinweg stärkt.
+Unser Erfolg zeigt sich nicht daran, dass wir unersetzlich werden.
 
----
-
-# Dieses Repository ist kein Softwareprojekt.
-
-Es dokumentiert den Aufbau einer lernenden Organisation.
-
-Software ist ein Teil davon.
-
-Die Organisation ist das eigentliche Produkt.
+Unser Erfolg zeigt sich daran, dass der Verein auch ohne uns erfolgreich weiterarbeiten kann.
