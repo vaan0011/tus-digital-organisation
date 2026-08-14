@@ -1,0 +1,6 @@
+Version 3.5.0
+
+- Spielplan neu generieren entfernt den bisherigen Spielplan vollständig und baut ihn aus den aktuellen Turniereinstellungen neu auf.
+- Bei einem Spielfeld und mehreren Gruppen werden Gruppenspiele möglichst abwechselnd angesetzt (z. B. A, B, A, B), unter Beachtung der Mannschaftspausen.
+- Spiel um Platz 3 wird garantiert vor dem Finale erzeugt.
+- Spiel um Platz 3 und Finale erhalten immer getrennte Zeitslots und Feld 1, unabhängig von der Anzahl der Spielfelder.

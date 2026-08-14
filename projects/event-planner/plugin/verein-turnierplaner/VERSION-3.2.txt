@@ -1,0 +1,4 @@
+Version 3.2.0
+- Dynamische UI in „Modus & Spielplan“.
+- Nicht relevante K.O.-/Platzierungsoptionen werden je nach Modus ausgegraut.
+- Modus-Hilfe rechts erklärt die aktuelle Turnierlogik und Gruppenwertung.

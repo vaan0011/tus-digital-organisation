@@ -1,0 +1,5 @@
+Version 3.4.0
+
+- Spiel um Platz 3 wird bei K.O.-Turnieren immer vor dem Finale eingeplant.
+- Kleines Finale und Finale erhalten auch bei mehreren Spielfeldern jeweils einen eigenen Zeitslot und laufen nie parallel.
+- Nach zeitlicher Neuplanung bleibt die Reihenfolge Platz 3 -> Finale erhalten.
