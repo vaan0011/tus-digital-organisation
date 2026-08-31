@@ -1,0 +1,1 @@
+Ein Team besteht aus denjenigen Menschen und digitalen Mitarbeitern, die gemeinsam Verantwortung für ein Ziel übernehmen.

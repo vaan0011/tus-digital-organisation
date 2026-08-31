@@ -1,0 +1,5 @@
+Verein Turnierplaner / TuS Vereinsmanager Version 3.1.0
+
+Fixes:
+- Spielreihenfolge bearbeiten berechnet Uhrzeiten/Felder jetzt strikt aus Reihenfolge, Spieldauer, Pause und Feldanzahl.
+- Heim-/Gastmannschaft kann in der Spielreihenfolge manuell angepasst werden.

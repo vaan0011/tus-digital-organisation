@@ -1,0 +1,8 @@
+Version 3.3.0
+
+Änderungen:
+- Events besitzen jetzt einen optionalen Link zum Inhalt (z. B. Ticketshop, Anmeldung oder Detailseite).
+- Der Link wird auf der öffentlichen Programmübersicht als Button „Zum Inhalt“ angezeigt.
+- Programmpunkte können jetzt mit Sichtbarkeit markiert werden: öffentlich, nicht öffentlich, Eintrittskarte, Mitglieder.
+- Nicht öffentliche Programmpunkte bleiben im Backend/Plan erhalten, werden aber auf der öffentlichen Eventseite nicht angezeigt.
+- Eintrittskarte- und Mitglieder-Programmpunkte werden öffentlich angezeigt und entsprechend gekennzeichnet.

@@ -1,0 +1,6 @@
+Version 3.6.0
+
+- Spiel um Platz 3 wird beim Neu-Generieren zwingend vor dem Finale erzeugt.
+- Finale ist immer das letzte Spiel der K.O.-Phase.
+- Spiel um Platz 3 und Finale erhalten exklusive Zeitslots auf Feld 1.
+- Zeitliche Neuberechnung sortiert auch ältere Spielpläne robust: Platz 3 vor Finale.
