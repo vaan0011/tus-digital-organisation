@@ -24,6 +24,30 @@ class VTP_Plugin {
   return 'offen';
  }
  public static function status_label($s){ $m=['scheduled'=>'Angesetzt','planned'=>'Geplant','running'=>'Läuft','finished'=>'Beendet','cancelled'=>'Abgesagt','abandoned'=>'Abgebrochen','postponed'=>'Verschoben','forfeit'=>'Wertung','noshow'=>'Nicht angetreten','angesetzt'=>'Angesetzt','geplant'=>'Geplant','läuft'=>'Läuft','beendet'=>'Beendet','wertung'=>'Wertung','aktiv'=>'Aktiv','archiviert'=>'Archiviert']; return $m[$s]??$s; }
+ public static function sort_standing_rows($rows,$matches=[]){
+  foreach($rows as &$row) $row['gd']=$row['gf']-$row['ga']; unset($row);
+  usort($rows,function($a,$b){
+    $result=[$b['pts'],$b['gd'],$b['gf']] <=> [$a['pts'],$a['gd'],$a['gf']];
+    return $result ?: strcasecmp((string)$a['team']->name,(string)$b['team']->name);
+  });
+  for($i=0;$i<count($rows);){
+    $end=$i+1;
+    while($end<count($rows) && $rows[$end]['pts']===$rows[$i]['pts'] && $rows[$end]['gd']===$rows[$i]['gd'] && $rows[$end]['gf']===$rows[$i]['gf']) $end++;
+    if($end-$i===2){
+      $first=absint($rows[$i]['team']->id); $second=absint($rows[$i+1]['team']->id);
+      foreach($matches as $match){
+        $home=absint($match->team_home); $away=absint($match->team_away);
+        if(!(($home===$first && $away===$second) || ($home===$second && $away===$first))) continue;
+        if($match->goals_home===null || $match->goals_away===null || intval($match->goals_home)===intval($match->goals_away)) break;
+        $winner=intval($match->goals_home)>intval($match->goals_away)?$home:$away;
+        if($winner===$second){ $tmp=$rows[$i]; $rows[$i]=$rows[$i+1]; $rows[$i+1]=$tmp; }
+        break;
+      }
+    }
+    $i=$end;
+  }
+  return $rows;
+ }
  private function type_label($k){ $m=['jugendturnier'=>'Jugendturnier','einlagenspiel'=>'Einlagenspiel','elfmeterschiessen'=>'11m-Schießen','neunmeterschiessen'=>'9m-Schießen','hallenturnier'=>'Hallenturnier','ah_turnier'=>'AH-Turnier','blitzturnier'=>'Blitzturnier','turnier'=>'Turnier','bewirtung'=>'Bewirtung','programm'=>'Programmpunkt']; return $m[$k]??'Turnier'; }
  public function dashboard_page(){ global $wpdb;
   $events=$wpdb->get_results("SELECT * FROM ".VTP_DB::table('events')." WHERE status<>'archiviert' ORDER BY start_date DESC, created_at DESC LIMIT 12");
@@ -123,7 +147,7 @@ class VTP_Plugin {
   $groups=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT group_name) FROM ".VTP_DB::table('teams')." WHERE tournament_id=%d AND group_name<>''",$tid));
   $smallGroups=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM (SELECT group_name, COUNT(*) c FROM ".VTP_DB::table('teams')." WHERE tournament_id=%d AND group_name<>'' GROUP BY group_name HAVING c<2) x",$tid));
   $matches=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('matches').' WHERE tournament_id=%d',$tid));
-  $finished=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('matches').' WHERE tournament_id=%d AND status=%s',$tid,'finished'));
+  $finished=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM ".VTP_DB::table('matches')." WHERE tournament_id=%d AND goals_home IS NOT NULL AND goals_away IS NOT NULL",$tid));
   $refs=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('referees').' WHERE tournament_id=%d',$tid));
   $regEnabled=get_post_meta($tid,'_vtp_public_registration',true)==='1';
   $maxTeams=(int)get_post_meta($tid,'_vtp_max_teams',true);
@@ -142,6 +166,12 @@ class VTP_Plugin {
   if($teams===0) $warnings[]='Noch keine Mannschaften angelegt.'; else $oks[]=$teams.' Mannschaften angelegt.';
   if($ungrouped>0 && $t->tournament_mode!=='league') $warnings[]=$ungrouped.' Mannschaft(en) sind noch keiner Gruppe zugeordnet.';
   if($smallGroups>0 && !in_array($t->tournament_mode,['league','bambini'],true)) $warnings[]=$smallGroups.' Gruppe(n) haben weniger als 2 Mannschaften.';
+  if(in_array($t->tournament_mode,['groups_ko','groups_placement'],true) && $groups!==2) $warnings[]='Dieser Turniermodus benötigt genau zwei Gruppen.';
+  if($t->tournament_mode==='groups_ko' && $groups===2){
+    $required=max(1,(int)ceil(absint($t->ko_size)/2));
+    $smallest=(int)$wpdb->get_var($wpdb->prepare("SELECT MIN(c) FROM (SELECT COUNT(*) c FROM ".VTP_DB::table('teams')." WHERE tournament_id=%d AND group_name<>'' AND status<>'noshow' GROUP BY group_name) x",$tid));
+    if($smallest<$required) $warnings[]='Für die gewählte K.O.-Phase werden mindestens '.$required.' aktive Mannschaften je Gruppe benötigt.';
+  }
   if($matches===0) $warnings[]='Der Spielplan wurde noch nicht generiert.'; else $oks[]=$matches.' Spiele im Spielplan.';
   if($refs===0 && $matches>0) $warnings[]='Noch keine Schiedsrichter angelegt oder zugeteilt.'; else if($refs>0) $oks[]=$refs.' Schiedsrichter angelegt.';
   if($regEnabled && $maxTeams>0 && $teams>=$maxTeams) $warnings[]='Das Anmeldelimit ist erreicht: '.$teams.' / '.$maxTeams.' Mannschaften.';
@@ -167,9 +197,9 @@ class VTP_Plugin {
   echo '<p class="vtp-mode-option" data-vtp-modes="groups_placement"><label><input type="checkbox" name="all_placement_matches" value="1" '.checked(get_post_meta(absint($t->id??0),'_vtp_all_placement_matches',true),'1',false).'> Bei Platzierungsspielen alle Plätze ausspielen</label><span class="vtp-mode-disabled-note">Nur bei Platzierungsspielen relevant.</span></p>';
   $this->field('Gruppenanzahl','auto_groups',$t->auto_groups??2,'number'); $this->field('Spieldauer Minuten','match_duration',$t->match_duration??10,'number'); $this->field('Pause Minuten','break_minutes',$t->break_minutes??2,'number'); $this->field('Anzahl Felder','fields_count',$t->fields_count??1,'number'); $this->field('Mindestpause pro Mannschaft in Spielrunden','min_team_rest',get_post_meta(absint($t->id??0),'_vtp_min_team_rest',true)?:1,'number');
   echo '</div><aside class="vtp-form-section vtp-ranking-info"><h3>Modus-Hilfe</h3>';
-  echo '<div class="vtp-mode-help" data-vtp-help="league"><h4>Liga-Modus</h4><p>Alle Mannschaften spielen gegeneinander. Es gibt keine K.O.-Runde.</p><ol><li><strong>Punkte</strong></li><li><strong>Tordifferenz</strong></li><li><strong>Mehr erzielte Tore</strong></li><li><strong>Direkter Vergleich</strong>, falls eindeutig</li><li><strong>Losentscheid</strong></li></ol></div>';
-  echo '<div class="vtp-mode-help" data-vtp-help="groups"><h4>Nur Gruppenphase</h4><p>Die Platzierungen entstehen ausschließlich aus den Gruppentabellen.</p><ol><li>Punkte</li><li>Tordifferenz</li><li>Erzielte Tore</li><li>Direkter Vergleich</li><li>Losentscheid</li></ol></div>';
-  echo '<div class="vtp-mode-help" data-vtp-help="groups_ko"><h4>Gruppenphase + K.O.-Phase</h4><p>Nach Abschluss der Gruppenphase werden die K.O.-Spiele automatisch befüllt.</p><ul><li>Finale: 1A gegen 1B</li><li>Halbfinale: 1A gegen 2B und 1B gegen 2A</li><li>Spiel um Platz 3 optional</li></ul><div class="vtp-info-note">Gruppenwertung: Punkte → Tordifferenz → erzielte Tore → direkter Vergleich → Los.</div></div>';
+  echo '<div class="vtp-mode-help" data-vtp-help="league"><h4>Liga-Modus</h4><p>Alle Mannschaften spielen gegeneinander. Es gibt keine K.O.-Runde.</p><ol><li><strong>Punkte</strong></li><li><strong>Tordifferenz</strong></li><li><strong>Mehr erzielte Tore</strong></li><li><strong>Direkter Vergleich</strong>, falls eindeutig</li><li><strong>Alphabetische Reihenfolge</strong> bei weiterem Gleichstand</li></ol></div>';
+  echo '<div class="vtp-mode-help" data-vtp-help="groups"><h4>Nur Gruppenphase</h4><p>Die Platzierungen entstehen ausschließlich aus den Gruppentabellen.</p><ol><li>Punkte</li><li>Tordifferenz</li><li>Erzielte Tore</li><li>Direkter Vergleich</li><li>Alphabetische Reihenfolge bei weiterem Gleichstand</li></ol></div>';
+  echo '<div class="vtp-mode-help" data-vtp-help="groups_ko"><h4>Gruppenphase + K.O.-Phase</h4><p>Nach Abschluss der Gruppenphase werden die K.O.-Spiele automatisch befüllt.</p><ul><li>Finale: 1A gegen 1B</li><li>Halbfinale: 1A gegen 2B und 1B gegen 2A</li><li>Spiel um Platz 3 optional</li></ul><div class="vtp-info-note">Gruppenwertung: Punkte → Tordifferenz → erzielte Tore → direkter Vergleich → alphabetische Reihenfolge.</div></div>';
   echo '<div class="vtp-mode-help" data-vtp-help="groups_placement"><h4>Gruppenphase + Platzierungsspiele</h4><p>Nach der Gruppenphase werden Platzierungsspiele erzeugt.</p><ul><li>1A gegen 1B = Platz 1/2</li><li>2A gegen 2B = Platz 3/4</li><li>3A gegen 3B usw.</li></ul></div>';
   echo '<div class="vtp-mode-help" data-vtp-help="bambini"><h4>Bambini-Spieltag</h4><p>Es wird ein Spielplan erstellt, aber keine Tabelle, keine K.O.-Phase und keine Endplatzierung angezeigt.</p><div class="vtp-info-note">Alle Kinder stehen im Mittelpunkt – ohne Wertung.</div></div>';
   echo '</aside></div>';
@@ -478,8 +508,12 @@ public function print_pdf(){
   // Nach Team-Hinzufügen/-Löschen wird der sportliche Spielplan komplett neu aufgebaut.
   $wpdb->delete(VTP_DB::table('matches'),['tournament_id'=>$tid]);
 
-  $teams=$this->active_teams($tid); $groups=[];
-  foreach($teams as $team) $groups[$team->group_name][]=$team;
+  $teams=$this->active_teams($tid);
+  if($t->tournament_mode==='league'){
+    foreach($teams as $team) $team->group_name='A';
+    $wpdb->query($wpdb->prepare("UPDATE ".VTP_DB::table('teams')." SET group_name='A' WHERE tournament_id=%d",$tid));
+  }
+  $groups=$this->group_teams_for_mode($teams,$t->tournament_mode);
   $startDate=$t->start_date ?: current_time('Y-m-d');
   $startTime=$t->start_time ?: '09:00';
   $fields=max(1,absint($t->fields_count));
@@ -517,6 +551,7 @@ public function print_pdf(){
   }
 
   $lastSlot=empty($scheduled)?0:max(array_column($scheduled,'slot'))+1;
+  if(in_array($t->tournament_mode,['groups_ko','groups_placement'],true) && !empty($scheduled)) $lastSlot+=$minRest;
   if($t->tournament_mode==='groups_ko'){
     $labels=[16=>'Achtelfinale',8=>'Viertelfinale',4=>'Halbfinale',2=>'Finale']; $size=absint($t->ko_size);
     $firstSeedLabels=$this->ko_first_seed_labels($size, array_keys($groups));
@@ -548,7 +583,7 @@ public function print_pdf(){
   }
   if($t->tournament_mode==='groups_placement'){
     $groupNames=array_keys($groups); sort($groupNames);
-    if(count($groupNames)>=2){ $a=$groupNames[0]; $b=$groupNames[1]; $count=min(count($groups[$a]), count($groups[$b])); $all=get_post_meta($tid,'_vtp_all_placement_matches',true)==='1'; $maxRank=$all ? $count : min(2,$count);
+    if(count($groupNames)>=2){ $a=$groupNames[0]; $b=$groupNames[1]; $count=min(count(array_filter($groups[$a],function($team){ return $team->status!=='noshow'; })), count(array_filter($groups[$b],function($team){ return $team->status!=='noshow'; }))); $all=get_post_meta($tid,'_vtp_all_placement_matches',true)==='1'; $maxRank=$all ? $count : min(2,$count);
       for($rank=1;$rank<=$maxRank;$rank++){ $place1=($rank*2)-1; $place2=$rank*2; $label=$rank===1?'Spiel um Platz 1/2':'Spiel um Platz '.$place1.'/'.$place2; $slot=$lastSlot+floor(($rank-1)/$fields); $field=(($rank-1)%$fields)+1; $dt=date('Y-m-d H:i:s',strtotime($startDate.' '.$startTime.' +'.($slot*$slotMinutes).' minutes')); $wpdb->insert(VTP_DB::table('matches'),['tournament_id'=>$tid,'round_type'=>'placement','round_label'=>$label.' · '.$rank.'. Gruppe '.$a.' gegen '.$rank.'. Gruppe '.$b,'match_no'=>$no++,'starts_at'=>$dt,'field_no'=>$field,'status'=>'geplant']); }
     }
   }
@@ -720,6 +755,11 @@ public function print_pdf(){
  }
  public function save_teams(){ $this->verify('vtp_save_teams'); global $wpdb; $tid=absint($_POST['tournament_id']); $t=$wpdb->get_row($wpdb->prepare('SELECT * FROM '.VTP_DB::table('tournaments').' WHERE id=%d',$tid)); $wpdb->delete(VTP_DB::table('teams'),['tournament_id'=>$tid]); $lines=preg_split('/\r\n|\r|\n/',sanitize_textarea_field($_POST['teams']??'')); $auto=max(1,absint($t->auto_groups??2)); $i=0; foreach($lines as $line){ $line=trim($line); if($line==='') continue; $p=array_map('trim',explode(';',$line)); $name=$p[0]; $grp=$p[1]??chr(65+($i%$auto)); $status=(isset($p[2]) && stripos($p[2],'nicht')!==false)?'noshow':'active'; if($name) $wpdb->insert(VTP_DB::table('teams'),['tournament_id'=>$tid,'name'=>$name,'group_name'=>$grp,'status'=>$status,'sort_order'=>$i++]); } $this->go(['edit'=>$tid,'saved'=>1]); }
  private function active_teams($tid){ global $wpdb; return $wpdb->get_results($wpdb->prepare('SELECT * FROM '.VTP_DB::table('teams').' WHERE tournament_id=%d ORDER BY group_name, sort_order',$tid)); }
+ private function group_teams_for_mode($teams,$mode){
+  if($mode==='league') return ['A'=>array_values($teams)];
+  $groups=[]; foreach($teams as $team){ $group=trim((string)$team->group_name); if($group!=='') $groups[$group][]=$team; }
+  return $groups;
+ }
  private function schedule_group_matches($pairs,$fields,$minRest){
   $scheduled=[]; $last=[]; $slot=0; $lastGroup='';
   while(count($pairs)>0){
@@ -731,7 +771,7 @@ public function print_pdf(){
      if(isset($used[$h])||isset($used[$a])) continue;
      $rh=isset($last[$h])?($slot-$last[$h]-1):99; $ra=isset($last[$a])?($slot-$last[$a]-1):99;
      $restOk=($rh>=$minRest && $ra>=$minRest);
-     if(!$restOk && count($slotGames)>0) continue;
+     if(!$restOk) continue;
      $score=($restOk?1000:0)+min($rh,$ra)*10;
      // Auf einem Feld Gruppen möglichst abwechseln (A, B, A, B ...).
      // Bei mehreren Feldern bevorzugen wir zusätzlich unterschiedliche Gruppen innerhalb desselben Zeitslots.
@@ -754,9 +794,21 @@ public function print_pdf(){
   $tid=absint($_POST['tournament_id']);
   $t=$wpdb->get_row($wpdb->prepare('SELECT * FROM '.VTP_DB::table('tournaments').' WHERE id=%d',$tid));
   if(!$t) wp_die('Turnier nicht gefunden.');
+  $teams=$this->active_teams($tid);
+  if($t->tournament_mode==='league'){
+    foreach($teams as $team) $team->group_name='A';
+    $wpdb->query($wpdb->prepare("UPDATE ".VTP_DB::table('teams')." SET group_name='A' WHERE tournament_id=%d",$tid));
+  }
+  $groups=$this->group_teams_for_mode($teams,$t->tournament_mode);
+  if(in_array($t->tournament_mode,['groups_ko','groups_placement'],true) && count($groups)!==2) wp_die('Dieser Turniermodus benötigt genau zwei Gruppen.');
+  if($t->tournament_mode==='groups_ko'){
+    $required=max(1,(int)ceil(absint($t->ko_size)/2));
+    foreach($groups as $groupTeams){
+      $active=array_filter($groupTeams,function($team){ return $team->status!=='noshow'; });
+      if(count($active)<$required) wp_die('Für die gewählte K.O.-Phase werden mindestens '.$required.' aktive Mannschaften je Gruppe benötigt.');
+    }
+  }
   $wpdb->delete(VTP_DB::table('matches'),['tournament_id'=>$tid]);
-  $teams=$this->active_teams($tid); $groups=[];
-  foreach($teams as $team) $groups[$team->group_name][]=$team;
   $startDate=$t->start_date ?: current_time('Y-m-d');
   $startTime=sanitize_text_field($_POST['start_time']??($t->start_time?:'09:00'));
   $fields=max(1,absint($t->fields_count));
@@ -768,6 +820,7 @@ public function print_pdf(){
   foreach($scheduled as $p){ $dt=date('Y-m-d H:i:s',strtotime($startDate.' '.$startTime.' +'.($p['slot']*$slotMinutes).' minutes')); $wpdb->insert(VTP_DB::table('matches'),['tournament_id'=>$tid,'round_type'=>'group','round_label'=>'Gruppe '.$p['g'],'group_name'=>$p['g'],'match_no'=>$no++,'team_home'=>$p['h']->id,'team_away'=>$p['a']->id,'starts_at'=>$dt,'field_no'=>$p['field'],'status'=>'angesetzt']); }
   foreach($forfeits as $p){ $gh=$p['h']->status==='noshow'?0:3; $ga=$p['a']->status==='noshow'?0:3; if($p['h']->status==='noshow' && $p['a']->status==='noshow'){ $gh=0; $ga=0; } $wpdb->insert(VTP_DB::table('matches'),['tournament_id'=>$tid,'round_type'=>'group','round_label'=>'Gruppe '.$p['g'],'group_name'=>$p['g'],'match_no'=>$no++,'team_home'=>$p['h']->id,'team_away'=>$p['a']->id,'goals_home'=>$gh,'goals_away'=>$ga,'field_no'=>0,'status'=>'wertung','is_forfeit'=>1]); }
   $lastSlot=empty($scheduled)?0:max(array_column($scheduled,'slot'))+1;
+  if(in_array($t->tournament_mode,['groups_ko','groups_placement'],true) && !empty($scheduled)) $lastSlot+=$minRest;
   if($t->tournament_mode==='groups_ko'){
     $labels=[16=>'Achtelfinale',8=>'Viertelfinale',4=>'Halbfinale',2=>'Finale']; $size=absint($t->ko_size);
     $firstSeedLabels=$this->ko_first_seed_labels($size, array_keys($groups));
@@ -802,8 +855,8 @@ public function print_pdf(){
   }
   if($t->tournament_mode==='groups_placement'){
     $groupNames=array_keys($groups); sort($groupNames);
-    if(count($groupNames)>=2){ $a=$groupNames[0]; $b=$groupNames[1]; $count=min(count($groups[$a]), count($groups[$b])); $all=get_post_meta($tid,'_vtp_all_placement_matches',true)==='1'; $maxRank=$all ? $count : min(2,$count);
-      for($rank=1;$rank<=$maxRank;$rank++){ $place1=($rank*2)-1; $place2=$rank*2; $label=$rank===1?'Spiel um Platz 1/2':'Spiel um Platz '.$place1.'/'.$place2; $slot=$lastSlot+($rank-1); $dt=date('Y-m-d H:i:s',strtotime($startDate.' '.$startTime.' +'.($slot*$slotMinutes).' minutes')); $wpdb->insert(VTP_DB::table('matches'),['tournament_id'=>$tid,'round_type'=>'placement','round_label'=>$label.' · '.$rank.'. Gruppe '.$a.' gegen '.$rank.'. Gruppe '.$b,'match_no'=>$no++,'starts_at'=>$dt,'field_no'=>1,'status'=>'geplant']); }
+    if(count($groupNames)>=2){ $a=$groupNames[0]; $b=$groupNames[1]; $count=min(count(array_filter($groups[$a],function($team){ return $team->status!=='noshow'; })), count(array_filter($groups[$b],function($team){ return $team->status!=='noshow'; }))); $all=get_post_meta($tid,'_vtp_all_placement_matches',true)==='1'; $maxRank=$all ? $count : min(2,$count);
+      for($rank=1;$rank<=$maxRank;$rank++){ $place1=($rank*2)-1; $place2=$rank*2; $label=$rank===1?'Spiel um Platz 1/2':'Spiel um Platz '.$place1.'/'.$place2; $slot=$lastSlot+floor(($rank-1)/$fields); $field=(($rank-1)%$fields)+1; $dt=date('Y-m-d H:i:s',strtotime($startDate.' '.$startTime.' +'.($slot*$slotMinutes).' minutes')); $wpdb->insert(VTP_DB::table('matches'),['tournament_id'=>$tid,'round_type'=>'placement','round_label'=>$label.' · '.$rank.'. Gruppe '.$a.' gegen '.$rank.'. Gruppe '.$b,'match_no'=>$no++,'starts_at'=>$dt,'field_no'=>$field,'status'=>'geplant']); }
     }
   }
   $this->assign_referees($tid); $this->go(['edit'=>$tid,'generated'=>1]); }
@@ -813,7 +866,7 @@ public function print_pdf(){
  private function ko_first_seed_pairs($size,$stand,$groups){ sort($groups); $a=$groups[0]??''; $b=$groups[1]??''; $tid=function($g,$rank) use ($stand){ return $stand[$g][$rank-1]['team']->id ?? 0; }; if(!$a||!$b) return []; if($size<=2) return [[$tid($a,1),$tid($b,1)]]; if($size===4) return [[$tid($a,1),$tid($b,2)],[$tid($b,1),$tid($a,2)]]; if($size===8) return [[$tid($a,1),$tid($b,4)],[$tid($a,2),$tid($b,3)],[$tid($b,1),$tid($a,4)],[$tid($b,2),$tid($a,3)]]; if($size>=16) return [[$tid($a,1),$tid($b,8)],[$tid($a,4),$tid($b,5)],[$tid($a,2),$tid($b,7)],[$tid($a,3),$tid($b,6)],[$tid($b,1),$tid($a,8)],[$tid($b,4),$tid($a,5)],[$tid($b,2),$tid($a,7)],[$tid($b,3),$tid($a,6)]]; return []; }
  private function round_complete($tid,$label){ global $wpdb; $rows=$wpdb->get_results($wpdb->prepare('SELECT * FROM '.VTP_DB::table('matches').' WHERE tournament_id=%d AND round_type=%s AND round_label LIKE %s ORDER BY match_no ASC',$tid,'ko',$label.'%')); if(!$rows) return false; foreach($rows as $m){ if(!$this->ko_winner_id($m)) return false; } return true; }
 
- private function ranked_standings($tid){ global $wpdb; $teams=$wpdb->get_results($wpdb->prepare('SELECT * FROM '.VTP_DB::table('teams').' WHERE tournament_id=%d ORDER BY group_name, sort_order, name',$tid)); $tab=[]; foreach($teams as $team){ if($team->status==='noshow') continue; $tab[$team->group_name][$team->id]=['team'=>$team,'played'=>0,'won'=>0,'draw'=>0,'lost'=>0,'gf'=>0,'ga'=>0,'gd'=>0,'pts'=>0]; } $matches=$wpdb->get_results($wpdb->prepare("SELECT * FROM ".VTP_DB::table('matches')." WHERE tournament_id=%d AND round_type='group' AND goals_home IS NOT NULL AND goals_away IS NOT NULL",$tid)); foreach($matches as $m){ if(empty($tab[$m->group_name][$m->team_home]) || empty($tab[$m->group_name][$m->team_away])) continue; $h=&$tab[$m->group_name][$m->team_home]; $a=&$tab[$m->group_name][$m->team_away]; $h['played']++; $a['played']++; $h['gf']+=intval($m->goals_home); $h['ga']+=intval($m->goals_away); $a['gf']+=intval($m->goals_away); $a['ga']+=intval($m->goals_home); if($m->goals_home>$m->goals_away){ $h['won']++; $a['lost']++; $h['pts']+=3; } elseif($m->goals_home<$m->goals_away){ $a['won']++; $h['lost']++; $a['pts']+=3; } else { $h['draw']++; $a['draw']++; $h['pts']++; $a['pts']++; } unset($h,$a); } foreach($tab as $g=>$rows){ foreach($rows as &$r) $r['gd']=$r['gf']-$r['ga']; unset($r); usort($rows,function($a,$b){ return [$b['pts'],$b['gd'],$b['gf'],$a['team']->name] <=> [$a['pts'],$a['gd'],$a['gf'],$b['team']->name]; }); $tab[$g]=$rows; } ksort($tab); return $tab; }
+ private function ranked_standings($tid){ global $wpdb; $teams=$wpdb->get_results($wpdb->prepare('SELECT * FROM '.VTP_DB::table('teams').' WHERE tournament_id=%d ORDER BY group_name, sort_order, name',$tid)); $tab=[]; foreach($teams as $team){ if($team->status==='noshow') continue; $tab[$team->group_name][$team->id]=['team'=>$team,'played'=>0,'won'=>0,'draw'=>0,'lost'=>0,'gf'=>0,'ga'=>0,'gd'=>0,'pts'=>0]; } $matches=$wpdb->get_results($wpdb->prepare("SELECT * FROM ".VTP_DB::table('matches')." WHERE tournament_id=%d AND round_type='group' AND goals_home IS NOT NULL AND goals_away IS NOT NULL",$tid)); foreach($matches as $m){ if(empty($tab[$m->group_name][$m->team_home]) || empty($tab[$m->group_name][$m->team_away])) continue; $h=&$tab[$m->group_name][$m->team_home]; $a=&$tab[$m->group_name][$m->team_away]; $h['played']++; $a['played']++; $h['gf']+=intval($m->goals_home); $h['ga']+=intval($m->goals_away); $a['gf']+=intval($m->goals_away); $a['ga']+=intval($m->goals_home); if($m->goals_home>$m->goals_away){ $h['won']++; $a['lost']++; $h['pts']+=3; } elseif($m->goals_home<$m->goals_away){ $a['won']++; $h['lost']++; $a['pts']+=3; } else { $h['draw']++; $a['draw']++; $h['pts']++; $a['pts']++; } unset($h,$a); } foreach($tab as $g=>$rows){ $groupMatches=array_filter($matches,function($m) use ($g){ return (string)$m->group_name===(string)$g; }); $tab[$g]=self::sort_standing_rows($rows,$groupMatches); } ksort($tab); return $tab; }
  private function groups_complete($tid){ global $wpdb; $open=$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM ".VTP_DB::table('matches')." WHERE tournament_id=%d AND round_type='group' AND is_forfeit=0 AND (goals_home IS NULL OR goals_away IS NULL)",$tid)); return intval($open)===0; }
  private function ko_winner_id($m){ if($m->goals_home===null || $m->goals_away===null || $m->team_home<=0 || $m->team_away<=0 || intval($m->goals_home)===intval($m->goals_away)) return 0; return intval($m->goals_home)>intval($m->goals_away)?intval($m->team_home):intval($m->team_away); }
  private function ko_loser_id($m){ if($m->goals_home===null || $m->goals_away===null || $m->team_home<=0 || $m->team_away<=0 || intval($m->goals_home)===intval($m->goals_away)) return 0; return intval($m->goals_home)>intval($m->goals_away)?intval($m->team_away):intval($m->team_home); }
