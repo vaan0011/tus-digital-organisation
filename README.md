@@ -83,6 +83,14 @@ core/
     Grundprinzipien
     Entscheidungen
 
+design/
+    Brand Identity
+    Logo
+    Farben
+    Typografie
+    UI
+    Design- und Produktionsstandards
+
 organization/
     Vision
     Kultur
@@ -105,6 +113,9 @@ employees/
 plugins/
     Fachliche Plugins
 
+projects/
+    Konkrete Projekte und Projektzustände
+
 system/
     Systemübersicht
 
@@ -112,7 +123,7 @@ knowledge/
     Organisationswissen
 
 standards/
-    Gemeinsame Arbeits-, Freigabe- und Lernstandards
+    Gemeinsame Arbeits-, Freigabe-, Lern- und Fortschrittsstandards
 
 vision/
     Repository-Vision
@@ -145,7 +156,8 @@ Für menschliche und digitale Mitarbeiter gelten insbesondere:
 1. `standards/employee-operating-standard.md`
 2. `standards/approval-and-escalation.md`
 3. `standards/learning-loop.md`
-4. `standards/working-standards.md`
+4. `standards/iteration-and-progress.md`
+5. `standards/working-standards.md`
 
 Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln.
 
@@ -168,8 +180,9 @@ Bitte lies die Dokumente in dieser Reihenfolge:
 11. `standards/employee-operating-standard.md`
 12. `standards/approval-and-escalation.md`
 13. `standards/learning-loop.md`
-14. `roles/wordpress-developer/role.md`
-15. `roles/wordpress-developer/development-standard.md`
+14. `standards/iteration-and-progress.md`
+15. `roles/wordpress-developer/role.md`
+16. `roles/wordpress-developer/development-standard.md`
 
 Erst danach solltest du Plugins oder Code entwickeln.
 
@@ -186,6 +199,26 @@ Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 5. `roles/archivist/archive-standard.md`
 
 Der operative Quellenraum liegt in Google Drive. Das Repository enthält die verbindlichen organisatorischen und fachlichen Regeln der Archivarbeit.
+
+---
+
+# Für neue Designarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/graphic-designer/role.md`
+2. `design/README.md`
+3. `design/brand-identity.md`
+4. `design/logo.md`
+5. `design/colors.md`
+6. `design/typography.md`
+7. `design/product-types.md`
+8. `design/design-workflow.md`
+9. `design/generative-design-standard.md`
+10. `design/prompt-guidelines.md`
+11. `design/ui-standard.md`, wenn eine Bedienoberfläche gestaltet wird
+
+Vor einer längeren Designaufgabe wird ein klares Briefing erstellt. Freigegebene Elemente werden als Locked Elements behandelt und nicht ohne neuen Auftrag verändert.
 
 ---
 
