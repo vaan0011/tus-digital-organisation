@@ -88,6 +88,7 @@ Informationen verständlich, aktuell und zielgruppengerecht vermitteln.
 - Veranstaltungen
 - Vereinsentwicklung
 - Gesellschaft & Soziales
+- Archiv & Vereinsgeschichte
 
 ---
 
@@ -151,6 +152,28 @@ Beispiele:
 **Auftrag**
 
 Systeme bereitstellen, Daten schützen und Digitalisierung ermöglichen.
+
+---
+
+## Archiv & Vereinsgeschichte
+
+**Auftrag**
+
+Historische Quellen, Vereinswissen und Zusammenhänge dauerhaft bewahren, quellenbasiert erschließen und für zukünftige Generationen nutzbar machen.
+
+Der Bereich trennt Originalquellen, Transkriptionen, Faktenbasis und veröffentlichte Darstellung und stellt anderen Verantwortungsbereichen belastbares historisches Wissen bereit.
+
+**Zusammenarbeit**
+
+- Kommunikation
+- Sport
+- Veranstaltungen
+- Vereinsentwicklung
+- Datenschutz & IT
+
+**Zugeordnete Startrolle**
+
+- Archivist
 
 ---
 

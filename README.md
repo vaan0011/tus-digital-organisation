@@ -92,6 +92,11 @@ organization/
     TuS DNA
     Werte
 
+roles/
+    Dauerhafte Rollen
+    Verantwortlichkeiten
+    Rollenspezifische Arbeitsstandards
+
 employees/
     Digitale Mitarbeiter
     HR
@@ -107,7 +112,7 @@ knowledge/
     Organisationswissen
 
 standards/
-    Arbeitsstandards
+    Gemeinsame Arbeits-, Freigabe- und Lernstandards
 
 vision/
     Repository-Vision
@@ -133,6 +138,19 @@ README.md
 
 ---
 
+# Gemeinsame Mitarbeiterstandards
+
+Für menschliche und digitale Mitarbeiter gelten insbesondere:
+
+1. `standards/employee-operating-standard.md`
+2. `standards/approval-and-escalation.md`
+3. `standards/learning-loop.md`
+4. `standards/working-standards.md`
+
+Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln.
+
+---
+
 # Für neue Entwickler
 
 Bitte lies die Dokumente in dieser Reihenfolge:
@@ -143,10 +161,31 @@ Bitte lies die Dokumente in dieser Reihenfolge:
 4. `organization/values.md`
 5. `organization/organization-dna.md`
 6. `organization/philosophy.md`
-7. `architecture/platform-architecture.md`
-8. `system/system-overview.md`
+7. `core/core-principles.md`
+8. `architecture/platform-architecture.md`
+9. `architecture/stability-and-simplicity.md`
+10. `system/system-overview.md`
+11. `standards/employee-operating-standard.md`
+12. `standards/approval-and-escalation.md`
+13. `standards/learning-loop.md`
+14. `roles/wordpress-developer/role.md`
+15. `roles/wordpress-developer/development-standard.md`
 
 Erst danach solltest du Plugins oder Code entwickeln.
+
+---
+
+# Für neue Archivarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `standards/employee-operating-standard.md`
+2. `standards/approval-and-escalation.md`
+3. `standards/learning-loop.md`
+4. `roles/archivist/role.md`
+5. `roles/archivist/archive-standard.md`
+
+Der operative Quellenraum liegt in Google Drive. Das Repository enthält die verbindlichen organisatorischen und fachlichen Regeln der Archivarbeit.
 
 ---
 
