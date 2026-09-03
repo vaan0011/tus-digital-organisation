@@ -1,0 +1,53 @@
+name: WordPress Playground PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview:
+    name: Event-Planer in WordPress Playground
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vorschau im WordPress Playground bereitstellen
+        uses: WordPress/action-wp-playground-pr-preview@v3
+        with:
+          # Der Blueprint erweitert die automatische Plugin-Installation um
+          # Sprache, Anmeldung und Zielseite; deshalb hat er Vorrang vor diesem Pfad.
+          plugin-path: projects/event-planner/plugin/verein-turnierplaner
+          blueprint: |
+            {
+              "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+              "landingPage": "/wp-admin/admin.php?page=vtp-dashboard",
+              "preferredVersions": {
+                "php": "8.2",
+                "wp": "latest"
+              },
+              "steps": [
+                {
+                  "step": "installPlugin",
+                  "pluginData": {
+                    "resource": "git:directory",
+                    "url": "${{ github.event.pull_request.head.repo.clone_url }}",
+                    "ref": "${{ github.event.pull_request.head.sha }}",
+                    "path": "/projects/event-planner/plugin/verein-turnierplaner"
+                  },
+                  "options": {
+                    "activate": true
+                  }
+                },
+                {
+                  "step": "setSiteLanguage",
+                  "language": "de_DE"
+                },
+                {
+                  "step": "login",
+                  "username": "admin"
+                }
+              ]
+            }
+          github-token: ${{ secrets.GITHUB_TOKEN }}
