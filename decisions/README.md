@@ -2,76 +2,104 @@
 
 ## Purpose
 
-Der Ordner **Entscheidungen** dokumentiert langfristige Entscheidungen zur Architektur, Philosophie und Arbeitsweise der digitalen Vereinsplattform.
+Der Ordner `decisions/` dokumentiert langfristige Entscheidungen zur Architektur, Organisation, Philosophie und Arbeitsweise der TuS Digital Organisation.
 
 Diese Dokumente beantworten nicht nur **was** entschieden wurde, sondern vor allem **warum**.
 
 Dadurch bleiben wichtige Hintergründe auch Jahre später nachvollziehbar.
 
----
-
 ## Core Principle
-
-Nicht jede Idee wird zu einer Entscheidung.
-
-Eine Entscheidung wird erst dokumentiert, wenn sie langfristige Auswirkungen auf das Projekt hat.
 
 Entscheidungen sollen Orientierung geben und verhindern, dass dieselben Diskussionen mehrfach geführt werden.
 
----
+Ein neuer Chat, ein neuer Mitarbeiter oder persönliche Erinnerung öffnen eine gültige Entscheidung nicht automatisch wieder.
 
 ## Main Content
 
-### Wann entsteht eine neue Entscheidung?
+### Wann entsteht eine ADR?
 
-Eine neue Entscheidungsdatei wird erstellt, wenn mindestens eines der folgenden Kriterien erfüllt ist:
+Eine Entscheidung wird dokumentiert, wenn mindestens eines zutrifft:
 
-- Die Entscheidung beeinflusst die Softwarearchitektur.
-- Die Entscheidung verändert die Arbeitsweise des Projekts.
-- Die Entscheidung betrifft mehrere Plugins oder Module.
-- Die Entscheidung beschreibt ein grundlegendes Prinzip.
-- Die Entscheidung soll langfristig Bestand haben.
+- sie beeinflusst Architektur oder Datenmodell,
+- sie verändert die organisationsweite oder rollenspezifische Arbeitsweise,
+- sie betrifft mehrere Projekte oder Module,
+- sie legt eine verbindliche Quelle oder einen Standard fest,
+- sie soll langfristig Bestand haben,
+- ihre spätere Wiederholung als Diskussion wahrscheinlich wäre.
 
-### Aufbau einer Entscheidungsdatei
+Nicht jede kleine operative Entscheidung benötigt eine ADR.
 
-Jede Entscheidung enthält:
+### Aufbau
 
-- Titel
-- Hintergrund
-- Problemstellung
-- Entscheidung
-- Begründung
-- Auswirkungen
-- Verwandte Dokumente
+Neue ADRs verwenden `template.md`.
+
+Sie dokumentieren insbesondere:
+
+- Status,
+- Datum,
+- Scope,
+- Kontext und Problem,
+- verbindliche Entscheidung,
+- Begründung,
+- relevante Alternativen,
+- Auswirkungen,
+- Bedingungen für eine spätere Wiederaufnahme,
+- ersetzte oder ersetzende Entscheidungen.
 
 ### Nummerierung
 
-Entscheidungen werden fortlaufend nummeriert.
+Entscheidungen werden fortlaufend nummeriert:
 
-Beispiel:
-
-- ADR-0001
-- ADR-0002
-- ADR-0003
+- `ADR-0001`
+- `ADR-0002`
+- `ADR-0003`
 
 Die Nummer bleibt dauerhaft bestehen.
 
-### Beziehung zu anderen Dokumenten
+### Status
 
-- Visionen beschreiben das Ziel.
-- Anforderungen beschreiben die gewünschte Funktion.
-- Entscheidungen erklären, warum ein bestimmter Weg gewählt wurde.
+Verwendete Statuswerte:
 
----
+- `Proposed`
+- `Accepted`
+- `Superseded`
+- `Rejected`
+
+Eine ersetzte Entscheidung wird nicht gelöscht. Sie bleibt nachvollziehbar und verweist auf ihre Nachfolgeentscheidung.
+
+### Entscheidung erneut öffnen
+
+Eine akzeptierte Entscheidung wird nur erneut geprüft, wenn neue belastbare Gründe vorliegen, beispielsweise:
+
+- neue Anforderung,
+- neue Information,
+- nachgewiesener Nachteil,
+- relevante Änderung des technischen oder organisatorischen Umfelds.
+
+Geschmack, Vergessen oder ein neuer Chat reichen nicht aus.
+
+### Beziehung zum Projektzustand
+
+ADRs erklären langfristige Entscheidungen.
+
+`PROJECT-STATE.md` beschreibt dagegen den aktuellen operativen Stand eines konkreten Projekts.
+
+Der Projekt-Checkpoint verweist auf relevante ADRs, dupliziert ihre Begründung aber nicht.
+
+## Current Decisions
+
+- `ADR-0001-role-and-employee-separation.md`
+- `ADR-0002-project-state-and-last-known-good.md`
+- `ADR-0003-central-brand-assets-and-shared-ui.md`
 
 ## Related Documents
 
-- ../vision/vision.md
-- ../core/core-principles.md
-- architecture-checklist.md
-
----
+- `template.md`
+- `architecture-checklist.md`
+- `../standards/iteration-and-progress.md`
+- `../core/core-principles.md`
+- `../vision/vision.md`
 
 ## Future Development
 
-Später können Vorlagen für Entscheidungsdokumente ergänzt werden, um neue Architekturentscheidungen einheitlich zu dokumentieren.
+Neue ADRs entstehen aus echten langfristigen Entscheidungen. Das Entscheidungsarchiv soll vollständig genug sein, um Wiederholungen zu vermeiden, aber klein genug bleiben, um tatsächlich genutzt zu werden.
