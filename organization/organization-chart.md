@@ -79,16 +79,24 @@ Sarah
 
 **Auftrag**
 
-Informationen verständlich, aktuell und zielgruppengerecht vermitteln.
+Informationen verständlich, aktuell und zielgruppengerecht vermitteln und die visuelle Identität des TuS Mingolsheim konsistent anwenden und weiterentwickeln.
+
+**Zugeordnete Rollen**
+
+- Graphic Designer
+
+Die Rolle Graphic Designer unterstützt bei Bedarf auch andere Verantwortungsbereiche, insbesondere Sport, Sponsoring, Veranstaltungen und Vereinsentwicklung.
 
 **Zusammenarbeit**
 
 - Geschäftsstelle
 - Sponsoring
 - Veranstaltungen
+- Sport
 - Vereinsentwicklung
 - Gesellschaft & Soziales
 - Archiv & Vereinsgeschichte
+- Datenschutz & IT
 
 ---
 

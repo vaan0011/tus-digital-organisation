@@ -32,6 +32,7 @@ Persönlichkeit, individuelle Entwicklung und konkrete Rollenzuweisungen gehöre
 
 - `wordpress-developer/` – Entwicklung und Pflege WordPress-basierter Lösungen
 - `archivist/` – Bewahrung und Erschließung der Vereinsgeschichte
+- `graphic-designer/` – Brand Identity, Gestaltung und Medienproduktion
 
 ## Relationship to other documents
 
