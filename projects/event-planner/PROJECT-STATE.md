@@ -10,7 +10,9 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Vor der nächsten funktionalen Erweiterung soll ein reproduzierbarer Entwicklungs- und Testablauf etabliert werden, damit Änderungen gegen einen bekannten stabilen Stand geprüft werden können.
+Vor der nächsten funktionalen Erweiterung wird ein reproduzierbarer Entwicklungs- und Testablauf etabliert, damit Änderungen gegen einen bekannten stabilen Stand geprüft werden können.
+
+Der aktive Schritt ist PR #10 `Event Planner: reproduzierbare Baseline und Smoke-Test`.
 
 ## Current Repository State
 
@@ -22,15 +24,21 @@ Aktuell im `main` dokumentierte Plugin-Version:
 
 `3.6.0`
 
+Aktueller Baseline-Kandidat:
+
+`032f1bd39a96fca6548eefb833442f12ed2aa17f`
+
 Die Versionsnotiz beschreibt insbesondere die Reihenfolge und Terminierung von Spiel um Platz 3 und Finale.
+
+Governance v1 und v1.1 sind in `main` übernommen. Die früheren Hinweise auf einen noch ausstehenden Governance-Merge sind damit erledigt.
 
 ## Last Known Good
 
 Noch nicht formal dokumentiert.
 
-Version `3.6.0` ist der aktuelle Referenzstand im Repository, darf aber nicht automatisch als vollständig verifizierter Last Known Good behandelt werden.
+Version `3.6.0` und Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` bilden den aktuellen Baseline-Kandidaten, dürfen aber erst nach bestandenem dokumentiertem Smoke-Test als Last Known Good bezeichnet werden.
 
-Der nächste Entwicklungszyklus soll mit einem dokumentierten Smoke-Test beginnen. Erst ein erfolgreich geprüfter Stand wird als Last Known Good festgehalten.
+Der reproduzierbare Ablauf ist in `SMOKE-TEST.md` definiert. Die fest gepinnte Playground-Konfiguration liegt unter `playground/baseline-3.6.0.json`.
 
 ## Verified
 
@@ -38,18 +46,20 @@ Der nächste Entwicklungszyklus soll mit einem dokumentierten Smoke-Test beginne
 - GitHub ist die maßgebliche Quelle für Code und Entwicklungsdokumentation.
 - Entwicklungsarbeit erfolgt über Branch und Pull Request.
 - Das im Plugin enthaltene TuS-Logo ist byte-identisch mit `design/logo/tus_logo.png` und damit eine technische Projektkopie der zentralen Logoquelle.
+- Der Baseline-Branch `event-planner/baseline-smoke-test` basiert direkt auf dem aktuellen `main`-Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f`.
+- PR #10 verändert keinen Event-Planner-Produktcode; er ergänzt ausschließlich Test-, Playground- und Projektzustands-Infrastruktur.
 
 ## Open
 
-- Ein formaler Last Known Good muss noch durch einen reproduzierbaren Test bestätigt werden.
-- Die konkrete WordPress-Testumgebung und der Smoke-Test-Ablauf müssen noch verbindlich festgelegt werden.
+- Der Baseline-Smoke-Test für Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` muss noch vollständig durchgeführt und mit `PASSED` oder `FAILED` dokumentiert werden.
+- Der neue GitHub-PR-Preview-Workflow wird erst nach Übernahme in den Default-Branch für nachfolgende Pull Requests wirksam.
+- Im Plugin-Header steht `3.6.0`, während `VTP_VERSION` noch `3.5.0` ist. Die Konstante wird im aktuellen Stand für Admin- und Public-CSS-Cache-Versionierung verwendet. Dieser Befund wird nicht im Baseline-Infrastruktur-PR nebenbei behoben.
 - Frühere Entwicklungsversuche und verworfene Ansätze sind nur dann zu übernehmen, wenn sie aus Repository, PRs oder anderen belastbaren Quellen rekonstruiert werden können. Sie werden nicht aus Erinnerung erfunden.
 
 ## Excluded / Already Tried
 
-Noch keine belastbare projektweite Ausschlussliste angelegt.
-
-Ab jetzt werden relevante erfolglose Hypothesen hier festgehalten, wenn ihre Wiederholung wahrscheinlich wäre.
+- Ältere Entwicklungs-PRs auf Basis des früheren Branches `organisation` gelten nicht automatisch als aktueller Entwicklungsstand oder Last Known Good.
+- Funktionale Änderungen aus diesen PRs werden nicht gesammelt übernommen, bevor die 3.6.0-Baseline formal verifiziert wurde.
 
 ## Relevant Decisions & Standards
 
@@ -61,22 +71,35 @@ Ab jetzt werden relevante erfolglose Hypothesen hier festgehalten, wenn ihre Wie
 - `../../design/ui-standard.md`
 - `../../design/logo.md`
 - `../../decisions/README.md`
+- `SMOKE-TEST.md`
 
-## Active Governance Change
+## Active Development
 
-Die Governance v1 wird aktuell in PR #8 vorbereitet.
+Branch:
 
-Sie enthält die verbindlichen Mitarbeiter-, Entwicklungs-, Archiv-, UI-, Marken- und Fortschrittsstandards.
+`event-planner/baseline-smoke-test`
+
+Pull Request:
+
+`#10 – Event Planner: reproduzierbare Baseline und Smoke-Test`
+
+Scope:
+
+- reproduzierbare WordPress-Playground-Baseline,
+- verbindlicher Smoke-Test,
+- PR-Preview-Infrastruktur,
+- Aktualisierung dieses Projekt-Checkpoints.
+
+Keine funktionale Änderung am Event Planner.
 
 ## Next Meaningful Step
 
-Nach Merge der Governance v1:
-
-1. neuen Coding-Chat mit diesem `PROJECT-STATE.md` als Einstieg starten,
-2. aktuellen Plugin-Stand in einer WordPress-Testumgebung installieren,
-3. einen kleinen reproduzierbaren Smoke-Test definieren und durchführen,
-4. erfolgreichen Stand als `Last Known Good` eintragen,
-5. erst danach die nächste funktionale Änderung beginnen.
+1. PR #10 prüfen und nach menschlicher Freigabe in `main` übernehmen.
+2. den fest gepinnten Baseline-Kandidaten mit `SMOKE-TEST.md` vollständig prüfen,
+3. Testergebnis dokumentieren,
+4. bei `PASSED` Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` als ersten formalen Last Known Good eintragen,
+5. erst danach den nächsten funktionalen Entwicklungs-PR beginnen,
+6. ältere PRs anschließend selektiv auf wiederverwendbare, noch gewünschte Änderungen prüfen.
 
 ## Update Rule
 
