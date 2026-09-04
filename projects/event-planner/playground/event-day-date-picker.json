@@ -11,7 +11,7 @@
       "pluginData": {
         "resource": "git:directory",
         "url": "https://github.com/vaan0011/tus-digital-organisation.git",
-        "ref": "4f4adbed99db64e5dddcf2c0816644a827418359",
+        "ref": "4ffc937d5cef40faf241384c31b41fa8c4fc2648",
         "path": "/projects/event-planner/plugin/verein-turnierplaner"
       },
       "options": {
