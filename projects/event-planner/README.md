@@ -18,7 +18,7 @@ Verbindlicher fachlicher Funktionsrahmen:
 
 `FUNCTIONAL-SCOPE.md`
 
-Verbindliche Dashboard-/Auswertungslogik:
+Verbindliche Dashboard- und Auswertungslogik:
 
 `DASHBOARD-LOGIC.md`
 
@@ -49,7 +49,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `FUNCTIONAL-SCOPE.md` beschreibt, **was** der Event Planner langfristig fachlich leisten soll.
 
-`DASHBOARD-LOGIC.md` beschreibt, **wie** Dashboard, operative Aufgaben und Auswertungs-/Historienrichtung fachlich funktionieren sollen.
+`DASHBOARD-LOGIC.md` beschreibt, **wie** Dashboard, operative Aufgaben und die Richtung von Auswertung/Historie fachlich funktionieren sollen.
 
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
