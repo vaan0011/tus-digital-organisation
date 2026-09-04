@@ -35,6 +35,7 @@ Persönlichkeit, individuelle Entwicklung und konkrete Rollenzuweisungen gehöre
 - `graphic-designer/` – Brand Identity, Gestaltung und Medienproduktion
 - `partnership-manager/` – Partnerschaften, Sponsoring-Strategie und Partnerentwicklung
 - `funding-grants-manager/` – Förderprogramme, Förderkalender, Antragsstrategie und Fördermittel-Lernen
+- `project-portfolio-manager/` – organisationsweiter Überblick über Projekte, Vorhaben, Status und Abhängigkeiten
 
 ## Relationship to other documents
 
