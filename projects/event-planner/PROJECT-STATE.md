@@ -114,6 +114,10 @@ Branch:
 
 `event-planner/sync-verified-work`
 
+Pull Request:
+
+`#26 – Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren`
+
 Scope:
 
 - verifizierte Event-Tag-Datumslogik auf aktuellen `main` übertragen,
@@ -124,7 +128,7 @@ Scope:
 
 ## Next Meaningful Step
 
-1. Synchronisations-PR prüfen und nach menschlicher Freigabe nach `main` übernehmen,
+1. PR #26 prüfen und nach menschlicher Freigabe nach `main` übernehmen,
 2. Baseline-Smoke-Test ab Schritt 3 `Turnier` fortsetzen,
 3. Teams und Spielplan prüfen,
 4. Ergebnis speichern und Persistenz prüfen,
