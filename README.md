@@ -121,6 +121,7 @@ system/
 
 knowledge/
     Organisationswissen
+    Sponsoring & Partnerships
 
 standards/
     Gemeinsame Arbeits-, Freigabe-, Lern- und Fortschrittsstandards
@@ -219,6 +220,26 @@ Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 11. `design/ui-standard.md`, wenn eine Bedienoberfläche gestaltet wird
 
 Vor einer längeren Designaufgabe wird ein klares Briefing erstellt. Freigegebene Elemente werden als Locked Elements behandelt und nicht ohne neuen Auftrag verändert.
+
+---
+
+# Für neue Sponsoring- und Partnerarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/partnership-manager/role.md`
+2. `roles/partnership-manager/partnership-standard.md`
+3. `knowledge/sponsoring/README.md`
+4. `knowledge/sponsoring/CURRENT-STATE.md`
+5. `knowledge/sponsoring/strategy.md`
+6. `knowledge/sponsoring/partner-journey.md`
+7. `knowledge/sponsoring/led-media-screen.md`
+8. `knowledge/sponsoring/source-register.md`
+9. relevante ADRs unter `decisions/`
+
+Der Sponsoring-Chat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit in GitHub gesichert.
+
+Verträge, personenbezogene Kontaktdaten und vertrauliche Einzelkonditionen werden weiterhin nur in dafür geeigneten geschützten Systemen gepflegt.
 
 ---
 
