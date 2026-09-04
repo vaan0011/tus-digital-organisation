@@ -10,9 +10,15 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Die bereits manuell verifizierten Event-Datums-Verbesserungen und das fachliche Zielbild werden auf einen frischen Branch des aktuellen `main` synchronisiert.
+Als nächster fachlicher Schritt wird die Logik des Event-Planner-Dashboards und der Eventhistorie festgelegt und anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
 
-Danach wird der noch offene Baseline-Smoke-Test ab dem Turnier-Teil vollständig abgeschlossen. Erst anschließend beginnen weitere funktionale Erweiterungen des Event-Moduls.
+Verbindliche Logikquelle:
+
+`DASHBOARD-LOGIC.md`
+
+Die vom Nutzer bereitgestellten Dashboard-/Historien-Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
+
+Der Baseline-Smoke-Test ist weiterhin nicht vollständig abgeschlossen. Deshalb bleibt der formale Last Known Good offen und darf durch die Dashboard-Arbeit nicht stillschweigend vorweggenommen werden.
 
 Langfristiges fachliches Zielbild:
 
@@ -42,6 +48,8 @@ Reproduzierbare Baseline:
 - Sprache `de_DE`
 - Blueprint: `playground/baseline-3.6.0.json`
 
+PR #26 `Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren` ist nach `main` gemergt. Damit liegen die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und der organisationsweite Datums-Picker-Standard wieder auf dem aktuellen Hauptzweig.
+
 ## Last Known Good
 
 Noch nicht formal dokumentiert.
@@ -53,6 +61,7 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - GitHub ist die maßgebliche Quelle für Code, fachliches Zielbild, Entscheidungen und Entwicklungsstand.
 - Entwicklung erfolgt über Branch und Pull Request.
 - PR #10 mit reproduzierbarer Playground-/Smoke-Test-Infrastruktur wurde nach `main` gemergt.
+- PR #26 mit den später verifizierten Event-Änderungen wurde nach `main` synchronisiert.
 - Der Playground-Preview-Workflow wurde erfolgreich ausgeführt.
 - Smoke-Test Schritt 1 wurde manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Dashboard ist erreichbar.
 - Smoke-Test Schritt 2 wurde manuell bestätigt: Ein Event lässt sich speichern, erneut öffnen und behält seine Kerndaten.
@@ -64,8 +73,24 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - Das daraus abgeleitete organisationsweite Datums-Picker-Muster ist im zentralen `design/ui-standard.md` dokumentiert.
 - Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
 
+## Dashboard Decisions V1
+
+- Hauptdashboard zeigt nicht archivierte Daten; Eventhistorie zeigt archivierte Daten.
+- Ein vergangenes Datum allein entfernt kein Objekt aus dem Dashboard. Archivierung bleibt eine bewusste Handlung.
+- Dashboard-Zähler werden aus Fachdaten berechnet und nicht separat gepflegt.
+- Fußballcamps werden als Event-Art auf dem gemeinsamen Event-Grundmodell geführt, nicht als isolierte zweite Eventverwaltung.
+- Vorgesehene Event-Arten für V1: `event` und `camp`.
+- Turniere bleiben eine eigene fachliche Einheit mit eigener Spielplanlogik.
+- `Schichten` im Hauptdashboard zählt Schichten nicht archivierter Events.
+- Offene Helferplätze werden als handlungsrelevante Aufgabe angezeigt und nicht als Haupt-KPI verwendet.
+- `Offene Aufgaben` ist kein manueller To-do-Manager; Aufgaben werden aus belastbaren Planungszuständen abgeleitet.
+- Die bisherige künstlich einfache Fortschritts-Prozentlogik wird nicht als verbindliche Dashboard-Vorgabe übernommen.
+- Mockup-Farben werden nicht übernommen; die bestehenden UI-Tokens bleiben maßgeblich.
+
 ## Open
 
+- Dashboard-Logik V1 muss gegen den bestehenden Plugin-Code umgesetzt und im Playground geprüft werden.
+- Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
 - Der Baseline-Smoke-Test muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
 - Erst bei vollständigem `PASSED` wird der Baseline-Kandidat als erster formaler Last Known Good eingetragen.
 - Der Versionsunterschied zwischen Plugin-Header `3.6.0` und `VTP_VERSION` `3.5.0` bleibt ein separater kleiner technischer Befund und wird nicht nebenbei verändert.
@@ -89,15 +114,17 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor einer dauerhaften Do
 
 ## Excluded / Already Tried
 
-- Der alte Branch `event-planner/baseline-smoke-test` wird nicht direkt nach `main` gemergt, weil er inzwischen deutlich hinter `main` liegt.
-- Verifizierte Änderungen daraus werden stattdessen selektiv auf einen frischen Branch des aktuellen `main` übertragen.
+- Der alte Branch `event-planner/baseline-smoke-test` wird nicht direkt nach `main` gemergt; die verifizierten Änderungen wurden über PR #26 selektiv synchronisiert.
 - Ältere PRs auf Basis von `organisation` werden nicht gesammelt übernommen.
 - Der Datums-Default wird nicht erst beim Öffnen des nativen Pickers gesetzt.
-- Keine große funktionale Sammeländerung vor Abschluss des Baseline-Smoke-Tests.
+- Dashboard-Aufgaben werden nicht als parallele manuelle To-do-Liste aufgebaut.
+- Camps erhalten keine eigene isolierte Event-Datenwelt.
+- Mockup-Farben ersetzen nicht die bestehenden Plugin-Farben.
 
 ## Relevant Decisions & Standards
 
 - `FUNCTIONAL-SCOPE.md`
+- `DASHBOARD-LOGIC.md`
 - `SMOKE-TEST.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/iteration-and-progress.md`
@@ -112,29 +139,27 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor einer dauerhaften Do
 
 Branch:
 
-`event-planner/sync-verified-work`
-
-Pull Request:
-
-`#26 – Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren`
+`event-planner/dashboard-logic-v1`
 
 Scope:
 
-- verifizierte Event-Tag-Datumslogik auf aktuellen `main` übertragen,
-- Datums-Picker-Standard sichern,
-- fachliches Zielbild nach `main` bringen,
-- Projektstatus bereinigen,
-- keine neue fachliche Funktion erfinden.
+- Dashboard-/Historienlogik fachlich definieren,
+- Mockups als Strukturreferenz festhalten,
+- Event/Camp-/Turnier-/Schicht-Kennzahlen eindeutig definieren,
+- automatisch ableitbare offene Aufgaben definieren,
+- noch keine große Sammelimplementierung.
 
 ## Next Meaningful Step
 
-1. PR #26 prüfen und nach menschlicher Freigabe nach `main` übernehmen,
-2. Baseline-Smoke-Test ab Schritt 3 `Turnier` fortsetzen,
-3. Teams und Spielplan prüfen,
-4. Ergebnis speichern und Persistenz prüfen,
-5. öffentliche Ansicht prüfen,
-6. bei vollständigem `PASSED` den ersten formalen Last Known Good dokumentieren,
-7. danach das bestehende Event-Modul systematisch weiter vervollständigen.
+1. Dashboard-Logik V1 als fachliche Basis prüfen,
+2. Event-Art `event` / `camp` rückwärtskompatibel im Datenmodell einführen,
+3. die vier Haupt-KPIs auf echte Fachdaten umstellen,
+4. Schnellaktionen gemäß Mockup verdrahten,
+5. `Übersicht` kompakt aus aktiven Planungseinheiten ableiten,
+6. `Offene Aufgaben` aus den definierten Regeln erzeugen,
+7. Eventhistorie auf archivierte Daten setzen,
+8. jede funktionale Änderung im Playground verifizieren,
+9. den noch offenen Baseline-Smoke-Test anschließend vollständig abschließen und erst dann einen formalen LKG dokumentieren.
 
 ## Update Rule
 
