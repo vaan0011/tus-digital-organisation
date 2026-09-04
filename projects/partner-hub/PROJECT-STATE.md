@@ -24,7 +24,7 @@ Aktueller Stand:
 - noch keine produktive Datenstruktur,
 - noch keine Login-/Rollenimplementierung,
 - fachlicher Scope in `FUNCTIONAL-SCOPE.md` dokumentiert,
-- Produktabgrenzung zu Partnerportal und öffentlicher Partnerseite in ADR-0006 beschlossen.
+- Produktabgrenzung zu Partnerportal und öffentlicher Partnerseite in ADR-0007 beschlossen.
 
 ## Verified
 
@@ -133,7 +133,7 @@ Es ist ausdrücklich kein vollwertiges soziales Netzwerk oder interner Chat vorg
 - `FUNCTIONAL-SCOPE.md`
 - `README.md`
 - `../partner-portal/PROJECT-STATE.md`
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
 - `../../roles/wordpress-developer/role.md`
