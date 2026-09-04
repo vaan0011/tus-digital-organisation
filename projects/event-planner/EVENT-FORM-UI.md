@@ -14,6 +14,8 @@ Die Oberfläche trennt Navigation, Veranstaltungsdaten, Vorlagenbezug und eventb
 
 Daten werden nicht in großen Sammelfeldern verborgen, wenn sie fachlich strukturiert und wiederverwendbar sein sollen.
 
+**Alle fachlich dauerhaft benötigten Formularwerte werden persistent in der Datenbank gespeichert.** Sessions, Session-IDs oder flüchtiger Browserzustand sind keine dauerhafte Datenquelle. Die verbindliche projektweite Regel steht in `DATA-PERSISTENCE.md`.
+
 ## Main Content
 
 ### 1. Seitentitel und Einordnung
@@ -103,7 +105,31 @@ Die bestehende fachliche Datums-Picker-Logik bleibt verbindlich:
 - kontextbezogene Defaults werden gesetzt, bevor der native Datums-Picker geöffnet wird,
 - manuelle Auswahl wird nicht still überschrieben.
 
-### 5. Responsive Verhalten
+### 5. Persistenz der Formularwerte
+
+Jedes Formularfeld, dessen Wert nach `Event anlegen` oder `Speichern` dauerhaft zum Event gehört, muss in der Datenbank persistiert werden.
+
+Für die Event-Anlage betrifft das mindestens:
+
+- Veranstaltungsname,
+- Startdatum,
+- Enddatum,
+- Veranstaltungsort,
+- Veranstaltungsbeschreibung,
+- zusätzlichen Veranstaltungslink,
+- öffentliche Kalender-Sichtbarkeit,
+- ausgewählte Event-Art bzw. später Camp-spezifische Werte,
+- eventbezogene Sponsor-Zeilen einschließlich Logo-/Medienreferenz.
+
+Nach erfolgreichem Speichern müssen diese Informationen nach Reload, Browser-Neustart, Session-Ende und erneutem Öffnen des Events weiterhin vorhanden sein.
+
+Nicht zulässig ist, dauerhaft benötigte Informationen nur über Session-IDs, JavaScript-Zustand, Query-Parameter oder andere flüchtige Mechanismen wiederzufinden.
+
+Temporärer Zustand ist nur zulässig, solange ein Verlust fachlich ausdrücklich akzeptabel ist und noch kein erfolgreicher dauerhafter Speichervorgang signalisiert wurde.
+
+Die vollständige Regel einschließlich Migration und Persistenztest steht in `DATA-PERSISTENCE.md`.
+
+### 6. Responsive Verhalten
 
 Das zweispaltige Formular ist nur für ausreichend breite Ansichten vorgesehen.
 
@@ -119,7 +145,7 @@ Die Reihenfolge bleibt fachlich nachvollziehbar:
 6. zusätzlicher Link
 7. Kalender-Sichtbarkeit
 
-### 6. Sponsorenübersicht
+### 7. Sponsorenübersicht
 
 Der Sponsorenbereich wird **nicht** als großes unstrukturiertes Text- oder Sammelfeld dargestellt.
 
@@ -135,7 +161,7 @@ Aktion:
 
 Jeder Sponsor ist ein eigener strukturierter Eintrag.
 
-### 7. Sponsor-Zeile
+### 8. Sponsor-Zeile
 
 Eine Sponsor-Zeile trennt mindestens folgende Informationen klar voneinander:
 
@@ -145,11 +171,11 @@ Eine Sponsor-Zeile trennt mindestens folgende Informationen klar voneinander:
 
 Die visuelle Anordnung erfolgt auf breiten Ansichten in einer Zeile bzw. klaren Spalten.
 
-Das Logo wird über einen geeigneten WordPress-Medien-/Upload-Mechanismus gepflegt und nicht als freier Text in ein Sammelfeld geschrieben.
+Das Logo wird über einen geeigneten WordPress-Medien-/Upload-Mechanismus gepflegt und nicht als freier Text in ein Sammelfeld geschrieben. Die dauerhafte Medienreferenz wird im fachlichen Datensatz gespeichert.
 
 Der Homepage-Link ist ein eigenes URL-Feld.
 
-### 8. Sponsor-Aktionen
+### 9. Sponsor-Aktionen
 
 Sponsor-Zeilen benötigen verständliche Aktionen zum:
 
@@ -158,13 +184,13 @@ Sponsor-Zeilen benötigen verständliche Aktionen zum:
 - Entfernen,
 - Speichern, soweit der konkrete Bearbeitungsmodus dies erfordert.
 
-Im **Neuanlage-Modus** werden neu erfasste Sponsor-Zeilen grundsätzlich zusammen mit `Event anlegen` gespeichert. Es ist nicht erforderlich, vor Existenz des Events künstlich jede Zeile separat serverseitig zu speichern.
+Im **Neuanlage-Modus** werden neu erfasste Sponsor-Zeilen grundsätzlich zusammen mit `Event anlegen` dauerhaft in der Datenbank gespeichert. Es ist nicht erforderlich, vor Existenz des Events künstlich jede Zeile separat serverseitig zu speichern.
 
-Im **Bearbeitungsmodus** können Zeilen später einzeln ergänzt oder entfernt werden.
+Im **Bearbeitungsmodus** können Zeilen später einzeln ergänzt oder entfernt werden; die Änderung muss anschließend persistent gespeichert werden.
 
 Werden Icon-Aktionen verwendet, benötigen sie eindeutige Tooltips/ARIA-Labels und dürfen nicht nur durch ihre Grafik verständlich sein.
 
-### 9. Datenstruktur der Event-Sponsoren
+### 10. Datenstruktur der Event-Sponsoren
 
 Die UI benötigt strukturierte Sponsor-Daten statt eines großen Textfelds.
 
@@ -182,22 +208,24 @@ Für die erste Umsetzung gilt:
 
 Eine spätere Verbindung zu einer gemeinsamen Partnerdatenquelle bzw. zum Partner Hub darf möglich bleiben, soll aber nicht Voraussetzung für die einfache Event-Anlage sein und keine doppelte Partnerverwaltung erzwingen.
 
-### 10. Hauptaktion
+### 11. Hauptaktion
 
 Am Ende des Formulars steht die klare primäre Aktion:
 
 `Event anlegen`
 
-Sie speichert mindestens:
+Sie speichert dauerhaft mindestens:
 
 - Veranstaltungsdaten,
 - Kalender-Sichtbarkeit,
 - zusätzliche URL,
 - zum neuen Event erfasste Sponsor-Zeilen.
 
-Weitere Planungsbereiche wie Ablauf, Aufgaben, Helferbedarf, Schichten, Bestellungen oder Ausgaben werden nach dem Anlegen im Event-Bearbeitungsprozess ergänzt.
+Ein erfolgreicher Speichervorgang darf nur bestätigt werden, wenn die relevanten Daten persistent geschrieben wurden.
 
-### 11. Visuelle Leitplanken
+Weitere Planungsbereiche wie Ablauf, Aufgaben, Helferbedarf, Schichten, Bestellungen oder Ausgaben werden nach dem Anlegen im Event-Bearbeitungsprozess ergänzt und unterliegen ebenfalls `DATA-PERSISTENCE.md`, sobald ihre Daten dauerhaft relevant sind.
+
+### 12. Visuelle Leitplanken
 
 Die Mockups definieren:
 
@@ -220,7 +248,7 @@ Für die Implementierung gelten insbesondere:
 - `../../design/logo.md`,
 - die bestehenden Event-Planner-Styles.
 
-### 12. Umsetzung in kleinen Schritten
+### 13. Umsetzung in kleinen Schritten
 
 Die Umsetzung soll nicht als großer Sammelumbau erfolgen.
 
@@ -229,14 +257,16 @@ Sinnvolle Reihenfolge:
 1. obere Event-Navigation und neues Formularlayout,
 2. Vorlagen-Dropdown als vorbereitete UI mit sauberem Leerzustand,
 3. Sponsorenbereich von Sammelfeld auf strukturierte Zeilen umstellen,
-4. bestehende Sponsor-Daten rückwärtskompatibel behandeln bzw. migrieren,
-5. responsive Verhalten und Accessibility prüfen,
-6. vollständigen Ablauf im WordPress Playground verifizieren.
+4. dauerhafte Datenstruktur und bestehende Sponsor-Daten rückwärtskompatibel behandeln bzw. migrieren,
+5. Speichern → Reload → erneutes Öffnen für alle persistenten Felder verifizieren,
+6. responsive Verhalten und Accessibility prüfen,
+7. vollständigen Ablauf im WordPress Playground verifizieren.
 
 ## Relationship to other documents
 
 - `FUNCTIONAL-SCOPE.md` definiert den Gesamtumfang des Event Planners.
 - `DASHBOARD-LOGIC.md` definiert Dashboard, operative Aufgaben sowie Auswertungs-/Historienrichtung.
+- `DATA-PERSISTENCE.md` definiert die verbindliche dauerhafte Datenhaltung für alle fachlich persistenten Werte.
 - `PROJECT-STATE.md` hält den aktuellen Entwicklungsstand.
 - `../../design/ui-standard.md` definiert die organisationsweiten UI-Regeln.
 - `../../design/logo.md` definiert die verbindliche Markenasset-Nutzung.
@@ -253,4 +283,4 @@ Spätere Erweiterungen dürfen die Grundstruktur ergänzen, insbesondere durch:
 - Camp-spezifische Felder bei Event-Art `camp`,
 - optionale Referenzen auf eine zentrale Partnerdatenquelle.
 
-Die Event-Anlage soll dabei weiterhin kompakt bleiben. Zusätzliche Spezialfunktionen werden nur dort eingeblendet, wo sie für den gewählten Event-Typ tatsächlich relevant sind.
+Die Event-Anlage soll dabei weiterhin kompakt bleiben. Zusätzliche Spezialfunktionen werden nur dort eingeblendet, wo sie für den gewählten Event-Typ tatsächlich relevant sind. Alle dauerhaft benötigten neuen Felder müssen vor ihrer UI-Umsetzung eine definierte persistente Datenquelle besitzen.
