@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return startDate && startDate.value ? startDate.value : '';
     }
 
-    function prepareEventDay(input) {
+    function applyEventDayDefault(input) {
         if (!input || input.value) return;
         var suggestion = suggestedEventDay(input);
         if (!suggestion) return;
@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = suggestion;
         input.dataset.vtpAutoDefault = '1';
         input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+
+    function defaultNewestEventDay() {
+        var dayDates = document.querySelectorAll('#vtp-event-days .vtp-day-date');
+        if (!dayDates.length) return;
+        applyEventDayDefault(dayDates[dayDates.length - 1]);
     }
 
     if (startDate && endDate) {
@@ -79,15 +85,11 @@ document.addEventListener('DOMContentLoaded', function () {
         syncMinimum();
     }
 
-    document.addEventListener('pointerdown', function (event) {
-        if (event.target.matches('#vtp-event-days .vtp-day-date')) {
-            prepareEventDay(event.target);
-        }
-    });
-
-    document.addEventListener('focusin', function (event) {
-        if (event.target.matches('#vtp-event-days .vtp-day-date')) {
-            prepareEventDay(event.target);
+    document.addEventListener('click', function (event) {
+        if (event.target.id === 'vtp-add-day') {
+            // Der bestehende Event-Ablauf erzeugt den neuen Tag im selben Click-Event.
+            // Den Default direkt danach setzen, bevor der Nutzer den nativen Picker öffnet.
+            window.setTimeout(defaultNewestEventDay, 0);
         }
     });
 
