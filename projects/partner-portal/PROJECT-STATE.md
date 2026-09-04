@@ -62,7 +62,7 @@ Die verbindliche Logik lautet:
 - macht Ziele, Leistungen, Wirkung, Projekte, Kampagnen, Angebote, Jobs, Inhalte und Netzwerk nutzbar,
 - unterstützt den jährlichen Partner-Check-in.
 
-Partnerportal und Partner Hub greifen auf gemeinsame fachliche Partnerdaten zurück. Die Produktabgrenzung ist in `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
+Partnerportal und Partner Hub greifen auf gemeinsame fachliche Partnerdaten zurück. Die Produktabgrenzung ist in `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
 
 ### 3. Bestätigte Produktentscheidungen
 
@@ -334,7 +334,7 @@ Version 1 muss zuerst die **interne Partnerarbeit** überzeugend organisieren.
 - `../partner-hub/PROJECT-STATE.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../knowledge/sponsoring/CURRENT-STATE.md`
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 - `../event-planner/PROJECT-STATE.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../design/design-principles.md`
