@@ -398,7 +398,7 @@ Der Partner Hub ist erfolgreich, wenn er im Alltag spürbar dazu führt, dass:
 - `../../design/ui-standard.md` definiert die gemeinsame TuS-UI.
 - `../../design/logo.md` definiert die verbindliche Logoquelle und deren Nutzung.
 - `../../roles/wordpress-developer/development-standard.md` definiert den technischen Entwicklungsstandard.
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert die verbindliche Produktabgrenzung.
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert die verbindliche Produktabgrenzung.
 
 Dieses Dokument ist die fachliche Quelle für den langfristig vorgesehenen Funktionsumfang des Partner Hubs.
 
