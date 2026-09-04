@@ -56,13 +56,14 @@ Der reproduzierbare Ablauf ist in `SMOKE-TEST.md` definiert. Die fest gepinnte P
 - Der Baseline-Smoke-Test für Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
 - Im Plugin-Header steht `3.6.0`, während `VTP_VERSION` noch `3.5.0` ist. Die Konstante wird im aktuellen Stand für Admin- und Public-CSS-Cache-Versionierung verwendet. Dieser Befund wird nicht nebenbei behoben.
 - Frühere Entwicklungsversuche und verworfene Ansätze sind nur dann zu übernehmen, wenn sie aus Repository, PRs oder anderen belastbaren Quellen rekonstruiert werden können. Sie werden nicht aus Erinnerung erfunden.
-- Die Event-Tag-Datumslogik und der organisationsweite Datums-Picker-Standard liegen im Folge-Branch `event-planner/event-date-picker-default` und müssen noch manuell geprüft werden.
+- Der korrigierte Event-Tag-Datums-Default im Folge-Branch `event-planner/event-date-picker-default` muss noch manuell geprüft werden.
 
 ## Excluded / Already Tried
 
 - Ältere Entwicklungs-PRs auf Basis des früheren Branches `organisation` gelten nicht automatisch als aktueller Entwicklungsstand oder Last Known Good.
 - Funktionale Änderungen aus diesen PRs werden nicht gesammelt übernommen, bevor die 3.6.0-Baseline formal verifiziert wurde.
 - Die Annahme „Playground-PR-Preview funktioniert erst, wenn der Workflow bereits in `main` liegt“ gilt für dieses Repository als widerlegt.
+- Der Ansatz, bei einem leeren nativen `<input type="date">` den kontextbezogenen Default erst während `pointerdown` oder `focus` zu setzen, wurde im Chrome-basierten WordPress Playground manuell widerlegt: Der Picker öffnete zwar im relevanten Monat, übernahm den neu gesetzten Wert aber nicht zuverlässig als ausgewähltes Datum. Dieser Weg wird nicht wiederholt.
 
 ## Relevant Decisions & Standards
 
@@ -92,20 +93,22 @@ Aktueller gestapelter UX-Branch:
 
 Aktueller UX-Scope:
 
-- neue Event-Tage verwenden einen kontextbezogenen Datums-Default,
-- der Datums-Picker startet dadurch im fachlich relevanten Zeitraum,
+- neue Event-Tage erhalten ihren kontextbezogenen Datums-Default bereits beim Klick auf `Tag hinzufügen`, also bevor ein nativer Kalender-Picker geöffnet wird,
+- der nächste Tag leitet sich aus `vorheriger Event-Tag + 1 Tag` ab,
 - manuelle Datumswahl wird nicht automatisch überschrieben,
-- der gemeinsame UI-Standard enthält verbindliche Regeln für kontextbezogene Datums-Picker.
+- der gemeinsame UI-Standard enthält verbindliche Regeln für kontextbezogene Datums-Picker und verlangt Defaults vor der Picker-Interaktion.
 
 ## Next Meaningful Step
 
-1. neuen Event-Tag im Playground des aktuellen UX-Branches testen,
-2. prüfen, dass ein leerer neuer Tag beim Öffnen `vorheriger Event-Tag + 1 Tag` verwendet,
-3. prüfen, dass bei fehlendem vorherigen Tag das Event-Startdatum verwendet wird,
-4. prüfen, dass eine manuelle Datumswahl danach nicht überschrieben wird,
-5. Folge-PR nach menschlicher Freigabe in den Baseline-Branch übernehmen,
-6. anschließend Smoke-Test ab Schritt 3 fortsetzen,
-7. bei vollständigem `PASSED` den Baseline-Kandidaten als ersten formalen Last Known Good dokumentieren.
+1. aktuellen Folge-PR im Playground neu laden,
+2. Event mit Tag 1 `26.09.2026` und Tag 2 `27.09.2026` öffnen,
+3. `Tag hinzufügen` klicken,
+4. prüfen, dass Tag 3 bereits vor Öffnen des Pickers `28.09.2026` anzeigt,
+5. den Picker öffnen und prüfen, dass `28.09.2026` der aktive Wert ist,
+6. Datum manuell ändern und prüfen, dass die Auswahl bestehen bleibt,
+7. Folge-PR nach menschlicher Freigabe in den Baseline-Branch übernehmen,
+8. anschließend Smoke-Test ab Schritt 3 fortsetzen,
+9. bei vollständigem `PASSED` den Baseline-Kandidaten als ersten formalen Last Known Good dokumentieren.
 
 ## Update Rule
 
