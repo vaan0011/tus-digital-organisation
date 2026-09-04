@@ -34,6 +34,7 @@ Persönlichkeit, individuelle Entwicklung und konkrete Rollenzuweisungen gehöre
 - `archivist/` – Bewahrung und Erschließung der Vereinsgeschichte
 - `graphic-designer/` – Brand Identity, Gestaltung und Medienproduktion
 - `partnership-manager/` – Partnerschaften, Sponsoring-Strategie und Partnerentwicklung
+- `funding-grants-manager/` – Förderprogramme, Förderkalender, Antragsstrategie und Fördermittel-Lernen
 
 ## Relationship to other documents
 

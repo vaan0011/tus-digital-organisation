@@ -145,6 +145,33 @@ Finanzielle Stabilität und Transparenz sicherstellen.
 
 ---
 
+## Fördermittel & Förderprogramme
+
+**Auftrag**
+
+Passende Förderprogramme systematisch identifizieren, mit realen Vereinsprojekten verbinden, Fristen steuern, Förderfähigkeit belastbar prüfen und professionelle Anträge vorbereiten.
+
+Der Bereich arbeitet querschnittlich und unterstützt andere Verantwortungsbereiche dabei, förderfähige Vorhaben frühzeitig zu erkennen und korrekt aufzusetzen.
+
+**Zugeordnete Rolle**
+
+- Funding & Grants Manager
+
+**Zusammenarbeit**
+
+- Finanzen
+- Vereinsentwicklung
+- Sport
+- Veranstaltungen
+- Infrastruktur
+- Gesellschaft & Soziales
+- Kommunikation
+- Sponsoring
+- Datenschutz & IT
+- Archiv & Vereinsgeschichte
+
+---
+
 ## Infrastruktur
 
 **Auftrag**

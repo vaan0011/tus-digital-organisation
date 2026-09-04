@@ -122,6 +122,7 @@ system/
 knowledge/
     Organisationswissen
     Sponsoring & Partnerschaften
+    Fördermittel & Förderprogramme
 
 standards/
     Gemeinsame Arbeits-, Freigabe-, Lern- und Fortschrittsstandards
@@ -238,6 +239,26 @@ Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 Der Sponsoring-Chat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit in GitHub gesichert.
 
 Verträge, personenbezogene Kontaktdaten und vertrauliche Einzelkonditionen werden weiterhin nur in dafür geeigneten geschützten Systemen gepflegt.
+
+---
+
+# Für neue Fördermittelarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/funding-grants-manager/role.md`
+2. `roles/funding-grants-manager/funding-standard.md`
+3. `knowledge/funding/README.md`
+4. `knowledge/funding/CURRENT-STATE.md`
+5. `knowledge/funding/FUNDING-CALENDAR.md`
+6. `knowledge/funding/templates/program-dossier-template.md`
+7. `knowledge/funding/templates/application-checklist.md`
+8. relevante Projektzustände unter `projects/`
+9. relevante ADRs unter `decisions/`
+
+Konkrete Förderprogramme werden zum Zeitpunkt der Bewertung gegen aktuelle offizielle Quellen verifiziert. Frühere Fristen oder Sekundärquellen werden nicht ungeprüft übernommen.
+
+Der Förderchat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit im Förder-Wissensraum und gegebenenfalls in betroffenen Projektzuständen aktualisiert.
 
 ---
 
