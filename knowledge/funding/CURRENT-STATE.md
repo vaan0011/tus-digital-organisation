@@ -14,9 +14,9 @@ Der Förderprozess startet bei realen TuS-Vorhaben. Programme werden nur nach Pr
 
 ### 1. Organisatorischer Stand
 
-Status: `Förderradar operativ aufgebaut`
+Status: `Förderradar operativ aufgebaut – zweite Primärquellenrunde abgeschlossen`
 
-Der Funding & Grants Manager ist eingerichtet. Verbindliche Arbeitsgrundlagen sind:
+Der Funding & Grants Manager arbeitet auf Basis von:
 
 - `../../roles/funding-grants-manager/role.md`
 - `../../roles/funding-grants-manager/funding-standard.md`
@@ -24,13 +24,11 @@ Der Funding & Grants Manager ist eingerichtet. Verbindliche Arbeitsgrundlagen si
 - `FUNDING-CALENDAR.md`
 - Programmdossiers unter `programs/`
 
-GitHub ist das nicht-vertrauliche Fördermittelgedächtnis. Verbindliche Anträge, Eigenmittelzusagen und externe Kommunikation bleiben freigabepflichtig.
+GitHub ist das nicht-vertrauliche Fördermittelgedächtnis. Verbindliche Anträge, Eigenmittelzusagen, externe Kommunikation und Projektfreigaben bleiben freigabepflichtig.
 
 ### 2. Projektinventar
 
-Status: `erste strukturierte Erfassung abgeschlossen`
-
-Das Projektinventar verbindet die digitalen Projekte aus `projects/` mit den realen Vereinsvorhaben aus dem Sponsoring-/Organisationswissen.
+Status: `strukturiert erfasst und mit Förderwegen verknüpft`
 
 Besonders förderrelevant sind aktuell:
 
@@ -44,21 +42,20 @@ Besonders förderrelevant sind aktuell:
 - Integration,
 - Ehrenamtsgewinnung und -bindung,
 - Jugendräume / Funktionsräume,
+- Vereinsgeschichte / Historienarchiv,
+- Jubiläum 125 Jahre,
+- Theater / kulturelle Bildung,
 - langfristig weitere Sportpark-Infrastruktur.
 
-Digitale Projekte werden nicht pauschal als förderfähig behandelt. Förderfit entsteht nur, wenn ein konkreter geförderter Zweck – etwa Ehrenamtsgewinnung – tatsächlich vorliegt.
+Digitale Projekte werden nicht pauschal als förderfähig behandelt. Förderfit entsteht nur, wenn ein konkreter geförderter Fachzweck tatsächlich vorliegt.
 
-### 3. Förderradar
-
-Status: `erste Primärquellenrunde abgeschlossen`
+### 3. Förderradar – aktuelle Prioritäten
 
 Zentrale Übersicht:
 
 - `FUNDING-RADAR.md`
 
-Erste belastbare Prioritäten:
-
-#### A – hohe Priorität
+#### A – hohe Priorität / sofort aktiv klären
 
 1. **BSB Nord Sportgeräteförderung 2026 → zusätzliche Tore**
    - 30 % der anerkannten Kosten,
@@ -70,80 +67,130 @@ Erste belastbare Prioritäten:
    - 30 % Regelförderung,
    - Mindestkosten über 3.500 €,
    - kein Baubeginn / keine förderschädliche Beauftragung ohne Baufreigabe,
-   - vor Antrag muss geklärt werden, dass es sich um förderfähige Sanierung und nicht bloße Reparatur/Bauunterhaltung handelt.
+   - Sanierung muss gegenüber bloßer Reparatur/Bauunterhaltung abgegrenzt werden.
+
+3. **Bad Schönborn Vereinsförderung → laufende Jugend-/Sportanlagenförderung**
+   - TuS Mingolsheim ist in der aktuellen kommunalen Richtlinie ausdrücklich als Sportverein gelistet,
+   - bis zu 25 € je nachgewiesenem aktivem Mitglied unter 18 Jahren im Rahmen eines Gesamtbudgets von 41.000 €,
+   - 0,17 €/m² jährlicher Unterhaltungszuschuss für die in Anlage 2 gelisteten Sportanlagen,
+   - Gemeinde übernimmt 80 % des für die Bewässerung der Sportanlagen notwendigen Wassers,
+   - Regelzuschussfrist ist jährlich 30.06.; für 2026 ist sie bereits verstrichen, daher sofort klären, ob der TuS fristgerecht beantragt hat.
+
+4. **Jubiläumsförderung 125 Jahre → Gemeinde + Landkreis Karlsruhe**
+   - Gemeinde Bad Schönborn: 5 € je Jubiläumsjahr, maximal 1.000 € → bei 125 Jahren rechnerisch 625 €,
+   - Landkreis Karlsruhe: 3 € je Jubiläumsjahr, maximal 300 € → bei 125 Jahren 300 €,
+   - zusammen rechnerisch 925 €, sofern beide Leistungen anwendbar und noch nicht beantragt/ausgezahlt sind,
+   - bei beiden Stellen sofort Status klären; eine öffentlich genannte Landkreis-Frist wurde nicht gefunden.
 
 #### B – vorbereiten / beobachten
 
-- BSB Sportstättenbau → Kunstrasen,
-- BSB Sportstättenbau → Bewässerungsanlage,
+- BSB Sportstättenbau → Kunstrasen und Bewässerungsanlage,
+- LEADER Kraichgau → umsetzungsreifes, innovatives Vereins-/Gemeinschaftsprojekt; aktueller Aufruf bis 30.09.2026,
+- Stiftung Kulturgut Baden-Württemberg → Historienarchiv / Erschließung / Digitalisierung; nächster Stichtag 31.01.2027,
+- Jugendstiftung Baden-Württemberg → echtes jugendgeleitetes Projekt; aktueller Stichtag 30.09.2026,
+- Landesverband Amateurtheater BW → Theaterprojekte 2027; 2026-Mittel ausgeschöpft,
 - BSB Inklusion 2026 → reales inklusives TuS-Vorhaben, Frist 30.09.2026,
-- Aktion Mensch „Sport und Kultur vor Ort“ → reales partizipatives Inklusionsprojekt, Frist 15.10.2026,
-- DSEE Mikroförderprogramm → Ehrenamtsgewinnung/-bindung, Fördergebietscheck 76669 noch offen,
+- Aktion Mensch „Sport und Kultur vor Ort“ → echtes partizipatives Inklusionsprojekt, Frist 15.10.2026,
+- DSEE Mikroförderprogramm → Ehrenamtsgewinnung/-bindung; offizieller PLZ-Fördergebietscheck für 76669 bleibt noch offen,
 - Kooperation Schule–Verein → Jugend-/Mädchenfußball, nächste Ausschreibung vorbereiten,
 - BEG Einzelmaßnahmen → Fassade nur bei echter energetischer Gebäudehüllensanierung,
 - Kommunale Sportstättenbauförderung BW → nur über kommunalen Träger,
-- Integration durch Sport → 2026 geschlossen, Folgerunde beobachten,
-- kommunale Vereinsförderung Bad Schönborn → aktuelle Verwaltungsauslegung noch verbindlich zu bestätigen.
+- Integration durch Sport → 2026 geschlossen, Folgerunde beobachten.
 
 #### C – derzeit nicht verfolgen
 
-- Erasmus+ Small-scale Partnerships Sport als Finanzierung interner TuS-Software. Ein EU-Projekt wird nur verfolgt, wenn ein echter transnationaler Kooperationsbedarf mit mindestens einem Partner aus einem anderen Programmland entsteht.
+- **Bad Schönborn Investitionskostenzuschuss 2026:** ausdrücklich für das Kalenderjahr 2026 ausgesetzt. Für Umkleiden, Kunstrasen und andere Investitionen darf daher kein kommunaler 2026-Investitionszuschuss eingeplant werden.
+- **Erasmus+ Small-scale Partnerships Sport** als Finanzierung interner TuS-Software: kein echter transnationaler Projektbedarf vorhanden.
+- **Landespreis Heimatforschung** als Projektfinanzierung: Preis für bereits abgeschlossene eigenständige Forschungsarbeiten, kein Zuschuss zum Aufbau des Archivs.
+- **Direkte Klimaschutz-Plus-Förderung BW für Vereine:** das aktuelle Programm richtet sich an Kommunen; kein direkter TuS-Antragsweg.
 
-### 4. Zeitkritische Entscheidungen September/Oktober 2026
+### 4. Neue Erkenntnisse der zweiten Radar-Runde
 
-1. **bis 11.09.2026:** prüfen, ob beim TuS bereits ein reales inklusives Angebot / Barrierefreiheitsvorhaben existiert, das zum BSB-Programm passt.
-2. **bis 15.09.2026:** Go/No-Go für Aktion Mensch nur bei realer Zielgruppe, echtem Bedarf und Bereitschaft zur partizipativen Projektentwicklung.
-3. **vor jeder Beauftragung Umkleiden/Kunstrasen/Bewässerung:** BSB-Förderweg und Baufreigabe klären.
-4. **vor Anschaffung Tore:** konkretes Angebot gegen BSB-Sportgeräteförderung prüfen und Nachweisprozess sichern.
+#### Kommunal
 
-### 5. Rechtseinheiten
+Die aktuelle Bad-Schönborn-Richtlinie wurde mit Wirkung zum 01.01.2026 geändert. Sie enthält für den TuS mehrere reale Dauerförderungen. Gleichzeitig wurde wegen der Haushaltslage der Investitionskostenzuschuss für 2026 ausdrücklich ausgesetzt.
+
+Fördervereine sind in der kommunalen Richtlinie grundsätzlich als wirtschaftliche Vereine ausgeschlossen. Für diese Förderlinie ist daher sachlich der `Turn- und Sportverein 1901 Mingolsheim e.V.` der relevante Träger, sofern die jeweiligen weiteren Voraussetzungen erfüllt sind.
+
+#### Region / EU
+
+LEADER ist für den Kraichgau ein realer EU-/Regionalförderweg. Der aktuelle sechste Aufruf läuft vom 03.08. bis 30.09.2026 und richtet sich ausdrücklich auch an Vereine. Gefördert werden nur umsetzungsreife Projekte im Aktionsgebiet bzw. mit Nutzen für das Aktionsgebiet; Projektstart vor Bewilligung ist kritisch. Der TuS besitzt aktuell noch kein ausreichend konkret dokumentiertes LEADER-Projekt, deshalb B statt A.
+
+#### Archiv / Vereinsgeschichte
+
+Die Stiftung Kulturgut Baden-Württemberg ist ein starker potenzieller Förderweg für das Historienarchiv. Sie fördert Erwerb, Erschließung, Erhaltung und Digitalisierung von Archiv- und Bibliotheksgut. Aktuelle Förderrichtlinien (Stand November 2025): Mindestförderung 5.000 €, juristische Personen mit Sitz in Baden-Württemberg sind antragsberechtigt, bei nichtstaatlicher Trägerschaft in der Regel 25 % Eigenbeteiligung; Digitalisate und Metadaten müssen dauerhaft professionell online zugänglich gemacht werden. Ein vergleichbares bewilligtes Projekt 2023 digitalisierte beim MARCHIVUM Mannheim Vereinsbestände, darunter den TSV 1846, mit 59.285 € Förderung. Der direkte TuS-Antrag ist formal möglich, die Einstufung als vergleichbare Einrichtung und das professionelle Erschließungs-/Zugänglichkeitskonzept müssen vorab mit EVALAG geklärt werden.
+
+#### Jugend
+
+Die Jugendstiftung Baden-Württemberg fördert lokale innovative Projekte junger Menschen regelmäßig mit 1.500–6.000 € für Sachkosten und Honorare. Nächster aktueller Stichtag ist 30.09.2026. Ein TuS-Projekt darf hierfür nicht nachträglich als Jugendprojekt etikettiert werden; sinnvoll wäre nur ein tatsächlich von Jugendlichen mitgeplantes und mitumgesetztes Vorhaben.
+
+#### Theater / Kultur
+
+Die Landesförderung über den Landesverband Amateurtheater Baden-Württemberg ist grundsätzlich relevant. Die Mittel 2026 sind ausgeschöpft; aktuell können 2027-Projekte beantragt werden. Besonders passend könnten je nach realem Theaterprojekt kulturelle Bildung, gesellschaftlich relevante Projekte oder partizipative Kulturprojekte sein. Vor Aufnahme eines konkreten Antrags muss die Theatergruppe ein tatsächliches Projekt benennen.
+
+#### Klima – Organisationslernen
+
+Auf der TuS-Homepage ist eine bereits realisierte Förderung aus der Nationalen Klimaschutzinitiative mit Förderkennzeichen `67K20201` und 35 % Förderquote dokumentiert. Dieses historische Förderprojekt wird als Organisationswissen gesichert. Die aktuelle Kommunalrichtlinie fördert weiterhin u. a. energieeffiziente Sportstättenbeleuchtung und nennt gemeinnützige Vereine als mögliche Antragsteller; ohne neues reales Beleuchtungsprojekt wird daraus jedoch keine aktuelle TuS-Chance konstruiert.
+
+### 5. Zeitkritische Entscheidungen September/Oktober 2026
+
+1. **sofort:** Gemeinde Bad Schönborn und Landkreis Karlsruhe prüfen, ob die 125-Jahre-Jubiläumszuschüsse bereits beantragt bzw. ausgezahlt wurden.
+2. **sofort:** intern/bei Gemeinde prüfen, ob der TuS den kommunalen Regelzuschuss 2026 fristgerecht bis 30.06. beantragt hat und wie Bewässerungswasser/Flächenzuschuss aktuell abgerechnet werden.
+3. **bis 11.09.2026:** LEADER-Go/No-Go: nur wenn ein bereits umsetzungsreifes Projekt existiert.
+4. **bis 11.09.2026:** prüfen, ob ein echtes jugendgeleitetes Projekt für die Jugendstiftung vorhanden ist; sonst 2026 auslassen.
+5. **bis 11.09.2026:** reales Inklusionsvorhaben für BSB identifizieren; sonst nicht beantragen.
+6. **bis 15.09.2026:** Go/No-Go Aktion Mensch nur bei realer Zielgruppe und partizipativer Projektentwicklung.
+7. **September/Oktober 2026:** Stiftung Kulturgut mit einer kurzen Vorabskizze zum TuS-Historienarchiv kontaktieren und direkte Förderfähigkeit/Archivstandard klären; Zielstichtag 31.01.2027.
+8. **vor jeder Beauftragung Umkleiden/Kunstrasen/Bewässerung:** BSB-Förderweg und Baufreigabe klären.
+9. **vor Anschaffung Tore:** konkretes Angebot gegen BSB-Sportgeräteförderung prüfen.
+
+### 6. Rechtseinheiten
 
 Beim TuS bestehen drei eigenständige Vereine:
 
-1. TuS 1901 Mingolsheim e.V.
+1. Turn- und Sportverein 1901 Mingolsheim e.V.
 2. Förderverein
 3. Jugendförderverein
 
-Für BSB-Programme ist regelmäßig der beim BSB geführte Gesamtverein maßgeblich; Abteilungen können nicht selbst beantragen. Die konkrete Rechtseinheit wird vor jedem Antrag anhand der offiziellen Antragsberechtigung und der sachlichen Projektzuständigkeit festgelegt. Förderregeln werden nicht durch künstliche Trägerwahl umgangen.
+Die Rechtseinheit wird je Programm sachlich geprüft. Besonders wichtig:
 
-### 6. Offene Verifikationen
+- kommunale Bad-Schönborn-Förderung: Fördervereine sind grundsätzlich ausgeschlossen; Hauptverein ist der naheliegende Antragsteller,
+- BSB: regelmäßig der beim Sportbund geführte Gesamtverein,
+- Stiftung Kulturgut: juristische Person mit Sitz in Baden-Württemberg; fachliche Eignung als archivische/vergleichbare Einrichtung zusätzlich vorab klären,
+- LEADER/Jugendstiftung/LABW: Gemeinnützigkeit und konkrete Projektträgerschaft nach jeweiliger Förderlinie prüfen.
 
-- Ist der Durchführungsort 76669 Bad Schönborn im aktuellen DSEE-Mikroförderprogramm als ländlich/strukturschwach förderfähig?
-- Welche aktuelle Fassung und Verwaltungspraxis gilt für die kommunale Vereinsförderung Bad Schönborn, inklusive Fristen, Förderquoten und Ansprechpartner?
-- Welche Eigentums-/Nutzungsverhältnisse bestehen für die einzelnen Sportparkgebäude/-flächen? Das ist für Bauprogramme wesentlich.
-- Was umfasst das Projekt „Fassade Hauptgebäude“ technisch: Optik/Instandhaltung oder tatsächliche energetische Sanierung?
-- Sind die geplanten Umkleideböden eine förderfähige Sanierung oder reine Reparatur/Bauunterhaltung?
-- Existiert bereits ein reales Inklusionsprojekt oder ein konkreter Bedarf bei Mitgliedern/Zielgruppen?
+### 7. Noch offene Verifikationen
 
-### 7. Förderkalender
+- Hat der TuS die kommunalen Regelzuschüsse 2026 bereits fristgerecht beantragt?
+- Wurden Gemeinde- und Landkreis-Jubiläumszuschüsse für 125 Jahre bereits beantragt oder ausgezahlt?
+- Wie werden Flächenzuschuss und 80-%-Bewässerungswasserübernahme praktisch mit der Gemeinde abgerechnet?
+- Ist der Durchführungsort 76669 im interaktiven DSEE-Fördergebietscheck positiv?
+- Welche Eigentums-/Nutzungsverhältnisse bestehen für die einzelnen Sportparkgebäude/-flächen?
+- Was umfasst „Fassade Hauptgebäude“ technisch?
+- Sind die geplanten Umkleideböden förderfähige Sanierung oder reine Reparatur?
+- Existieren echte Projektideen aus Jugend, Inklusion und Theater für die aktuell offenen Programme?
 
-Status: `befüllt und rückwärts geplant`
+### 8. Förderkalender
 
-Der operative Kalender liegt in:
+Status: `zweite Runde integriert und rückwärts geplant`
 
 - `FUNDING-CALENDAR.md`
 
-Er enthält aktuelle offizielle Fristen und getrennt davon erwartete, noch nicht veröffentlichte nächste Förderfenster.
+### 9. Programmdossiers
 
-### 8. Programmdossiers
+Status: `erweitert`
 
-Status: `Aufbau begonnen`
+Neben den ersten Sport-/Sozial-/Energiedossiers werden Dossiers für kommunale Förderung, Landkreis-Jubiläum, LEADER, Jugendstiftung, Stiftung Kulturgut und Amateurtheater angelegt.
 
-Dossiers werden für die stärksten Chancen angelegt. Sie dokumentieren Förderfähigkeit, Rechtseinheit, Finanzlogik, Vorhabenbeginn, Unterlagen, Ansprechpartner, Auswahlkriterien, Vergleichsprojekte, Risiken und nächste Aktion.
+### 10. Nächster sinnvoller Arbeitsstrang
 
-### 9. Nächster sinnvoller Arbeitsschritt
+Der nächste operative Fokus ist nicht ein dritter breiter Programmscan, sondern die Umwandlung der besten Chancen in konkrete Projektpakete:
 
-1. A-Chance Tore konkret mit geplanter Beschaffung verbinden.
-2. BSB-Vorabklärung zu Umkleideböden vor jeder Beauftragung vorbereiten.
-3. Inklusions-Go/No-Go bis 11.09.2026 herbeiführen.
-4. DSEE-Ortscheck und kommunale Vereinsförderung final verifizieren.
-5. anschließend zweite Radar-Runde für Landkreis/Region, Jugend/Kultur/Archiv und Klimaprojekte durchführen.
-
-### 10. GitHub-Pflicht
-
-Nach relevanter Arbeit werden Current State, Förderradar, Förderkalender, Dossiers und gegebenenfalls Projektzustände aktualisiert.
-
-Der Förderchat selbst ist nicht das dauerhafte Organisationsgedächtnis.
+1. Jubiläumsgelder und kommunale Dauerförderung administrativ sichern,
+2. Tore / Umkleideböden mit realen Kosten und Förderstellen abstimmen,
+3. Archivförderung für 31.01.2027 vorbereiten,
+4. nur bei echten Projektideen zeitkritische September-/Oktober-Programme verfolgen,
+5. anschließend Kunstrasen-/Sportpark-Finanzierungsarchitektur mit BSB, Kommune und ggf. LEADER sauber vorbereiten.
 
 ## Relationship to other documents
 
