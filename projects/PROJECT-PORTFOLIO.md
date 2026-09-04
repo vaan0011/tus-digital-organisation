@@ -20,7 +20,7 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 | Projekt | Bereich / fachlicher Kontext | Status | Verbindliche Detailquelle | Nächster sinnvoller Schritt | Wesentliche Abhängigkeit / Hinweis |
 |---|---|---|---|---|---|
-| Event Planner | Veranstaltungen / WordPress | Aktiv | `event-planner/PROJECT-STATE.md` | Dashboard- und Eventhistorien-Logik weiter umsetzen; Baseline-Smoke-Test vollständig abschließen | formaler Last Known Good noch offen |
+| Event Planner | Veranstaltungen / WordPress | Aktiv | `event-planner/PROJECT-STATE.md` | Dashboard-Logik finalisieren, Zielbild `Auswertung & Historie` klären und Baseline-Smoke-Test vollständig abschließen | formaler Last Known Good noch offen |
 | Mitglieder & Engagement | Mitglieder / Engagement / Organisation | Discovery | `member-engagement/PROJECT-STATE.md` | bestehende Mitgliederverwaltung und gemeinsame Personenidentität klären | darf keine zweite Personendatenwelt erzeugen |
 | Partner Hub | Sponsoring / Partnerships | Discovery | `partner-hub/PROJECT-STATE.md` | gemeinsame Partnerdaten, Rollen/Freigaben und Schnittstellen klären | starke Überschneidung mit Partnerportal prüfen |
 | Partnerportal | Sponsoring / Partnerships | Discovery | `partner-portal/PROJECT-STATE.md` | fachlichen Kern und MVP weiter konsolidieren; Abgrenzung zum Partner Hub klären | Implementierung noch nicht gestartet; Überschneidung mit Partner Hub |
@@ -31,7 +31,7 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 #### Event Planner
 
-Aktive technische Entwicklung findet statt. Der aktuelle Projektzustand enthält einen Baseline-Kandidaten und bereits verifizierte Arbeit, aber noch keinen formal bestätigten Last Known Good.
+Aktive technische Entwicklung findet statt. Der aktuelle Projektzustand enthält einen Baseline-Kandidaten und bereits verifizierte Arbeit, aber noch keinen formal bestätigten Last Known Good. Die Dashboard-Logik wird weiter konkretisiert; die zweite Auswertungsseite entwickelt sich fachlich von einer reinen Eventhistorie in Richtung `Auswertung & Historie`.
 
 #### Partner Hub / Partnerportal
 
