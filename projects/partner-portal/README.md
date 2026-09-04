@@ -2,11 +2,13 @@
 
 ## Purpose
 
-Dieses Projekt entwickelt das WordPress-basierte Partnerportal des TuS Mingolsheim.
+Dieses Projekt entwickelt das WordPress-basierte **interne Arbeitswerkzeug** für die Partnerarbeit des TuS Mingolsheim.
 
-Das Portal soll Sponsoring, Partnerpflege, Kampagnen, Projekte und Anfragen in einer gemeinsamen, einfach bedienbaren Frontend-Anwendung organisieren.
+Das Portal soll Sponsoring, Akquise, Partnerpflege, Kampagnen, Projekte und Anfragen in einer gemeinsamen, einfach bedienbaren Frontend-Anwendung organisieren.
 
 Die tägliche Vereinsarbeit findet **nicht im WordPress-Backend** statt.
+
+Bestehende Partner arbeiten dagegen im separaten, partnerseitigen `Partner Hub`. Beide Bereiche greifen auf gemeinsame fachliche Partnerdaten zurück und erzeugen keine getrennten Datenwelten.
 
 ## Core Principle
 
@@ -26,7 +28,9 @@ Funktionsfülle ohne klaren Nutzen wird vermieden.
 
 ## Main Content
 
-### 1. Nutzerbereiche
+### 1. Drei Zugänge – eine gemeinsame Partnerdatenbasis
+
+Die Partnerarbeit besitzt drei klar getrennte Zugänge:
 
 #### Öffentlich
 
@@ -50,7 +54,7 @@ Unternehmen sollen ihre Wünsche und Ideen über eine interaktive Anfrage überm
 
 Diese Anfrage soll direkt in die interne Partnerarbeit übergehen und keine isolierte E-Mail-Insel erzeugen.
 
-#### Internes TuS-Team
+#### Internes TuS-Team – Partnerportal
 
 Nach Login stehen unter anderem zur Verfügung:
 
@@ -66,19 +70,25 @@ Nach Login stehen unter anderem zur Verfügung:
 - Leistungs- und Beziehungshistorie
 - Auswertung und Wirkung
 
-#### Bestehende Partner – spätere Ausbaustufe
+#### Bestehende Partner – Partner Hub
 
-Perspektivisch kann ein persönlicher Partnerbereich entstehen, zum Beispiel für:
+Der persönliche Bereich bestehender Partner wird fachlich im Projekt `../partner-hub/` geführt.
 
-- Stammdaten
-- Logos und Medien
-- vereinbarte Leistungen
-- geplante Aktivierungen
-- Feedback
-- Veranstaltungsanfragen
-- Wirkung und Auswertung
+Dort sollen Partner unter anderem:
 
-Dieser Bereich gehört nicht zwingend zum ersten Entwicklungsstand.
+- ihre Partnerschaft und Ziele verstehen,
+- vereinbarte und noch nutzbare Leistungen sehen,
+- Verwendung und Wirkung ihres Engagements nachvollziehen,
+- Jobs und Angebote einbringen,
+- Einladungen beantworten,
+- freigegebene Inhalte nutzen,
+- Projekte und Kampagnen entdecken,
+- sich im Partnernetzwerk beteiligen,
+- am jährlichen Partner-Check-in teilnehmen.
+
+Die Grundlogik lautet:
+
+> **öffentlich gewinnen → intern managen → im Partner Hub gemeinsam nutzen**
 
 ### 2. Zentrale fachliche Objekte
 
@@ -87,7 +97,9 @@ Das Portal soll mit wenigen stabilen Objekten arbeiten:
 - Partner / Unternehmen
 - Ansprechpartner
 - Partnerschaft / Vereinbarung
+- Partnerziele
 - historische Leistung
+- vereinbarte Leistung / Erfüllungsstatus
 - Partnerprodukt
 - Asset
 - Event
@@ -96,6 +108,8 @@ Das Portal soll mit wenigen stabilen Objekten arbeiten:
 - Aufgabe / Aktivität
 
 Neue Anforderungen werden bevorzugt durch Beziehungen zwischen diesen Objekten gelöst und nicht automatisch durch neue Module.
+
+Partnerportal und Partner Hub verwenden für gemeinsame Objekte dieselbe fachliche Quelle.
 
 ### 3. Partner Journey
 
@@ -115,6 +129,8 @@ Die Journey wird vollständig auf Deutsch abgebildet:
 12. Verlängerung / Ausbau
 
 Ein Soft Exit kann eine kleine Unterstützung, einen Sachpreis, eine Tombola, eine Einzelaktion oder eine Wiedervorlage auslösen.
+
+Partnerziele und Ergebnisse des jährlichen Partner-Check-ins fließen in Bedarfsanalyse, Aktivierung und Verlängerung zurück.
 
 ### 4. Kampagnen
 
@@ -155,7 +171,17 @@ Dadurch werden unter anderem sichtbar:
 
 Vertrauliche Finanz- und Vertragsdetails werden im geschützten System gespeichert und nicht im öffentlichen Repository.
 
-### 6. UX- und UI-Standard
+### 6. Gemeinsame Objektverantwortung
+
+Gemeinsam genutzte Informationen werden nicht in mehreren TuS-Systemen unabhängig gepflegt.
+
+Beispiele:
+
+- Der Event Planner ist fachliche Quelle eines Events; Partnerportal und Partner Hub referenzieren es.
+- Ein im Partner Hub eingereichter und vom TuS freigegebener Job kann auf der Homepage erscheinen, ohne erneut angelegt zu werden.
+- Partnerstammdaten, Partnerziele und vereinbarte Leistungen werden zentral geführt und nur kontextbezogen dargestellt.
+
+### 7. UX- und UI-Standard
 
 Verbindlich sind insbesondere:
 
@@ -170,7 +196,7 @@ Verbindlich sind insbesondere:
 - keine Doppelpflege
 - WordPress-Backend nur für technische Administration
 
-### 7. Bewusste Nicht-Ziele für den ersten Stand
+### 8. Bewusste Nicht-Ziele für den ersten Stand
 
 Der erste Entwicklungsstand soll nicht gleichzeitig werden zu:
 
@@ -180,13 +206,15 @@ Der erste Entwicklungsstand soll nicht gleichzeitig werden zu:
 - LED-Steuerung
 - Social-Media-Automatisierung
 - vollautomatischem Vertragsgenerator
-- komplexem Self-Service-Portal für Partner
+- partnerseitigem Self-Service-Portal; dafür ist der Partner Hub zuständig
 
-Der erste Stand soll die **Partnerarbeit zuverlässig organisieren**.
+Der erste Stand soll die **interne Partnerarbeit zuverlässig organisieren**.
 
 ## Relationship to other documents
 
 - `PROJECT-STATE.md`
+- `../partner-hub/README.md`
+- `../partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../design/design-principles.md`
@@ -194,21 +222,24 @@ Der erste Stand soll die **Partnerarbeit zuverlässig organisieren**.
 - `../../roles/wordpress-developer/role.md`
 - `../../roles/wordpress-developer/development-standard.md`
 - `../../standards/iteration-and-progress.md`
+- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
-Vor Beginn der Implementierung werden Datenmodell, zentrale Ansichten und MVP-Umfang kompakt festgelegt.
+Vor Beginn der Implementierung werden gemeinsame Partnerdatenbasis, Objektverantwortung, zentrale Ansichten und MVP-Umfang kompakt festgelegt.
 
 Ein neuer Entwickler oder Coding-Chat liest vor Arbeitsbeginn mindestens:
 
 1. `PROJECT-STATE.md`
 2. `README.md`
-3. `../../knowledge/sponsoring/README.md`
-4. `../../roles/wordpress-developer/role.md`
-5. `../../roles/wordpress-developer/development-standard.md`
-6. `../../architecture/stability-and-simplicity.md`
-7. `../../design/design-principles.md`
-8. `../../design/ui-standard.md`
-9. `../../standards/iteration-and-progress.md`
+3. `../partner-hub/PROJECT-STATE.md`
+4. `../../knowledge/sponsoring/README.md`
+5. `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+6. `../../roles/wordpress-developer/role.md`
+7. `../../roles/wordpress-developer/development-standard.md`
+8. `../../architecture/stability-and-simplicity.md`
+9. `../../design/design-principles.md`
+10. `../../design/ui-standard.md`
+11. `../../standards/iteration-and-progress.md`
 
 Neue Funktionen werden erst ergänzt, wenn ihr praktischer Nutzen den zusätzlichen Bedien- und Wartungsaufwand rechtfertigt.
