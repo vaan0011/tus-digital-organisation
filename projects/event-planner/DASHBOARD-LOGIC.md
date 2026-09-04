@@ -2,17 +2,22 @@
 
 ## Purpose
 
-Dieses Dokument definiert die fachliche Logik des Event-Planner-Dashboards und der Eventhistorie.
+Dieses Dokument definiert die fachliche Logik des Event-Planner-Dashboards sowie die Richtung für Auswertung und Historie.
 
-Es beschreibt bewusst zuerst **welche Informationen angezeigt werden und wie sie berechnet werden**. Das visuelle Layout orientiert sich an den abgestimmten Mockups, übernimmt aber ausschließlich die bestehenden TuS-/Event-Planner-UI-Standards und nicht die Mockup-Farben.
+Es beschreibt bewusst zuerst **welche Informationen angezeigt werden, woher sie stammen und wie sie berechnet werden**. Das visuelle Layout orientiert sich an den abgestimmten Mockups, übernimmt aber ausschließlich die bestehenden TuS-/Event-Planner-UI-Standards und nicht die Mockup-Farben.
 
 ## Core Principle
 
-**Das Dashboard zeigt den aktuellen Arbeitsstand des Event Planners. Die Historie zeigt abgeschlossene und archivierte Planung.**
+**Das Dashboard ist die operative Startseite für anstehende Veranstaltungen und offene Organisationsarbeit.**
 
-Dashboard-Zahlen und offene Aufgaben werden aus den echten Event-, Turnier- und Helferdaten abgeleitet. Es gibt keine separat manuell gepflegten Dashboard-Zähler oder Dashboard-Aufgaben.
+Dashboard-Zahlen, Übersichten und Aufgaben werden aus den echten Event-, Turnier-, Camp- und Helferdaten abgeleitet. Es gibt keine separat gepflegten Dashboard-Zähler.
 
-Ein Objekt verschwindet nicht automatisch nur deshalb aus dem Dashboard, weil sein Datum in der Vergangenheit liegt. Solange es nicht bewusst archiviert wurde, bleibt es Teil des aktuellen Arbeitsstandes und kann als offene Aufgabe zur Nachbereitung/Archivierung erscheinen.
+Offene Aufgaben bestehen aus zwei Quellen:
+
+1. **echten Organisationsaufgaben**, die manuell oder aus Event-Templates entstehen,
+2. **Systemhinweisen**, die sich zuverlässig aus dem Planungszustand ableiten lassen.
+
+Ein Objekt verschwindet nicht automatisch nur deshalb aus dem Arbeitsbestand, weil sein Datum in der Vergangenheit liegt. Solange es nicht bewusst abgeschlossen/archiviert wurde, bleibt es nachbearbeitbar und kann als offene Aufgabe erscheinen.
 
 ## Main Content
 
@@ -26,7 +31,14 @@ Untertitel:
 
 `Zentrale Übersicht für Events, Turniere, Fußballcamps und Helferschichten`
 
-Das Hauptdashboard enthält vier Schnellaktionen, vier Kennzahlen sowie die Bereiche `Übersicht` und `Offene Aufgaben`.
+Das Hauptdashboard enthält:
+
+- vier Schnellaktionen,
+- vier Kennzahlen,
+- den Bereich `Übersicht`,
+- den Bereich `Offene Aufgaben`.
+
+Die Mockup-Farben sind nicht verbindlich. Die spätere Umsetzung verwendet die bestehenden Event-Planner-/TuS-UI-Tokens.
 
 ### 2. Schnellaktionen
 
@@ -36,8 +48,6 @@ Die vier primären Aktionen sind:
 - `neues Turnier`
 - `neues Camp`
 - `Schichten öffnen`
-
-Logik:
 
 #### Neues Event
 
@@ -49,9 +59,9 @@ Logik:
 
 #### Neues Camp
 
-Öffnet grundsätzlich dasselbe Event-Grundmodell wie `neues Event`, setzt aber die Event-Art `camp`.
+Öffnet das gemeinsame Event-Grundmodell mit der Event-Art `camp`.
 
-Ein Fußballcamp wird **nicht** als eigene isolierte Datenwelt aufgebaut. Camp-spezifische Funktionen können später am gemeinsamen Event-Grundmodell ergänzt werden.
+Ein Fußballcamp ist fachlich ein spezialisiertes Event und **keine eigene isolierte Datenwelt**.
 
 #### Schichten öffnen
 
@@ -59,196 +69,280 @@ Ein Fußballcamp wird **nicht** als eigene isolierte Datenwelt aufgebaut. Camp-s
 
 ### 3. Event-Arten
 
-Die bestehende Event-Tabelle benötigt für die Dashboard- und Camp-Logik eine einfache fachliche Klassifikation.
+Die bestehende Event-Tabelle benötigt für Dashboard und Camps eine einfache fachliche Klassifikation.
 
 Vorgesehene Grundwerte:
 
 - `event`
 - `camp`
 
-Bestehende Events werden bei Einführung der Klassifikation ohne Datenverlust als `event` behandelt.
+Bestehende Events werden bei Einführung dieser Klassifikation ohne Datenverlust als `event` behandelt.
 
-Turniere bleiben aufgrund ihrer eigenen Team-, Spielplan- und Ergebnislogik eine separate fachliche Einheit und können weiterhin mit einem Event verknüpft sein.
+Turniere bleiben wegen ihrer eigenen Team-, Spielplan- und Ergebnislogik eine separate fachliche Einheit und können weiterhin mit einem Event verknüpft sein.
 
-### 4. Kennzahl `Events`
+### 4. Fußballcamps
+
+Fußballcamps nutzen das Event-Grundmodell und damit insbesondere:
+
+- Stammdaten,
+- Zeitraum,
+- Veranstaltungs-/Trainingsort,
+- Ablauf und Programmpunkte,
+- Helferschichten, falls benötigt,
+- Aufgaben und organisatorische Checklisten,
+- spätere Historie.
+
+Zusätzlich benötigt ein Camp camp-spezifische Informationen, insbesondere:
+
+- Ausrichter / Anbieter,
+- öffentliche Camp-Beschreibung,
+- Teilnehmerzahl bzw. Teilnehmerlimit, sofern relevant,
+- Preis-/Teilnahmeinformationen,
+- Trainingsort,
+- Buchungsart,
+- Buchungslink bzw. Anmeldeweg.
+
+Für die Buchungsart sind mindestens folgende Fälle vorgesehen:
+
+- `intern`: Anmeldung/Buchung über eine vom TuS bereitgestellte Camp-Seite,
+- `extern`: Buchung erfolgt beim externen Ausrichter; der TuS veröffentlicht lediglich Informationen und den externen Buchungslink,
+- `keine Buchung`: reine Informationsseite, falls für einen Sonderfall keine Anmeldung benötigt wird.
+
+Ein externer Camp-Anbieter mit eigener Buchungsplattform wird deshalb **nicht** in eine TuS-Buchungslogik gezwungen.
+
+Die öffentliche Camp-Seite soll später aus denselben gepflegten Daten erzeugt werden und nicht separat in WordPress manuell nachgebaut werden.
+
+### 5. Kennzahl `Events`
 
 Die Kennzahl `Events` zählt alle **nicht archivierten** Datensätze der Event-Art `event`.
 
-Sie wird nicht zusätzlich nach Datum gefiltert.
+Sie wird nicht zusätzlich nach Datum gefiltert, damit noch nicht abgeschlossene Veranstaltungen nicht aus dem Arbeitsbestand verschwinden.
 
-Dadurch bleiben vergangene, aber noch nicht abgeschlossene/archivierte Veranstaltungen sichtbar und gehen nicht still aus dem Arbeitsstand verloren.
-
-### 5. Kennzahl `Turniere`
+### 6. Kennzahl `Turniere`
 
 Die Kennzahl `Turniere` zählt alle Turniere mit Status ungleich `archiviert`.
 
 Ein Turnier kann eigenständig oder mit einem Event verknüpft sein.
 
-Die KPI zählt das Turnier unabhängig von dieser Verknüpfung genau einmal.
+Die KPI zählt jedes Turnier genau einmal.
 
-### 6. Kennzahl `Camps`
+### 7. Kennzahl `Camps`
 
 Die Kennzahl `Camps` zählt alle **nicht archivierten** Datensätze der Event-Art `camp`.
 
-Ein Camp ist damit fachlich ein spezialisierter Event-Typ und keine zweite Eventverwaltung.
-
-### 7. Kennzahl `Schichten`
+### 8. Kennzahl `Schichten`
 
 Die Kennzahl `Schichten` zählt alle Helferschichten, deren zugehöriges Event **nicht archiviert** ist.
 
-Sie zählt nicht nur freie oder belegte Schichten, sondern die gesamte aktuell zu verwaltende Schichtmenge.
+Sie zählt die gesamte aktuell zu verwaltende Schichtmenge.
 
-Offene Helferplätze werden stattdessen im Bereich `Offene Aufgaben` sichtbar gemacht.
+Offene Helferplätze erscheinen zusätzlich als handlungsrelevante Aufgabe.
 
-### 8. Bereich `Übersicht`
+### 9. Bereich `Übersicht`
 
-Die Übersicht soll nicht erneut jede Detailtabelle aus den Untermodulen anzeigen.
+Die Dashboard-Übersicht zeigt **alle anstehenden bzw. aktuell laufenden Planungseinheiten** in einer gemeinsamen chronologischen Sicht:
 
-Sie ist eine kompakte Arbeitsübersicht über die nächsten bzw. noch relevanten Planungseinheiten.
+- Events,
+- Turniere,
+- Fußballcamps.
 
 Grundlogik:
 
-- nicht archivierte Events,
-- nicht archivierte Camps,
-- nicht archivierte Turniere,
-- chronologische Sortierung nach fachlich relevantem Datum,
-- vergangene, noch nicht archivierte Objekte bleiben sichtbar und werden als überfällig/nachzubereiten markiert,
-- verknüpfte Turniere können innerhalb des zugehörigen Events dargestellt werden, damit die Übersicht nicht unnötig doppelt wirkt.
+- zukünftige Objekte werden nach Datum aufsteigend angezeigt,
+- aktuell laufende mehrtägige Events/Camps bleiben sichtbar,
+- vergangene, noch nicht archivierte Objekte werden nicht mehr als `anstehend` geführt, sondern als Nachbereitungs-/Archivierungsaufgabe markiert,
+- verknüpfte Turniere können innerhalb des zugehörigen Events dargestellt werden, sofern dies Doppelungen reduziert.
 
-Pro Eintrag sollen nur die Informationen erscheinen, die für die Orientierung nötig sind:
+Pro Eintrag sollen nur die Informationen erscheinen, die für Orientierung und Einstieg nötig sind:
 
 - Typ,
 - Name,
 - Datum bzw. Zeitraum,
 - Ort, sofern vorhanden,
-- kompakter Planungs-/Statushinweis,
+- kompakter Statushinweis,
 - direkter Einstieg in die Bearbeitung.
 
-Die Übersicht ist Navigation und Arbeitsorientierung, kein Ersatz für die Detailmodule.
+Die Übersicht ist Navigation und Arbeitsorientierung, kein Ersatz für Detailmodule.
 
-### 9. Bereich `Offene Aufgaben`
+### 10. Bereich `Offene Aufgaben`
 
-`Offene Aufgaben` ist **kein manuell gepflegter To-do-Manager**.
+`Offene Aufgaben` ist ein echter operativer Arbeitsbereich.
 
-Die Einträge werden automatisch aus dem tatsächlichen Planungszustand erzeugt.
+Er bündelt **konkrete Organisationsaufgaben** und **automatisch erkannte Systemhinweise**.
 
-V1 soll nur belastbare und direkt handlungsrelevante Regeln enthalten.
+Damit können nicht nur Schichten, sondern die tatsächlichen wiederkehrenden Organisationsarbeiten einer Veranstaltung erfasst werden.
 
-#### Event / Camp
+Typische echte Organisationsaufgaben sind beispielsweise:
 
-Mögliche offene Aufgaben:
+- Catering bestellen,
+- Foodtruck anfragen/bestätigen,
+- Ausschankgenehmigung beantragen,
+- Pilswagen bestellen,
+- Kassen/Wechselgeld richten,
+- Material organisieren,
+- Lieferungen abstimmen,
+- Ansprechpartner bestätigen,
+- Beschilderung vorbereiten,
+- sonstige veranstaltungsspezifische Aufgaben.
 
-- Veranstaltung liegt in der Vergangenheit, ist aber noch nicht archiviert → `Event abschließen / archivieren`.
-- noch keine Programmpunkte vorhanden → `Programm fehlt`.
-- Helferbedarf ist definiert, aber noch keine Schichten wurden erzeugt → `Helferschichten erzeugen`.
-- vorhandene Schichten besitzen noch freie Plätze → `X Helferplätze offen`.
+Diese Liste ist bewusst nicht fest codiert. Der reale Nutzen entsteht dadurch, dass Aufgaben:
 
-Camp-spezifische Prüfungen werden erst ergänzt, wenn die dazugehörigen Camp-Funktionen tatsächlich existieren.
+- manuell an einem Event angelegt werden können,
+- aus Event-Templates übernommen werden können,
+- später aus bewährten Vorjahresveranstaltungen wiederverwendet werden können.
 
-#### Turnier
+#### Minimales Aufgabenmodell
 
-Mögliche offene Aufgaben:
+Eine Aufgabe benötigt in der ersten sinnvollen Ausbaustufe nur:
 
-- keine Teams vorhanden → `Teams fehlen`.
+- Event-Bezug,
+- Titel,
+- optional Kategorie,
+- optional Fälligkeit,
+- optional Verantwortlichkeit,
+- Status `offen` / `erledigt`,
+- Herkunft `manuell` / `template` / `system`.
+
+Weitere Statusstufen oder Prioritätsmodelle werden nur ergänzt, wenn der reale Arbeitsablauf sie benötigt.
+
+#### Systemhinweise Event / Camp
+
+Zusätzlich können aus vorhandenen Daten belastbar erkannt werden:
+
+- Veranstaltung liegt in der Vergangenheit, ist aber noch nicht abgeschlossen/archiviert → `Event abschließen / archivieren`,
+- noch keine Programmpunkte vorhanden → `Programm fehlt`,
+- Helferbedarf ist definiert, aber noch keine Schichten wurden erzeugt → `Helferschichten erzeugen`,
+- vorhandene Schichten besitzen freie Plätze → `X Helferplätze offen`.
+
+Camp-spezifisch können später nur dann Systemhinweise ergänzt werden, wenn die entsprechenden Funktionen vorhanden sind, zum Beispiel:
+
+- externe Buchung gewählt, aber Buchungslink fehlt,
+- Preis-/Teilnahmeinformation fehlt,
+- Trainingsort fehlt.
+
+#### Systemhinweise Turnier
+
+Mögliche belastbare Hinweise:
+
+- keine Teams vorhanden → `Teams fehlen`,
 - Teams vorhanden, aber noch kein Spielplan → `Spielplan fehlt`.
-- weitere Turnieraufgaben werden nur ergänzt, wenn sie fachlich eindeutig und aus vorhandenen Daten zuverlässig ableitbar sind.
 
-#### Priorisierung
+Weitere Turnierhinweise werden erst aufgenommen, wenn sie aus vorhandenen Daten eindeutig ableitbar sind.
 
-Offene Aufgaben werden grundsätzlich nach Dringlichkeit sortiert:
+#### Sortierung
 
-1. vergangene/überfällige Sachverhalte,
-2. zeitnah bevorstehende Veranstaltungen mit fehlender Planung,
-3. sonstige offene Planungspunkte.
+Aufgaben werden nach Handlungsrelevanz sortiert:
+
+1. überfällige Aufgaben,
+2. zeitnah fällige Aufgaben,
+3. Systemhinweise zu bevorstehenden Veranstaltungen,
+4. sonstige offene Aufgaben.
 
 Jede Aufgabe verlinkt möglichst direkt zur Stelle, an der sie erledigt werden kann.
 
-Wenn keine offenen Aufgaben vorliegen, wird ein positiver Leerzustand angezeigt, statt eine leere Box ohne Erklärung zu zeigen.
+Wenn keine offenen Aufgaben vorliegen, wird ein positiver Leerzustand angezeigt.
 
-### 10. Keine künstliche Prozentlogik ohne Nutzen
+### 11. Keine künstliche Prozentlogik ohne Nutzen
 
-Der aktuelle Dashboard-Stand berechnet einen einfachen Fortschrittswert aus wenigen vorhandenen Merkmalen.
+Für Dashboard V1 wird kein Prozentwert nur um seiner selbst willen verwendet.
 
-Für Dashboard V1 wird kein Prozentwert nur um seiner selbst willen benötigt.
+Falls später ein Fortschrittsstatus eingeführt wird, muss fachlich klar sein, welche Schritte zählen. Ein scheinbar präziser Prozentwert ohne belastbare Bedeutung wird vermieden.
 
-Falls später ein Fortschrittsstatus verwendet wird, muss klar definiert sein, welche fachlichen Schritte dafür zählen. Ein scheinbar präziser Prozentwert ohne belastbare Bedeutung soll vermieden werden.
+### 12. Auswertung und Historie – Zielbild noch nicht vollständig festgelegt
 
-### 11. Eventhistorie
+Die zweite Mockup-Seite wird **noch nicht vorschnell nur als `Eventhistorie` festgeschrieben**.
 
-Die Historie erhält eine eigene Ansicht entsprechend dem abgestimmten Mockup.
+Mit den inzwischen gewünschten Jahresauswertungen ist wahrscheinlich eine breitere Funktion sinnvoll, zum Beispiel:
 
-Titel:
+`Auswertung & Historie`
 
-`TuS Eventhistorie`
+Die genaue Bezeichnung und endgültige Seitenstruktur bleiben offen, bis die Informationsbedürfnisse vollständig geklärt sind.
 
-Untertitel:
+Fest steht bereits die obere Kennzahlreihe mit den Kategorien:
 
-`Archiv für Events, Turniere, Fußballcamps und Helferschichten`
+- Events,
+- Turniere,
+- Camps,
+- Schichten.
 
-Die Historie arbeitet ausschließlich mit archivierten Daten bzw. Daten, die einem archivierten Event zugeordnet sind.
+Für Auswertungen soll ein Jahr auswählbar sein. Die Zahlen beziehen sich dann auf den gewählten Zeitraum und werden aus den echten Fachdaten berechnet.
 
-### 12. Historien-Kennzahlen
+### 13. Auswertung `Veranstaltungen pro Jahr`
 
-#### Events
+Der Bereich `Übersicht` der zweiten Seite soll voraussichtlich eine grafische Jahresauswertung enthalten.
 
-Anzahl archivierter Events der Art `event`.
+Ziel ist sichtbar zu machen, wie sich die Veranstaltungsaktivität des TuS entwickelt hat.
 
-#### Turniere
+Sinnvolle Darstellung:
 
-Anzahl archivierter Turniere.
+- Anzahl Events pro Jahr,
+- Anzahl Turniere pro Jahr,
+- Anzahl Camps pro Jahr,
+- optional zusätzliche Schicht-/Helferkennzahlen nur dann, wenn die Grafik dadurch nicht überladen wird.
 
-#### Camps
+Die Grafik wird aus den gespeicherten Event-/Turnierdaten erzeugt und nicht separat gepflegt.
 
-Anzahl archivierter Events der Art `camp`.
+### 14. Helfer-Jahresauswertung
 
-#### Schichten
+Die personenbezogene Jahresauswertung der Helferstunden ist fachlich **nicht Eigentum der Eventhistorie**.
 
-Anzahl der Schichten, deren zugehöriges Event archiviert ist.
+Verantwortung:
 
-Schichten werden dadurch historisch erhalten, ohne einen eigenen künstlichen Archivstatus zu benötigen.
+- Event Planner = konkrete Schichten und tatsächlich bestätigte/geleistete Zeiten pro Event,
+- `member-engagement` = personenzentrierte Jahres-/Periodensicht, Soll-Erfüllung und Rabatt-Berechtigung.
 
-### 13. Historien-Bereich `Übersicht`
+Trotzdem kann eine kompakte Helfer-Jahresauswertung auf der Auswertungsseite des Event Planners sichtbar gemacht werden, sofern sie ihre Daten aus `member-engagement` bezieht.
 
-Die linke Historien-Übersicht zeigt archivierte Planungseinheiten, standardmäßig mit den neuesten vergangenen Veranstaltungen zuerst.
+Empfohlenes Dashboard-Muster für das laufende Jahr:
 
-Sinnvolle spätere Filter:
+- `X Personen haben ihr Helfersoll erfüllt`,
+- `Y Personen fehlen nur noch wenige Stunden`,
+- `Z Personen haben noch größeren offenen Bedarf`,
+- direkter Absprung in die vollständige Mitglieder-/Engagement-Liste.
 
-- Jahr,
-- Typ,
-- Suche.
+Im Event-Planner-Dashboard sollen nicht standardmäßig lange Namenslisten wie `Max Meier – 120 h` erscheinen.
 
-Diese Filter werden erst umgesetzt, wenn die Grundansicht stabil funktioniert.
+Die handlungsrelevanten Listen liegen hinter dem Absprung:
 
-### 14. Historien-Bereich `Details`
+- `Soll erfüllt` → Grundlage für späteren Beitragsnachlass-/Abgleichprozess,
+- `kurz vor Soll` → gezielte Information/Ansprache möglich,
+- `Gesamtliste` → vollständige periodische Auswertung.
 
-Wird ein archiviertes Objekt ausgewählt, zeigt `Details` die dazugehörige verdichtete Historie.
+Die Definition von `kurz vor Soll` wird später als fachliche Regel im Mitglieder-/Engagement-Modul festgelegt und nicht im Event Planner hart codiert.
 
-Bei einem Event/Camp perspektivisch unter anderem:
+### 15. Archivierte Event-Details
+
+Unabhängig von der späteren Seitenbezeichnung soll eine echte Eventhistorie erhalten bleiben.
+
+Abgeschlossene/archivierte Events und Camps müssen später nachvollziehbar machen können:
 
 - Stammdaten,
 - Zeitraum und Ort,
 - Programmpunkte,
+- Aufgaben/Checklisten und deren Abschluss,
 - verknüpfte Turniere,
 - Helferbedarf,
-- Anzahl Schichten,
-- Besetzung bzw. später tatsächlich geleistete Helferstunden,
-- später Bestellungen und Ausgaben.
+- Schichten,
+- tatsächlich bestätigte Helfereinsätze,
+- Bestellungen,
+- Ausgaben,
+- besondere Erkenntnisse für die nächste Durchführung.
 
-Die Historie soll mit wachsendem Event-Modul automatisch wertvoller werden. Sie wird deshalb aus denselben Eventdaten aufgebaut und nicht separat gepflegt.
+Diese Historie entsteht aus denselben operativen Daten und wird nicht separat nachgepflegt.
 
-### 15. Archivierungslogik
+### 16. Archivierungslogik
 
-`archiviert` ist die bewusste Grenze zwischen aktuellem Dashboard und Historie.
+`archiviert` ist die bewusste Grenze zwischen aktuellem Arbeitsbestand und abgeschlossener Historie.
 
 Grundsatz:
 
-- aktive/nicht archivierte Objekte → Dashboard,
-- archivierte Objekte → Historie,
+- aktive/nicht archivierte Objekte → operativer Bestand,
+- zukünftige/laufende Objekte → Dashboard-Übersicht,
+- vergangene, nicht archivierte Objekte → offene Nachbereitungsaufgabe,
+- archivierte Objekte → Historie/Auswertung,
 - vergangenes Datum allein archiviert nichts automatisch.
 
-Damit bleibt die Verantwortung nachvollziehbar und kein noch nicht nachbearbeitetes Event verschwindet unbemerkt.
-
-### 16. Farben und Darstellung
+### 17. Farben und Darstellung
 
 Die Mockups definieren Aufbau, Hierarchie und Vereinfachungsrichtung.
 
@@ -268,15 +362,20 @@ Bestehende Farben werden nicht aufgrund der Canva-Mockups ersetzt.
 - `PROJECT-STATE.md` hält den aktuellen Entwicklungsstand.
 - `SMOKE-TEST.md` definiert die technische Baseline-Prüfung.
 - `../../design/ui-standard.md` definiert die verbindliche UI-Grundlage.
+- `../member-engagement/FUNCTIONAL-SCOPE.md` definiert die personenzentrierte Helfer-Jahresauswertung und Soll-Erfüllung.
 
 ## Future Development
 
 Nach Freigabe dieser Logik erfolgt die Umsetzung in kleinen Schritten:
 
-1. Event-Art `event` / `camp` als rückwärtskompatible Klassifikation einführen,
+1. Event-Art `event` / `camp` rückwärtskompatibel einführen,
 2. Dashboard-Kennzahlen korrekt ableiten,
 3. Schnellaktionen verdrahten,
-4. kompakte `Übersicht` aufbauen,
-5. `Offene Aufgaben` aus belastbaren Regeln ableiten,
-6. Eventhistorie auf dieselbe Datenbasis setzen,
-7. erst danach zusätzliche Komfortfunktionen oder weitere Aufgabenregeln ergänzen.
+4. kompakte anstehende `Übersicht` aufbauen,
+5. echtes Aufgaben-/Checklistenmodell ergänzen,
+6. Systemhinweise in `Offene Aufgaben` integrieren,
+7. Camp-spezifische Informationen und interne/externe Buchungswege ergänzen,
+8. Jahresauswertung und Historie auf dieselbe Datenbasis setzen,
+9. Helfer-Jahresstatus nur über die gemeinsame Datenquelle des Mitglieder-/Engagement-Moduls anbinden.
+
+Diese Reihenfolge ist Orientierung und keine Freigabe für einen großen Sammel-PR.
