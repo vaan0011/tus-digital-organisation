@@ -22,6 +22,10 @@ Verbindliche Dashboard- und Auswertungslogik:
 
 `DASHBOARD-LOGIC.md`
 
+Verbindliche Struktur für Event-Anlage und Sponsorenpflege:
+
+`EVENT-FORM-UI.md`
+
 Verbindlicher Projekt-Checkpoint:
 
 `PROJECT-STATE.md`
@@ -30,14 +34,15 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 
 1. `FUNCTIONAL-SCOPE.md`
 2. `DASHBOARD-LOGIC.md`
-3. `PROJECT-STATE.md`
-4. `../../roles/wordpress-developer/role.md`
-5. `../../roles/wordpress-developer/development-standard.md`
-6. `../../standards/iteration-and-progress.md`
-7. `../../design/design-principles.md`
-8. `../../design/ui-standard.md`
-9. `../../design/logo.md`
-10. relevante Einträge unter `../../decisions/`
+3. `EVENT-FORM-UI.md`
+4. `PROJECT-STATE.md`
+5. `../../roles/wordpress-developer/role.md`
+6. `../../roles/wordpress-developer/development-standard.md`
+7. `../../standards/iteration-and-progress.md`
+8. `../../design/design-principles.md`
+9. `../../design/ui-standard.md`
+10. `../../design/logo.md`
+11. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -51,12 +56,15 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `DASHBOARD-LOGIC.md` beschreibt, **wie** Dashboard, operative Aufgaben und die Richtung von Auswertung/Historie fachlich funktionieren sollen.
 
+`EVENT-FORM-UI.md` beschreibt, **wie** die Event-Anlage strukturiert wird, einschließlich Navigation, Vorlagen-Auswahl und zeilenweiser Sponsorenpflege.
+
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
 ## Relationship to other documents
 
 - `FUNCTIONAL-SCOPE.md`
 - `DASHBOARD-LOGIC.md`
+- `EVENT-FORM-UI.md`
 - `PROJECT-STATE.md`
 - `SMOKE-TEST.md`
 - `../member-engagement/`
