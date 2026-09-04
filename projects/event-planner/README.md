@@ -18,6 +18,10 @@ Verbindlicher fachlicher Funktionsrahmen:
 
 `FUNCTIONAL-SCOPE.md`
 
+Verbindliche Dashboard- und Historienlogik:
+
+`DASHBOARD-LOGIC.md`
+
 Verbindlicher Projekt-Checkpoint:
 
 `PROJECT-STATE.md`
@@ -25,14 +29,15 @@ Verbindlicher Projekt-Checkpoint:
 Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindestens:
 
 1. `FUNCTIONAL-SCOPE.md`
-2. `PROJECT-STATE.md`
-3. `../../roles/wordpress-developer/role.md`
-4. `../../roles/wordpress-developer/development-standard.md`
-5. `../../standards/iteration-and-progress.md`
-6. `../../design/design-principles.md`
-7. `../../design/ui-standard.md`
-8. `../../design/logo.md`
-9. relevante Einträge unter `../../decisions/`
+2. `DASHBOARD-LOGIC.md`, wenn Dashboard oder Historie betroffen sind
+3. `PROJECT-STATE.md`
+4. `../../roles/wordpress-developer/role.md`
+5. `../../roles/wordpress-developer/development-standard.md`
+6. `../../standards/iteration-and-progress.md`
+7. `../../design/design-principles.md`
+8. `../../design/ui-standard.md`
+9. `../../design/logo.md`
+10. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -44,11 +49,14 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `FUNCTIONAL-SCOPE.md` beschreibt, **was** der Event Planner langfristig fachlich leisten soll.
 
+`DASHBOARD-LOGIC.md` beschreibt, **welche fachlichen Informationen Dashboard und Eventhistorie anzeigen und wie sie abgeleitet werden**.
+
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
 ## Relationship to other documents
 
 - `FUNCTIONAL-SCOPE.md`
+- `DASHBOARD-LOGIC.md`
 - `PROJECT-STATE.md`
 - `SMOKE-TEST.md`
 - `../../roles/wordpress-developer/`
