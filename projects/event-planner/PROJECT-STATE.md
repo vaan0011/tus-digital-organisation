@@ -50,13 +50,14 @@ Der reproduzierbare Ablauf ist in `SMOKE-TEST.md` definiert. Die fest gepinnte P
 - Smoke-Test Schritt 1 wurde manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Event-Planner-Dashboard ist erreichbar.
 - Smoke-Test Schritt 2 wurde manuell bestätigt: Ein Testevent lässt sich speichern, erneut öffnen und behält seine Kerndaten.
 - PR #12 `Event Planner: Enddatum startet am Event-Startdatum` wurde in den Baseline-Branch übernommen und manuell als funktionierend bestätigt.
+- Der korrigierte Event-Tag-Datums-Default aus PR #13 wurde manuell bestätigt: Bei Tag 1 `26.09.2026` und Tag 2 `27.09.2026` erhält ein neu hinzugefügter Tag 3 bereits beim Erzeugen den Wert `28.09.2026`; der native Datums-Picker öffnet anschließend im passenden Zeitraum und eine spätere manuelle Auswahl wird nicht automatisch überschrieben.
+- Das daraus abgeleitete organisationsweite Datums-Picker-Muster ist im zentralen `design/ui-standard.md` als verifiziertes Referenzmuster dokumentiert.
 
 ## Open
 
 - Der Baseline-Smoke-Test für Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
 - Im Plugin-Header steht `3.6.0`, während `VTP_VERSION` noch `3.5.0` ist. Die Konstante wird im aktuellen Stand für Admin- und Public-CSS-Cache-Versionierung verwendet. Dieser Befund wird nicht nebenbei behoben.
 - Frühere Entwicklungsversuche und verworfene Ansätze sind nur dann zu übernehmen, wenn sie aus Repository, PRs oder anderen belastbaren Quellen rekonstruiert werden können. Sie werden nicht aus Erinnerung erfunden.
-- Der korrigierte Event-Tag-Datums-Default im Folge-Branch `event-planner/event-date-picker-default` muss noch manuell geprüft werden.
 
 ## Excluded / Already Tried
 
@@ -87,28 +88,22 @@ Baseline Pull Request:
 
 `#10 – Event Planner: reproduzierbare Baseline und Smoke-Test`
 
-Aktueller gestapelter UX-Branch:
+Aktueller Dokumentations-Branch:
 
-`event-planner/event-date-picker-default`
+`event-planner/date-picker-standard-docs`
 
-Aktueller UX-Scope:
+Aktueller Doku-Scope:
 
-- neue Event-Tage erhalten ihren kontextbezogenen Datums-Default bereits beim Klick auf `Tag hinzufügen`, also bevor ein nativer Kalender-Picker geöffnet wird,
-- der nächste Tag leitet sich aus `vorheriger Event-Tag + 1 Tag` ab,
-- manuelle Datumswahl wird nicht automatisch überschrieben,
-- der gemeinsame UI-Standard enthält verbindliche Regeln für kontextbezogene Datums-Picker und verlangt Defaults vor der Picker-Interaktion.
+- das manuell verifizierte Datums-Picker-Verhalten aus PR #13 wird als bewährtes Referenzmuster im zentralen UI-Standard festgehalten,
+- der erfolgreiche manuelle Test und der verworfene Zwischenansatz werden im PROJECT-STATE nachvollziehbar dokumentiert,
+- keine funktionale Änderung am Event Planner.
 
 ## Next Meaningful Step
 
-1. aktuellen Folge-PR im Playground neu laden,
-2. Event mit Tag 1 `26.09.2026` und Tag 2 `27.09.2026` öffnen,
-3. `Tag hinzufügen` klicken,
-4. prüfen, dass Tag 3 bereits vor Öffnen des Pickers `28.09.2026` anzeigt,
-5. den Picker öffnen und prüfen, dass `28.09.2026` der aktive Wert ist,
-6. Datum manuell ändern und prüfen, dass die Auswahl bestehen bleibt,
-7. Folge-PR nach menschlicher Freigabe in den Baseline-Branch übernehmen,
-8. anschließend Smoke-Test ab Schritt 3 fortsetzen,
-9. bei vollständigem `PASSED` den Baseline-Kandidaten als ersten formalen Last Known Good dokumentieren.
+1. Dokumentations-PR nach menschlicher Freigabe in den Baseline-Branch übernehmen,
+2. anschließend Smoke-Test ab Schritt 3 fortsetzen,
+3. bei vollständigem `PASSED` den Baseline-Kandidaten als ersten formalen Last Known Good dokumentieren,
+4. danach die nächsten Event-UX-Verbesserungen wieder in kleinen, getrennten Änderungen bearbeiten.
 
 ## Update Rule
 
