@@ -114,6 +114,8 @@ Verbindliche Regeln:
 
 Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberflächen mit Datumsfeldern.
 
+Als verifiziertes Referenzmuster gilt die Umsetzung im Event Planner: Ein neu erzeugter Event-Tag erhält seinen kontextbezogenen Default bereits beim Anlegen des Felds (`vorheriger Event-Tag + 1 Tag`). Dadurch zeigt das Feld den richtigen Wert, bevor der native Picker geöffnet wird; eine spätere manuelle Auswahl bleibt unangetastet. Der zuvor erprobte Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, wurde im manuellen Browser-Test als unzuverlässig verworfen.
+
 ### 8. Status und Feedback
 
 Nach wichtigen Aktionen muss der Nutzer erkennen können, was passiert ist.
