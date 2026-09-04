@@ -10,11 +10,12 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Als nächster fachlicher Schritt wird die Logik des Event-Planner-Dashboards festgelegt und anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
+Die fachliche Logik für Dashboard, Camps, Aufgaben sowie die Struktur der Event-Anlage ist geklärt und wird anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
 
-Verbindliche Logikquelle:
+Verbindliche Logik- und UI-Quellen:
 
-`DASHBOARD-LOGIC.md`
+- `DASHBOARD-LOGIC.md`
+- `EVENT-FORM-UI.md`
 
 Die vom Nutzer bereitgestellten Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
 
@@ -51,6 +52,8 @@ Reproduzierbare Baseline:
 - Blueprint: `playground/baseline-3.6.0.json`
 
 PR #26 `Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren` ist nach `main` gemergt. Damit liegen die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und der organisationsweite Datums-Picker-Standard auf dem Hauptzweig.
+
+PR #31 `Event Planner: Dashboard-Logik nach Fachklärung präzisieren` ist ebenfalls nach `main` gemergt. Damit sind Camp-Grundlogik, echte Organisationsaufgaben und die Modulgrenze zur Helfer-Jahresauswertung im Hauptstand dokumentiert.
 
 ## Last Known Good
 
@@ -93,6 +96,29 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - Die bisherige künstlich einfache Fortschritts-Prozentlogik wird nicht als verbindliche Dashboard-Vorgabe übernommen.
 - Mockup-Farben werden nicht übernommen; die bestehenden UI-Tokens bleiben maßgeblich.
 
+## Event-Anlage Decisions V1
+
+Verbindliche UI-Quelle:
+
+`EVENT-FORM-UI.md`
+
+Festgelegt:
+
+- obere Event-Navigation mit `neues Event`, `aktive Events`, `Vorlagen`, `Archiv`,
+- aktiver Bereich wird eindeutig hervorgehoben,
+- Event-Anlage erhält eine klare zweispaltige Struktur auf Desktop und eine einspaltige responsive Darstellung auf Mobilgeräten,
+- linke Formularspalte: Veranstaltungsname, Startdatum, Enddatum, Veranstaltungsort,
+- rechte Formularspalte: Veranstaltungsbeschreibung, zusätzlicher Link, öffentliche Kalender-Sichtbarkeit,
+- Vorlagen-Auswahl wird im Kopf der Event-Anlage vorgesehen,
+- ein aus Vorlage erzeugtes Event ist anschließend unabhängig von der Vorlage bearbeitbar,
+- Event-Sponsoren werden nicht mehr in einem großen Sammelfeld dargestellt,
+- Sponsoren werden zeilenweise mit klar getrennten Feldern `Name`, `Logo`, `Link zur Homepage` geführt,
+- neue Sponsor-Zeilen werden im Neuanlage-Modus zusammen mit `Event anlegen` gespeichert,
+- Icon-Aktionen benötigen verständliche Tooltips/ARIA-Labels,
+- für die erste Umsetzung bleibt der Event Planner für die Sponsorendarstellung des konkreten Events zuständig,
+- eine spätere Anbindung an eine gemeinsame Partnerdatenquelle bleibt möglich, ohne die Event-Anlage davon abhängig zu machen,
+- Canva-Mockup-Farben werden nicht übernommen.
+
 ## Auswertung / Historie – aktueller Stand
 
 Festgelegt:
@@ -118,6 +144,8 @@ Helfer-Jahresauswertung:
 ## Open
 
 - Dashboard-Logik V1 muss gegen den bestehenden Plugin-Code umgesetzt und im Playground geprüft werden.
+- Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss in kleinen Änderungen umgesetzt und verifiziert werden.
+- Der bestehende Sponsoren-Sammelwert muss vor Umstellung auf strukturierte Sponsor-Zeilen hinsichtlich Rückwärtskompatibilität/Migration geprüft werden.
 - Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
 - Für echte Organisationsaufgaben ist ein kleines Event-Aufgabenmodell erforderlich; es darf nicht unnötig zu einem komplexen Projektmanagementsystem wachsen.
 - Camp-Grunddaten und interne/externe Buchungswege müssen in kleinen Schritten modelliert werden.
@@ -136,6 +164,7 @@ Der Event Planner ist die fachliche Quelle für konkrete Veranstaltungen und der
 - Fußballcamps und deren Veranstaltungs-/Buchungsinformationen,
 - Turniere,
 - echte Event-Aufgaben und Checklisten,
+- eventbezogene Sponsoren-/Partnerdarstellung,
 - Helferbedarf und konkrete Helferschichten,
 - Schichtzuordnung zu Personen, Mannschaften, Gruppen oder Abteilungen,
 - tatsächlich am Event geleistete und bestätigte Schichtzeiten,
@@ -143,6 +172,8 @@ Der Event Planner ist die fachliche Quelle für konkrete Veranstaltungen und der
 - spätere Event-Templates und Eventhistorie.
 
 Das Projekt `member-engagement` bündelt die personenzentrierte Jahres-/Periodensicht auf Engagement, Helferstunden, Soll-Erfüllung und Rabatt-Berechtigungen. Dadurch wird keine zweite Stunden- oder Helfersoll-Logik im Event Planner aufgebaut.
+
+Eine spätere zentrale Partnerdatenquelle kann Sponsor-Grunddaten liefern. Der Event Planner bleibt jedoch für die konkrete Sponsorendarstellung und Zuordnung am Event zuständig.
 
 Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpflege architektonisch geklärt.
 
@@ -155,12 +186,14 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 - Das Aufgabenmodell wird nicht zu einem allgemeinen Projektmanagementsystem ausgebaut.
 - Camps erhalten keine eigene isolierte Event-Datenwelt.
 - Der Event Planner berechnet keine zweite personenbezogene Jahres-/Rabattlogik parallel zu `member-engagement`.
+- Sponsor-Daten bleiben nicht als unstrukturiertes großes Sammelfeld das Zielbild.
 - Mockup-Farben ersetzen nicht die bestehenden Plugin-Farben.
 
 ## Relevant Decisions & Standards
 
 - `FUNCTIONAL-SCOPE.md`
 - `DASHBOARD-LOGIC.md`
+- `EVENT-FORM-UI.md`
 - `SMOKE-TEST.md`
 - `../member-engagement/FUNCTIONAL-SCOPE.md`
 - `../../standards/employee-operating-standard.md`
@@ -176,34 +209,26 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 
 Branch:
 
-`event-planner/dashboard-logic-v1`
-
-Pull Request:
-
-`#29 – Event Planner: Dashboard-Logik V1 festlegen`
+`event-planner/event-form-ui-spec`
 
 Scope:
 
-- Dashboard-Logik fachlich definieren,
-- Mockups als Strukturreferenz festhalten,
-- Event/Camp-/Turnier-/Schicht-Kennzahlen eindeutig definieren,
-- echte Aufgaben + Systemhinweise abgrenzen,
-- Camp-Zielbild schärfen,
-- Auswertungs-/Historienrichtung und Helfer-Modulgrenze dokumentieren,
-- noch keine große Sammelimplementierung.
+- Event-Anlegen-Screen als verbindliche UI-Struktur dokumentieren,
+- obere Navigation festlegen,
+- Vorlagen-Auswahl verankern,
+- Formularstruktur auf Desktop/Mobil festlegen,
+- Sponsorenpflege als strukturierte Zeilen definieren,
+- noch keine Produktcode- oder Datenbankänderung.
 
 ## Next Meaningful Step
 
-1. PR #29 fachlich prüfen und nach menschlicher Freigabe nach `main` übernehmen,
-2. Event-Art `event` / `camp` rückwärtskompatibel im Datenmodell einführen,
-3. die vier Haupt-KPIs auf echte Fachdaten umstellen,
-4. Schnellaktionen gemäß Mockup verdrahten,
-5. `Übersicht` aus anstehenden/laufenden Planungseinheiten ableiten,
-6. kleines echtes Event-Aufgabenmodell implementieren,
-7. Systemhinweise in `Offene Aufgaben` integrieren,
-8. Camp-Grunddaten und Buchungswege anschließend separat ergänzen,
-9. jede funktionale Änderung im Playground verifizieren,
-10. den noch offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
+1. Event-Anlegen-UI-Spezifikation nach menschlicher Freigabe nach `main` übernehmen,
+2. anschließend Event-Navigation und Formularlayout als kleinen UI-PR umsetzen,
+3. Vorlagen-Dropdown mit sauberem Leerzustand vorbereiten,
+4. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte Sponsor-Zeilen umstellen,
+5. Responsive Verhalten und Accessibility im Playground prüfen,
+6. danach Dashboard-/Camp-/Aufgabenlogik in weiterhin kleinen Schritten umsetzen,
+7. den offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
 
 ## Update Rule
 
