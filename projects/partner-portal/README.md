@@ -222,7 +222,7 @@ Der erste Stand soll die **interne Partnerarbeit zuverlässig organisieren**.
 - `../../roles/wordpress-developer/role.md`
 - `../../roles/wordpress-developer/development-standard.md`
 - `../../standards/iteration-and-progress.md`
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
@@ -234,7 +234,7 @@ Ein neuer Entwickler oder Coding-Chat liest vor Arbeitsbeginn mindestens:
 2. `README.md`
 3. `../partner-hub/PROJECT-STATE.md`
 4. `../../knowledge/sponsoring/README.md`
-5. `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+5. `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 6. `../../roles/wordpress-developer/role.md`
 7. `../../roles/wordpress-developer/development-standard.md`
 8. `../../architecture/stability-and-simplicity.md`
