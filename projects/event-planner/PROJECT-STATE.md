@@ -4,15 +4,19 @@
 
 Diese Datei ist der kompakte, verbindliche Projekt-Checkpoint für den TuS Event Planner.
 
-Sie soll verhindern, dass neue Chats oder Entwickler bereits getroffene Entscheidungen, ausgeschlossene Wege oder den letzten verifizierten Stand verlieren.
+Sie verhindert, dass neue Chats oder Entwickler bereits getroffene Entscheidungen, verifizierte Erkenntnisse, ausgeschlossene Wege oder den letzten belastbaren Stand verlieren.
 
 Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projektzustand verändert.
 
 ## Current Goal
 
-Vor der nächsten funktionalen Erweiterung wird ein reproduzierbarer Entwicklungs- und Testablauf etabliert, damit Änderungen gegen einen bekannten stabilen Stand geprüft werden können.
+Die bereits manuell verifizierten Event-Datums-Verbesserungen und das fachliche Zielbild werden auf einen frischen Branch des aktuellen `main` synchronisiert.
 
-Der aktive Schritt ist PR #10 `Event Planner: reproduzierbare Baseline und Smoke-Test`.
+Danach wird der noch offene Baseline-Smoke-Test ab dem Turnier-Teil vollständig abgeschlossen. Erst anschließend beginnen weitere funktionale Erweiterungen des Event-Moduls.
+
+Langfristiges fachliches Zielbild:
+
+`FUNCTIONAL-SCOPE.md`
 
 ## Current Repository State
 
@@ -20,50 +24,81 @@ Projektpfad:
 
 `projects/event-planner/plugin/verein-turnierplaner/`
 
-Aktuell im `main` dokumentierte Plugin-Version:
+Aktuell dokumentierte Plugin-Version:
 
 `3.6.0`
 
-Aktueller Baseline-Kandidat:
+Bekannter Versionsbefund:
 
-`032f1bd39a96fca6548eefb833442f12ed2aa17f`
+- Plugin-Header: `3.6.0`
+- `VTP_VERSION`: `3.5.0`
+- `VTP_VERSION` wird im aktuellen Stand für CSS-Cache-Versionierung verwendet.
 
-Die Versionsnotiz beschreibt insbesondere die Reihenfolge und Terminierung von Spiel um Platz 3 und Finale.
+Reproduzierbare Baseline:
 
-Governance v1 und v1.1 sind in `main` übernommen. Die früheren Hinweise auf einen noch ausstehenden Governance-Merge sind damit erledigt.
+- Baseline-Kandidat: `032f1bd39a96fca6548eefb833442f12ed2aa17f`
+- WordPress `7.1`
+- PHP `8.2`
+- Sprache `de_DE`
+- Blueprint: `playground/baseline-3.6.0.json`
 
 ## Last Known Good
 
 Noch nicht formal dokumentiert.
 
-Version `3.6.0` und Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` bilden den aktuellen Baseline-Kandidaten, dürfen aber erst nach bestandenem dokumentiertem Smoke-Test als Last Known Good bezeichnet werden.
-
-Der reproduzierbare Ablauf ist in `SMOKE-TEST.md` definiert. Die fest gepinnte Playground-Konfiguration liegt unter `playground/baseline-3.6.0.json`.
+Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach vollständig bestandenem `SMOKE-TEST.md` als Last Known Good bezeichnet werden.
 
 ## Verified
 
-- Der Event Planner liegt im vorgesehenen Projektordner.
-- GitHub ist die maßgebliche Quelle für Code und Entwicklungsdokumentation.
-- Entwicklungsarbeit erfolgt über Branch und Pull Request.
-- Das im Plugin enthaltene TuS-Logo ist byte-identisch mit `design/logo/tus_logo.png` und damit eine technische Projektkopie der zentralen Logoquelle.
-- Der Baseline-Branch `event-planner/baseline-smoke-test` basiert direkt auf dem aktuellen `main`-Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f`.
-- PR #10 verändert keinen Event-Planner-Produktcode; er ergänzt ausschließlich Test-, Playground- und Projektzustands-Infrastruktur.
-- Der neue WordPress-Playground-PR-Preview-Workflow wurde in PR #10 erfolgreich ausgeführt und hat einen funktionalen Preview-Einstieg in den PR eingefügt. Die frühere Annahme, dies sei erst nach Merge in den Default-Branch möglich, ist damit für dieses Repository widerlegt.
+- GitHub ist die maßgebliche Quelle für Code, fachliches Zielbild, Entscheidungen und Entwicklungsstand.
+- Entwicklung erfolgt über Branch und Pull Request.
+- PR #10 mit reproduzierbarer Playground-/Smoke-Test-Infrastruktur wurde nach `main` gemergt.
+- Der Playground-Preview-Workflow wurde erfolgreich ausgeführt.
+- Smoke-Test Schritt 1 wurde manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Dashboard ist erreichbar.
+- Smoke-Test Schritt 2 wurde manuell bestätigt: Ein Event lässt sich speichern, erneut öffnen und behält seine Kerndaten.
+- Das Enddatum verwendet das Event-Startdatum als fachlichen Kontext, solange noch keine bewusste Nutzerauswahl erfolgt ist.
+- Die Event-Tag-Logik aus PR #13 wurde manuell bestätigt: Bei Tag 1 `26.09.2026` und Tag 2 `27.09.2026` erhält ein neu hinzugefügter Tag 3 bereits beim Erzeugen `28.09.2026`.
+- Der native Date-Picker öffnet dadurch im passenden Zeitraum.
+- Eine spätere manuelle Datumswahl wird nicht automatisch überschrieben.
+- Der zuvor getestete Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, ist als unzuverlässig widerlegt.
+- Das daraus abgeleitete organisationsweite Datums-Picker-Muster ist im zentralen `design/ui-standard.md` dokumentiert.
+- Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
 
 ## Open
 
-- Der Baseline-Smoke-Test für Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` muss noch vollständig durchgeführt und mit `PASSED` oder `FAILED` dokumentiert werden.
-- Im Plugin-Header steht `3.6.0`, während `VTP_VERSION` noch `3.5.0` ist. Die Konstante wird im aktuellen Stand für Admin- und Public-CSS-Cache-Versionierung verwendet. Dieser Befund wird nicht im Baseline-Infrastruktur-PR nebenbei behoben.
-- Frühere Entwicklungsversuche und verworfene Ansätze sind nur dann zu übernehmen, wenn sie aus Repository, PRs oder anderen belastbaren Quellen rekonstruiert werden können. Sie werden nicht aus Erinnerung erfunden.
+- Der Baseline-Smoke-Test muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
+- Erst bei vollständigem `PASSED` wird der Baseline-Kandidat als erster formaler Last Known Good eingetragen.
+- Der Versionsunterschied zwischen Plugin-Header `3.6.0` und `VTP_VERSION` `3.5.0` bleibt ein separater kleiner technischer Befund und wird nicht nebenbei verändert.
+- Ältere Entwicklungs-PRs #6 und #7 basieren auf dem früheren Branch `organisation` und gelten nicht als aktueller Entwicklungsstand. Gewünschte Änderungen daraus werden später nur selektiv und gegen einen verifizierten LKG geprüft.
+
+## Module Boundaries
+
+Der Event Planner ist die fachliche Quelle für konkrete Veranstaltungen und deren operative Planung, insbesondere:
+
+- Veranstaltungstage und Programm,
+- Turniere,
+- Helferbedarf und konkrete Helferschichten,
+- Schichtzuordnung zu Personen, Mannschaften, Gruppen oder Abteilungen,
+- tatsächlich am Event geleistete Schichtzeiten,
+- Bestellungen und eventbezogene Ausgaben,
+- spätere Event-Templates und Historie.
+
+Das Projekt `member-engagement` bündelt perspektivisch die personenzentrierte Jahres-/Periodensicht auf Engagement, Helferstunden, Soll-Erfüllung und Rabatt-Berechtigungen. Dadurch wird keine zweite Helferschicht-Logik aufgebaut.
+
+Gemeinsame Mannschafts- und Personenidentitäten werden vor einer dauerhaften Doppelpflege architektonisch geklärt.
 
 ## Excluded / Already Tried
 
-- Ältere Entwicklungs-PRs auf Basis des früheren Branches `organisation` gelten nicht automatisch als aktueller Entwicklungsstand oder Last Known Good.
-- Funktionale Änderungen aus diesen PRs werden nicht gesammelt übernommen, bevor die 3.6.0-Baseline formal verifiziert wurde.
-- Die Annahme „Playground-PR-Preview funktioniert erst, wenn der Workflow bereits in `main` liegt“ gilt für dieses Repository als widerlegt: PR #10 hat den Preview-Button bereits vor Merge erfolgreich erzeugt.
+- Der alte Branch `event-planner/baseline-smoke-test` wird nicht direkt nach `main` gemergt, weil er inzwischen deutlich hinter `main` liegt.
+- Verifizierte Änderungen daraus werden stattdessen selektiv auf einen frischen Branch des aktuellen `main` übertragen.
+- Ältere PRs auf Basis von `organisation` werden nicht gesammelt übernommen.
+- Der Datums-Default wird nicht erst beim Öffnen des nativen Pickers gesetzt.
+- Keine große funktionale Sammeländerung vor Abschluss des Baseline-Smoke-Tests.
 
 ## Relevant Decisions & Standards
 
+- `FUNCTIONAL-SCOPE.md`
+- `SMOKE-TEST.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/approval-and-escalation.md`
@@ -72,36 +107,30 @@ Der reproduzierbare Ablauf ist in `SMOKE-TEST.md` definiert. Die fest gepinnte P
 - `../../design/ui-standard.md`
 - `../../design/logo.md`
 - `../../decisions/README.md`
-- `SMOKE-TEST.md`
 
 ## Active Development
 
 Branch:
 
-`event-planner/baseline-smoke-test`
-
-Pull Request:
-
-`#10 – Event Planner: reproduzierbare Baseline und Smoke-Test`
+`event-planner/sync-verified-work`
 
 Scope:
 
-- reproduzierbare WordPress-Playground-Baseline,
-- verbindlicher Smoke-Test,
-- PR-Preview-Infrastruktur,
-- Aktualisierung dieses Projekt-Checkpoints.
-
-Keine funktionale Änderung am Event Planner.
+- verifizierte Event-Tag-Datumslogik auf aktuellen `main` übertragen,
+- Datums-Picker-Standard sichern,
+- fachliches Zielbild nach `main` bringen,
+- Projektstatus bereinigen,
+- keine neue fachliche Funktion erfinden.
 
 ## Next Meaningful Step
 
-1. den in PR #10 bereitgestellten WordPress-Playground-Preview öffnen,
-2. den Baseline-Kandidaten anhand `SMOKE-TEST.md` vollständig prüfen,
-3. Testergebnis direkt in diesem Entwicklungszyklus dokumentieren,
-4. bei `PASSED` Commit `032f1bd39a96fca6548eefb833442f12ed2aa17f` als ersten formalen Last Known Good eintragen,
-5. PR #10 anschließend prüfen und nach menschlicher Freigabe in `main` übernehmen,
-6. erst danach den nächsten funktionalen Entwicklungs-PR beginnen,
-7. ältere PRs anschließend selektiv auf wiederverwendbare, noch gewünschte Änderungen prüfen.
+1. Synchronisations-PR prüfen und nach menschlicher Freigabe nach `main` übernehmen,
+2. Baseline-Smoke-Test ab Schritt 3 `Turnier` fortsetzen,
+3. Teams und Spielplan prüfen,
+4. Ergebnis speichern und Persistenz prüfen,
+5. öffentliche Ansicht prüfen,
+6. bei vollständigem `PASSED` den ersten formalen Last Known Good dokumentieren,
+7. danach das bestehende Event-Modul systematisch weiter vervollständigen.
 
 ## Update Rule
 
