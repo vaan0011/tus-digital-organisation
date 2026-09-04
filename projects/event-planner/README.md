@@ -26,6 +26,10 @@ Verbindliche Struktur für Event-Anlage und Sponsorenpflege:
 
 `EVENT-FORM-UI.md`
 
+Verbindliche Regel für dauerhafte Datenhaltung:
+
+`DATA-PERSISTENCE.md`
+
 Verbindlicher Projekt-Checkpoint:
 
 `PROJECT-STATE.md`
@@ -35,14 +39,15 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 1. `FUNCTIONAL-SCOPE.md`
 2. `DASHBOARD-LOGIC.md`
 3. `EVENT-FORM-UI.md`
-4. `PROJECT-STATE.md`
-5. `../../roles/wordpress-developer/role.md`
-6. `../../roles/wordpress-developer/development-standard.md`
-7. `../../standards/iteration-and-progress.md`
-8. `../../design/design-principles.md`
-9. `../../design/ui-standard.md`
-10. `../../design/logo.md`
-11. relevante Einträge unter `../../decisions/`
+4. `DATA-PERSISTENCE.md`
+5. `PROJECT-STATE.md`
+6. `../../roles/wordpress-developer/role.md`
+7. `../../roles/wordpress-developer/development-standard.md`
+8. `../../standards/iteration-and-progress.md`
+9. `../../design/design-principles.md`
+10. `../../design/ui-standard.md`
+11. `../../design/logo.md`
+12. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -58,6 +63,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `EVENT-FORM-UI.md` beschreibt, **wie** die Event-Anlage strukturiert wird, einschließlich Navigation, Vorlagen-Auswahl und zeilenweiser Sponsorenpflege.
 
+`DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
+
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
 ## Relationship to other documents
@@ -65,6 +72,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `FUNCTIONAL-SCOPE.md`
 - `DASHBOARD-LOGIC.md`
 - `EVENT-FORM-UI.md`
+- `DATA-PERSISTENCE.md`
 - `PROJECT-STATE.md`
 - `SMOKE-TEST.md`
 - `../member-engagement/`
