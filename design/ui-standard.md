@@ -97,6 +97,25 @@ Regeln:
 - Fehler möglichst direkt am Problem erklären,
 - keine doppelte Eingabe bereits vorhandener Informationen.
 
+#### Datumsfelder und Kalender-Picker
+
+Datumsfelder sollen vorhandenen fachlichen Kontext verwenden und den Nutzer nicht unnötig zu einem weit entfernten Datum navigieren lassen.
+
+Verbindliche Regeln:
+
+- Gibt es bereits ein fachlich relevantes Bezugsdatum, öffnet ein Datumsfeld im dazu passenden Zeitraum und nicht ohne Grund beim heutigen Datum.
+- Abhängige Datumsfelder verwenden einen sinnvollen Default aus dem vorhandenen Kontext, zum Beispiel `Enddatum = Startdatum`, solange der Nutzer noch keine eigene Auswahl getroffen hat.
+- Bei fortlaufenden Datumsreihen wird der nächste sinnvolle Wert aus dem vorherigen Eintrag abgeleitet, zum Beispiel `vorheriger Event-Tag + 1 Tag`.
+- Automatisch gesetzte Defaults dürfen eine spätere bewusste Nutzerauswahl nicht still überschreiben.
+- `min`- und `max`-Grenzen werden nur gesetzt, wenn sie eine fachliche Regel abbilden; sie werden nicht allein zur Navigation im Kalender missbraucht.
+- Kontextbezogene Defaults müssen gesetzt sein, **bevor** der native Kalender-Picker geöffnet wird. Eine Wertänderung erst während `pointerdown`, `focus` oder einer bereits gestarteten Picker-Interaktion gilt nicht als verlässliches Muster.
+- Bei dynamisch erzeugten Datumsfeldern wird der sinnvolle Default deshalb möglichst bereits beim Erzeugen des neuen Felds gesetzt.
+- Gibt es keinen fachlichen Datumsbezug, darf das native Standardverhalten des Browsers verwendet werden.
+
+Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberflächen mit Datumsfeldern.
+
+Als verifiziertes Referenzmuster gilt die Umsetzung im Event Planner: Ein neu erzeugter Event-Tag erhält seinen kontextbezogenen Default bereits beim Anlegen des Felds (`vorheriger Event-Tag + 1 Tag`). Dadurch zeigt das Feld den richtigen Wert, bevor der native Picker geöffnet wird; eine spätere manuelle Auswahl bleibt unangetastet. Der zuvor erprobte Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, wurde im manuellen Browser-Test als unzuverlässig verworfen.
+
 ### 8. Status und Feedback
 
 Nach wichtigen Aktionen muss der Nutzer erkennen können, was passiert ist.
