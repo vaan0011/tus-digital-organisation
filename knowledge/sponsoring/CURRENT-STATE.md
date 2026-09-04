@@ -98,7 +98,7 @@ Aktueller Projektstand:
 - `../../projects/partner-hub/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 
-Die Abgrenzung ist langfristig in `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
+Die Abgrenzung ist langfristig in `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
 
 ### 3. Gemeinsame Datenbasis
 
@@ -217,7 +217,7 @@ Je nach Inhalt werden aktualisiert:
 - `../../projects/partner-portal/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../projects/partner-hub/PROJECT-STATE.md`
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
