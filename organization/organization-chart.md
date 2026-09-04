@@ -112,7 +112,20 @@ Trainer, Mannschaften und sportliche Entwicklung unterstützen.
 
 **Auftrag**
 
-Partnerschaften aufbauen und langfristig pflegen.
+Partnerschaften aufbauen, aktivieren und langfristig pflegen. Der Bereich entwickelt aus Sponsoring nachhaltige Win-win-Partnerschaften und bewahrt Strategie, Arbeitsstand und wiederverwendbare Erkenntnisse als Organisationswissen.
+
+**Zugeordnete Rolle**
+
+- Partnership Manager
+
+**Zusammenarbeit**
+
+- Kommunikation
+- Finanzen
+- Veranstaltungen
+- Sport
+- Vereinsentwicklung
+- Datenschutz & IT
 
 ---
 
