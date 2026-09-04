@@ -55,6 +55,7 @@ Entscheidungen werden fortlaufend nummeriert:
 - `ADR-0003`
 - `ADR-0004`
 - `ADR-0005`
+- `ADR-0006`
 
 Die Nummer bleibt dauerhaft bestehen.
 
@@ -95,6 +96,7 @@ Der Projekt-Checkpoint verweist auf relevante ADRs, dupliziert ihre Begründung 
 - `ADR-0003-central-brand-assets-and-shared-ui.md`
 - `ADR-0004-brand-controlled-design-production.md`
 - `ADR-0005-partnership-manager-and-sponsoring-memory.md`
+- `ADR-0006-systematic-funding-management.md`
 
 ## Related Documents
 
