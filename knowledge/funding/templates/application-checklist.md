@@ -108,7 +108,7 @@ Ein guter Antrag darf nicht an vermeidbaren formalen oder logischen Fehlern sche
 ## Relationship to other documents
 
 - `../README.md`
-- `../../funding-grants-manager/funding-standard.md`
+- `../../../roles/funding-grants-manager/funding-standard.md`
 
 ## Future Development
 
