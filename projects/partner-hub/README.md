@@ -39,7 +39,7 @@ Aktueller Projektstand:
 
 Langfristige Produktabgrenzung:
 
-`../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md`
+`../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 
 Der Functional Scope umfasst insbesondere:
 
@@ -77,7 +77,7 @@ Alle Oberflächen, Felder, Statusbezeichnungen, Navigationen und Arbeitsabläufe
 - `PROJECT-STATE.md` hält nur den aktuellen Entwicklungsstand, offene Architekturfragen und den nächsten sinnvollen Schritt fest.
 - `../partner-portal/README.md` beschreibt das interne Arbeitswerkzeug des TuS.
 - `../../knowledge/sponsoring/README.md` beschreibt die gemeinsame fachliche Sponsoring-Grundlage.
-- `../../decisions/ADR-0006-partnerportal-und-partner-hub-abgrenzung.md` legt die Produktgrenzen verbindlich fest.
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` legt die Produktgrenzen verbindlich fest.
 - gemeinsame UI-, Architektur- und Freigabestandards liegen außerhalb des Projekts in den zentralen Repository-Standards.
 
 ## Future Development
