@@ -108,7 +108,8 @@ Verbindliche Regeln:
 - Bei fortlaufenden Datumsreihen wird der nächste sinnvolle Wert aus dem vorherigen Eintrag abgeleitet, zum Beispiel `vorheriger Event-Tag + 1 Tag`.
 - Automatisch gesetzte Defaults dürfen eine spätere bewusste Nutzerauswahl nicht still überschreiben.
 - `min`- und `max`-Grenzen werden nur gesetzt, wenn sie eine fachliche Regel abbilden; sie werden nicht allein zur Navigation im Kalender missbraucht.
-- Wenn native Browser-Datepicker keinen separaten Startmonat unterstützen, darf ein leeres Feld unmittelbar vor dem Öffnen mit dem fachlich sinnvollen Default vorbelegt werden, damit der Picker im richtigen Zeitraum startet.
+- Kontextbezogene Defaults müssen gesetzt sein, **bevor** der native Kalender-Picker geöffnet wird. Eine Wertänderung erst während `pointerdown`, `focus` oder einer bereits gestarteten Picker-Interaktion gilt nicht als verlässliches Muster.
+- Bei dynamisch erzeugten Datumsfeldern wird der sinnvolle Default deshalb möglichst bereits beim Erzeugen des neuen Felds gesetzt.
 - Gibt es keinen fachlichen Datumsbezug, darf das native Standardverhalten des Browsers verwendet werden.
 
 Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberflächen mit Datumsfeldern.
