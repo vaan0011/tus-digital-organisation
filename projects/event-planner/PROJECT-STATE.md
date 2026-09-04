@@ -12,10 +12,11 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 Die fachliche Logik für Dashboard, Camps, Aufgaben sowie die Struktur der Event-Anlage ist geklärt und wird anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
 
-Verbindliche Logik- und UI-Quellen:
+Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
 - `DASHBOARD-LOGIC.md`
 - `EVENT-FORM-UI.md`
+- `DATA-PERSISTENCE.md`
 
 Die vom Nutzer bereitgestellten Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
 
@@ -54,6 +55,8 @@ Reproduzierbare Baseline:
 PR #26 `Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren` ist nach `main` gemergt. Damit liegen die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und der organisationsweite Datums-Picker-Standard auf dem Hauptzweig.
 
 PR #31 `Event Planner: Dashboard-Logik nach Fachklärung präzisieren` ist ebenfalls nach `main` gemergt. Damit sind Camp-Grundlogik, echte Organisationsaufgaben und die Modulgrenze zur Helfer-Jahresauswertung im Hauptstand dokumentiert.
+
+PR #33 `Event Planner: Event-Anlegen-UI dokumentieren` ist nach `main` gemergt. Damit ist die abgestimmte Struktur der Event-Anlage und der zeilenweisen Sponsorenpflege im Hauptstand dokumentiert.
 
 ## Last Known Good
 
@@ -119,6 +122,27 @@ Festgelegt:
 - eine spätere Anbindung an eine gemeinsame Partnerdatenquelle bleibt möglich, ohne die Event-Anlage davon abhängig zu machen,
 - Canva-Mockup-Farben werden nicht übernommen.
 
+## Data Persistence Decisions V1
+
+Verbindliche Datenhaltungsquelle:
+
+`DATA-PERSISTENCE.md`
+
+Festgelegt:
+
+- alle fachlich dauerhaft benötigten Informationen werden persistent in der Datenbank gespeichert,
+- ein dauerhaft relevantes Formularfeld benötigt vor Implementierung eine definierte Datenbank-/Persistenzquelle,
+- Sessions, Session-IDs, Query-Parameter, JavaScript-Zustand oder vergleichbare flüchtige Mechanismen dürfen nicht Source of Truth für dauerhafte Fachdaten sein,
+- ein erfolgreicher Speichervorgang bedeutet, dass die bestätigten fachlichen Daten dauerhaft persistiert wurden,
+- nach Reload, Browser-Neustart, Session-Ende und erneutem Öffnen müssen gespeicherte Daten weiterhin vorhanden sein,
+- Medien-/Uploaddaten benötigen eine stabile dauerhafte Referenz, z. B. eine WordPress-Attachment-ID,
+- strukturierte Informationen, die später einzeln bearbeitet oder ausgewertet werden, werden strukturiert und nicht nur in Sammelfeldern gespeichert,
+- für neue persistente Felder gehört `Speichern → Reload/Verlassen → erneut öffnen → Wert vergleichen` zum Test,
+- Datenbankänderungen werden nicht durch Quick-&-dirty-Sessionlösungen vermieden,
+- bestehender Datenbestand muss bei Schemaänderungen geschützt bzw. nachvollziehbar migriert werden.
+
+Die Regel gilt projektweit insbesondere für Event-Stammdaten, Camps, Programmpunkte, Turniere, Aufgaben, Schichten, Bestellungen, Ausgaben, Templates und eventbezogene Sponsoreninformationen.
+
 ## Auswertung / Historie – aktueller Stand
 
 Festgelegt:
@@ -145,10 +169,11 @@ Helfer-Jahresauswertung:
 
 - Dashboard-Logik V1 muss gegen den bestehenden Plugin-Code umgesetzt und im Playground geprüft werden.
 - Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss in kleinen Änderungen umgesetzt und verifiziert werden.
+- Vor jeder neuen dauerhaften Formular-/Fachdaten-Erweiterung muss die Datenbankpersistenz gemäß `DATA-PERSISTENCE.md` festgelegt werden.
 - Der bestehende Sponsoren-Sammelwert muss vor Umstellung auf strukturierte Sponsor-Zeilen hinsichtlich Rückwärtskompatibilität/Migration geprüft werden.
 - Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
-- Für echte Organisationsaufgaben ist ein kleines Event-Aufgabenmodell erforderlich; es darf nicht unnötig zu einem komplexen Projektmanagementsystem wachsen.
-- Camp-Grunddaten und interne/externe Buchungswege müssen in kleinen Schritten modelliert werden.
+- Für echte Organisationsaufgaben ist ein kleines persistentes Event-Aufgabenmodell erforderlich; es darf nicht unnötig zu einem komplexen Projektmanagementsystem wachsen.
+- Camp-Grunddaten und interne/externe Buchungswege müssen in kleinen Schritten persistent modelliert werden.
 - Die genaue Auswertungs-/Historienseite bleibt bewusst offen, bis die Informationsstruktur weiter geklärt ist.
 - Die Integration der Helfer-Jahressicht darf erst erfolgen, wenn eine gemeinsame Personen-/Engagement-Datenquelle existiert.
 - Der Baseline-Smoke-Test muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
@@ -187,6 +212,7 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 - Camps erhalten keine eigene isolierte Event-Datenwelt.
 - Der Event Planner berechnet keine zweite personenbezogene Jahres-/Rabattlogik parallel zu `member-engagement`.
 - Sponsor-Daten bleiben nicht als unstrukturiertes großes Sammelfeld das Zielbild.
+- Dauerhaft benötigte Formulardaten werden nicht nur in Session-IDs oder flüchtigem Browserzustand gespeichert.
 - Mockup-Farben ersetzen nicht die bestehenden Plugin-Farben.
 
 ## Relevant Decisions & Standards
@@ -194,6 +220,7 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 - `FUNCTIONAL-SCOPE.md`
 - `DASHBOARD-LOGIC.md`
 - `EVENT-FORM-UI.md`
+- `DATA-PERSISTENCE.md`
 - `SMOKE-TEST.md`
 - `../member-engagement/FUNCTIONAL-SCOPE.md`
 - `../../standards/employee-operating-standard.md`
@@ -209,26 +236,27 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 
 Branch:
 
-`event-planner/event-form-ui-spec`
+`event-planner/persistence-rule`
 
 Scope:
 
-- Event-Anlegen-Screen als verbindliche UI-Struktur dokumentieren,
-- obere Navigation festlegen,
-- Vorlagen-Auswahl verankern,
-- Formularstruktur auf Desktop/Mobil festlegen,
-- Sponsorenpflege als strukturierte Zeilen definieren,
-- noch keine Produktcode- oder Datenbankänderung.
+- projektweite Persistenzregel dokumentieren,
+- Event-Anlegen-UI explizit an dauerhafte Datenbankpersistenz binden,
+- Session-/Browserzustand als dauerhafte Datenquelle ausschließen,
+- Persistenz als Test- und Migrationskriterium festhalten,
+- keine Produktcode- oder Datenbankänderung in diesem Dokumentationsschritt.
 
 ## Next Meaningful Step
 
-1. Event-Anlegen-UI-Spezifikation nach menschlicher Freigabe nach `main` übernehmen,
-2. anschließend Event-Navigation und Formularlayout als kleinen UI-PR umsetzen,
-3. Vorlagen-Dropdown mit sauberem Leerzustand vorbereiten,
-4. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte Sponsor-Zeilen umstellen,
-5. Responsive Verhalten und Accessibility im Playground prüfen,
-6. danach Dashboard-/Camp-/Aufgabenlogik in weiterhin kleinen Schritten umsetzen,
-7. den offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
+1. Persistenzregel nach menschlicher Freigabe nach `main` übernehmen,
+2. anschließend Event-Navigation und Formularlayout als kleinen UI-/Datenmodell-PR umsetzen,
+3. für jedes neue dauerhafte Feld vorab die Datenbankpersistenz definieren,
+4. Vorlagen-Dropdown mit sauberem Leerzustand vorbereiten,
+5. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte persistente Sponsor-Zeilen umstellen,
+6. Persistenztest `Speichern → Reload → erneut öffnen` für alle neuen Felder durchführen,
+7. Responsive Verhalten und Accessibility im Playground prüfen,
+8. danach Dashboard-/Camp-/Aufgabenlogik in weiterhin kleinen Schritten umsetzen,
+9. den offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
 
 ## Update Rule
 
