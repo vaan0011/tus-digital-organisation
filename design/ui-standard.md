@@ -97,6 +97,22 @@ Regeln:
 - Fehler möglichst direkt am Problem erklären,
 - keine doppelte Eingabe bereits vorhandener Informationen.
 
+#### Datumsfelder und Kalender-Picker
+
+Datumsfelder sollen vorhandenen fachlichen Kontext verwenden und den Nutzer nicht unnötig zu einem weit entfernten Datum navigieren lassen.
+
+Verbindliche Regeln:
+
+- Gibt es bereits ein fachlich relevantes Bezugsdatum, öffnet ein Datumsfeld im dazu passenden Zeitraum und nicht ohne Grund beim heutigen Datum.
+- Abhängige Datumsfelder verwenden einen sinnvollen Default aus dem vorhandenen Kontext, zum Beispiel `Enddatum = Startdatum`, solange der Nutzer noch keine eigene Auswahl getroffen hat.
+- Bei fortlaufenden Datumsreihen wird der nächste sinnvolle Wert aus dem vorherigen Eintrag abgeleitet, zum Beispiel `vorheriger Event-Tag + 1 Tag`.
+- Automatisch gesetzte Defaults dürfen eine spätere bewusste Nutzerauswahl nicht still überschreiben.
+- `min`- und `max`-Grenzen werden nur gesetzt, wenn sie eine fachliche Regel abbilden; sie werden nicht allein zur Navigation im Kalender missbraucht.
+- Wenn native Browser-Datepicker keinen separaten Startmonat unterstützen, darf ein leeres Feld unmittelbar vor dem Öffnen mit dem fachlich sinnvollen Default vorbelegt werden, damit der Picker im richtigen Zeitraum startet.
+- Gibt es keinen fachlichen Datumsbezug, darf das native Standardverhalten des Browsers verwendet werden.
+
+Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberflächen mit Datumsfeldern.
+
 ### 8. Status und Feedback
 
 Nach wichtigen Aktionen muss der Nutzer erkennen können, was passiert ist.
