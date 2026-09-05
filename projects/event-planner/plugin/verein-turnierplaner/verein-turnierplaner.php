@@ -15,5 +15,6 @@ define('VTP_URL', plugin_dir_url(__FILE__));
 require_once VTP_DIR.'includes/class-vtp-db.php';
 require_once VTP_DIR.'includes/class-vtp-plugin.php';
 require_once VTP_DIR.'includes/class-vtp-public.php';
+require_once VTP_DIR.'includes/event-date-picker.php';
 register_activation_hook(__FILE__, ['VTP_DB','activate']);
 add_action('plugins_loaded', function(){ VTP_DB::maybe_upgrade(); VTP_Plugin::instance(); VTP_Public::instance(); });

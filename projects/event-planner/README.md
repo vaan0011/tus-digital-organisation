@@ -22,12 +22,3 @@ Beim Paketieren wird das zentrale Vereinslogo aus
 [`../../design/logo/tus_logo.png`](../../design/logo/tus_logo.png) in das Plugin
 übernommen. Die erzeugten ZIP-Dateien werden nicht versioniert und können direkt
 in den vorgesehenen Google-Drive-Ordner hochgeladen werden.
-
-## Turnierlogik prüfen
-
-Die Regressionstests für Liga-Modus, Mindestpausen und K.O.-Setzlisten laufen
-ohne WordPress-Installation:
-
-```bash
-php tests/tournament-logic.php
-```
