@@ -8,7 +8,7 @@ Diese Datei hält den aktuellen belastbaren Projektzustand fest. Sie ist die Det
 
 ## Core Principle
 
-> **Keine Bestellung ohne vollständige Beschaffungsgrundlage und Fördercheck.**
+> **Keine Bestellung ohne vollständige Beschaffungsgrundlage und belastbare Klärung der konkreten Förderfähigkeit.**
 
 Die Tore sollen sportlich und technisch passen, aber gleichzeitig so ausgeführt sein, dass das Hauptfeld für Rasennähen und andere intensive Pflegearbeiten vollständig freigeräumt werden kann.
 
@@ -22,6 +22,8 @@ Die Tore sollen sportlich und technisch passen, aber gleichzeitig so ausgeführt
 - Fachlicher Projekt-Owner: **noch nicht explizit benannt**
 - Beschaffungsstatus: **keine Bestellung ausgelöst**
 - Baubeginn / Fundamentarbeiten: **nicht begonnen**
+- Vorstandsvorlage: **erstellt und im Drive-Projektordner abgelegt**
+- Förderreferenz: **projektbezogen in `FUNDING-REFERENCE.md` dokumentiert**
 
 ### 2. Ausgangssituation
 
@@ -56,7 +58,7 @@ Begründung:
 **Produkt:** Kübler Sport® Fußballtor STADION, eckverschweißt, P-Netzbügel
 
 Link:
-`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html`
+`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html?sku=F5455`
 
 Preisstand 05.09.2026:
 
@@ -101,13 +103,13 @@ Hinweise des Anbieters:
 - Sonderpreis zeitlich befristet,
 - nur Direktbestellung im Onlineshop,
 - solange Vorrat reicht,
-- längere Lieferzeit aktuell 3–4 Wochen,
+- aktuell längere Lieferzeit,
 - hochklappbar,
 - Aluminium,
 - Rundrohr Ø 35 mm,
 - untere Tortiefe 1,50 bis 2,00 m verstellbar,
 - keine integrierte Netzbefestigung; Netzringe oder Leine empfohlen,
-- Produktseite zeigt aktuell einen Versandhinweis von 139,00 €; tatsächliche Zuordnung zur konkreten Bestellung vor Auftrag bestätigen.
+- konkrete Frachtkosten vor Auftrag bestätigen.
 
 Sicherheitsrelevant laut Anbieter:
 
@@ -140,36 +142,55 @@ Noch nicht belastbar eingepreist:
 
 ### 6. Förderstatus
 
-Der aktuelle TuS Funding Radar führt `zusätzliche Tore` mit Priorität **A**.
+**Programm:** Badischer Sportbund Nord e.V. – Sportgeräteförderung 2026
 
-Dokumentierter Stand:
+Offizielle Quellen und der vollständige projektbezogene Antragsweg stehen in:
 
-- BSB Nord Sportgeräteförderung 2026,
-- 30 % Zuschuss,
-- Tore als Satz bis 3.000 € förderfähiger Höchstbetrag,
-- Rechnungsjahr 2026,
-- Antrag bis 31.01.2027,
-- Angebot und konkreten Torsatz vor Kauf mit BSB abgleichen,
-- Belege sichern.
+`FUNDING-REFERENCE.md`
+
+Verifizierter Stand:
+
+- 30 % Zuschuss auf die als zuschussfähig anerkannten Kosten,
+- `Tore als Satz` bis 3.000 € förderfähiger Höchstbetrag,
+- maximal 900 € Zuschuss,
+- Rechnungsdatum muss im Kalenderjahr 2026 liegen,
+- Antrag wird **nach der Anschaffung** gestellt,
+- Antrag ausschließlich online im BSBnet,
+- Antrag für Anschaffungen aus 2026 bis 31.01.2027,
+- Rechnung und unbarer Zahlungsnachweis erforderlich,
+- Antragsteller ist der Gesamtverein,
+- Versand-/Transport-/Verpackungskosten sind nicht zuschussfähig,
+- geförderte Sportgeräte sind fünf Jahre zweckgebunden und zu inventarisieren.
 
 Rechnerische Szenarien:
 
 - bei 2.935,50 € vollständig anerkannten Kosten: **880,65 € Zuschuss**,
 - ab 3.000,00 € anerkannten Kosten: rechnerisch maximal **900,00 € Zuschuss**.
 
+Projektbezogen noch zu klären:
+
+- Werden hochklappbare Bodenrahmen und Tornetze zusammen mit den Toren als `Tore als Satz` anerkannt?
+- Die Richtlinie schließt die Sportgeräte-Grundausstattung **gemeindeeigener Sportfreianlagen** aus. Deshalb muss der Eigentums-/Nutzungsstatus des Hauptplatzes geklärt und der konkrete Fall mit dem BSB Nord abgeglichen werden.
+
+Der BSB Nord empfiehlt bei Zweifelsfällen eine Vorabprüfung anhand von Angebot und Gerätebeschreibung. Diese Vorabprüfung wird deshalb vor der Bestellung durchgeführt. Sie ist eine projektbezogene Risikoklärung; der formale Sportgeräte-Förderantrag wird anschließend mit Rechnung und Zahlungsnachweis gestellt.
+
 Status:
 
 - Förderfähigkeit der konkreten Komponenten **noch nicht final bestätigt**,
 - keine Förderzusage,
-- Funding & Grants Manager muss vor Bestellung prüfen.
+- keine Antragstellung ausgelöst.
 
-### 7. Artefaktraum
+### 7. Artefaktraum und Vorstandsvorlage
 
-Google Drive:
+Google-Drive-Projektordner:
 
 `https://drive.google.com/drive/folders/1_CVr1G6wScpbpBagyGTwF99iJFQ0IiYT`
 
-Der Ordner wurde am 05.09.2026 unter dem zentralen TuS-Projektordner angelegt.
+Vorstandsvorlage:
+
+`https://docs.google.com/document/d/1HjCoYt1AwrlCBQuzxjn3zsE79YvGUWlv5vpLTjHL-2E/edit`
+
+Die Vorstandsvorlage enthält Beschlussvorschlag, technische Konfiguration, Kosten, Förderprogramm, Antragsschritte, Ansprechpartner, Bestelllinks, offene Punkte und eine direkt nutzbare Formulierung für die BSB-Nord-Vorabprüfung.
 
 ### 8. Noch offene Entscheidungen
 
@@ -183,38 +204,44 @@ Der Ordner wurde am 05.09.2026 unter dem zentralen TuS-Projektordner angelegt.
 8. Wer baut die vier Bodenhülsen ein?
 9. Welche Fundamente sind nach Herstellerplan und örtlicher Situation erforderlich?
 10. Ist die komplette Kombination als BSB-förderfähiger Torsatz anerkannt?
-11. Wer ist fachlicher Projekt-Owner?
-12. Welcher formale Beschluss ist vor Bestellung erforderlich?
+11. Wie ist der Eigentums-/Nutzungsstatus des Hauptplatzes förderrechtlich einzuordnen?
+12. Wer ist fachlicher Projekt-Owner?
+13. Welcher formale Budgetrahmen wird vom Vorstand beschlossen?
 
 ### 9. Risiken / Blockaden
 
-- Bestellung vor Fördercheck könnte Fördermöglichkeiten gefährden.
+- Die konkrete Förderfähigkeit ist noch nicht bestätigt; insbesondere die Einordnung von Bodenrahmen/Netzen und der Eigentumsstatus der Sportanlage können die Förderung beeinflussen.
+- Für die Sportgeräteförderung 2026 muss das Rechnungsdatum noch im Kalenderjahr 2026 liegen.
 - Sonderpreis des Bodenrahmens kann auslaufen.
 - Bodenrahmen hat aktuell längere Lieferzeit.
 - Netze sind noch nicht ausgewählt; ohne sie ist die Bestellung nicht spielfertig.
 - falsche Netztiefe kann zu nicht passender Netzgeometrie führen.
 - Fundament-/Einbaumaße müssen vor Einbau aus Herstellerplan und Platzsituation abgeleitet werden.
-- Versandkosten sind noch nicht vollständig belastbar.
+- Versandkosten sind noch nicht vollständig belastbar und selbst nicht zuschussfähig.
 
 ### 10. Nächster sinnvoller Schritt
 
 Vor Bestellung eine einzige finale Beschaffungsprüfung durchführen:
 
-1. Funding & Grants Manager bestätigt Förderweg bzw. gibt Go ohne Förderung,
-2. Kübler bestätigt passende Netze für die konkrete Kombination,
-3. Versandkosten und Lieferzeit verbindlich klären,
-4. Fundament-/Einbauplan sichern,
-5. Gesamtpreis aktualisieren,
-6. Beschluss dokumentieren,
-7. Bestellung auslösen.
+1. Vorstand fasst Grundsatz- und Budgetbeschluss,
+2. Funding & Grants Manager bzw. Projektverantwortlicher sendet die konkrete Konfiguration an den BSB Nord und dokumentiert die Vorabantwort,
+3. Eigentums-/Nutzungsstatus des Hauptplatzes klären,
+4. Kübler bestätigt passende Netze für die konkrete Kombination,
+5. Versandkosten und Lieferzeit verbindlich klären,
+6. Fundament-/Einbauplan sichern,
+7. Gesamtpreis aktualisieren,
+8. Bestellung mit Rechnung im Kalenderjahr 2026 auslösen,
+9. anschließend BSBnet-Antrag mit Rechnung und Zahlungsnachweis bis 31.01.2027 stellen.
 
 ## Relationship to other documents
 
 - `README.md`
 - `BESTELLGRUNDLAGE.md`
+- `FUNDING-REFERENCE.md`
 - `../PROJECT-PORTFOLIO.md`
 - `../../knowledge/funding/FUNDING-RADAR.md`
 - `../../knowledge/funding/FUNDING-CALENDAR.md`
+- `../../roles/funding-grants-manager/role.md`
 
 ## Future Development
 
