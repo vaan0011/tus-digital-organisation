@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-04 – erste vollständige Portfolio-Inventur
+Stand: 2026-09-05 – LED Media Screen formalisiert und Portfolio-Stand synchronisiert
 
 ## Purpose
 
@@ -20,18 +20,16 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Arbeitsstandprüfung ergibt:
 
-- **6 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **1 Aktiv** und **5 Discovery**,
-- mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Sponsoring-, Archiv- und Förderarbeit,
-- mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm,
-- keine Notwendigkeit, im Rahmen dieser Inventur automatisch neue Projektordner anzulegen.
+- **7 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **1 Aktiv** und **6 Discovery**,
+- mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
+- mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm.
 
-Für offene Pull Requests gilt: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt.
+Der LED Media Screen wurde am 05.09.2026 vom Kandidaten zum formalen Projekt hochgestuft, weil inzwischen ein konkreter Standort, zwei Visualisierungen, ein belastbares Lieferantenangebot, technische Eckdaten und ein eigenes Finanzierungs-/Partnerkonzept vorliegen.
 
-Besonders relevant sind aktuell:
+Für offene Pull Requests gilt weiterhin: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt.
 
-- PR #28 zur vorgeschlagenen Abgrenzung von Partnerportal und Partner Hub,
-- PR #30 zum ersten operativen Förderradar.
+PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operativen Förderradar sind inzwischen gemergt und damit Bestandteil des verbindlichen `main`-Stands.
 
 ### 2. Formale Projekte
 
@@ -39,10 +37,11 @@ Besonders relevant sind aktuell:
 |---|---|---|---|---|---|---|
 | Event Planner | Veranstaltungen; technischer Owner: WordPress Developer; fachlicher Produkt-Owner nicht explizit benannt | Aktiv | `event-planner/PROJECT-STATE.md` | gemergte Dashboard-Logik in kleinen Inkrementen umsetzen und offenen Baseline-Smoke-Test vollständig abschließen | `PROJECT-STATE.md` ist teilweise veraltet: PR #29 und Folge-PR #31 sind bereits gemergt; formaler LKG weiterhin offen; gemeinsame Personen- und Mannschaftsidentität beeinflusst spätere Ausbaustufen | Entwicklung, Design, Mitglieder & Engagement, Team Manager, Homepage |
 | Mitglieder & Engagement | noch kein eindeutiger einzelner Verantwortungsbereich/Owner; fachlicher Kontext Mitglieder / Engagement / Organisation | Discovery | `member-engagement/PROJECT-STATE.md` | bestehende Mitgliederverwaltung analysieren und gemeinsame Personen-/Mitgliedsidentität definieren | darf keine zweite Personendatenwelt erzeugen; hängt eng an Event Planner und Team Manager | Entwicklung, Datenschutz, Veranstaltungen, Sport, ggf. Funding/Ehrenamt |
-| Partner Hub | Sponsoring / Partnership Manager | Discovery | `partner-hub/PROJECT-STATE.md` | Produktabgrenzung zum Partnerportal verbindlich entscheiden und danach gemeinsame Partnerdaten, Rollen/Freigaben und Schnittstellen konkretisieren | PR #28 schlägt eine partnerseitige Oberfläche für bestehende Partner vor, ist aber noch nicht gemergt; gemeinsame Partnerdatenbasis zwingend | Sponsoring, Entwicklung, Design, Homepage, Event Planner, Portfolio |
-| Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | Produktabgrenzung zum Partner Hub verbindlich entscheiden; Sponsorendaten/Steuer-Ist konsolidieren und MVP reduzieren | PR #28 schlägt das interne Arbeitswerkzeug des TuS vor, ist aber noch nicht gemergt; Implementierung noch nicht gestartet | Sponsoring, Finanzen/Steuer, Entwicklung, Design, Homepage |
+| Partner Hub | Sponsoring / Partnership Manager | Discovery | `partner-hub/PROJECT-STATE.md` | gemeinsame Partnerdatenbasis, Rollen/Freigaben, Account-Lifecycle und MVP-Grenzen konkretisieren | Produktabgrenzung ist verbindlich entschieden: Partner Hub = partnerseitige Oberfläche für bestehende Partner; gemeinsame Partnerdatenbasis mit Partnerportal | Sponsoring, Entwicklung, Design, Homepage, Event Planner, Portfolio |
+| Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren, gemeinsame Partnerdatenbasis definieren und internes MVP reduzieren | Produktabgrenzung ist verbindlich entschieden: Partnerportal = internes TuS-Arbeitswerkzeug; keine getrennte Partnerdatenwelt zum Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design, Homepage |
 | TuS Tauschbörse | Gesellschaft & Soziales; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `reuse-marketplace/PROJECT-STATE.md` | konto-freien Vermittlungsablauf, Datenschutz/Missbrauchsschutz und realen `Kinder von Atibie`-Spendenweg konkretisieren; danach MVP festlegen | `PROJECT-STATE.md` ist teilweise veraltet: der dort genannte Initial-Scope-Branch wurde über PR #18 bereits gemergt; noch kein Plugin-Code | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales, ggf. Funding |
 | Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | `PROJECT-STATE.md` ist teilweise veraltet: Initial-Scope PR #17 ist bereits gemergt; keine parallele Mannschafts- oder Personendatenwelt aufbauen | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
+| LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | vor Ablauf der Angebots-Preisbindung Technikbeiblatt, Fundament, Strom, Funding-Check, Genehmigung und Gesamtfinanzierung klären | Angebot 30260839-2: 48.779 € netto nach 2.000 € goracon-Sponsoringrabatt; Drive-Artefaktraum vorhanden; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
@@ -50,12 +49,13 @@ Besonders relevant sind aktuell:
 |---|---|---|
 | Event Planner | **prüfbedürftig** | aktiven Branch/PR und nächsten Schritt nach Merge von #29/#31 aktualisieren; verbliebene Implementierungs- und Smoke-Test-Schritte als aktuellen Zustand festhalten |
 | Mitglieder & Engagement | **aktuell / ausreichend** | keine künstliche Aktualisierung; nächste reale Änderung erst nach Analyse der Mitgliederverwaltung bzw. Architekturentscheidung |
-| Partner Hub | **aktuell auf `main`, aber in Übergang** | bei Entscheidung/Merge von PR #28 den `PROJECT-STATE.md` sofort auf die verbindliche Produktabgrenzung aktualisieren |
-| Partnerportal | **aktuell auf `main`, aber in Übergang** | bei Entscheidung/Merge von PR #28 den `PROJECT-STATE.md` sofort auf die verbindliche Produktabgrenzung aktualisieren |
+| Partner Hub | **aktuell** | nächste Aktualisierung nach Entscheidung zu gemeinsamer Partnerdatenbasis, Rollen/Freigaben oder MVP |
+| Partnerportal | **aktuell** | nächste Aktualisierung nach Konsolidierung realer Sponsorendaten, Steuer-Ist oder gemeinsamer Partnerdatenbasis |
 | TuS Tauschbörse | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nur die danach verbleibenden Discovery-Schritte führen |
 | Team Manager | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nächsten Architektur-/Discovery-Schritt als aktuellen Einstieg setzen |
+| LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förderung, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
 
-Alle sechs formalen Projekte erfüllen weiterhin die minimale Projektstruktur aus `projects/README.md`.
+Alle sieben formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
 ### 4. Reale Projektkandidaten
 
@@ -64,17 +64,16 @@ Die folgenden Vorhaben sind ausreichend relevant, um im Portfolio sichtbar zu bl
 | Vorhaben | Status | Möglicher fachlicher Bereich / Owner | Warum portfolio-relevant | Nächste Portfolio-Aktion | Querschnitt |
 |---|---|---|---|---|---|
 | Neuaufbau TuS-Homepage | Kandidat | Kommunikation; fachlicher Projekt-Owner noch festzulegen | Zielbild, Startseitenarchitektur, Responsive-Regeln, Datenquellen und Umsetzungsreihenfolge sind bereits in `../design/homepage-standard.md` dokumentiert; damit deutlich mehr als eine lose Idee | aktuellen technischen Ist-Stand, Umsetzungsweg und fachlichen Owner klären; **vor aktiver Implementierung prüfen, ob eigener Projektzustand nötig ist** | Entwicklung, Graphic Designer, Team Manager/fussball.de, Event Planner, Partnerdaten, Archiv/Content |
-| LED Media Screen | Kandidat | Sponsoring / Kommunikation / Infrastruktur; eindeutiger Projekt-Owner offen | strategisch weit entwickeltes Investitions-, Kommunikations- und Partnerprojekt | aktuellen Angebots-, Technik-, Finanzierungs-, Steuer-/Rechtseinheits-, Genehmigungs- und Owner-Stand erfassen | Partnership Manager, Infrastruktur, Finanzen, Design, ggf. Funding |
-| Umkleideböden / klar abgegrenzte Umkleidesanierung | Kandidat | Infrastruktur / Sport; Owner offen | konkrete kurzfristige Investitionsmaßnahme; im Funding-Arbeitsstand PR #30 als besonders prüfenswert und vor Beauftragung fördersensibel markiert | Scope, Kosten, Eigentums-/Nutzungsrecht und Verantwortlichkeit klären; Förderprüfung **vor** förderschädlichem Vorhabenbeginn | Funding, Infrastruktur, Finanzen, Sport, ggf. Sponsoring |
+| Umkleideböden / klar abgegrenzte Umkleidesanierung | Kandidat | Infrastruktur / Sport; Owner offen | konkrete kurzfristige Investitionsmaßnahme; im Funding-Radar als besonders prüfenswert und vor Beauftragung fördersensibel markiert | Scope, Kosten, Eigentums-/Nutzungsrecht und Verantwortlichkeit klären; Förderprüfung **vor** förderschädlichem Vorhabenbeginn | Funding, Infrastruktur, Finanzen, Sport, ggf. Sponsoring |
 | Hauptgebäude / Fassade | Kandidat | Infrastruktur; Owner offen | kurzfristig priorisierte Gebäudeaufwertung mit möglichem Partner-/Förderbezug | zuerst trennen: reine Optik/Instandhaltung oder echte energetische Sanierung; danach Kosten, Finanzierung und Owner klären | Funding, Sponsoring, Infrastruktur, Finanzen, Design |
 | Kunstrasen | Kandidat | Infrastruktur / Sport / Finanzen; Owner offen | großes langfristiges Sportstätten- und Finanzierungsprojekt mit hohem Planungsbedarf | Zielbild, Trägerschaft/Eigentum, Kostenrahmen, Priorität und Vorplanung klären; Förder-/Finanzierungsweg früh einbeziehen | Funding, Infrastruktur, Sport, Finanzen, Sponsoring |
 | Jugendräume | Kandidat | Jugend / Infrastruktur; Owner offen | mittelfristiges Infrastruktur- und Jugendvorhaben | Bedarf, Nutzergruppen, Scope, Standort, Verantwortlichkeit und Finanzierung klären | Funding, Jugend, Infrastruktur, Sponsoring, Design |
 | Funktions-/Unterstellgebäude Festplatz | Kandidat | Infrastruktur / Veranstaltungen; Owner offen | mittelfristiges Bau- und Nutzungsprojekt mit Veranstaltungsbezug | Bedarf, Nutzung, Genehmigungs-/Trägerschaftsfragen, Kosten und Owner klären | Funding, Infrastruktur, Veranstaltungen, Sponsoring |
 | Bekleidungslager / physischer Vereins-Shop | Kandidat | Organisation / Merch / Finanzen; Owner offen | reale organisatorische und ggf. räumliche Infrastrukturfrage | physischen Lager-/Ausgabebedarf vom extern gehosteten Webshop trennen und nur den tatsächlich abgegrenzten Projektumfang weiterführen | Organisation, Finanzen, Design, Sponsoring |
 | Energie / PV / Speicher / Klimaschutzmaßnahmen | Kandidat | Infrastruktur / Nachhaltigkeit / Finanzen; Owner offen | potentiell größere Investitions- und Fördermaßnahmen | konkretes Gebäude/Anlage, Energieproblem, technische Zielsetzung und Wirtschaftlichkeit bestimmen | Funding, Infrastruktur, Finanzen |
-| Bewässerungsanlage / nachhaltige Platzpflege-Investition | Kandidat | Infrastruktur / Sport; Owner offen | im Funding-Arbeitsstand als konkretes Investitionsfeld erkennbar; von laufender Platzpflege zu trennen | realen Investitionsbedarf, technische Lösung, Eigentums-/Nutzungsrecht, Kosten und laufende Wasserförderung klären | Funding, Infrastruktur, Sport, Finanzen |
+| Bewässerungsanlage / nachhaltige Platzpflege-Investition | Kandidat | Infrastruktur / Sport; Owner offen | im Funding-Radar als konkretes Investitionsfeld erkennbar; von laufender Platzpflege zu trennen | realen Investitionsbedarf, technische Lösung, Eigentums-/Nutzungsrecht, Kosten und laufende Wasserförderung klären | Funding, Infrastruktur, Sport, Finanzen |
 | Aufbau / nachhaltige Organisation Sportparkteam | Kandidat | Infrastruktur / Vereinsentwicklung; Owner offen | organisatorisches Vorhaben ist in Sponsoring-/Funding-Arbeitsständen sichtbar, aber Zielbild und Abgrenzung zum laufenden Betrieb sind noch nicht klar | klären, ob eine einmalige Aufbau-/Entwicklungsinitiative existiert oder lediglich dauerhafter Regelbetrieb finanziert werden soll | Vereinsentwicklung, Infrastruktur, Funding, Sponsoring |
-| Historienarchiv – abgegrenztes Erschließungs-/Digitalisierungsprojekt | Kandidat | Archiv & Vereinsgeschichte / Archivist | das Historienarchiv als Ganzes ist Regelbetrieb; ein professionell abgegrenztes Erschließungs-/Digitalisierungsvorhaben könnte dagegen einen eigenen Projektzustand benötigen und ist im Funding-Arbeitsstand relevant | konkretes Quellenpaket, Ziel, Output, Umfang, Rechte, professionellen Veröffentlichungsweg und Finanzierung definieren; erst dann formalisieren | Archivist, Funding, Kommunikation, Design, Datenschutz/IT |
+| Historienarchiv – abgegrenztes Erschließungs-/Digitalisierungsprojekt | Kandidat | Archiv & Vereinsgeschichte / Archivist | das Historienarchiv als Ganzes ist Regelbetrieb; ein professionell abgegrenztes Erschließungs-/Digitalisierungsvorhaben könnte dagegen einen eigenen Projektzustand benötigen und ist im Funding-Radar relevant | konkretes Quellenpaket, Ziel, Output, Umfang, Rechte, professionellen Veröffentlichungsweg und Finanzierung definieren; erst dann formalisieren | Archivist, Funding, Kommunikation, Design, Datenschutz/IT |
 | Historien-/Jubiläumspublikation oder andere konkrete Archiv-Ausgabe | Kandidat | Archiv & Vereinsgeschichte / Kommunikation | Archivarbeit erzeugt wiederverwendbare Inhalte; eine konkrete Publikation kann ein eigenes abgrenzbares Ergebnis besitzen | nur bei klar beschlossenem Produkt, Zielgruppe, Umfang, Termin und Owner als Projekt führen | Archivist, Kommunikation, Graphic Designer, Homepage/Print |
 
 ### 5. Bewusst nicht als eigenständige Projekte geführt
@@ -83,7 +82,7 @@ Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstli
 
 | Thema / Vorhaben | Einordnung | Portfolio-Begründung / Zuordnung |
 |---|---|---|
-| Zusätzliche Tore / Netze | **Einzelmaßnahme / Beschaffung** | konkrete, förderrelevante Beschaffung; im offenen Funding-PR #30 als A-Chance bewertet. Solange daraus kein größerer Planungszustand entsteht, reicht die Steuerung über Funding + zuständigen Fachbereich |
+| Zusätzliche Tore / Netze | **Einzelmaßnahme / Beschaffung** | konkrete, förderrelevante Beschaffung; im Funding-Radar als A-Chance bewertet. Solange daraus kein größerer Planungszustand entsteht, reicht die Steuerung über Funding + zuständigen Fachbereich |
 | 125-Jahre-Jubiläumszuschüsse nach bereits realisiertem Jubiläum | **Einzelaufgabe** | administrative Nachprüfung möglicher kommunaler/Landkreis-Zuschüsse, kein neues Vereinsprojekt |
 | Finanzpuffer für laufende Kosten | **Regelbetrieb / Finanzziel** | dauerhafte finanzielle Stabilität, kein abgrenzbares Projektergebnis |
 | Rücklagenaufbau | **Regelbetrieb / Finanzziel** | laufende Finanzsteuerung, kein eigenes Projekt |
@@ -120,22 +119,20 @@ Der Event Planner bleibt Quelle für konkrete Helferschichten und bestätigte Ei
 
 #### Partnerportal ↔ Partner Hub
 
-Auf `main` besteht weiterhin eine erkennbare Produktüberschneidung.
-
-PR #28 schlägt als Abgrenzung vor:
+Die Produktabgrenzung ist verbindlich entschieden:
 
 > **öffentlich gewinnen → intern managen → im Partner Hub gemeinsam nutzen**
 
-Dabei wäre:
+Dabei ist:
 
 - die öffentliche Partnerseite der Akquise-Einstieg,
 - das Partnerportal das interne TuS-Arbeitswerkzeug,
 - der Partner Hub die partnerseitige Oberfläche bestehender Partner,
 - die Partnerdatenbasis gemeinsam.
 
-Diese Logik ist **noch nicht verbindlicher `main`-Stand**.
+Offen bleiben die technische gemeinsame Datenbasis, Objektverantwortung, Rollen/Freigaben, Account-Lifecycle und die konkreten MVP-Grenzen.
 
-Zusätzlicher Repository-Hinweis: Der in PR #28 vorgesehene ADR-Dateiname `ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` kollidiert inzwischen mit dem auf `main` vorhandenen `ADR-0007-central-project-portfolio.md`. Vor Merge muss der offene PR auf aktuellen `main` synchronisiert und die ADR-Nummer konfliktfrei gemacht werden.
+Repository-Hygiene: Auf `main` existieren derzeit zwei akzeptierte ADR-Dateien mit der Nummer `ADR-0007` (`central-project-portfolio` sowie `partnerportal-und-partner-hub-abgrenzung`). Die fachlichen Entscheidungen sind gültig; die doppelte Nummerierung sollte separat bereinigt werden, ohne die Entscheidungen zu verändern.
 
 #### Homepage ↔ fachliche Systeme
 
@@ -167,7 +164,7 @@ Bis dahin entsteht daraus **kein zweites Eventprojekt**.
 
 #### Infrastrukturprojekte ↔ Funding / Sponsoring / Finanzen
 
-Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV und LED Screen teilen wiederkehrende Abhängigkeiten:
+Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV und LED Media Screen teilen wiederkehrende Abhängigkeiten:
 
 - fachlicher Owner,
 - Eigentums-/Nutzungsrecht,
@@ -179,16 +176,20 @@ Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäu
 
 Funding prüft die Förderfähigkeit; Sponsoring entwickelt mögliche Partnerbeiträge. Beide Rollen übernehmen **nicht** die fachliche Projektverantwortung.
 
+Für den LED Media Screen sind Angebot, Technik und Artefakte inzwischen in `led-media-screen/PROJECT-STATE.md` konkret dokumentiert. Eine Bestellung ist ausdrücklich noch nicht ausgelöst.
+
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
-1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse und Team Manager ist zwar ein fachlicher Kontext erkennbar, aber kein expliziter fachlicher Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
+1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager und LED Media Screen ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
 2. **PROJECT-STATE-Pflege auslösen:** Event Planner, TuS Tauschbörse und Team Manager nach bereits gemergten PRs bereinigen.
-3. **Partnerprodukt-Entscheidung abschließen:** PR #28 auf aktuellen `main` bringen, ADR-Konflikt beheben und die Produktabgrenzung fachlich freigeben oder verwerfen. Erst danach beide Projektzustände aktualisieren.
-4. **Funding-Arbeitsstand integrieren:** PR #30 enthält den aktuellsten Förderarbeitsstand. Bis zum Merge bleiben konkrete Programme/Fristen dort Arbeitsstand; für Umkleideböden und andere investive Maßnahmen gilt besonders, keinen Vorhabenbeginn auszulösen, bevor Förderbedingungen geprüft sind.
-5. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
-6. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
-7. **Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
-8. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
+3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
+4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
+5. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
+6. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
+7. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
+8. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
+9. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
+10. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
 
 ### 8. Nutzung durch andere Mitarbeiter
 
