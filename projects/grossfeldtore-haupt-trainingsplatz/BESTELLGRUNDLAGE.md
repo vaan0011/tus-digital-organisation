@@ -13,7 +13,7 @@ Diese Datei ist die kompakte Arbeitsgrundlage für die spätere Bestellung. Prei
 **Menge:** 2 Stück
 
 **Direktlink:**
-`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html`
+`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html?sku=F5455`
 
 **Preisstand 05.09.2026:**
 - 1.119,00 € brutto je Stück
@@ -44,6 +44,10 @@ Diese Datei ist die kompakte Arbeitsgrundlage für die spätere Bestellung. Prei
 - DIN EN 748,
 - nach Anbieter DFB-/FIFA-konform.
 
+**Sicherheit:**
+- zum Herausheben aus den Bodenhülsen laut Anbieter mindestens 2 Personen,
+- beim Hoch-/Herunterklappen der Bodenrahmen ebenfalls mit mindestens 2 Personen arbeiten und hochgeklappten Rahmen sichern.
+
 ---
 
 ### Position 2 – hochklappbarer Bodenrahmen
@@ -73,8 +77,8 @@ Der Sonderpreis ist laut Produktseite zeitlich befristet, gilt nur bei Direktbes
 - Anbieter empfiehlt Netzringe oder Leine.
 
 **Lieferhinweis:**
-- aktuell 3–4 Wochen längere Lieferzeit,
-- Produktseite zeigt 139,00 € Versandhinweis; vor Bestellung bestätigen, ob dieser Betrag für die konkrete Gesamtbestellung gilt.
+- aktuell längere Lieferzeit,
+- Frachtkosten der konkreten Gesamtbestellung vor Auftrag bestätigen.
 
 ---
 
@@ -142,31 +146,87 @@ Noch verbindlich klären:
 - ob gemeinsame Fracht möglich ist,
 - Liefertermin der Gesamtbestellung.
 
-## 4. Förderrechnung
+## 4. Förderung – verifizierter Stand
 
-Aktueller TuS Funding Radar:
-- BSB Nord Sportgeräteförderung 2026,
-- 30 % Zuschuss,
-- förderfähiger Höchstbetrag für Tore als Satz: 3.000 €,
-- möglicher maximaler Zuschuss: 900 €,
-- vor dem Kauf konkreten Torsatz mit BSB abgleichen.
+**Programm:** Badischer Sportbund Nord e.V. – Sportgeräteförderung 2026
+
+**Offizielle Programmseite:**
+`https://www.badischer-sportbund.de/zuschuesse/sportgeraete/`
+
+**Offizielle Förderrichtlinien 2026:**
+`https://www.badischer-sportbund.de/files/dokumente/4_Zuschuesse/4.2_Sportgeraete/Sportgeraete_Foerderrichtlinien_2026.pdf`
+
+**Online-Antrag:**
+`https://www.bsb-net.org/`
+
+Verifiziert:
+- 30 % Zuschuss auf die als zuschussfähig anerkannten Kosten,
+- `Tore als Satz`: maximal 3.000 € zuschussfähiger Höchstbetrag,
+- daraus maximal 900 € Zuschuss,
+- Anschaffung/Rechnungsdatum im Kalenderjahr 2026,
+- Antrag **nach der Anschaffung** mit Rechnung und Zahlungsnachweis,
+- Antrag ausschließlich online im BSBnet,
+- Antragsfrist für 2026: **31.01.2027**,
+- Antragsteller ist der Gesamtverein,
+- pro Rechnung ein eigener Online-Antrag,
+- unbarer Zahlungsnachweis erforderlich,
+- gültiger Freistellungsbescheid erforderlich,
+- Fußball muss sportartspezifisch in der Bestandserhebung gemeldet sein,
+- fünfjährige Zweckbindung und Inventarisierung,
+- Versand-, Versicherungs-, Transport- und Verpackungskosten sind nicht zuschussfähig.
 
 Rechnerisch bei den bisher bekannten 2.935,50 € und vollständiger Anerkennung:
 
 **880,65 € möglicher Zuschuss.**
 
-Wenn mit förderfähigen Netzen/Zubehör mindestens 3.000 € anerkannt werden:
+Wenn mit anerkannten Netzen/Zubehör mindestens 3.000 € zuschussfähige Kosten erreicht werden:
 
 **maximal 900,00 € möglicher Zuschuss.**
 
-Keine Förderzusage. Bestellung erst nach Funding-Check.
+### Warum trotzdem vor Bestellung beim BSB Nord nachfragen?
 
-## 5. Bestellfreigabe – Checkliste
+Die Sportgeräteförderung verlangt formal keinen Förderantrag vor dem Kauf. Die Richtlinie empfiehlt aber in Zweifelsfällen eine Vorabprüfung anhand eines Angebots und der Gerätebeschreibung.
+
+Für dieses Projekt sind zwei Punkte vor Bestellung ausdrücklich zu klären:
+
+1. Werden Tore, Bodenhülsen, hochklappbare Bodenrahmen und Tornetze gemeinsam als `Tore als Satz` anerkannt?
+2. Die Richtlinie schließt die Sportgeräte-Grundausstattung **gemeindeeigener Sportfreianlagen** aus. Deshalb muss geklärt werden, ob die Eigentums-/Nutzungssituation des Hauptplatzes diesen Ausschluss berührt.
+
+**Ansprechpartner:** Fabian Schmider, BSB Nord  
+Telefon: `0721 1808-30`  
+E-Mail: `f.schmider@badischer-sportbund.de`
+
+Die vollständige Förderreferenz für den Funding & Grants Manager steht in:
+
+`FUNDING-REFERENCE.md`
+
+Keine Förderzusage. Die Vorabprüfung dient dazu, die konkrete Förderfähigkeit vor dem Auftrag belastbar zu klären.
+
+## 5. Vorstandsvorlage
+
+Vorstandsfertige Entscheidungsunterlage im Google-Drive-Projektordner:
+
+`https://docs.google.com/document/d/1HjCoYt1AwrlCBQuzxjn3zsE79YvGUWlv5vpLTjHL-2E/edit`
+
+Sie enthält:
+- Beschlussvorschlag,
+- Projektziel,
+- technische Konfiguration,
+- Kosten,
+- Förderprogramm und Förderrechnung,
+- Antragsweg,
+- BSB-Ansprechpartner,
+- Formulierung für die Vorabprüfung,
+- Bestell- und Förderlinks,
+- offene Punkte vor Bestellung.
+
+## 6. Bestellfreigabe – Checkliste
 
 Vor Klick auf `Bestellen` müssen folgende Punkte erledigt sein:
 
-- [ ] fachlicher Beschluss liegt vor
-- [ ] Funding-/BSB-Check abgeschlossen
+- [ ] fachlicher / Vorstandsbeschluss liegt vor
+- [ ] BSB-Nord-Vorabprüfung zur konkreten Konfiguration abgeschlossen
+- [ ] Eigentums-/Nutzungsstatus des Hauptplatzes für die Förderung geklärt
 - [ ] finale Torvariante/Farbe bestätigt
 - [ ] 2 passende Netze ausgewählt und Kompatibilität bestätigt
 - [ ] untere Netztiefe 1,50 oder 2,00 m entschieden
@@ -176,8 +236,9 @@ Vor Klick auf `Bestellen` müssen folgende Punkte erledigt sein:
 - [ ] Fundamentplan gespeichert
 - [ ] Einbau der 4 Bodenhülsen geklärt
 - [ ] finaler Gesamtpreis dokumentiert
+- [ ] Bestellung/Rechnung noch im Kalenderjahr 2026 realistisch
 
-## 6. Ablage nach Bestellung
+## 7. Ablage nach Bestellung
 
 Nach Auftrag im Google-Drive-Projektordner speichern:
 
@@ -185,9 +246,13 @@ Nach Auftrag im Google-Drive-Projektordner speichern:
 
 Dort ablegen:
 - Angebot / Warenkorb-PDF,
+- BSB-Nord-Vorabprüfung,
+- Vorstandsbeschluss,
 - Auftragsbestätigung,
 - Produktdatenblätter,
 - Montage- und Fundamentpläne,
 - Rechnung,
-- Förderunterlagen,
+- Zahlungsnachweis,
+- Förderantrag / Antragsbestätigung,
+- Förderbescheid,
 - Fotos vom Einbau und fertigen Zustand.
