@@ -1,6 +1,6 @@
 # Sponsoring Current State
 
-Stand: 2026-09-04
+Stand: 2026-09-05
 
 ## Purpose
 
@@ -144,13 +144,37 @@ Bekannte Quellen sind insbesondere:
 - aktuelle Sponsorenliste des Finanzvorstands,
 - historische Bandenwerbung 2005–2026 mit bekannter Lücke 2007,
 - historische Plakatwerbung,
-- historische Werbung im Stadionheft.
+- historische Werbung im Stadionheft,
+- aktuelle visuelle Inventur der bestehenden Werbe- und Partnerflächen im Sportpark.
 
 Leistungen, Laufzeiten, Gegenleistungen und Einnahmen je aktuellem Sponsor sollen noch ergänzt bzw. konsolidiert werden.
 
 Vertrauliche Einzelinformationen bleiben außerhalb des öffentlichen Repositorys.
 
-### 6. Steuer- und Vereinsstruktur
+### 6. Visuelle Werbeflächen-Inventur
+
+Status: `Ist-Bestand fotografisch erfasst / Partner- und Vertragsabgleich offen`
+
+Für die physische Bestandsaufnahme liegen 44 aktuelle reale Fotos des Sportparks vor. Sie sind im geschützten Google Drive nach Bandenwerbung, Bannerwerbung, Zaunanlage und Sportpark-Übersichten geordnet. Eine vorhandene LED-Konzeptvisualisierung wird bewusst getrennt von den Ist-Fotos geführt.
+
+Die wesentlichen Erkenntnisse sind:
+
+- die klassische lange Bandenlinie ist bereits stark belegt und soll eher gepflegt und standardisiert als weiter verdichtet werden,
+- die Hauptseite am Zuschauerbereich besitzt Premium-Potenzial,
+- hohe Zaun- und Bannerbereiche verfügen über relevante Restkapazität und sollten mit wenigen größeren Standardformaten statt eines Bannerteppichs entwickelt werden,
+- Parkplatz- und Außenzäune eignen sich besonders für Recruiting, Veranstaltungen und zeitlich begrenzte Kampagnen,
+- Eingang, Treppen und Steinwand sind zuerst Identitätsflächen und keine beliebigen Werbeflächen,
+- der Festplatz besitzt als Partner-Experience-, Event- und Hospitality-Asset einen höheren strategischen Wert als als reine statische Werbefläche.
+
+Die fachliche Ableitung liegt in:
+
+- `WERBEFLAECHEN-INVENTUR.md`
+
+Operative Quelle im geschützten Drive ist das Arbeitsblatt `Werbeflaechen-Inventar Sportpark 2026` mit Flächen, Sichtbarkeit, Potenzial, Fotoquellen und nächsten Schritten.
+
+Vor neuen Preisen und Standardformaten wird diese Flächeninventur mit aktuellem Partnerbestand, Vertrags-/Verlängerungsstatus und bestehender Preislogik verbunden.
+
+### 7. Steuer- und Vereinsstruktur
 
 Status: `Ist-Analyse offen`
 
@@ -173,7 +197,7 @@ Wichtige Prüfthemen bleiben unter anderem:
 - Projekt- und freie Rücklagen,
 - sachliche Zuständigkeit der drei Vereine.
 
-### 7. LED Media Screen
+### 8. LED Media Screen
 
 Status: `strategisch weit entwickelt / Umsetzung offen`
 
@@ -188,15 +212,16 @@ Bisherige Kerngedanken:
 
 Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/Vereinszuordnung und Genehmigungen aktuell geprüft.
 
-### 8. Nächste sinnvolle Arbeitsschwerpunkte
+### 9. Nächste sinnvolle Arbeitsschwerpunkte
 
 1. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner konsolidieren,
 2. historische Sponsorendaten normalisieren und Dubletten erkennen,
-3. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
-4. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
-5. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen.
+3. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
+4. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
+5. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
+6. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen.
 
-### 9. GitHub-Pflicht
+### 10. GitHub-Pflicht
 
 Nach relevanter Arbeit bleibt das Ergebnis nicht nur im Chat.
 
@@ -211,6 +236,7 @@ Je nach Inhalt werden aktualisiert:
 ## Relationship to other documents
 
 - `README.md`
+- `WERBEFLAECHEN-INVENTUR.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
 - `../../projects/partner-portal/README.md`
