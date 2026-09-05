@@ -95,4 +95,10 @@ assert_true(VTP_Plugin::is_valid_event_date('2028-02-29'), 'Ein gültiger Schalt
 assert_true(!VTP_Plugin::is_valid_event_date('2027-02-29'), 'Ein ungültiges Kalenderdatum wurde akzeptiert.');
 assert_true(!VTP_Plugin::is_valid_event_date('03.09.2026'), 'Nur ISO-Datumswerte dürfen gespeichert werden.');
 
+// Aufbau und Abbau sind intern; leere neue Zeilen erhalten einen speicherbaren Titel.
+$setup = VTP_Plugin::normalize_event_item('Aufbau', '', 'public');
+assert_true($setup === ['type' => 'Aufbau', 'title' => 'Aufbau', 'visibility' => 'private'], 'Aufbau muss intern gespeichert werden.');
+$program = VTP_Plugin::normalize_event_item('Programmpunkt', '', 'public');
+assert_true($program['title'] === 'Programmpunkt' && $program['visibility'] === 'public', 'Ein neuer Programmpunkt muss speicherbar sein.');
+
 fwrite(STDOUT, "Turnierlogik: alle Tests erfolgreich.\n");

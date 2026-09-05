@@ -1,4 +1,4 @@
-Version 3.7.1
+Version 3.7.2
 
 - Liga-Modus plant unabhängig von früheren Gruppenzuweisungen jeder gegen jeden.
 - Mindestpausen werden auch bei leeren Zeitslots und vor Finalrunden eingehalten.
@@ -8,3 +8,5 @@ Version 3.7.1
 - Tabellen berücksichtigen bei exakt zwei gleichplatzierten Teams den direkten Vergleich.
 - Regressionstests decken Liga, Pausenplanung, Tabellen und K.O.-Setzlisten ab.
 - Manuell hinzugefügte Event-Tage werden auch ohne Programmpunkt dauerhaft gespeichert.
+- Neue Programmpunkte erhalten sichere Standardwerte und bleiben nach dem Speichern erhalten.
+- Aufbau und Abbau werden automatisch als nicht öffentlich gespeichert.
