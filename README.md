@@ -83,6 +83,14 @@ core/
     Grundprinzipien
     Entscheidungen
 
+design/
+    Brand Identity
+    Logo
+    Farben
+    Typografie
+    UI
+    Design- und Produktionsstandards
+
 organization/
     Vision
     Kultur
@@ -92,6 +100,11 @@ organization/
     TuS DNA
     Werte
 
+roles/
+    Dauerhafte Rollen
+    Verantwortlichkeiten
+    Rollenspezifische Arbeitsstandards
+
 employees/
     Digitale Mitarbeiter
     HR
@@ -100,14 +113,20 @@ employees/
 plugins/
     Fachliche Plugins
 
+projects/
+    Zentrales Projektportfolio
+    Konkrete Projekte und Projektzustände
+
 system/
     Systemübersicht
 
 knowledge/
     Organisationswissen
+    Sponsoring & Partnerschaften
+    Fördermittel & Förderprogramme
 
 standards/
-    Arbeitsstandards
+    Gemeinsame Arbeits-, Freigabe-, Lern- und Fortschrittsstandards
 
 vision/
     Repository-Vision
@@ -133,6 +152,20 @@ README.md
 
 ---
 
+# Gemeinsame Mitarbeiterstandards
+
+Für menschliche und digitale Mitarbeiter gelten insbesondere:
+
+1. `standards/employee-operating-standard.md`
+2. `standards/approval-and-escalation.md`
+3. `standards/learning-loop.md`
+4. `standards/iteration-and-progress.md`
+5. `standards/working-standards.md`
+
+Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln.
+
+---
+
 # Für neue Entwickler
 
 Bitte lies die Dokumente in dieser Reihenfolge:
@@ -143,10 +176,117 @@ Bitte lies die Dokumente in dieser Reihenfolge:
 4. `organization/values.md`
 5. `organization/organization-dna.md`
 6. `organization/philosophy.md`
-7. `architecture/platform-architecture.md`
-8. `system/system-overview.md`
+7. `core/core-principles.md`
+8. `architecture/platform-architecture.md`
+9. `architecture/stability-and-simplicity.md`
+10. `system/system-overview.md`
+11. `standards/employee-operating-standard.md`
+12. `standards/approval-and-escalation.md`
+13. `standards/learning-loop.md`
+14. `standards/iteration-and-progress.md`
+15. `roles/wordpress-developer/role.md`
+16. `roles/wordpress-developer/development-standard.md`
 
 Erst danach solltest du Plugins oder Code entwickeln.
+
+---
+
+# Für neue Archivarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `standards/employee-operating-standard.md`
+2. `standards/approval-and-escalation.md`
+3. `standards/learning-loop.md`
+4. `roles/archivist/role.md`
+5. `roles/archivist/archive-standard.md`
+
+Der operative Quellenraum liegt in Google Drive. Das Repository enthält die verbindlichen organisatorischen und fachlichen Regeln der Archivarbeit.
+
+---
+
+# Für neue Designarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/graphic-designer/role.md`
+2. `design/README.md`
+3. `design/brand-identity.md`
+4. `design/logo.md`
+5. `design/colors.md`
+6. `design/typography.md`
+7. `design/product-types.md`
+8. `design/design-workflow.md`
+9. `design/generative-design-standard.md`
+10. `design/prompt-guidelines.md`
+11. `design/ui-standard.md`, wenn eine Bedienoberfläche gestaltet wird
+
+Vor einer längeren Designaufgabe wird ein klares Briefing erstellt. Freigegebene Elemente werden als Locked Elements behandelt und nicht ohne neuen Auftrag verändert.
+
+---
+
+# Für neue Sponsoring- und Partnerarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/partnership-manager/role.md`
+2. `roles/partnership-manager/partnership-standard.md`
+3. `knowledge/sponsoring/README.md`
+4. `knowledge/sponsoring/CURRENT-STATE.md`
+5. `projects/README.md`
+6. `projects/PROJECT-PORTFOLIO.md`
+7. `projects/partner-portal/PROJECT-STATE.md`, wenn das Partnerportal betroffen ist
+8. `projects/partner-hub/PROJECT-STATE.md`, wenn der Partner Hub betroffen ist
+9. relevante ADRs unter `decisions/`
+
+Der Sponsoring-Chat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit in GitHub gesichert.
+
+Projektbezogene Bilder, Scans, Angebote und große Arbeitsdateien liegen im zentralen Projekt-Artefaktraum in Google Drive; die Verweis- und Ablageregel ist in `projects/README.md` dokumentiert.
+
+Verträge, personenbezogene Kontaktdaten und vertrauliche Einzelkonditionen werden weiterhin nur in dafür geeigneten geschützten Systemen gepflegt.
+
+---
+
+# Für neue Fördermittelarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/funding-grants-manager/role.md`
+2. `roles/funding-grants-manager/funding-standard.md`
+3. `knowledge/funding/README.md`
+4. `knowledge/funding/CURRENT-STATE.md`
+5. `knowledge/funding/FUNDING-CALENDAR.md`
+6. `projects/README.md`
+7. `projects/PROJECT-PORTFOLIO.md`
+8. `knowledge/funding/templates/program-dossier-template.md`
+9. `knowledge/funding/templates/application-checklist.md`
+10. relevante Projektzustände unter `projects/`
+11. relevante ADRs unter `decisions/`
+
+Konkrete Förderprogramme werden zum Zeitpunkt der Bewertung gegen aktuelle offizielle Quellen verifiziert. Frühere Fristen oder Sekundärquellen werden nicht ungeprüft übernommen.
+
+Projektbezogene Bilder, Scans, Angebote, Planunterlagen und große Arbeitsdateien werden aus dem zentralen Projekt-Artefaktraum in Google Drive herangezogen; GitHub enthält den strukturierten Projektstand und die notwendigen Verweise.
+
+Der Förderchat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit im Förder-Wissensraum und gegebenenfalls in betroffenen Projektzuständen aktualisiert.
+
+---
+
+# Für Projektportfolio- und Vorhabenkoordination
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/project-portfolio-manager/role.md`
+2. `roles/project-portfolio-manager/portfolio-standard.md`
+3. `projects/README.md`
+4. `projects/PROJECT-PORTFOLIO.md`
+5. die `PROJECT-STATE.md` der relevanten formalen Projekte
+6. `knowledge/funding/CURRENT-STATE.md`
+7. `knowledge/sponsoring/CURRENT-STATE.md`
+8. relevante ADRs unter `decisions/`
+
+Der Project Portfolio Manager führt nicht die Fachprojekte selbst. Er hält die organisationsweite Projektlandschaft sichtbar, erkennt fehlende oder veraltete Projektzustände, offene Verantwortlichkeiten, relevante Abhängigkeiten und Doppelungen und aktualisiert den zentralen Portfolio-Index.
+
+Detailwahrheit bleibt im jeweiligen Projekt. Das Portfolio ist der zentrale Einstiegspunkt für andere Mitarbeiter.
 
 ---
 

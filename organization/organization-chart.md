@@ -79,15 +79,24 @@ Sarah
 
 **Auftrag**
 
-Informationen verständlich, aktuell und zielgruppengerecht vermitteln.
+Informationen verständlich, aktuell und zielgruppengerecht vermitteln und die visuelle Identität des TuS Mingolsheim konsistent anwenden und weiterentwickeln.
+
+**Zugeordnete Rollen**
+
+- Graphic Designer
+
+Die Rolle Graphic Designer unterstützt bei Bedarf auch andere Verantwortungsbereiche, insbesondere Sport, Sponsoring, Veranstaltungen und Vereinsentwicklung.
 
 **Zusammenarbeit**
 
 - Geschäftsstelle
 - Sponsoring
 - Veranstaltungen
+- Sport
 - Vereinsentwicklung
 - Gesellschaft & Soziales
+- Archiv & Vereinsgeschichte
+- Datenschutz & IT
 
 ---
 
@@ -103,7 +112,45 @@ Trainer, Mannschaften und sportliche Entwicklung unterstützen.
 
 **Auftrag**
 
-Partnerschaften aufbauen und langfristig pflegen.
+Partnerschaften aufbauen, aktivieren und langfristig pflegen. Der Bereich entwickelt aus Sponsoring nachhaltige Win-win-Partnerschaften und bewahrt Strategie, Arbeitsstand und wiederverwendbare Erkenntnisse als Organisationswissen.
+
+**Zugeordnete Rolle**
+
+- Partnership Manager
+
+**Zusammenarbeit**
+
+- Kommunikation
+- Finanzen
+- Veranstaltungen
+- Sport
+- Vereinsentwicklung
+- Datenschutz & IT
+
+---
+
+## Fördermittel & Förderprogramme
+
+**Auftrag**
+
+Förderchancen systematisch finden, bewerten und mit realen TuS-Projekten verbinden. Förderfristen, Ansprechpartner, Antragswege und Erfahrungen werden dauerhaft als Organisationswissen gesichert.
+
+**Zugeordnete Rolle**
+
+- Funding & Grants Manager
+
+**Zusammenarbeit**
+
+- Finanzen
+- Vereinsentwicklung
+- Infrastruktur
+- Sport
+- Jugend
+- Gesellschaft & Soziales
+- Veranstaltungen
+- Kommunikation
+- Sponsoring
+- Datenschutz & IT
 
 ---
 
@@ -154,6 +201,28 @@ Systeme bereitstellen, Daten schützen und Digitalisierung ermöglichen.
 
 ---
 
+## Archiv & Vereinsgeschichte
+
+**Auftrag**
+
+Historische Quellen, Vereinswissen und Zusammenhänge dauerhaft bewahren, quellenbasiert erschließen und für zukünftige Generationen nutzbar machen.
+
+Der Bereich trennt Originalquellen, Transkriptionen, Faktenbasis und veröffentlichte Darstellung und stellt anderen Verantwortungsbereichen belastbares historisches Wissen bereit.
+
+**Zusammenarbeit**
+
+- Kommunikation
+- Sport
+- Veranstaltungen
+- Vereinsentwicklung
+- Datenschutz & IT
+
+**Zugeordnete Startrolle**
+
+- Archivist
+
+---
+
 ## Vereinsentwicklung
 
 **Auftrag**
@@ -165,6 +234,16 @@ Innovation fördern.
 Neue Ideen bewerten.
 
 Organisation kontinuierlich verbessern.
+
+**Zugeordnete Rolle**
+
+- Project Portfolio Manager
+
+Der Project Portfolio Manager führt nicht die Fachprojekte selbst. Er hält organisationsweit sichtbar, welche relevanten Vorhaben existieren, wo ihr verbindlicher Projektstand liegt, wer verantwortlich ist, was als Nächstes ansteht und welche wesentlichen Abhängigkeiten bestehen.
+
+**Zusammenarbeit**
+
+- alle Verantwortungsbereiche und Fachrollen
 
 ---
 
