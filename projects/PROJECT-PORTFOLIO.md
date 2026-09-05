@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-05 – Aufbau Digitale Vereinsorganisation formalisiert
+Stand: 2026-09-05 – Großfeldtore Haupt- und Trainingsplatz formalisiert
 
 ## Purpose
 
@@ -20,14 +20,16 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Arbeitsstandprüfung ergibt:
 
-- **8 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **2 Aktiv** und **6 Discovery**,
+- **9 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **2 Aktiv**, **1 Geplant** und **6 Discovery**,
 - mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
 - mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm.
 
 Der LED Media Screen wurde am 05.09.2026 vom Kandidaten zum formalen Projekt hochgestuft, weil inzwischen ein konkreter Standort, zwei Visualisierungen, ein belastbares Lieferantenangebot, technische Eckdaten und ein eigenes Finanzierungs-/Partnerkonzept vorliegen.
 
 Die **Digitale Vereinsorganisation** bleibt langfristig das übergeordnete Organisationsprogramm des TuS. Zusätzlich wird die aktuelle, klar abgrenzbare **Aufbau- und Konsolidierungsphase** seit 05.09.2026 als formales Projekt `digital-organisation/` geführt. Damit können Aufbauziele, Arbeitspakete, Wirkung und mögliche Fördermittel sauber dokumentiert werden, ohne den späteren Dauerbetrieb zu einem ewigen Megaprojekt zu machen.
+
+Die bisher als Einzelmaßnahme geführte Beschaffung zusätzlicher Tore wird am 05.09.2026 als formales Projekt `grossfeldtore-haupt-trainingsplatz/` hochgestuft. Der Umfang ist inzwischen klar größer als ein einzelner Kauf: zwei vorhandene mobile Tore werden auf das Trainingsfeld verlagert, auf dem Hauptfeld soll eine neue herausnehmbare Hülsentor-Anlage entstehen, eine konkrete technische Lösung und Kostenbasis liegen vor und Förderung, Fundamentierung, Einbau sowie Beschluss müssen vor Bestellung koordiniert werden.
 
 Für offene Pull Requests gilt weiterhin: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt.
 
@@ -45,6 +47,7 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | `PROJECT-STATE.md` ist teilweise veraltet: Initial-Scope PR #17 ist bereits gemergt; keine parallele Mannschafts- oder Personendatenwelt aufbauen | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
 | LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | vor Ablauf der Angebots-Preisbindung Technikbeiblatt, Fundament, Strom, Funding-Check, Genehmigung und Gesamtfinanzierung klären | Angebot 30260839-2: 48.779 € netto nach 2.000 € goracon-Sponsoringrabatt; Drive-Artefaktraum vorhanden; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
 | Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Aufbauzustand in wenige messbare Arbeitspakete schneiden und durch Funding gegen aktuelle Programme spiegeln | dauerhaftes Organisationsprogramm bleibt die Klammer; dieses Projekt umfasst nur Aufbau/Konsolidierung; Drive-Artefaktraum mit aktuellem Organisationsbild vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
+| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | konkrete Kübler-Konfiguration mit Funding/BSB abgleichen, passende Netze und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Beschluss zur Bestellung herbeiführen | favorisiert: 2 Hülsentore mit P-Netzbügel + 4 enthaltene Bodenhülsen + 1 Paar hochklappbare STADION-FLEX-Bodenrahmen; bekannter Hardware-Zwischenstand 2.935,50 € brutto; keine Bestellung ausgelöst | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
@@ -58,8 +61,9 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Team Manager | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nächsten Architektur-/Discovery-Schritt als aktuellen Einstieg setzen |
 | LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förderung, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
 | Aufbau Digitale Vereinsorganisation | **aktuell** | bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen, Förderstrategie, Betriebsarchitektur oder Übergang in den Regelbetrieb aktualisieren |
+| Großfeldtore Haupt- und Trainingsplatz | **aktuell** | bei Änderung von Produktauswahl, Preis, Netzen, Fracht, Funding, Fundament/Einbau, Beschluss oder Bestellstatus aktualisieren |
 
-Alle acht formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
+Alle neun formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
 ### 4. Reale Projektkandidaten
 
@@ -86,7 +90,6 @@ Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstli
 
 | Thema / Vorhaben | Einordnung | Portfolio-Begründung / Zuordnung |
 |---|---|---|
-| Zusätzliche Tore / Netze | **Einzelmaßnahme / Beschaffung** | konkrete, förderrelevante Beschaffung; im Funding-Radar als A-Chance bewertet. Solange daraus kein größerer Planungszustand entsteht, reicht die Steuerung über Funding + zuständigen Fachbereich |
 | 125-Jahre-Jubiläumszuschüsse nach bereits realisiertem Jubiläum | **Einzelaufgabe** | administrative Nachprüfung möglicher kommunaler/Landkreis-Zuschüsse, kein neues Vereinsprojekt |
 | Finanzpuffer für laufende Kosten | **Regelbetrieb / Finanzziel** | dauerhafte finanzielle Stabilität, kein abgrenzbares Projektergebnis |
 | Rücklagenaufbau | **Regelbetrieb / Finanzziel** | laufende Finanzsteuerung, kein eigenes Projekt |
@@ -183,7 +186,7 @@ Bis dahin entsteht daraus **kein zweites Eventprojekt**.
 
 #### Infrastrukturprojekte ↔ Funding / Sponsoring / Finanzen
 
-Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV und LED Media Screen teilen wiederkehrende Abhängigkeiten:
+Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV, Großfeldtore und LED Media Screen teilen wiederkehrende Abhängigkeiten:
 
 - fachlicher Owner,
 - Eigentums-/Nutzungsrecht,
@@ -197,19 +200,22 @@ Funding prüft die Förderfähigkeit; Sponsoring entwickelt mögliche Partnerbei
 
 Für den LED Media Screen sind Angebot, Technik und Artefakte inzwischen in `led-media-screen/PROJECT-STATE.md` konkret dokumentiert. Eine Bestellung ist ausdrücklich noch nicht ausgelöst.
 
+Für die Großfeldtore sind favorisierte Kübler-Komponenten, Direktlinks, aktueller Hardware-Zwischenstand, Förderrechnung und Bestellcheckliste in `grossfeldtore-haupt-trainingsplatz/` dokumentiert. Auch hier ist noch keine Bestellung ausgelöst.
+
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
-1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen und Aufbau Digitale Vereinsorganisation ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
+1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation und Großfeldtore Haupt- und Trainingsplatz ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
 2. **PROJECT-STATE-Pflege auslösen:** Event Planner, TuS Tauschbörse und Team Manager nach bereits gemergten PRs bereinigen.
 3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
 4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
-5. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
-6. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
-7. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
-8. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
-9. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
-10. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
-11. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
+5. **Großfeldtore bestellreif machen:** konkrete Kübler-Konfiguration mit BSB/Funding abgleichen, passende Netze, Netzbefestigung und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Gesamtpreis plus Beschluss dokumentieren.
+6. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
+7. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
+8. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
+9. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
+10. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
+11. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
+12. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
 
 ### 8. Nutzung durch andere Mitarbeiter
 
