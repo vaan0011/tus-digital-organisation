@@ -90,4 +90,9 @@ $directMatch = (object) ['team_home' => 1, 'team_away' => 2, 'goals_home' => 0, 
 $ranked = VTP_Plugin::sort_standing_rows($tiedRows, [$directMatch]);
 assert_true($ranked[0]['team']->id === 2, 'Der Sieger des direkten Vergleichs muss vorne stehen.');
 
+// Event-Tage dürfen nur als echte ISO-Kalenderdaten gespeichert werden.
+assert_true(VTP_Plugin::is_valid_event_date('2028-02-29'), 'Ein gültiger Schalttag wurde abgelehnt.');
+assert_true(!VTP_Plugin::is_valid_event_date('2027-02-29'), 'Ein ungültiges Kalenderdatum wurde akzeptiert.');
+assert_true(!VTP_Plugin::is_valid_event_date('03.09.2026'), 'Nur ISO-Datumswerte dürfen gespeichert werden.');
+
 fwrite(STDOUT, "Turnierlogik: alle Tests erfolgreich.\n");
