@@ -29,7 +29,7 @@ Der LED Media Screen wurde am 05.09.2026 vom Kandidaten zum formalen Projekt hoc
 
 Die **Digitale Vereinsorganisation** bleibt langfristig das übergeordnete Organisationsprogramm des TuS. Zusätzlich wird die aktuelle, klar abgrenzbare **Aufbau- und Konsolidierungsphase** seit 05.09.2026 als formales Projekt `digital-organisation/` geführt. Damit können Aufbauziele, Arbeitspakete, Wirkung und mögliche Fördermittel sauber dokumentiert werden, ohne den späteren Dauerbetrieb zu einem ewigen Megaprojekt zu machen.
 
-Die bisher als Einzelmaßnahme geführte Beschaffung zusätzlicher Tore wird am 05.09.2026 als formales Projekt `grossfeldtore-haupt-trainingsplatz/` hochgestuft. Der Umfang ist inzwischen klar größer als ein einzelner Kauf: zwei vorhandene mobile Tore werden auf das Trainingsfeld verlagert, auf dem Hauptfeld soll eine neue herausnehmbare Hülsentor-Anlage entstehen, eine konkrete technische Lösung und Kostenbasis liegen vor und Förderung, Fundamentierung, Einbau sowie Beschluss müssen vor Bestellung koordiniert werden.
+Die **Großfeldtore Haupt- und Trainingsplatz** werden seit 05.09.2026 als formales Beschaffungs-/Infrastrukturprojekt geführt, weil konkrete Zielkonfiguration, Lieferantenprodukte, Preise, Förderweg, Beschlussbedarf und Einbauabhängigkeiten vorliegen. Eine eigene `FUNDING-REFERENCE.md` dokumentiert die verifizierte BSB-Nord-Sportgeräteförderung und dient dem Funding & Grants Manager als unmittelbare Antragsgrundlage.
 
 Für offene Pull Requests gilt weiterhin: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt.
 
@@ -47,7 +47,7 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | `PROJECT-STATE.md` ist teilweise veraltet: Initial-Scope PR #17 ist bereits gemergt; keine parallele Mannschafts- oder Personendatenwelt aufbauen | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
 | LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | vor Ablauf der Angebots-Preisbindung Technikbeiblatt, Fundament, Strom, Funding-Check, Genehmigung und Gesamtfinanzierung klären | Angebot 30260839-2: 48.779 € netto nach 2.000 € goracon-Sponsoringrabatt; Drive-Artefaktraum vorhanden; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
 | Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Aufbauzustand in wenige messbare Arbeitspakete schneiden und durch Funding gegen aktuelle Programme spiegeln | dauerhaftes Organisationsprogramm bleibt die Klammer; dieses Projekt umfasst nur Aufbau/Konsolidierung; Drive-Artefaktraum mit aktuellem Organisationsbild vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
-| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | konkrete Kübler-Konfiguration mit Funding/BSB abgleichen, passende Netze und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Beschluss zur Bestellung herbeiführen | favorisiert: 2 Hülsentore mit P-Netzbügel + 4 enthaltene Bodenhülsen + 1 Paar hochklappbare STADION-FLEX-Bodenrahmen; bekannter Hardware-Zwischenstand 2.935,50 € brutto; keine Bestellung ausgelöst | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
+| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | Vorstandsbeschluss vorbereiten, konkrete Kübler-Konfiguration und Eigentumsstatus mit BSB Nord vorab prüfen, Netze/Fracht/Einbau vervollständigen | bekannte Hardware 2.935,50 € brutto; BSB-Nord-Sportgeräteförderung 30 %, `Tore als Satz` max. 3.000 € anerkannt → max. 900 € Zuschuss; Antrag nach Anschaffung im BSBnet bis 31.01.2027; eigene `FUNDING-REFERENCE.md`; keine Bestellung ausgelöst | Sport, Infrastruktur, Funding & Grants, Finanzen, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
@@ -61,7 +61,7 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Team Manager | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nächsten Architektur-/Discovery-Schritt als aktuellen Einstieg setzen |
 | LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förderung, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
 | Aufbau Digitale Vereinsorganisation | **aktuell** | bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen, Förderstrategie, Betriebsarchitektur oder Übergang in den Regelbetrieb aktualisieren |
-| Großfeldtore Haupt- und Trainingsplatz | **aktuell** | bei Änderung von Produktauswahl, Preis, Netzen, Fracht, Funding, Fundament/Einbau, Beschluss oder Bestellstatus aktualisieren |
+| Großfeldtore Haupt- und Trainingsplatz | **aktuell** | bei BSB-Nord-Vorabprüfung, Eigentumsklärung, finaler Netzauswahl, Angebot, Vorstandsbeschluss, Bestellung oder Förderantrag aktualisieren |
 
 Alle neun formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
@@ -186,7 +186,7 @@ Bis dahin entsteht daraus **kein zweites Eventprojekt**.
 
 #### Infrastrukturprojekte ↔ Funding / Sponsoring / Finanzen
 
-Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV, Großfeldtore und LED Media Screen teilen wiederkehrende Abhängigkeiten:
+Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV, LED Media Screen und Großfeldtore teilen wiederkehrende Abhängigkeiten:
 
 - fachlicher Owner,
 - Eigentums-/Nutzungsrecht,
@@ -200,16 +200,16 @@ Funding prüft die Förderfähigkeit; Sponsoring entwickelt mögliche Partnerbei
 
 Für den LED Media Screen sind Angebot, Technik und Artefakte inzwischen in `led-media-screen/PROJECT-STATE.md` konkret dokumentiert. Eine Bestellung ist ausdrücklich noch nicht ausgelöst.
 
-Für die Großfeldtore sind favorisierte Kübler-Komponenten, Direktlinks, aktueller Hardware-Zwischenstand, Förderrechnung und Bestellcheckliste in `grossfeldtore-haupt-trainingsplatz/` dokumentiert. Auch hier ist noch keine Bestellung ausgelöst.
+Für die Großfeldtore sind Bestellgrundlage, offizielle BSB-Nord-Förderreferenz und Vorstandsvorlage bereits vorhanden. Der formale Förderantrag folgt bei Eignung nach der Anschaffung; vor Bestellung wird wegen der konkreten Komponenten und Eigentumssituation eine schriftliche BSB-Nord-Vorabprüfung durchgeführt.
 
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
-1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation und Großfeldtore Haupt- und Trainingsplatz ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
+1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation und Großfeldtore ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
 2. **PROJECT-STATE-Pflege auslösen:** Event Planner, TuS Tauschbörse und Team Manager nach bereits gemergten PRs bereinigen.
 3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
 4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
-5. **Großfeldtore bestellreif machen:** konkrete Kübler-Konfiguration mit BSB/Funding abgleichen, passende Netze, Netzbefestigung und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Gesamtpreis plus Beschluss dokumentieren.
-6. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
+5. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
+6. **Großfeldtore beschluss- und bestellreif machen:** Vorstandsbeschluss/Budget, BSB-Nord-Vorabprüfung, Eigentumsstatus, Netze, Fracht und Fundament/Einbau klären; Rechnung für 2026 sicherstellen, falls die Förderung genutzt werden soll.
 7. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
 8. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
 9. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
