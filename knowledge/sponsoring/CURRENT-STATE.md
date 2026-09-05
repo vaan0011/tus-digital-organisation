@@ -26,11 +26,10 @@ Die ausführliche fachliche Grundlage liegt in:
 
 - `README.md`
 
-Dort sind bereits dokumentiert:
+Dort sind unter anderem dokumentiert:
 
 - aktuelle Ausgangslage,
 - reale Datenquellen,
-- Vereins- und Reichweitenbasis,
 - sieben Partnerwelten,
 - Media & Reichweite,
 - Partnererlebnis,
@@ -43,57 +42,107 @@ Dort sind bereits dokumentiert:
 
 Diese Inhalte werden nicht in parallelen Strategiedokumenten dupliziert.
 
-### 2. Partnerportal
+### 2. Verbindliche Produktabgrenzung: öffentlich / Partnerportal / Partner Hub
 
-Status: `fachliches Konzept / Vorbereitung`
+Status: `entschieden`
 
-Aktueller verbindlicher Projektstand:
+Die bisherige Überschneidung zwischen Partnerportal und Partner Hub ist aufgelöst.
+
+Die verbindliche Logik lautet:
+
+> **öffentlich gewinnen → intern managen → im Partner Hub gemeinsam nutzen**
+
+#### Öffentliche Partnerseite
+
+Zweck:
+
+- neue Unternehmen ansprechen,
+- Unternehmensziele abfragen,
+- strukturierte Partnerschaftsanfragen erzeugen,
+- Anfrage direkt in die interne Partnerarbeit überführen.
+
+#### Internes Partnerportal
+
+Zweck:
+
+- Interessenten und Zielunternehmen,
+- Partner Journey,
+- Aufgaben und Wiedervorlagen,
+- Partnerziele,
+- Partnerprodukte und Assets,
+- Historie,
+- Kampagnenplanung,
+- interne Partnerarbeit und Auswertung.
+
+Aktueller Projektstand:
 
 - `../../projects/partner-portal/PROJECT-STATE.md`
+- `../../projects/partner-portal/README.md`
 
-Dort ist insbesondere festgehalten:
+#### Partner Hub
 
-- noch keine Implementierung,
-- tägliche Nutzung im Frontend,
-- kein notwendiger WordPress-Backend-Zugriff im Tagesgeschäft,
-- deutschsprachige Oberfläche,
-- schlanke, mobile und konsistente UX,
-- öffentliche Partner-Landingpage als Bestandteil des Zielbilds,
-- Partner Journey und weitere Kernbereiche fachlich weitgehend umrissen.
+Zweck:
 
-### 3. Partner Hub
-
-Status: `fachlicher Scope vorhanden / Implementierung offen`
+- partnerseitige Oberfläche für bestehende Partner,
+- Partnerschaft und Ziele verständlich darstellen,
+- vereinbarte und noch nutzbare Leistungen sichtbar machen,
+- Verwendung und Wirkung zeigen,
+- Jobs und Angebote einbringen,
+- Einladungen beantworten,
+- Inhalte nutzen,
+- Projekte, Kampagnen und Netzwerk zugänglich machen,
+- jährlichen Partner-Check-in unterstützen.
 
 Aktueller Projektstand:
 
 - `../../projects/partner-hub/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 
-Der Partner Hub beschreibt ebenfalls ein geschütztes Frontend-Portal mit Partnerbeziehung, Inhalten, Netzwerk, Kampagnen und Wirkung.
+Die Abgrenzung ist langfristig in `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
 
-### 4. Offene Überschneidung: Partnerportal vs. Partner Hub
+### 3. Gemeinsame Datenbasis
 
-Status: `zu klären vor technischer Implementierung`
+Status: `Prinzip beschlossen / technische Ausgestaltung offen`
 
-Die beiden Projektbereiche besitzen erkennbare fachliche Überschneidungen.
+Partnerportal und Partner Hub sind keine getrennten Datenwelten.
 
-Vor weiterer technischer Umsetzung muss geklärt werden:
+Für gemeinsam genutzte Informationen gilt eine fachliche Quelle der Wahrheit.
 
-- handelt es sich um dasselbe Produkt mit unterschiedlicher Benennung,
-- sind es zwei klar getrennte Produkte,
-- oder soll eines der beiden Konzepte das andere ersetzen bzw. aufnehmen?
+Insbesondere sollen Partner, Ansprechpartner, Partnerschaft, Partnerziele, vereinbarte Leistungen, Veranstaltungen, Projekte, Kampagnen, Jobs und Angebote nicht unabhängig in mehreren Modulen gepflegt werden.
 
-Bis diese Frage geklärt ist, wird kein drittes paralleles Partnersystem begonnen.
+Beispiele:
+
+- Event Planner ist fachliche Quelle eines Events; Partnerportal und Partner Hub referenzieren es.
+- Ein im Partner Hub erfasster und vom TuS freigegebener Job kann auf der Homepage erscheinen, ohne erneut angelegt zu werden.
+- Partnerziele und Leistungen werden zentral geführt und je Oberfläche nur passend dargestellt.
+
+Die konkrete technische Datenarchitektur ist noch offen.
+
+### 4. Ergänzte Kernlogik des Partner Hubs
+
+Status: `fachlich beschlossen`
+
+Zusätzlich zum bisherigen Scope sind drei Punkte verbindlich ergänzt:
+
+1. **Partnerziele**  
+   Wenige priorisierte Unternehmensziele bilden den Orientierungsrahmen für relevante Projekte, Kampagnen und Aktivierungen.
+
+2. **Nutzungs-/Erfüllungsstatus von Leistungen**  
+   Partner sollen erkennen können, welche vereinbarten Leistungen bereits genutzt/erfüllt wurden und welche noch offen sind.
+
+3. **Jährlicher Partner-Check-in**  
+   Ein kurzer strukturierter Austausch verbindet Wirkung, neue Unternehmensziele, Weiterentwicklung und Verlängerung.
+
+Diese Funktionen bleiben bewusst einfach und erzeugen keine zweite Buchhaltung oder komplexe Leistungsverwaltung.
 
 ### 5. Operative Sponsoring-Datengrundlage
 
 Status: `Arbeitsstand`
 
-Im bestehenden Sponsoring-Wissensdokument sind bereits bekannte Quellen festgehalten, unter anderem:
+Bekannte Quellen sind insbesondere:
 
 - aktuelle Sponsorenliste des Finanzvorstands,
-- historische Bandenwerbung 2005–2026 mit einer bekannten Lücke 2007,
+- historische Bandenwerbung 2005–2026 mit bekannter Lücke 2007,
 - historische Plakatwerbung,
 - historische Werbung im Stadionheft.
 
@@ -101,11 +150,34 @@ Leistungen, Laufzeiten, Gegenleistungen und Einnahmen je aktuellem Sponsor solle
 
 Vertrauliche Einzelinformationen bleiben außerhalb des öffentlichen Repositorys.
 
-### 6. LED Media Screen
+### 6. Steuer- und Vereinsstruktur
+
+Status: `Ist-Analyse offen`
+
+Es bestehen:
+
+1. TuS 1901 Mingolsheim e.V.
+2. Förderverein
+3. Jugendförderverein
+
+Die endgültige steuerliche Soll-Struktur ist noch nicht beschlossen.
+
+Für die Ist-Analyse werden insbesondere Unterlagen zu Satzungen, Steuerbescheiden, EÜR/Jahresabschlüssen, Einnahmen-/Ausgabenarten, Umsatzsteuer, Geldflüssen zwischen den Vereinen, Rücklagen und bisheriger Werbezuordnung benötigt.
+
+Wichtige Prüfthemen bleiben unter anderem:
+
+- wirtschaftlicher Geschäftsbetrieb,
+- § 64 AO,
+- mögliche Gewinnpauschale für geeignete Werbung,
+- Vorsteuerabzug,
+- Projekt- und freie Rücklagen,
+- sachliche Zuständigkeit der drei Vereine.
+
+### 7. LED Media Screen
 
 Status: `strategisch weit entwickelt / Umsetzung offen`
 
-Der LED Media Screen ist im Sponsoring-Konzept als zentrales Asset dokumentiert.
+Der LED Media Screen ist ein zentrales Asset im Sponsoring-Konzept.
 
 Bisherige Kerngedanken:
 
@@ -116,27 +188,13 @@ Bisherige Kerngedanken:
 
 Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/Vereinszuordnung und Genehmigungen aktuell geprüft.
 
-### 7. Rolle im digitalen Büro
+### 8. Nächste sinnvolle Arbeitsschwerpunkte
 
-Status: `neu organisatorisch definiert`
-
-Die dauerhafte Rolle heißt:
-
-- `Partnership Manager`
-
-Die Rolle nutzt diesen Wissensstand als Ausgangspunkt und hinterlegt relevante nicht-vertrauliche Ergebnisse nach der Arbeit in GitHub.
-
-### 8. Nächster sinnvoller Arbeitsschritt im Sponsoring-Chat
-
-Der Sponsoring-Arbeitsraum soll zunächst:
-
-1. `roles/partnership-manager/role.md` lesen,
-2. `roles/partnership-manager/partnership-standard.md` lesen,
-3. `knowledge/sponsoring/README.md` lesen,
-4. diesen Current State lesen,
-5. Partnerportal und Partner Hub gegeneinander abgleichen,
-6. die tatsächlichen aktuellen operativen Sponsoring-Datenquellen prüfen,
-7. anschließend mit dem nächsten konkreten Sponsoring-Schwerpunkt weiterarbeiten.
+1. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner konsolidieren,
+2. historische Sponsorendaten normalisieren und Dubletten erkennen,
+3. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
+4. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
+5. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen.
 
 ### 9. GitHub-Pflicht
 
@@ -155,8 +213,11 @@ Je nach Inhalt werden aktualisiert:
 - `README.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
+- `../../projects/partner-portal/README.md`
 - `../../projects/partner-portal/PROJECT-STATE.md`
+- `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../projects/partner-hub/PROJECT-STATE.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
