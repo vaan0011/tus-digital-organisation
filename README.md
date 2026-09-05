@@ -114,6 +114,7 @@ plugins/
     Fachliche Plugins
 
 projects/
+    Zentrales Projektportfolio
     Konkrete Projekte und Projektzustände
 
 system/
@@ -232,11 +233,15 @@ Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 2. `roles/partnership-manager/partnership-standard.md`
 3. `knowledge/sponsoring/README.md`
 4. `knowledge/sponsoring/CURRENT-STATE.md`
-5. `projects/partner-portal/PROJECT-STATE.md`, wenn das Partnerportal betroffen ist
-6. `projects/partner-hub/PROJECT-STATE.md`, wenn der Partner Hub betroffen ist
-7. relevante ADRs unter `decisions/`
+5. `projects/README.md`
+6. `projects/PROJECT-PORTFOLIO.md`
+7. `projects/partner-portal/PROJECT-STATE.md`, wenn das Partnerportal betroffen ist
+8. `projects/partner-hub/PROJECT-STATE.md`, wenn der Partner Hub betroffen ist
+9. relevante ADRs unter `decisions/`
 
 Der Sponsoring-Chat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit in GitHub gesichert.
+
+Projektbezogene Bilder, Scans, Angebote und große Arbeitsdateien liegen im zentralen Projekt-Artefaktraum in Google Drive; die Verweis- und Ablageregel ist in `projects/README.md` dokumentiert.
 
 Verträge, personenbezogene Kontaktdaten und vertrauliche Einzelkonditionen werden weiterhin nur in dafür geeigneten geschützten Systemen gepflegt.
 
@@ -251,14 +256,37 @@ Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 3. `knowledge/funding/README.md`
 4. `knowledge/funding/CURRENT-STATE.md`
 5. `knowledge/funding/FUNDING-CALENDAR.md`
-6. `knowledge/funding/templates/program-dossier-template.md`
-7. `knowledge/funding/templates/application-checklist.md`
-8. relevante Projektzustände unter `projects/`
-9. relevante ADRs unter `decisions/`
+6. `projects/README.md`
+7. `projects/PROJECT-PORTFOLIO.md`
+8. `knowledge/funding/templates/program-dossier-template.md`
+9. `knowledge/funding/templates/application-checklist.md`
+10. relevante Projektzustände unter `projects/`
+11. relevante ADRs unter `decisions/`
 
 Konkrete Förderprogramme werden zum Zeitpunkt der Bewertung gegen aktuelle offizielle Quellen verifiziert. Frühere Fristen oder Sekundärquellen werden nicht ungeprüft übernommen.
 
+Projektbezogene Bilder, Scans, Angebote, Planunterlagen und große Arbeitsdateien werden aus dem zentralen Projekt-Artefaktraum in Google Drive herangezogen; GitHub enthält den strukturierten Projektstand und die notwendigen Verweise.
+
 Der Förderchat ist Arbeitsraum, nicht Organisationsgedächtnis. Relevante nicht-vertrauliche Ergebnisse werden nach der Arbeit im Förder-Wissensraum und gegebenenfalls in betroffenen Projektzuständen aktualisiert.
+
+---
+
+# Für Projektportfolio- und Vorhabenkoordination
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/project-portfolio-manager/role.md`
+2. `roles/project-portfolio-manager/portfolio-standard.md`
+3. `projects/README.md`
+4. `projects/PROJECT-PORTFOLIO.md`
+5. die `PROJECT-STATE.md` der relevanten formalen Projekte
+6. `knowledge/funding/CURRENT-STATE.md`
+7. `knowledge/sponsoring/CURRENT-STATE.md`
+8. relevante ADRs unter `decisions/`
+
+Der Project Portfolio Manager führt nicht die Fachprojekte selbst. Er hält die organisationsweite Projektlandschaft sichtbar, erkennt fehlende oder veraltete Projektzustände, offene Verantwortlichkeiten, relevante Abhängigkeiten und Doppelungen und aktualisiert den zentralen Portfolio-Index.
+
+Detailwahrheit bleibt im jeweiligen Projekt. Das Portfolio ist der zentrale Einstiegspunkt für andere Mitarbeiter.
 
 ---
 

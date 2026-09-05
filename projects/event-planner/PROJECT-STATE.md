@@ -10,9 +10,18 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Die bereits manuell verifizierten Event-Datums-Verbesserungen und das fachliche Zielbild werden auf einen frischen Branch des aktuellen `main` synchronisiert.
+Die fachliche Logik für Dashboard, Camps, Aufgaben sowie die Struktur der Event-Anlage ist geklärt und wird anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
 
-Danach wird der noch offene Baseline-Smoke-Test ab dem Turnier-Teil vollständig abgeschlossen. Erst anschließend beginnen weitere funktionale Erweiterungen des Event-Moduls.
+Verbindliche Logik- und UI-Quellen:
+
+- `DASHBOARD-LOGIC.md`
+- `EVENT-FORM-UI.md`
+
+Die vom Nutzer bereitgestellten Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
+
+Das Zielbild für die zweite Mockup-Seite ist noch nicht endgültig festgelegt. Durch die gewünschte Jahresauswertung und Helfer-Jahressicht entwickelt sie sich voraussichtlich von einer reinen `Eventhistorie` in Richtung `Auswertung & Historie`.
+
+Der Baseline-Smoke-Test ist weiterhin nicht vollständig abgeschlossen. Deshalb bleibt der formale Last Known Good offen.
 
 Langfristiges fachliches Zielbild:
 
@@ -42,6 +51,10 @@ Reproduzierbare Baseline:
 - Sprache `de_DE`
 - Blueprint: `playground/baseline-3.6.0.json`
 
+PR #26 `Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren` ist nach `main` gemergt. Damit liegen die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und der organisationsweite Datums-Picker-Standard auf dem Hauptzweig.
+
+PR #31 `Event Planner: Dashboard-Logik nach Fachklärung präzisieren` ist ebenfalls nach `main` gemergt. Damit sind Camp-Grundlogik, echte Organisationsaufgaben und die Modulgrenze zur Helfer-Jahresauswertung im Hauptstand dokumentiert.
+
 ## Last Known Good
 
 Noch nicht formal dokumentiert.
@@ -53,6 +66,7 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - GitHub ist die maßgebliche Quelle für Code, fachliches Zielbild, Entscheidungen und Entwicklungsstand.
 - Entwicklung erfolgt über Branch und Pull Request.
 - PR #10 mit reproduzierbarer Playground-/Smoke-Test-Infrastruktur wurde nach `main` gemergt.
+- PR #26 mit den später verifizierten Event-Änderungen wurde nach `main` synchronisiert.
 - Der Playground-Preview-Workflow wurde erfolgreich ausgeführt.
 - Smoke-Test Schritt 1 wurde manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Dashboard ist erreichbar.
 - Smoke-Test Schritt 2 wurde manuell bestätigt: Ein Event lässt sich speichern, erneut öffnen und behält seine Kerndaten.
@@ -64,41 +78,124 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - Das daraus abgeleitete organisationsweite Datums-Picker-Muster ist im zentralen `design/ui-standard.md` dokumentiert.
 - Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
 
+## Dashboard Decisions V1
+
+- Schnellaktionen: `neues Event`, `neues Turnier`, `neues Camp`, `Schichten öffnen`.
+- Fußballcamps werden als Event-Art auf dem gemeinsamen Event-Grundmodell geführt, nicht als isolierte zweite Eventverwaltung.
+- Camps erhalten camp-spezifische Daten wie Ausrichter, Teilnehmerzahl/-limit, Preise, Trainingsort und Buchungsart.
+- Camp-Buchung muss intern, extern per Link oder ohne Buchung möglich sein.
+- Turniere bleiben eine eigene fachliche Einheit mit eigener Team-, Spielplan- und Ergebnislogik.
+- Dashboard-Zähler werden aus Fachdaten berechnet und nicht separat gepflegt.
+- `Schichten` im Hauptdashboard zählt Schichten nicht archivierter Events.
+- `Übersicht` zeigt anstehende und aktuell laufende Events, Turniere und Camps chronologisch.
+- Vergangene, noch nicht archivierte Objekte erscheinen nicht mehr als anstehend, sondern als Nachbereitungs-/Archivierungsaufgabe.
+- `Offene Aufgaben` ist ein echter operativer Aufgabenbereich und nicht nur eine automatische Warnliste.
+- Aufgaben können manuell, aus Templates oder als Systemhinweis entstehen.
+- Typische Aufgaben sind z. B. Catering, Foodtruck, Ausschankgenehmigung, Pilswagen, Kassen/Wechselgeld, Material und Lieferungen.
+- Automatische Systemhinweise wie offene Helferplätze, fehlendes Programm oder fehlender Spielplan ergänzen die echten Aufgaben.
+- Die bisherige künstlich einfache Fortschritts-Prozentlogik wird nicht als verbindliche Dashboard-Vorgabe übernommen.
+- Mockup-Farben werden nicht übernommen; die bestehenden UI-Tokens bleiben maßgeblich.
+
+## Event-Anlage Decisions V1
+
+Verbindliche UI-Quelle:
+
+`EVENT-FORM-UI.md`
+
+Festgelegt:
+
+- obere Event-Navigation mit `neues Event`, `aktive Events`, `Vorlagen`, `Archiv`,
+- aktiver Bereich wird eindeutig hervorgehoben,
+- Event-Anlage erhält eine klare zweispaltige Struktur auf Desktop und eine einspaltige responsive Darstellung auf Mobilgeräten,
+- linke Formularspalte: Veranstaltungsname, Startdatum, Enddatum, Veranstaltungsort,
+- rechte Formularspalte: Veranstaltungsbeschreibung, zusätzlicher Link, öffentliche Kalender-Sichtbarkeit,
+- Vorlagen-Auswahl wird im Kopf der Event-Anlage vorgesehen,
+- ein aus Vorlage erzeugtes Event ist anschließend unabhängig von der Vorlage bearbeitbar,
+- Event-Sponsoren werden nicht mehr in einem großen Sammelfeld dargestellt,
+- Sponsoren werden zeilenweise mit klar getrennten Feldern `Name`, `Logo`, `Link zur Homepage` geführt,
+- neue Sponsor-Zeilen werden im Neuanlage-Modus zusammen mit `Event anlegen` gespeichert,
+- Icon-Aktionen benötigen verständliche Tooltips/ARIA-Labels,
+- für die erste Umsetzung bleibt der Event Planner für die Sponsorendarstellung des konkreten Events zuständig,
+- eine spätere Anbindung an eine gemeinsame Partnerdatenquelle bleibt möglich, ohne die Event-Anlage davon abhängig zu machen,
+- Canva-Mockup-Farben werden nicht übernommen.
+
+## Auswertung / Historie – aktueller Stand
+
+Festgelegt:
+
+- obere Kennzahlreihe nutzt die Kategorien Events, Turniere, Camps und Schichten,
+- eine Jahresauswertung soll zeigen können, wie viele Veranstaltungen je Kategorie pro Jahr durchgeführt wurden,
+- eine grafische Darstellung aus den vorhandenen Daten ist gewünscht,
+- archivierte Event-Details sollen langfristig weiterhin nachvollziehbar bleiben.
+
+Noch offen:
+
+- endgültige Seitenbezeichnung und genaue Aufteilung zwischen `Auswertung` und `Historie`,
+- genaue Darstellung der historischen Detailansicht.
+
+Helfer-Jahresauswertung:
+
+- der Event Planner ist Quelle für konkrete Schichten und bestätigte tatsächlich geleistete Zeiten,
+- `member-engagement` ist Quelle für personenbezogene Jahres-/Periodensummen, Helfersoll und Rabatt-Berechtigung,
+- eine kompakte Zusammenfassung darf im Event-Planner-Auswertungsbereich angezeigt werden, aber nicht mit eigener paralleler Berechnungslogik,
+- sinnvoll sind Aggregationen wie `Soll erfüllt`, `nur noch wenige Stunden offen` und `Gesamtliste`, jeweils mit Absprung in das Mitglieder-/Engagement-Modul,
+- lange personenbezogene Stundenlisten gehören nicht als Standardinhalt direkt auf das Event-Dashboard.
+
 ## Open
 
+- Dashboard-Logik V1 muss gegen den bestehenden Plugin-Code umgesetzt und im Playground geprüft werden.
+- Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss in kleinen Änderungen umgesetzt und verifiziert werden.
+- Der bestehende Sponsoren-Sammelwert muss vor Umstellung auf strukturierte Sponsor-Zeilen hinsichtlich Rückwärtskompatibilität/Migration geprüft werden.
+- Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
+- Für echte Organisationsaufgaben ist ein kleines Event-Aufgabenmodell erforderlich; es darf nicht unnötig zu einem komplexen Projektmanagementsystem wachsen.
+- Camp-Grunddaten und interne/externe Buchungswege müssen in kleinen Schritten modelliert werden.
+- Die genaue Auswertungs-/Historienseite bleibt bewusst offen, bis die Informationsstruktur weiter geklärt ist.
+- Die Integration der Helfer-Jahressicht darf erst erfolgen, wenn eine gemeinsame Personen-/Engagement-Datenquelle existiert.
 - Der Baseline-Smoke-Test muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
 - Erst bei vollständigem `PASSED` wird der Baseline-Kandidat als erster formaler Last Known Good eingetragen.
-- Der Versionsunterschied zwischen Plugin-Header `3.6.0` und `VTP_VERSION` `3.5.0` bleibt ein separater kleiner technischer Befund und wird nicht nebenbei verändert.
-- Ältere Entwicklungs-PRs #6 und #7 basieren auf dem früheren Branch `organisation` und gelten nicht als aktueller Entwicklungsstand. Gewünschte Änderungen daraus werden später nur selektiv und gegen einen verifizierten LKG geprüft.
+- Der Versionsunterschied zwischen Plugin-Header `3.6.0` und `VTP_VERSION` `3.5.0` bleibt ein separater technischer Befund.
+- Ältere Entwicklungs-PRs #6 und #7 basieren auf dem früheren Branch `organisation` und gelten nicht als aktueller Entwicklungsstand.
 
 ## Module Boundaries
 
 Der Event Planner ist die fachliche Quelle für konkrete Veranstaltungen und deren operative Planung, insbesondere:
 
 - Veranstaltungstage und Programm,
+- Fußballcamps und deren Veranstaltungs-/Buchungsinformationen,
 - Turniere,
+- echte Event-Aufgaben und Checklisten,
+- eventbezogene Sponsoren-/Partnerdarstellung,
 - Helferbedarf und konkrete Helferschichten,
 - Schichtzuordnung zu Personen, Mannschaften, Gruppen oder Abteilungen,
-- tatsächlich am Event geleistete Schichtzeiten,
+- tatsächlich am Event geleistete und bestätigte Schichtzeiten,
 - Bestellungen und eventbezogene Ausgaben,
-- spätere Event-Templates und Historie.
+- spätere Event-Templates und Eventhistorie.
 
-Das Projekt `member-engagement` bündelt perspektivisch die personenzentrierte Jahres-/Periodensicht auf Engagement, Helferstunden, Soll-Erfüllung und Rabatt-Berechtigungen. Dadurch wird keine zweite Helferschicht-Logik aufgebaut.
+Das Projekt `member-engagement` bündelt die personenzentrierte Jahres-/Periodensicht auf Engagement, Helferstunden, Soll-Erfüllung und Rabatt-Berechtigungen. Dadurch wird keine zweite Stunden- oder Helfersoll-Logik im Event Planner aufgebaut.
 
-Gemeinsame Mannschafts- und Personenidentitäten werden vor einer dauerhaften Doppelpflege architektonisch geklärt.
+Eine spätere zentrale Partnerdatenquelle kann Sponsor-Grunddaten liefern. Der Event Planner bleibt jedoch für die konkrete Sponsorendarstellung und Zuordnung am Event zuständig.
+
+Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpflege architektonisch geklärt.
 
 ## Excluded / Already Tried
 
-- Der alte Branch `event-planner/baseline-smoke-test` wird nicht direkt nach `main` gemergt, weil er inzwischen deutlich hinter `main` liegt.
-- Verifizierte Änderungen daraus werden stattdessen selektiv auf einen frischen Branch des aktuellen `main` übertragen.
+- Der alte Branch `event-planner/baseline-smoke-test` wird nicht direkt nach `main` gemergt; die verifizierten Änderungen wurden über PR #26 selektiv synchronisiert.
 - Ältere PRs auf Basis von `organisation` werden nicht gesammelt übernommen.
 - Der Datums-Default wird nicht erst beim Öffnen des nativen Pickers gesetzt.
-- Keine große funktionale Sammeländerung vor Abschluss des Baseline-Smoke-Tests.
+- Offene Aufgaben werden nicht auf reine automatisch erkannte Warnungen reduziert.
+- Das Aufgabenmodell wird nicht zu einem allgemeinen Projektmanagementsystem ausgebaut.
+- Camps erhalten keine eigene isolierte Event-Datenwelt.
+- Der Event Planner berechnet keine zweite personenbezogene Jahres-/Rabattlogik parallel zu `member-engagement`.
+- Sponsor-Daten bleiben nicht als unstrukturiertes großes Sammelfeld das Zielbild.
+- Mockup-Farben ersetzen nicht die bestehenden Plugin-Farben.
 
 ## Relevant Decisions & Standards
 
 - `FUNCTIONAL-SCOPE.md`
+- `DASHBOARD-LOGIC.md`
+- `EVENT-FORM-UI.md`
 - `SMOKE-TEST.md`
+- `../member-engagement/FUNCTIONAL-SCOPE.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/approval-and-escalation.md`
@@ -112,29 +209,26 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor einer dauerhaften Do
 
 Branch:
 
-`event-planner/sync-verified-work`
-
-Pull Request:
-
-`#26 – Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren`
+`event-planner/event-form-ui-spec`
 
 Scope:
 
-- verifizierte Event-Tag-Datumslogik auf aktuellen `main` übertragen,
-- Datums-Picker-Standard sichern,
-- fachliches Zielbild nach `main` bringen,
-- Projektstatus bereinigen,
-- keine neue fachliche Funktion erfinden.
+- Event-Anlegen-Screen als verbindliche UI-Struktur dokumentieren,
+- obere Navigation festlegen,
+- Vorlagen-Auswahl verankern,
+- Formularstruktur auf Desktop/Mobil festlegen,
+- Sponsorenpflege als strukturierte Zeilen definieren,
+- noch keine Produktcode- oder Datenbankänderung.
 
 ## Next Meaningful Step
 
-1. PR #26 prüfen und nach menschlicher Freigabe nach `main` übernehmen,
-2. Baseline-Smoke-Test ab Schritt 3 `Turnier` fortsetzen,
-3. Teams und Spielplan prüfen,
-4. Ergebnis speichern und Persistenz prüfen,
-5. öffentliche Ansicht prüfen,
-6. bei vollständigem `PASSED` den ersten formalen Last Known Good dokumentieren,
-7. danach das bestehende Event-Modul systematisch weiter vervollständigen.
+1. Event-Anlegen-UI-Spezifikation nach menschlicher Freigabe nach `main` übernehmen,
+2. anschließend Event-Navigation und Formularlayout als kleinen UI-PR umsetzen,
+3. Vorlagen-Dropdown mit sauberem Leerzustand vorbereiten,
+4. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte Sponsor-Zeilen umstellen,
+5. Responsive Verhalten und Accessibility im Playground prüfen,
+6. danach Dashboard-/Camp-/Aufgabenlogik in weiterhin kleinen Schritten umsetzen,
+7. den offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
 
 ## Update Rule
 
