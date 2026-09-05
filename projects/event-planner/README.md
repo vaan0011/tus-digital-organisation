@@ -1,16 +1,22 @@
-# TuS Event Planner
+# Verein Turnierplaner
 
-## Purpose
+Das installierbare WordPress-Plugin liegt unter
+[`plugin/verein-turnierplaner`](plugin/verein-turnierplaner).
 
-Dieses Projekt entwickelt den WordPress-basierten Event Planner des TuS Mingolsheim als zentrales Werkzeug für Veranstaltungs-, Turnier-, Camp-, Aufgaben- und Helferplanung.
+## Plugin-Paket
 
-## Core Principle
+Die Ablage und Weitergabe erfolgt über Google Drive. Das lokale Skript
+[`../../scripts/build-gdrive-packages.sh`](../../scripts/build-gdrive-packages.sh)
+erstellt mit folgendem Aufruf die benötigten Dateien:
 
-Der Event Planner wird in kleinen, überprüfbaren Schritten entwickelt. GitHub ist die maßgebliche Quelle für Code, Entscheidungen, fachliches Zielbild und Entwicklungsstand.
+```bash
+./scripts/build-gdrive-packages.sh
+```
 
-## Main Content
+Unter `dist/` entstehen anschließend:
 
-Plugin-Pfad:
+- `verein-turnierplaner-<version>.zip` zur Installation in WordPress
+- `tus-digital-organisation-source.zip` als vollständige Quellcode-Sicherung
 
 `plugin/verein-turnierplaner/`
 

@@ -36,6 +36,37 @@ Ein dauerhaft relevantes formales Projekt besitzt mindestens:
 
 Weitere Dateien entstehen nur bei echtem Bedarf.
 
+### Projektartefakte in Google Drive
+
+GitHub bleibt die verbindliche Quelle für strukturierte Projektinformation, insbesondere:
+
+- Projektstatus und nächster Schritt,
+- fachliche Entscheidungen,
+- Anforderungen und Scope,
+- Architektur- und Entwicklungsdokumentation,
+- nicht-vertrauliche Erkenntnisse aus Sponsoring und Fördermittelarbeit,
+- Verweise auf externe Projektartefakte.
+
+Große, binäre oder visuelle Projektartefakte werden nicht unnötig im Repository dupliziert. Der zentrale Google-Drive-Artefaktraum ist:
+
+- `TuS Projekte`: https://drive.google.com/drive/folders/1AZwLimESPBMoBw5d6AZLHRvJzYpEFyGq
+
+Dort werden insbesondere abgelegt:
+
+- Fotos und Bildsammlungen,
+- Scans und größere PDF-Dokumente,
+- Planzeichnungen und Präsentationen,
+- Angebote und umfangreiche Arbeitsdateien,
+- große Tabellen und Datenexporte,
+- Druck-, Design- und Produktionsdateien,
+- sonstige große Projektdateien, die nicht sinnvoll in Git versioniert werden.
+
+Wenn ein Projekt einen eigenen Drive-Unterordner oder eine wesentliche Drive-Datei besitzt, wird der entsprechende Link in der Projektakte bzw. im `PROJECT-STATE.md` referenziert. Andere Rollen sollen nicht anhand privater Chatverläufe nach Dateien suchen müssen.
+
+Der `Partnership Manager`, der `Funding & Grants Manager`, der `Graphic Designer`, der `Archivist` und weitere beteiligte Rollen verwenden GitHub zur Einordnung des Projektstands und Google Drive für die dazugehörigen Artefakte.
+
+Vertrauliche, personenbezogene, finanzielle oder vertragliche Dateien werden nur in einem dafür angemessen geschützten Drive-Bereich abgelegt und nicht allein wegen der Projektablage öffentlich oder breiter freigegeben.
+
 ### Kein Ordner für jede Idee
 
 Nicht jedes Vorhaben braucht sofort einen Projektordner.

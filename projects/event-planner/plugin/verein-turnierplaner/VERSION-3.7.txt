@@ -1,0 +1,10 @@
+Version 3.7.1
+
+- Liga-Modus plant unabhängig von früheren Gruppenzuweisungen jeder gegen jeden.
+- Mindestpausen werden auch bei leeren Zeitslots und vor Finalrunden eingehalten.
+- K.O.- und Platzierungsmodi prüfen ihre Gruppenvoraussetzungen vor der Generierung.
+- Platzierungsspiele nutzen mehrere Felder konsistent.
+- Turnier-Check erkennt abgeschlossene Spiele anhand ihrer Ergebnisse.
+- Tabellen berücksichtigen bei exakt zwei gleichplatzierten Teams den direkten Vergleich.
+- Regressionstests decken Liga, Pausenplanung, Tabellen und K.O.-Setzlisten ab.
+- Manuell hinzugefügte Event-Tage werden auch ohne Programmpunkt dauerhaft gespeichert.

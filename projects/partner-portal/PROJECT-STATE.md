@@ -16,11 +16,11 @@ Das Partnerportal wird erst implementiert, wenn der fachliche Kern ausreichend k
 
 > **Kein Funktionsmonster. Keine doppelte Pflege. Kein WordPress-Backend im Tagesgeschäft.**
 
-Der erste Stand soll die Partnerarbeit einfacher, schneller und nachvollziehbarer machen.
+Der erste Stand soll die interne Partnerarbeit einfacher, schneller und nachvollziehbarer machen.
 
 ## Main Content
 
-### 1. Fachliches Zielbild ist ausreichend umrissen
+### 1. Fachliches Zielbild
 
 Die Sponsoringstrategie ist nicht mehr nur klassische Flächenvermarktung.
 
@@ -36,7 +36,35 @@ Das ausführlichere fachliche Fundament liegt unter:
 
 `../../knowledge/sponsoring/README.md`
 
-### 2. Bestätigte Produktentscheidungen
+### 2. Verbindliche Produktabgrenzung
+
+Die frühere Überschneidung zwischen Partnerportal und Partner Hub ist entschieden.
+
+Die verbindliche Logik lautet:
+
+> **öffentlich gewinnen → intern managen → im Partner Hub gemeinsam nutzen**
+
+#### Öffentliche Partnerseite
+
+- spricht neue Unternehmen an,
+- fragt Unternehmensziele ab,
+- erzeugt strukturierte Partnerschaftsanfragen,
+- führt diese direkt in die interne Partnerarbeit.
+
+#### Partnerportal
+
+- ist das **interne Arbeitswerkzeug des TuS**,
+- organisiert Interessenten, Journey, Aufgaben, Wiedervorlagen, Partnerziele, Partnerprodukte, Assets, Historie, Kampagnen und interne Auswertung.
+
+#### Partner Hub
+
+- ist die **partnerseitige Oberfläche für bestehende Partner**,
+- macht Ziele, Leistungen, Wirkung, Projekte, Kampagnen, Angebote, Jobs, Inhalte und Netzwerk nutzbar,
+- unterstützt den jährlichen Partner-Check-in.
+
+Partnerportal und Partner Hub greifen auf gemeinsame fachliche Partnerdaten zurück. Die Produktabgrenzung ist in `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
+
+### 3. Bestätigte Produktentscheidungen
 
 #### Frontend-Anwendung
 
@@ -60,16 +88,17 @@ Das ausführlichere fachliche Fundament liegt unter:
 - selbsterklärend
 - mobil nutzbar
 - wenige Schritte je Aufgabe
-- konsistente Muster mit Event Planner und Homepage
+- konsistente Muster mit Event Planner, Partner Hub und Homepage
 - keine typische WordPress-Backend-Optik
 
-### 3. Geplante Kernbereiche
+### 4. Geplante Kernbereiche
 
-Für den ersten fachlichen Stand sind vorgesehen:
+Für das interne Partnerportal sind fachlich vorgesehen:
 
 - Partner / Unternehmen
 - Ansprechpartner
 - Partnerschaften und historische Leistungen
+- Partnerziele
 - Partner Journey
 - Partnerprodukte
 - Assets / Werbemöglichkeiten
@@ -77,23 +106,10 @@ Für den ersten fachlichen Stand sind vorgesehen:
 - Projekte
 - Kampagnen
 - Aufgaben / Wiedervorlagen
+- vereinbarte Leistungen und Status
 - Auswertung / Wirkung
 
 Die genaue MVP-Auswahl wird vor Entwicklungsbeginn noch reduziert.
-
-### 4. Öffentliche Partner-Landingpage
-
-Das Plugin soll neben dem geschützten internen Bereich auch eine öffentliche Partnerseite unterstützen.
-
-Die Seite soll nicht nur bestehende Sponsorenlogos zeigen, sondern Unternehmen interaktiv über ihre Ziele abholen.
-
-Möglicher Einstieg:
-
-> **Was möchten Sie mit einer Partnerschaft erreichen?**
-
-Eine Anfrage soll strukturiert in die interne Partnerarbeit übergehen.
-
-Perspektivisch ist ein eigener Login-Bereich für bestehende Partner möglich, aber kein Muss für Version 1.
 
 ### 5. Partner Journey
 
@@ -118,6 +134,8 @@ Zusätzlich vorgesehen:
 - kleine Unterstützung / Tombola / Sachleistung
 - Wiedervorlage
 - Entwicklung vom kleinen Unterstützer zum Themen- oder strategischen Partner
+
+Ergebnisse des jährlichen Partner-Check-ins aus dem Partner Hub können neue Ziele, Aktivierungen und Verlängerung vorbereiten.
 
 ### 6. Kampagnen
 
@@ -213,28 +231,27 @@ Bereits identifizierte Asset- und Produktgruppen umfassen unter anderem:
 
 Diese Liste ist ein fachlicher Katalog und keine Aufforderung, jede Möglichkeit als eigenes komplexes Produkt anzulegen.
 
-### 10. Projektprioritäten
+### 10. Gemeinsame Datenbasis und Objektverantwortung
 
-#### Kurzfristig
+Partnerportal und Partner Hub dürfen gemeinsame Informationen nicht unabhängig pflegen.
 
-- Fassade Hauptgebäude
-- LED Media Screen
-- Böden Umkleiden
-- Tore / Netze
-- finanzieller Puffer für laufende Kosten
+Vor Implementierung muss entschieden werden, wo die fachliche Quelle liegt für:
 
-#### Mittelfristig
+- Partner / Unternehmen
+- Ansprechpartner
+- Partnerschaft
+- Partnerziele
+- vereinbarte Leistungen
+- Historie
+- Kampagnen
 
-- Festplatz-Funktionsgebäude
-- Jugendräume
-- Sportparkteam
-- Bekleidungslager / Vereins-Shop
-- Rücklagenaufbau
+Für externe gemeinsame Objekte gilt dieselbe Logik:
 
-#### Langfristig
+- Event Planner soll fachliche Quelle eines Events sein,
+- Partnerportal und Partner Hub referenzieren das Event,
+- Homepage stellt freigegebene öffentliche Informationen dar.
 
-- Kunstrasen
-- weitere Sportpark- und Zauninfrastruktur
+Die konkrete technische Architektur ist noch offen.
 
 ### 11. Steuer- und Finanzstruktur – noch offen
 
@@ -283,12 +300,13 @@ Nicht im öffentlichen Repository speichern:
 
 Solche Daten gehören später in das geschützte Partnerportal bzw. in die dafür vorgesehenen Finanzsysteme.
 
-### 13. Parallele WordPress-Projekte
+### 13. Parallele TuS-Systeme
 
-Parallel entstehen:
+Parallel entstehen bzw. bestehen:
 
 - Event Planner
-- Partnerportal
+- internes Partnerportal
+- Partner Hub
 - neue Homepage
 
 Zusätzlich wird der extern gehostete Webshop UX-/UI-seitig mitgedacht.
@@ -305,14 +323,18 @@ Noch nicht bauen:
 - vollständigen Vertragsgenerator
 - LED-Steuerung
 - komplexe Marketingautomation
-- umfangreichen Partner-Self-Service
+- partnerseitigen Self-Service im Partnerportal; dieser gehört in den Partner Hub
 
-Version 1 muss zuerst die tägliche Partnerarbeit überzeugend organisieren.
+Version 1 muss zuerst die **interne Partnerarbeit** überzeugend organisieren.
 
 ## Relationship to other documents
 
 - `README.md`
+- `../partner-hub/README.md`
+- `../partner-hub/PROJECT-STATE.md`
 - `../../knowledge/sponsoring/README.md`
+- `../../knowledge/sponsoring/CURRENT-STATE.md`
+- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 - `../event-planner/PROJECT-STATE.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../design/design-principles.md`
@@ -328,10 +350,11 @@ Version 1 muss zuerst die tägliche Partnerarbeit überzeugend organisieren.
 1. fehlende Leistungs-, Laufzeit- und Einnahmedaten der Bestandspartner übernehmen,
 2. historische Sponsorendaten normalisieren und Dubletten erkennen,
 3. steuerliche Ist-Struktur anhand realer Unterlagen modellieren,
-4. daraus das minimale Datenmodell des Partnerportals ableiten,
-5. drei bis fünf zentrale Screens definieren,
-6. MVP verbindlich begrenzen,
-7. erst danach Implementierung starten.
+4. gemeinsame Partnerdatenbasis und Objektverantwortung mit Partner Hub definieren,
+5. daraus das minimale Datenmodell des internen Partnerportals ableiten,
+6. drei bis fünf zentrale interne Screens definieren,
+7. MVP verbindlich begrenzen,
+8. erst danach Implementierung starten.
 
 ### Abnahmekriterium für den Start der Entwicklung
 
@@ -339,8 +362,9 @@ Die Entwicklung startet, wenn klar beantwortet werden kann:
 
 - Welche Kernobjekte gibt es?
 - Welche Informationen müssen wirklich gepflegt werden?
-- Welche drei bis fünf Aufgaben muss Version 1 hervorragend lösen?
+- Welche drei bis fünf internen Aufgaben muss Version 1 hervorragend lösen?
 - Welche Daten kommen aus bestehenden Quellen?
+- Welche Daten werden mit dem Partner Hub geteilt?
 - Welche Daten dürfen nicht doppelt gepflegt werden?
 - Welche steuerlichen Informationen müssen gespeichert, aber nicht automatisch bewertet werden?
 
