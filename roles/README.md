@@ -36,6 +36,7 @@ Persönlichkeit, individuelle Entwicklung und konkrete Rollenzuweisungen gehöre
 - `partnership-manager/` – Partnerschaften, Sponsoring-Strategie und Partnerentwicklung
 - `funding-grants-manager/` – Förderprogramme, Förderkalender, Antragsstrategie und Fördermittel-Lernen
 - `project-portfolio-manager/` – organisationsweiter Überblick über Projekte, Vorhaben, Status und Abhängigkeiten
+- `matchday-editor/` – Spielberichte, Faktenprüfung, mediengerechte Fassungen und Spielberichtsarchiv
 
 ## Relationship to other documents
 
