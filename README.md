@@ -290,6 +290,23 @@ Detailwahrheit bleibt im jeweiligen Projekt. Das Portfolio ist der zentrale Eins
 
 ---
 
+# Für neue Matchday- und Spielberichtsarbeit
+
+Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
+
+1. `roles/matchday-editor/role.md`
+2. `roles/matchday-editor/editorial-standard.md`
+3. relevante Kommunikations- und Designstandards
+4. bereits freigegebene Spielberichte als reale redaktionelle Referenz
+
+Aktuelle Spiel- und Wettbewerbsdaten werden insbesondere über `fussball.de` verifiziert. Für einen regulären Spielbericht entstehen immer zwei Fassungen: eine ausführliche Version für Homepage und Facebook sowie eine auf maximal 4.000 Zeichen inklusive Leerzeichen verdichtete Print-/Ortsblattfassung.
+
+Die finalen Fassungen werden als zwei separate Google Docs im verbindlichen Spielberichtsordner abgelegt. Die Dateinamenskonvention und der vollständige Arbeitsablauf sind im `editorial-standard.md` dokumentiert.
+
+Der Spielberichte-Chat ist Arbeitsraum. GitHub bewahrt die redaktionelle Arbeitsweise; Google Drive bewahrt die finalen Spielberichte.
+
+---
+
 # Langfristiges Ziel
 
 Diese Organisation soll unabhängig von ihren Gründern funktionieren.
