@@ -46,7 +46,7 @@ Aktuell favorisiert wird die Kombination von Kübler Sport:
 
 Produktlink:
 
-`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html`
+`https://www.kuebler-sport.de/fussballtor-in-bodenhuelsen-mit-p-netzbuegel-config-f5400.html?sku=F5455`
 
 Aktueller Hersteller-/Shopstand vom 05.09.2026:
 
@@ -84,8 +84,8 @@ Aktueller Hersteller-/Shopstand vom 05.09.2026:
 - Aluminium-Rundrohr Ø 35 mm,
 - untere Tortiefe von 1,50 bis 2,00 m verstellbar,
 - Netzbefestigung am Bodenrahmen nicht integriert; empfohlen werden Netzringe oder Leine,
-- aktuell ausgewiesene längere Lieferzeit: 3–4 Wochen,
-- die Produktseite zeigt einen Versandhinweis von 139,00 €; vor Bestellung ist zu bestätigen, ob dieser Betrag für unsere konkrete Bestellung gilt.
+- aktuell längere Lieferzeit,
+- Frachtkosten vor Bestellung für die konkrete Gesamtbestellung bestätigen.
 
 ### 3. Aktueller Kostenstand
 
@@ -114,21 +114,29 @@ Die vollständige Beschaffungsgrundlage steht in `BESTELLGRUNDLAGE.md`.
 
 ### 4. Förderbezug
 
-Der TuS Funding Radar führt zusätzliche Tore aktuell als **A-Chance** für die BSB-Nord-Sportgeräteförderung.
+Für das Vorhaben ist die **BSB Nord Sportgeräteförderung 2026** relevant.
 
-Dort ist für 2026 dokumentiert:
+Verifizierter Förderweg:
 
-- 30 % Zuschuss,
-- Tore als Satz mit bis zu 3.000 € förderfähigem Höchstbetrag,
-- Antrag bis 31.01.2027,
-- vor dem Kauf Angebot und konkreten Torsatz mit dem BSB abgleichen,
-- Belege sichern.
+- 30 % Zuschuss auf anerkannte zuschussfähige Kosten,
+- `Tore als Satz` mit bis zu 3.000 € förderfähigem Höchstbetrag,
+- maximal 900 € Zuschuss,
+- Anschaffung/Rechnung im Kalenderjahr 2026,
+- formaler Antrag **nach der Anschaffung** mit Rechnung und Zahlungsnachweis,
+- Antrag ausschließlich online im BSBnet,
+- Antrag für 2026 bis 31.01.2027.
 
 Für den aktuell bekannten Hardware-Zwischenstand von 2.935,50 € ergäbe sich bei vollständiger Anerkennung rechnerisch ein Zuschuss von **880,65 €**.
 
-Wenn der förderfähige Torsatz inklusive weiterer anerkannter Komponenten mindestens 3.000 € erreicht, liegt der rechnerische maximale Zuschuss bei **900,00 €**.
+Wenn der anerkannte Torsatz inklusive weiterer förderfähiger Komponenten mindestens 3.000 € erreicht, liegt der rechnerische maximale Zuschuss bei **900,00 €**.
 
-Diese Rechnung ist noch **keine Förderzusage**. Vor Bestellung muss der Funding & Grants Manager die konkrete Konfiguration mit den aktuellen Förderbedingungen bzw. dem BSB abgleichen.
+Vor Bestellung wird der konkrete Torsatz trotzdem schriftlich mit dem BSB Nord abgeklärt, weil noch offen ist, ob hochklappbare Bodenrahmen und Netze vollständig zum Satz zählen und weil die Richtlinie die Sportgeräte-Grundausstattung gemeindeeigener Sportfreianlagen ausschließt.
+
+Die vollständige projektbezogene Förderreferenz mit offiziellen Quellen, Ansprechpartner, Antragsweg und fertiger Vorabprüfungs-Anfrage steht in:
+
+`FUNDING-REFERENCE.md`
+
+Diese Rechnung ist **keine Förderzusage**.
 
 ### 5. Projektartefakte
 
@@ -136,16 +144,22 @@ Zentraler Google-Drive-Ordner:
 
 `https://drive.google.com/drive/folders/1_CVr1G6wScpbpBagyGTwF99iJFQ0IiYT`
 
+Vorstandsfertige Entscheidungsunterlage:
+
+`https://docs.google.com/document/d/1HjCoYt1AwrlCBQuzxjn3zsE79YvGUWlv5vpLTjHL-2E/edit`
+
 Dort sollen künftig insbesondere liegen:
 
-- Vergleichsangebote,
+- Vorstandsvorlage,
+- Vergleichsangebote / Warenkorb,
 - Produkt-/Montageunterlagen,
+- BSB-Nord-Vorabprüfung,
 - Fundamentpläne,
 - gegebenenfalls Fotos und Aufmaß der bestehenden Situation,
 - Beschluss-/Bestellunterlagen,
-- Rechnung und Förderbelege.
+- Rechnung, Zahlungsnachweis und Förderbelege.
 
-GitHub hält Projektzustand, Beschaffungsgrundlage, Entscheidungen und Links. Binäre Unterlagen bleiben im Drive-Artefaktraum.
+GitHub hält Projektzustand, Beschaffungsgrundlage, Förderreferenz, Entscheidungen und Links. Binäre Unterlagen bleiben im Drive-Artefaktraum.
 
 ### 6. Bewusste Grenzen
 
@@ -160,8 +174,9 @@ Noch nicht entschieden oder noch nicht vollständig geklärt sind:
 - Fundamentierung und Einbaukosten,
 - ausführender Einbaupartner,
 - fachlicher Projekt-Owner,
-- Förderfreigabe,
-- formaler Vorstandsbeschluss, sofern erforderlich.
+- Eigentums-/Nutzungsstatus des Hauptplatzes für die Förderung,
+- schriftliche BSB-Nord-Bestätigung zur konkreten Förderfähigkeit,
+- finaler Vorstandsbeschluss / Budgetrahmen.
 
 Eine Bestellung wurde durch dieses Projekt **nicht** ausgelöst.
 
@@ -169,6 +184,7 @@ Eine Bestellung wurde durch dieses Projekt **nicht** ausgelöst.
 
 - `PROJECT-STATE.md`
 - `BESTELLGRUNDLAGE.md`
+- `FUNDING-REFERENCE.md`
 - `../PROJECT-PORTFOLIO.md`
 - `../../knowledge/funding/FUNDING-RADAR.md`
 - `../../knowledge/funding/FUNDING-CALENDAR.md`
@@ -181,11 +197,13 @@ Der nächste Reifegewinn ist ein belastbarer, förderkonformer Gesamtpreis.
 
 Dafür werden als Nächstes:
 
-1. BSB-Förderfähigkeit der konkreten Kombination vor Bestellung bestätigen,
-2. passende Netze für 7,32 × 2,44 m und die gewählte untere Netztiefe festlegen,
-3. Netzringe/Leine ergänzen,
-4. Frachtkosten verbindlich ermitteln,
-5. Fundament-/Einbauaufwand und Standortmaße klären,
-6. Gesamtbudget aktualisieren,
-7. Beschluss herbeiführen,
-8. erst danach bestellen.
+1. Vorstandsbeschluss und Budgetrahmen klären,
+2. BSB-Nord-Vorabprüfung der konkreten Kombination durchführen,
+3. Eigentums-/Nutzungsstatus des Hauptplatzes klären,
+4. passende Netze für 7,32 × 2,44 m und die gewählte untere Netztiefe festlegen,
+5. Netzringe/Leine ergänzen,
+6. Frachtkosten verbindlich ermitteln,
+7. Fundament-/Einbauaufwand und Standortmaße klären,
+8. Gesamtbudget aktualisieren,
+9. Bestellung auslösen,
+10. anschließend BSBnet-Förderantrag mit Rechnung und Zahlungsnachweis stellen.
