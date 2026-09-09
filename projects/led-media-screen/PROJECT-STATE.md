@@ -1,6 +1,6 @@
 # PROJECT STATE – TuS LED Media Screen
 
-**Stand:** 2026-09-05  
+**Stand:** 2026-09-10  
 **Status:** Discovery  
 **Beschaffung / Umsetzung:** Noch nicht gestartet  
 **Fachlicher Projekt-Owner:** noch offen
@@ -32,7 +32,10 @@ Vorhanden sind:
 - drehbare Unterkonstruktion mit Statik,
 - Software-/Steuerungskonzept,
 - Sponsoring-Finanzierungsidee,
-- definierte Matchday- und Non-Matchday-Nutzung.
+- Founding-Partner-Modell,
+- Moment-Partner-/Matchday-Aktivierungslogik,
+- definierte Matchday- und Non-Matchday-Nutzung,
+- Vorstandsvorlage mit direkter Akquisegrundlage.
 
 Noch nicht vorhanden sind:
 
@@ -54,13 +57,18 @@ Google Drive:
 
 Der Ordner liegt bereits im zentralen Drive-Bereich `Projekte`.
 
-Aktuelle Originaldateien:
+Wesentliche Projektartefakte:
 
 1. `ChatGPT Image 5. Sept. 2026, 18_37_17.png`
 2. `ChatGPT Image 5. Sept. 2026, 18_37_22.png`
 3. `Angebot 30260839-2.pdf`
+4. Google Doc `Vorstandsvorlage – LED Media Screen`
 
-Die beiden Bilder sind Referenzvisualisierungen aus der Projektarbeit. Aus dem Dateistand allein ist keine ausdrückliche finale Freigabe einer der beiden Varianten dokumentiert.
+Vorstandsvorlage:
+
+`https://docs.google.com/document/d/1fxBJqJu0I0CcF-9wTp9P_8JNasivpRmr-gEJF062DXk/edit`
+
+Die Vorlage enthält inzwischen neben Technik, Kosten, Finanzierung und Förderstatus auch die Founding-Partner-Akquise, konkrete Partneraktivierungen und einen Moment-Partner-Baukasten für den LED-/Matchday-Einsatz.
 
 ### 3. Lieferantenangebot
 
@@ -253,7 +261,9 @@ Mögliche Inhalte:
 - Ausbildungsplätze,
 - Partnerstories.
 
-### 11. Sponsoring-Finanzierungsidee
+### 11. Sponsoring- und Partnerlogik
+
+#### Founding-Modell
 
 Aus dem Sponsoringkonzept besteht die Grundidee:
 
@@ -269,6 +279,37 @@ Wichtig:
 - das aktuelle Angebot liegt bereits bei **48.779 € netto**,
 - Umsatzsteuer und nicht angebotene Nebenleistungen sind damit noch nicht finanziert,
 - Fundament, Stromanschluss und laufende Kosten müssen zusätzlich bewertet werden.
+
+#### Moment-Partner-Modell
+
+Für die Aktivierung gilt das Prinzip:
+
+> **Momente statt Werbesekunden.**
+
+Die Partnerrollen werden zentral im Sponsoringwissen geführt:
+
+`../../knowledge/sponsoring/MOMENT-PARTNER-MODELLE.md`
+
+Die dort dokumentierte Systematik lautet:
+
+1. Founding Partner = Status und Finanzierungsbeitrag,
+2. Partnerrolle = Besitz eines thematischen oder spielbezogenen Moments,
+3. Aktivierung = konkrete Umsetzung über LED, Social Media, Print, Recruiting, Events oder Kampagnen.
+
+Für die erste LED-Akquise werden insbesondere diese Rollen als besonders verständlich angesehen:
+
+- Tor-Partner,
+- Ecken-Partner,
+- Hydration Partner,
+- Gesundheits-Partner,
+- Wechsel-Partner,
+- Starting-XI-Partner,
+- Added-Time-Partner,
+- MVP-/Player-of-the-Match-Partner.
+
+Weitere Rollen wie Freistoß-, Elfmeter-, Standards-, Warm-up-, Save-, Statistik-, Match-Preview-, Halbzeit-, Jugendspieltag-, Frauen-&-Mädchenfußball-, Ausbildungs-, Wetter-, Event- oder Fan-Moment-Partner bleiben als Baukasten verfügbar.
+
+Nicht alle Rollen müssen gleichzeitig verkauft werden. Wenige starke, zuverlässige und zum Unternehmen passende Aktivierungen haben Vorrang vor einer überladenen Werbelogik.
 
 ### 12. Funding-Bezug
 
@@ -292,7 +333,8 @@ Priorität A – vor verbindlicher Beauftragung:
 8. laufende Strom-, Wartungs- und Reparaturkosten als TCO bewerten,
 9. Finanzierungsmodell auf den tatsächlichen Gesamtbedarf anpassen,
 10. steuerliche / vertragliche Rechtseinheit für Anschaffung und Partnerleistungen klären,
-11. goracon-Sponsoringfläche und Referenzfreigabe bewusst freigeben oder nachverhandeln.
+11. goracon-Sponsoringfläche und Referenzfreigabe bewusst freigeben oder nachverhandeln,
+12. Founding-Partner-Leistungsrahmen und erste Moment-Partner-Rollen für reale Akquisegespräche festlegen.
 
 ### 14. Nächster sinnvoller Schritt
 
@@ -302,6 +344,7 @@ Solange die Preisbindung bis 30.09.2026 läuft:
 - technisches Beiblatt anfordern,
 - Fundament und Stromanschluss konkretisieren,
 - parallel Funding- und Sponsoringprüfung durchführen,
+- erste Founding-Partner gezielt mit wenigen passenden Moment-Partner-Rollen ansprechen,
 - danach belastbaren Gesamtfinanzierungsbedarf und Go/No-Go-Vorlage erstellen.
 
 Keine Bestellung wird durch diesen Projektstand ausgelöst.
@@ -309,9 +352,11 @@ Keine Bestellung wird durch diesen Projektstand ausgelöst.
 ## Relationship to other documents
 
 - `README.md`
+- `BOARD-REFERENCE.md`
 - `../PROJECT-PORTFOLIO.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../knowledge/sponsoring/CURRENT-STATE.md`
+- `../../knowledge/sponsoring/MOMENT-PARTNER-MODELLE.md`
 - `../../knowledge/funding/CURRENT-STATE.md`
 - `../../knowledge/funding/FUNDING-RADAR.md`
 - `../../knowledge/funding/FUNDING-CALENDAR.md`
@@ -319,6 +364,7 @@ Keine Bestellung wird durch diesen Projektstand ausgelöst.
 - `../../roles/funding-grants-manager/role.md`
 - `../../roles/project-portfolio-manager/role.md`
 - Google-Drive-Projektordner: `https://drive.google.com/drive/folders/1rHoCwcmDK1Ffk5DRZM5f2TfYkrH72s0d`
+- Vorstandsvorlage: `https://docs.google.com/document/d/1fxBJqJu0I0CcF-9wTp9P_8JNasivpRmr-gEJF062DXk/edit`
 
 ## Future Development
 
@@ -330,6 +376,7 @@ Der Projektzustand wird aktualisiert, sobald sich einer dieser Punkte ändert:
 - Genehmigungsstatus,
 - Förderfähigkeit,
 - Finanzierung,
+- Partnerzusagen / Partnerrollen,
 - Beschluss / Beauftragung,
 - Bau-/Montagestatus,
 - Abnahme / Inbetriebnahme.
