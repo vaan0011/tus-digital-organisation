@@ -11,6 +11,7 @@ Dieser Ordner beschreibt die übergreifende Architektur der TuS Digital Organisa
 ## Main Content
 
 - [`tus-os-inventory.md`](tus-os-inventory.md) – zentrale Inventur- und Reifegradkarte für TuS-OS, Second Brain, Skills, Loops/Runtime und Memory Router
+- [`memory-router.md`](memory-router.md) – verbindliche Routing-Logik für den kleinsten ausreichenden Kontext vor wesentlicher TuS-Arbeit
 - [`platform-architecture.md`](platform-architecture.md) – technische Plattformarchitektur
 - [`knowledge-graph.md`](knowledge-graph.md) – Modell für verknüpftes Organisationswissen
 - [`stability-and-simplicity.md`](stability-and-simplicity.md) – Stabilitäts- und Einfachheitsprinzipien
