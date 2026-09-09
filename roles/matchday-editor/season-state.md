@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Dieses Dokument ist das fortlaufende redaktionelle Saison-Gedächtnis des Matchday Editors für die betreuten Herrenmannschaften des TuS Mingolsheim.
+Dieses Dokument ist das fortlaufende redaktionelle Saison-Gedächtnis des Matchday Editors für die betreuten Aktivenmannschaften des TuS Mingolsheim.
 
 Es hält einen kompakten, verifizierten Überblick über Ergebnisse und aktuellen Tabellenstand bereit und wird nach jedem relevanten Spieltag aktualisiert.
 
@@ -67,6 +67,30 @@ Mannschaftsseite:
 | 30.08.2026 | 1 | TuS Mingolsheim 2 | VfR Kronau 2 | 5:1 |
 | 06.09.2026 | 2 | FV Ubstadt 2 | TuS Mingolsheim 2 | 2:6 |
 
+## Frauen – SpG St. Leon / Mingolsheim
+
+Wettbewerb: **bfv-Frauen Landesliga Staffel 1**
+
+Mannschaftsseite:
+`https://www.fussball.de/mannschaft/spg-stleon-mingolsheim-vfb-st-leon-baden/-/saison/2627/team-id/01L4SUSE4O000000VV0AG80NVU8074QK`
+
+### Aktueller Saisonstand
+
+Stand vor dem ersten Ligaspiel der Saison 2026/27:
+
+- Spiele: 0
+- Siege: 0
+- Unentschieden: 0
+- Niederlagen: 0
+- Tore: 0:0
+- Punkte: 0
+- Tabellenplatz: noch nicht aussagekräftig
+- Saisonauftakt: 13.09.2026 gegen Heidelberger SC
+
+### Ergebnisse
+
+Noch kein Ligaspiel in der Saison 2026/27 absolviert.
+
 ## Redaktionelle Nutzung
 
 Der Saisonstand darf für belastbare Einordnungen genutzt werden, zum Beispiel:
@@ -81,6 +105,14 @@ Der Saisonstand darf für belastbare Einordnungen genutzt werden, zum Beispiel:
 Vor einer solchen Aussage wird der aktuelle Stand auf `fussball.de` erneut geprüft.
 
 Für einen konkreten Spielbericht wird zusätzlich immer das zuletzt absolvierte Spiel geöffnet. Ergebnis, Torschützen und Spielminuten der Tore werden direkt aus dem dort veröffentlichten Spielbericht verifiziert, soweit verfügbar.
+
+Dieser Ablauf gilt gleichermaßen für:
+
+- Herren 1 – TuS Mingolsheim,
+- Herren 2 – TuS Mingolsheim 2,
+- Frauen – SpG St. Leon / Mingolsheim.
+
+Bei der Frauenmannschaft wird zusätzlich darauf geachtet, Liga- und Pokalspiele korrekt zu unterscheiden.
 
 ## Relationship to other documents
 
