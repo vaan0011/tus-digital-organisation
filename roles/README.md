@@ -33,6 +33,7 @@ Persönlichkeit, individuelle Entwicklung und konkrete Rollenzuweisungen gehöre
 - `wordpress-developer/` – Entwicklung und Pflege WordPress-basierter Lösungen
 - `archivist/` – Bewahrung und Erschließung der Vereinsgeschichte
 - `graphic-designer/` – Brand Identity, Gestaltung und Medienproduktion
+- `matchday-editor/` – Spielberichterstattung, redaktionelle Qualität und strukturiertes Spielberichtsarchiv
 - `partnership-manager/` – Partnerschaften, Sponsoring-Strategie und Partnerentwicklung
 - `funding-grants-manager/` – Förderprogramme, Förderkalender, Antragsstrategie und Fördermittel-Lernen
 - `project-portfolio-manager/` – organisationsweiter Überblick über Projekte, Vorhaben, Status und Abhängigkeiten
