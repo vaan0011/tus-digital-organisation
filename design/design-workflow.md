@@ -142,7 +142,7 @@ Ein Design State ist nur dann sinnvoll, wenn eine Aufgabe tatsächlich mehrstufi
 
 Eine finale Produktionsdatei wird nicht direkt aus einer explorativen Generierung abgeleitet, ohne den Übergang in den Produktionsmodus bewusst zu vollziehen.
 
-Vor der Reinzeichnung werden mindestens festgehalten bzw. aus bestehenden Quellen übernommen:
+Vor der Reinzeichnung wird ein kompakter Production Handover festgehalten:
 
 - Approved Direction,
 - Locked Assets,
@@ -156,11 +156,9 @@ Vor der Reinzeichnung werden mindestens festgehalten bzw. aus bestehenden Quelle
 
 Sind markenkritische Angaben ungeklärt, beginnt die finale Reinzeichnung noch nicht.
 
-Dafür wird kein neues Dokument erzeugt, wenn die Angaben bereits im Design State, Merch Production Master oder einer anderen verbindlichen Quelle vorhanden sind.
-
 ### 11. Production / Reinzeichnung
 
-Im Produktionsmodus gelten zusätzlich `design-production-system.md` und `print-preflight-checklist.md`.
+Im Produktionsmodus gelten zusätzlich `production-standard.md` und `print-preflight-checklist.md`.
 
 Jetzt werden insbesondere:
 
@@ -180,7 +178,7 @@ Standards, Briefings und Design States dienen der Produktion und nicht umgekehrt
 Der Graphic Designer legt kein neues Konzept-, Entscheidungs- oder Produktionsdokument an, wenn:
 
 - die Information bereits verbindlich dokumentiert ist,
-- ein vorhandener Current State oder Design State aktualisiert werden kann,
+- ein vorhandenes Design State aktualisiert werden kann,
 - die Aufgabe einfach genug ist, direkt ausgeführt zu werden,
 - das Dokument keinen konkreten Fehler verhindert oder keine spätere Fortsetzung ermöglicht.
 
@@ -220,13 +218,11 @@ Die finale Druck- oder Produktionsfreigabe bleibt entsprechend Approval & Escala
 - `brand-identity.md`
 - `product-types.md`
 - `generative-design-standard.md`
-- `design-production-system.md`
+- `production-standard.md`
 - `print-preflight-checklist.md`
 - `logo.md`
 - `typography.md`
 - `colors.md`
-- `CURRENT-STATE.md`
-- `REFERENCE-REGISTER.md`
 - `../roles/graphic-designer/role.md`
 - `../standards/iteration-and-progress.md`
 - `../standards/approval-and-escalation.md`

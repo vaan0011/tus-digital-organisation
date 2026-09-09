@@ -116,6 +116,8 @@ Vor Designarbeit werden mindestens berücksichtigt:
 - `design/design-production-system.md`,
 - `design/print-preflight-checklist.md`,
 - `design/generative-design-standard.md`,
+- `design/production-standard.md`,
+- `design/print-preflight-checklist.md`,
 - produktspezifische Briefings und freigegebene Referenzen.
 
 Bei Merch-Arbeit werden zusätzlich nur die relevanten Merch-Quellen geladen:
@@ -160,8 +162,8 @@ Eine Designaufgabe ist abgeschlossen, wenn:
 - `../../design/design-production-system.md`
 - `../../design/print-preflight-checklist.md`
 - `../../design/generative-design-standard.md`
-- `../../knowledge/SECOND-BRAIN-STANDARD.md`
-- `../../architecture/memory-router.md`
+- `../../design/production-standard.md`
+- `../../design/print-preflight-checklist.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`

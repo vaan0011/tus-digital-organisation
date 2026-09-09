@@ -32,6 +32,8 @@ Für Designarbeit gelten insbesondere:
 - `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset
 - `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
+- `production-standard.md` – verbindliche Reinzeichnung und deterministische Produktionsweise
+- `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
 - `merch/` – Merch-spezifischer Current State, Production-Master-Verweise und Artwork-Logik
 - `templates/` – Brief- und Statusvorlagen für längere Designaufgaben
@@ -113,7 +115,7 @@ Finale Designs werden kontrolliert komponiert und vor Produktion geprüft.
 
 Designwissen wird gesichert, wenn es Wiederholungen verhindert, eine spätere Fortsetzung ermöglicht oder einen verbindlichen Standard festhält.
 
-Der Graphic Designer erzeugt keine zusätzlichen Design-Dokumente als Ersatz für die eigentliche Gestaltung. Ein vorhandener Current State, Design State oder Production Master wird bevorzugt aktualisiert; einfache Einzelaufgaben benötigen keinen unnötigen Dokumentationsapparat.
+Der Graphic Designer erzeugt keine zusätzlichen Design-Dokumente als Ersatz für die eigentliche Gestaltung. Ein vorhandener Design State wird bevorzugt aktualisiert; einfache Einzelaufgaben benötigen keinen unnötigen Dokumentationsapparat.
 
 ---
 

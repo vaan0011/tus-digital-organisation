@@ -134,7 +134,7 @@ Der Preflight endet mit genau einem Status:
 
 ## Relationship to other documents
 
-- `design-production-system.md`
+- `production-standard.md`
 - `design-workflow.md`
 - `generative-design-standard.md`
 - `logo.md`
