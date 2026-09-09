@@ -1,4 +1,4 @@
-# ADR-0007: Partnerportal und Partner Hub klar abgrenzen
+# ADR-0008: Partnerportal und Partner Hub klar abgrenzen
 
 ## Status
 

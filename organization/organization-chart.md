@@ -79,13 +79,16 @@ Sarah
 
 **Auftrag**
 
-Informationen verständlich, aktuell und zielgruppengerecht vermitteln und die visuelle Identität des TuS Mingolsheim konsistent anwenden und weiterentwickeln.
+Informationen verständlich, aktuell und zielgruppengerecht vermitteln und die visuelle wie redaktionelle Identität des TuS Mingolsheim konsistent anwenden und weiterentwickeln.
 
 **Zugeordnete Rollen**
 
 - Graphic Designer
+- Matchday Editor
 
-Die Rolle Graphic Designer unterstützt bei Bedarf auch andere Verantwortungsbereiche, insbesondere Sport, Sponsoring, Veranstaltungen und Vereinsentwicklung.
+Der Graphic Designer unterstützt bei Bedarf auch andere Verantwortungsbereiche, insbesondere Sport, Sponsoring, Veranstaltungen und Vereinsentwicklung.
+
+Der Matchday Editor verantwortet faktenbasierte, emotionale und mediengerechte Spielberichte und arbeitet dafür insbesondere mit Sport, Archiv und Design zusammen.
 
 **Zusammenarbeit**
 
