@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-05 – Großfeldtore Haupt- und Trainingsplatz formalisiert
+Stand: 2026-09-09 – Arbeitsplatz Sportparkteam formalisiert
 
 ## Purpose
 
@@ -20,8 +20,8 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Arbeitsstandprüfung ergibt:
 
-- **9 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **2 Aktiv**, **1 Geplant** und **6 Discovery**,
+- **10 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **2 Aktiv**, **1 Geplant** und **7 Discovery**,
 - mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
 - mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm.
 
@@ -30,6 +30,8 @@ Der LED Media Screen wurde am 05.09.2026 vom Kandidaten zum formalen Projekt hoc
 Die **Digitale Vereinsorganisation** bleibt langfristig das übergeordnete Organisationsprogramm des TuS. Zusätzlich wird die aktuelle, klar abgrenzbare **Aufbau- und Konsolidierungsphase** seit 05.09.2026 als formales Projekt `digital-organisation/` geführt. Damit können Aufbauziele, Arbeitspakete, Wirkung und mögliche Fördermittel sauber dokumentiert werden, ohne den späteren Dauerbetrieb zu einem ewigen Megaprojekt zu machen.
 
 Die bisher als Einzelmaßnahme geführte Beschaffung zusätzlicher Tore wird am 05.09.2026 als formales Projekt `grossfeldtore-haupt-trainingsplatz/` hochgestuft. Der Umfang ist inzwischen klar größer als ein einzelner Kauf: zwei vorhandene mobile Tore werden auf das Trainingsfeld verlagert, auf dem Hauptfeld soll eine neue herausnehmbare Hülsentor-Anlage entstehen, eine konkrete technische Lösung und Kostenbasis liegen vor und Förderung, Fundamentierung, Einbau sowie Beschluss müssen vor Bestellung koordiniert werden.
+
+Am 09.09.2026 wird das Vorhaben `arbeitsplatz-sportparkteam/` als formales Projekt angelegt. Ziel ist, aus einer bestehenden öffentlich geförderten Tätigkeit im Sportparkteam eine reguläre sozialversicherungspflichtige Beschäftigung mit langfristiger Perspektive zu entwickeln. Die Detailarbeit verbindet Jobcenter-Förderprüfung, Beschäftigungsmodell, Arbeitgeberkosten, soziale Wirkung, Vorstandsbeschluss und eine schrittweise Partnerfinanzierung. Personenbezogene Sozial-, Leistungs-, Lohn- und Vertragsdaten bleiben ausdrücklich außerhalb von GitHub und werden nur im geschützten Drive-Artefaktraum geführt.
 
 Für offene Pull Requests gilt weiterhin: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt.
 
@@ -48,6 +50,7 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | vor Ablauf der Angebots-Preisbindung Technikbeiblatt, Fundament, Strom, Funding-Check, Genehmigung und Gesamtfinanzierung klären | Angebot 30260839-2: 48.779 € netto nach 2.000 € goracon-Sponsoringrabatt; Drive-Artefaktraum vorhanden; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
 | Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Aufbauzustand in wenige messbare Arbeitspakete schneiden und durch Funding gegen aktuelle Programme spiegeln | dauerhaftes Organisationsprogramm bleibt die Klammer; dieses Projekt umfasst nur Aufbau/Konsolidierung; Drive-Artefaktraum mit aktuellem Organisationsbild vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
 | Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | konkrete Kübler-Konfiguration mit Funding/BSB abgleichen, passende Netze und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Beschluss zur Bestellung herbeiführen | favorisiert: 2 Hülsentore mit P-Netzbügel + 4 enthaltene Bodenhülsen + 1 Paar hochklappbare STADION-FLEX-Bodenrahmen; bekannter Hardware-Zwischenstand 2.935,50 € brutto; keine Bestellung ausgelöst | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
+| Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; fachlicher Projekt-Owner noch offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | Förderfähigkeit nach § 16i SGB II beim Jobcenter prüfen, hilfsweise § 16e; danach Tätigkeitsprofil und 20-/25-/30-Stunden-Modelle rechnen | personenbezogene Daten bleiben außerhalb GitHub; Arbeitsvertrag erst nach positiver Förderentscheidung und TuS-Freigabe; Partnerfinanzierung soll sinkende Förderung und Anschlussphase mittragen | Funding & Grants, Partnership Manager, Infrastruktur, Finanzen/Lohn, Datenschutz, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
@@ -62,8 +65,9 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förderung, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
 | Aufbau Digitale Vereinsorganisation | **aktuell** | bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen, Förderstrategie, Betriebsarchitektur oder Übergang in den Regelbetrieb aktualisieren |
 | Großfeldtore Haupt- und Trainingsplatz | **aktuell** | bei Änderung von Produktauswahl, Preis, Netzen, Fracht, Funding, Fundament/Einbau, Beschluss oder Bestellstatus aktualisieren |
+| Arbeitsplatz Sportparkteam | **aktuell** | bei Änderung von Förderfähigkeit, Stundenmodell, Arbeitgeberkosten, Partnerfinanzierung, Vorstandsbeschluss oder Vertragsstatus aktualisieren |
 
-Alle neun formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
+Alle zehn formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
 ### 4. Reale Projektkandidaten
 
@@ -80,7 +84,7 @@ Die folgenden Vorhaben sind ausreichend relevant, um im Portfolio sichtbar zu bl
 | Bekleidungslager / physischer Vereins-Shop | Kandidat | Organisation / Merch / Finanzen; Owner offen | reale organisatorische und ggf. räumliche Infrastrukturfrage | physischen Lager-/Ausgabebedarf vom extern gehosteten Webshop trennen und nur den tatsächlich abgegrenzten Projektumfang weiterführen | Organisation, Finanzen, Design, Sponsoring |
 | Energie / PV / Speicher / Klimaschutzmaßnahmen | Kandidat | Infrastruktur / Nachhaltigkeit / Finanzen; Owner offen | potentiell größere Investitions- und Fördermaßnahmen | konkretes Gebäude/Anlage, Energieproblem, technische Zielsetzung und Wirtschaftlichkeit bestimmen | Funding, Infrastruktur, Finanzen |
 | Bewässerungsanlage / nachhaltige Platzpflege-Investition | Kandidat | Infrastruktur / Sport; Owner offen | im Funding-Radar als konkretes Investitionsfeld erkennbar; von laufender Platzpflege zu trennen | realen Investitionsbedarf, technische Lösung, Eigentums-/Nutzungsrecht, Kosten und laufende Wasserförderung klären | Funding, Infrastruktur, Sport, Finanzen |
-| Aufbau / nachhaltige Organisation Sportparkteam | Kandidat | Infrastruktur / Vereinsentwicklung; Owner offen | organisatorisches Vorhaben ist in Sponsoring-/Funding-Arbeitsständen sichtbar, aber Zielbild und Abgrenzung zum laufenden Betrieb sind noch nicht klar | klären, ob eine einmalige Aufbau-/Entwicklungsinitiative existiert oder lediglich dauerhafter Regelbetrieb finanziert werden soll | Vereinsentwicklung, Infrastruktur, Funding, Sponsoring |
+| Aufbau / nachhaltige Organisation Sportparkteam | Kandidat | Infrastruktur / Vereinsentwicklung; Owner offen | das breitere organisatorische Vorhaben bleibt vom formalen Projekt `arbeitsplatz-sportparkteam/` getrennt; dieses löst einen konkreten Beschäftigungsübergang, nicht die gesamte Organisation des Sportparkteams | prüfen, ob neben dem konkreten Arbeitsplatzprojekt noch eine eigenständige Aufbau-/Entwicklungsinitiative für das gesamte Sportparkteam erforderlich ist | Vereinsentwicklung, Infrastruktur, Funding, Sponsoring |
 | Historienarchiv – abgegrenztes Erschließungs-/Digitalisierungsprojekt | Kandidat | Archiv & Vereinsgeschichte / Archivist | das Historienarchiv als Ganzes ist Regelbetrieb; ein professionell abgegrenztes Erschließungs-/Digitalisierungsvorhaben könnte dagegen einen eigenen Projektzustand benötigen und ist im Funding-Radar relevant | konkretes Quellenpaket, Ziel, Output, Umfang, Rechte, professionellen Veröffentlichungsweg und Finanzierung definieren; erst dann formalisieren | Archivist, Funding, Kommunikation, Design, Datenschutz/IT |
 | Historien-/Jubiläumspublikation oder andere konkrete Archiv-Ausgabe | Kandidat | Archiv & Vereinsgeschichte / Kommunikation | Archivarbeit erzeugt wiederverwendbare Inhalte; eine konkrete Publikation kann ein eigenes abgrenzbares Ergebnis besitzen | nur bei klar beschlossenem Produkt, Zielgruppe, Umfang, Termin und Owner als Projekt führen | Archivist, Kommunikation, Graphic Designer, Homepage/Print |
 
@@ -103,7 +107,7 @@ Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstli
 | Trainer- und Schiedsrichterentwicklung | **laufendes Fach-/Förderfeld** | laufende Qualifizierungsarbeit; nur klar abgegrenzte Programme/Initiativen als Projekte führen |
 | FSJ / Bildung / Ausbildung | **laufendes Fach-/Förderfeld** | wiederkehrende Vereinsarbeit; konkrete neue Einführung/Programmänderung separat prüfen |
 | Ghana-Unterstützung / `Kinder von Atibie` allgemein | **laufendes soziales Feld** | kein eigenständiger Projektzustand erkennbar; der konkrete Spendenweg ist derzeit eine Abhängigkeit/Funktion der TuS Tauschbörse |
-| Integration / Beschäftigung / soziale Träger | **laufendes Fach-/Förderfeld** | konkrete zeitlich begrenzte Maßnahmen können später Projektkandidaten werden |
+| Integration / Beschäftigung / soziale Träger | **laufendes Fach-/Förderfeld** | das konkrete Vorhaben `arbeitsplatz-sportparkteam/` ist formalisiert; weitere Beschäftigungs- oder Integrationsmaßnahmen werden nur bei eigenem klaren Ziel und Umfang zu Projekten |
 | Barrierefreiheit / Teilhabe | **Projektfeld, noch kein konkretes Projekt** | Funding-Arbeitsstand zeigt Chancen, aber aktuell kein ausreichend abgegrenztes TuS-Vorhaben dokumentiert |
 | Theater / Kultur allgemein | **laufender Vereinsbereich / Förderfeld** | konkrete Produktionen oder partizipative Projekte erst bei realem Scope als Projekt führen |
 | Gesundheits-, Sicherheits- und Präventionsangebote | **Themen-/Partnerfeld** | aktuell kein ausreichend abgegrenztes Projektvorhaben dokumentiert |
@@ -202,20 +206,35 @@ Für den LED Media Screen sind Angebot, Technik und Artefakte inzwischen in `led
 
 Für die Großfeldtore sind favorisierte Kübler-Komponenten, Direktlinks, aktueller Hardware-Zwischenstand, Förderrechnung und Bestellcheckliste in `grossfeldtore-haupt-trainingsplatz/` dokumentiert. Auch hier ist noch keine Bestellung ausgelöst.
 
+#### Arbeitsplatz Sportparkteam ↔ Funding / Sponsoring / Vereinsentwicklung
+
+Das Projekt `arbeitsplatz-sportparkteam/` ist ein konkreter Beschäftigungsübergang und nicht das gesamte Organisationsprojekt des Sportparkteams.
+
+Funding klärt vorrangig die Förderfähigkeit nach § 16i SGB II und hilfsweise § 16e SGB II. Sponsoring entwickelt eine langfristige Partnerfinanzierung für Eigenanteile und die Anschlussphase. Vereinsentwicklung / Sportpark definiert Tätigkeitsprofil, Arbeitsumfang und fachliche Einbindung.
+
+Besonders zu beachten sind:
+
+- Arbeitsvertrag erst nach positiver Förderentscheidung,
+- tatsächliche finanzielle Verbesserung für die beschäftigte Person,
+- belastbare Arbeitgeberkosten,
+- langfristige Finanzierung bis zum Renteneintritt,
+- strikte Trennung personenbezogener Daten vom öffentlichen Repository.
+
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
-1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation und Großfeldtore Haupt- und Trainingsplatz ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
+1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation, Großfeldtore Haupt- und Trainingsplatz und Arbeitsplatz Sportparkteam ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
 2. **PROJECT-STATE-Pflege auslösen:** Event Planner, TuS Tauschbörse und Team Manager nach bereits gemergten PRs bereinigen.
 3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
 4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
 5. **Großfeldtore bestellreif machen:** konkrete Kübler-Konfiguration mit BSB/Funding abgleichen, passende Netze, Netzbefestigung und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Gesamtpreis plus Beschluss dokumentieren.
 6. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
-7. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
-8. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
-9. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
-10. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
-11. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
-12. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
+7. **Arbeitsplatz Sportparkteam förder- und entscheidungsreif machen:** persönliche Förderfähigkeit über das Jobcenter klären, Tätigkeitsprofil definieren, 20-/25-/30-Stunden-Modelle inklusive Arbeitgeberkosten und Nettoeffekt rechnen, Partnerfinanzierung entwickeln und erst danach Vorstandsbeschluss und Vertrag vorbereiten.
+8. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
+9. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
+10. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
+11. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
+12. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
+13. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
 
 ### 8. Nutzung durch andere Mitarbeiter
 
