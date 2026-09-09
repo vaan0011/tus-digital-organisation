@@ -31,6 +31,32 @@ class VTP_Dashboard {
   return (bool)$wpdb->get_var("SHOW COLUMNS FROM $table LIKE 'event_type'");
  }
 
+ private static function history_years($events_table,$tournaments_table){
+  global $wpdb;
+  $years=[];
+  foreach($wpdb->get_col("SELECT DISTINCT YEAR(start_date) FROM $events_table WHERE status='archiviert' AND start_date IS NOT NULL AND start_date<>'' ORDER BY start_date DESC") as $year){
+   if($year) $years[(int)$year]=true;
+  }
+  foreach($wpdb->get_col("SELECT DISTINCT YEAR(start_date) FROM $tournaments_table WHERE status='archiviert' AND start_date IS NOT NULL AND start_date<>'' ORDER BY start_date DESC") as $year){
+   if($year) $years[(int)$year]=true;
+  }
+  $years=array_keys($years);
+  rsort($years,SORT_NUMERIC);
+  return $years;
+ }
+
+ private static function history_year_stats($year,$has_event_type,$events_table,$tournaments_table,$shifts_table){
+  global $wpdb;
+  $event_filter=$has_event_type?" AND COALESCE(event_type,'event')='event'":'';
+  $camp_filter=$has_event_type?" AND event_type='camp'":' AND 1=0';
+  return [
+   'events'=>(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $events_table WHERE status='archiviert' AND YEAR(start_date)=%d$event_filter",$year)),
+   'tournaments'=>(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $tournaments_table WHERE status='archiviert' AND YEAR(start_date)=%d",$year)),
+   'camps'=>(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $events_table WHERE status='archiviert' AND YEAR(start_date)=%d$camp_filter",$year)),
+   'shifts'=>(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $shifts_table s INNER JOIN $events_table e ON e.id=s.event_id WHERE e.status='archiviert' AND YEAR(e.start_date)=%d",$year)),
+  ];
+ }
+
  public static function render(){
   global $wpdb;
   $today=current_time('Y-m-d');
@@ -87,6 +113,32 @@ class VTP_Dashboard {
   }
   $tasks=array_slice($tasks,0,12);
 
+  $archive_events=(int)$wpdb->get_var("SELECT COUNT(*) FROM $events_table WHERE status='archiviert'$event_filter");
+  $archive_camps=(int)$wpdb->get_var("SELECT COUNT(*) FROM $events_table WHERE status='archiviert'$camp_filter");
+  $archive_tournaments=(int)$wpdb->get_var("SELECT COUNT(*) FROM $tournaments_table WHERE status='archiviert'");
+  $archive_shifts=(int)$wpdb->get_var("SELECT COUNT(*) FROM $shifts_table s INNER JOIN $events_table e ON e.id=s.event_id WHERE e.status='archiviert'");
+  $history_years=self::history_years($events_table,$tournaments_table);
+  $selected_year=absint($_GET['history_year']??0);
+  if(!$selected_year || !in_array($selected_year,$history_years,true)) $selected_year=$history_years[0]??0;
+  $history_stats=[];
+  $history_max=1;
+  foreach($history_years as $year){
+   $stats=self::history_year_stats($year,$has_event_type,$events_table,$tournaments_table,$shifts_table);
+   $history_stats[$year]=$stats;
+   $history_max=max($history_max,$stats['events']+$stats['tournaments']+$stats['camps']);
+  }
+
+  $history_details=[];
+  if($selected_year){
+   $archived_event_rows=$wpdb->get_results($wpdb->prepare("SELECT id,name,start_date,end_date,location $event_type_select FROM $events_table WHERE status='archiviert' AND YEAR(start_date)=%d ORDER BY start_date DESC,name ASC",$selected_year));
+   $archived_tournament_rows=$wpdb->get_results($wpdb->prepare("SELECT id,name,start_date,location,'tournament' AS dashboard_type FROM $tournaments_table WHERE status='archiviert' AND YEAR(start_date)=%d ORDER BY start_date DESC,name ASC",$selected_year));
+   $history_details=array_merge($archived_event_rows?:[],$archived_tournament_rows?:[]);
+   usort($history_details,function($a,$b){
+    $ad=$a->start_date?:'0000-00-00'; $bd=$b->start_date?:'0000-00-00';
+    return $ad===$bd?strcasecmp((string)$a->name,(string)$b->name):strcmp($bd,$ad);
+   });
+  }
+
   echo '<div class="wrap vtp vtp-modern vtp-dashboard-v1">';
   echo '<h1>TuS Eventplaner</h1><p class="description vtp-dashboard-subtitle">Zentrale Übersicht für Events, Turniere, Fußballcamps und Helferschichten</p>';
   echo '<div class="vtp-dashboard-actions">';
@@ -125,6 +177,53 @@ class VTP_Dashboard {
    echo '</div>';
   }
   echo '<p class="description vtp-dashboard-note">Manuelle Organisationsaufgaben und Aufgaben aus Vorlagen folgen im nächsten Ausbauschritt.</p>';
-  echo '</section></div></div>';
+  echo '</section></div>';
+
+  echo '<section class="vtp-dashboard-history" aria-labelledby="vtp-history-title">';
+  echo '<div class="vtp-dashboard-history-heading"><h2 id="vtp-history-title">TuS Eventhistorie</h2><p class="description">Archiv für Events, Turniere, Fußballcamps und Helferschichten</p></div>';
+  echo '<div class="vtp-dashboard-kpis vtp-dashboard-history-kpis">';
+  foreach([[$archive_events,'Events'],[$archive_tournaments,'Turniere'],[$archive_camps,'Camps'],[$archive_shifts,'Schichten']] as $kpi){
+   echo '<div class="vtp-dashboard-kpi"><strong>'.esc_html($kpi[0]).'</strong><span>'.esc_html($kpi[1]).'</span></div>';
+  }
+  echo '</div>';
+
+  echo '<div class="vtp-dashboard-content vtp-dashboard-history-content">';
+  echo '<section class="vtp-card vtp-dashboard-panel"><h2>Übersicht</h2>';
+  if(!$history_years){
+   echo '<p class="vtp-dashboard-empty">Noch keine archivierten Events oder Turniere vorhanden.</p>';
+  } else {
+   echo '<div class="vtp-history-years">';
+   foreach($history_years as $year){
+    $stats=$history_stats[$year];
+    $total=$stats['events']+$stats['tournaments']+$stats['camps'];
+    $width=max(4,(int)round(($total/$history_max)*100));
+    $url=add_query_arg(['page'=>'vtp-dashboard','history_year'=>$year],admin_url('admin.php'));
+    echo '<a class="vtp-history-year'.($selected_year===$year?' is-active':'').'" href="'.esc_url($url).'">';
+    echo '<span class="vtp-history-year-head"><strong>'.esc_html($year).'</strong><span>'.esc_html($total).' Veranstaltungen</span></span>';
+    echo '<span class="vtp-history-bar" aria-hidden="true"><span style="width:'.esc_attr($width).'%"></span></span>';
+    echo '<span class="vtp-history-year-meta">'.esc_html($stats['events']).' Events · '.esc_html($stats['tournaments']).' Turniere · '.esc_html($stats['camps']).' Camps · '.esc_html($stats['shifts']).' Schichten</span>';
+    echo '</a>';
+   }
+   echo '</div>';
+  }
+  echo '</section>';
+
+  echo '<section class="vtp-card vtp-dashboard-panel"><h2>Details'.($selected_year?' '.esc_html($selected_year):'').'</h2>';
+  if(!$selected_year){
+   echo '<p class="vtp-dashboard-empty">Wähle ein Jahr aus der Übersicht.</p>';
+  } elseif(!$history_details){
+   echo '<p class="vtp-dashboard-empty">Für dieses Jahr sind keine archivierten Events oder Turniere vorhanden.</p>';
+  } else {
+   echo '<div class="vtp-dashboard-list">';
+   foreach($history_details as $row){
+    $type=$row->dashboard_type==='camp'?'Camp':($row->dashboard_type==='tournament'?'Turnier':'Event');
+    $url=$row->dashboard_type==='tournament'?add_query_arg(['page'=>'vtp','edit'=>$row->id,'archive'=>1],admin_url('admin.php')):add_query_arg(['page'=>'vtp-events','edit_event'=>$row->id,'archive'=>1],admin_url('admin.php'));
+    $end=property_exists($row,'end_date')?$row->end_date:null;
+    echo '<a class="vtp-dashboard-list-item" href="'.esc_url($url).'"><span class="vtp-dashboard-type">'.esc_html($type).'</span><span class="vtp-dashboard-main"><strong>'.esc_html($row->name).'</strong><small>'.esc_html(self::format_date($row->start_date,$end)).($row->location?' · '.esc_html($row->location):'').'</small></span><span aria-hidden="true">›</span></a>';
+   }
+   echo '</div>';
+  }
+  echo '</section></div>';
+  echo '</section></div>';
  }
 }
