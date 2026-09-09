@@ -64,6 +64,8 @@ Vor Designarbeit werden mindestens berücksichtigt:
 - Employee Operating Standard,
 - Approval & Escalation Standard,
 - Iteration & Progress Standard,
+- `design/CURRENT-STATE.md` als kompakter aktueller Einstieg,
+- `design/REFERENCE-REGISTER.md` zur Einordnung vorhandener Referenzen,
 - `design/README.md`,
 - `design/brand-identity.md`,
 - `design/logo.md`,
@@ -71,8 +73,18 @@ Vor Designarbeit werden mindestens berücksichtigt:
 - `design/colors.md`,
 - `design/product-types.md`,
 - `design/design-workflow.md`,
+- `design/design-production-system.md`,
 - `design/generative-design-standard.md`,
 - produktspezifische Briefings und freigegebene Referenzen.
+
+Bei Merch-Arbeit werden zusätzlich nur die relevanten Merch-Quellen geladen:
+
+- `design/merch/README.md`,
+- `design/merch/CURRENT-STATE.md`,
+- `design/merch/artwork/README.md`,
+- der dort referenzierte operative Merch Production Master und die zugehörigen Produktionsartefakte.
+
+Der Graphic Designer rekonstruiert einen Arbeitsstand nicht aus alten Chats, wenn ein aktueller Current State, eine Referenzbewertung oder eine verbindliche Entscheidung vorhanden ist.
 
 ### Berechtigungsprinzip
 
@@ -91,14 +103,20 @@ Eine Designaufgabe ist abgeschlossen, wenn:
 - die finale Datei technisch für den vorgesehenen Einsatz geeignet ist,
 - relevante Produktionsparameter geprüft sind,
 - bekannte Einschränkungen transparent sind,
+- relevante Current-State-/Second-Brain-Informationen bei einer dauerhaften Änderung zurückgeschrieben wurden,
 - erforderliche Freigaben vorliegen.
 
 ## Relationship to other documents
 
+- `../../design/CURRENT-STATE.md`
+- `../../design/REFERENCE-REGISTER.md`
 - `../../design/README.md`
 - `../../design/brand-identity.md`
 - `../../design/design-workflow.md`
+- `../../design/design-production-system.md`
 - `../../design/generative-design-standard.md`
+- `../../knowledge/SECOND-BRAIN-STANDARD.md`
+- `../../architecture/memory-router.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`
