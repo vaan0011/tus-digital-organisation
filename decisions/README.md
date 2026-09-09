@@ -59,6 +59,7 @@ Entscheidungen werden fortlaufend nummeriert:
 - `ADR-0007`
 - `ADR-0008`
 - `ADR-0009`
+- `ADR-0010`
 
 Die Nummer bleibt dauerhaft bestehen.
 
@@ -103,11 +104,14 @@ Der Projekt-Checkpoint verweist auf relevante ADRs, dupliziert ihre Begründung 
 - `ADR-0007-central-project-portfolio.md`
 - `ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 - `ADR-0009-employee-runtime-and-archivist-pilot.md`
+- `ADR-0010-second-brain-and-memory-router.md`
 
 ## Related Documents
 
 - `template.md`
 - `architecture-checklist.md`
+- `../knowledge/SECOND-BRAIN-STANDARD.md`
+- `../architecture/memory-router.md`
 - `../standards/iteration-and-progress.md`
 - `../core/core-principles.md`
 - `../vision/vision.md`
