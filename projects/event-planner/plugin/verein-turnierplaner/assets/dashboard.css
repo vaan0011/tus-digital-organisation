@@ -21,6 +21,7 @@
 .vtp-dashboard-task-dot{width:10px;height:10px;border-radius:50%;background:var(--vtp-accent,#b7192b);display:block}
 .vtp-dashboard-empty{color:var(--vtp-muted);padding:12px 0}
 .vtp-dashboard-note{margin-top:16px!important}
+.vtp-dashboard-history-wrap{margin-top:0}
 .vtp-dashboard-history{margin-top:48px;padding-top:36px;border-top:1px solid var(--vtp-border)}
 .vtp-dashboard-history-heading{margin-bottom:22px}
 .vtp-dashboard-history-heading h2{font-size:34px;line-height:1.2;margin:0 0 8px}

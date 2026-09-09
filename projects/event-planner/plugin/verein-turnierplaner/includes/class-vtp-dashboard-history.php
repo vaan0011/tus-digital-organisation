@@ -2,6 +2,14 @@
 if (!defined('ABSPATH')) exit;
 
 class VTP_Dashboard_History {
+ public static function init(){
+  add_action('admin_menu',[__CLASS__,'register'],100);
+ }
+
+ public static function register(){
+  add_action('toplevel_page_vtp-dashboard',[__CLASS__,'render'],20);
+ }
+
  private static function has_event_type_column(){
   global $wpdb;
   $table=VTP_DB::table('events');
@@ -25,7 +33,6 @@ class VTP_Dashboard_History {
 
  public static function render(){
   global $wpdb;
-
   $events_table=VTP_DB::table('events');
   $tournaments_table=VTP_DB::table('tournaments');
   $shifts_table=VTP_DB::table('shifts');
@@ -90,6 +97,7 @@ class VTP_Dashboard_History {
   $max_total=1;
   foreach($years as $counts) $max_total=max($max_total,array_sum($counts));
 
+  echo '<div class="wrap vtp vtp-modern vtp-dashboard-v1 vtp-dashboard-history-wrap">';
   echo '<section class="vtp-dashboard-history" aria-labelledby="vtp-history-title">';
   echo '<div class="vtp-dashboard-history-heading"><h2 id="vtp-history-title">TuS Eventhistorie</h2><p class="description">Archiv für Events, Turniere, Fußballcamps und Helferschichten</p></div>';
 
@@ -147,6 +155,6 @@ class VTP_Dashboard_History {
    }
    echo '</div>';
   }
-  echo '</section></div></section>';
+  echo '</section></div></section></div>';
  }
 }

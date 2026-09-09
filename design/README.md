@@ -18,6 +18,8 @@ Nicht Dekoration.
 
 Für Designarbeit gelten insbesondere:
 
+- `CURRENT-STATE.md` – kompakter aktueller Design-Arbeitsstand und offene Systemstellen
+- `REFERENCE-REGISTER.md` – welche bestehenden Arbeiten echte Referenzen sind und welche ausdrücklich nicht
 - `brand-identity.md` – Grundlage der TuS Brand Identity
 - `logo.md` – Verwendung der offiziellen Logo-Assets
 - `logo/` – zentrale freigegebene Logo-Dateien
@@ -27,8 +29,11 @@ Für Designarbeit gelten insbesondere:
 - `ui-standard.md` – gemeinsamer UI-Standard für digitale Oberflächen
 - `product-types.md` – Unterschiede zwischen Merch, Print, Tickets, Social, Web und UI
 - `design-workflow.md` – verbindlicher Arbeits- und Iterationsprozess
+- `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset
+- `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
+- `merch/` – Merch-spezifischer Current State, Production-Master-Verweise und Artwork-Logik
 - `templates/` – Brief- und Statusvorlagen für längere Designaufgaben
 
 Projektordner dürfen technische Kopien und Implementierungen enthalten. Die fachlichen Regeln werden jedoch zentral hier gepflegt.
@@ -48,6 +53,16 @@ Nicht definierte Bereiche dürfen nicht stillschweigend als freigegeben interpre
 
 ---
 
+## Referenzen sind kuratiert
+
+Nicht jede frühere TuS-Grafik ist automatisch eine Markenreferenz.
+
+Vor Designarbeit wird `REFERENCE-REGISTER.md` geprüft. Dort ist dokumentiert, welche bestehende Arbeit als Primary Reference, Product Reference, eingeschränkte Referenz oder ausdrücklich ausgeschlossene Richtung gilt.
+
+Damit wird verhindert, dass ein neuer Chat experimentelle oder bereits negativ bewertete Entwürfe wieder als Ausgangspunkt verwendet.
+
+---
+
 ## Produktklassen
 
 Die Designorganisation unterscheidet insbesondere:
@@ -64,6 +79,20 @@ Das Produkt wird vor Beginn der Gestaltung festgelegt, weil unterschiedliche Med
 
 ---
 
+## Creative Design und Production
+
+Die Designarbeit trennt zwei Arbeitsmodi.
+
+**Creative Design** entwickelt Idee, Stil, Komposition, Bildwelt und Mockup.
+
+**Production / Reinzeichnung** setzt Originalassets, exakte Texte, Typografie, Pfade, Geometrien und technische Produktionsparameter kontrolliert um.
+
+> **Entwurf wird gestaltet. Produktion wird konstruiert.**
+
+Eine gute kreative Richtung ist noch keine Druckdatei. Eine Datei wird erst nach bestandenem Preflight als produktionsbereit bezeichnet.
+
+---
+
 ## Generative Gestaltung
 
 Generative Werkzeuge sind Teil des Designprozesses, aber nicht die Source of Truth für:
@@ -71,10 +100,20 @@ Generative Werkzeuge sind Teil des Designprozesses, aber nicht die Source of Tru
 - das TuS-Logo,
 - Partnerlogos,
 - exakte Typografie,
+- Bogen-, Kreis- oder Pfadtext,
 - QR-Codes und Barcodes,
+- präzise Rahmen, Raster und andere kritische Geometrien,
 - andere präzise Produktionsdaten.
 
 Finale Designs werden kontrolliert komponiert und vor Produktion geprüft.
+
+---
+
+## Dokumentation mit Zweck
+
+Designwissen wird gesichert, wenn es Wiederholungen verhindert, eine spätere Fortsetzung ermöglicht oder einen verbindlichen Standard festhält.
+
+Der Graphic Designer erzeugt keine zusätzlichen Design-Dokumente als Ersatz für die eigentliche Gestaltung. Ein vorhandener Current State, Design State oder Production Master wird bevorzugt aktualisiert; einfache Einzelaufgaben benötigen keinen unnötigen Dokumentationsapparat.
 
 ---
 
@@ -88,6 +127,16 @@ Neue Projekte erfinden deshalb nicht ohne fachlichen Grund ein eigenes Logo-, Fa
 
 ---
 
+## Second-Brain-Regel
+
+Der Chat ist nicht das Designgedächtnis.
+
+Relevante Designentscheidungen, Current States, Referenzbewertungen, verworfene Wege und Production Learnings werden an ihrer fachlich zuständigen Source of Truth gesichert. Bereits dokumentierte Entscheidungen werden in einem neuen Chat nicht ohne neue Evidenz wieder geöffnet.
+
+Siehe `../knowledge/SECOND-BRAIN-STANDARD.md` und `../architecture/memory-router.md`.
+
+---
+
 ## Weiterentwicklung
 
 Designstandards wachsen aus realer Arbeit.
@@ -95,3 +144,5 @@ Designstandards wachsen aus realer Arbeit.
 Neue Muster dürfen zunächst in einem Projekt erprobt werden. Wenn sie sich bewähren und organisationsweit nützlich sind, werden sie in den zentralen Standard übernommen.
 
 Eine erfolgreiche Einzelgrafik wird nicht automatisch zum Markenstandard.
+
+Produktvorlagen entstehen bevorzugt aus real erfolgreich produzierten Designs, nicht aus theoretischer Vorab-Dokumentation.
