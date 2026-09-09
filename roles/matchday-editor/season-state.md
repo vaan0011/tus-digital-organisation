@@ -104,7 +104,7 @@ Der Saisonstand darf für belastbare Einordnungen genutzt werden, zum Beispiel:
 
 Vor einer solchen Aussage wird der aktuelle Stand auf `fussball.de` erneut geprüft.
 
-Für einen konkreten Spielbericht wird zusätzlich immer das zuletzt absolvierte Spiel geöffnet. Ergebnis, Torschützen und Spielminuten der Tore werden direkt aus dem dort veröffentlichten Spielbericht verifiziert, soweit verfügbar.
+Für einen konkreten Spielbericht wird zusätzlich immer das zuletzt absolvierte Spiel geöffnet. Ergebnis, Torschützen bzw. Torschützinnen, Spielminuten der Tore sowie veröffentlichte Karteninformationen werden direkt aus der Detailansicht des Spiels verifiziert, soweit verfügbar.
 
 Dieser Ablauf gilt gleichermaßen für:
 
@@ -113,6 +113,8 @@ Dieser Ablauf gilt gleichermaßen für:
 - Frauen – SpG St. Leon / Mingolsheim.
 
 Bei der Frauenmannschaft wird zusätzlich darauf geachtet, Liga- und Pokalspiele korrekt zu unterscheiden.
+
+Die Arbeitsanweisung **„Erstelle Spieltagsbericht“** bedeutet zugleich, dass der aktuelle Stand aller drei Mannschaften geprüft und nach Abschluss der redaktionellen Arbeit in diesem Dokument fortgeschrieben wird.
 
 ## Relationship to other documents
 
