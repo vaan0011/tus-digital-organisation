@@ -35,6 +35,31 @@ Spielszenen, Atmosphäre, Chancen, taktische Eindrücke, Bewertungen und Zitate 
 
 Fehlende Informationen werden nicht erfunden.
 
+#### 1.1 Letztes Spiel als verbindlicher Ausgangspunkt
+
+Vor jedem neuen Spielbericht wird auf `fussball.de` zuerst das zuletzt absolvierte Spiel der betroffenen TuS-Mannschaft geöffnet und geprüft.
+
+Dabei werden mindestens verifiziert:
+
+- Gegner,
+- Heim/Auswärts,
+- Spieltag,
+- Endergebnis,
+- Halbzeitstand, soweit veröffentlicht,
+- Torschützen,
+- Spielminuten der Tore.
+
+Weitere veröffentlichte Spieldaten werden bei Bedarf ergänzend herangezogen.
+
+Diese Daten bilden zusammen mit dem Nutzer-Rohbericht die faktische Grundlage des Spielberichts. Die Torfolge kann als zeitliche Leitlinie für die Dramaturgie genutzt werden, ohne daraus nicht belegte Spielszenen abzuleiten.
+
+Die beiden dauerhaft bekannten Mannschaftsseiten sind:
+
+- Herren 1: `https://www.fussball.de/mannschaft/tus-mingolsheim-tus-mingolsheim-baden/-/saison/2627/team-id/011MIDVOS8000000VTVG0001VTR8C1K7`
+- Herren 2: `https://www.fussball.de/mannschaft/tus-mingolsheim-2-tus-mingolsheim-baden/-/saison/2627/team-id/011MIA2PS4000000VTVG0001VTR8C1K7`
+
+Bei einem Saisonwechsel werden die Mannschaftsseiten bzw. Saisonparameter überprüft und bei Bedarf aktualisiert.
+
 ### 2. Zwei verbindliche Berichtsversionen
 
 Für jeden regulären vollständigen Spielbericht entstehen zwei eigenständige Fassungen.
@@ -155,15 +180,18 @@ Wird ein Bericht später sachlich korrigiert, wird nach Möglichkeit das bestehe
 ### 9. Standardablauf
 
 1. konkrete Partie identifizieren,
-2. verfügbare Daten auf `fussball.de` recherchieren und verifizieren,
-3. Nutzer-Rohbericht und weitere belastbare Informationen lesen,
-4. Fakten und redaktionelle Beobachtungen voneinander trennen,
-5. vollständigen Spielbericht erstellen,
-6. Ortsblatt-/Printfassung auf maximal 4.000 Zeichen inklusive Leerzeichen verdichten,
-7. Zeichenanzahl prüfen,
-8. Namen, Gegner, Ergebnis, Wettbewerb und Spieltag gegenprüfen,
-9. beide finalen Fassungen als separate Google Docs im vorgesehenen Drive-Ordner anlegen,
-10. Dateinamen gegen die Konvention prüfen.
+2. Mannschaftsseite auf `fussball.de` öffnen und das zuletzt absolvierte Spiel identifizieren,
+3. Ergebnis, Gegner, Spieltag, Torschützen und Torzeiten sowie weitere verfügbare Spieldaten verifizieren,
+4. aktuellen Saisonstand und Tabellenplatzierung prüfen,
+5. Nutzer-Rohbericht und weitere belastbare Informationen lesen,
+6. Fakten und redaktionelle Beobachtungen voneinander trennen,
+7. vollständigen Spielbericht erstellen,
+8. Ortsblatt-/Printfassung auf maximal 4.000 Zeichen inklusive Leerzeichen verdichten,
+9. Zeichenanzahl prüfen,
+10. Namen, Gegner, Ergebnis, Wettbewerb, Spieltag und Torfolge gegenprüfen,
+11. beide finalen Fassungen als separate Google Docs im vorgesehenen Drive-Ordner anlegen,
+12. Dateinamen gegen die Konvention prüfen,
+13. Saisonstand in `season-state.md` aktualisieren.
 
 ### 10. Historische Einordnung
 
@@ -190,7 +218,8 @@ GitHub bewahrt:
 - Namenskonventionen,
 - Qualitätsregeln,
 - dauerhaft bewährte Tonalitätsregeln,
-- wiederverwendbare Arbeitsprozesse.
+- wiederverwendbare Arbeitsprozesse,
+- den fortlaufenden Saisonstand der betreuten Mannschaften.
 
 Google Drive bewahrt:
 
@@ -198,23 +227,46 @@ Google Drive bewahrt:
 
 Nicht jeder einzelne Bericht wird zusätzlich in GitHub kopiert.
 
+### 13. Fortlaufender Saisonstand
+
+Der Matchday Editor führt unter `season-state.md` einen kompakten, fortlaufend aktualisierten Arbeitsstand je Saison.
+
+Für Herren 1 und Herren 2 werden mindestens festgehalten:
+
+- Saison und Wettbewerb,
+- alle bereits absolvierten Ligaspiele mit Datum, Gegner, Heim/Auswärts und Ergebnis,
+- aktuelle Anzahl Spiele,
+- Siege, Unentschieden und Niederlagen, soweit verlässlich ableitbar,
+- Tore und Gegentore,
+- Punkte,
+- aktuelle Tabellenplatzierung,
+- Zeitpunkt der letzten Verifikation.
+
+Die Tabellenplatzierung ist eine Momentaufnahme und wird deshalb vor Verwendung in einem Bericht erneut auf `fussball.de` geprüft.
+
+Der Saisonstand dient als redaktionelles Gedächtnis, etwa für belastbare Aussagen wie Saisonstart, Serie, Punkteausbeute oder bisherige Ergebnisse. Solche Einordnungen werden nur verwendet, wenn der gespeicherte Stand aktuell verifiziert wurde.
+
 ## Definition of Done
 
 Ein regulärer Spielbericht ist abgeschlossen, wenn:
 
 - die Partie eindeutig identifiziert ist,
-- verfügbare Fakten geprüft wurden,
+- das zuletzt absolvierte Spiel auf `fussball.de` geprüft wurde,
+- Ergebnis, Torschützen und Torzeiten soweit verfügbar verifiziert wurden,
+- der aktuelle Saisonstand und die Tabellenplatzierung geprüft wurden,
 - keine ungesicherten Informationen als Tatsachen dargestellt werden,
 - die vollständige Homepage-/Facebook-Fassung fertig ist,
 - die Ortsblatt-/Printfassung fertig ist,
 - die Printfassung maximal 4.000 Zeichen inklusive Leerzeichen besitzt,
 - Namen, Gegner, Ergebnis, Wettbewerb und Spieltag geprüft wurden,
 - beide finalen Fassungen als separate Google Docs im festgelegten Drive-Ordner gespeichert sind,
-- beide Dateien der verbindlichen Namenskonvention entsprechen.
+- beide Dateien der verbindlichen Namenskonvention entsprechen,
+- `season-state.md` auf den aktuellen verifizierten Stand gebracht wurde.
 
 ## Relationship to other documents
 
 - `role.md`
+- `season-state.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`
 - `../../standards/iteration-and-progress.md`
