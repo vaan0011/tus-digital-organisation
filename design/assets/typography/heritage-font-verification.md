@@ -2,103 +2,122 @@
 
 ## Purpose
 
-Dieses Dokument hält den Verifikationsstand der in der Heritage-Classic-Referenz genannten Schriften fest. Ziel ist, vor dem Aufbau eines finalen Vektor-Artworks eindeutig zu klären, welche Fontdateien und Lizenzen tatsächlich benötigt werden.
+Dieses Dokument hält den Verifikationsstand der für Heritage Classic benötigten Schriften fest. Ziel ist ein reproduzierbares Master-Artwork mit möglichst freien, kommerziell nutzbaren Fonts und klar dokumentierter Lizenz.
 
 ## Core principle
 
-**Ein Fontname in einem Mockup ist ein Hinweis, keine automatisch freigegebene Produktionsquelle.**
+**Free Fonts first. Ein Fontname im Mockup ist ein Hinweis, keine zwingende Produktionsvorgabe.**
 
-Die verwendete Schrift muss visuell, technisch und lizenzrechtlich eindeutig bestimmt werden.
+Wenn eine freie Schrift die visuelle Aufgabe ausreichend präzise erfüllt, wird sie gegenüber einer kostenpflichtigen Alternative bevorzugt. Kostenpflichtige Fonts kommen nur zum Einsatz, wenn der Qualitätsunterschied für das konkrete Produkt relevant ist.
 
 ## Main content
 
-### 1. `MINGOLSHEIM` – College Block
+### 1. `MINGOLSHEIM` – freie College-/Slab-Alternative
 
 Die Heritage-Classic-Referenz nennt `COLLEGE BLOCK (Bold, Arched)`.
 
-Der derzeit stärkste verifizierte Kandidat ist **College Block 2.0** von Sharkshock / Dennis Ludlow. Die öffentliche Hersteller-/Distributionsbeschreibung nennt die Schrift ausdrücklich als für gebogene College-/University-Sweater-Schriftzüge sowie T-Shirt- und Logoanwendungen geeignet.
+Für den freien Produktionsweg wird zuerst **Graduate** geprüft.
+
+Quelle: Google Fonts / Graduate Project.
+
+Lizenz: **SIL Open Font License 1.1 (OFL)**.
 
 Status: `Proposed for Heritage Proof`.
 
-Warum dieser Kandidat priorisiert wird:
+Warum Graduate priorisiert wird:
 
-- starke visuelle Nähe zur vorhandenen Heritage-Referenz,
-- explizite College-/Sportswear-Ausrichtung,
-- kommerziell lizenzierbarer Ursprung ist nachvollziehbar,
-- als Outline-/Vektor-Workflow für ein statisches Merch-Artwork geeignet.
+- deutlicher College-/Varsity-Charakter,
+- kräftige Serif-/Slab-Formen,
+- offene, nachvollziehbare Lizenz,
+- frei für kommerzielle Nutzung im Rahmen der OFL,
+- geeignet für einen kontrollierten Outline-/Vektor-Workflow.
 
-Noch zu verifizieren:
+Zu prüfen:
 
-- exakter Schnitt/Variante,
-- Bogenradius und Warp-Geometrie,
+- horizontale Proportion gegenüber der Referenz,
 - Buchstabenabstände,
-- finale kommerzielle Lizenz für TuS-Nutzung.
+- Bogenradius,
+- vertikale Gewichtung,
+- charakteristische Formen insbesondere bei `M`, `G`, `S`, `H` und `E`.
 
-Der Bogen wird als Layoutgeometrie behandelt und nicht als generatives Element.
+Der Bogen wird als Layoutgeometrie erzeugt und nicht durch Bildgenerierung.
 
-### 2. `EST. 1901` / `TURN- UND SPORTVEREIN` – DIN Condensed
+Weitere freie Vergleichskandidaten dürfen im Proof ergänzt werden, wenn Graduate bei den charakteristischen Buchstabenformen sichtbar abweicht.
 
-Die Heritage-Classic-Referenz nennt `DIN CONDENSED BOLD`.
+### 2. `EST. 1901` / `TURN- UND SPORTVEREIN` – freie Condensed-Alternative
 
-Dieser Name ist nicht eindeutig genug, um ohne Foundry-Angabe eine konkrete Produktionsdatei festzulegen.
+Die Referenz nennt `DIN CONDENSED BOLD`.
 
-Für den Proof gelten deshalb zwei klar priorisierte Wege:
+Für den freien Produktionsweg wird zuerst **Barlow Condensed Bold** geprüft.
 
-#### Priorität A – DIN Condensed über Adobe Fonts / ParaType
+Quelle: Google Fonts / Barlow Project, Designer Jeremy Tribby.
 
-Adobe Fonts führt aktuell `DIN Condensed` von ParaType. Adobe beschreibt seine Fonts als für persönliche und kommerzielle Nutzung lizenziert. Diese Variante wird als erster Verfügbarkeits- und Sichtvergleich geprüft, falls der TuS-Arbeitsplatz Zugriff auf Adobe Fonts hat.
+Lizenz: **SIL Open Font License 1.1 (OFL)**.
 
-Status: `Preferred availability check`.
+Status: `Proposed for Heritage Proof`.
 
-#### Priorität B – FF DIN Pro Condensed Bold
+Warum Barlow Condensed priorisiert wird:
 
-Als eindeutig benannter kommerzieller Bold-Schnitt ist **FF DIN Pro Condensed Bold** verfügbar. Diese Variante besitzt einen klaren Foundry-/Lizenzpfad und wird als Backup für den visuellen Proof verwendet, falls ParaType DIN Condensed nicht exakt genug passt oder der benötigte Bold-Schnitt nicht verfügbar ist.
+- schmale groteske Grundform,
+- mehrere Gewichte verfügbar,
+- gute Eignung für kurze kräftige Kennzeichnung (`EST. 1901`) und längere Unterzeile,
+- offene, kommerziell nutzbare Lizenz,
+- reproduzierbar für Print, Merch, Web und kontrollierte Vektorexporte.
 
-Status: `Commercial fallback candidate`.
+Vergleichskandidaten für den Proof:
+
+- **Roboto Condensed** – frei/offen, neutraler und DIN-näher,
+- **Oswald** – frei/offen, enger und plakativ,
+- **Bebas Neue** – OFL, sehr display-orientiert; nur als Vergleich, da die Referenz kräftiger und weniger hochgezogen wirkt.
 
 ### 3. Proof-Entscheidung
 
-Heritage Classic wird erst dann typografisch `Approved`, wenn ein Side-by-Side-Proof gegen die Drive-Referenz bestätigt:
+Heritage Classic wird erst typografisch `Approved`, wenn ein Side-by-Side-Proof gegen die Drive-Referenz bestätigt:
 
-- charakteristische Buchstabenformen stimmen,
-- Gesamtbreite und Proportionen stimmen,
+- charakteristische Buchstabenformen stimmen ausreichend,
+- Gesamtbreite und Proportionen sind nah an der Referenz,
 - Bogenwirkung von `MINGOLSHEIM` stimmt,
-- `EST. 1901` und `TURN- UND SPORTVEREIN` besitzen die passende DIN-Anmutung,
+- `EST. 1901` besitzt die passende kräftige Condensed-Anmutung,
+- `TURN- UND SPORTVEREIN` bleibt trotz schmalem Satz gut lesbar,
 - Abstände und Zeilenverhältnisse sind reproduzierbar.
 
-Ein "ähnlicher" Font ohne bestandenen Proof bleibt `Proposed`.
+Ziel ist nicht, einen kostenpflichtigen Font um jeden Preis 1:1 zu imitieren. Ziel ist, den bestehenden Heritage-Charakter zuverlässig und reproduzierbar zu erhalten.
 
-### 4. Lizenzregel für TuS Merch
+### 4. Lizenzregel für TuS Fonts
 
-Für die Produktion benötigen wir keine Fontdateien im Repository, solange das finale Artwork als Vektorpfade übergeben wird.
+Bevorzugt werden Fonts mit klarer Open-Source-/Free-for-commercial-use-Lizenz, insbesondere SIL OFL.
 
-Fontdateien selbst werden nicht ins öffentliche Repository eingecheckt, sofern Lizenz und Weitergaberecht dies nicht ausdrücklich erlauben.
+Für jeden Approved Font werden dokumentiert:
 
-Das Produktionsziel lautet:
+- offizielle Bezugsquelle,
+- Lizenz,
+- Familie und Schnitt,
+- Einsatzrolle,
+- Version/Stand, soweit relevant.
 
-1. Font auf einem lizenzierten Arbeitsplatz verwenden,
-2. Artwork kontrolliert erstellen,
-3. finale Schrift in Pfade/Kurven umwandeln,
-4. Vektor-PDF/SVG prüfen,
-5. nur die daraus erzeugten Produktionsdateien an den Ausstatter übergeben.
+Fontdateien dürfen nur dann im Repository abgelegt werden, wenn die Lizenz die Weitergabe erlaubt und der zugehörige Lizenztext ebenfalls korrekt mitgeführt wird. Alternativ wird ausschließlich die offizielle Bezugsquelle dokumentiert.
 
-### 5. Beschaffungsentscheidung
+Für Produktionsübergaben wird finale Schrift nach Möglichkeit in Pfade/Kurven umgewandelt, sodass der Ausstatter keine lokale Fontinstallation benötigt.
 
-Für Heritage Classic wird folgende Reihenfolge festgelegt:
+### 5. Free-First-Beschaffungsentscheidung
 
-1. Verfügbarkeit von College Block 2.0 mit kommerzieller Lizenz prüfen und bei Verwendung lizenzieren.
-2. DIN Condensed über vorhandenen Adobe-Fonts-Zugang prüfen.
-3. Falls kein passender Bold-Schnitt oder keine ausreichende visuelle Übereinstimmung vorliegt, FF DIN Pro Condensed Bold kommerziell lizenzieren.
-4. Lizenznachweis außerhalb des öffentlichen Repositories in der Produktionsablage dokumentieren.
-5. Nach Lizenzierung Side-by-Side-Proof erstellen.
+Für Heritage Classic gilt folgende Reihenfolge:
+
+1. Graduate + Barlow Condensed als Kombination A proofen.
+2. Graduate mit Roboto Condensed und Oswald vergleichen.
+3. Falls Graduate oben nicht ausreichend nah an der Referenz liegt, weitere freie College-/Slab-Familien prüfen.
+4. Erst wenn kein freier Kandidat qualitativ überzeugt, kostenpflichtige Original-/Fallback-Fonts erneut bewerten.
+5. Keine kostenpflichtige Fontlizenz ohne dokumentierten Qualitätsgrund beschaffen.
 
 ### 6. Aktueller Status
 
-`MINGOLSHEIM`: College Block 2.0 → `Proposed for Heritage Proof`.
+`MINGOLSHEIM`: **Graduate** → `Proposed for Heritage Proof`.
 
-`EST. 1901` / `TURN- UND SPORTVEREIN`: DIN Condensed → `Proof required`; ParaType/Adobe zuerst prüfen, FF DIN Pro Condensed Bold als kommerziell klarer Fallback.
+`EST. 1901` / `TURN- UND SPORTVEREIN`: **Barlow Condensed Bold** → `Proposed for Heritage Proof`.
 
-Das Artwork bleibt bis zum bestandenen Proof `Reconstruction`, nicht `Approved Artwork`.
+Vergleich unten: Roboto Condensed, Oswald, Bebas Neue.
+
+Das Artwork bleibt bis zum bestandenen visuellen Proof `Reconstruction`, nicht `Approved Artwork`.
 
 ## Relationship to other documents
 
