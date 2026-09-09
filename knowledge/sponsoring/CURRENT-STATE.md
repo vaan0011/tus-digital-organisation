@@ -1,6 +1,6 @@
 # Sponsoring Current State
 
-Stand: 2026-09-05
+Stand: 2026-09-10
 
 ## Purpose
 
@@ -208,7 +208,15 @@ Bisherige Kerngedanken:
 - drehbare Nutzung für unterschiedliche Bereiche des Sportparks,
 - Spieltags-, Vereins-, Event-, Recruiting- und Partnerkommunikation,
 - Finanzierung über Gründungspartner als entwickeltes Modell,
-- dauerhafter Gründungsstatus getrennt von zeitlich begrenzten Werberechten.
+- dauerhafter Gründungsstatus getrennt von zeitlich begrenzten Werberechten,
+- Partneraktivierung nach dem Prinzip `Momente statt Werbesekunden`,
+- wiederverwendbare Partnerrollen wie Tor-, Ecken-, Hydration-, Gesundheits-, Wechsel-, Starting-XI-, Added-Time- und MVP-Partner.
+
+Die zentrale fachliche Quelle für diese Partnerrollen ist:
+
+- `MOMENT-PARTNER-MODELLE.md`
+
+Dort ist die Systematik `Founding Partner → Partnerrolle → Aktivierung` mit einem größeren Baukasten an Matchday-, Themen- und Eventrollen dokumentiert.
 
 Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/Vereinszuordnung und Genehmigungen aktuell geprüft.
 
@@ -219,7 +227,8 @@ Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/
 3. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
 4. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
 5. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
-6. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen.
+6. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen,
+7. für reale LED-Akquisegespräche zunächst wenige starke Moment-Partner-Rollen testen und erst danach Preise bzw. Standardpakete verfestigen.
 
 ### 10. GitHub-Pflicht
 
@@ -229,6 +238,7 @@ Je nach Inhalt werden aktualisiert:
 
 - `knowledge/sponsoring/README.md`,
 - dieses Dokument,
+- `MOMENT-PARTNER-MODELLE.md`,
 - relevante Projektzustände,
 - ADRs bei langfristigen Grundsatzentscheidungen,
 - betroffene Rollen oder Standards.
@@ -237,12 +247,14 @@ Je nach Inhalt werden aktualisiert:
 
 - `README.md`
 - `WERBEFLAECHEN-INVENTUR.md`
+- `MOMENT-PARTNER-MODELLE.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
 - `../../projects/partner-portal/README.md`
 - `../../projects/partner-portal/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../projects/partner-hub/PROJECT-STATE.md`
+- `../../projects/led-media-screen/PROJECT-STATE.md`
 - `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
