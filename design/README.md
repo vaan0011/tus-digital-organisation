@@ -18,6 +18,8 @@ Nicht Dekoration.
 
 Für Designarbeit gelten insbesondere:
 
+- `CURRENT-STATE.md` – kompakter aktueller Design-Arbeitsstand und offene Systemstellen
+- `REFERENCE-REGISTER.md` – welche bestehenden Arbeiten echte Referenzen sind und welche ausdrücklich nicht
 - `brand-identity.md` – Grundlage der TuS Brand Identity
 - `logo.md` – Verwendung der offiziellen Logo-Assets
 - `logo/` – zentrale freigegebene Logo-Dateien
@@ -27,8 +29,10 @@ Für Designarbeit gelten insbesondere:
 - `ui-standard.md` – gemeinsamer UI-Standard für digitale Oberflächen
 - `product-types.md` – Unterschiede zwischen Merch, Print, Tickets, Social, Web und UI
 - `design-workflow.md` – verbindlicher Arbeits- und Iterationsprozess
+- `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
+- `merch/` – Merch-spezifischer Current State, Production-Master-Verweise und Artwork-Logik
 - `templates/` – Brief- und Statusvorlagen für längere Designaufgaben
 
 Projektordner dürfen technische Kopien und Implementierungen enthalten. Die fachlichen Regeln werden jedoch zentral hier gepflegt.
@@ -45,6 +49,16 @@ Markenbestandteile werden mit einem klaren Status behandelt:
 - `Deprecated` – nicht mehr für neue Arbeit verwenden.
 
 Nicht definierte Bereiche dürfen nicht stillschweigend als freigegeben interpretiert werden.
+
+---
+
+## Referenzen sind kuratiert
+
+Nicht jede frühere TuS-Grafik ist automatisch eine Markenreferenz.
+
+Vor Designarbeit wird `REFERENCE-REGISTER.md` geprüft. Dort ist dokumentiert, welche bestehende Arbeit als Primary Reference, Product Reference, eingeschränkte Referenz oder ausdrücklich ausgeschlossene Richtung gilt.
+
+Damit wird verhindert, dass ein neuer Chat experimentelle oder bereits negativ bewertete Entwürfe wieder als Ausgangspunkt verwendet.
 
 ---
 
@@ -85,6 +99,16 @@ Jedes Medium vermittelt dieselbe Identität.
 Ob Briefpapier, Homepage, Instagram-Beitrag, WordPress-Plugin, Fanartikel oder KI-generiertes Motiv – alles soll sich wie ein Teil derselben Organisation anfühlen.
 
 Neue Projekte erfinden deshalb nicht ohne fachlichen Grund ein eigenes Logo-, Farb-, Schrift- oder UI-System.
+
+---
+
+## Second-Brain-Regel
+
+Der Chat ist nicht das Designgedächtnis.
+
+Relevante Designentscheidungen, Current States, Referenzbewertungen, verworfene Wege und Production Learnings werden an ihrer fachlich zuständigen Source of Truth gesichert. Bereits dokumentierte Entscheidungen werden in einem neuen Chat nicht ohne neue Evidenz wieder geöffnet.
+
+Siehe `../knowledge/SECOND-BRAIN-STANDARD.md` und `../architecture/memory-router.md`.
 
 ---
 
