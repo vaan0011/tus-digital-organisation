@@ -104,6 +104,7 @@ roles/
     Dauerhafte Rollen
     Verantwortlichkeiten
     Rollenspezifische Arbeitsstandards
+    Rollenspezifische Runtime-Profile
 
 employees/
     Digitale Mitarbeiter
@@ -126,7 +127,7 @@ knowledge/
     Fördermittel & Förderprogramme
 
 standards/
-    Gemeinsame Arbeits-, Freigabe-, Lern- und Fortschrittsstandards
+    Gemeinsame Arbeits-, Runtime-, Freigabe-, Lern- und Fortschrittsstandards
 
 vision/
     Repository-Vision
@@ -157,12 +158,14 @@ README.md
 Für menschliche und digitale Mitarbeiter gelten insbesondere:
 
 1. `standards/employee-operating-standard.md`
-2. `standards/approval-and-escalation.md`
-3. `standards/learning-loop.md`
-4. `standards/iteration-and-progress.md`
-5. `standards/working-standards.md`
+2. `standards/employee-runtime-standard.md`
+3. `standards/approval-and-escalation.md`
+4. `standards/learning-loop.md`
+5. `standards/iteration-and-progress.md`
+6. `standards/working-standards.md`
+7. `employees/daily-work-cycle.md`
 
-Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln.
+Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln. Ein rollenspezifisches Runtime-Profil beschreibt zusätzlich Queue, Checkpoint, autonomen Entscheidungsbereich, Stop Conditions und Eskalationen.
 
 ---
 
@@ -181,11 +184,12 @@ Bitte lies die Dokumente in dieser Reihenfolge:
 9. `architecture/stability-and-simplicity.md`
 10. `system/system-overview.md`
 11. `standards/employee-operating-standard.md`
-12. `standards/approval-and-escalation.md`
-13. `standards/learning-loop.md`
-14. `standards/iteration-and-progress.md`
-15. `roles/wordpress-developer/role.md`
-16. `roles/wordpress-developer/development-standard.md`
+12. `standards/employee-runtime-standard.md`
+13. `standards/approval-and-escalation.md`
+14. `standards/learning-loop.md`
+15. `standards/iteration-and-progress.md`
+16. `roles/wordpress-developer/role.md`
+17. `roles/wordpress-developer/development-standard.md`
 
 Erst danach solltest du Plugins oder Code entwickeln.
 
@@ -196,12 +200,18 @@ Erst danach solltest du Plugins oder Code entwickeln.
 Bitte lies zusätzlich zur gemeinsamen Organisationsgrundlage:
 
 1. `standards/employee-operating-standard.md`
-2. `standards/approval-and-escalation.md`
-3. `standards/learning-loop.md`
-4. `roles/archivist/role.md`
-5. `roles/archivist/archive-standard.md`
+2. `standards/employee-runtime-standard.md`
+3. `standards/approval-and-escalation.md`
+4. `standards/learning-loop.md`
+5. `roles/archivist/role.md`
+6. `roles/archivist/archive-standard.md`
+7. `roles/archivist/runtime.md`
+8. den aktuellen `TuS Historie – Quellenindex` in Google Drive
+9. vorhandene Erschließungs-/Übergabedokumente der aktuell gewählten Quelle
 
-Der operative Quellenraum liegt in Google Drive. Das Repository enthält die verbindlichen organisatorischen und fachlichen Regeln der Archivarbeit.
+Der operative Quellenraum liegt in Google Drive. Das Repository enthält die verbindlichen organisatorischen, fachlichen und Runtime-Regeln der Archivarbeit.
+
+Der Archivist ist der erste Runtime-Pilot der TuS Digital Organisation. Er setzt seine Bestandserschließung anhand von Queue und Checkpoint selbstständig fort und wartet nach normalen Zwischenständen nicht auf eine erneute Aufforderung `weiter`.
 
 ---
 
