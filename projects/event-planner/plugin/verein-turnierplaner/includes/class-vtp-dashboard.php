@@ -125,6 +125,9 @@ class VTP_Dashboard {
    echo '</div>';
   }
   echo '<p class="description vtp-dashboard-note">Manuelle Organisationsaufgaben und Aufgaben aus Vorlagen folgen im nächsten Ausbauschritt.</p>';
-  echo '</section></div></div>';
+  echo '</section></div>';
+
+  VTP_Dashboard_History::render();
+  echo '</div>';
  }
 }
