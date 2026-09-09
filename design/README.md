@@ -28,6 +28,8 @@ Für Designarbeit gelten insbesondere:
 - `product-types.md` – Unterschiede zwischen Merch, Print, Tickets, Social, Web und UI
 - `design-workflow.md` – verbindlicher Arbeits- und Iterationsprozess
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
+- `production-standard.md` – verbindliche Reinzeichnung und deterministische Produktionsweise
+- `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
 - `templates/` – Brief- und Statusvorlagen für längere Designaufgaben
 
@@ -64,6 +66,20 @@ Das Produkt wird vor Beginn der Gestaltung festgelegt, weil unterschiedliche Med
 
 ---
 
+## Creative Design und Production
+
+Die Designarbeit trennt zwei Arbeitsmodi.
+
+**Creative Design** entwickelt Idee, Stil, Komposition, Bildwelt und Mockup.
+
+**Production / Reinzeichnung** setzt Originalassets, exakte Texte, Typografie, Pfade, Geometrien und technische Produktionsparameter kontrolliert um.
+
+> **Entwurf wird gestaltet. Produktion wird konstruiert.**
+
+Eine gute kreative Richtung ist noch keine Druckdatei. Eine Datei wird erst nach bestandenem Preflight als produktionsbereit bezeichnet.
+
+---
+
 ## Generative Gestaltung
 
 Generative Werkzeuge sind Teil des Designprozesses, aber nicht die Source of Truth für:
@@ -71,10 +87,20 @@ Generative Werkzeuge sind Teil des Designprozesses, aber nicht die Source of Tru
 - das TuS-Logo,
 - Partnerlogos,
 - exakte Typografie,
+- Bogen-, Kreis- oder Pfadtext,
 - QR-Codes und Barcodes,
+- präzise Rahmen, Raster und andere kritische Geometrien,
 - andere präzise Produktionsdaten.
 
 Finale Designs werden kontrolliert komponiert und vor Produktion geprüft.
+
+---
+
+## Dokumentation mit Zweck
+
+Designwissen wird gesichert, wenn es Wiederholungen verhindert, eine spätere Fortsetzung ermöglicht oder einen verbindlichen Standard festhält.
+
+Der Graphic Designer erzeugt keine zusätzlichen Design-Dokumente als Ersatz für die eigentliche Gestaltung. Ein vorhandener Design State wird bevorzugt aktualisiert; einfache Einzelaufgaben benötigen keinen unnötigen Dokumentationsapparat.
 
 ---
 
@@ -95,3 +121,5 @@ Designstandards wachsen aus realer Arbeit.
 Neue Muster dürfen zunächst in einem Projekt erprobt werden. Wenn sie sich bewähren und organisationsweit nützlich sind, werden sie in den zentralen Standard übernommen.
 
 Eine erfolgreiche Einzelgrafik wird nicht automatisch zum Markenstandard.
+
+Produktvorlagen entstehen bevorzugt aus real erfolgreich produzierten Designs, nicht aus theoretischer Vorab-Dokumentation.
