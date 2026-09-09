@@ -12,6 +12,8 @@ Eine neue Iteration braucht entweder eine neue Erkenntnis oder eine klar definie
 
 Freigegebene Bestandteile werden gesperrt und nicht bei jedem neuen Versuch erneut zur Disposition gestellt.
 
+> **Entwurf wird gestaltet. Produktion wird konstruiert.**
+
 ## Main Content
 
 ### 1. Design Brief vor Gestaltung
@@ -104,7 +106,7 @@ Dann wird geprüft:
 - Ist das Problem technisch mit dem verwendeten Werkzeug lösbar?
 - Ist das Briefing eindeutig genug?
 - Wird ein verbindliches Element fälschlich generativ erzeugt?
-- Sollte die Aufgabe in Generierung und manuelle Komposition getrennt werden?
+- Sollte die Aufgabe in Generierung und kontrollierte Komposition getrennt werden?
 - Muss eine andere Produktionsmethode verwendet werden?
 
 ### 8. Keine regressiven Änderungen
@@ -134,32 +136,99 @@ Er enthält mindestens:
 
 Der Chat ist Arbeitsraum. Der dokumentierte Design State ist das Gedächtnis.
 
-### 10. Vor Produktionsfreigabe
+Ein Design State ist nur dann sinnvoll, wenn eine Aufgabe tatsächlich mehrstufig ist oder fortgeführt werden muss. Für einfache Einmalgrafiken wird kein Dokumentationsapparat als Selbstzweck erzeugt.
 
-Vor finaler Ausgabe werden geprüft:
+### 10. Handover von Creative Design zu Production
 
-- richtige Logos,
+Eine finale Produktionsdatei wird nicht direkt aus einer explorativen Generierung abgeleitet, ohne den Übergang in den Produktionsmodus bewusst zu vollziehen.
+
+Vor der Reinzeichnung wird ein kompakter Production Handover festgehalten:
+
+- Approved Direction,
+- Locked Assets,
+- exakter finaler Text,
+- verbindliche bzw. bestätigte Schrift,
+- Farben,
+- reale Maße,
+- gewünschtes Ausgabeformat,
+- technische Vorgaben des Produzenten,
+- noch offene Produktionsfragen.
+
+Sind markenkritische Angaben ungeklärt, beginnt die finale Reinzeichnung noch nicht.
+
+### 11. Production / Reinzeichnung
+
+Im Produktionsmodus gelten zusätzlich `production-standard.md` und `print-preflight-checklist.md`.
+
+Jetzt werden insbesondere:
+
+- Original-Logos und andere Locked Assets platziert,
+- finale Texte kontrolliert gesetzt,
+- Typografie sauber aufgebaut,
+- Bogen-, Kreis- und Pfadtexte geometrisch konstruiert,
+- Abstände, Rahmen, Achsen und Raster präzise aufgebaut,
+- Produktionsmaße und technische Anforderungen umgesetzt.
+
+Generative Bildwerkzeuge dürfen weiterhin isolierte kreative Bildbestandteile liefern, aber nicht die markenkritische Reinzeichnung ersetzen.
+
+### 12. Keine Design-Dokumentation statt Designarbeit
+
+Standards, Briefings und Design States dienen der Produktion und nicht umgekehrt.
+
+Der Graphic Designer legt kein neues Konzept-, Entscheidungs- oder Produktionsdokument an, wenn:
+
+- die Information bereits verbindlich dokumentiert ist,
+- ein vorhandenes Design State aktualisiert werden kann,
+- die Aufgabe einfach genug ist, direkt ausgeführt zu werden,
+- das Dokument keinen konkreten Fehler verhindert oder keine spätere Fortsetzung ermöglicht.
+
+Das Ziel ist bessere Gestaltung und reproduzierbare Produktion – nicht mehr Dokumente.
+
+### 13. Preflight vor Produktionsfreigabe
+
+Vor finaler Ausgabe wird die `print-preflight-checklist.md` vollständig durchlaufen.
+
+Geprüft werden insbesondere:
+
+- richtige Original-Logos,
 - richtige Texte,
 - richtige Fonts,
 - richtige Farben,
+- saubere Typografie,
+- saubere Pfad-/Bogen-Geometrie,
 - Abmessungen,
 - Auflösung,
 - Beschnitt/Safe Areas,
 - Transparenz,
 - Druck-/Produktionsverfahren,
 - Dateiart,
-- mögliche Lizenz- oder Rechtefragen.
+- mögliche Lizenz- oder Rechtefragen,
+- tatsächliche visuelle Qualität der exportierten Datei.
+
+Eine Datei wird nur dann als `druckfertig` oder `produktionsbereit` bezeichnet, wenn der Preflight bestanden ist.
+
+### 14. Menschliche Freigabe
+
+Die Reinzeichnung kann durch den Graphic Designer vorbereitet und geprüft werden.
+
+Die finale Druck- oder Produktionsfreigabe bleibt entsprechend Approval & Escalation Standard beim Menschen, sofern für einen konkreten wiederkehrenden Prozess nicht ausdrücklich eine andere Regel genehmigt wurde.
 
 ## Relationship to other documents
 
 - `brand-identity.md`
 - `product-types.md`
 - `generative-design-standard.md`
+- `production-standard.md`
+- `print-preflight-checklist.md`
 - `logo.md`
 - `typography.md`
 - `colors.md`
+- `../roles/graphic-designer/role.md`
 - `../standards/iteration-and-progress.md`
+- `../standards/approval-and-escalation.md`
 
 ## Future Development
 
-Der Workflow wird anhand realer Designprojekte erweitert. Wiederkehrende Produktarten erhalten eigene Vorlagen, sobald dies tatsächlich Zeit spart und Fehler reduziert.
+Der Workflow wird anhand realer Designprojekte erweitert.
+
+Wiederkehrende Produktarten erhalten erst dann eigene Vorlagen, wenn eine erfolgreich produzierte Referenz vorliegt und die Vorlage nachweislich Zeit spart oder Fehler reduziert.
