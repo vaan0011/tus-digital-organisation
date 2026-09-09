@@ -14,6 +14,8 @@ Digitale Mitarbeiter arbeiten nicht auf Zuruf.
 
 Sie arbeiten strukturiert, priorisieren ihre Aufgaben und unterstützen die Organisation proaktiv.
 
+Der konkrete ausführbare Arbeitsmodus wird im `Employee Runtime Standard` und – soweit vorhanden – im rollenspezifischen Runtime-Profil beschrieben.
+
 ---
 
 # Arbeitsbeginn
@@ -22,14 +24,15 @@ Jeder digitale Mitarbeiter beginnt seinen Arbeitstag mit einem organisatorischen
 
 Dabei werden unter anderem geprüft:
 
-- offene Aufgaben
-- neue Ereignisse
-- neue Nachrichten
-- neue Dokumente
-- neue Wissenseinträge
-- anstehende Termine
-- Fristen
-- Risiken
+- offene Aufgaben,
+- neue Ereignisse,
+- neue Nachrichten,
+- neue Dokumente,
+- neue Wissenseinträge,
+- anstehende Termine,
+- Fristen,
+- Risiken,
+- eigener Checkpoint und nächste Aktion.
 
 ---
 
@@ -39,11 +42,12 @@ Anschließend werden die Aufgaben priorisiert.
 
 Prioritäten entstehen durch:
 
-- Dringlichkeit
-- Bedeutung
-- Abhängigkeiten
-- Teamziele
-- Termine
+- Dringlichkeit,
+- Bedeutung,
+- Abhängigkeiten,
+- Teamziele,
+- Termine,
+- rollenspezifische Queue- und Auswahlregeln.
 
 ---
 
@@ -57,6 +61,7 @@ Sie prüfen:
 - Fehlen Informationen?
 - Gibt es Blockaden?
 - Kann Wissen wiederverwendet werden?
+- Ist eine strukturierte Übergabe an einen anderen Mitarbeiter erforderlich?
 
 ---
 
@@ -64,22 +69,30 @@ Sie prüfen:
 
 Während der Bearbeitung:
 
-- dokumentieren sie ihre Arbeit
-- erzeugen Ereignisse
-- erweitern Organisationswissen
-- informieren beteiligte Teams
+- dokumentieren sie ihre Arbeit,
+- erzeugen Ereignisse,
+- erweitern Organisationswissen,
+- informieren beteiligte Teams,
+- aktualisieren nach belastbaren Arbeitseinheiten ihren Checkpoint,
+- wählen bei weiterer zulässiger Queue selbstständig die nächste Arbeitseinheit.
+
+Ein Zwischenbericht an einen Menschen beendet den Arbeitsauftrag nicht automatisch.
 
 ---
 
 # Tagesabschluss
 
-Vor dem Ende des Arbeitstages:
+Vor dem Ende des Arbeitstages oder eines technischen Runtime-Laufs:
 
-- Aufgaben aktualisieren
-- Dokumentation ergänzen
-- Wissen sichern
-- offene Punkte markieren
-- Übergaben vorbereiten
+- Aufgaben aktualisieren,
+- Dokumentation ergänzen,
+- Wissen sichern,
+- Checkpoint konkret aktualisieren,
+- nächste Aktion festhalten,
+- echte Blocker markieren,
+- Übergaben vorbereiten.
+
+Der Zustand muss so dokumentiert sein, dass ein neuer Chat oder eine neue Runtime-Ausführung ohne Rückfrage fortsetzen kann.
 
 ---
 
@@ -95,12 +108,15 @@ Sondern auch Wissen, Transparenz und Zusammenarbeit.
 
 ## Relationship to other documents
 
-- ../organization/team-philosophy.md
-- ../organization/organization-principles.md
-- ../core/core-principles.md
+- `../standards/employee-runtime-standard.md`
+- `../standards/employee-operating-standard.md`
+- `../standards/approval-and-escalation.md`
+- `../organization/team-philosophy.md`
+- `../organization/organization-principles.md`
+- `../core/core-principles.md`
 
 ---
 
 ## Future Development
 
-Später wird dieser Arbeitszyklus je nach Rolle erweitert.
+Der gemeinsame Arbeitszyklus bleibt bewusst kompakt. Rollenspezifische Runtime-Regeln werden nur aus realer Arbeit ergänzt.
