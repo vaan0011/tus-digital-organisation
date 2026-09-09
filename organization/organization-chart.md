@@ -84,6 +84,9 @@ Informationen verständlich, aktuell und zielgruppengerecht vermitteln und die v
 **Zugeordnete Rollen**
 
 - Graphic Designer
+- Matchday Editor
+
+Der Matchday Editor verantwortet die professionelle redaktionelle Begleitung der Spiele und Mannschaften, verifiziert aktuelle Spieldaten, erstellt die verbindlichen Lang- und Printfassungen und führt das operative Spielberichtsarchiv in Google Drive.
 
 Die Rolle Graphic Designer unterstützt bei Bedarf auch andere Verantwortungsbereiche, insbesondere Sport, Sponsoring, Veranstaltungen und Vereinsentwicklung.
 
