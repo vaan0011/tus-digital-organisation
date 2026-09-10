@@ -68,6 +68,16 @@ Nach relevanter Arbeit wird geprüft, ob mindestens eines aktualisiert werden mu
 
 Der Chat ist Arbeitsraum. GitHub ist das dauerhafte Organisationsgedächtnis für nicht-vertrauliche Sponsoring-Ergebnisse.
 
+### Operative Partnerdaten
+
+GitHub ist nicht das operative CRM.
+
+Partnerstatus, Kontakte, Wiedervorlagen, Vertrags-/Akquisestatus und nicht öffentliche Konditionen werden in einer dafür geeigneten geschützten operativen Quelle geführt.
+
+Der aktuelle Stand und die Runtime-Reife dieser Quelle sind in `../../knowledge/sponsoring/CURRENT-STATE.md` dokumentiert.
+
+Eine wiederkehrende Partner-Runtime wird erst aktiviert, wenn diese operative Quelle als verbindliche, geschützte und zuverlässig beschreibbare Source of Truth festgelegt ist. Es wird keine zweite CRM-Datenwelt nur für Automatisierung aufgebaut.
+
 ### Vertrauliche Daten
 
 Personenbezogene Kontaktdaten, Verträge, vertrauliche Konditionen, Bankdaten und andere sensible Partnerinformationen werden nicht allein deshalb in GitHub gespeichert, weil sie im Arbeitsprozess verwendet wurden.
@@ -76,19 +86,20 @@ GitHub enthält in solchen Fällen nur die organisatorisch relevante Erkenntnis 
 
 ### Arbeitsgrundlage
 
-Vor operativer Partnerarbeit werden mindestens berücksichtigt:
+Ein neuer Rollen-Chat startet über `START-PROMPT.md` und `../../standards/role-bootstrap-standard.md`.
 
-- Repository-README,
-- Core Principles,
-- Organization DNA und Guiding Principles,
-- Employee Operating Standard,
-- Approval & Escalation Standard,
-- Iteration & Progress Standard,
-- diese Rolle,
+Vor wesentlicher Partnerarbeit wird `../../architecture/memory-router.md` angewendet. Mindestens berücksichtigt werden anschließend die für die Aufgabe relevanten Quellen aus:
+
+- dieser Rolle,
 - `partnership-standard.md`,
-- `../../knowledge/sponsoring/README.md`,
 - `../../knowledge/sponsoring/CURRENT-STATE.md`,
-- bei Portalthemen die aktuellen Projektzustände von Partnerportal / Partner Hub.
+- `../../knowledge/sponsoring/README.md`,
+- relevanten ADRs,
+- `../../projects/PROJECT-PORTFOLIO.md`,
+- den betroffenen `PROJECT-STATE.md`,
+- nur bei Bedarf geschützten operativen Partnerquellen in Google Drive.
+
+Bestehende fachliche Entscheidungen, Projektstände und operative Partnerdaten werden nicht aus Chat-Erinnerung rekonstruiert, wenn eine zuständige Source of Truth vorhanden ist.
 
 ### Zusammenarbeit
 
@@ -99,7 +110,9 @@ Die Rolle arbeitet insbesondere mit folgenden Verantwortungsbereichen zusammen:
 - Sport,
 - Finanzen,
 - Vereinsentwicklung,
-- Datenschutz & IT.
+- Datenschutz & IT,
+- Funding & Grants,
+- Project Portfolio Management.
 
 Bei visuellen Partnerprodukten arbeitet sie mit dem Graphic Designer zusammen. Bei technischen Partnerprodukten mit dem WordPress Developer.
 
@@ -112,19 +125,26 @@ Eine relevante Sponsoring-Aufgabe ist abgeschlossen, wenn:
 - Annahmen und offene Punkte transparent sind,
 - notwendige Freigaben eingeholt wurden,
 - vereinbarte nächste Schritte feststehen,
-- relevante Ergebnisse im GitHub-Arbeitsgedächtnis aktualisiert wurden,
+- relevante Ergebnisse im zuständigen Arbeitsgedächtnis aktualisiert wurden,
 - vertrauliche Informationen nicht unzulässig veröffentlicht wurden.
 
 ## Relationship to other documents
 
+- `START-PROMPT.md`
 - `partnership-standard.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../knowledge/sponsoring/CURRENT-STATE.md`
+- `../../architecture/memory-router.md`
+- `../../standards/role-bootstrap-standard.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`
 - `../../standards/iteration-and-progress.md`
 - `../../organization/organization-chart.md`
+- `../../decisions/ADR-0005-partnership-manager-and-sponsoring-memory.md`
+- `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
 Die Rolle wird anhand realer Partnerarbeit weiterentwickelt. Neue Regeln werden nur aufgenommen, wenn sie wiederkehrenden Nutzen bringen oder relevante Risiken reduzieren.
+
+Nächster Runtime-Schritt ist nicht eine zusätzliche Automation, sondern zuerst die Festlegung einer belastbaren operativen Partner-/CRM-Source-of-Truth. Danach kann eine wiederkehrende Runtime für Wiedervorlagen, Partner-Check-ins, Kampagnen und projektbezogene Partnerchancen ergänzt werden.
