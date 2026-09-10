@@ -1,6 +1,6 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-09-05  
+**Stand:** 2026-09-10 – Funding-Abgleich aktualisiert  
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
@@ -209,17 +209,20 @@ Der Nutzer möchte das Projekt ausdrücklich formal führen, weil **mögliche F�
 
 Damit ist das Projekt ab sofort für den Funding & Grants Manager als reales TuS-Projekt relevant.
 
-Noch nicht geklärt und daher **nicht behauptet** werden:
+Aktuell qualifizierter Förderweg:
 
-- konkretes Förderprogramm,
-- konkrete Förderquote,
-- Antragsberechtigung,
-- förderfähige Kosten,
-- Projektbudget,
-- Projektbeginn und Projektende,
-- Bewilligungswahrscheinlichkeit.
+- **WISO MeinVerein des Jahres 2026 – Projektaward, Kategorie Digitalisierung**
+- Priorität: **A – heute einreichen**
+- offizielle Frist: **10.09.2026, 23:59 Uhr**
+- mögliche Preise je Kategorie: 10.000 €, 3.000 € oder 1.000 €
+- vollständiger Antragsentwurf: `../../knowledge/funding/applications/wiso-meinverein-2026/APPLICATION-DRAFT.md`
+- qualifizierter Opportunity Brief: `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
 
-Für Förderanträge sollte das breite Organisationsprogramm gegebenenfalls in ein klar messbares Teilvorhaben geschnitten werden, zum Beispiel anhand definierter Arbeitspakete und Pilotbereiche. Die Auswahl eines solchen Zuschnitts erfolgt erst nach Programmanalyse.
+Der Preis hat einen belastbaren Fit, weil er die reale Aufbauleistung, Wirkung, Innovation und Nachhaltigkeit bewertet. Die externe Einreichung und das erforderliche öffentliche WISO-Profil sind im Repository noch nicht dokumentiert.
+
+Für spätere klassische Zuschussprogramme bleibt das breite Organisationsprogramm in klar messbare Arbeitspakete oder Teilvorhaben zu schneiden. Der aktuelle DSEE-Fördermarkt bietet keinen gleichwertigen offenen Digitalisierungszuschuss: `100xDigital` und `transform_D` werden offiziell als geschlossen geführt; das Mikroförderprogramm passt nur zu einem zusätzlichen realen Ehrenamtsprojekt, nicht zur pauschalen Finanzierung der internen Software-/Organisationsarbeit.
+
+Nicht behauptet werden eine Bewilligungswahrscheinlichkeit oder weitere aktuelle Förderquoten.
 
 ### 9. Abhängigkeiten
 
@@ -246,10 +249,11 @@ Besonders relevant sind:
 
 ### 11. Nächster sinnvoller Schritt
 
-1. Funding & Grants Manager soll das Projekt gegen aktuelle Förderprogramme spiegeln.
-2. Dabei zunächst **keinen Antrag erzwingen**, sondern geeignete Förderlogiken und mögliche Teilprojekte identifizieren.
-3. Parallel den aktuellen Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand und offenem Budget strukturieren.
-4. Erst danach entscheiden, ob das Gesamtprojekt oder ein Teilprojekt als Förderantrag weiterentwickelt wird.
+1. Sofort prüfen, ob der WISO-Projektaward bereits eingereicht wurde.
+2. Falls offen: öffentliches Profil, finale Freigabe, Bildrechte und Hamburg-Teilnahme klären und den vorhandenen Entwurf noch am 10.09.2026 mit Sicherheitsabstand einreichen.
+3. Eingangsbestätigung und tatsächlich eingereichten Wortlaut dokumentieren.
+4. Danach den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand und offenem Budget strukturieren.
+5. Weitere Förderprogramme nur bei echtem Fachzweck und aktuellem Primärquellen-Fit verfolgen.
 
 ## Relationship to other documents
 
