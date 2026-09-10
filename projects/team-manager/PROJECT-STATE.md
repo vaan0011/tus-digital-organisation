@@ -14,14 +14,15 @@ Vor der Plugin-Implementierung werden die fachlichen und architektonischen Grund
 
 ### Current Goal
 
-Das neue Projekt wird fachlich abgegrenzt und auf eine belastbare erste Architekturentscheidung vorbereitet.
+Nach dem gemergten initialen Scope wird das Projekt auf die erste belastbare Architekturentscheidung vorbereitet: gemeinsame Mannschaftsidentität und Saisonmodell.
 
-Der aktuelle Schritt ist ausschließlich Dokumentation und Vorstrukturierung. Es existiert noch kein Team-Manager-Plugin-Code.
+Es existiert noch kein Team-Manager-Plugin-Code.
 
 ### Verified
 
 - Im Repository gab es vor diesem Projekt noch kein eigenes Team-/Mannschaftsprojekt.
 - Der langfristige fachliche Funktionsumfang ist in `FUNCTIONAL-SCOPE.md` dokumentiert.
+- Der initiale Projektscope wurde über PR #17 nach `main` übernommen.
 - Mannschaftsdaten werden auch außerhalb dieses zukünftigen Plugins benötigt: Der Event Planner soll Helferschichten Mannschaften oder Abteilungen zuweisen können.
 - Saison, Jahrgänge, Trainer/Kontakte, Trainingszeiten, Trainingsorte und externe Spielzuordnungen sind teilweise saisonabhängig und dürfen historische Saisons nicht rückwirkend überschreiben.
 - Trainingszeiten und Platz-/Hallenbelegung sollen aus derselben Datenquelle erzeugt werden.
@@ -60,26 +61,15 @@ Vor dem ersten funktionalen Code müssen mindestens folgende Punkte geklärt wer
 
 ### Active Development
 
-Branch:
-
-`team-manager/initial-scope`
-
-Scope:
-
-- Projekt anlegen,
-- fachliches Zielbild dokumentieren,
-- offene Architekturfragen sichtbar machen.
-
-Keine funktionale Änderung an produktivem Code.
+Kein aktiver Entwicklungsbranch. Der initiale Dokumentationsscope ist über PR #17 gemergt; funktionaler Plugin-Code wurde noch nicht begonnen.
 
 ### Next Meaningful Step
 
-1. diesen initialen Scope fachlich bestätigen,
-2. gemeinsame Mannschaftsidentität mit Event Planner gegen die Plattformarchitektur prüfen,
-3. einfaches Mannschaft/Saison-Datenmodell entwerfen,
-4. danach Altersklassen-/Jahrgangslogik und Trainingsressourcen konkretisieren,
-5. parallel die technische Integrationsmöglichkeit von fussball.de untersuchen,
-6. erst dann das erste kleine Plugin-Inkrement definieren.
+1. gemeinsame Mannschaftsidentität mit Event Planner gegen die Plattformarchitektur prüfen,
+2. einfaches Mannschaft/Saison-Datenmodell entwerfen,
+3. danach Altersklassen-/Jahrgangslogik und Trainingsressourcen konkretisieren,
+4. parallel die technische Integrationsmöglichkeit von fussball.de untersuchen,
+5. erst dann das erste kleine Plugin-Inkrement definieren.
 
 ## Relationship to other documents
 

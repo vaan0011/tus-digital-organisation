@@ -8,7 +8,7 @@ Sie hält nur den aktuellen verifizierten Projektstand, offene Architektur-/Prod
 
 ## Current Goal
 
-Das fachliche Zielbild und der einfache konto-freie Vermittlungsprozess werden festgelegt, bevor Plugin-Code entsteht.
+Das fachliche Zielbild und der einfache konto-freie Vermittlungsprozess werden konkretisiert, bevor Plugin-Code entsteht.
 
 ## Current Repository State
 
@@ -19,6 +19,8 @@ Projektpfad:
 Plugin-Code:
 
 Noch nicht vorhanden.
+
+Der initiale fachliche Scope wurde über PR #18 nach `main` übernommen. Es gibt aktuell keinen aktiven Implementierungsbranch.
 
 ## Last Known Good
 
@@ -36,6 +38,7 @@ Noch nicht vorhanden, da noch keine technische Implementierung existiert.
 - Die Interessenten-Kontaktdaten werden an den Anbieter übermittelt; die Plattform benötigt keinen eigenen Chat.
 - Nach erfolgreicher Weitergabe kann der Anbieter die Anzeige schließen; geschlossene Angebote verschwinden aus der öffentlichen aktiven Übersicht.
 - `Kinder von Atibie` wird als eigener Spendenweg neben privater Weitergabe/Verkauf sichtbar integriert.
+- Der initiale Scope ist über PR #18 auf `main` dokumentiert.
 
 ## Open
 
@@ -72,17 +75,9 @@ Vor Implementierung sind noch verbindlich zu klären:
 
 ## Active Development
 
-Branch:
-
-`reuse-marketplace/initial-scope`
-
-Scope:
-
-Nur fachliche Projektdokumentation. Kein Plugin-Code.
+Kein aktiver Entwicklungsbranch. Der initiale Dokumentationsscope ist gemergt; funktionaler Plugin-Code wurde noch nicht begonnen.
 
 ## Next Meaningful Step
-
-Nach Übernahme des initialen Scopes:
 
 1. den konto-freien Prozess als kleinen technischen Ablauf entwerfen,
 2. Datenschutz und Missbrauchsschutz auf das absolute notwendige Maß konkretisieren,
