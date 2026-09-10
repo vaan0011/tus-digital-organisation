@@ -1,6 +1,6 @@
 # FUNDING REFERENCE – Arbeitsplatz Sportparkteam
 
-**Stand:** 2026-09-10
+Stand: 2026-09-10 – offizielle Arbeitgeberinformationen und lokaler Kontakt verifiziert
 
 ## Purpose
 
@@ -46,9 +46,7 @@ Die konkrete Prüfung erfolgt durch das Jobcenter anhand der persönlichen Akte.
 
 #### Arbeitgeber- und Beschäftigungsfit
 
-Die Bundesagentur beschreibt die Förderung für Arbeitgeber aller Arten unabhängig von Art, Branche, Rechtsform und Region; ausdrücklich genannt sind auch gemeinnützige Arbeitgeber.
-
-Eine Vollzeitstelle ist nicht erforderlich. Sozialversicherungspflichtige Teilzeit ist grundsätzlich möglich. Damit können die im Projekt vorgesehenen 20-/25-/30-Stunden-Modelle grundsätzlich geprüft werden; die konkrete Ausgestaltung wird mit dem Jobcenter abgestimmt.
+Die Bundesagentur beschreibt beide Instrumente für Arbeitgeber aller Arten und ausdrücklich auch für gemeinnützige Arbeitgeber. Eine Vollzeitstelle ist nicht erforderlich; sozialversicherungspflichtige Teilzeit ist grundsätzlich möglich. Die geplanten 20-/25-/30-Stunden-Modelle können daher geprüft werden, ohne ihre konkrete Bewilligung vorwegzunehmen.
 
 #### Förderhöhe
 
@@ -68,7 +66,7 @@ Bei Arbeitgebern ohne tarifliche bzw. kirchenrechtliche höhere Lohnbindung wird
 
 Offizielle BMAS-Quelle:
 
-`https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/Informationen-zum-Mindestlohn/informationen-zum-mindestlohn-deutsch.html`
+`https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html`
 
 Aktueller Stand:
 
@@ -109,22 +107,24 @@ Auch hier entscheidet das Jobcenter über die individuelle Förderfähigkeit.
 
 ### 3. Zuständiges Jobcenter
 
-Für Bad Schönborn ist nach aktueller offizieller Standortübersicht die **Geschäftsstelle Bruchsal des Jobcenter Landkreis Karlsruhe** zuständig.
+Für 76669 Bad Schönborn ist aktuell zuständig:
 
 **Jobcenter Landkreis Karlsruhe – Geschäftsstelle Bruchsal**
 
-- Besucheradresse: `Am Alten Güterbahnhof 9, 76646 Bruchsal`
-- Telefon laut BA-Dienststellenseite: `07251 7244-101`
-- zentrale E-Mail laut offiziellem Impressum des Jobcenters: `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`
-- zentrale Kontaktmöglichkeiten: Kontaktformular bzw. Postfachservice über `jobcenter.digital`
+- Am Alten Güterbahnhof 9, 76646 Bruchsal
+- Dienststellen-Telefon laut Bundesagentur: `07251 7244-101`
+- zentrale E-Mail laut offiziellem Impressum: `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`
+- zusätzliche zentrale Rufnummer der eigenen Standortübersicht: `0721 / 823 3333`
+- Website: `https://www.jobcenter-landkreis-karlsruhe.de/`
+- schneller offizieller Kontakt: Postfachservice über `https://www.jobcenter.digital/` oder Kontaktformular der Jobcenter-Website
 
-Offizielle Quellen:
+Eine persönliche Arbeitgeber-Ansprechperson ist öffentlich nicht benannt. Offizielle Quellen:
 
 - BA-Dienststellenseite Bruchsal: `https://www.arbeitsagentur.de/vor-ort/jobcenter/jobcenter-landkreis-karlsruhe-bruchsal-63154.html`
-- Jobcenter Landkreis Karlsruhe: `https://www.jobcenter-landkreis-karlsruhe.de/`
-- Impressum mit zentraler E-Mail: `https://www.jobcenter-landkreis-karlsruhe.de/impressum`
+- Impressum: `https://www.jobcenter-landkreis-karlsruhe.de/impressum`
+- Standortübersicht: `https://www.jobcenter-landkreis-karlsruhe.de/`
 
-Hinweis: Die zentrale Telefonnummer der Jobcenter-Website kann von der dienststellenspezifischen BA-Nummer abweichen. Für das Projekt wird die Geschäftsstelle Bruchsal als örtlich zuständiger Einstieg verwendet.
+Für die örtliche Vorabklärung ist die Geschäftsstelle Bruchsal der präziseste Einstieg; Postfachservice und zentrale E-Mail bleiben belastbare schriftliche Wege.
 
 ### 4. Wichtigster Verfahrenspunkt
 
@@ -139,6 +139,15 @@ Für dieses Projekt bedeutet das:
 - noch kein Arbeitsvertrag,
 - noch keine verbindliche Beschäftigungszusage mit einem Startdatum,
 - zunächst Arbeitgeber-Vorabklärung und persönliche Förderprüfung.
+
+Offizieller digitaler Ablauf:
+
+1. Jobcenter kontaktieren.
+2. Freischaltung des passenden Online-Antrags abwarten.
+3. Arbeitgeberantrag online übermitteln.
+4. Prüfung der persönlichen und betrieblichen Voraussetzungen abwarten.
+5. Erst nach positiver Rückmeldung Arbeitsvertrag schließen.
+6. Vertrag im Portal hochladen und Bewilligungsbescheid / bei § 16i Zuweisung abwarten.
 
 ### 5. Empfohlene Arbeitgeber-Anfrage
 
@@ -204,7 +213,6 @@ Diese Unterlagen gehören ausschließlich in den geschützten Drive-Bereich des 
 - `PROJECT-STATE.md`
 - `../../knowledge/funding/CURRENT-STATE.md`
 - `../../knowledge/funding/FUNDING-RADAR.md`
-- `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
 - `../../roles/funding-grants-manager/role.md`
 - Google-Drive-Projektordner: `https://drive.google.com/drive/folders/12KTyZLBcK34_xKhkq6oz6ZScO6KweJX8`
 
