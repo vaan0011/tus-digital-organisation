@@ -1,6 +1,6 @@
 # Bundes- und EU-Förderchancen
 
-Stand: 2026-09-04
+Stand: 2026-09-10 – Projektbezug neu bewertet
 
 ## Purpose
 
@@ -16,9 +16,10 @@ Bundes- und EU-Förderung wird nur verfolgt, wenn der reale Vereinsbedarf den zu
 
 | Ebene | Programm | TuS-Fit | Priorität | Aktueller Status |
 |---|---|---|---|---|
-| EU | Erasmus+ Sport – Lernmobilität von Einzelpersonen im Breitensport | Trainer, Vorstände, Schiedsrichter, Helfer lernen bei europäischem Partner | **B+ – zeitkritisch** | deutsche Zusatzrunde bis **01.10.2026, 12:00 Uhr** geöffnet |
-| EU / Interreg | PAMINA-Kleinprojektefonds | grenzüberschreitende Sport-, Jugend-, Kultur- oder Nachhaltigkeitsprojekte | **B+** | fortlaufend bis 2029; nächste Antragsfrist **26.10.2026** |
-| EU | Erasmus+ Jugend – Jugendbegegnungen | Jugend-/Mädchenfußball, internationale Begegnung mit Jugendgruppen | **B+ – zeitkritisch** | Antragsfrist **01.10.2026, 12:00 Uhr** |
+| Bund / örtliches Jobcenter | § 16i SGB II; § 16e hilfsweise | konkretes Projekt Arbeitsplatz Sportparkteam | **B+ – sofort vorabklären** | Arbeitgeberfit bestätigt; persönliche Förderfähigkeit offen; keine feste Frist, aber Vertragssperre |
+| EU | Erasmus+ Sport – Lernmobilität von Einzelpersonen im Breitensport | Trainer, Vorstände, Schiedsrichter, Helfer lernen bei europäischem Partner | **B – kein konkretes Projekt** | Zusatzrunde bis **01.10.2026, 12:00 Uhr**; kein realer Lernplan / Gastpartner dokumentiert |
+| EU / Interreg | PAMINA-Kleinprojektefonds | grenzüberschreitende Sport-, Jugend-, Kultur- oder Nachhaltigkeitsprojekte | **B – kein konkretes Projekt** | nächste Antragsfrist **26.10.2026**; kein französischer Partner und Projekt dokumentiert |
+| EU | Erasmus+ Jugend – Jugendbegegnungen | Jugend-/Mädchenfußball, internationale Begegnung mit Jugendgruppen | **B – kein konkretes Projekt** | Frist **01.10.2026, 12:00 Uhr**; keine reale Jugendbegegnung / Partnergruppe dokumentiert |
 | EU | Europäisches Solidaritätskorps – Freiwilligenprojekte | längerfristig europäische Freiwillige im Vereins-/Jugend-/Gemeinschaftskontext | **B – strategisch** | Qualitätssiegel ganzjährig; für erstmaligen Budgetantrag 2027 Qualitätssiegel-Antrag bis **29.10.2026** empfohlen/erforderlich laut Nationalagentur |
 | Bund | NKI-Kommunalrichtlinie | LED-Flutlicht, Innen-/Hallenbeleuchtung, ggf. Radabstellanlagen | **B bei realem Investitionsbedarf** | ganzjährige Antragstellung; gemeinnützige Vereine antragsberechtigt |
 | Bund | BEG Einzelmaßnahmen | energetische Fassade / Gebäudehülle | **B bei echter energetischer Sanierung** | laufend; gemeinnützige Organisationen antragsberechtigt |
@@ -129,11 +130,11 @@ Die bisherige Programmlogik sieht jedoch Kommunen als Antragsteller vor. Eine di
 
 Die aktuell sinnvollste Reihenfolge auf EU-/Bundesebene ist:
 
-1. **Erasmus+ Sport Lernmobilität** fachlich auf einen echten Lernbedarf prüfen – Frist 01.10.2026.
-2. **PAMINA** als dauerhaften EU-Förderkanal für deutsch-französische Sport-/Jugend-/Kulturprojekte etablieren.
-3. **Erasmus+ Jugendbegegnung** prüfen, falls ein echter ausländischer Jugendpartner und eine mitgestaltete Jugendidee vorhanden sind.
-4. **ESK-Qualitätssiegel** als strategische Option für 2027 entscheiden.
-5. **NKI/BEG/Sportmilliarde** bei konkreten Investitionen bzw. gemeinsam mit der Gemeinde aktivieren.
+1. **Arbeitsplatz Sportparkteam:** § 16i sofort beim Jobcenter vorabklären; § 16e als Rückfalloption.
+2. **Erasmus+ Sport und Jugend 2026 bewusst auslassen**, solange kein echter Lernplan bzw. keine Jugendbegegnung mit Partner existiert.
+3. **PAMINA** nur bei realem französischem Partner und gemeinsam entwickeltem Projekt aktivieren.
+4. **ESK-Qualitätssiegel** nur bei strategisch beschlossener Freiwilligenarbeit prüfen.
+5. **NKI/BEG/Sportstättenprogramme** bei konkreten Investitionen bzw. gemeinsam mit der Gemeinde aktivieren.
 
 ## Sources
 
@@ -145,6 +146,8 @@ Primär-/offizielle Quellen:
 - Interreg Oberrhein – Programmgebiet: https://www.interreg-oberrhein.eu/das-programm/interreg-oberrhein-2021-2027/unser-kooperationsraum/
 - JUGEND für Europa – Jugendbegegnungen: https://www.jugendfuereuropa.de/erasmus-jugend/foerderformate/jugendbegegnungen
 - JUGEND für Europa – ESK Qualitätssiegel: https://www.jugendfuereuropa.de/esk/antragstellung/qualitaetssiegel-im-esk
+- Bundesagentur – § 16e / § 16i für Arbeitgeber: https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-langzeitleistungsbeziehenden
+- Jobcenter Landkreis Karlsruhe: https://www.jobcenter-landkreis-karlsruhe.de/
 - BMUKN/NKI – Kommunalrichtlinie Sportstätten/Beleuchtung: https://www.klimaschutz.de/de/foerderung-der-nki/foerderprogramme/kommunalrichtlinie
 - BAFA – BEG Antragstellung: https://www.bafa.de/SharedDocs/Downloads/DE/Energie/beg_merkblatt_allgemein_antragstellung.pdf
 - BMWSB – Sanierung kommunaler Sportstätten / Sportinfrastruktur: https://www.bmwsb.bund.de/
@@ -159,4 +162,4 @@ Primär-/offizielle Quellen:
 
 ## Future Development
 
-Bei konkretem Go werden die stärksten Chancen als vollständige Programmdossiers weiter vertieft und in den zentralen Förderkalender rückwärts geplant.
+Nur bei konkretem Projekt-Go werden EU-Chancen zu B+ hochgestuft. Der Arbeitsplatz-Förderweg ist bereits als vollständiges Programmdossier und Opportunity Brief dokumentiert.
