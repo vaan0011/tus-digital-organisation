@@ -6,7 +6,7 @@
 **Funding body:** Badischer Sportbund Nord e.V. / Landesmittel Baden-Württemberg  
 **Official source:** https://www.badischer-sportbund.de/zuschuesse/sportstaetten/  
 **Program status:** Verifiziert  
-**Last verified:** 2026-09-04
+**Last verified:** 2026-09-10
 
 ## Purpose of the Program
 
