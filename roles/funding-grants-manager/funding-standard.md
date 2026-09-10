@@ -98,10 +98,65 @@ Mindestens geprüft werden:
 Ergebnis:
 
 - `A – hohe Priorität / bewerben`,
+- `B+ – konkret vorbereiten`,
 - `B – interessant / vorbereiten oder beobachten`,
 - `C – derzeit nicht verfolgen`.
 
-### 6. Frühere Förderempfänger recherchieren
+### 6. Qualifizierte Förderchance / Opportunity Brief
+
+Ein guter Treffer darf nicht im allgemeinen Radar untergehen.
+
+Eine Chance wird als **qualifizierter Treffer** behandelt, wenn sie einem konkreten TuS-Projekt oder belastbaren Vorhaben zugeordnet ist, gegen aktuelle Primärquellen geprüft wurde und aus ihr eine konkrete Handlung oder Entscheidung ableitbar ist.
+
+Qualifizierte `A`- und `B+`-Treffer werden zusätzlich in `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md` als Opportunity Brief aufbereitet.
+
+Der Opportunity Brief enthält mindestens:
+
+- konkretes TuS-Projekt / Vorhaben,
+- Programm und Fördergeber,
+- Begründung des Fits,
+- belastbare Förderstory,
+- konkreten Ansprechpartner oder offiziellen Beratungsweg,
+- offizielle Frist und interne Vorfristen,
+- Fördersatz / Fördervolumen / Eigenanteil / relevante Vorfinanzierung,
+- benötigte Unterlagen, Angebote, Nachweise, Partner und Beschlüsse,
+- Antragsweg,
+- relevante Auswahlkriterien,
+- frühere vergleichbare Bewilligungen, soweit recherchierbar,
+- Risiken und offene Fragen,
+- nächste Aktion,
+- Datum der letzten Primärquellen-Verifizierung.
+
+Die Förderstory basiert auf dem realen Projekt. Sie beschreibt Problem bzw. Bedarf, Zielgruppe, Maßnahme, Wirkung, Programmfit und Nachhaltigkeit. Zahlen, Wirkungen oder Partnerzusagen werden nicht erfunden.
+
+### 7. Rückmeldung qualifizierter Treffer
+
+Der Funding & Grants Manager meldet neue hochrelevante Chancen aktiv zurück, statt nur Dateien zu aktualisieren.
+
+Eine aktive Rückmeldung erfolgt insbesondere bei:
+
+- neuem `A`-Treffer,
+- zeitkritischem `B+`-Treffer,
+- nahender Go/No-Go- oder Antragsfrist,
+- erforderlicher Vorabklärung mit der Förderstelle,
+- benötigter Eigenmittel-, Projekt- oder Vorstandsentscheidung,
+- wesentlicher Änderung einer bereits aktiven Förderchance,
+- Bewilligung, Ablehnung oder relevanter Rückfrage.
+
+Eine Rückmeldung enthält mindestens kompakt:
+
+- Projekt,
+- Förderchance,
+- mögliche Förderung,
+- Frist,
+- Ansprechpartner,
+- empfohlene Story,
+- was der TuS jetzt liefern oder entscheiden muss,
+- klare Empfehlung.
+
+Schwache, unverifizierte oder nicht projektbezogene Linkfunde erzeugen keine aktive Erfolgsmeldung.
+
+### 8. Frühere Förderempfänger recherchieren
 
 Wenn öffentlich recherchierbar, werden frühere Bewilligungen untersucht.
 
@@ -115,7 +170,7 @@ Ziel ist zu verstehen:
 
 Diese Recherche ist Evidenz für Passung, keine Garantie für eine Bewilligung.
 
-### 7. Ansprechpartner nutzen
+### 9. Ansprechpartner nutzen
 
 Bei relevanten offenen Fragen soll vor Einreichung geprüft werden, ob eine Beratung oder Vorabklärung mit der Förderstelle sinnvoll ist.
 
@@ -126,9 +181,11 @@ Kontakte werden professionell vorbereitet:
 - keine Fragen, die bereits eindeutig in der Richtlinie beantwortet sind,
 - Gesprächsergebnisse dokumentieren.
 
+Soweit offiziell verfügbar werden Name, Zuständigkeit, E-Mail, Telefon und Beratungsweg dokumentiert, nicht nur eine allgemeine Startseite.
+
 Verbindliche mündliche Aussagen werden soweit möglich schriftlich bestätigt oder gegen offizielle Unterlagen abgesichert.
 
-### 8. Förderkalender
+### 10. Förderkalender
 
 Alle relevanten Programme mit bekannten oder erwartbaren Fristen werden in `../../knowledge/funding/FUNDING-CALENDAR.md` geführt.
 
@@ -145,7 +202,7 @@ Der Kalender enthält nicht nur die Einreichungsfrist, sondern intern sinnvolle 
 
 Der Funding & Grants Manager arbeitet nicht bis zum letzten Kalendertag, wenn frühere interne Fristen möglich sind.
 
-### 9. Antrag zuerst gegen Auswahlkriterien schreiben
+### 11. Antrag zuerst gegen Auswahlkriterien schreiben
 
 Anträge werden nicht als allgemeine Vereinsbeschreibung verfasst.
 
@@ -161,13 +218,13 @@ Ein guter Antrag macht klar:
 - wie Erfolg erkennbar wird,
 - wie Finanzierung und Nachhaltigkeit aussehen.
 
-### 10. Keine erfundenen Wirkungen oder Zahlen
+### 12. Keine erfundenen Wirkungen oder Zahlen
 
 Zahlen, Zielgruppen, Reichweiten, Kosten, Eigenmittel, Partnerzusagen und erwartete Wirkungen werden nicht erfunden.
 
 Planwerte werden als Planwerte gekennzeichnet und mit verantwortlichen Bereichen abgestimmt.
 
-### 11. Rechtseinheit prüfen
+### 13. Rechtseinheit prüfen
 
 Vor Antragstellung wird geklärt, welche Rechtseinheit antragsberechtigt und fachlich passend ist.
 
@@ -175,7 +232,7 @@ Beim TuS können je nach Programm unterschiedliche Vereine oder Träger relevant
 
 Die Auswahl erfolgt nicht zur Umgehung von Förderregeln, sondern sachlich und nachvollziehbar.
 
-### 12. Vorhabenbeginn beachten
+### 14. Vorhabenbeginn beachten
 
 Besondere Aufmerksamkeit gilt Regeln zum förderschädlichen vorzeitigen Vorhabenbeginn.
 
@@ -183,7 +240,7 @@ Vor Bestellung, Beauftragung, Vertragsabschluss oder Projektstart wird geprüft,
 
 Bei Unklarheit wird eskaliert und nicht geraten.
 
-### 13. Bewilligung ist nicht das Ende
+### 15. Bewilligung ist nicht das Ende
 
 Nach einer Bewilligung werden mindestens dokumentiert:
 
@@ -198,7 +255,7 @@ Nach einer Bewilligung werden mindestens dokumentiert:
 
 Vertrauliche Originalunterlagen können in einem geschützten System liegen; GitHub hält den nicht-vertraulichen Arbeitsstatus und die Fristen.
 
-### 14. Aus Zu- und Absagen lernen
+### 16. Aus Zu- und Absagen lernen
 
 Nach Entscheidung wird festgehalten:
 
@@ -210,7 +267,7 @@ Nach Entscheidung wird festgehalten:
 - was verbessert werden sollte,
 - ob das Programm künftig erneut relevant ist.
 
-### 15. GitHub-Pflicht
+### 17. GitHub-Pflicht
 
 Ein Förderchat ist nicht die Source of Truth.
 
@@ -219,11 +276,17 @@ Relevante Ergebnisse werden im Förder-Wissensraum gesichert.
 ## Relationship to other documents
 
 - `role.md`
+- `runtime.md`
 - `../../knowledge/funding/README.md`
 - `../../knowledge/funding/CURRENT-STATE.md`
+- `../../knowledge/funding/FUNDING-RADAR.md`
 - `../../knowledge/funding/FUNDING-CALENDAR.md`
+- `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
+- `../../projects/PROJECT-PORTFOLIO.md`
+- `../../standards/role-bootstrap-standard.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/approval-and-escalation.md`
+- `../../architecture/memory-router.md`
 
 ## Future Development
 
