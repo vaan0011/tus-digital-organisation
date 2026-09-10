@@ -191,6 +191,116 @@ Eine kurze, fachlich belastbare Vorabskizze aus dem realen Archivstand erstellen
 
 ---
 
+## OPP-004 – Arbeitsplatz Sportparkteam × § 16i SGB II
+
+**TuS-Projekt:** `Arbeitsplatz Sportparkteam`  
+**Programm:** Teilhabe am Arbeitsmarkt nach § 16i SGB II  
+**Förderstelle:** Jobcenter Landkreis Karlsruhe  
+**Priorität:** `B+ – konkret vorbereiten`  
+**Letzte dokumentierte Primärquellen-Verifizierung:** 2026-09-10  
+**Aktionsstatus:** Arbeitgeber-Vorabklärung und individuelle Förderprüfung erforderlich
+
+### Warum passt es?
+
+Das Projekt verfolgt die Schaffung eines regulären sozialversicherungspflichtigen Arbeitsplatzes im Sportparkteam. § 16i SGB II ermöglicht Arbeitgebern Lohnkostenzuschüsse für sozialversicherungspflichtige Beschäftigungsverhältnisse mit zugewiesenen förderfähigen Personen. Nach aktueller Bundesagentur-Information gilt die Förderung unabhängig von Art, Branche, Rechtsform und Region des Arbeitgebers und damit grundsätzlich auch für gemeinnützige Arbeitgeber. Auch sozialversicherungspflichtige Teilzeit ist grundsätzlich förderfähig.
+
+Die konkrete persönliche Förderfähigkeit ist ausdrücklich **nicht** bestätigt und kann nur durch das zuständige Jobcenter anhand der geschützten personenbezogenen Daten geprüft werden.
+
+### Empfohlene Förderstory
+
+Der TuS möchte aus einer bereits praktisch bewährten Tätigkeit im Sportpark einen echten sozialversicherungspflichtigen Arbeitsplatz mit langfristiger Perspektive entwickeln. Der Arbeitsplatz deckt einen realen dauerhaften Bedarf in Sportparkpflege und Vereinsinfrastruktur. Die öffentliche Förderung soll den Übergang in reguläre Beschäftigung ermöglichen; parallel baut der TuS eine tragfähige Anschlussfinanzierung aus Eigenmitteln und Partnerbeiträgen auf. Im Mittelpunkt stehen Arbeit, Verlässlichkeit, Teilhabe und langfristige Beschäftigungsperspektive – nicht die persönliche Hilfebedürftigkeit der beschäftigten Person.
+
+### Ansprechpartner / Kontaktweg
+
+**Zuständige Geschäftsstelle:** Jobcenter Landkreis Karlsruhe – Bruchsal  
+Adresse: `Am Alten Güterbahnhof 9, 76646 Bruchsal`  
+Telefon laut aktueller BA-Dienststellenseite: `07251 7244-101`  
+Zentrale E-Mail des Jobcenters laut offiziellem Impressum: `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`  
+Alternativ: Kontaktformular bzw. Postfachservice über `jobcenter.digital`.
+
+Bad Schönborn ist auf der offiziellen Standortübersicht der Geschäftsstelle Bruchsal zugeordnet.
+
+### Frist / Vorhabenbeginn
+
+- keine allgemeine feste Antragsfrist dokumentiert; Förderung ist fall- und einzelfallbezogen mit dem Jobcenter zu klären,
+- **Förderung zuerst beantragen bzw. verbindlich klären und positive Rückmeldung abwarten, bevor der Arbeitsvertrag abgeschlossen wird**,
+- deshalb interne Go/No-Go-Frist: **vor jeder verbindlichen Beschäftigungszusage und vor Vertragsabschluss**.
+
+### Förderwirkung
+
+Nach § 16i SGB II beträgt der Zuschuss bei erfüllten Voraussetzungen maximal fünf Jahre:
+
+- Förderjahr 1: **100 %**,
+- Förderjahr 2: **100 %**,
+- Förderjahr 3: **90 %**,
+- Förderjahr 4: **80 %**,
+- Förderjahr 5: **70 %**
+
+der gesetzlichen Bemessungsgrundlage.
+
+Für Arbeitgeber ohne einschlägige tarifliche oder kirchenrechtliche höhere Lohnbindung basiert die Bemessungsgrundlage grundsätzlich auf dem gesetzlichen Mindestlohn und der arbeitsvertraglich vereinbarten Arbeitszeit zuzüglich des gesetzlich vorgesehenen pauschalierten Arbeitgeberanteils. Die Förderung bemisst sich nach der vereinbarten Arbeitszeit.
+
+Zusätzlich sind beschäftigungsbegleitendes Coaching und Zuschüsse zu erforderlichen Weiterbildungskosten bis insgesamt **3.000 € je Förderfall** möglich.
+
+### Was benötigen wir?
+
+Für die erste Arbeitgeber-Vorabklärung:
+
+- Zustimmung der betroffenen Person zur individuellen Förderprüfung,
+- kurze nicht-personenbezogene Arbeitgeber-/Projektbeschreibung,
+- geplantes Tätigkeitsprofil im Sportparkteam,
+- gewünschte Beschäftigungsform sozialversicherungspflichtig,
+- zunächst mögliche 20-/25-/30-Stunden-Modelle,
+- Frage nach §16i-Förderfähigkeit der konkreten Person; hilfsweise §16e,
+- Frage nach konkret angewandter Bemessungsgrundlage und Förderdauer,
+- Liste der vom Jobcenter benötigten Arbeitgeberunterlagen,
+- Klärung, ab welchem Zeitpunkt ein Arbeitsvertrag unterschrieben werden darf.
+
+Nach positiver Grundprüfung zusätzlich:
+
+- konkrete Stellenbeschreibung,
+- Bruttolohn-/Arbeitszeitmodell,
+- Arbeitgeberkosten,
+- Förderbetrag und TuS-Eigenanteil je Förderjahr,
+- Anschlussfinanzierung nach Förderende bzw. bis zum geplanten langfristigen Beschäftigungshorizont,
+- Vorstandsbeschluss,
+- ggf. Partnerfinanzierungsmodell.
+
+Personenbezogene Sozial-, Leistungs-, Lohn- und Vertragsdaten bleiben außerhalb von GitHub im geschützten Projektbereich.
+
+### Antragsweg
+
+1. Arbeitgeber-Vorabklärung mit dem zuständigen Jobcenter Bruchsal.
+2. Individuelle Förderfähigkeit der konkreten Person durch das Jobcenter prüfen lassen.
+3. Förderhöhe, Förderdauer, Bemessungsgrundlage, Unterlagen und zulässigen Vertragszeitpunkt schriftlich bzw. belastbar klären.
+4. Erst danach konkretes Stunden-/Kostenmodell und Vorstandsvorlage finalisieren.
+5. Förderantrag bzw. das vom Jobcenter vorgegebene Verfahren durchführen.
+6. **Arbeitsvertrag erst nach positiver Förderentscheidung bzw. ausdrücklicher Freigabe des zulässigen Zeitpunkts schließen.**
+
+### Auswahl- / Förderkriterien
+
+Zentral sind die gesetzlichen persönlichen Voraussetzungen nach § 16i SGB II sowie ein sozialversicherungspflichtiges Arbeitsverhältnis. Die konkrete Person muss insbesondere die gesetzlichen Vorbeschäftigungs- und Leistungsbezugsbedingungen erfüllen; die Prüfung erfolgt ausschließlich durch das Jobcenter. Ein Anspruch des TuS auf Bewilligung wird daraus nicht abgeleitet.
+
+### Vergleichbare Bewilligungen
+
+Für diese Opportunity wird derzeit kein einzelner öffentlich dokumentierter Vergleichsfall als Bewilligungsargument benötigt. Die Bundesagentur beschreibt die Förderung ausdrücklich für Arbeitgeber aller Arten, einschließlich gemeinnütziger Arbeitgeber. Entscheidend ist hier die individuelle gesetzliche Förderfähigkeit und die konkrete Förderentscheidung des Jobcenters.
+
+### Risiken / offene Fragen
+
+- persönliche §16i-Förderfähigkeit noch nicht bestätigt,
+- konkrete Förderdauer im Einzelfall offen,
+- konkrete Bemessungsgrundlage für den TuS offen,
+- gewünschte 20-/25-/30-Stunden-Modelle müssen mit dem Jobcenter abgeglichen werden,
+- Arbeitgeberunterlagen und regionaler Prozess müssen geklärt werden,
+- langfristige Finanzierung des sinkenden Zuschusses und der Anschlussphase ist noch zu modellieren,
+- keine personenbezogenen Förderdetails in GitHub dokumentieren.
+
+### Nächste Aktion
+
+Arbeitgeber-Vorabklärung mit dem Jobcenter Landkreis Karlsruhe, Geschäftsstelle Bruchsal, vorbereiten und nach Zustimmung der betroffenen Person die individuelle Förderprüfung nach § 16i SGB II anstoßen; hilfsweise § 16e prüfen lassen. Parallel Tätigkeitsprofil und 20-/25-/30-Stunden-Szenarien vorbereiten. Noch keinen Arbeitsvertrag abschließen.
+
+---
+
 ## Opportunity-Brief-Template
 
 Für jede neue qualifizierte Chance wird ein Abschnitt mit mindestens folgenden Feldern angelegt:
@@ -222,6 +332,8 @@ Für jede neue qualifizierte Chance wird ein Abschnitt mit mindestens folgenden 
 - `programs/`
 - `../../roles/funding-grants-manager/runtime.md`
 - `../../projects/PROJECT-PORTFOLIO.md`
+- `../../projects/arbeitsplatz-sportparkteam/PROJECT-STATE.md`
+- `../../projects/arbeitsplatz-sportparkteam/FUNDING-REFERENCE.md`
 
 ## Future Development
 

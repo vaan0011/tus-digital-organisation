@@ -1,5 +1,7 @@
 # FUNDING REFERENCE – Arbeitsplatz Sportparkteam
 
+**Stand:** 2026-09-10
+
 ## Purpose
 
 Diese Datei ist der dauerhafte Förder-Einstiegspunkt für das Projekt `Arbeitsplatz Sportparkteam`.
@@ -41,6 +43,12 @@ Nach § 16i SGB II insbesondere:
 Für bestimmte Personengruppen enthält das Gesetz abweichende Regelungen.
 
 Die konkrete Prüfung erfolgt durch das Jobcenter anhand der persönlichen Akte.
+
+#### Arbeitgeber- und Beschäftigungsfit
+
+Die Bundesagentur beschreibt die Förderung für Arbeitgeber aller Arten unabhängig von Art, Branche, Rechtsform und Region; ausdrücklich genannt sind auch gemeinnützige Arbeitgeber.
+
+Eine Vollzeitstelle ist nicht erforderlich. Sozialversicherungspflichtige Teilzeit ist grundsätzlich möglich. Damit können die im Projekt vorgesehenen 20-/25-/30-Stunden-Modelle grundsätzlich geprüft werden; die konkrete Ausgestaltung wird mit dem Jobcenter abgestimmt.
 
 #### Förderhöhe
 
@@ -101,17 +109,22 @@ Auch hier entscheidet das Jobcenter über die individuelle Förderfähigkeit.
 
 ### 3. Zuständiges Jobcenter
 
-Für Bad Schönborn / Landkreis Karlsruhe ist als erster Ansprechpartner dokumentiert:
+Für Bad Schönborn ist nach aktueller offizieller Standortübersicht die **Geschäftsstelle Bruchsal des Jobcenter Landkreis Karlsruhe** zuständig.
 
-**Jobcenter Landkreis Karlsruhe**
+**Jobcenter Landkreis Karlsruhe – Geschäftsstelle Bruchsal**
 
-- Telefon: `0721 823-3162`
-- E-Mail: `jobcenter-landkreis-karlsruhe@jobcenter-ge.de`
-- Website: `https://www.jobcenter-landkreis-karlsruhe.de/`
+- Besucheradresse: `Am Alten Güterbahnhof 9, 76646 Bruchsal`
+- Telefon laut BA-Dienststellenseite: `07251 7244-101`
+- zentrale E-Mail laut offiziellem Impressum des Jobcenters: `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`
+- zentrale Kontaktmöglichkeiten: Kontaktformular bzw. Postfachservice über `jobcenter.digital`
 
-Offizielle BA-Dienststellenseite:
+Offizielle Quellen:
 
-`https://www.arbeitsagentur.de/vor-ort/jobcenter/jobcenter-landkreis-karlsruhe-karlsruhe.html`
+- BA-Dienststellenseite Bruchsal: `https://www.arbeitsagentur.de/vor-ort/jobcenter/jobcenter-landkreis-karlsruhe-bruchsal-63154.html`
+- Jobcenter Landkreis Karlsruhe: `https://www.jobcenter-landkreis-karlsruhe.de/`
+- Impressum mit zentraler E-Mail: `https://www.jobcenter-landkreis-karlsruhe.de/impressum`
+
+Hinweis: Die zentrale Telefonnummer der Jobcenter-Website kann von der dienststellenspezifischen BA-Nummer abweichen. Für das Projekt wird die Geschäftsstelle Bruchsal als örtlich zuständiger Einstieg verwendet.
 
 ### 4. Wichtigster Verfahrenspunkt
 
@@ -191,6 +204,7 @@ Diese Unterlagen gehören ausschließlich in den geschützten Drive-Bereich des 
 - `PROJECT-STATE.md`
 - `../../knowledge/funding/CURRENT-STATE.md`
 - `../../knowledge/funding/FUNDING-RADAR.md`
+- `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
 - `../../roles/funding-grants-manager/role.md`
 - Google-Drive-Projektordner: `https://drive.google.com/drive/folders/12KTyZLBcK34_xKhkq6oz6ZScO6KweJX8`
 
