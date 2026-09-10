@@ -22,6 +22,7 @@ Vor neuer Arbeit wird geprüft, was bereits gewusst, entschieden, gelernt, verwo
 
 ### Aktuelle explizite Wissensdomänen
 
+- [`archive/`](archive/) – Historienarchiv, Quellen-/Register-Routing, aktueller Einstieg und Archiv-Second-Brain
 - [`funding/`](funding/) – Förderprogramme, Förderchancen, Förderkalender, Antragswissen und Learnings
 - [`sponsoring/`](sponsoring/) – Sponsoring- und Partnerwissen, Strategie, Partnerlogik und aktueller Arbeitsstand
 

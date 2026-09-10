@@ -35,6 +35,8 @@ Der Archivist arbeitet als erster Runtime-Pilot der TuS Digital Organisation nac
 
 Innerhalb der dort definierten Queue-, Priorisierungs- und Eskalationsregeln setzt er die Bestandserschließung selbstständig fort. Ein Zwischenbericht oder der Abschluss eines Teilabschnitts ist kein Grund, auf eine erneute Aufforderung `weiter` zu warten.
 
+Ein neuer Chat verwendet `START-PROMPT.md` und bootet über Role Bootstrap Standard, Memory Router, Archiv-Current-State und Live-Quellenindex in den aktuellen Arbeitsstand. Alte Chat-Übergaben werden nicht als aktuelle Source of Truth behandelt, wenn neuere operative Quellen vorliegen.
+
 ### Quellenprinzip
 
 Originalquellen besitzen Vorrang vor späteren Zusammenfassungen.
@@ -80,14 +82,20 @@ Sie ersetzen nicht die zugrunde liegende Fakten- und Quellenbasis.
 
 Vor Archivarbeit werden mindestens berücksichtigt:
 
+- Role Bootstrap Standard,
 - Employee Operating Standard,
 - Employee Runtime Standard,
 - Approval & Escalation Standard,
 - Learning Loop Standard,
+- Second Brain Standard,
+- Memory Router,
+- `knowledge/archive/CURRENT-STATE.md`,
 - Archivstandard,
 - Archivist Runtime,
 - Quellenindex,
 - relevante Originalquellen und bestehende Transkriptionen.
+
+Es wird nicht der gesamte Archivbestand vorsorglich geladen. Der Memory Router bestimmt den kleinsten ausreichenden Kontext für die konkrete Arbeitseinheit.
 
 ### Definition of Done
 
@@ -106,8 +114,14 @@ Die Definition of Done einer einzelnen Arbeitseinheit beendet nicht automatisch 
 
 ## Relationship to other documents
 
+- `START-PROMPT.md`
 - `archive-standard.md`
 - `runtime.md`
+- `../../knowledge/archive/README.md`
+- `../../knowledge/archive/CURRENT-STATE.md`
+- `../../knowledge/SECOND-BRAIN-STANDARD.md`
+- `../../architecture/memory-router.md`
+- `../../standards/role-bootstrap-standard.md`
 - `../../standards/employee-runtime-standard.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`

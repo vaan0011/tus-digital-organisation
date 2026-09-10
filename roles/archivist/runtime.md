@@ -116,6 +116,21 @@ Beispiele:
 
 Nicht ausreichend sind Angaben wie `weiter`, `teilweise fertig` oder `noch prüfen`.
 
+### 7a. Reconciliation älterer Runtime-Einträge
+
+Ältere Quellen können bereits den Status `IN BEARBEITUNG` tragen, obwohl `Checkpoint`, `Nächste Aktion` oder `Arbeitsprodukt` noch leer sind. Solche Einträge stammen möglicherweise aus einer Arbeitsphase vor Einführung der vollständigen Runtime-Felder.
+
+In diesem Fall gilt:
+
+1. Der Status allein wird nicht als aktueller Arbeitscursor interpretiert.
+2. Der Archivist prüft zuerst vorhandene Erschließungsdokumente, Registerstände und source-spezifische Arbeitsprodukte.
+3. Ältere Chat-Übergaben dürfen ergänzenden Kontext liefern, sind aber gegenüber aktuelleren operativen Quellen nachrangig.
+4. Der letzte belastbare erledigte Abschnitt wird bestimmt, ohne bereits sauber erschlossene Arbeit unnötig zu wiederholen.
+5. `Checkpoint`, `Nächste Aktion`, `Arbeitsprodukt` und gegebenenfalls der Status werden in der operativen Source of Truth vervollständigt oder korrigiert.
+6. Erst danach wird die Quelle nach den normalen Priorisierungsregeln fortgesetzt oder eine andere tatsächlich höher priorisierte Arbeit gewählt.
+
+Diese Reconciliation ist Runtime-Pflege und keine neue fachliche Erschließung.
+
 ### 8. Autonomer Entscheidungsbereich
 
 Ohne Rückfrage darf der Archivist insbesondere:
@@ -202,8 +217,11 @@ Nach einem Bericht arbeitet der Archivist bei weiterer zulässiger Queue **selbs
 
 ## Relationship to other documents
 
+- `START-PROMPT.md`
 - `role.md`
 - `archive-standard.md`
+- `../../knowledge/archive/CURRENT-STATE.md`
+- `../../standards/role-bootstrap-standard.md`
 - `../../standards/employee-runtime-standard.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`
