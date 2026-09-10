@@ -98,7 +98,7 @@ Aktueller Projektstand:
 - `../../projects/partner-hub/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 
-Die Abgrenzung ist langfristig in `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
+Die Abgrenzung ist langfristig in `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md` dokumentiert.
 
 ### 3. Gemeinsame Datenbasis
 
@@ -151,7 +151,58 @@ Leistungen, Laufzeiten, Gegenleistungen und Einnahmen je aktuellem Sponsor solle
 
 Vertrauliche Einzelinformationen bleiben außerhalb des öffentlichen Repositorys.
 
-### 6. Visuelle Werbeflächen-Inventur
+### 6. Operative Partnersteuerung und Runtime-Reife
+
+Status: `operative Struktur vorhanden / Runtime noch nicht aktivieren`
+
+Im geschützten Google Drive existiert der Arbeitsstand:
+
+- `TuS_Partner_System_V1.xlsx`
+
+Die Datei enthält bereits strukturierte Arbeitsbereiche für:
+
+- Asset-Katalog,
+- Partnerprodukt-Katalog,
+- Projektportfolio für Finanzierungs-/Partnerideen,
+- Partner & Leads,
+- Eventportfolio,
+- Pricing & Wertanker,
+- Steuer- & Vereinsmatrix,
+- Partner-CRM,
+- Ideen-Parkplatz.
+
+Der Tab `08 – Partner-CRM` enthält bereits die für operative Partnerarbeit sinnvollen Felder:
+
+- Partner / Lead,
+- Segment,
+- Owner,
+- Status,
+- letzter Kontakt,
+- nächster Schritt,
+- Zieldatum,
+- Potenzial,
+- Partnerwelt,
+- Priorität,
+- Notiz.
+
+Damit ist eine fachlich brauchbare Queue-Struktur grundsätzlich vorhanden. Der bestehende V1-Arbeitsstand ist jedoch älter als mehrere inzwischen in GitHub getroffene Sponsoring-, Projekt- und Architekturentscheidungen und die Bestandspartner sind noch nicht vollständig einzeln importiert.
+
+Deshalb gilt:
+
+- strategische und projektbezogene Wahrheit wird vor Nutzung mit dem aktuellen GitHub-Stand reconciliiert,
+- vertrauliche operative Partnerdaten werden nicht nach GitHub kopiert,
+- das V1-Excel wird nicht stillschweigend zur neuen zentralen Wahrheit erklärt,
+- eine wiederkehrende Partnership-Runtime wird erst aktiviert, wenn die operative Partner-/CRM-Quelle als geschützte, zuverlässig beschreibbare Source of Truth festgelegt ist.
+
+Als bevorzugte einfache Zwischenlösung ist zu prüfen, ob der operative CRM-Teil in ein geschütztes natives Google Sheet überführt wird. Langfristig kann das interne Partnerportal diese operative Quelle übernehmen. Es wird keine zusätzliche CRM-Datenwelt nur für eine Automation angelegt.
+
+Zweiter operativer Drive-Stand:
+
+- `Werbeflaechen-Inventar Sportpark 2026`
+
+Dieses native Google Sheet ist die operative Quelle für die aktuelle physische Werbeflächen-Inventur.
+
+### 7. Visuelle Werbeflächen-Inventur
 
 Status: `Ist-Bestand fotografisch erfasst / Partner- und Vertragsabgleich offen`
 
@@ -174,7 +225,7 @@ Operative Quelle im geschützten Drive ist das Arbeitsblatt `Werbeflaechen-Inven
 
 Vor neuen Preisen und Standardformaten wird diese Flächeninventur mit aktuellem Partnerbestand, Vertrags-/Verlängerungsstatus und bestehender Preislogik verbunden.
 
-### 7. Steuer- und Vereinsstruktur
+### 8. Steuer- und Vereinsstruktur
 
 Status: `Ist-Analyse offen`
 
@@ -197,7 +248,7 @@ Wichtige Prüfthemen bleiben unter anderem:
 - Projekt- und freie Rücklagen,
 - sachliche Zuständigkeit der drei Vereine.
 
-### 8. LED Media Screen
+### 9. LED Media Screen
 
 Status: `strategisch weit entwickelt / Umsetzung offen`
 
@@ -220,17 +271,18 @@ Dort ist die Systematik `Founding Partner → Partnerrolle → Aktivierung` mit 
 
 Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/Vereinszuordnung und Genehmigungen aktuell geprüft.
 
-### 9. Nächste sinnvolle Arbeitsschwerpunkte
+### 10. Nächste sinnvolle Arbeitsschwerpunkte
 
-1. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner konsolidieren,
-2. historische Sponsorendaten normalisieren und Dubletten erkennen,
-3. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
-4. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
-5. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
-6. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen,
-7. für reale LED-Akquisegespräche zunächst wenige starke Moment-Partner-Rollen testen und erst danach Preise bzw. Standardpakete verfestigen.
+1. operative CRM-Quelle festlegen und den bestehenden V1-CRM-Stand gegen den aktuellen GitHub-Stand reconciliieren,
+2. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner konsolidieren,
+3. historische Sponsorendaten normalisieren und Dubletten erkennen,
+4. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
+5. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
+6. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
+7. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen,
+8. für reale LED-Akquisegespräche zunächst wenige starke Moment-Partner-Rollen testen und erst danach Preise bzw. Standardpakete verfestigen.
 
-### 10. GitHub-Pflicht
+### 11. GitHub-Pflicht
 
 Nach relevanter Arbeit bleibt das Ergebnis nicht nur im Chat.
 
@@ -250,13 +302,17 @@ Je nach Inhalt werden aktualisiert:
 - `MOMENT-PARTNER-MODELLE.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
+- `../../roles/partnership-manager/START-PROMPT.md`
 - `../../projects/partner-portal/README.md`
 - `../../projects/partner-portal/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../projects/partner-hub/PROJECT-STATE.md`
 - `../../projects/led-media-screen/PROJECT-STATE.md`
-- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0005-partnership-manager-and-sponsoring-memory.md`
+- `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
 Dieser Checkpoint bleibt bewusst kurz. Detailwissen wird in den bestehenden fachlichen Quellen gepflegt und hier nur als aktueller Arbeitsstand verknüpft.
+
+Sobald die operative CRM-Quelle verbindlich festgelegt und zuverlässig beschreibbar ist, kann für den Partnership Manager eine wiederkehrende Runtime mit Wiedervorlagen, Partner-Check-ins, Kampagnen- und Projektchancen ergänzt werden.
