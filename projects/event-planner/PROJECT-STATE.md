@@ -10,7 +10,9 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Die fachliche Logik für Dashboard, Camps, Aufgaben sowie die Struktur der Event-Anlage ist geklärt und wird anschließend in kleinen, überprüfbaren Änderungen umgesetzt.
+Das operative Dashboard V1 und der erste Bereich `TuS Eventhistorie` sind auf `main` umgesetzt.
+
+Der nächste unmittelbare Projektfokus ist die manuelle Verifikation dieses aktuellen Stands im WordPress Playground. Danach wird die dokumentierte Event-Anlegen-UI in kleinen, persistenten und überprüfbaren Änderungen umgesetzt.
 
 Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
@@ -20,9 +22,9 @@ Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
 Die vom Nutzer bereitgestellten Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
 
-Das Zielbild für die zweite Mockup-Seite ist noch nicht endgültig festgelegt. Durch die gewünschte Jahresauswertung und Helfer-Jahressicht entwickelt sie sich voraussichtlich von einer reinen `Eventhistorie` in Richtung `Auswertung & Historie`.
+Die automatisierten Preview- und Packaging-Workflows für PR #52, #58 und #61 waren erfolgreich. Das belegt die technische Integration, ersetzt aber noch nicht die manuelle Funktions- und Abnahmeprüfung.
 
-Der Baseline-Smoke-Test ist weiterhin nicht vollständig abgeschlossen. Deshalb bleibt der formale Last Known Good offen.
+Der Baseline-Smoke-Test ist für den aktuellen Plugin-Stand weiterhin nicht vollständig abgeschlossen. Deshalb bleibt der formale Last Known Good offen.
 
 Langfristiges fachliches Zielbild:
 
@@ -36,33 +38,42 @@ Projektpfad:
 
 Aktuell dokumentierte Plugin-Version:
 
-`3.6.0`
+`3.7.1`
 
-Bekannter Versionsbefund:
+Versionsstand:
 
-- Plugin-Header: `3.6.0`
-- `VTP_VERSION`: `3.5.0`
-- `VTP_VERSION` wird im aktuellen Stand für CSS-Cache-Versionierung verwendet.
+- Plugin-Header: `3.7.1`
+- `VTP_VERSION`: `3.7.1`
+- der frühere Versionsunterschied ist damit auf `main` behoben.
 
-Reproduzierbare Baseline:
+Historische reproduzierbare Baseline:
 
-- Baseline-Kandidat: `032f1bd39a96fca6548eefb833442f12ed2aa17f`
+- früherer Baseline-Kandidat: `032f1bd39a96fca6548eefb833442f12ed2aa17f`
 - WordPress `7.1`
 - PHP `8.2`
 - Sprache `de_DE`
 - Blueprint: `playground/baseline-3.6.0.json`
 
-PR #26 `Event Planner: verifizierte Arbeit auf aktuellen main synchronisieren` ist nach `main` gemergt. Damit liegen die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und der organisationsweite Datums-Picker-Standard auf dem Hauptzweig.
+Diese alte Baseline deckt Dashboard V1 und Eventhistorie noch nicht ab und ist deshalb kein LKG für den aktuellen Stand.
 
-PR #31 `Event Planner: Dashboard-Logik nach Fachklärung präzisieren` ist ebenfalls nach `main` gemergt. Damit sind Camp-Grundlogik, echte Organisationsaufgaben und die Modulgrenze zur Helfer-Jahresauswertung im Hauptstand dokumentiert.
+Relevante gemergte Änderungen:
 
-PR #33 `Event Planner: Event-Anlegen-UI dokumentieren` ist nach `main` gemergt. Damit ist die abgestimmte Struktur der Event-Anlage und der zeilenweisen Sponsorenpflege im Hauptstand dokumentiert.
+- PR #26 übernahm die verifizierte Event-Tag-Datumslogik, das fachliche Zielbild und den organisationsweiten Datums-Picker-Standard nach `main`.
+- PR #31 präzisierte Camp-Grundlogik, echte Organisationsaufgaben und die Modulgrenze zur Helfer-Jahresauswertung.
+- PR #33 dokumentierte Event-Anlegen-UI und zeilenweise Sponsorenpflege.
+- PR #35 übernahm die verbindliche Datenbank-Persistenzregel; der frühere Branch `event-planner/persistence-rule` ist damit abgeschlossen.
+- PR #52 setzte Dashboard UI V1 auf `main` um.
+- PR #58 ergänzte den ersten Historienbereich aus vorhandenen persistenten Archivdaten.
+- PR #61 synchronisierte den Historienstand mit dem damaligen `main`; der daraus resultierende Plugin-Stand `3.7.1` ist der aktuelle Code-Ausgangspunkt.
+- Für PR #52, #58 und #61 liefen die WordPress-Playground-Preview- und Plugin-ZIP-Workflows erfolgreich.
 
 ## Last Known Good
 
 Noch nicht formal dokumentiert.
 
-Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach vollständig bestandenem `SMOKE-TEST.md` als Last Known Good bezeichnet werden.
+Der frühere Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` wurde nicht vollständig durch den dokumentierten Smoke-Test geführt und bildet den inzwischen erweiterten Dashboard-/Historienstand nicht ab.
+
+Ein neuer formaler Last Known Good wird erst für einen exakt referenzierten aktuellen Commit eingetragen, nachdem der vollständige `SMOKE-TEST.md` sowie die zusätzlichen Dashboard-/Historienprüfungen mit `PASSED` dokumentiert wurden.
 
 ## Verified
 
@@ -70,9 +81,8 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - Entwicklung erfolgt über Branch und Pull Request.
 - PR #10 mit reproduzierbarer Playground-/Smoke-Test-Infrastruktur wurde nach `main` gemergt.
 - PR #26 mit den später verifizierten Event-Änderungen wurde nach `main` synchronisiert.
-- Der Playground-Preview-Workflow wurde erfolgreich ausgeführt.
-- Smoke-Test Schritt 1 wurde manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Dashboard ist erreichbar.
-- Smoke-Test Schritt 2 wurde manuell bestätigt: Ein Event lässt sich speichern, erneut öffnen und behält seine Kerndaten.
+- Smoke-Test Schritt 1 wurde für die historische Baseline manuell bestätigt: WordPress startet, Anmeldung funktioniert, Plugin ist aktiv und das Dashboard ist erreichbar.
+- Smoke-Test Schritt 2 wurde für die historische Baseline manuell bestätigt: Ein Event lässt sich speichern, erneut öffnen und behält seine Kerndaten.
 - Das Enddatum verwendet das Event-Startdatum als fachlichen Kontext, solange noch keine bewusste Nutzerauswahl erfolgt ist.
 - Die Event-Tag-Logik aus PR #13 wurde manuell bestätigt: Bei Tag 1 `26.09.2026` und Tag 2 `27.09.2026` erhält ein neu hinzugefügter Tag 3 bereits beim Erzeugen `28.09.2026`.
 - Der native Date-Picker öffnet dadurch im passenden Zeitraum.
@@ -80,6 +90,11 @@ Der Baseline-Kandidat `032f1bd39a96fca6548eefb833442f12ed2aa17f` darf erst nach 
 - Der zuvor getestete Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, ist als unzuverlässig widerlegt.
 - Das daraus abgeleitete organisationsweite Datums-Picker-Muster ist im zentralen `design/ui-standard.md` dokumentiert.
 - Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
+- Die Persistenzregel aus PR #35 ist auf `main` dokumentiert.
+- Dashboard V1 und der erste Historienbereich sind über PR #52, #58 und #61 auf `main` integriert.
+- Die Plugin-Version ist in Header und `VTP_VERSION` konsistent auf `3.7.1`.
+- Die automatisierten Preview- und Packaging-Workflows der drei aktuellen Dashboard-/Historien-PRs waren erfolgreich.
+- Eine vollständige manuelle Funktionsprüfung dieses aktuellen Stands ist damit noch nicht behauptet.
 
 ## Dashboard Decisions V1
 
@@ -145,17 +160,27 @@ Die Regel gilt projektweit insbesondere für Event-Stammdaten, Camps, Programmpu
 
 ## Auswertung / Historie – aktueller Stand
 
-Festgelegt:
+Auf `main` umgesetzt:
 
-- obere Kennzahlreihe nutzt die Kategorien Events, Turniere, Camps und Schichten,
-- eine Jahresauswertung soll zeigen können, wie viele Veranstaltungen je Kategorie pro Jahr durchgeführt wurden,
-- eine grafische Darstellung aus den vorhandenen Daten ist gewünscht,
-- archivierte Event-Details sollen langfristig weiterhin nachvollziehbar bleiben.
+- Bereich `TuS Eventhistorie` unter dem operativen Dashboard,
+- vier Archiv-Kennzahlen für Events, Turniere, Camps und Schichten,
+- Jahresübersicht aus tatsächlich archivierten Daten,
+- grafische Balkendarstellung und Aufteilung nach Events, Turnieren und Camps,
+- Detailbereich für das ausgewählte Jahr,
+- Filter `Alle`, `Events`, `Turniere`, `Camps`,
+- direkte Absprünge zu archivierten Events bzw. Turnieren,
+- responsive Darstellung.
+
+Die Auswertung verwendet ausschließlich bereits persistente Daten aus bestehenden Event-, Turnier- und Schichttabellen. Sie führt keine neue Datenbankstruktur und keine Session-basierte Fachdatenhaltung ein.
+
+Camps werden berücksichtigt, sobald die persistente Event-Art `camp` vorhanden ist; bis dahin bleibt dieser Wert bei `0`.
 
 Noch offen:
 
+- manuelle Verifikation der aktuellen Umsetzung mit Leerzustand und realen Archivdaten,
 - endgültige Seitenbezeichnung und genaue Aufteilung zwischen `Auswertung` und `Historie`,
-- genaue Darstellung der historischen Detailansicht.
+- vollständige historische Event-Detailakte,
+- Integration der Helfer-Jahressicht auf Basis der gemeinsamen Personen-/Engagement-Datenquelle.
 
 Helfer-Jahresauswertung:
 
@@ -167,18 +192,17 @@ Helfer-Jahresauswertung:
 
 ## Open
 
-- Dashboard-Logik V1 muss gegen den bestehenden Plugin-Code umgesetzt und im Playground geprüft werden.
-- Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss in kleinen Änderungen umgesetzt und verifiziert werden.
+- Dashboard V1 und Eventhistorie müssen auf dem aktuellen `main` im WordPress Playground manuell gegen die in PR #52/#58 beschriebenen Testfälle geprüft werden.
+- Für den aktuellen Plugin-Stand muss eine exakt referenzierte reproduzierbare Testbaseline festgelegt werden.
+- Der vollständige Baseline-Smoke-Test muss auf diesem aktuellen Stand durchgeführt und mit `PASSED` oder `FAILED` dokumentiert werden.
+- Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss danach in kleinen Änderungen umgesetzt und verifiziert werden.
 - Vor jeder neuen dauerhaften Formular-/Fachdaten-Erweiterung muss die Datenbankpersistenz gemäß `DATA-PERSISTENCE.md` festgelegt werden.
 - Der bestehende Sponsoren-Sammelwert muss vor Umstellung auf strukturierte Sponsor-Zeilen hinsichtlich Rückwärtskompatibilität/Migration geprüft werden.
 - Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
-- Für echte Organisationsaufgaben ist ein kleines persistentes Event-Aufgabenmodell erforderlich; es darf nicht unnötig zu einem komplexen Projektmanagementsystem wachsen.
+- Für echte manuell gepflegte Organisationsaufgaben ist ein kleines persistentes Event-Aufgabenmodell erforderlich; Dashboard V1 enthält bisher nur automatisch abgeleitete Hinweise.
 - Camp-Grunddaten und interne/externe Buchungswege müssen in kleinen Schritten persistent modelliert werden.
 - Die genaue Auswertungs-/Historienseite bleibt bewusst offen, bis die Informationsstruktur weiter geklärt ist.
 - Die Integration der Helfer-Jahressicht darf erst erfolgen, wenn eine gemeinsame Personen-/Engagement-Datenquelle existiert.
-- Der Baseline-Smoke-Test muss ab Schritt 3 vollständig fortgesetzt und mit `PASSED` oder `FAILED` dokumentiert werden.
-- Erst bei vollständigem `PASSED` wird der Baseline-Kandidat als erster formaler Last Known Good eingetragen.
-- Der Versionsunterschied zwischen Plugin-Header `3.6.0` und `VTP_VERSION` `3.5.0` bleibt ein separater technischer Befund.
 - Ältere Entwicklungs-PRs #6 und #7 basieren auf dem früheren Branch `organisation` und gelten nicht als aktueller Entwicklungsstand.
 
 ## Module Boundaries
@@ -234,29 +258,20 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 
 ## Active Development
 
-Branch:
+Kein aktiver Entwicklungsbranch und kein offener Pull Request.
 
-`event-planner/persistence-rule`
-
-Scope:
-
-- projektweite Persistenzregel dokumentieren,
-- Event-Anlegen-UI explizit an dauerhafte Datenbankpersistenz binden,
-- Session-/Browserzustand als dauerhafte Datenquelle ausschließen,
-- Persistenz als Test- und Migrationskriterium festhalten,
-- keine Produktcode- oder Datenbankänderung in diesem Dokumentationsschritt.
+Der aktuelle Produktcode liegt auf `main`. Dashboard V1 und der erste Historienbereich wurden über PR #52, #58 und #61 integriert. Der nächste Entwicklungsbranch beginnt erst nach der manuellen Verifikation dieses Stands.
 
 ## Next Meaningful Step
 
-1. Persistenzregel nach menschlicher Freigabe nach `main` übernehmen,
-2. anschließend Event-Navigation und Formularlayout als kleinen UI-/Datenmodell-PR umsetzen,
-3. für jedes neue dauerhafte Feld vorab die Datenbankpersistenz definieren,
-4. Vorlagen-Dropdown mit sauberem Leerzustand vorbereiten,
-5. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte persistente Sponsor-Zeilen umstellen,
-6. Persistenztest `Speichern → Reload → erneut öffnen` für alle neuen Felder durchführen,
-7. Responsive Verhalten und Accessibility im Playground prüfen,
-8. danach Dashboard-/Camp-/Aufgabenlogik in weiterhin kleinen Schritten umsetzen,
-9. den offenen Baseline-Smoke-Test vollständig abschließen und erst dann einen formalen LKG dokumentieren.
+1. aktuellen `main`-Stand mit Plugin-Version `3.7.1` im WordPress Playground öffnen,
+2. Dashboard V1, Historien-Leerzustand, archivierte Daten, Jahresauswahl, Filter, Navigation, Responsive-Verhalten und Datenunverändertheit manuell prüfen,
+3. Ergebnis mit `PASSED` oder konkretem reproduzierbarem Fehler dokumentieren,
+4. bei erfolgreicher Prüfung einen exakten aktuellen Baseline-Kandidaten festhalten und den vollständigen `SMOKE-TEST.md` abschließen,
+5. danach Event-Navigation und Formularlayout als kleinen UI-/Datenmodell-PR umsetzen,
+6. für jedes neue dauerhafte Feld vorab die Datenbankpersistenz definieren und mit `Speichern → Reload → erneut öffnen` prüfen,
+7. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte persistente Sponsor-Zeilen umstellen,
+8. Camp-/Aufgabenlogik anschließend in weiteren kleinen, überprüfbaren Inkrementen umsetzen.
 
 ## Update Rule
 
