@@ -1,6 +1,6 @@
 # WISO MeinVerein des Jahres 2026
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – Primärquelle und Einreichungsweg erneut verifiziert
 
 ## Purpose
 
@@ -14,7 +14,9 @@ Nur bestehende reale TuS-Leistung einreichen; kein künstliches Digitalprojekt f
 
 ### Status
 
-**A – sofort prüfen / Frist 10.09.2026, 23:59 Uhr**
+**A – heute einreichen / Frist 10.09.2026, 23:59 Uhr**
+
+Der vollständige TuS-Entwurf liegt vor. Eine externe Einreichung ist im Repository noch nicht dokumentiert.
 
 ### Fördergeber / Format
 
@@ -26,7 +28,8 @@ BUHL-DATA-SERVICE GmbH / WISO MeinVerein, Ehrenamtspreis für eingetragene gemei
 - öffentliches Vereinsprofil bei WISO MeinVerein,
 - kostenlose Version genügt,
 - Projekt-Award verlangt konkretes Vereinsprojekt mit Zielen, Umsetzung und Wirkung,
-- Validierung der Gemeinnützigkeit erfolgt im Gewinnerprozess über Haus des Stiftens / NPO-Portal.
+- Validierung der Gemeinnützigkeit erfolgt für Top-10-Vereine vom 01.10. bis 22.10.2026 über Haus des Stiftens / NPO-Portal,
+- im Gewinnfall ist die Teilnahme an der Preisverleihung am 18.11.2026 in Hamburg verpflichtend.
 
 ### Projekt-Award
 
@@ -47,6 +50,8 @@ Jury-Kriterien laut offizieller Seite:
 - Wirkung,
 - Innovationskraft,
 - Nachhaltigkeit.
+
+Die Teilnahmebedingungen konkretisieren die Bewertung zusätzlich mit Ausgangslage, Nutzen im Verhältnis zu eingesetzten Ressourcen, Umsetzungs-/Ergebnisqualität, besonderen Herausforderungen und Wirkung auf Umfeld bzw. Gesellschaft.
 
 ### Community-Award
 
@@ -82,7 +87,30 @@ Empfehlung: Nicht nur einen technischen Plugin-Ausschnitt darstellen, sondern di
 
 ### Empfehlung
 
-**Bewerben**, sofern organisatorische Teilnahmevoraussetzungen erfüllt werden können.
+**Heute bewerben**, sofern organisatorische Teilnahmevoraussetzungen erfüllt werden können. Interne Sicherheitsfrist: 21:00 Uhr.
+
+### Antragsweg
+
+1. Öffentliches WISO-MeinVerein-Profil des Hauptvereins öffnen oder anlegen.
+2. Projektaward im Profil auswählen und Kategorie `Digitalisierung` setzen.
+3. Projektbeschreibung, Ziele, Umsetzung, Wirkung, Bilder und Kostenplan eintragen.
+4. Bis 23:59 Uhr absenden und Einreichungsbestätigung sichern.
+5. Im Top-10-Fall den aktuellen Freistellungsbescheid im Validierungsfenster nachreichen.
+
+### Offizieller Support
+
+- WISO MeinVerein Web: `02735 9096-715`
+- https://www.buhl.de/kundencenter/hilfe-und-support
+
+### Vergleichsfälle
+
+Die offizielle Gewinnerübersicht 2025 nennt in der Kategorie Digital:
+
+- InfoTastic – `Gemeinsam. Innovation. Leben.`,
+- ApK Bayern,
+- BBAG – barrierearmes Online-Escape-Game mit Fußballbezug.
+
+Diese Fälle belegen die Bandbreite digitaler Vereinswirkung, nicht die Erfolgsaussicht des TuS.
 
 ### Primärquelle
 
@@ -96,4 +124,4 @@ https://www.meinverein.de/verein-des-jahres/
 
 ## Future Development
 
-Bei Go: Projekttext, Wirkungsnachweise, Bildauswahl und Community-Voting-Paket vorbereiten. Externe Einreichung erst nach menschlicher Freigabe.
+Bei Einreichung: finalen Wortlaut, Bilder und Bestätigung dokumentieren. Externe Einreichung erst nach menschlicher Freigabe.

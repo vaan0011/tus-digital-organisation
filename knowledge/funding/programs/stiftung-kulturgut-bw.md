@@ -6,7 +6,7 @@
 **Funding body:** Stiftung Kulturgut Baden-Württemberg / Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg  
 **Official source:** https://mwk.baden-wuerttemberg.de/de/kunst-kultur/kultursparten/archivwesen-und-kulturgut  
 **Program status:** Verifiziert / laufend  
-**Last verified:** 2026-09-04
+**Last verified:** 2026-09-10
 
 ## Purpose of the Program
 

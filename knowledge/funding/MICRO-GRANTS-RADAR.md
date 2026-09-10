@@ -1,6 +1,6 @@
 # TuS Micro-Grants & Corporate Funding Radar
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – Projektzuordnung und Primärquellen aktualisiert
 
 ## Purpose
 
@@ -18,11 +18,11 @@ Viele dieser Programme haben kurze Bewerbungsfenster, Voting-Mechaniken oder reg
 
 ### 1. Aktuell sofort relevante Chancen
 
-| Programm | Art | Betrag / Nutzen | Status 05.09.2026 | TuS-Fit | Priorität | Nächste Aktion |
+| Programm | Art | Betrag / Nutzen | Status 10.09.2026 | TuS-Fit | Priorität | Nächste Aktion |
 |---|---|---:|---|---|---|---|
-| WISO MeinVerein – MeinVerein des Jahres 2026 | Preis / Wettbewerb | Projekt-Award je Kategorie 10.000 / 3.000 / 1.000 €; Community-Award 3.000 / 2.000 / 1.000 €, Plätze 4–10 je 500 €; zusätzlich 5×500 € Verlosung | **offen bis 10.09.2026, 23:59** | sehr hoch: Digitalisierung, Gesellschaft, Umweltschutz; TuS Digital Organisation als reale Digitalisierungschance | **A – sofort** | Projekt-Award Digitalisierung gegen TuS Digital Organisation prüfen; kostenloses öffentliches WISO-MeinVerein-Profil nötig |
-| Kellogg’s Herzensprojekt 2026 | Projektspende + Voting | Gesamtpool 50.000 €, bis 5.000 € je Projekt | **Bewerbung 01.09.–31.10.2026; Voting 01.10.–30.11.2026** | sehr hoch: Sportausrüstung, Sportkleidung, Bildungs-/Gesundheitsprojekt | **A** | ein konkretes Projekt auswählen; nur ein Projekt je Verein; Community-Voting früh vorbereiten |
-| REWE Scheine für Vereine 2026 | Sachmittelaktion | Gratisprämien, u. a. Bälle, Trainingsutensilien, Kleidung, Elektrogeräte | **Registrierung seit 24.08.; Scheine 07.09.–11.10.; Zuordnung bis 25.10.; Prämien bis 08.11.2026** | sehr hoch | **A – operativ** | sofort prüfen, ob TuS 2026 registriert ist; Sammelkampagne für 07.09. starten und Wunschprämien definieren |
+| WISO MeinVerein – MeinVerein des Jahres 2026 | Preis / Wettbewerb | Projekt-Award je Kategorie 10.000 / 3.000 / 1.000 €; Community-Award 3.000 / 2.000 / 1.000 €, Plätze 4–10 je 500 €; zusätzlich 5×500 € Verlosung | **offen bis heute, 10.09.2026, 23:59** | konkret zugeordnet: Aufbau Digitale Vereinsorganisation; fertiger Entwurf vorhanden | **A – heute** | Einreichungsstatus sofort prüfen; falls offen, Profil und Antrag nach Freigabe bis 21:00 Sicherheitsfrist abschließen |
+| Kellogg’s Herzensprojekt 2026 | Projektspende + Voting | Gesamtpool 50.000 €, bis 5.000 € je Projekt | **Bewerbung 01.09.–31.10.2026; Voting 01.10.–30.11.2026** | konkret zugeordnet: Großfeldtore; Hardware 2.935,50 €, vollständiger Preis offen | **B+** | bis 23.09. Projektauswahl, bis 24.09. Gesamtpreis/Text, Ziel-Einreichung 25.09.; Kombination mit BSB klären |
+| REWE Scheine für Vereine 2026 | Sachmittelaktion | Gratisprämien, u. a. Bälle, Trainingsutensilien, Kleidung, Elektrogeräte | **Registrierung seit 24.08.; Scheine 07.09.–11.10.; Zuordnung bis 25.10.; Prämien bis 08.11.2026** | hoher Vereinsnutzen, aber noch keine konkrete Prämien-/Projektzuordnung | **B – operativ** | prüfen, ob TuS registriert ist; konkrete Wunschprämie definieren; bis dahin kein qualifizierter Opportunity Brief |
 | ALDI SÜD Pfandbonspende | lokale Kundenspende | variable lokale Spendensumme | laufendes regionales Format in teilnehmenden Filialen | mittel bis hoch, wenn Jugend-/Kinderbezug von lokaler Filiale akzeptiert wird | **B – lokal prüfen** | lokale ALDI-SÜD-Filiale auf mögliche Pfandbonpartnerschaft für TuS-Jugend ansprechen; keine Förderfähigkeit unterstellen |
 | Lotto Baden-Württemberg – direkte Förder-/Sponsoringanfrage | Sponsoring / Projektförderung | individuell | laufende Anfragen möglich | mittel; nur BW, gemeinnützig/öffentlich wirksam; Projekte unmittelbar mit Minderjährigen sowie Bau/Sanierung laut Lotto-Sponsoringseite grundsätzlich ausgeschlossen | **B – selektiv** | nur für passenden Erwachsenen-/Community-/Kultur-/Eventkontext nutzen; Sportjugend separat über Wettbewerbe/Verbandswege verfolgen |
 
@@ -42,7 +42,7 @@ Viele dieser Programme haben kurze Bewerbungsfenster, Voting-Mechaniken oder reg
 
 ### 3. Strategische Einordnung für den TuS
 
-#### Tier 1 – sofort handeln
+#### Tier 1 – qualifiziert handeln
 
 1. **WISO MeinVerein 2026**
    - höchste Zeitkritik: 10.09.2026,
@@ -52,14 +52,17 @@ Viele dieser Programme haben kurze Bewerbungsfenster, Voting-Mechaniken oder reg
 
 2. **Kellogg’s Herzensprojekt 2026**
    - bis 31.10.2026,
-   - sehr niedrige Einstiegshürde,
-   - konkrete Anschaffung oder Bildungs-/Gesundheitsprojekt,
-   - Voting braucht Mobilisierung über TuS Social Media, WhatsApp, Mitglieder und Umfeld.
+   - konkret den Großfeldtoren zugeordnet,
+   - Gesamtpreis und zeitliche Kombination mit BSB noch klären,
+   - Voting braucht einen freigegebenen realistischen Mobilisierungsplan.
 
-3. **REWE Scheine für Vereine 2026**
+#### Tier 1b – operative Aktion, noch kein Projektmatch
+
+1. **REWE Scheine für Vereine 2026**
    - Start der Sammelphase am 07.09.2026,
    - kein klassischer Antrag, aber Sachwerte können reale Beschaffungskosten sparen,
-   - zentral statt je Mannschaft organisieren.
+   - zentral statt je Mannschaft organisieren,
+   - erst nach konkreter Prämienauswahl als projektbezogene Chance werten.
 
 #### Tier 2 – dauerhaft vorbereiten
 

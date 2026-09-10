@@ -1,6 +1,6 @@
 # PROJECT-STATE – Großfeldtore Haupt- und Trainingsplatz
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – zusätzlicher Förderweg verifiziert
 
 ## Purpose
 
@@ -180,6 +180,23 @@ Status:
 - keine Förderzusage,
 - keine Antragstellung ausgelöst.
 
+**Zusätzlicher Förderweg:** Kellogg’s Herzensprojekt 2026
+
+- Bewertung: **B+ – konkret vorbereiten**,
+- Bewerbung 01.09.–31.10.2026,
+- Voting 01.10.–30.11.2026,
+- zweckgebundene Förderung bis 5.000 € für genau ein Vereinsprojekt,
+- bekannter Hardware-Zwischenstand liegt unter der Programmgrenze,
+- Gesamtpreis inklusive Netzen, Fracht, Fundament und Einbau ist noch offen,
+- Ranking erfolgt über gültige kaufbelegbasierte Stimmen,
+- mögliche Kombination mit BSB wird nicht unterstellt; Doppelfinanzierung derselben Kostenposition ist ausgeschlossen.
+
+Interne Zieltermine für Kellogg’s:
+
+- 23.09.2026 Go/No-Go und TuS-Projektauswahl,
+- 24.09.2026 finaler Gesamtpreis und 400-Zeichen-Text,
+- 25.09.2026 Ziel-Einreichung vor Votingstart.
+
 ### 7. Artefaktraum und Vorstandsvorlage
 
 Google-Drive-Projektordner:
@@ -207,6 +224,8 @@ Die Vorstandsvorlage enthält Beschlussvorschlag, technische Konfiguration, Kost
 11. Wie ist der Eigentums-/Nutzungsstatus des Hauptplatzes förderrechtlich einzuordnen?
 12. Wer ist fachlicher Projekt-Owner?
 13. Welcher formale Budgetrahmen wird vom Vorstand beschlossen?
+14. Sollen die Großfeldtore das eine Kellogg’s-Projekt des Hauptvereins sein?
+15. Ist die zeitliche und kostenmäßige Kombination von Kellogg’s und BSB schriftlich sauber geklärt?
 
 ### 9. Risiken / Blockaden
 
@@ -218,6 +237,8 @@ Die Vorstandsvorlage enthält Beschlussvorschlag, technische Konfiguration, Kost
 - falsche Netztiefe kann zu nicht passender Netzgeometrie führen.
 - Fundament-/Einbaumaße müssen vor Einbau aus Herstellerplan und Platzsituation abgeleitet werden.
 - Versandkosten sind noch nicht vollständig belastbar und selbst nicht zuschussfähig.
+- Der Kellogg’s-Erfolg hängt vom kaufbelegbasierten Voting ab; mobilisierbare Reichweite wird nicht erfunden.
+- Die Sechs-Monats-Umsetzungsregel und das BSB-Rechnungsjahr 2026 müssen vor einer Förderkombination zusammenpassen.
 
 ### 10. Nächster sinnvoller Schritt
 
@@ -226,12 +247,14 @@ Vor Bestellung eine einzige finale Beschaffungsprüfung durchführen:
 1. Vorstand fasst Grundsatz- und Budgetbeschluss,
 2. Funding & Grants Manager bzw. Projektverantwortlicher sendet die konkrete Konfiguration an den BSB Nord und dokumentiert die Vorabantwort,
 3. Eigentums-/Nutzungsstatus des Hauptplatzes klären,
-4. Kübler bestätigt passende Netze für die konkrete Kombination,
-5. Versandkosten und Lieferzeit verbindlich klären,
-6. Fundament-/Einbauplan sichern,
-7. Gesamtpreis aktualisieren,
-8. Bestellung mit Rechnung im Kalenderjahr 2026 auslösen,
-9. anschließend BSBnet-Antrag mit Rechnung und Zahlungsnachweis bis 31.01.2027 stellen.
+4. bis 23.09.2026 Kellogg’s-Go/No-Go und Projektauswahl treffen,
+5. zeitliche Kombination und Kostentrennung Kellogg’s/BSB vorab klären,
+6. Kübler bestätigt passende Netze für die konkrete Kombination,
+7. Versandkosten und Lieferzeit verbindlich klären,
+8. Fundament-/Einbauplan sichern,
+9. Gesamtpreis aktualisieren,
+10. Bestellung erst nach Förder- und Budgetklärung mit Rechnung im Kalenderjahr 2026 auslösen,
+11. anschließend BSBnet-Antrag mit Rechnung und Zahlungsnachweis bis 31.01.2027 stellen.
 
 ## Relationship to other documents
 

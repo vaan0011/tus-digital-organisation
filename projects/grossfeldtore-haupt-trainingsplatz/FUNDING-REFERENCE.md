@@ -1,6 +1,6 @@
 # Funding Reference – Großfeldtore Haupt- und Trainingsplatz
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – BSB erneut verifiziert, Kellogg’s ergänzt
 
 ## Purpose
 
@@ -149,6 +149,34 @@ Dort bzw. im Drive-Projektordner werden ergänzt:
 - Förderbescheid,
 - Inventarisierungsnachweis,
 - Fotos der umgesetzten und neu installierten Tore.
+
+### 10. Zusätzlicher Förderweg – Kellogg’s Herzensprojekt 2026
+
+Konkrete Bewertung: **B+ – vorbereiten**.
+
+- Bewerbung: 01.09.–31.10.2026
+- Voting: 01.10.–30.11.2026
+- maximal 5.000 € für ein Projekt je gemeinnützigem Amateur-Sportverein
+- offizielle Beispiele umfassen Sportgeräte und Sportstättenverbesserungen
+- Projektkosten dürfen höchstens 5.000 € betragen
+- Umsetzung und Nachweise innerhalb von sechs Monaten nach Förderung
+- Rangfolge nach gültigen kaufbelegbasierten Stimmen
+
+Primärquellen:
+
+- `https://www.kelloggs-herzensprojekt.de/bewerben`
+- `https://www.kelloggs-herzensprojekt.de/conditions-application`
+- `https://www.kelloggs-herzensprojekt.de/conditions-voting`
+
+Vor Einreichung:
+
+1. Großfeldtore als das eine TuS-Projekt dieser Runde beschließen.
+2. Gesamtpreis inklusive Netzen, Fracht, Fundament und Einbau schließen.
+3. Zeitliche Vereinbarkeit mit Rechnung 2026 und sechsmonatiger Umsetzung klären.
+4. BSB- und Kellogg’s-Kosten strikt trennen; keine Doppelfinanzierung.
+5. Realistischen Voting-Plan freigeben.
+
+Interne Ziel-Einreichung ist 25.09.2026, damit eine Prüfung vor Votingstart möglich bleibt.
 
 ## Relationship to other documents
 

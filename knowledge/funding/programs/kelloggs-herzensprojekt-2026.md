@@ -1,6 +1,6 @@
 # Kellogg’s Herzensprojekt 2026
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – Projektzuordnung und Teilnahmebedingungen verifiziert
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Ein klar verständliches, konkretes TuS-Projekt einreichen, das sich gut mobilis
 
 ### Status
 
-**A – offen / Bewerbungsfrist 31.10.2026**
+**B+ – konkret vorbereiten / Bewerbungsfrist 31.10.2026**
 
 ### Fördergeber / Format
 
@@ -50,13 +50,9 @@ Teilnahmeberechtigt in Deutschland:
 
 ### TuS-Fit
 
-Sehr hoch. Mögliche bestehende Projektfelder:
+Konkrete Zuordnung: `Großfeldtore Haupt- und Trainingsplatz`.
 
-- zusätzliche Tore / Trainingsmaterial,
-- Jugend-Sportausrüstung,
-- Mädchen-/Frauenfußball-Ausstattung,
-- Gesundheits-/Präventionsprojekt,
-- andere klar abgegrenzte Sportanschaffung.
+Der bekannte Hardware-Zwischenstand von 2.935,50 € brutto liegt unter der Programmgrenze. Netze, Fracht, Fundamentierung und Einbau sind noch nicht vollständig beziffert. Weil nur ein Projekt je Verein eingereicht werden darf, bleibt die Auswahl eine bewusste TuS-Entscheidung.
 
 Bei Kombination mit anderen Förderprogrammen müssen dieselben Kostenpositionen sauber getrennt und Doppelabrechnungen vermieden werden.
 
@@ -71,16 +67,37 @@ Bei Kombination mit anderen Förderprogrammen müssen dieselben Kostenpositionen
 
 ### Erfolgsfaktor
 
-Da die Rangfolge durch Stimmen bestimmt wird, ist die Mobilisierung entscheidend. Der TuS verfügt dafür über mehrere Kanäle: Website, Instagram, Facebook, WhatsApp, Teams, Eltern und Vereinsumfeld.
+Da die Rangfolge durch gültige Stimmen bestimmt wird, ist die Mobilisierung entscheidend. Stimmen entstehen nach den offiziellen Bedingungen über qualifizierte Kellogg’s-Kaufbelege. Eine Reichweite oder Stimmenzahl wird nicht vorab behauptet.
+
+### Auszahlung, Umsetzung und Nachweise
+
+- eingereichte Projektkosten höchstens 5.000 €,
+- Förderung höchstens 5.000 € und zweckgebunden,
+- Umsetzung innerhalb von sechs Monaten nach Förderung,
+- im Gewinnfall Freistellungsbescheid, Vereins-IBAN und Zuwendungsbestätigung,
+- Rechnungen, Fotos und Umsetzungsnachweis erforderlich,
+- Miete und laufende Unterhaltung sind nicht förderfähig.
+
+### Interne Vorfristen
+
+- 23.09.2026: Go/No-Go und Entscheidung für das eine Vereinsprojekt,
+- 24.09.2026: finaler Gesamtpreis, 400-Zeichen-Text und Bildrechte,
+- 25.09.2026: Ziel-Einreichung, damit die Prüfung möglichst vor Votingstart abgeschlossen ist.
+
+### Offene Förderkombination
+
+Eine Kombination mit der BSB-Sportgeräteförderung wird nicht unterstellt. Vor Einreichung ist zu klären, ob der geplante Kaufzeitpunkt, die sechsmonatige Umsetzung und eine saubere Kostentrennung mit dem BSB-Rechnungsjahr 2026 vereinbar sind. Dieselbe Kostenposition darf nicht doppelt finanziert werden.
 
 ### Empfehlung
 
-**Bewerben.** Ein Projekt auswählen, das leicht erklärbar, sichtbar und emotional mobilisierbar ist.
+**Vorbereiten und nach Go/No-Go bewerben.** Großfeldtore als Projekt festlegen, Gesamtpreis schließen und Voting-Aufwand realistisch bewerten.
 
 ### Primärquellen
 
 - https://www.kelloggs-herzensprojekt.de/
 - https://www.kelloggs-herzensprojekt.de/bewerben
+- https://www.kelloggs-herzensprojekt.de/conditions-application
+- https://www.kelloggs-herzensprojekt.de/conditions-voting
 
 ## Relationship to other documents
 
@@ -89,4 +106,4 @@ Da die Rangfolge durch Stimmen bestimmt wird, ist die Mobilisierung entscheidend
 
 ## Future Development
 
-Bei Projektentscheidung: Bewerbungs-Kurztext, Kostenbild und Voting-Kampagne vorbereiten. Externe Einreichung erst nach menschlicher Freigabe.
+Bei Projektentscheidung: finalen Bewerbungs-Kurztext, Kostenbild und Voting-Kampagne vorbereiten. Externe Einreichung erst nach menschlicher Freigabe.

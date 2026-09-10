@@ -1,12 +1,14 @@
 # WISO MeinVerein des Jahres 2026 – Bewerbung TuS Digital Organisation
 
-Stand: 2026-09-05
+Stand: 2026-09-10 – einreichungsbereit, Einreichungsstatus offen
 
 ## Purpose
 
 Arbeitsfassung für die Bewerbung des TuS 1901 Mingolsheim e.V. beim WISO-Projekt-Award in der Kategorie `Digitalisierung`.
 
 Die externe Einreichung bleibt freigabepflichtig. Diese Datei dokumentiert den intern abgestimmten Bewerbungsstand.
+
+**Akuter Gate:** Die offizielle Frist endet heute, 10.09.2026, um 23:59 Uhr. Interne Sicherheitsfrist ist 21:00 Uhr. Eine bereits erfolgte Einreichung ist auf `main` nicht dokumentiert.
 
 ## Core Principle
 
@@ -65,6 +67,8 @@ Unsere Vision lässt sich in einem Satz zusammenfassen: **Wir bauen keine Softwa
 | Dokumentation, Onboarding und Wirkungsmessung | 1.500 € | Ehrenamtliche einarbeiten und Wirkung belastbar erfassen |
 | **Gesamt** | **10.000 €** | |
 
+Die Beträge sind ein vorgeschlagener Verwendungsplan, keine dokumentierten Angebote oder bereits beschlossenen Ausgaben. Vor Einreichung sind Plausibilität und interne Freigabe zu bestätigen.
+
 ### Bildauswahl
 
 1. **Hauptbild:** `TuS_Digitale_Organisation.png` aus dem Google-Drive-Projektordner.
@@ -100,6 +104,18 @@ Ein Amateurverein hat keine große Verwaltung oder IT-Abteilung. Trotzdem muss e
 - Bilder sind optional
 - Top-10-Projekte müssen die Gemeinnützigkeit über Haus des Stiftens validieren
 - im Gewinnfall ist die Teilnahme an der Preisverleihung in Hamburg verpflichtend
+
+### Sofortiger Einreichungscheck
+
+- [ ] Ist der Antrag bereits abgesendet? Falls ja: Bestätigung und finalen Wortlaut sichern.
+- [ ] Ist das Profil des Hauptvereins öffentlich?
+- [ ] Sind Vereins- und Kontaktdaten final geprüft?
+- [ ] Ist der Mittelverwendungsplan intern freigegeben?
+- [ ] Sind Rechte an allen hochgeladenen Bildern geklärt?
+- [ ] Ist eine Teilnahme in Hamburg am 18.11.2026 im Gewinnfall organisatorisch möglich?
+- [ ] Liegt der aktuelle Freistellungsbescheid für die Top-10-Validierung bereit?
+- [ ] Falls das Formular kürzere Felder erzwingt: Kurzpitch verwenden, ohne ungesicherte Wirkungszahlen zu ergänzen.
+- [ ] Nach Absenden: Screenshot / Eingangsbestätigung und tatsächlich eingereichten Wortlaut dokumentieren.
 
 ## Relationship to other documents
 
