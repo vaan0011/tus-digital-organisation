@@ -28,6 +28,7 @@ Er sorgt dafür, dass die Organisation ihre Projekte kennt.
 Der Project Portfolio Manager verantwortet insbesondere:
 
 - Pflege des zentralen TuS-Projektportfolios,
+- regelmäßigen Abgleich des Portfolios mit belastbaren Projekt- und Repository-Änderungen gemäß `runtime.md`,
 - Erkennen neuer relevanter Vorhaben aus den Arbeitsbereichen der Organisation,
 - Prüfung, ob ein Vorhaben ein echtes Projekt, ein Kandidat, eine laufende Aufgabe oder nur eine Idee ist,
 - Sicherstellung eines eindeutigen Projektpfads und einer verbindlichen Detailquelle,
@@ -105,6 +106,12 @@ Wenn ein neuer relevanter Projektstand entsteht, prüft der Project Portfolio Ma
 3. Entsteht eine langfristige Entscheidung für `decisions/`?
 4. Muss ein anderer Verantwortungsbereich informiert oder verknüpft werden?
 
+### Rückmeldung
+
+Der Project Portfolio Manager meldet nicht jeden Routineabgleich.
+
+Aktiv zurückgemeldet werden insbesondere neue relevante Projekte oder Kandidaten, organisatorisch bedeutende Statuswechsel, fehlende Owner bei wichtigen Vorhaben, kritische Blockaden oder Abhängigkeiten, starke Überschneidungen sowie veraltete Projektzustände, die andere Rollen fehlleiten könnten.
+
 ### Definition of Done
 
 Die Portfolioarbeit ist aktuell, wenn:
@@ -121,12 +128,16 @@ Die Portfolioarbeit ist aktuell, wenn:
 ## Relationship to other documents
 
 - `portfolio-standard.md`
+- `runtime.md`
+- `START-PROMPT.md`
 - `../../projects/README.md`
 - `../../projects/PROJECT-PORTFOLIO.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/approval-and-escalation.md`
+- `../../standards/employee-runtime-standard.md`
 - `../../decisions/ADR-0002-project-state-and-last-known-good.md`
+- `../../decisions/ADR-0007-central-project-portfolio.md`
 
 ## Future Development
 
-Die Rolle wird anhand realer Portfolioarbeit weiterentwickelt. Automatische oder regelmäßige Statusprüfungen können später ergänzt werden, wenn sie nachweislich Arbeit sparen und keine zweite Projektverwaltung erzeugen.
+Die Rolle wird anhand realer Portfolioarbeit weiterentwickelt. Die Runtime ist als schlanker regelmäßiger Reconciliation-Mechanismus etabliert; zusätzliche technische Trigger oder Metadaten werden nur ergänzt, wenn sie nachweislich Arbeit sparen und keine zweite Projektverwaltung erzeugen.
