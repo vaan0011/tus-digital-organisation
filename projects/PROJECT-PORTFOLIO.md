@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-09 – Arbeitsplatz Sportparkteam formalisiert
+Stand: 2026-09-10 – Förderabgleich der formalen Projekte integriert
 
 ## Purpose
 
@@ -47,10 +47,10 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren, gemeinsame Partnerdatenbasis definieren und internes MVP reduzieren | Produktabgrenzung ist verbindlich entschieden: Partnerportal = internes TuS-Arbeitswerkzeug; keine getrennte Partnerdatenwelt zum Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design, Homepage |
 | TuS Tauschbörse | Gesellschaft & Soziales; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `reuse-marketplace/PROJECT-STATE.md` | konto-freien Vermittlungsablauf, Datenschutz/Missbrauchsschutz und realen `Kinder von Atibie`-Spendenweg konkretisieren; danach MVP festlegen | `PROJECT-STATE.md` ist teilweise veraltet: der dort genannte Initial-Scope-Branch wurde über PR #18 bereits gemergt; noch kein Plugin-Code | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales, ggf. Funding |
 | Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | `PROJECT-STATE.md` ist teilweise veraltet: Initial-Scope PR #17 ist bereits gemergt; keine parallele Mannschafts- oder Personendatenwelt aufbauen | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
-| LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | vor Ablauf der Angebots-Preisbindung Technikbeiblatt, Fundament, Strom, Funding-Check, Genehmigung und Gesamtfinanzierung klären | Angebot 30260839-2: 48.779 € netto nach 2.000 € goracon-Sponsoringrabatt; Drive-Artefaktraum vorhanden; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
-| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Aufbauzustand in wenige messbare Arbeitspakete schneiden und durch Funding gegen aktuelle Programme spiegeln | dauerhaftes Organisationsprogramm bleibt die Klammer; dieses Projekt umfasst nur Aufbau/Konsolidierung; Drive-Artefaktraum mit aktuellem Organisationsbild vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
-| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | konkrete Kübler-Konfiguration mit Funding/BSB abgleichen, passende Netze und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Beschluss zur Bestellung herbeiführen | favorisiert: 2 Hülsentore mit P-Netzbügel + 4 enthaltene Bodenhülsen + 1 Paar hochklappbare STADION-FLEX-Bodenrahmen; bekannter Hardware-Zwischenstand 2.935,50 € brutto; keine Bestellung ausgelöst | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
-| Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; fachlicher Projekt-Owner noch offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | Förderfähigkeit nach § 16i SGB II beim Jobcenter prüfen, hilfsweise § 16e; danach Tätigkeitsprofil und 20-/25-/30-Stunden-Modelle rechnen | personenbezogene Daten bleiben außerhalb GitHub; Arbeitsvertrag erst nach positiver Förderentscheidung und TuS-Freigabe; Partnerfinanzierung soll sinkende Förderung und Anschlussphase mittragen | Funding & Grants, Partnership Manager, Infrastruktur, Finanzen/Lohn, Datenschutz, Vorstand |
+| LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | Technikbeiblatt, Fundament, Strom, Genehmigung und Gesamtfinanzierung **ohne unbestätigten Direktzuschuss** klären | Funding-Check 10.09.: kein qualifizierter direkter Zuschuss im aktuellen Scope; Angebot 48.779 € netto nach Rabatt; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
+| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | WISO-Einreichungsstatus sofort prüfen und offenen Antrag noch am 10.09. vor 23:59 Uhr abschließen; danach Arbeitspakete schärfen | qualifizierte A-Chance: WISO Projektaward Digitalisierung, 10.000 / 3.000 / 1.000 €; Entwurf vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
+| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | BSB-Konfiguration klären und bis 23.09. Kellogg’s-Go/No-Go treffen; dann Netze, Fracht, Fundament, Gesamtpreis und Beschluss schließen | A: BSB bis max. 900 €; B+: Kellogg’s bis 5.000 €; Kombination und Doppelfinanzierung vorab klären; keine Bestellung | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
+| Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; fachlicher Projekt-Owner noch offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | bis 18.09. § 16i beim Jobcenter Bruchsal vorabklären, § 16e hilfsweise; bis 25.09. Tätigkeitsprofil und Stundenmodelle | B+; gemeinnütziger Arbeitgeber/Teilzeit zulässig, persönliche Förderfähigkeit offen; Vertrag erst nach positiver Rückmeldung | Funding & Grants, Partnership Manager, Infrastruktur, Finanzen/Lohn, Datenschutz, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
@@ -62,10 +62,10 @@ PR #28 zur Abgrenzung von Partnerportal und Partner Hub sowie PR #30 zum operati
 | Partnerportal | **aktuell** | nächste Aktualisierung nach Konsolidierung realer Sponsorendaten, Steuer-Ist oder gemeinsamer Partnerdatenbasis |
 | TuS Tauschbörse | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nur die danach verbleibenden Discovery-Schritte führen |
 | Team Manager | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nächsten Architektur-/Discovery-Schritt als aktuellen Einstieg setzen |
-| LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förderung, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
-| Aufbau Digitale Vereinsorganisation | **aktuell** | bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen, Förderstrategie, Betriebsarchitektur oder Übergang in den Regelbetrieb aktualisieren |
-| Großfeldtore Haupt- und Trainingsplatz | **aktuell** | bei Änderung von Produktauswahl, Preis, Netzen, Fracht, Funding, Fundament/Einbau, Beschluss oder Bestellstatus aktualisieren |
-| Arbeitsplatz Sportparkteam | **aktuell** | bei Änderung von Förderfähigkeit, Stundenmodell, Arbeitgeberkosten, Partnerfinanzierung, Vorstandsbeschluss oder Vertragsstatus aktualisieren |
+| LED Media Screen | **aktuell – Funding 10.09.** | bei Änderung von Angebot, Owner, Förder-Scope, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
+| Aufbau Digitale Vereinsorganisation | **aktuell – zeitkritisch** | WISO-Einreichungsstatus sofort nachziehen; danach bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen oder Übergang aktualisieren |
+| Großfeldtore Haupt- und Trainingsplatz | **aktuell – Funding 10.09.** | bei Kellogg’s-Go/No-Go, BSB-Antwort, Produktauswahl, Preis, Netzen, Fracht, Fundament/Einbau, Beschluss oder Bestellung aktualisieren |
+| Arbeitsplatz Sportparkteam | **aktuell – Funding 10.09.** | bei Jobcenter-Antwort, Förderfähigkeit, Stundenmodell, Arbeitgeberkosten, Partnerfinanzierung, Vorstandsbeschluss oder Vertrag aktualisieren |
 
 Alle zehn formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
@@ -226,15 +226,16 @@ Besonders zu beachten sind:
 2. **PROJECT-STATE-Pflege auslösen:** Event Planner, TuS Tauschbörse und Team Manager nach bereits gemergten PRs bereinigen.
 3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
 4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
-5. **Großfeldtore bestellreif machen:** konkrete Kübler-Konfiguration mit BSB/Funding abgleichen, passende Netze, Netzbefestigung und Fracht ergänzen, Fundament-/Einbauaufwand klären und danach Gesamtpreis plus Beschluss dokumentieren.
-6. **LED Media Screen bis Go/No-Go schärfen:** technisches Beiblatt, Fundament, Stromanschluss, Genehmigung, Funding-Check, Rechtseinheit und vollständige Gesamtfinanzierung vor einer Bestellung klären.
-7. **Arbeitsplatz Sportparkteam förder- und entscheidungsreif machen:** persönliche Förderfähigkeit über das Jobcenter klären, Tätigkeitsprofil definieren, 20-/25-/30-Stunden-Modelle inklusive Arbeitgeberkosten und Nettoeffekt rechnen, Partnerfinanzierung entwickeln und erst danach Vorstandsbeschluss und Vertrag vorbereiten.
-8. **Digitale Vereinsorganisation förder- und abschlussfähig schneiden:** aktuelle Aufbauleistungen, noch offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren; danach Funding gegen reale Programme spiegeln.
-9. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
-10. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
-11. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
-12. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
-13. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
+5. **WISO heute entscheiden:** Einreichungsstatus prüfen; falls offen, Antrag zur Digitalen Vereinsorganisation nach Freigabe vor 23:59 Uhr einreichen.
+6. **Großfeldtore bestellreif machen:** BSB-Konfiguration klären, bis 23.09. Kellogg’s-Go/No-Go treffen, Netze/Fracht/Fundament ergänzen und Kombination ohne Doppelfinanzierung dokumentieren.
+7. **LED Media Screen bis Go/No-Go schärfen:** Funding-Check ist abgeschlossen; technisches Beiblatt, Fundament, Strom, Genehmigung, Rechtseinheit und Finanzierung ohne angenommenen Zuschuss klären.
+8. **Arbeitsplatz Sportparkteam förder- und entscheidungsreif machen:** bis 18.09. Jobcenter vorabklären, dann Tätigkeitsprofil, 20-/25-/30-Stunden-Kosten und Partnerfinanzierung entwickeln; erst danach Vorstandsbeschluss und Vertrag.
+9. **Digitale Vereinsorganisation nach WISO schärfen:** aktuelle Aufbauleistungen, offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren.
+10. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
+11. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
+12. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
+13. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
+14. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
 
 ### 8. Nutzung durch andere Mitarbeiter
 
