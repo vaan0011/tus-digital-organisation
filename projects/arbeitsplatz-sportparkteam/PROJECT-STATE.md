@@ -1,6 +1,6 @@
 # PROJECT STATE – Arbeitsplatz Sportparkteam
 
-**Stand:** 2026-09-09  
+**Stand:** 2026-09-10 – Jobcenter-Primärquelle und Kontakt aktualisiert  
 **Status:** Discovery  
 **Beschäftigung / Vertrag:** Noch nicht gestartet  
 **Fachlicher Projekt-Owner:** noch offen; fachlicher Kontext Sportpark / Infrastruktur / Vereinsentwicklung
@@ -66,7 +66,22 @@ Alternativ zu prüfen:
 
 Die persönliche Förderfähigkeit ist noch **nicht** bestätigt.
 
-Der zuständige erste Ansprechpartner ist das Jobcenter Landkreis Karlsruhe.
+Bewertung: **B+ – sofortige Vorabklärung**.
+
+Der zuständige erste Ansprechpartner ist das Jobcenter Landkreis Karlsruhe, Geschäftsstelle Bruchsal:
+
+- Am Alten Güterbahnhof 9, 76646 Bruchsal,
+- Dienststellen-Telefon laut Bundesagentur `07251 7244-101`,
+- zentrale E-Mail laut offiziellem Impressum `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`,
+- zusätzliche zentrale Rufnummer der Jobcenter-Standortübersicht `0721 / 823 3333`,
+- schneller offizieller Kontakt über das Postfach in `jobcenter.digital` oder das Kontaktformular der Jobcenter-Website.
+
+Die Bundesagentur bestätigt aktuell ausdrücklich:
+
+- gemeinnützige Arbeitgeber sind zugelassen,
+- sozialversicherungspflichtige Teilzeit ist möglich,
+- die Förderung wird zuerst beantragt und positiv geprüft,
+- der Arbeitsvertrag wird erst danach geschlossen.
 
 Details und offizielle Quellen: `FUNDING-REFERENCE.md`.
 
@@ -145,6 +160,12 @@ Der unmittelbar nächste Schritt ist die Arbeitgeber-Vorabklärung mit dem Jobce
 - benötigte Arbeitgeberunterlagen, Ablauf und mögliche Förderhöhe benennen.
 
 Parallel kann der TuS das Tätigkeitsprofil und drei Stundenmodelle vorbereiten.
+
+Interne Zieltermine:
+
+- Arbeitgeber-Erstkontakt bis 18.09.2026,
+- Tätigkeitsprofil und 20-/25-/30-Stunden-Modelle bis 25.09.2026,
+- Go/No-Go erst nach belastbarer Aussage zur persönlichen Förderfähigkeit, Förderhöhe und zulässigen Vertragssequenz.
 
 ### 9. Datenschutz
 
