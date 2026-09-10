@@ -313,18 +313,23 @@ Nicht alle Rollen müssen gleichzeitig verkauft werden. Wenige starke, zuverläs
 
 ### 12. Funding-Bezug
 
-Funding & Grants prüft, ob für den LED Media Screen selbst oder für abgrenzbare technische/infrastrukturelle Teile eine reale Fördermöglichkeit besteht.
+Der projektbezogene Fördercheck vom 10.09.2026 hat **keinen qualifizierten direkten Zuschuss** ergeben:
 
-Bis diese Prüfung abgeschlossen ist, darf keine verbindliche Beauftragung allein aus dem vorhandenen Angebot abgeleitet werden, wenn dadurch ein möglicher förderschädlicher Vorhabenbeginn ausgelöst werden könnte.
+- BSB-Sportgeräteförderung ist kein belastbarer Weg; Zuschauerinformationsanlagen sind ausgeschlossen.
+- BSB-Vereinssportstättenbau passt nicht belastbar zu der primär als Anzeige-, Kommunikations- und Werbeinfrastruktur geplanten Anlage.
+- Der aktuelle LEADER-Aufruf endet am 30.09.2026, verlangt aber ein vollständig umsetzungsreifes, regional wirksames Projekt mit Vorfinanzierung, Angeboten und erforderlichen Genehmigungen. Diese Projektreife liegt nicht vor.
+- Ein Werbe-/Scoreboard-Projekt wird nicht künstlich als Digital-, Jugend-, Klima- oder Gemeinschaftsprojekt umetikettiert.
 
-Das Projekt wird im Förderradar als reales Vorhaben geführt; eine Förderzusage besteht derzeit nicht.
+Bewertung im Förderradar: **C für direkte Zuschusssuche im aktuellen Projektzuschnitt**. Fördermonitoring wird erst bei einer materiellen Änderung von Scope, öffentlicher Nutzung, Energiekomponente oder neuem offiziellen Programm reaktiviert.
+
+Das Finanzierungskonzept muss deshalb vorerst ohne unbestätigten Zuschuss tragfähig sein. Eine Förderzusage besteht nicht.
 
 ### 13. Offene Punkte vor Go/No-Go
 
 Priorität A – vor verbindlicher Beauftragung:
 
 1. fachlichen Projekt-Owner und Entscheidungsweg festlegen,
-2. Funding-Check abschließen,
+2. Finanzierungsmodell ohne angenommenen direkten Zuschuss rechnen,
 3. Standort-, Eigentums-/Nutzungs- und Genehmigungsfragen klären,
 4. Fundament technisch und finanziell klären,
 5. elektrischen Anschluss und vorhandene Anschlussleistung klären,
@@ -343,7 +348,7 @@ Solange die Preisbindung bis 30.09.2026 läuft:
 - Angebot technisch nachfassen,
 - technisches Beiblatt anfordern,
 - Fundament und Stromanschluss konkretisieren,
-- parallel Funding- und Sponsoringprüfung durchführen,
+- Sponsoringprüfung und Finanzierung ohne unbestätigten Zuschuss durchführen,
 - erste Founding-Partner gezielt mit wenigen passenden Moment-Partner-Rollen ansprechen,
 - danach belastbaren Gesamtfinanzierungsbedarf und Go/No-Go-Vorlage erstellen.
 
