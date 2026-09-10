@@ -6,7 +6,7 @@
 **Funding body:** Deutsche Stiftung für Engagement und Ehrenamt (DSEE)  
 **Official source:** https://www.deutsche-stiftung-engagement-und-ehrenamt.de/mikrofoerderprogramm/  
 **Program status:** Programm verifiziert / TuS-Ortsförderfähigkeit offen  
-**Last verified:** 2026-09-04
+**Last verified:** 2026-09-10
 
 ## Purpose of the Program
 
@@ -98,6 +98,8 @@ Eine TuS-Softwareentwicklung ist daher nicht allein deshalb förderfähig, weil 
 **Formale Förderfähigkeit:** **offen wegen Fördergebiet**.  
 **Zeitlicher Fit:** gut bei schneller Klärung; Projekt muss im Kalenderjahr abgeschlossen werden.  
 **Finanzieller Fit:** kleine Anschubmaßnahme, nicht Finanzierung des gesamten Member-Engagement-Plugins.
+
+Der aktuelle DSEE-Förderüberblick führt `100xDigital` und `transform_D` als geschlossen. Daraus entsteht aktuell kein alternativer offener Digitalisierungszuschuss für das Projekt `Aufbau Digitale Vereinsorganisation`.
 
 ### Mögliche echte TuS-Nutzung
 
