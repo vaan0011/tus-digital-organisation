@@ -1,6 +1,6 @@
 # PROJECT STATE – Trainingskleidung Ausstattungsgrundstock
 
-**Stand:** 2026-09-11 – SPORTINN als Ausrüster mit bestehendem Rabatt/Freiware bestätigt; separater Finanzierungspartner erforderlich  
+**Stand:** 2026-09-11 – Teamshoppreise als Arbeitskondition bestätigt; SPORTINN bleibt Ausrüster, separater Finanzierungspartner erforderlich  
 **Status:** Discovery  
 **Beschaffung:** Noch nicht gestartet  
 **Finanzierung / Sponsor:** Noch nicht zugesagt  
@@ -18,7 +18,7 @@ Es hält bestätigten Bedarf, Zielmenge, Beschaffungs- und Sponsoringlogik, offe
 
 Dieser Satz ist der verbindliche Projekt- und Partnerschaftsslogan.
 
-Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragfähig sein. Er wird erst bestellt, wenn realer Bedarf, Ausrüsterkonditionen, Rechte und Finanzierung belastbar geklärt sind.
+Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragfähig sein. Er wird erst bestellt, wenn realer Bedarf, Rechte und Finanzierung belastbar geklärt sind.
 
 ## Main Content
 
@@ -64,18 +64,20 @@ Diese Verteilung ist **noch nicht bestellreif**. Vor Bestellung werden reale Gr�
 
 ### 5. Budgetstand
 
-Aktuelle SPORTINN/Joma-Preisreferenz vom 11.09.2026:
+Für die weitere Projekt- und Partnerschaftsplanung werden die aktuell auf der SPORTINN-/TuS-Teamshopseite ausgewiesenen Konditionen als belastbare Arbeitsbasis verwendet:
 
-- Trainingsshirt: ca. 16,90 EUR,
-- kurze Trainingshose: ca. 14,90 EUR.
+- Trainingsshirt: ca. **16,90 EUR**,
+- kurze Trainingshose: ca. **14,90 EUR**.
 
 Ein Core-Set aus zwei Shirts und einer kurzen Hose liegt damit rechnerisch bei ca. **48,70 EUR**.
 
-Für 50 Core-Sets ergibt sich daraus ein rechnerischer Warenwert von ca. **2.435 EUR**.
+Für 50 Core-Sets ergibt sich ein planbarer Warenwert von ca. **2.435 EUR**.
 
-Nach bestätigtem Vereinsstand ist der bestehende SPORTINN-Rabatt in den verwendeten Kleidungs-/Teamshoppreisen bereits berücksichtigt. Zusätzlich erhält der TuS bei Bestellungen Freiware. Die konkrete Freiware für diese Bestellung sowie Veredelung, Versand und sonstige projektspezifische Kosten sind noch nicht abschließend eingerechnet.
+Nach bestätigtem Vereinsstand ist der bestehende SPORTINN-Rabatt in diesen Preisen bereits berücksichtigt. Zusätzlich erhält der TuS bei Bestellungen Freiware. Da Umfang und Zuordnung der Freiware für diese konkrete Bestellung noch nicht feststehen, wird sie für die Partnersuche **nicht vorab vom Finanzierungsbedarf abgezogen**, sondern als zusätzlicher Puffer bei der späteren Bestellung behandelt.
 
-Bis zur finalen Bestellkalkulation bleibt daher die tatsächliche Projektsumme offen. Frühere grobe Budgetkorridore ersetzen keine belastbare Kalkulation.
+Veredelung, Versand oder weitere projektspezifische Kosten werden nur ergänzt, wenn sie konkret vorliegen. Es wird dafür kein pauschaler Aufschlag erfunden.
+
+Damit ist für die Sponsorensuche kein separates SPORTINN-Angebot mehr erforderlich. Die **2.435 EUR Warenwert** bilden die aktuelle belastbare Arbeitsbasis für das Partnerpaket.
 
 ### 6. Ausrüster- und Teamshopstatus
 
@@ -90,12 +92,12 @@ TuS-Informationsseite:
 SPORTINN / Joma ist der bestehende Ausrüster. Bestätigt sind:
 
 - bestehender Vereinsrabatt; dieser ist in den aktuell verwendeten Kleidungs-/Teamshoppreisen bereits berücksichtigt,
-- Freiware bei Bestellungen.
+- Freiware bei Bestellungen,
+- Teamshop-/Homepagepreise dürfen für die aktuelle Planung als Arbeitskondition verwendet werden.
 
-Für dieses konkrete Projekt noch zu klären bzw. final zu kalkulieren sind:
+Für dieses konkrete Projekt noch zu klären sind:
 
 - konkrete Shirt- und Shorts-Artikel aus dem aktuellen TuS-Teamshop,
-- finale Bestellkalkulation für **50 Core-Sets** unter Berücksichtigung der konkreten Freiware,
 - Veredelung TuS-Wappen,
 - zusätzliche Sponsorlogo-Veredelung,
 - Lieferzeit,
@@ -116,6 +118,8 @@ Verbindlicher Slogan:
 > **Vom ersten Training an Teil des Teams.**
 
 Der gesuchte Partner ist ein **separater Sponsor/Partner** neben dem Ausrüster. Er wird nicht primär als Logo-Käufer positioniert, sondern finanziert eine direkte Willkommensleistung und einen dauerhaft funktionierenden Ausstattungsprozess für Neuzugänge.
+
+Aktuelle Arbeitsbasis für die Partnerfinanzierung ist der Warenwert von **2.435 EUR** für 50 Core-Sets. Zusätzliche konkrete Kosten dürfen später ergänzt werden; Freiware reduziert bei der tatsächlichen Bestellung den realen Aufwand und schafft einen Puffer für Nachbestellungen oder Veredelung, sofern dies fachlich und buchhalterisch passt.
 
 Besonders passend sind Unternehmen, bei denen Einstieg, Ausbildung, Recruiting, Onboarding, Teamzugehörigkeit oder regionale Arbeitgeberpositionierung glaubwürdig zur Story passen. Konkrete Leads und Kontaktstände werden ausschließlich im geschützten Partner-CRM geführt.
 
@@ -138,29 +142,27 @@ Aktuelle Arbeitsprodukte:
 
 Vor Bestellung offen:
 
-1. konkreter Shirt-/Shorts-Artikel aus dem Teamshop,
-2. finale Bestellkalkulation für 50 Core-Sets inklusive konkreter Freiware und Veredelung,
-3. bestätigter Größenmix,
-4. Lagerort,
-5. operative Bestandsverantwortung,
-6. Eigentums-/Rückgabelogik bei Spielerabgängen,
-7. Sponsorlogo-Platzierung,
-8. bestehende Ausrüster- und Branchenexklusivitäten,
-9. separater Hauptpartner und Vertragslaufzeit,
-10. steuerlich richtige Rechtseinheit,
-11. interne Budget-/Vorstandsfreigabe soweit erforderlich.
+1. konkrete Trainingsshirt-/Shorts-Artikel aus dem Teamshop,
+2. bestätigter Größenmix,
+3. Lagerort,
+4. operative Bestandsverantwortung,
+5. Eigentums-/Rückgabelogik bei Spielerabgängen,
+6. Sponsorlogo-Platzierung,
+7. bestehende Ausrüster- und Branchenexklusivitäten,
+8. separater Hauptpartner und Vertragslaufzeit,
+9. steuerlich richtige Rechtseinheit,
+10. interne Budget-/Vorstandsfreigabe soweit erforderlich.
 
 Es wurde **keine Bestellung ausgelöst** und **keine Sponsorenzusage erteilt**.
 
 ### 10. Nächster sinnvoller Schritt
 
-1. konkrete Trainingsshirt-/Shorts-Artikel aus dem TuS-Teamshop festlegen,
-2. finale Kosten für **50 Core-Sets** unter Berücksichtigung des bestehenden Rabatts, der konkreten Freiware, Veredelung und Versand belastbar ermitteln,
+1. auf Basis von **2.435 EUR Warenwert** das Hauptpartnerangebot `TuS Trainingspartner` konkretisieren,
+2. maximal drei bis fünf separate Partner mit echtem Story-Fit qualifizieren; bestehende oder warme Beziehungen vor Cold Prospects priorisieren,
 3. bestehende Ausrüster- und Sponsorlogo-Rechte klären,
-4. reale TuS-Größenverteilung erheben und Größenmix validieren,
-5. daraus das Hauptpartnerpaket mit echten Kosten finalisieren,
-6. maximal drei bis fünf priorisierte **separate** Partner mit echtem Story-Fit qualifizieren und nach Freigabe gezielt ansprechen,
-7. erst nach Finanzierung, Rechteprüfung und interner Freigabe bestellen.
+4. konkrete Trainingsshirt-/Shorts-Artikel und reale TuS-Größenverteilung festlegen,
+5. nach Freigabe die priorisierten Partner gezielt ansprechen,
+6. erst nach Finanzierung, Rechteprüfung und interner Freigabe bestellen.
 
 ## Relationship to other documents
 
