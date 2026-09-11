@@ -1,6 +1,6 @@
 # PROJECT STATE – Trainingskleidung Ausstattungsgrundstock
 
-**Stand:** 2026-09-11 – Slogan festgeschrieben, Start-Scope Shirt/Shorts, Zielbestand 50 Core-Sets  
+**Stand:** 2026-09-11 – SPORTINN als Ausrüster mit bestehendem Rabatt/Freiware bestätigt; separater Finanzierungspartner erforderlich  
 **Status:** Discovery  
 **Beschaffung:** Noch nicht gestartet  
 **Finanzierung / Sponsor:** Noch nicht zugesagt  
@@ -18,7 +18,7 @@ Es hält bestätigten Bedarf, Zielmenge, Beschaffungs- und Sponsoringlogik, offe
 
 Dieser Satz ist der verbindliche Projekt- und Partnerschaftsslogan.
 
-Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragfähig sein. Er wird erst bestellt, wenn realer Bedarf, Ausrüsterangebot, Rechte und Finanzierung belastbar geklärt sind.
+Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragfähig sein. Er wird erst bestellt, wenn realer Bedarf, Ausrüsterkonditionen, Rechte und Finanzierung belastbar geklärt sind.
 
 ## Main Content
 
@@ -64,18 +64,18 @@ Diese Verteilung ist **noch nicht bestellreif**. Vor Bestellung werden reale Gr�
 
 ### 5. Budgetstand
 
-Öffentliche SPORTINN/Joma-Preisreferenz vom 11.09.2026:
+Aktuelle SPORTINN/Joma-Preisreferenz vom 11.09.2026:
 
 - Trainingsshirt: ca. 16,90 EUR,
 - kurze Trainingshose: ca. 14,90 EUR.
 
-Ein Core-Set aus zwei Shirts und einer kurzen Hose liegt damit bei ca. **48,70 EUR** vor projektspezifischer Veredelung, Versand und Vereinsrabatten.
+Ein Core-Set aus zwei Shirts und einer kurzen Hose liegt damit rechnerisch bei ca. **48,70 EUR**.
 
-Für 50 Core-Sets ergibt sich ein reiner Warenwert von ca. **2.435 EUR**.
+Für 50 Core-Sets ergibt sich daraus ein rechnerischer Warenwert von ca. **2.435 EUR**.
 
-Bis zum echten Angebot wird mit einem vorläufigen Gesamtbudget von etwa **3.000–3.500 EUR** gearbeitet.
+Nach bestätigtem Vereinsstand ist der bestehende SPORTINN-Rabatt in den verwendeten Kleidungs-/Teamshoppreisen bereits berücksichtigt. Zusätzlich erhält der TuS bei Bestellungen Freiware. Die konkrete Freiware für diese Bestellung sowie Veredelung, Versand und sonstige projektspezifische Kosten sind noch nicht abschließend eingerechnet.
 
-Diese Werte ersetzen kein Lieferantenangebot.
+Bis zur finalen Bestellkalkulation bleibt daher die tatsächliche Projektsumme offen. Frühere grobe Budgetkorridore ersetzen keine belastbare Kalkulation.
 
 ### 6. Ausrüster- und Teamshopstatus
 
@@ -87,19 +87,23 @@ TuS-Informationsseite:
 
 `https://www.tus-mingolsheim.de/shop/`
 
-Der Teamshop ist die erste Referenz für die konkreten Shirt-/Shorts-Artikel.
+SPORTINN / Joma ist der bestehende Ausrüster. Bestätigt sind:
 
-Anzufragen bzw. zu klären:
+- bestehender Vereinsrabatt; dieser ist in den aktuell verwendeten Kleidungs-/Teamshoppreisen bereits berücksichtigt,
+- Freiware bei Bestellungen.
+
+Für dieses konkrete Projekt noch zu klären bzw. final zu kalkulieren sind:
 
 - konkrete Shirt- und Shorts-Artikel aus dem aktuellen TuS-Teamshop,
-- Angebot für **50 Core-Sets**,
+- finale Bestellkalkulation für **50 Core-Sets** unter Berücksichtigung der konkreten Freiware,
 - Veredelung TuS-Wappen,
 - zusätzliche Sponsorlogo-Veredelung,
-- Freiware / Rabatt,
 - Lieferzeit,
 - Serienverfügbarkeit / Nachbestellbarkeit,
 - Mannschaftsanprobe,
 - bestehende vertragliche Einschränkungen für weitere Sponsorlogos.
+
+SPORTINN wird für dieses Projekt **nicht als zusätzlicher Finanzierungspartner** geführt. Ausrüsterkonditionen und Sponsoringfinanzierung sind getrennt zu behandeln.
 
 ### 7. Sponsoringstatus
 
@@ -111,7 +115,9 @@ Verbindlicher Slogan:
 
 > **Vom ersten Training an Teil des Teams.**
 
-Der Partner wird nicht primär als Logo-Käufer positioniert. Er finanziert eine direkte Willkommensleistung und einen dauerhaft funktionierenden Ausstattungsprozess für Neuzugänge.
+Der gesuchte Partner ist ein **separater Sponsor/Partner** neben dem Ausrüster. Er wird nicht primär als Logo-Käufer positioniert, sondern finanziert eine direkte Willkommensleistung und einen dauerhaft funktionierenden Ausstattungsprozess für Neuzugänge.
+
+Besonders passend sind Unternehmen, bei denen Einstieg, Ausbildung, Recruiting, Onboarding, Teamzugehörigkeit oder regionale Arbeitgeberpositionierung glaubwürdig zur Story passen. Konkrete Leads und Kontaktstände werden ausschließlich im geschützten Partner-CRM geführt.
 
 Die priorisierte Partnerpipeline liegt im geschützten Drive-Artefaktraum. GitHub speichert keine vertraulichen Partnerkontakte oder Verhandlungsdetails.
 
@@ -133,14 +139,14 @@ Aktuelle Arbeitsprodukte:
 Vor Bestellung offen:
 
 1. konkreter Shirt-/Shorts-Artikel aus dem Teamshop,
-2. reales Angebot für 50 Core-Sets,
+2. finale Bestellkalkulation für 50 Core-Sets inklusive konkreter Freiware und Veredelung,
 3. bestätigter Größenmix,
 4. Lagerort,
 5. operative Bestandsverantwortung,
 6. Eigentums-/Rückgabelogik bei Spielerabgängen,
 7. Sponsorlogo-Platzierung,
 8. bestehende Ausrüster- und Branchenexklusivitäten,
-9. Hauptpartner und Vertragslaufzeit,
+9. separater Hauptpartner und Vertragslaufzeit,
 10. steuerlich richtige Rechtseinheit,
 11. interne Budget-/Vorstandsfreigabe soweit erforderlich.
 
@@ -149,11 +155,11 @@ Es wurde **keine Bestellung ausgelöst** und **keine Sponsorenzusage erteilt**.
 ### 10. Nächster sinnvoller Schritt
 
 1. konkrete Trainingsshirt-/Shorts-Artikel aus dem TuS-Teamshop festlegen,
-2. SPORTINN um ein Angebot für **50 Core-Sets** inklusive Veredelung, Freiware/Rabatt und Nachbestellbedingungen bitten,
+2. finale Kosten für **50 Core-Sets** unter Berücksichtigung des bestehenden Rabatts, der konkreten Freiware, Veredelung und Versand belastbar ermitteln,
 3. bestehende Ausrüster- und Sponsorlogo-Rechte klären,
 4. reale TuS-Größenverteilung erheben und Größenmix validieren,
-5. danach das Hauptpartnerpaket mit echten Kosten finalisieren,
-6. maximal drei bis fünf priorisierte Partner gezielt ansprechen,
+5. daraus das Hauptpartnerpaket mit echten Kosten finalisieren,
+6. maximal drei bis fünf priorisierte **separate** Partner mit echtem Story-Fit qualifizieren und nach Freigabe gezielt ansprechen,
 7. erst nach Finanzierung, Rechteprüfung und interner Freigabe bestellen.
 
 ## Relationship to other documents
@@ -171,7 +177,7 @@ Es wurde **keine Bestellung ausgelöst** und **keine Sponsorenzusage erteilt**.
 
 Der Projektzustand wird aktualisiert, sobald sich mindestens einer dieser Punkte ändert:
 
-- reales Ausrüsterangebot,
+- reale Bestellkalkulation / Ausrüsterkondition,
 - Zielmenge oder Core-Set,
 - Größenmix,
 - Sponsorstatus / Finanzierung,
