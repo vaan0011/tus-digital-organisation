@@ -190,23 +190,27 @@ Doppelte Pflege derselben Detailinformation wird vermieden.
 
 ### 13. Aktueller Runtime-Checkpoint
 
-**Stand:** 2026-09-10
+**Stand:** 2026-09-11
 
 Abgeschlossen:
 
-- aktuelles Portfolio mit kommunalen, regionalen/EU-, Landes-, Bundes-, Verbands-, Stiftungs- und Unternehmenswegen abgeglichen,
-- bestehende Dossiers, offener WISO-Antrag, Ausschlüsse und Lessons Learned geprüft,
-- drei neue qualifizierte Projektzuordnungen in `ACTIVE-OPPORTUNITIES.md` integriert,
-- LED Media Screen im aktuellen Scope auf C für direkte Zuschusssuche gesetzt,
-- EU-Chancen ohne realen Partner / Projekt von B+ auf B zurückgestuft.
+- aktuellen Funding-Stand auf `main` gebootstrapt und heutige Primärquellen für die aktive Queue erneut geprüft,
+- WISO-Frist als abgelaufen bestätigt; auf `main` weiterhin kein Einreichungsnachweis dokumentiert,
+- neues formales Projekt `Trainingskleidung Ausstattungsgrundstock` gegen bestehende Förderwege gespiegelt,
+- **neuen B+-Treffer OPP-007** `Trainingskleidung × Kellogg’s Herzensprojekt 2026` qualifiziert,
+- vereinsinterne Kellogg’s-Projektauswahl als Gate dokumentiert: nur ein Projekt pro Verein,
+- Funding-Empfehlung dokumentiert: Trainingskleidung für Kellogg’s bevorzugen, sofern reales Angebot ≤ 5.000 €, während Großfeldtore separat über die starke BSB-Sportgeräteförderung weiterlaufen,
+- BSB Sportgeräte, BSB Sportstättenbau, § 16i, BSB Inklusion, Jugendstiftung und Aktion Mensch gegen aktuelle offizielle Quellen re-verifiziert,
+- keine neuen belastbaren A-Treffer aus LEADER/Jugend/Inklusion konstruiert, weil weiterhin kein entsprechendes umsetzungsreifes reales TuS-Projekt dokumentiert ist.
 
 Aktive Queue:
 
-1. WISO-Einreichungsstatus am 10.09.2026 klären.
-2. Arbeitsplatz-Förderfähigkeit bis 18.09.2026 beim Jobcenter Bruchsal vorabklären.
-3. Kellogg’s-Go/No-Go für die Großfeldtore bis 23.09.2026.
-4. BSB-Komponentenklärung vor jeder Torbestellung.
+1. **bis 18.09.2026:** Arbeitsplatz-Förderfähigkeit beim Jobcenter Bruchsal vorabklären; kein Arbeitsvertrag vorher.
+2. **bis 23.09.2026:** Kellogg’s-Go/No-Go und Auswahl **Trainingskleidung vs. Großfeldtore**.
+3. Bei Trainingskleidung-Go: reales SPORTINN/Joma-Angebot, konkreten Bestand, 400-Zeichen-Text und Voting-Plan bis 24.09. schließen; Ziel-Einreichung 25.09.
+4. BSB-Komponentenklärung vor jeder Torbestellung; BSB-Chance unabhängig von Kellogg’s weiterführen.
 5. Historienarchiv-Vorabskizze bis 15.10.2026.
+6. WISO nur dann auf `eingereicht` setzen, wenn ein belastbarer externer Einreichungsnachweis vorliegt; sonst 2026 geschlossen lassen.
 
 Externe Gates:
 
