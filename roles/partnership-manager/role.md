@@ -72,11 +72,15 @@ Der Chat ist Arbeitsraum. GitHub ist das dauerhafte Organisationsgedächtnis fü
 
 GitHub ist nicht das operative CRM.
 
-Partnerstatus, Kontakte, Wiedervorlagen, Vertrags-/Akquisestatus und nicht öffentliche Konditionen werden in einer dafür geeigneten geschützten operativen Quelle geführt.
+Die verbindliche geschützte operative Source of Truth ist aktuell das native Google Sheet:
 
-Der aktuelle Stand und die Runtime-Reife dieser Quelle sind in `../../knowledge/sponsoring/CURRENT-STATE.md` dokumentiert.
+`TuS Partner CRM – Operative Source of Truth`
 
-Eine wiederkehrende Partner-Runtime wird erst aktiviert, wenn diese operative Quelle als verbindliche, geschützte und zuverlässig beschreibbare Source of Truth festgelegt ist. Es wird keine zweite CRM-Datenwelt nur für Automatisierung aufgebaut.
+Der Tab `Partner-CRM` enthält Partnerstatus, Wiedervorlagen, nächste Schritte, Zieldaten, Potenziale, Prioritäten sowie Projekt-/Kampagnenbezug.
+
+Das ältere `TuS_Partner_System_V1.xlsx` bleibt historische Arbeitsreferenz und ist nicht mehr die operative CRM-Wahrheit.
+
+Die wiederkehrende Partnerarbeit folgt `runtime.md`. Langfristig kann das interne Partnerportal die operative CRM-Verantwortung übernehmen; es wird keine parallele Datenwelt aufgebaut.
 
 ### Vertrauliche Daten
 
@@ -92,6 +96,7 @@ Vor wesentlicher Partnerarbeit wird `../../architecture/memory-router.md` angewe
 
 - dieser Rolle,
 - `partnership-standard.md`,
+- `runtime.md`,
 - `../../knowledge/sponsoring/CURRENT-STATE.md`,
 - `../../knowledge/sponsoring/README.md`,
 - relevanten ADRs,
@@ -132,6 +137,7 @@ Eine relevante Sponsoring-Aufgabe ist abgeschlossen, wenn:
 
 - `START-PROMPT.md`
 - `partnership-standard.md`
+- `runtime.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../knowledge/sponsoring/CURRENT-STATE.md`
 - `../../architecture/memory-router.md`
@@ -145,6 +151,4 @@ Eine relevante Sponsoring-Aufgabe ist abgeschlossen, wenn:
 
 ## Future Development
 
-Die Rolle wird anhand realer Partnerarbeit weiterentwickelt. Neue Regeln werden nur aufgenommen, wenn sie wiederkehrenden Nutzen bringen oder relevante Risiken reduzieren.
-
-Nächster Runtime-Schritt ist nicht eine zusätzliche Automation, sondern zuerst die Festlegung einer belastbaren operativen Partner-/CRM-Source-of-Truth. Danach kann eine wiederkehrende Runtime für Wiedervorlagen, Partner-Check-ins, Kampagnen und projektbezogene Partnerchancen ergänzt werden.
+Die Rolle wird anhand realer Partnerarbeit weiterentwickelt. Nächster Reifegewinn ist die vollständige Konsolidierung der etwa 50 Bestandspartner in der operativen CRM-Quelle und anschließend die schrittweise Übernahme der CRM-Verantwortung durch das interne Partnerportal, sobald dessen Datenmodell und MVP belastbar sind.
