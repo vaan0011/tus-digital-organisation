@@ -26,9 +26,10 @@ Arbeite nicht aus alter Chat-Erinnerung. Bootstrape deine Arbeit aus dem aktuell
 4. Lies `projects/README.md` und für die konkrete Aufgabe die zuständige `PROJECT-STATE.md` sowie die projektspezifische Dokumentation.
 5. Prüfe den aktuellen Quellcode, bestehende offene bzw. relevante Pull Requests und den dokumentierten Last Known Good, bevor du eine Änderung planst.
 6. Prüfe nur die für die Aufgabe relevanten ADRs und Architekturquellen. Bei architekturrelevanten Änderungen sind insbesondere `architecture/stability-and-simplicity.md`, `decisions/architecture-checklist.md` und bestehende einschlägige ADRs zu berücksichtigen.
-7. Bei sichtbaren UI-/Frontend-Änderungen lies zusätzlich `design/design-principles.md`, `design/ui-standard.md` und `design/logo.md`. Bei Homepage-Arbeit gelten außerdem `design/homepage-standard.md` und `knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`.
-8. Bei neuen Formularen, personenbezogenen Datenflüssen, externen Embeds/APIs, Cookies/Tracking oder Berechtigungsänderungen lies zusätzlich `roles/data-protection-manager/privacy-standard.md` und behandle den Privacy Check bis zur fachlichen Prüfung als offen.
-9. Lade fachliche Quellen anderer Rollen nur, wenn sie für die konkrete Funktion oder Datenquelle wirklich benötigt werden, z. B. Sponsoring, Matchday, Archiv oder Events.
+7. Bei sichtbaren UI-/Frontend-Änderungen lies zusätzlich `design/design-principles.md`, `design/ui-standard.md` und `design/logo.md`. Bei Homepage-Arbeit gelten außerdem `design/homepage-standard.md`, `design/homepage-contact-architecture.md` und `knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`.
+8. Bei Platzbelegungsarbeit lies zusätzlich `projects/platzbelegung/README.md` und `projects/platzbelegung/PROJECT-STATE.md`. Die Platzbelegung wird als eigenes WordPress-Plugin umgesetzt; ein direkt eingebetteter Google-Kalender ist nicht das Zielbild.
+9. Bei neuen Formularen, personenbezogenen Datenflüssen, externen Embeds/APIs, Cookies/Tracking oder Berechtigungsänderungen lies zusätzlich `roles/data-protection-manager/privacy-standard.md` und behandle den Privacy Check bis zur fachlichen Prüfung als offen.
+10. Lade fachliche Quellen anderer Rollen nur, wenn sie für die konkrete Funktion oder Datenquelle wirklich benötigt werden, z. B. Sponsoring, Matchday, Archiv oder Events.
 
 Die Rolle arbeitet **projekt-/Auftrags-/PR-getrieben**. Es gibt bewusst keine tägliche allgemeine WordPress-Runtime. Ein neuer Arbeitslauf beginnt mit einer konkreten Entwicklungsaufgabe, einem Projekt, Issue, Fehlerbild oder PR.
 
@@ -69,7 +70,10 @@ Dein Ziel ist, **die einfachste robuste WordPress-Lösung zu bauen, die den real
 - `../../design/ui-standard.md`
 - `../../design/logo.md`
 - `../../design/homepage-standard.md`
+- `../../design/homepage-contact-architecture.md`
 - `../../knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`
+- `../../projects/platzbelegung/README.md`
+- `../../projects/platzbelegung/PROJECT-STATE.md`
 - `../data-protection-manager/privacy-standard.md`
 
 ## Future Development
