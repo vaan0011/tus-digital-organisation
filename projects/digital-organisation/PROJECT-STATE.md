@@ -1,6 +1,6 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-09-11 – WISO-Friststatus mit aktuellem Funding-Stand reconciliiert  
+**Stand:** 2026-09-11 – WISO 2026 geschlossen; Ersatzförderung als aktiver Suchauftrag aufgenommen  
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
@@ -153,25 +153,36 @@ Bereits umgesetzt bzw. organisationsweit eingeführt sind unter anderem:
 - geeignete Programme nur bei realem Projektfit verfolgen,
 - Gesamtprojekt bei Bedarf in messbare Arbeitspakete schneiden,
 - förderfähige Leistungen, Zeitraum, Budget und Eigenanteil definieren,
-- vor förderschädlichem Vorhabenbeginn Bedingungen prüfen.
+- vor förderschädlichem Vorhabenbeginn Bedingungen prüfen,
+- Programme nach formaler Nutzbarkeit vor bzw. nach Vorliegen eines aktuellen Gemeinnützigkeitsnachweises trennen.
 
 ### 8. Förderrelevanz – aktueller Stand
 
-Der bisher qualifizierte kurzfristige Förderweg war:
+Der bisher kurzfristig qualifizierte Förderweg war:
 
-- **WISO MeinVerein des Jahres 2026 – Projektaward, Kategorie Digitalisierung**
-- offizielle Frist: **10.09.2026, 23:59 Uhr**
-- möglicher Preis: 10.000 €, 3.000 € oder 1.000 €
-- Antragsentwurf: `../../knowledge/funding/applications/wiso-meinverein-2026/APPLICATION-DRAFT.md`
-- Opportunity-Kontext: `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
+- **WISO MeinVerein des Jahres 2026 – Projektaward, Kategorie Digitalisierung**.
 
-Die Frist ist inzwischen abgelaufen. Laut aktuellem `../../knowledge/funding/CURRENT-STATE.md` ist auf `main` **kein Einreichungsnachweis dokumentiert**.
+Die Chance ist für 2026 geschlossen.
 
-Deshalb gilt verbindlich:
+Grund ist nicht fehlender Projektfit, sondern eine formale Voraussetzung: Zum Bewerbungszeitpunkt lag dem TuS **kein aktueller Gemeinnützigkeitsnachweis** vor. Nach Nutzerangabe wird dieser voraussichtlich erst im Herbst 2026 im Zusammenhang mit der nächsten Steuererklärung wieder aktuell verfügbar.
 
-- wenn extern fristgerecht eingereicht wurde, Eingangsbestätigung/Screenshot bzw. belastbaren Status in der Förderakte dokumentieren und den Vorgang als `eingereicht` führen,
-- wenn nicht fristgerecht eingereicht wurde, ist die WISO-Chance 2026 geschlossen,
-- es wird keine nachträgliche Einreichungsmöglichkeit behauptet.
+Daraus folgt verbindlich:
+
+- WISO 2026 wird nicht weiter als offene oder versehentlich verpasste Chance geführt,
+- es wird nicht weiter nach einem Einreichungsnachweis gesucht,
+- die fehlende aktuelle Gemeinnützigkeitsbescheinigung wird als formaler Blocker und Lesson Learned dokumentiert,
+- der Funding & Grants Manager sucht aktiv nach **alternativen Förderprogrammen für die Digitale Vereinsorganisation**,
+- Kandidaten werden danach unterschieden, ob sie bereits jetzt ohne neuen Nachweis realistisch nutzbar sind oder erst nach Vorliegen des neuen Nachweises im Herbst,
+- bei künftigen Programmen wird die geforderte Aktualität des Gemeinnützigkeits-/Freistellungsnachweises frühzeitig geprüft.
+
+Der neue Förderauftrag richtet sich insbesondere auf real passende Programme für:
+
+- Digitalisierung im Verein,
+- Organisations- und Vereinsentwicklung,
+- Ehrenamtsentlastung,
+- digitale Kompetenzen und Teilhabe,
+- gemeinnützige bzw. soziale Innovation,
+- Professionalisierung ehrenamtlicher Organisationen.
 
 Für spätere Zuschussprogramme bleibt das breite Organisationsprogramm bei Bedarf in klar messbare Arbeitspakete oder Teilvorhaben zu schneiden. Förderlogik bestimmt nicht die Organisation, sondern folgt realem Fachbedarf.
 
@@ -179,7 +190,7 @@ Für spätere Zuschussprogramme bleibt das breite Organisationsprogramm bei Beda
 
 Besonders relevant sind:
 
-- Funding & Grants Manager – Förderprüfung und mögliche Antragserstellung,
+- Funding & Grants Manager – Ersatzförderung recherchieren, Förderfähigkeit und Nachweisanforderungen prüfen,
 - Project Portfolio Manager – Projekttransparenz und Abgrenzung,
 - WordPress Developer – technische Umsetzungen und gemeinsame Architektur,
 - Datenschutz & IT – Daten, Berechtigungen und Systemgrenzen,
@@ -194,15 +205,17 @@ Besonders relevant sind:
 - Rollen, Mitarbeiter und Verantwortungsbereiche werden vermischt,
 - zu viele Tools oder Integrationen erhöhen Komplexität statt Nutzen,
 - Förderlogik bestimmt die Organisation statt umgekehrt,
-- bereits begonnene Leistungen können bei einzelnen Programmen nicht förderfähig sein.
+- bereits begonnene Leistungen können bei einzelnen Programmen nicht förderfähig sein,
+- formale Fördervoraussetzungen wie ein hinreichend aktueller Gemeinnützigkeitsnachweis werden zu spät erkannt.
 
 ### 11. Nächster sinnvoller Schritt
 
-1. Außerhalb von GitHub prüfen, ob WISO bis 10.09.2026, 23:59 Uhr tatsächlich eingereicht wurde.
-2. Bei Einreichung: Nachweis und tatsächlich eingereichten Wortlaut in der Förderakte dokumentieren; bei Nicht-Einreichung: Chance 2026 schließen.
-3. Unabhängig davon den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand, Zeitraum und offenem Budget strukturieren.
-4. Die aktuell bereits real eingesetzten Rollen/Runtimes als Pilotierungs- und Wirkungsbelege erfassen.
-5. Weitere Förderprogramme nur bei echtem Fachzweck und aktuellem Primärquellen-Fit verfolgen.
+1. WISO 2026 als geschlossen behandeln und nicht weiter auf Einreichungsstatus prüfen.
+2. Funding & Grants Manager recherchiert systematisch alternative Förderprogramme für die Digitale Vereinsorganisation.
+3. Kandidaten nach `jetzt nutzbar` und `nach aktuellem Gemeinnützigkeitsnachweis nutzbar` trennen.
+4. Den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand, Zeitraum und offenem Budget strukturieren.
+5. Die aktuell bereits real eingesetzten Rollen/Runtimes als Pilotierungs- und Wirkungsbelege erfassen.
+6. Sobald der neue Gemeinnützigkeitsnachweis vorliegt, davon abhängige Programme erneut formal prüfen.
 
 ## Relationship to other documents
 
@@ -231,6 +244,7 @@ Der Projektzustand wird aktualisiert, wenn sich mindestens eines ändert:
 - Projektzuschnitt,
 - Arbeitspakete,
 - Förderprogramm oder Förderstrategie,
+- Status bzw. Verfügbarkeit des aktuellen Gemeinnützigkeitsnachweises,
 - Budget / Finanzierung,
 - technische Betriebsarchitektur,
 - relevante Pilotierung,
