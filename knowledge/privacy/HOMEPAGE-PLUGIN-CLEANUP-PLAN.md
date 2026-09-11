@@ -2,220 +2,187 @@
 
 ## Purpose
 
-Dieses Dokument übersetzt die bestätigte Plugin-Inventur der produktiven TuS-Homepage in eine sichere, ausführbare Bereinigungsreihenfolge.
+Dieses Dokument beschreibt die **spätere** kontrollierte Ablösung der heutigen WordPress-Altplugins, nachdem die benötigten TuS-Zielfunktionen entwickelt und abnahmefähig sind.
 
-Es ist **kein Auftrag zur sofortigen Massen-Deaktivierung**. Jede Entfernung erfolgt erst nach bestätigter Nichtnutzung oder nach erfolgreicher Migration der abhängigen Funktion.
+Es ist **kein aktueller Arbeitsauftrag an den WordPress Developer für das Produktivsystem**. Mathias hat derzeit keinen WordPress-Backendzugriff und arbeitet primär an der Entwicklung der TuS-eigenen Plugins und Homepage-Komponenten aus GitHub heraus.
+
+Die bestehende Plugin-Inventur dient deshalb aktuell vor allem als **Anforderungskarte**: Sie zeigt, welche heutigen Funktionen später durch eigene TuS-Produkte ersetzt, konsolidiert oder bewusst beibehalten werden müssen.
 
 ## Core Principle
 
-> **Erst Wiederherstellbarkeit sichern. Dann Abhängigkeit verstehen. Dann ersetzen. Erst danach entfernen.**
+> **Erst Zielsystem bauen. Dann kontrolliert migrieren. Erst danach Alttechnik abschalten.**
 
-Die bestehende Homepage bleibt während der Migration funktionsfähig. Eine kleinere Plugin-Landschaft ist Ziel, aber nicht auf Kosten von Verfügbarkeit, Inhalten oder Daten.
+Produktive Backend-Eingriffe erfolgen erst in einer späteren Migrationsphase durch bzw. gemeinsam mit einer autorisierten Person mit WordPress-/Hostingzugriff.
 
 ## Main Content
 
-### 1. Wave 0 – Sicherheitsnetz vor jeder Bereinigung
+### 1. Aktuelle Phase – Entwicklung vor Bereinigung
 
-Bevor das erste Plugin deaktiviert wird, muss Mathias im Produktivsystem:
+Der aktuelle Schwerpunkt von Mathias ist die Entwicklung und Stabilisierung der TuS-Zielsysteme, insbesondere:
 
-1. den aktuellen WordPress-/PHP-/Theme-Stand festhalten,
-2. alle aktiven **und inaktiven** Plugins erfassen,
-3. Backup-Ziel, Backup-Lauf und Wiederherstellungsmöglichkeit prüfen,
-4. mindestens einen realen Restore-Weg bestätigen oder auf einer Test-/Staging-Kopie verifizieren,
-5. zentrale Smoke-Tests festlegen:
-   - Startseite,
-   - Navigation,
-   - News/Beiträge,
-   - Jugend-/Mannschaftsseiten,
-   - Platzbelegung,
-   - Veranstaltungskalender,
-   - Formulare,
-   - Partner-/Logo-Darstellung,
-   - PDF/Magazin,
-   - fussball.de-/Spielinhalte,
-   - Login/Admin,
-6. bei Plugins mit eigenen Datenmodellen prüfen, ob Deaktivierung Daten nur ausblendet oder tatsächlich verändert/löscht.
+- `Verein Turnierplaner / Event Planner`,
+- `TuS Platzbelegung`,
+- Homepage-Komponenten und Datenadapter,
+- MatchCard / kontrollierte Spielplandatenintegration,
+- Partner-/Sponsor-Komponenten,
+- Kontakt-/Formularschnittstellen zur späteren Rollenpostfach-/Poststellenarchitektur,
+- weitere projektspezifische WordPress-Plugins aus dem Portfolio.
 
-**Stop-Kriterium:** Keine Bereinigung, solange Restore-Fähigkeit unklar ist.
+Die Altplugin-Liste hilft dabei zu erkennen, welche Funktionen heute existieren und welche Kompatibilitäts-/Migrationsfälle später berücksichtigt werden müssen.
 
-### 2. Wave 1 – kleine UI-/Hilfsplugins mit geringer Zielrelevanz
+Mathias führt **nicht** ohne ausdrücklich bereitgestellten Zugang und Auftrag aus:
 
-Diese Plugins sind frühe **Prüfkandidaten**, aber erst nach Nutzungssuche in Seiten, Widgets, Shortcodes und Theme:
+- Plugin-Deaktivierungen auf Produktion,
+- Plugin-Löschungen,
+- produktive Benutzer-/Rollenänderungen,
+- Backup-/Restore-Operationen,
+- Hosting-/Serveränderungen,
+- produktive Formular-/Mailänderungen,
+- Cookie-/Consent-Konfigurationsänderungen.
 
-- `WP-PageNavi`
-- `linkButton`
-- `Button Widget by Loomisoft`
-- `Yoast Duplicate Post`
-- `Advanced Editor Tools`
+### 2. Verantwortungsmodell der späteren Migration
 
-Vorgehen je Plugin:
+Für die spätere Umstellung werden drei Verantwortungen getrennt:
 
-1. Nutzung suchen,
-2. falls keine Nutzung: deaktivieren,
-3. Smoke-Test,
-4. mindestens einen normalen Redaktions-/Frontend-Durchlauf prüfen,
-5. erst anschließend löschen.
+#### WordPress Developer
 
-`Yoast Duplicate Post` und `Advanced Editor Tools` bleiben bestehen, falls der reale Redaktionsprozess sie weiterhin sinnvoll nutzt.
+Mathias liefert:
 
-### 3. Wave 2 – Doppelungen konsolidieren
+- fertige Ersatzfunktion,
+- technische Installations-/Migrationshinweise,
+- bekannte Daten-/Shortcode-/Widget-Abhängigkeiten,
+- Smoke-Test-Kriterien,
+- Rückfallhinweise soweit technisch sinnvoll,
+- notwendige Änderungen am eigenen Plugin/Frontend.
 
-#### 3.1 Backup
+#### Autorisierte Backend-Person
 
-Aktuell:
+Eine Person mit produktivem WordPress-/Hostingzugriff führt aus bzw. bestätigt:
 
-- `UpdraftPlus`
-- `BackUpWordPress`
-- mögliche Hosting-Backups noch separat zu bestätigen
+- Backups und Restore-Fähigkeit,
+- Plugin-/Theme-/Benutzerinventur,
+- produktive Deaktivierung/Löschung,
+- Formular-/Mail-/Hostingkonfiguration,
+- ggf. Staging-/Produktionsmigration.
 
-Ziel:
+#### Data Protection & Information Protection Manager
 
-- genau eine dokumentierte operative Backup-/Restore-Strategie,
-- kein Parallelbetrieb mehrerer Plugins ohne klaren Zweck.
+David prüft bei relevanten Änderungen insbesondere:
 
-Reihenfolge:
+- Datenflüsse,
+- externe Dienste,
+- Cookies/Storage,
+- Formulare und Empfänger,
+- Aufbewahrung/Löschung,
+- Auswirkungen auf Datenschutzerklärung und Kontaktarchitektur.
 
-1. Backup-Ziele und Zeitpläne vergleichen,
-2. Restore testen,
-3. Zielsystem auswählen,
-4. nicht benötigtes Backup-Plugin deaktivieren,
-5. Restore/Backup erneut prüfen,
-6. erst danach entfernen.
+### 3. Spätere Migrationsreihenfolge
 
-#### 3.2 Rollen und Rechte
+Die folgende Reihenfolge wird **erst aktiviert, wenn die jeweilige Ersatzfunktion vorhanden und ein Backend-Migrationsfenster freigegeben ist**.
 
-Aktuell:
+#### Phase A – Sicherheitsnetz
 
-- `User Role Editor`
-- `Advanced Access Manager`
+Vor produktiver Abschaltung:
 
-Vor Konsolidierung zwingend inventarisieren:
+1. Backup-/Restore-Weg durch autorisierte Backend-Person bestätigen,
+2. betroffene Seiten/Funktionen identifizieren,
+3. Smoke-Tests festlegen,
+4. Ersatzfunktion installiert bzw. abnahmefähig bereitstellen,
+5. Rollback-Möglichkeit festlegen.
 
-- Custom Roles,
-- Custom Capabilities,
-- Content-/Seitenzugriffsregeln,
-- Sonderrechte von Redakteuren, Trainern, Event-/Plugin-Rollen,
-- Abhängigkeiten eigener Plugins.
+Ohne bestätigte Wiederherstellbarkeit keine produktive Bereinigung.
 
-**Stop-Kriterium:** Keine Entfernung, solange nicht klar ist, welches Plugin welche produktive Regel erzeugt.
+#### Phase B – kleine UI-/Hilfsplugins
 
-### 4. Wave 3 – PDF-/Publikationslandschaft vereinfachen
+Spätere Prüfkandidaten:
 
-Aktuell:
+- `WP-PageNavi`,
+- `linkButton`,
+- `Button Widget by Loomisoft`,
+- `Yoast Duplicate Post`,
+- `Advanced Editor Tools`.
 
-- `PDF Embedder`
-- `Gutenberg PDF Viewer Block`
-- `3D FlipBook : DearFlip Lite`
+Sie werden nur entfernt, wenn ihre tatsächliche Nutzung ausgeschlossen oder vollständig ersetzt ist.
 
-Ziel:
+#### Phase C – Doppelungen
 
-- normale PDFs möglichst über eine einfache Standarddarstellung bzw. Download/Browser-Viewer,
-- nur dort eine Spezialdarstellung, wo echter Mehrwert besteht,
-- Jubiläumsmagazin ggf. bewusst separat behandeln.
+Zu konsolidieren:
 
-Vor Entfernung:
+- `UpdraftPlus` + `BackUpWordPress` + ggf. Hosting-Backup,
+- `User Role Editor` + `Advanced Access Manager`,
+- `PDF Embedder` + `Gutenberg PDF Viewer Block` + `DearFlip Lite`.
 
-- bestehende Beiträge/Seiten auf Blocks/Shortcodes prüfen,
-- relevante PDFs dokumentieren,
-- Ersatzdarstellung testen,
-- Legacy-Inhalte migrieren.
+Diese Bereiche werden nicht während der reinen Plugin-Entwicklung angefasst.
 
-### 5. Wave 4 – fachliche Altplugins durch TuS-Zielsysteme ersetzen
+#### Phase D – fachliche Altplugins durch TuS-Zielsysteme ersetzen
 
-Diese Plugins werden **erst entfernt, wenn der fachliche Ersatz produktiv vorhanden ist**:
+Geplante Zuordnung:
 
-- `Kalender` → Event Planner / neue Eventarchitektur
-- `Timetable and Event Schedule` → Event Planner + TuS Platzbelegung
-- Google-Calendar-iframe → eigenes Plugin `TuS Platzbelegung`
-- `Meinturnierplan.de Widget Viewer` → Verein Turnierplaner, soweit der reale Use Case abgedeckt ist
-- `Include Fussball.de Widgets` → kontrollierte MatchCard-/Spieldatenintegration
-- `Logo Showcase with Slick Slider` → Partnerportal-/PartnerCard-Komponente
-- `Timeline Express` + HTML Excerpts Add-on → Archiv-/Historienkomponente
+- `Kalender` → Event Planner / neue Eventarchitektur,
+- `Timetable and Event Schedule` → Event Planner + TuS Platzbelegung,
+- Google-Calendar-iframe → `TuS Platzbelegung`,
+- `Meinturnierplan.de Widget Viewer` → Verein Turnierplaner, soweit der reale Use Case abgedeckt ist,
+- `Include Fussball.de Widgets` → MatchCard-/Spieldatenintegration,
+- `Logo Showcase with Slick Slider` → Partner-/Sponsor-Komponente,
+- `Timeline Express` + HTML Excerpts Add-on → Archiv-/Historienkomponente.
 
-Für jedes Plugin gilt:
+Grundablauf später:
 
-`Ersatz produktiv → Inhaltsmigration → Vergleichstest → Altplugin deaktivieren → Smoke-Test → entfernen`
+`Ersatz fertig → Test → produktive Migration → Vergleichstest → Altplugin deaktivieren → Smoke-Test → erst danach entfernen`
 
-### 6. Wave 5 – Layout-/Page-Builder-Altlasten
+#### Phase E – Page Builder / Layout
 
-Spät migrieren:
+`Colibri Page Builder` und `Stackable` bleiben bis zur vollständigen Migration der davon abhängigen Seiten bestehen.
 
-- `Colibri Page Builder`
-- `Stackable – Gutenberg Blocks`
-- ggf. weitere Layout-/Widget-Abhängigkeiten
+Sie sind keine aktuellen Cleanup-Aufträge an Mathias, sondern Randbedingung des Homepage-Neuaufbaus.
 
-Diese Plugins können große Teile der bestehenden Homepage rendern. Sie werden nicht als normale Cleanup-Kandidaten behandelt.
+#### Phase F – Formulare, Privacy und externe Dienste
 
-Ziel:
+Gemeinsam später zu bewerten:
 
-- neue Homepage bzw. betroffene Seiten vollständig im TuS-Zielsystem aufbauen,
-- Legacy-Blöcke/Shortcodes identifizieren,
-- Seite für Seite migrieren,
-- erst nach vollständiger Ablösung den Builder entfernen.
+- `Forminator`,
+- `DSGVO All in one for WP`,
+- `Akismet`,
+- `Jetpack`.
 
-**Stop-Kriterium:** Keine Deaktivierung von Colibri/Stackable auf Produktion, solange noch aktive Seiten davon abhängen.
+Hier entscheidet der reale finale Datenfluss. Ziel ist nicht, bestehende Plugins nur wegen ihrer Existenz nachzubauen, sondern die benötigte Funktion möglichst einfach und datensparsam zu lösen.
 
-### 7. Wave 6 – Formulare, Privacy, Anti-Spam und externe Dienste
+### 4. Was Mathias heute aus der Plugin-Liste ableiten soll
 
-Gemeinsam prüfen:
+Bei der Entwicklung eines neuen TuS-Plugins prüft Mathias nur die für sein Projekt relevanten Alt-Funktionen:
 
-- `Forminator`
-- `DSGVO All in one for WP`
-- `Akismet Anti-spam`
-- `Jetpack`
+- Welche Funktion ersetzt das neue Plugin?
+- Welche Daten oder Darstellungen müssen später migriert werden?
+- Gibt es Shortcodes, URLs oder Frontend-Verhalten, das beim Übergang berücksichtigt werden sollte?
+- Welche externe Abhängigkeit können wir im Zielsystem vermeiden?
+- Welche klare Abnahmebedingung zeigt, dass der Ersatz wirklich vollständig ist?
 
-Diese Plugins bilden möglicherweise zusammen Datenflüsse, Cookies, Spam-Schutz, Formularspeicherung, CDN und weitere externe Funktionen ab.
+Dafür ist kein produktiver Backendzugriff nötig. Wo reale Alt-Konfigurationen fehlen, wird die Information gezielt beim Nutzer bzw. einer Backend-Person angefordert.
 
-Reihenfolge:
+### 5. Stop-Kriterien
 
-1. aktive Formulare und gespeicherte Einträge inventarisieren,
-2. Empfänger und E-Mail-Versand prüfen,
-3. externe Requests/Cookies/Storage aufnehmen,
-4. Jetpack-Module einzeln bestimmen,
-5. klären, ob `i0.wp.com` aus Jetpack Site Accelerator stammt,
-6. künftige Formular-/Poststellenarchitektur definieren,
-7. nur tatsächlich benötigte Funktionen in die Zielarchitektur übernehmen,
-8. Datenschutzerklärung aus dem finalen realen Zustand ableiten.
+Keine produktive Plugin-Abschaltung, wenn mindestens einer dieser Punkte offen ist:
 
-**Kein Plugin bleibt allein deshalb installiert, weil seine Datenschutzerklärung es erwähnt.** Dokumentation folgt der Technik, nicht umgekehrt.
+- kein autorisierter Backendzugriff,
+- kein bestätigtes Backup/Restore,
+- Ersatzfunktion nicht abnahmefähig,
+- Nutzung/Abhängigkeit unklar,
+- notwendige Datenmigration ungeklärt,
+- keine Smoke-Test-Kriterien,
+- Privacy-/Datenflussänderung ungeprüft.
 
-### 8. Update-Regel während der Migration
+### 6. Definition of Done der späteren Plugin-Migration
 
-Plugins, die noch produktiv benötigt werden, dürfen nicht monatelang ungepflegt bleiben, nur weil sie später ersetzt werden.
+Die Migration ist abgeschlossen, wenn:
 
-Für produktiv benötigte Plugins gilt:
-
-- Update-Risiko und Changelog prüfen,
-- Backup/Restore vor kritischen Updates sicherstellen,
-- Updates in kleinen Blöcken,
-- Smoke-Test nach jedem Risikoblock,
-- nicht gleichzeitig Update + Migration + Datenmodelländerung vermischen.
-
-### 9. Arbeitsstatus je Plugin
-
-Mathias pflegt für aktive Bereinigungsarbeit je Plugin nur den notwendigen Status:
-
-- `NUTZUNG OFFEN`
-- `ABHÄNGIGKEIT BESTÄTIGT`
-- `ERSATZ FEHLT`
-- `ERSATZ BEREIT`
-- `DEAKTIVIERUNG GETESTET`
-- `ENTFERNT`
-- `BLEIBT`
-
-Keine zweite komplexe Plugin-Datenbank aufbauen. Die Migrationsmatrix und konkrete Projektzustände bleiben die führenden Quellen.
-
-### 10. Definition of Done der ersten Bereinigungsphase
-
-Die erste Phase ist abgeschlossen, wenn:
-
-- Backup-/Restore-Fähigkeit bestätigt ist,
-- inaktive Plugins ebenfalls inventarisiert sind,
-- die kleinen UI-/Hilfsplugins auf tatsächliche Nutzung geprüft sind,
-- Backup-Doppelung entschieden ist,
-- Rollen-/Rechte-Doppelung vollständig verstanden ist,
-- keine Entfernung kaputte Seiten, Shortcodes oder Rechte hinterlassen hat,
-- der nächste fachliche Ersatzblock klar priorisiert ist.
+- jede benötigte Alt-Funktion ersetzt oder bewusst verworfen wurde,
+- produktive Abhängigkeiten geprüft wurden,
+- Doppelungen aufgelöst sind,
+- keine kaputten Shortcodes/Widgets/Seiten verbleiben,
+- Backup-/Restore-Strategie belastbar ist,
+- Rollen/Rechte funktionieren,
+- externe Datenflüsse erneut geprüft wurden,
+- die finale Datenschutzerklärung nur tatsächlich verwendete Technik beschreibt.
 
 ## Relationship to other documents
 
@@ -230,6 +197,6 @@ Die erste Phase ist abgeschlossen, wenn:
 
 ## Future Development
 
-Nach jeder tatsächlich ausgeführten Bereinigungswelle werden nur belastbare Ergebnisse zurückgeschrieben: entfernte Plugins, verbleibende Abhängigkeiten, gewählte Zielsysteme und offene Risiken.
+Der Cleanup-Plan bleibt zunächst **geparkt**, während Mathias die benötigten TuS-Zielplugins entwickelt.
 
-Der nächste operative Entwicklerauftrag ist **Wave 0 + Dependency-Check der Wave-1-Kandidaten**. Eine produktive Deaktivierung erfolgt erst nach bestätigter Wiederherstellbarkeit und klarer Nichtnutzung.
+Sobald ein konkretes Zielsystem produktionsreif ist, wird nur der dazugehörige Migrationsblock aktiviert und gemeinsam mit einer autorisierten Backend-Person abgearbeitet. Dadurch vermeiden wir eine große riskante Altplugin-Bereinigung und migrieren stattdessen funktional Schritt für Schritt.

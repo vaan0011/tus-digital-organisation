@@ -2,17 +2,19 @@
 
 ## Purpose
 
-Dieses Dokument hält die technisch bestätigte bzw. noch zu bestätigende Ist-Situation der aktuellen TuS-Mingolsheim-Homepage fest und definiert die produktive Backend-Inventur für den WordPress Developer.
+Dieses Dokument hält die technisch bestätigte bzw. noch zu bestätigende Ist-Situation der aktuellen TuS-Mingolsheim-Homepage fest und definiert, welche Informationen für die spätere produktive Migration benötigt werden.
 
 Es ist kein vollständiger Security-Scan. Öffentliche Beobachtungen, Backend-Screenshots und noch offene Punkte werden bewusst voneinander getrennt.
+
+Wichtig: **Die produktive Backend-Inventur ist derzeit kein Arbeitsauftrag an den WordPress Developer.** Mathias hat keinen produktiven WordPress-Backendzugriff und arbeitet zunächst an den TuS-eigenen Plugins und Homepage-Komponenten. Fehlende Informationen aus der Altinstallation werden bei Bedarf gezielt durch eine autorisierte Backend-Person bereitgestellt.
 
 Stand: 11.09.2026.
 
 ## Core Principle
 
-> **Technische Entscheidungen basieren auf dem echten Produktivsystem – nicht auf Vermutung, Generator-Text oder Plugin-Namen allein.**
+> **Technische Entscheidungen basieren auf dem echten Produktivsystem – aber Plugin-Entwicklung und produktive WordPress-Administration sind getrennte Arbeitsphasen.**
 
-Ein Plugin wird nicht blind entfernt, nur weil seine Funktion im Zielbild ersetzt wird. Zuerst werden Nutzung und Abhängigkeiten bestätigt.
+Ein Plugin wird nicht blind entfernt, nur weil seine Funktion im Zielbild ersetzt wird. Zuerst wird die Ersatzfunktion gebaut; die produktive Abhängigkeit wird später vor der tatsächlichen Migration bestätigt.
 
 ## Main Content
 
@@ -133,6 +135,8 @@ Wesentliche Cluster:
 - Update-/Wartungsstatus,
 - ob Daten nach Deaktivierung weiterhin benötigt werden.
 
+Diese Punkte sind **spätere Migrationsinformationen** und kein Blocker für die aktuelle Entwicklung der TuS-Zielplugins.
+
 ### 4. Rollen und Berechtigungen
 
 Im Plugin-Snapshot sind zwei aktive Berechtigungswerkzeuge bestätigt:
@@ -142,7 +146,7 @@ Im Plugin-Snapshot sind zwei aktive Berechtigungswerkzeuge bestätigt:
 
 Damit ist ein konkreter Konsolidierungsbereich vorhanden.
 
-Vor Änderungen prüfen:
+Vor späteren Änderungen prüfen:
 
 - WordPress-Benutzer und Administratoren,
 - ehemalige Funktionsträger,
@@ -162,9 +166,9 @@ Aktiv bestätigt:
 - UpdraftPlus,
 - BackUpWordPress.
 
-Zusätzlich ist zu prüfen, ob IONOS/Hosting selbst Backups bereitstellt.
+Zusätzlich ist später zu prüfen, ob IONOS/Hosting selbst Backups bereitstellt.
 
-Vor Plugin-Bereinigung muss feststehen:
+Vor produktiver Plugin-Bereinigung muss feststehen:
 
 - welches System führend ist,
 - Speicherziel,
@@ -177,7 +181,7 @@ Mehrere Backup-Plugins ohne getestete Wiederherstellung gelten nicht als belastb
 
 ### 6. Cookies / Storage / externe Requests
 
-Technisch im Browser auf repräsentativen Seiten prüfen:
+Vor bzw. bei der späteren produktiven Migration technisch im Browser auf repräsentativen Seiten prüfen:
 
 - Cookies vor Interaktion,
 - Cookies nach ggf. erteilter Einwilligung,
@@ -201,7 +205,7 @@ Mindestens prüfen:
 
 ### 7. WordPress Core / Theme / Hosting
 
-Noch im Backend bzw. Hosting aufzunehmen:
+Später im Backend bzw. Hosting aufzunehmen:
 
 - WordPress-Version,
 - PHP-Version,
@@ -220,7 +224,7 @@ Keine Secrets in GitHub dokumentieren.
 
 ### 8. E-Mail-Versand aus WordPress
 
-Zu prüfen:
+Später zu prüfen:
 
 - PHP-Mail / SMTP / Plugin / externer Dienst,
 - aktuelle Absenderadresse,
@@ -235,7 +239,7 @@ Das aktive Plugin `Change Admin Email Setting Without Outbound Email` ist ein Hi
 
 ### 9. Medien / PDFs / CDN
 
-Zu prüfen:
+Später zu prüfen:
 
 - Media Library und Altdateien,
 - personenbezogene Dateinamen/Metadaten,
@@ -260,22 +264,20 @@ Für jede technische Komponente wird genau eine Arbeitsrichtung vergeben:
 
 Die Entscheidung berücksichtigt Datenschutz, Sicherheit, Funktion, Wartbarkeit, UX, Kosten und bestehende Abhängigkeiten.
 
-### 11. Developer-Handoff – konkrete Reihenfolge
+### 11. Developer-Handoff – aktuelles Arbeitsmodell
 
-Mathias arbeitet bei der bestehenden Homepage in dieser Reihenfolge:
+Mathias arbeitet **aktuell nicht im produktiven WordPress-Backend**. Sein Auftrag ist zunächst die Entwicklung der Zielsysteme aus GitHub und den jeweiligen Projektzuständen heraus.
 
-1. Plugin-Snapshot gegen die echte Pluginseite vervollständigen, insbesondere inaktive/MU-Plugins.
-2. Für jedes Altplugin Nutzung in Seiten, Blocks, Widgets, Shortcodes, Rollen und Datenstrukturen ermitteln.
-3. WordPress/Core/Theme/PHP/Hosting aufnehmen.
-4. Benutzer-/Rollenmodell prüfen.
-5. Forminator-Formulare, Empfänger und Speicherung inventarisieren.
-6. WordPress-Mailversand prüfen.
-7. Cookies/Storage und externe Requests im Browser messen.
-8. Jetpack-Module, Analytics/Tag Manager und Consent technisch verifizieren.
-9. Backup-/Restore-Strategie festlegen und vor Bereinigung absichern.
-10. Erst dann erste kontrollierte Plugin-Migrations-/Entfernungswelle planen.
-11. Nach jeder Welle Smoke-Test und erneuter Request-/Privacy-Check.
-12. Bestätigte Fakten und Migrationsentscheidungen in die fachlich richtige Source of Truth zurückschreiben.
+Für die aktuelle Entwicklungsphase gilt:
+
+1. relevante Altplugin-Funktion aus der Migrationsmatrix als Anforderung verstehen,
+2. eigenes TuS-Zielplugin bzw. Homepage-Komponente entwickeln,
+3. Tests und klare Abnahmekriterien bereitstellen,
+4. Migrationshinweise dokumentieren,
+5. fehlende Informationen aus der Altinstallation gezielt beim Nutzer bzw. einer autorisierten Backend-Person anfordern,
+6. keine produktiven Deaktivierungen, Löschungen, Rollen-/Benutzeränderungen, Backup-/Restore-Operationen oder Hostingänderungen ohne ausdrücklich bereitgestellten Zugang und Auftrag durchführen.
+
+Erst wenn ein Ersatz abnahmefähig ist, beginnt die spätere produktive Migrationsphase gemeinsam mit einer autorisierten Backend-Person. Die Reihenfolge und Stop-Kriterien stehen in `HOMEPAGE-PLUGIN-CLEANUP-PLAN.md`.
 
 ### 12. Was nicht in GitHub gehört
 
@@ -293,25 +295,24 @@ Nicht dokumentieren:
 
 ### 13. Definition of Done
 
-Die technische Homepage-Inventur ist abgeschlossen, wenn:
+Die **aktuelle Entwicklungsphase** ist nicht davon abhängig, dass die gesamte Altinstallation technisch inventarisiert wurde.
 
-- aktive und inaktive Plugins vollständig aufgenommen sind,
-- Plugin-Abhängigkeiten bekannt sind,
-- WordPress/Core/Theme/PHP/Hosting bekannt sind,
-- Rollen/Berechtigungen geprüft sind,
-- Formulare und E-Mail-Datenflüsse bekannt sind,
-- Cookies/Storage und externe Requests gemessen sind,
-- Analytics/Jetpack/Consent-Status bestätigt ist,
-- Backup/Restore geklärt ist,
-- jede relevante Komponente eine Migrationsentscheidung hat,
-- keine Secrets oder unnötigen personenbezogenen Daten in GitHub liegen,
-- Mathias und David denselben bestätigten Ausgangspunkt verwenden.
+Für eine konkrete spätere Migration ist die notwendige technische Teilinventur abgeschlossen, wenn für die betroffene Funktion:
+
+- relevante Plugin-Abhängigkeiten bekannt sind,
+- notwendige Daten-/Shortcode-/Widget-Migration geklärt ist,
+- Ersatzfunktion abnahmefähig ist,
+- Backup/Restore durch die autorisierte Backend-Person geklärt ist,
+- Smoke-Tests definiert sind,
+- relevante Privacy-/Datenflussfragen geprüft sind,
+- keine Secrets oder unnötigen personenbezogenen Daten in GitHub liegen.
 
 ## Relationship to other documents
 
 - `HOMEPAGE-PRIVACY-CHECK.md`
 - `HOMEPAGE-CONTACT-INVENTORY.md`
 - `HOMEPAGE-PLUGIN-MIGRATION.md`
+- `HOMEPAGE-PLUGIN-CLEANUP-PLAN.md`
 - `CURRENT-STATE.md`
 - `../../design/homepage-standard.md`
 - `../../design/homepage-contact-architecture.md`
@@ -322,6 +323,6 @@ Die technische Homepage-Inventur ist abgeschlossen, wenn:
 
 ## Future Development
 
-Der Plugin-Snapshot ist jetzt vorhanden. Der nächste technische Fortschritt ist der Dependency-Check im echten WordPress-System, nicht eine weitere abstrakte Liste.
+Der Plugin-Snapshot ist vorhanden und dient jetzt als Migrationskontext. Der nächste technische Fortschritt entsteht durch die **Entwicklung der TuS-eigenen Zielplugins**, nicht durch einen allgemeinen Backend-Cleanup.
 
-Danach folgen kontrollierte Plugin-Konsolidierung, Homepage-P0-Bereinigung und schließlich die Migration auf die neue Homepage-Architektur. Die finale Datenschutzerklärung wird erst aus dem tatsächlich verbleibenden Produktivsystem abgeleitet.
+Produktive Inventur und Plugin-Konsolidierung erfolgen später bedarfsgerecht pro fertiger Ersatzfunktion. Die finale Datenschutzerklärung wird erst aus dem tatsächlich verbleibenden Produktivsystem abgeleitet.
