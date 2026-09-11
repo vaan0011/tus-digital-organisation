@@ -20,6 +20,8 @@ Mit der Rolle `Data Protection & Information Protection Manager` wird diese Quer
 
 Der erste konkrete Privacy Check wurde am 11.09.2026 auf die öffentliche TuS-Homepage priorisiert. Die Ergebnisse und der Developer-Handoff liegen in `HOMEPAGE-PRIVACY-CHECK.md`.
 
+Als zweiter Homepage-Schritt wurde die öffentlich sichtbare Kontaktlandschaft inventarisiert. Der belastbare Arbeitsstand und die Ableitung für die spätere IONOS-Struktur liegen in `HOMEPAGE-CONTACT-INVENTORY.md`.
+
 ### 2. Bekannte relevante Systeme / Bereiche
 
 Für die erste Datenschutz-Inventur sind insbesondere zu prüfen:
@@ -55,6 +57,8 @@ Bereits verbindlich bzw. fachlich gesetzt:
 - Neue Systeme sollen keine unnötigen parallelen Personen- oder Partnerdatenwelten erzeugen.
 - Für die neue Homepage ist Privacy-by-Design das Ziel: möglichst keine unnötigen Drittanbieter-Embeds, kein beiläufiges Tracking und kein pauschales Cookie-Banner ohne tatsächlichen Bedarf.
 - Die neue Homepage soll fachlich führende Daten möglichst über kontrollierte serverseitige Adapter bzw. eigene Darstellung nutzen, statt Besucherbrowser direkt an Drittanbieter-iframes oder Skripte zu koppeln.
+- Öffentliche Kontaktwege sollen rollenbasiert und auf offizielle TuS-Adressen konzentriert werden; persönliche Mobilnummern und private Adressen sind nicht das Standardmodell.
+- Die Platzbelegung wird als eigenes WordPress-Plugin umgesetzt; ein direkt eingebetteter Google-Kalender ist nicht das Zielmodell.
 
 ### 4. Formelle Datenschutzbeauftragten-Frage
 
@@ -71,7 +75,7 @@ Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bez
 
 Die aktuelle öffentliche Homepage verwendet derzeit dennoch die Bezeichnung `Datenschutzbeauftragter`. Diese öffentliche Formulierung ist als P0-Korrektur markiert, sofern keine formelle Bestellung nachgewiesen wird.
 
-### 5. Erster Homepage Privacy Check – 11.09.2026
+### 5. Homepage Privacy Check – 11.09.2026
 
 Belastbar öffentlich festgestellt:
 
@@ -85,16 +89,48 @@ Belastbar öffentlich festgestellt:
 
 Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPAGE-PRIVACY-CHECK.md`.
 
-### 6. Erste operative Prioritäten
+### 6. Homepage-Kontaktinventur – 11.09.2026
+
+Öffentlich bestätigt sind bereits mehrere sinnvolle Rollenadressen, insbesondere:
+
+- Geschäftsstelle,
+- Mitgliederverwaltung,
+- Jugendleitung,
+- Aktive/Senioren,
+- Datenschutzkontakt.
+
+Gleichzeitig finden sich auf bestehenden Seiten und älteren Beiträgen weiterhin persönliche Mobilnummern bzw. personengebundene Direktkontakte, insbesondere bei Vorstands-/Funktionsseiten, einzelnen Mannschaftsseiten, Fördervereinsseiten und historischen Veranstaltungsbeiträgen.
+
+Wesentliche Konsequenz:
+
+- nicht nur die neue Kontaktseite, sondern auch migrierter Legacy-Content muss auf obsolete persönliche Kontaktdaten geprüft werden,
+- die spätere IONOS-Struktur wird in öffentliche Rollenadressen, operative interne Rollenpostfächer und besonders geschützte menschliche Kontaktwege getrennt,
+- eine öffentliche Adresse muss technisch nicht zwingend ein eigenes Postfach sein; Alias, Weiterleitung oder kontrollierter Workflow sind je Zweck zu entscheiden,
+- die vollständige Arbeitsinventur steht in `HOMEPAGE-CONTACT-INVENTORY.md`.
+
+### 7. Erste operative Prioritäten
 
 1. **Homepage P0 abarbeiten**
    - Google-Analytics-Ist technisch verifizieren,
    - öffentliche DSB-Bezeichnung prüfen/korrigieren,
    - Impressumsreferenz aktualisieren,
-   - Google-Calendar-iframe bewerten,
    - aktuelle WordPress-/Plugin-/Cookie-/External-Resource-Inventur erstellen.
 
-2. **Datenschutz-Inventur erstellen**
+2. **IONOS-/Kontaktstruktur entscheiden**
+   - bestehende Rollenadressen bestätigen,
+   - benötigte neue öffentliche Rollenadressen festlegen,
+   - operative interne Rollenpostfächer festlegen,
+   - sensible menschliche Sonderwege definieren,
+   - pro Adresse Mailbox/Alias/Weiterleitung/Workflow, Owner, Vertretung und Automationsklasse bestimmen.
+
+3. **Legacy Contact Cleanup für Homepage-Migration vorbereiten**
+   - alte persönliche Telefonnummern,
+   - personengebundene Mailadressen,
+   - alte Event-/Ticketkontakte,
+   - alte Mannschafts-/Trainerkontakte,
+   - veraltete Formulare und Formularziele.
+
+4. **Datenschutz-Inventur erstellen**
    - Systeme,
    - Zwecke,
    - Datenkategorien,
@@ -103,16 +139,16 @@ Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPA
    - Empfänger/Dienstleister,
    - Speicherorte.
 
-3. **Berechtigungsinventur starten**
+5. **Berechtigungsinventur starten**
    - besonders Google Drive, WordPress, Partnerdaten und künftige E-Mail-Queues.
 
-4. **Verzeichnis der Verarbeitungstätigkeiten vorbereiten**
+6. **Verzeichnis der Verarbeitungstätigkeiten vorbereiten**
    - nicht als Papierübung, sondern aus den realen Datenflüssen.
 
-5. **Dienstleister-/AVV-Check**
+7. **Dienstleister-/AVV-Check**
    - nur für tatsächlich personenbezogene Verarbeitungen und aktuell genutzte Systeme.
 
-6. **Lösch-/Aufbewahrungslogik priorisieren**
+8. **Lösch-/Aufbewahrungslogik priorisieren**
    - Mitgliederdaten,
    - Kontakte/CRM,
    - E-Mail-Eingänge,
@@ -121,11 +157,11 @@ Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPA
    - Fotos/Medien,
    - sensible Sonderbereiche.
 
-7. **E-Mail-/n8n-Architektur vor produktiver Automatisierung prüfen**
+9. **E-Mail-/n8n-Architektur vor produktiver Automatisierung prüfen**
    - `redaktion@` kann Pilot werden,
    - Schutzfall- und sensible Postfächer separat behandeln.
 
-8. **Privacy Check in Entwicklungsprojekte integrieren**
+10. **Privacy Check in Entwicklungsprojekte integrieren**
    - insbesondere Mitglieder & Engagement,
    - Team Manager,
    - Partnerportal/Partner Hub,
@@ -133,19 +169,19 @@ Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPA
    - Event Planner,
    - Tauschbörse.
 
-9. **Datenpannen- und Betroffenenprozess definieren**
+11. **Datenpannen- und Betroffenenprozess definieren**
    - Zuständigkeit,
    - sicherer Dokumentationsweg,
    - Eskalationslogik,
    - Fristenmanagement.
 
-### 7. Aktuelle wichtige Abhängigkeiten
+### 8. Aktuelle wichtige Abhängigkeiten
 
 #### Homepage / WordPress
 
 Die Homepage ist aktuell der erste aktive Privacy-Schwerpunkt.
 
-Für den Neuaufbau gelten die Regeln aus `HOMEPAGE-PRIVACY-CHECK.md`. Der WordPress Developer liest diese Quelle bei Homepage-Arbeit verbindlich mit.
+Für den Neuaufbau gelten `HOMEPAGE-PRIVACY-CHECK.md`, `HOMEPAGE-CONTACT-INVENTORY.md` und `../../design/homepage-contact-architecture.md`. Der WordPress Developer liest diese Quellen bei Homepage-Arbeit verbindlich mit.
 
 Vor Go-live muss die tatsächliche technische Konfiguration der produktiven Website inventarisiert sein; erst daraus wird die finale Datenschutzerklärung abgeleitet.
 
@@ -157,6 +193,8 @@ Das Schutzkonzept benötigt getrennte, menschlich verantwortete Meldewege. Daten
 
 Vor produktiver n8n-Anbindung müssen Datenminimierung, Routing, Zugriff, Aufbewahrung, Anhänge und hochsensible Sonderwege definiert sein.
 
+Die Homepage-Kontaktinventur ist jetzt die fachliche Eingangsbasis für die spätere IONOS-/Poststellenentscheidung.
+
 #### Mitglieder & Engagement / Team Manager
 
 Diese Projekte dürfen keine parallele Personenidentität aufbauen. Vor Umsetzung muss klar sein, welche Personen-/Mitgliedsdaten führend sind und welche Systeme nur referenzieren.
@@ -165,7 +203,7 @@ Diese Projekte dürfen keine parallele Personenidentität aufbauen. Vor Umsetzun
 
 Das bestehende geschützte Partner-CRM ist operative Zwischen-Source-of-Truth. Öffentliche Partneranfragen dürfen keine unkontrollierte zweite Datenhaltung erzeugen.
 
-### 8. Bewusst nicht in GitHub
+### 9. Bewusst nicht in GitHub
 
 Nicht hier dokumentiert werden:
 
@@ -181,6 +219,8 @@ Nicht hier dokumentiert werden:
 ## Relationship to other documents
 
 - `HOMEPAGE-PRIVACY-CHECK.md`
+- `HOMEPAGE-CONTACT-INVENTORY.md`
+- `../../design/homepage-contact-architecture.md`
 - `../../roles/data-protection-manager/role.md`
 - `../../roles/data-protection-manager/privacy-standard.md`
 - `../../roles/data-protection-manager/START-PROMPT.md`
@@ -192,6 +232,9 @@ Nicht hier dokumentiert werden:
 
 ## Future Development
 
-Nach der ersten Inventur werden aus diesem Current State nur belastbare nächste Schritte weitergeführt. Detailregister wie Verarbeitungstätigkeiten, Dienstleister-/AVV-Status oder Berechtigungsprüfungen erhalten nur dann eigene operative Quellen, wenn sie real benötigt werden und dadurch kein paralleles Bürokratiesystem entsteht.
+Als nächstes folgen zwei voneinander getrennte Schritte:
 
-Für die Homepage folgt als nächstes die technische Ist-Inventur von WordPress, Plugins, Cookies, externen Requests, Hosting/Logs und eingebundenen Diensten.
+1. gemeinsame Entscheidung der IONOS-/Rollenpostfach-Struktur auf Basis der Kontaktinventur,
+2. technische Ist-Inventur von WordPress, Plugins, Cookies, externen Requests, Hosting/Logs und eingebundenen Diensten.
+
+Danach werden aus dem realen System schrittweise Verarbeitungstätigkeiten, Berechtigungen, Dienstleister-/AVV-Status sowie Lösch- und Aufbewahrungsregeln abgeleitet.
