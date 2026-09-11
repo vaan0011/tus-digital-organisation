@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Dieses Dokument hält die öffentlich sichtbaren Kontaktwege der bestehenden TuS-Mingolsheim-Homepage als Arbeitsinventur fest und leitet daraus Anforderungen für die künftige IONOS-E-Mail-Struktur sowie den Homepage-Neuaufbau ab.
+Dieses Dokument hält die öffentlich sichtbaren Kontaktwege der bestehenden TuS-Mingolsheim-Homepage sowie die vom Vorstand bestätigten bereits angelegten Funktions-/Systemadressen fest und leitet daraus Anforderungen für die künftige IONOS-E-Mail-Struktur sowie den Homepage-Neuaufbau ab.
 
-Es ist keine abschließende Postfachentscheidung. Die konkrete IONOS-Struktur wird separat beschlossen.
+Es ist noch keine abschließende Routing- oder Mailboxentscheidung. Die technische Art jeder Adresse – echtes Postfach, Alias, Weiterleitung oder Workflow-Eingang – wird separat festgelegt.
 
 Persönliche Telefonnummern oder personengebundene Kontaktdaten werden in diesem Dokument bewusst nicht erneut ausgeschrieben. Es genügt für die organisatorische Bereinigung zu dokumentieren, auf welcher Seite solche Daten öffentlich vorkommen.
 
-Stand der öffentlichen Prüfung: 11.09.2026.
+Stand: 11.09.2026.
 
 ## Core Principle
 
@@ -18,21 +18,63 @@ Der TuS soll für Außenstehende einfach erreichbar sein, ohne persönliche Mobi
 
 ## Main Content
 
-### 1. Bestätigte bestehende rollenbasierte TuS-Adressen
+### 1. Vom Vorstand bestätigte bestehende IONOS-Adressen
 
-Bei der öffentlichen Prüfung wurden folgende bereits verwendete Rollenadressen bestätigt:
+Alle folgenden Adressen bestehen bereits unter der Domain `@tus-mingolsheim.de`:
+
+- `admin@`
+- `adobe@`
+- `ah@`
+- `anrufbeantworter@`
+- `damengymnastik@`
+- `datenschutz@`
+- `finanzen@`
+- `geschaeftsstelle@`
+- `instagram@`
+- `jugendleitung@`
+- `mitgliederverwaltung@`
+- `presse@`
+- `senioren@`
+- `theater@`
+- `turniere@`
+
+Damit existiert bereits eine brauchbare Rollen-/Systembasis. Der Neuaufbau benötigt nicht für jede Funktion eine neue Adresse.
+
+### 2. Vorläufige Klassifikation der bestehenden Adressen
+
+| Adresse | Vorläufige Klasse | Öffentliche Nutzung | Nächster Prüfpunkt |
+|---|---|---|---|
+| `geschaeftsstelle@` | öffentliche kanonische Rollenadresse | ja | zentralen allgemeinen Eingang beibehalten; Owner/Vertretung festlegen |
+| `mitgliederverwaltung@` | öffentliche kanonische Rollenadresse | ja | Mitgliedschaft/Datenänderungen als klaren Fachweg beibehalten |
+| `jugendleitung@` | öffentliche kanonische Rollenadresse | ja | Jugend/Eltern/Probetraining; internes Routing später differenzieren |
+| `senioren@` | öffentliche Rollenadresse | ja | Bezeichnung für Außenstehende auf Verständlichkeit prüfen; technisch kann Adresse bestehen bleiben |
+| `damengymnastik@` | Abteilungsadresse | wahrscheinlich ja | als eigenständiger Abteilungsweg nur dort veröffentlichen, wo benötigt |
+| `theater@` | Abteilungsadresse | wahrscheinlich ja | als eigenständiger Abteilungsweg nur dort veröffentlichen, wo benötigt |
+| `presse@` | öffentliche Rollenadresse | ja | für externe Medien-/Pressekontakte beibehalten; von interner Redaktion unterscheiden |
+| `turniere@` | öffentliche/operative Rollenadresse | wahrscheinlich ja | Turnieranfragen und Event-Planner-Prozesse abgleichen |
+| `datenschutz@` | geschützter öffentlicher Rollenweg | ja | als `Datenschutzkontakt` führen; Routing und Zugriff besonders schützen |
+| `finanzen@` | interne/geschützte Fachadresse | nur gezielt | nicht pauschal als Homepage-Standardkontakt veröffentlichen; Rechnungs-/Finanzprozess definieren |
+| `ah@` | Rollen-/Bereichsadresse | offen | fachliche Bedeutung, Owner und gewünschte Sichtbarkeit bestätigen |
+| `admin@` | System-/Administrationsadresse | nein | nicht als allgemeiner Besucher- oder Formularweg verwenden |
+| `adobe@` | System-/Dienstkonto | nein | ausschließlich für Dienst-/Lizenzzweck; Owner/Zugriff dokumentieren |
+| `instagram@` | System-/Kanaladresse | nein | Social-Account-Zweck; nicht als öffentlicher allgemeiner Kontakt |
+| `anrufbeantworter@` | technischer/operativer Eingang | nein | Zweck, Weiterleitung und Aufbewahrung prüfen |
+
+Die Klassifikation beschreibt die Zielrichtung, nicht automatisch die heutige technische Mailbox-Konfiguration.
+
+### 3. Bereits öffentlich bestätigte Rollenwege
+
+Bei der öffentlichen Prüfung waren insbesondere folgende bestehenden Adressen bereits auf der Homepage sichtbar bzw. fachlich verwendet:
 
 | Öffentlicher Zweck | Bestehende Adresse | Aktueller Befund | Zielrichtung |
 |---|---|---|---|
 | Allgemeine Vereinsanfragen / Geschäftsstelle | `geschaeftsstelle@tus-mingolsheim.de` | auf Startseite, Service und Impressum verwendet | als zentraler allgemeiner Eingang beibehalten |
 | Mitgliedschaft / Mitgliederverwaltung | `mitgliederverwaltung@tus-mingolsheim.de` | Service-Seite | als eigener fachlicher Eingang beibehalten |
 | Jugend / Eltern / Probetraining / Schiedsrichter / FSJ | `jugendleitung@tus-mingolsheim.de` | auf mehreren Jugend- und Informationsseiten verwendet | als stabiler Jugend-Eingang beibehalten; interne Verteilung später differenzieren |
-| Aktiver Spielbetrieb | `senioren@tus-mingolsheim.de` | Seite `Aktive` | fachlich brauchbar, Bezeichnung bei neuer Mailstruktur auf Verständlichkeit prüfen |
-| Datenschutzfragen | `datenschutz@tus-mingolsheim.de` | Datenschutzerklärung | Adresse kann grundsätzlich bleiben; öffentliche Bezeichnung zunächst `Datenschutzkontakt`, solange kein formell bestellter DSB bestätigt ist |
+| Aktiver Spielbetrieb | `senioren@tus-mingolsheim.de` | Seite `Aktive` | fachlich brauchbar; öffentliche Bezeichnung darf nutzerfreundlicher sein als der technische Mailname |
+| Datenschutzfragen | `datenschutz@tus-mingolsheim.de` | Datenschutzerklärung | Adresse kann bleiben; öffentliche Bezeichnung zunächst `Datenschutzkontakt`, solange kein formell bestellter DSB bestätigt ist |
 
-Diese Adressen sind ein guter Ausgangspunkt. Sie zeigen, dass der TuS bereits teilweise rollenbasiert arbeitet.
-
-### 2. Öffentliche persönliche Kontaktdaten – Bereinigungsbedarf
+### 4. Öffentliche persönliche Kontaktdaten – Bereinigungsbedarf
 
 Die bestehende Website veröffentlicht an mehreren Stellen persönliche Mobilnummern bzw. personengebundene Direktkontakte.
 
@@ -50,7 +92,7 @@ Für den Homepage-Neuaufbau gilt:
 - Vorstands-, Trainer- und Funktionsträgerseiten zeigen primär Name und Rolle; Kontakt erfolgt über offizielle Rollenwege,
 - historische Beiträge werden ebenfalls auf obsolete persönliche Kontaktdaten geprüft.
 
-### 3. Legacy-Content ist Teil der Kontaktbereinigung
+### 5. Legacy-Content ist Teil der Kontaktbereinigung
 
 Eine neue Kontaktseite allein löst das Problem nicht.
 
@@ -67,7 +109,7 @@ Mindestens zu prüfen sind:
 
 Bei historischen Artikeln soll der redaktionelle Inhalt grundsätzlich erhalten bleiben können. Veraltete persönliche Telefonnummern und obsolete direkte Kontaktwege können jedoch entfernt oder durch einen aktuellen Rollenweg ersetzt werden, wenn sie für den historischen Inhalt keinen bleibenden Wert haben.
 
-### 4. Inkonsistente Nutzerführung
+### 6. Inkonsistente Nutzerführung
 
 Die aktuelle Homepage verwendet teilweise unterschiedliche Muster für dasselbe Anliegen.
 
@@ -82,36 +124,36 @@ Ziel ist künftig ein konsistenter Weg:
 
 Der Besucher muss nicht wissen, ob hinter diesem Weg ein Formular, ein Postfach, ein Alias oder später eine interne Intake-Schnittstelle steckt.
 
-### 5. Zielmodell für die IONOS-Planung
+### 7. Zielmodell für die IONOS-Planung
 
-Die spätere E-Mail-Struktur sollte drei Ebenen unterscheiden.
+Die spätere E-Mail-Struktur unterscheidet drei Ebenen.
 
 #### Ebene A – öffentliche kanonische Rollenadressen
 
-Diese Adressen sind für Besucher sichtbar und überleben Rollen-/Personenwechsel.
+Bereits vorhanden und aus heutiger Sicht klar nutzbar:
 
-Aus heutiger Sicht klar bzw. sehr wahrscheinlich benötigt:
+- `geschaeftsstelle@...`
+- `mitgliederverwaltung@...`
+- `jugendleitung@...`
+- `senioren@...`
+- `presse@...`
+- `datenschutz@...`
+- abteilungsbezogen `damengymnastik@...` und `theater@...`
+- für den Turnierbereich `turniere@...`
 
-- `geschaeftsstelle@...` – allgemeine Vereinsanfragen,
-- `mitgliederverwaltung@...` – Mitgliedschaft / Datenänderung / Kündigung,
-- `jugendleitung@...` bzw. eine später bewusst vereinfachte Jugendadresse – Jugend / Eltern / Probetraining,
-- `senioren@...` oder eine verständlichere künftige Sport-/Aktive-Adresse – Erwachsenen-Spielbetrieb,
-- `datenschutz@...` – Datenschutzkontakt.
+Starke **neue** Kandidaten, weil der reale Prozess inzwischen definiert ist:
 
-Aus den neuen digitalen Prozessen starke Kandidaten:
+- `redaktion@...` – Spielberichte, Vereinsnews und redaktionelle Einreichungen; fachlich getrennt von `presse@...`,
+- `partner@...` oder `sponsoring@...` – genau eine kanonische öffentliche Variante festlegen.
 
-- `redaktion@...` – Spielberichte, Vereinsnews, redaktionelle Einreichungen,
-- `partner@...` oder `sponsoring@...` – öffentlicher Partnerkontakt; genau eine kanonische Variante festlegen,
-- `veranstaltungen@...` – Veranstaltungsanfragen, sofern der reale Eingang dies rechtfertigt.
+Noch nicht vorschnell anlegen:
 
-Noch zu entscheiden statt vorschnell anzulegen:
-
-- separate Adressen für Sportpark, Wirtschaft, einzelne Abteilungen, Schiedsrichter oder Platzbelegung,
-- ob diese Themen ein eigenes öffentliches Postfach brauchen oder intern aus einem übergeordneten Rollenpostfach verteilt werden.
+- `veranstaltungen@...` – erst prüfen, ob `turniere@...`, Geschäftsstelle und Event Planner den realen Bedarf bereits ausreichend abdecken,
+- separate Adressen für Sportpark oder Platzbelegung – nur bei echtem externem Kommunikationsbedarf.
 
 #### Ebene B – operative Rollenpostfächer / Arbeitsadressen
 
-Diese können für digitale Mitarbeiter und interne Workflows sinnvoll sein, müssen aber nicht alle öffentlich auf der Homepage stehen.
+Diese können für digitale Mitarbeiter und interne Workflows sinnvoll sein, müssen aber nicht öffentlich stehen.
 
 Kandidaten aus der TuS Digital Organisation:
 
@@ -120,7 +162,7 @@ Kandidaten aus der TuS Digital Organisation:
 - ggf. `platzbelegung@...`,
 - weitere Fachrollen erst bei realem Arbeitsbedarf.
 
-Ein digitales Mitarbeiterpostfach wird nicht allein deshalb öffentlich, weil es technisch existiert.
+Bereits vorhandene interne/Systemadressen wie `finanzen@`, `admin@`, `adobe@`, `instagram@` oder `anrufbeantworter@` werden nicht allein wegen ihrer Existenz zu öffentlichen Homepage-Kontakten.
 
 #### Ebene C – besonders geschützte menschliche Kontaktwege
 
@@ -134,7 +176,20 @@ Insbesondere:
 
 Hier gelten separate Berechtigungen, menschliche Verantwortung und engere Aufbewahrungs-/Routingregeln.
 
-### 6. Ein Postfach ist nicht automatisch eine eigene Mailbox
+### 8. `presse@` und künftiges `redaktion@` sind nicht dasselbe
+
+Die bestehende Adresse `presse@...` kann sinnvoll als externer Medienkontakt bestehen bleiben.
+
+Der bereits definierte Matchday-/Redaktionsprozess benötigt dagegen einen eigenen operativen Eingang für:
+
+- Spielberichte von Trainern/Mannschaften,
+- Vereinsmeldungen,
+- redaktionelle Rohtexte,
+- Inhalte für Homepage, Facebook, Ortsblatt und Stadionheft.
+
+Dafür bleibt `redaktion@...` ein starker Kandidat. Technisch kann später entschieden werden, ob dies ein eigenes Postfach, Alias oder kontrollierter Intake ist.
+
+### 9. Ein Postfach ist nicht automatisch eine eigene Mailbox
 
 Bei der späteren IONOS-Entscheidung ist zwischen öffentlicher Adresse und technischer Mailbox zu unterscheiden.
 
@@ -146,27 +201,24 @@ Mögliche Umsetzung je Rolle:
 
 Ziel ist nicht möglichst viele Postfächer anzulegen, sondern **so wenige wie möglich und so viele wie nötig**.
 
-### 7. Empfohlene Kontaktlogik der neuen Homepage
-
-Die Homepage soll nicht die vollständige Mailstruktur offenlegen, sondern nach Nutzeranliegen führen.
-
-Beispiel:
+### 10. Empfohlene Kontaktlogik der neuen Homepage
 
 | Nutzeranliegen | Öffentlicher Weg | Interne Zielrolle |
 |---|---|---|
-| Allgemeine Frage | Geschäftsstelle | Geschäftsstelle / Triage |
-| Mitglied werden / Daten ändern / kündigen | Mitgliederverwaltung | Mitgliederverwaltung |
-| Mein Kind möchte Fußball spielen | Jugend | Jugendleitung / Jugendkoordination |
-| Herren-/Aktivenspielbetrieb | Aktive / Sport | Sportliche Verantwortung |
-| Spielbericht / Vereinsmeldung einreichen | Redaktion | Matchday Editor / Redaktion |
-| Partner werden | Partner-Fit-Check / Partnerkontakt | Partnership Manager |
-| Veranstaltung | Event-/Veranstaltungskontakt | Event-Verantwortung |
-| Datenschutzfrage | Datenschutzkontakt | Datenschutz-Verantwortung / Mensch |
+| Allgemeine Frage | `geschaeftsstelle@...` / Kontaktweg Geschäftsstelle | Geschäftsstelle / Triage |
+| Mitglied werden / Daten ändern / kündigen | `mitgliederverwaltung@...` | Mitgliederverwaltung |
+| Mein Kind möchte Fußball spielen | `jugendleitung@...` / Jugendkontakt | Jugendleitung / Jugendkoordination |
+| Herren-/Aktivenspielbetrieb | öffentlicher Sport-/Aktive-Weg, technisch derzeit `senioren@...` | Sportliche Verantwortung |
+| Presseanfrage | `presse@...` | Presse/Kommunikation |
+| Spielbericht / Vereinsmeldung einreichen | künftig `redaktion@...` | Matchday Editor / Redaktion |
+| Turnier | `turniere@...` | Turnier-/Event-Verantwortung |
+| Partner werden | Partner-Fit-Check + künftiger kanonischer Partnerkontakt | Partnership Manager |
+| Datenschutzfrage | `datenschutz@...` | Datenschutz-Verantwortung / Mensch |
 | Kinderschutz / Schutzmeldung | gesonderter geschützter Meldeweg | ausschließlich freigegebene menschliche Vertrauenspersonen |
 
-Die tatsächlichen Mailadressen werden erst nach der IONOS-Entscheidung verbindlich in diese Matrix eingetragen.
+Abteilungsadressen werden nur dort angezeigt, wo der Besucher tatsächlich diese Abteilung erreichen möchte.
 
-### 8. Entwickler-Handoff
+### 11. Entwickler-Handoff
 
 Für den WordPress Developer gilt beim Homepage-Neuaufbau:
 
@@ -179,26 +231,28 @@ Für den WordPress Developer gilt beim Homepage-Neuaufbau:
 7. Historische Beiträge in den Legacy-Contact-Cleanup einbeziehen.
 8. Kontaktmöglichkeiten auf Mobile genauso klar und sparsam gestalten wie auf Desktop.
 9. Geschützte Kontaktwege nicht in die normale öffentliche Formular-/Automationslogik einbauen.
+10. Systemadressen wie `admin@`, `adobe@` oder `instagram@` nie versehentlich als öffentliche Kontaktoptionen ausspielen.
 
-### 9. Nächster organisatorischer Schritt
+### 12. Nächster organisatorischer Schritt
 
-Vor produktiver Umsetzung wird gemeinsam die IONOS-Struktur beschlossen.
+Die vorhandenen Adressen sind jetzt bekannt. Für die endgültige Mailrouting-Matrix fehlen noch pro Adresse:
 
-Dafür ist nun nicht mehr bei null zu beginnen. Die Entscheidung kann auf dieser Inventur basieren:
+1. technischer Typ: Mailbox / Alias / Weiterleitung / Workflow,
+2. aktueller Owner,
+3. Vertretung,
+4. darf n8n/KI den Eingang verarbeiten: ja/nein/bedingt,
+5. gewünschte Aufbewahrung,
+6. darf die Adresse öffentlich auf der Homepage erscheinen,
+7. bei Systemkonten: wofür wird sie konkret benötigt.
 
-1. bestehende Rollenadressen bestätigen oder ersetzen,
-2. neue öffentliche Rollenadressen auswählen,
-3. interne Arbeitsadressen auswählen,
-4. geschützte menschliche Adressen definieren,
-5. je Adresse festlegen: echtes Postfach, Alias/Weiterleitung oder Workflow-Eingang,
-6. Owner und Vertretung festlegen,
-7. Automationsfähigkeit festlegen,
-8. Aufbewahrung/Löschung je Eingang festlegen.
+Erst danach werden neue Adressen angelegt. Damit vermeiden wir unnötige Postfächer und doppelte Wege.
 
 ## Relationship to other documents
 
 - `CURRENT-STATE.md`
 - `HOMEPAGE-PRIVACY-CHECK.md`
+- `HOMEPAGE-TECHNICAL-INVENTORY.md`
+- `HOMEPAGE-PLUGIN-MIGRATION.md`
 - `../../design/homepage-contact-architecture.md`
 - `../../roles/data-protection-manager/privacy-standard.md`
 - `../../roles/wordpress-developer/START-PROMPT.md`
@@ -206,6 +260,6 @@ Dafür ist nun nicht mehr bei null zu beginnen. Die Entscheidung kann auf dieser
 
 ## Future Development
 
-Nach der IONOS-Entscheidung wird aus dieser Inventur eine verbindliche Mailrouting-Matrix mit `Adresse → Zweck → Owner → Vertretung → Automationsklasse → Source of Truth → Aufbewahrung`.
+Nach der finalen IONOS-Entscheidung wird aus dieser Inventur eine verbindliche Mailrouting-Matrix mit `Adresse → Zweck → Owner → Vertretung → technische Form → Automationsklasse → Source of Truth → Aufbewahrung`.
 
 Danach kann die Homepage-Kontaktarchitektur die konkreten Rollenpostfächer referenzieren, ohne einzelne persönliche Adressen in Content und Templates zu verteilen.

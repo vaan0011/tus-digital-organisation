@@ -2,370 +2,316 @@
 
 ## Purpose
 
-Dieses Dokument hält die öffentlich belastbar feststellbare technische Ist-Situation der aktuellen TuS-Mingolsheim-Homepage fest und definiert die noch notwendige Backend-Inventur für den WordPress Developer.
+Dieses Dokument hält die technisch bestätigte bzw. noch zu bestätigende Ist-Situation der aktuellen TuS-Mingolsheim-Homepage fest und definiert die produktive Backend-Inventur für den WordPress Developer.
 
-Es ist kein vollständiger Security-Scan und ersetzt keine Prüfung im WordPress-/Hosting-Backend. Öffentlich nicht verifizierbare Punkte werden ausdrücklich als offen behandelt.
+Es ist kein vollständiger Security-Scan. Öffentliche Beobachtungen, Backend-Screenshots und noch offene Punkte werden bewusst voneinander getrennt.
 
 Stand: 11.09.2026.
 
 ## Core Principle
 
-> **Öffentliche Beobachtung liefert Hinweise. Verbindliche technische Wahrheit entsteht erst aus dem produktiven WordPress-/Hosting-System.**
+> **Technische Entscheidungen basieren auf dem echten Produktivsystem – nicht auf Vermutung, Generator-Text oder Plugin-Namen allein.**
 
-Kein Plugin, Cookie, Trackingdienst, Formularziel oder externer Datenfluss wird allein aufgrund alter Datenschutzerklärung, Theme-Footer oder Vermutung als aktiv angenommen.
+Ein Plugin wird nicht blind entfernt, nur weil seine Funktion im Zielbild ersetzt wird. Zuerst werden Nutzung und Abhängigkeiten bestätigt.
 
 ## Main Content
 
-### 1. Öffentlich bestätigter technischer Rahmen
+### 1. Bestätigter technischer Rahmen
 
-Öffentlich belastbar sichtbar:
+Belastbar bekannt:
 
 - die Website läuft auf WordPress,
-- der öffentliche Footer nennt `Colibri` als verwendete Website-/Theme-Basis,
+- Colibri ist als aktuelle Website-/Page-Builder-Basis sichtbar und `Colibri Page Builder` ist aktiv,
 - die Website wird über HTTPS ausgeliefert,
-- Facebook und Instagram sind auf der Startseite als externe Links vorhanden,
-- die Startseite verweist auf Veranstaltungskalender, Platzbelegung, Service/Kontakt und weitere Vereinsbereiche,
-- die Platzbelegung verwendet aktuell mindestens einen direkten Google-Calendar-iframe,
-- auf der Platzbelegungsseite sind externe Bildressourcen über `i0.wp.com` beobachtet worden,
-- die Datenschutzerklärung beschreibt Google Analytics, obwohl die öffentliche Prüfung nicht bestätigt, dass Analytics aktuell technisch geladen wird,
-- die Datenschutzerklärung basiert sichtbar auf einem älteren Generator-/Standardtext und bildet deshalb nicht automatisch den realen aktuellen Technikstand ab,
-- die Homepage verweist auf ein Kontaktformular auf der Elternseite; die konkrete technische Formularimplementierung ist öffentlich nicht zuverlässig bestimmbar.
+- Facebook und Instagram sind aktuell als normale externe Links vorhanden,
+- die Platzbelegung verwendet einen direkten Google-Calendar-iframe,
+- auf der Platzbelegungsseite wurden Ressourcen über `i0.wp.com` beobachtet,
+- die Datenschutzerklärung beschreibt Google Analytics, dessen tatsächliche technische Aktivität aber noch nicht bestätigt ist,
+- es bestehen Kontaktformularprozesse; `Forminator` ist als aktives Formularplugin bestätigt,
+- der Vorstand hat Backend-Screenshots bereitgestellt, auf denen 28 aktive Plugins sichtbar sind,
+- die vollständige vorläufige Plugin-Migrationsmatrix steht in `HOMEPAGE-PLUGIN-MIGRATION.md`.
 
-### 2. Öffentlich beobachtbare externe Abhängigkeiten
+Noch nicht bestätigt ist, ob zusätzlich inaktive Plugins installiert sind.
 
-#### 2.1 Google Calendar
+### 2. Bekannte externe bzw. datenschutzrelevante Abhängigkeiten
 
-Aktuell wird auf `Platzbelegung` ein Kalender von `calendar.google.com` direkt eingebunden.
+#### 2.1 Google Calendar / Platzbelegung
 
-Status:
+Aktuell direkte Einbettung von `calendar.google.com`.
 
-- technisch öffentlich sichtbar,
-- für den Neuaufbau bereits als unerwünschtes Zielmodell markiert,
-- wird durch das Projekt `TuS Platzbelegung` ersetzt.
+Migrationsentscheidung: `ERSETZEN`.
 
 Ziel:
 
-- eigenes WordPress-Plugin,
+- eigenes Projekt `TuS Platzbelegung`,
 - eigenes TuS-Rendering,
 - keine direkte Google-iframe-Kernlösung.
 
-#### 2.2 WordPress.com-/Jetpack-nahe Bildauslieferung
+#### 2.2 `i0.wp.com` / Jetpack-nahe Bildauslieferung
 
-Auf der aktuellen Platzbelegungsseite wurden Ressourcen über `i0.wp.com` beobachtet.
+Externer Ressourcenabruf wurde öffentlich beobachtet. `Jetpack` ist im Backend als aktives Plugin bestätigt.
 
-Status:
+Noch zu prüfen:
 
-- externer Ressourcenabruf öffentlich sichtbar,
-- Ursache/Plugin/Feature noch nicht verifiziert,
-- Umfang über die gesamte Website unbekannt.
+- ob Jetpack Site Accelerator/Image CDN tatsächlich Ursache ist,
+- welche Jetpack-Module aktiv sind,
+- auf welchen Seiten externe Medien ausgeliefert werden,
+- ob ein fachlicher Nutzen besteht.
 
-Backend-Prüfung erforderlich:
-
-- welches Plugin/Feature erzeugt die URLs,
-- ob Jetpack bzw. WordPress.com Image CDN aktiv ist,
-- ob weitere Medien darüber ausgeliefert werden,
-- ob die Funktion künftig benötigt wird.
-
-Ziel für den Neuaufbau:
-
-- normale TuS-Assets bevorzugt lokal bzw. über bewusst freigegebenes Hosting/CDN ausliefern,
-- externe CDN-Nutzung nicht als unbeabsichtigten Plugin-Default übernehmen.
+Migrationsentscheidung aktuell: `OFFEN / TENDENZ REDUZIEREN ODER ENTFERNEN`.
 
 #### 2.3 Google Analytics
 
-Die aktuelle Datenschutzerklärung behauptet die Nutzung von Google Analytics.
+Die Datenschutzerklärung behauptet die Nutzung; technische Aktivität ist weiterhin nicht bestätigt.
 
-Status:
+Zu prüfen:
 
-- Dokumentationshinweis vorhanden,
-- technische Aktivität öffentlich noch nicht bestätigt,
-- deshalb weder als aktiv noch als inaktiv zu behandeln.
-
-Backend-/Browserprüfung erforderlich:
-
-- Analytics-Plugin oder manuell eingebautes Skript,
-- Tracking-ID / Property nur intern dokumentieren, sofern benötigt,
-- Requests beim Seitenaufruf vor und nach Einwilligung,
+- Plugin, Theme-Code oder manuell eingebautes Skript,
+- Google Tag Manager,
+- Requests beim Seitenaufruf,
 - Cookies/Storage,
-- Tag Manager oder weitere Marketing-Tags,
 - Consent-Mechanismus,
-- Vertrag-/Kontoeigentümer und Berechtigungen.
+- Eigentümer/Berechtigungen des Kontos.
 
-Ziel Homepage V1:
+Migrationsentscheidung: `OFFEN`.
 
-- kein Marketing-/Verhaltens-Tracking ohne konkrete fachliche Entscheidung und abgeschlossenen Privacy Check.
+Ziel Homepage V1: kein Marketing-/Verhaltens-Tracking als Default.
 
 #### 2.4 Social Media
 
-Facebook und Instagram sind als normale externe Links sichtbar.
+Normale Links zu Facebook/Instagram sind bestätigt.
 
-Status:
+Migrationsentscheidung: `BEHALTEN`.
 
-- datenschutzseitig einfaches Muster,
-- kein öffentlich belastbar bestätigter automatisch ladender Social Feed im derzeit geprüften Startseiteninhalt.
+Direkte Social-Embeds bleiben nicht das Standardmodell.
 
-Ziel:
+#### 2.5 Formulare
 
-- Links oder lokal/serverseitig kontrollierte Teaser bevorzugen,
-- echte Social-Media-Embeds nicht ungefragt beim Seitenaufruf laden.
+`Forminator` ist aktiv. Damit ist das Formularplugin identifiziert, die konkreten Datenflüsse aber noch nicht.
 
-#### 2.5 Kontaktformulare
+Zu prüfen:
 
-Die Startseite verweist für Elternfragen auf ein Kontaktformular auf der Elternseite.
-
-Öffentlich konnte die technische Formularlösung nicht belastbar identifiziert werden.
-
-Backend-Prüfung erforderlich:
-
-- verwendetes Formularplugin,
-- aktive Formulare,
-- Pflichtfelder,
-- Formularziele / Empfänger,
-- gespeicherte Einträge in WordPress-Datenbank oder Plugin-Tabellen,
-- E-Mail-Versandweg,
-- Spam-Schutz/CAPTCHA,
-- Drittanbieterrequests,
+- alle aktiven Formulare,
+- Pflichtfelder und Uploads,
+- Zieladressen/Empfänger,
+- Speicherung in WordPress/Plugin-Tabellen,
+- Spam-Schutz,
+- externe Integrationen,
 - Aufbewahrung/Löschung,
-- Altformulare und obsolete Formularziele.
+- Altformulare,
+- Übergang auf offizielle Rollenadressen bzw. digitale Poststelle.
 
-### 3. Nicht öffentlich belastbar feststellbar – Backend-Inventur erforderlich
+Migrationsentscheidung: `ERSETZEN / NEU ORDNEN`, sobald die Zielprozesse belastbar sind.
 
-Folgende Punkte werden nicht geraten, sondern müssen im echten System geprüft werden:
+### 3. Plugin-Inventur
 
-#### 3.1 Hosting und Server
+#### 3.1 Bestätigter Snapshot
 
-- Hostinganbieter und Vertragspartner,
-- produktive Domain-/DNS-Zuordnung,
-- PHP-Version,
-- Datenbanktyp/-Version soweit relevant,
-- Server-/Access-/Error-Logs,
-- Log-Aufbewahrung,
-- Backup-System,
-- Backup-Aufbewahrung und Zugriffsberechtigung,
-- Staging-/Testsysteme,
-- CDN/Proxy/WAF falls vorhanden.
+Die am 11.09.2026 bereitgestellten Backend-Screenshots zeigen 28 aktive Plugins. Die sichtbaren Versionen, Doppelungen und vorläufigen Migrationsentscheidungen stehen vollständig in:
 
-Keine Zugangsdaten oder Secrets in GitHub dokumentieren.
+`HOMEPAGE-PLUGIN-MIGRATION.md`
 
-#### 3.2 WordPress Core / Theme
+Wesentliche Cluster:
 
-- WordPress-Version,
-- Theme und Child Theme,
-- Colibri-Komponenten und tatsächliche Rolle,
-- individuell angepasste Theme-Dateien,
-- Update-Status,
-- nicht mehr genutzte Themes.
+- Rollen/Rechte: User Role Editor + Advanced Access Manager,
+- Backups: UpdraftPlus + BackUpWordPress,
+- PDF/Flipbook: PDF Embedder + Gutenberg PDF Viewer Block + DearFlip,
+- Kalender/Event/Belegung: Kalender + Timetable and Event Schedule + Google Calendar + eigene Event-/Platzbelegungsziele,
+- Layout/Widgets: Colibri, Stackable, Button-/Link-Widgets, WP-PageNavi, Logo Showcase,
+- Form/Privacy/externe Dienste: Forminator, DSGVO All in one for WP, Jetpack, Akismet,
+- Spiel-/Turnierdaten: Include Fussball.de Widgets, Meinturnierplan.de Widget Viewer, eigener Verein Turnierplaner.
 
-#### 3.3 Plugins
+#### 3.2 Noch zu prüfen
 
-Vollständige Liste erstellen mit mindestens:
-
-- Pluginname,
-- Version,
-- aktiv/inaktiv,
-- Zweck,
-- Owner/Verantwortung,
-- verarbeitet personenbezogene Daten ja/nein/unklar,
-- externe Requests ja/nein/unklar,
-- Cookies/Storage ja/nein/unklar,
+- zusätzliche inaktive Plugins,
+- Must-use Plugins,
+- Plugin-Abhängigkeiten,
+- aktive Shortcodes/Widgets/Blocks,
+- Custom Post Types/Taxonomien/Tabellen,
+- eigene Rollen/Capabilities,
+- externe Requests je Plugin,
 - Update-/Wartungsstatus,
-- künftig übernehmen / ersetzen / entfernen / prüfen.
+- ob Daten nach Deaktivierung weiterhin benötigt werden.
 
-Inaktive Altplugins gehören ebenfalls in die Inventur, weil sie Angriffsfläche und technische Altlasten darstellen können.
+### 4. Rollen und Berechtigungen
 
-#### 3.4 Benutzer und Berechtigungen
+Im Plugin-Snapshot sind zwei aktive Berechtigungswerkzeuge bestätigt:
 
-Prüfen:
+- User Role Editor,
+- Advanced Access Manager.
 
-- bestehende WordPress-Benutzer,
-- Rollen,
-- Administratoren,
+Damit ist ein konkreter Konsolidierungsbereich vorhanden.
+
+Vor Änderungen prüfen:
+
+- WordPress-Benutzer und Administratoren,
 - ehemalige Funktionsträger,
 - Sammelaccounts,
+- Custom Roles/Capabilities,
+- AAM-spezifische Content-/Access-Regeln,
 - unnötig hohe Rechte,
-- MFA-/2FA-Möglichkeiten,
-- Passwort-/Account-Prozess bei Rollenwechsel/Austritt.
+- Account-Prozess bei Rollenwechsel/Austritt,
+- 2FA/MFA-Möglichkeiten.
 
-Personenbezogene Benutzerlisten werden nicht in eine öffentliche GitHub-Datei kopiert. In GitHub reichen aggregierte Befunde, Regeln und offene Maßnahmen.
+Keine personenbezogene Benutzerliste nach GitHub kopieren.
 
-#### 3.5 Cookies / Storage / Browserzugriffe
+### 5. Backup / Restore
 
-Technisch im Browser prüfen:
+Aktiv bestätigt:
 
-- Cookies vor Zustimmung,
-- Cookies nach Zustimmung,
+- UpdraftPlus,
+- BackUpWordPress.
+
+Zusätzlich ist zu prüfen, ob IONOS/Hosting selbst Backups bereitstellt.
+
+Vor Plugin-Bereinigung muss feststehen:
+
+- welches System führend ist,
+- Speicherziel,
+- Aufbewahrung,
+- Zugriff,
+- Verschlüsselung soweit relevant,
+- ob ein Restore tatsächlich getestet werden kann.
+
+Mehrere Backup-Plugins ohne getestete Wiederherstellung gelten nicht als belastbare Strategie.
+
+### 6. Cookies / Storage / externe Requests
+
+Technisch im Browser auf repräsentativen Seiten prüfen:
+
+- Cookies vor Interaktion,
+- Cookies nach ggf. erteilter Einwilligung,
 - Local Storage,
 - Session Storage,
-- sonstige Endgerätezugriffe,
-- Quelle/Zweck/Laufzeit,
-- notwendige vs. optionale Speicherung.
+- weitere Endgerätezugriffe,
+- externe Network-Domains,
+- Quelle/Zweck/Laufzeit.
 
-Ergebnis muss mit der späteren Datenschutzerklärung und ggf. Consent-Lösung übereinstimmen.
-
-#### 3.6 Externe Requests
-
-Auf repräsentativen Seiten Network-Requests aufnehmen, insbesondere:
+Mindestens prüfen:
 
 - Startseite,
 - Impressum/Datenschutz,
 - Platzbelegung,
-- Eltern-/Jugendseite,
+- Eltern-/Jugendseiten,
 - Formularseiten,
-- Artikel mit Medien,
+- Artikel mit PDF/Flipbook/Medien,
 - Partnerseite,
-- Shop-/externe Weiterleitungen soweit relevant.
+- Seiten mit fussball.de-Widgets,
+- Turnierseiten.
 
-Pro externer Domain klären:
+### 7. WordPress Core / Theme / Hosting
 
-- Zweck,
-- welche Daten technisch übertragen werden können,
-- Anbieter/Dienstleister,
-- notwendig oder ersetzbar,
-- direkt beim Laden oder erst nach Nutzeraktion.
+Noch im Backend bzw. Hosting aufzunehmen:
 
-#### 3.7 Formulare und Uploads
+- WordPress-Version,
+- PHP-Version,
+- Theme/Child Theme,
+- Colibri-Anpassungen,
+- Datenbankversion soweit relevant,
+- nicht mehr genutzte Themes,
+- Hostinganbieter/Vertragspartner,
+- Server-/Access-/Error-Logs,
+- Log-Aufbewahrung,
+- Staging/Testsysteme,
+- CDN/Proxy/WAF,
+- Hosting-Backup.
 
-Alle aktiven Formulare und Uploadwege inventarisieren.
+Keine Secrets in GitHub dokumentieren.
 
-Prüfen:
+### 8. E-Mail-Versand aus WordPress
 
-- Zweck,
-- Datenfelder,
-- Minderjährige betroffen,
-- Uploads möglich,
-- Zielsystem,
-- E-Mail-Empfänger,
-- Datenbankkopie,
-- Spam-Schutz,
-- Aufbewahrung,
-- Löschbarkeit,
-- Auskunftsfähigkeit,
-- Übergang zur künftigen IONOS-/n8n-Poststelle.
-
-#### 3.8 E-Mail-Versand aus WordPress
-
-Prüfen:
+Zu prüfen:
 
 - PHP-Mail / SMTP / Plugin / externer Dienst,
-- Absenderadresse,
+- aktuelle Absenderadresse,
 - Reply-To,
-- Fehler-/Bounce-Verhalten,
+- Zustell-/Fehlerverhalten,
 - Logging,
 - Zugangsdatenablage,
+- Forminator-Mailversand,
 - Übergang auf offizielle TuS-Rollenadressen.
 
-#### 3.9 Medien / Fotos
+Das aktive Plugin `Change Admin Email Setting Without Outbound Email` ist ein Hinweis auf eine frühere/aktuelle Mail-Konfigurationsproblematik und soll nach sauberem Mailsetup voraussichtlich entfallen.
 
-Prüfen:
+### 9. Medien / PDFs / CDN
 
-- Media Library,
-- alte nicht mehr benötigte Dateien,
+Zu prüfen:
+
+- Media Library und Altdateien,
 - personenbezogene Dateinamen/Metadaten,
-- Vorschaubilder/Thumbnails,
-- externe CDN-Kopien,
-- Löschwirkung bei Medienentfernung,
-- besonders Jugendfotos und alte personenbezogene Inhalte.
+- Thumbnails,
+- Jetpack/WordPress.com-CDN-Kopien,
+- Löschwirkung,
+- Jugendfotos,
+- tatsächliche Nutzung der drei PDF-/Flipbook-Plugins.
 
-### 4. Migrationsentscheidung je technischer Komponente
+Für das Jubiläumsmagazin wird bewusst entschieden, ob eine echte Flipbook-Ansicht Mehrwert bringt. Diese Entscheidung rechtfertigt nicht drei parallele PDF-Plugins.
 
-Für jeden gefundenen Dienst, Plugin oder externen Datenfluss wird genau eine Arbeitsentscheidung vergeben:
+### 10. Migrationsklassen
 
-- `BEHALTEN` – fachlich benötigt und angemessen konfiguriert,
-- `HÄRTEN` – bleibt, benötigt aber Sicherheits-/Privacy-/Berechtigungsänderung,
-- `ERSETZEN` – fachlich benötigt, aktuelle technische Lösung ist nicht das Zielmodell,
-- `ENTFERNEN` – kein belastbarer Nutzen mehr,
-- `OFFEN` – technische/fachliche Prüfung fehlt.
+Für jede technische Komponente wird genau eine Arbeitsrichtung vergeben:
 
-Die Entscheidung wird nicht allein aus Datenschutzsicht getroffen. Funktion, Wartbarkeit, Kosten, UX und Architektur werden gemeinsam berücksichtigt.
+- `BEHALTEN`
+- `HÄRTEN`
+- `ERSETZEN`
+- `KONSOLIDIEREN`
+- `ENTFERNEN`
+- `OFFEN`
 
-### 5. Bereits erkennbare Migrationsrichtungen
+Die Entscheidung berücksichtigt Datenschutz, Sicherheit, Funktion, Wartbarkeit, UX, Kosten und bestehende Abhängigkeiten.
 
-#### Platzbelegung
+### 11. Developer-Handoff – konkrete Reihenfolge
 
-`ERSETZEN`
+Mathias arbeitet bei der bestehenden Homepage in dieser Reihenfolge:
 
-Google-Calendar-iframe wird durch das eigene Projekt `TuS Platzbelegung` ersetzt.
+1. Plugin-Snapshot gegen die echte Pluginseite vervollständigen, insbesondere inaktive/MU-Plugins.
+2. Für jedes Altplugin Nutzung in Seiten, Blocks, Widgets, Shortcodes, Rollen und Datenstrukturen ermitteln.
+3. WordPress/Core/Theme/PHP/Hosting aufnehmen.
+4. Benutzer-/Rollenmodell prüfen.
+5. Forminator-Formulare, Empfänger und Speicherung inventarisieren.
+6. WordPress-Mailversand prüfen.
+7. Cookies/Storage und externe Requests im Browser messen.
+8. Jetpack-Module, Analytics/Tag Manager und Consent technisch verifizieren.
+9. Backup-/Restore-Strategie festlegen und vor Bereinigung absichern.
+10. Erst dann erste kontrollierte Plugin-Migrations-/Entfernungswelle planen.
+11. Nach jeder Welle Smoke-Test und erneuter Request-/Privacy-Check.
+12. Bestätigte Fakten und Migrationsentscheidungen in die fachlich richtige Source of Truth zurückschreiben.
 
-#### Google Analytics
+### 12. Was nicht in GitHub gehört
 
-`OFFEN`
-
-Erst technisch feststellen, ob Analytics überhaupt aktiv ist. Homepage V1 benötigt Analytics nicht als Default.
-
-#### i0.wp.com / externer Bildweg
-
-`OFFEN`
-
-Ursache und tatsächlichen Nutzen prüfen. Für Standardassets lokales bzw. bewusst freigegebenes Hosting bevorzugen.
-
-#### Social Links
-
-`BEHALTEN`
-
-Normale Links zu Social Media sind grundsätzlich ein einfaches, kontrollierbares Muster.
-
-#### Alte Datenschutzerklärung
-
-`ERSETZEN`
-
-Die finale Datenschutzerklärung wird aus dem realen produktiven Technik- und Datenflussinventar abgeleitet.
-
-#### Kontaktformulare
-
-`OFFEN / NEU ORDNEN`
-
-Bestehende Implementierung, Empfänger und Speicherung inventarisieren; danach in die neue Rollenpostfach-/Intake-Architektur überführen.
-
-### 6. Developer-Handoff – konkrete Reihenfolge
-
-Der WordPress Developer führt die technische Inventur vor größeren Homepage-Migrationsarbeiten in dieser Reihenfolge aus:
-
-1. vollständige Plugin-/Theme-/WordPress-Inventur,
-2. Benutzer-/Rollenprüfung ohne Veröffentlichung personenbezogener Detaildaten,
-3. Formularinventur inkl. Empfänger und Datenspeicherung,
-4. Browser-Check Cookies/Storage,
-5. Network-Check externe Requests auf repräsentativen Seiten,
-6. Hosting-/Logs-/Backups/Staging aufnehmen,
-7. jede Komponente als `BEHALTEN / HÄRTEN / ERSETZEN / ENTFERNEN / OFFEN` klassifizieren,
-8. Datenschutz- und Sicherheitsauffälligkeiten an Data Protection Manager zurückgeben,
-9. daraus Migrationsplan und spätere echte Datenschutzerklärung ableiten.
-
-### 7. Was nicht in GitHub gehört
-
-Nicht in dieses Inventar schreiben:
+Nicht dokumentieren:
 
 - Passwörter,
 - API-Keys,
 - SMTP-Zugangsdaten,
-- Analytics-/Dienstzugänge,
+- Dienstzugänge,
 - vollständige personenbezogene Benutzerlisten,
 - konkrete Formularinhalte,
-- sensible Logauszüge mit personenbezogenen Details,
+- sensible Logauszüge,
 - Backup-Dateien,
 - Datenbankexports.
 
-GitHub dokumentiert Struktur, technische Fakten, Entscheidungen und offene Maßnahmen.
+### 13. Definition of Done
 
-### 8. Definition of Done der technischen Homepage-Inventur
+Die technische Homepage-Inventur ist abgeschlossen, wenn:
 
-Die Inventur ist abgeschlossen, wenn:
-
-- WordPress/Core/Theme/Plugins vollständig aufgenommen sind,
-- aktive Formulare und deren Datenflüsse bekannt sind,
-- Cookies/Storage technisch geprüft sind,
-- externe Browserrequests bekannt sind,
-- Hosting/Logs/Backups/Staging dokumentiert sind,
-- Benutzer-/Berechtigungsmodell geprüft ist,
-- bekannte externe Dienstleister sichtbar sind,
+- aktive und inaktive Plugins vollständig aufgenommen sind,
+- Plugin-Abhängigkeiten bekannt sind,
+- WordPress/Core/Theme/PHP/Hosting bekannt sind,
+- Rollen/Berechtigungen geprüft sind,
+- Formulare und E-Mail-Datenflüsse bekannt sind,
+- Cookies/Storage und externe Requests gemessen sind,
+- Analytics/Jetpack/Consent-Status bestätigt ist,
+- Backup/Restore geklärt ist,
 - jede relevante Komponente eine Migrationsentscheidung hat,
-- offene rechtliche/vertragliche/Privacy-Punkte markiert sind,
-- keine Secrets oder unnötigen personenbezogenen Details in GitHub gelandet sind,
-- Mathias und David denselben bestätigten technischen Ausgangspunkt verwenden.
+- keine Secrets oder unnötigen personenbezogenen Daten in GitHub liegen,
+- Mathias und David denselben bestätigten Ausgangspunkt verwenden.
 
 ## Relationship to other documents
 
 - `HOMEPAGE-PRIVACY-CHECK.md`
 - `HOMEPAGE-CONTACT-INVENTORY.md`
+- `HOMEPAGE-PLUGIN-MIGRATION.md`
 - `CURRENT-STATE.md`
 - `../../design/homepage-standard.md`
 - `../../design/homepage-contact-architecture.md`
@@ -376,10 +322,6 @@ Die Inventur ist abgeschlossen, wenn:
 
 ## Future Development
 
-Nach der Backend-Inventur wird dieses Dokument nicht zu einem dauerhaften Plugin-Katalog aufgebläht. Dauerhafte Architektur- und Privacy-Entscheidungen werden in die zuständigen Standards, Projektzustände oder ADRs zurückgeführt.
+Der Plugin-Snapshot ist jetzt vorhanden. Der nächste technische Fortschritt ist der Dependency-Check im echten WordPress-System, nicht eine weitere abstrakte Liste.
 
-Die unmittelbar nächsten Entscheidungen bleiben:
-
-- IONOS-/Rollenpostfach-Struktur,
-- produktive technische Homepage-Inventur durch den WordPress Developer,
-- anschließende P0-Bereinigung der bestehenden Website und Migrationsplanung für den Neuaufbau.
+Danach folgen kontrollierte Plugin-Konsolidierung, Homepage-P0-Bereinigung und schließlich die Migration auf die neue Homepage-Architektur. Die finale Datenschutzerklärung wird erst aus dem tatsächlich verbleibenden Produktivsystem abgeleitet.

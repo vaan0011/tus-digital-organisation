@@ -14,240 +14,300 @@ Es enthält keine sensiblen Falldaten und ersetzt weder Rechtsberatung noch eine
 
 ### 1. Aktueller Reifegrad
 
-Der TuS hat mehrere digitale Fachsysteme, Projektideen und Automationspfade im Aufbau. Datenschutz ist bisher in einzelnen Standards und Projekten berücksichtigt, aber noch nicht als eigener Querschnittsbereich systematisch konsolidiert.
+Mit der Rolle `Data Protection & Information Protection Manager` ist Datenschutz erstmals als dauerhafte Querschnittsverantwortung im TuS-OS verankert.
 
-Mit der Rolle `Data Protection & Information Protection Manager` wird diese Querschnittsverantwortung erstmals dauerhaft gebündelt.
+Erster aktiver Schwerpunkt ist die öffentliche Homepage. Dafür liegen inzwischen vier belastbare Arbeitsquellen vor:
 
-Der erste konkrete Privacy Check wurde am 11.09.2026 auf die öffentliche TuS-Homepage priorisiert. Die Ergebnisse und der Developer-Handoff liegen in `HOMEPAGE-PRIVACY-CHECK.md`.
+1. `HOMEPAGE-PRIVACY-CHECK.md` – rechtlich/technische Privacy-by-Design-Anforderungen,
+2. `HOMEPAGE-CONTACT-INVENTORY.md` – öffentliche Kontaktwege und bestehende IONOS-Adressen,
+3. `HOMEPAGE-TECHNICAL-INVENTORY.md` – technische Backend-Prüflogik,
+4. `HOMEPAGE-PLUGIN-MIGRATION.md` – aktuelle Plugin-Inventur und Migrationsmatrix.
 
-Als zweiter Homepage-Schritt wurde die öffentlich sichtbare Kontaktlandschaft inventarisiert. Der belastbare Arbeitsstand und die Ableitung für die spätere IONOS-Struktur liegen in `HOMEPAGE-CONTACT-INVENTORY.md`.
-
-Als dritter Homepage-Schritt wurde die öffentlich feststellbare technische Ist-Situation aufgenommen und eine verbindliche Backend-Inventur für den WordPress Developer definiert. Der Arbeitsstand liegt in `HOMEPAGE-TECHNICAL-INVENTORY.md`.
+Der WordPress Developer liest diese Quellen bei Homepage-Arbeit verbindlich mit.
 
 ### 2. Bekannte relevante Systeme / Bereiche
 
-Für die erste Datenschutz-Inventur sind insbesondere zu prüfen:
+Für die organisationsweite Datenschutz-Inventur sind insbesondere relevant:
 
-- bestehende Mitgliederverwaltung und Mitgliederdaten,
-- Google Drive inklusive geschützter Bereiche und Freigaben,
+- Mitgliederverwaltung und Mitgliederdaten,
+- Google Drive inklusive Freigaben und geschützter Bereiche,
 - GitHub als Organisations- und Entwicklungswissen,
 - WordPress-Homepage und Plugins,
 - Event Planner,
-- Partner-CRM und spätere Partnerportal-/Partner-Hub-Funktionen,
-- Team Manager und zukünftige Mannschafts-/Personenmodelle,
-- E-Mail bei IONOS,
+- Platzbelegung,
+- Partner-CRM / Partnerportal / Partner Hub,
+- Team Manager und künftige Personen-/Mannschaftsmodelle,
+- IONOS-E-Mail,
 - geplanter n8n-E-Mail-/Workflow-Flur,
 - ChatGPT-/KI-gestützte Arbeitsprozesse,
-- Canva bzw. Medien-/Designprozesse soweit personenbezogene Inhalte verarbeitet werden,
+- Canva und Medien-/Designprozesse soweit personenbezogene Inhalte betroffen sind,
 - Archiv- und Veröffentlichungsprozesse,
-- Spielberichte, Fotos und Social-Media-Veröffentlichungen,
-- Kinder- und Jugendschutzprozess,
+- Spielberichte, Fotos und Social Media,
+- Kinder- und Jugendschutz,
 - Beschäftigten-/Lohn-/Förderdaten im Kontext Sportparkteam.
 
-Die Liste ist ein Startinventar und noch kein bestätigtes Verzeichnis von Verarbeitungstätigkeiten.
+Die Liste ist ein Startinventar und noch kein vollständiges Verzeichnis von Verarbeitungstätigkeiten.
 
-### 3. Bekannte Architekturentscheidungen
+### 3. Verbindliche Architekturentscheidungen
 
-Bereits verbindlich bzw. fachlich gesetzt:
+Bereits gesetzt:
 
 - GitHub ist Organisationswissen und **keine operative personenbezogene Datenbank**.
-- Vertrauliche, personenbezogene, finanzielle oder vertragliche Dateien gehören in angemessen geschützte Bereiche und nicht allein wegen der Projektablage nach GitHub.
-- Die geplante digitale TuS-Poststelle soll rollenbasierte IONOS-Adressen nutzen und n8n als Orchestrierungsschicht verwenden.
-- Hochsensible Postfächer bzw. Schutzfallprozesse dürfen nicht automatisch in normale KI-/n8n-Queues laufen.
-- Konkrete Kinderschutzmeldungen werden besonders geschützt und menschlich verantwortet verarbeitet.
-- Öffentliche Homepage-Formulare sollen serverseitig validiert und technisch sauber gegen Missbrauch abgesichert werden.
-- Neue Systeme sollen keine unnötigen parallelen Personen- oder Partnerdatenwelten erzeugen.
-- Für die neue Homepage ist Privacy-by-Design das Ziel: möglichst keine unnötigen Drittanbieter-Embeds, kein beiläufiges Tracking und kein pauschales Cookie-Banner ohne tatsächlichen Bedarf.
-- Die neue Homepage soll fachlich führende Daten möglichst über kontrollierte serverseitige Adapter bzw. eigene Darstellung nutzen, statt Besucherbrowser direkt an Drittanbieter-iframes oder Skripte zu koppeln.
-- Öffentliche Kontaktwege sollen rollenbasiert und auf offizielle TuS-Adressen konzentriert werden; persönliche Mobilnummern und private Adressen sind nicht das Standardmodell.
-- Die Platzbelegung wird als eigenes WordPress-Plugin umgesetzt; ein direkt eingebetteter Google-Kalender ist nicht das Zielmodell.
-- Öffentliche Technikbeobachtung ist Hinweis, aber keine automatische Source of Truth für Plugins, Tracking, Cookies oder Hosting. Diese Punkte werden im produktiven System verifiziert.
+- Sensible, personenbezogene, finanzielle oder vertragliche Inhalte gehören in angemessen geschützte Systeme.
+- Die geplante digitale TuS-Poststelle soll rollenbasierte IONOS-Adressen und n8n als Orchestrierungsschicht verwenden.
+- Hochsensible Eingänge, insbesondere konkrete Kinderschutzmeldungen, dürfen nicht durch normale KI-/n8n-Queues laufen.
+- Homepage-Formulare sollen minimal, serverseitig validiert und an kontrollierte Rollen-/Intake-Ziele geroutet werden.
+- Öffentliche Standardkontakte werden an Rollen statt Personen gebunden.
+- Die neue Homepage startet möglichst ohne Marketing-/Verhaltens-Tracking.
+- Drittanbieter-iframes und beiläufige externe Skripte sind nicht das Zielmodell.
+- Daten aus fachlich führenden Systemen werden möglichst über kontrollierte Adapter und eigenes TuS-Rendering dargestellt.
+- Platzbelegung wird als eigenes WordPress-Plugin umgesetzt.
+- Die Plugin-Landschaft soll deutlich reduziert werden; eigene TuS-Fachplugins ersetzen generische Altplugins, sobald der Ersatz belastbar ist.
 
 ### 4. Formelle Datenschutzbeauftragten-Frage
 
-Noch offen ist, ob der TuS aufgrund der tatsächlichen organisatorischen und technischen Situation zur formellen Benennung eines Datenschutzbeauftragten verpflichtet ist oder eine freiwillige Benennung sinnvoll wäre.
+Noch offen ist, ob der TuS formal einen Datenschutzbeauftragten benennen muss oder freiwillig benennen sollte.
 
-Dafür ist eine belastbare Bestandsaufnahme erforderlich, insbesondere:
+Dafür sind insbesondere noch belastbar festzustellen:
 
-- wie viele Personen beim TuS regelmäßig und dauerhaft automatisiert personenbezogene Daten verarbeiten,
+- wie viele Personen regelmäßig und dauerhaft automatisiert personenbezogene Daten verarbeiten,
 - ob Verarbeitungsvorgänge bestehen, die eine Datenschutz-Folgenabschätzung erfordern könnten,
-- ob weitere Kriterien aus Art. 37 DSGVO einschlägig sind,
-- welche Interessenkonflikte bei möglichen internen Personen bestehen würden.
+- ob weitere Kriterien aus Art. 37 DSGVO bzw. § 38 BDSG einschlägig sind,
+- ob bei möglichen internen Kandidaten Interessenkonflikte bestehen.
 
 Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bezeichnet.
 
-Die aktuelle öffentliche Homepage verwendet derzeit dennoch die Bezeichnung `Datenschutzbeauftragter`. Diese öffentliche Formulierung ist als P0-Korrektur markiert, sofern keine formelle Bestellung nachgewiesen wird.
+Die bestehende Homepage verwendet derzeit trotzdem die Bezeichnung `Datenschutzbeauftragter`; dies bleibt P0-Korrektur, sofern keine formelle Bestellung nachgewiesen wird.
 
-### 5. Homepage Privacy Check – 11.09.2026
+### 5. Homepage Privacy Check
 
 Belastbar öffentlich festgestellt:
 
-- die aktuelle Datenschutzseite beschreibt Google Analytics mit `berechtigtem Interesse`; ob Analytics technisch noch aktiv ist, ist noch zu verifizieren,
-- die aktuelle Cookie-Erklärung ist generisch und auf Browser-Einstellungen ausgerichtet,
-- die aktuelle Seite bezeichnet `datenschutz@tus-mingolsheim.de` als Kontakt des `Datenschutzbeauftragten`, obwohl der formelle Status noch offen ist,
-- das Impressum referenziert noch `§ 55 Abs. 2 RStV`; die aktuelle medienrechtliche Referenz ist zu aktualisieren,
-- die Seite `Platzbelegung` lädt einen iframe von `calendar.google.com`,
-- auf derselben Seite sind externe Bildressourcen über `i0.wp.com` sichtbar,
-- Facebook und Instagram sind auf der Startseite als normale externe Links vorhanden; dieses Muster ist datenschutzseitig einfacher als ein automatisch ladender Social Feed.
+- die aktuelle Datenschutzerklärung beschreibt Google Analytics mit `berechtigtem Interesse`; ob Analytics technisch aktuell aktiv ist, ist noch zu verifizieren,
+- die aktuelle Cookie-Erklärung ist generisch und bildet den realen Technikstand nicht verlässlich ab,
+- das Impressum referenziert noch `§ 55 Abs. 2 RStV`,
+- die Seite `Platzbelegung` lädt einen direkten Google-Calendar-iframe,
+- auf derselben Seite wurden Ressourcen über `i0.wp.com` beobachtet,
+- Facebook und Instagram sind als normale externe Links eingebunden.
 
-Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPAGE-PRIVACY-CHECK.md`.
+Ziel Homepage V1:
 
-### 6. Homepage-Kontaktinventur – 11.09.2026
+- kein unnötiges Tracking,
+- kein Cookie-Banner ohne tatsächlichen Bedarf,
+- lokale bzw. bewusst freigegebene Assets,
+- keine ungefragten Social-/Google-/Video-Embeds,
+- finale Datenschutzerklärung aus dem realen Produktivsystem statt aus pauschalem Generatortext.
 
-Öffentlich bestätigt sind bereits mehrere sinnvolle Rollenadressen, insbesondere:
+### 6. Homepage-Kontakte und vorhandene IONOS-Struktur
 
-- Geschäftsstelle,
-- Mitgliederverwaltung,
-- Jugendleitung,
-- Aktive/Senioren,
-- Datenschutzkontakt.
+Der Vorstand hat folgende bereits angelegte nicht-persönliche Adressen bestätigt; Domain jeweils `@tus-mingolsheim.de`:
 
-Gleichzeitig finden sich auf bestehenden Seiten und älteren Beiträgen weiterhin persönliche Mobilnummern bzw. personengebundene Direktkontakte, insbesondere bei Vorstands-/Funktionsseiten, einzelnen Mannschaftsseiten, Fördervereinsseiten und historischen Veranstaltungsbeiträgen.
+- `admin`
+- `adobe`
+- `ah`
+- `anrufbeantworter`
+- `damengymnastik`
+- `datenschutz`
+- `finanzen`
+- `geschaeftsstelle`
+- `instagram`
+- `jugendleitung`
+- `mitgliederverwaltung`
+- `presse`
+- `senioren`
+- `theater`
+- `turniere`
 
-Wesentliche Konsequenz:
+Bereits gut nutzbare öffentliche Rollenwege sind insbesondere Geschäftsstelle, Mitgliederverwaltung, Jugendleitung, Senioren/Aktive, Presse, Datenschutz sowie fachlich passende Abteilungs-/Turnieradressen.
 
-- nicht nur die neue Kontaktseite, sondern auch migrierter Legacy-Content muss auf obsolete persönliche Kontaktdaten geprüft werden,
-- die spätere IONOS-Struktur wird in öffentliche Rollenadressen, operative interne Rollenpostfächer und besonders geschützte menschliche Kontaktwege getrennt,
-- eine öffentliche Adresse muss technisch nicht zwingend ein eigenes Postfach sein; Alias, Weiterleitung oder kontrollierter Workflow sind je Zweck zu entscheiden,
-- die vollständige Arbeitsinventur steht in `HOMEPAGE-CONTACT-INVENTORY.md`.
+System-/Dienstadressen wie `admin@`, `adobe@` oder `instagram@` sind keine öffentlichen Homepage-Kontakte.
 
-### 7. Homepage Technical Inventory – 11.09.2026
+Starke neue Kandidaten mit bereits realem Prozessbedarf:
 
-Öffentlich belastbar bzw. als Arbeitsbefund festgehalten:
+- `redaktion@...` – redaktionelle Einreichungen, Spielberichte, Matchday-/Stadionheft-Prozesse; getrennt von `presse@...`,
+- genau eine kanonische Partneradresse: `partner@...` oder `sponsoring@...`.
 
-- die Website läuft auf WordPress,
-- der öffentliche Footer nennt Colibri,
-- die Platzbelegung verwendet einen direkten Google-Calendar-iframe,
-- auf der Platzbelegungsseite wurden externe Bildressourcen über `i0.wp.com` beobachtet,
-- die Datenschutzerklärung behauptet Google Analytics, die technische Aktivität ist jedoch noch nicht bestätigt,
-- Facebook und Instagram sind als normale externe Links sichtbar,
-- die Homepage verweist auf mindestens einen Kontaktformularprozess; dessen technische Implementierung ist öffentlich nicht belastbar identifiziert.
+Interne Arbeitsadressen wie `foerderung@...` oder `archiv@...` werden nur angelegt, wenn der reale Workflow sie benötigt.
 
-Noch im produktiven System zu verifizieren sind insbesondere:
+Ein späterer Kinderschutzkontakt ist besonders geschützt und nicht Teil der normalen KI-/n8n-Poststelle.
 
-- WordPress-/PHP-/Theme-Stand,
-- vollständige Pluginliste,
-- Benutzer und Berechtigungen,
-- aktive Formulare und deren Empfänger/Speicherung,
-- Cookies/Local Storage/Session Storage,
-- externe Network-Requests,
+Noch offen pro bestehender/neuer Adresse:
+
+- Mailbox / Alias / Weiterleitung / Workflow,
+- Owner,
+- Vertretung,
+- öffentliche Sichtbarkeit,
+- Automationsklasse,
+- Aufbewahrung/Löschung.
+
+### 7. Homepage Plugin Snapshot – 11.09.2026
+
+Vom Vorstand wurden Screenshots des aktuellen WordPress-Backends bereitgestellt. Darauf sind **28 aktive Plugins** erkennbar. Ob zusätzlich inaktive Plugins installiert sind, ist noch zu prüfen.
+
+Vollständige Matrix: `HOMEPAGE-PLUGIN-MIGRATION.md`.
+
+Besonders relevante Cluster:
+
+#### Eigene TuS-Lösung
+
+- `Verein Turnierplaner` – behalten und gegen aktuellen GitHub-/Release-Stand härten.
+
+#### Kalender / Events / Belegung
+
+- `Kalender`
+- `Timetable and Event Schedule`
+- bestehender Google-Calendar-iframe
+
+Ziel: durch Event Planner und eigenes Platzbelegungs-Plugin ersetzen.
+
+#### Spielplandaten
+
+- `Include Fussball.de Widgets`
+
+Ziel: kontrollierte MatchCard-/fussball.de-Integration mit eigenem TuS-Rendering; bestehendes Widget erst nach funktionierendem Ersatz entfernen.
+
+#### Partnerdarstellung
+
+- `Logo Showcase with Slick Slider`
+
+Ziel: Partnerportal/Partnerdaten + eigene PartnerCard/Logo-Komponente.
+
+#### Rollen/Rechte – Doppelung
+
+- `User Role Editor`
+- `Advanced Access Manager`
+
+Vor Reduktion müssen Custom Roles, Capabilities und Access Rules aufgenommen werden.
+
+#### Backups – Doppelung
+
+- `UpdraftPlus`
+- `BackUpWordPress`
+- ggf. Hosting-Backups noch zu verifizieren
+
+Ziel: eine belastbare Backup-/Restore-Strategie mit getestetem Restore.
+
+#### PDF / Magazin – Dreifachlösung
+
+- `PDF Embedder`
+- `Gutenberg PDF Viewer Block`
+- `3D FlipBook : DearFlip Lite`
+
+Ziel: auf ein bewusstes Muster reduzieren; für normale PDFs kann ein nativer Weg genügen, Magazinansicht nur bei echtem Mehrwert separat.
+
+#### Layout / Alt-UI
+
+- `Colibri Page Builder`
+- `Stackable – Gutenberg Blocks`
+- `Button Widget by Loomisoft`
+- `linkButton`
+- `WP-PageNavi`
+
+Diese werden nicht blind entfernt, weil bestehende Seiten davon abhängen können. Der Homepage-Neuaufbau soll sie schrittweise durch das TuS Digital Design System und definierte Komponenten ersetzen.
+
+#### Formulare / Privacy / externe Dienste
+
+- `Forminator`
+- `DSGVO All in one for WP`
+- `Jetpack`
+- `Akismet`
+
+Hier sind Datenfluss, tatsächliche Nutzung, externe Requests, Speicherung und künftiger Bedarf zu prüfen. `i0.wp.com` kann mit Jetpack zusammenhängen, ist aber noch technisch zu bestätigen.
+
+### 8. Noch offene technische Backend-Inventur
+
+Trotz Plugin-Screenshots fehlen noch folgende produktive Fakten:
+
+- WordPress-/PHP-/Theme-Versionen und Child-Theme/Customizations,
+- zusätzliche inaktive Plugins,
+- Seiten/Shortcodes/Widgets, die von jedem Plugin abhängen,
+- Benutzer, Administratoren, Rollen und ehemalige Accounts,
+- aktive Formulare, Empfänger, gespeicherte Einträge und Uploads,
+- WordPress-Mailversand / SMTP / Absender,
+- Cookies, Local Storage und Session Storage,
+- externe Browserrequests auf repräsentativen Seiten,
 - Analytics/Tag Manager/Consent tatsächlich aktiv oder nicht,
-- Hosting, Serverlogs, Backups und Staging,
-- E-Mail-Versand aus WordPress,
+- aktive Jetpack-Module,
+- Hosting, Serverlogs, Backups, Backup-Ziele, Staging und Restore-Fähigkeit,
 - Medien-/CDN-Konfiguration.
 
-Die genaue Prüflogik und Migrationsklassifikation `BEHALTEN / HÄRTEN / ERSETZEN / ENTFERNEN / OFFEN` stehen in `HOMEPAGE-TECHNICAL-INVENTORY.md`.
+Jede technische Komponente erhält danach eine Migrationsentscheidung:
 
-### 8. Erste operative Prioritäten
+`BEHALTEN / HÄRTEN / ERSETZEN / KONSOLIDIEREN / ENTFERNEN / OFFEN`.
 
-1. **Homepage P0 und technische Backend-Inventur abarbeiten**
-   - Google-Analytics-Ist technisch verifizieren,
-   - öffentliche DSB-Bezeichnung prüfen/korrigieren,
-   - Impressumsreferenz aktualisieren,
-   - WordPress/Core/Theme/Plugins inventarisieren,
-   - Formulare und Empfänger prüfen,
-   - Cookies/Storage und externe Requests technisch prüfen,
-   - Hosting/Logs/Backups/Staging aufnehmen,
-   - Benutzer/Berechtigungen prüfen,
-   - Komponenten für Migration klassifizieren.
+### 9. Aktuelle operative Prioritäten
 
-2. **IONOS-/Kontaktstruktur entscheiden**
-   - bestehende Rollenadressen bestätigen,
-   - benötigte neue öffentliche Rollenadressen festlegen,
-   - operative interne Rollenpostfächer festlegen,
-   - sensible menschliche Sonderwege definieren,
-   - pro Adresse Mailbox/Alias/Weiterleitung/Workflow, Owner, Vertretung und Automationsklasse bestimmen.
+1. **Plugin-Dependency-Check durch Mathias**
+   - Nutzung je Plugin/Shortcode/Widget prüfen,
+   - Doppelungen auflösen planen,
+   - TuS-Ersatz je Funktion bestätigen,
+   - keine Massen-Deaktivierung ohne Test.
 
-3. **Legacy Contact Cleanup für Homepage-Migration vorbereiten**
+2. **Homepage-P0 technisch verifizieren**
+   - Google Analytics tatsächlich aktiv oder nicht,
+   - Jetpack/CDN und `i0.wp.com`,
+   - Forminator-Datenfluss,
+   - DSGVO-/Consent-Plugin reale Funktion,
+   - Impressum/DSB-Bezeichnung korrigieren.
+
+3. **Backup/Restore vor Bereinigung absichern**
+   - UpdraftPlus / BackUpWordPress / Hosting-Backup vergleichen,
+   - Zielbestand festlegen,
+   - Restore testbar machen.
+
+4. **IONOS-/Routing-Matrix beschließen**
+   - vorhandene Adressen klassifizieren,
+   - `redaktion@` und Partnerkontakt entscheiden,
+   - Owner/Vertretung/Automationsklasse festlegen.
+
+5. **Legacy Contact Cleanup vorbereiten**
    - alte persönliche Telefonnummern,
    - personengebundene Mailadressen,
-   - alte Event-/Ticketkontakte,
-   - alte Mannschafts-/Trainerkontakte,
-   - veraltete Formulare und Formularziele.
+   - Event-/Ticketkontakte,
+   - alte Trainer-/Mannschaftskontakte,
+   - veraltete Formularziele.
 
-4. **Datenschutz-Inventur erstellen**
-   - Systeme,
-   - Zwecke,
-   - Datenkategorien,
-   - betroffene Gruppen,
-   - Owner,
-   - Empfänger/Dienstleister,
-   - Speicherorte.
+6. **Danach organisationsweite Datenschutz-Inventur fortführen**
+   - Berechtigungen,
+   - Verarbeitungstätigkeiten,
+   - Dienstleister/AVV,
+   - Lösch-/Aufbewahrungslogik,
+   - Datenpannen-/Betroffenenprozess.
 
-5. **Berechtigungsinventur starten**
-   - besonders Google Drive, WordPress, Partnerdaten und künftige E-Mail-Queues.
-
-6. **Verzeichnis der Verarbeitungstätigkeiten vorbereiten**
-   - nicht als Papierübung, sondern aus den realen Datenflüssen.
-
-7. **Dienstleister-/AVV-Check**
-   - nur für tatsächlich personenbezogene Verarbeitungen und aktuell genutzte Systeme.
-
-8. **Lösch-/Aufbewahrungslogik priorisieren**
-   - Mitgliederdaten,
-   - Kontakte/CRM,
-   - E-Mail-Eingänge,
-   - Event-/Teilnehmerdaten,
-   - Formulare,
-   - Fotos/Medien,
-   - sensible Sonderbereiche.
-
-9. **E-Mail-/n8n-Architektur vor produktiver Automatisierung prüfen**
-   - `redaktion@` kann Pilot werden,
-   - Schutzfall- und sensible Postfächer separat behandeln.
-
-10. **Privacy Check in Entwicklungsprojekte integrieren**
-   - insbesondere Mitglieder & Engagement,
-   - Team Manager,
-   - Partnerportal/Partner Hub,
-   - Homepage-Formulare,
-   - Event Planner,
-   - Tauschbörse.
-
-11. **Datenpannen- und Betroffenenprozess definieren**
-   - Zuständigkeit,
-   - sicherer Dokumentationsweg,
-   - Eskalationslogik,
-   - Fristenmanagement.
-
-### 9. Aktuelle wichtige Abhängigkeiten
+### 10. Aktuelle wichtige Abhängigkeiten
 
 #### Homepage / WordPress
 
-Die Homepage ist aktuell der erste aktive Privacy-Schwerpunkt.
-
-Für den Neuaufbau gelten `HOMEPAGE-PRIVACY-CHECK.md`, `HOMEPAGE-CONTACT-INVENTORY.md`, `HOMEPAGE-TECHNICAL-INVENTORY.md` und `../../design/homepage-contact-architecture.md`. Der WordPress Developer liest diese Quellen bei Homepage-Arbeit verbindlich mit.
-
-Vor Go-live muss die tatsächliche technische Konfiguration der produktiven Website inventarisiert sein; erst daraus wird die finale Datenschutzerklärung abgeleitet.
-
-#### Kinder- und Jugendschutz
-
-Das Schutzkonzept benötigt getrennte, menschlich verantwortete Meldewege. Datenschutz unterstützt Zugriffs-, Aufbewahrungs- und Dokumentationsregeln, entscheidet aber nicht selbst über Schutzfallinterventionen.
+Die Homepage bleibt erster aktiver Privacy-Schwerpunkt. Der WordPress Developer arbeitet mit den vier genannten Homepage-/Plugin-Quellen und schreibt bestätigte technische Fakten zurück.
 
 #### Digitale Poststelle
 
-Vor produktiver n8n-Anbindung müssen Datenminimierung, Routing, Zugriff, Aufbewahrung, Anhänge und hochsensible Sonderwege definiert sein.
+Vor produktiver n8n-Anbindung müssen Datenminimierung, Routing, Zugriff, Aufbewahrung und sensible Sonderwege verbindlich sein. `redaktion@` bleibt geeigneter Pilot für einen normalen redaktionellen Eingang.
 
-Die Homepage-Kontaktinventur ist jetzt die fachliche Eingangsbasis für die spätere IONOS-/Poststellenentscheidung.
+#### Kinder- und Jugendschutz
+
+Schutzmeldungen benötigen getrennte menschliche Meldewege. Datenschutz unterstützt Zugriff und Dokumentation, übernimmt aber nicht die Schutzfallentscheidung.
 
 #### Mitglieder & Engagement / Team Manager
 
-Diese Projekte dürfen keine parallele Personenidentität aufbauen. Vor Umsetzung muss klar sein, welche Personen-/Mitgliedsdaten führend sind und welche Systeme nur referenzieren.
+Keine parallele Personenidentität aufbauen. Führende Datenquelle und Referenzmodell müssen vor Umsetzung geklärt werden.
 
 #### Partnerportal / Partner Hub
 
-Das bestehende geschützte Partner-CRM ist operative Zwischen-Source-of-Truth. Öffentliche Partneranfragen dürfen keine unkontrollierte zweite Datenhaltung erzeugen.
+Das geschützte Partner-CRM bleibt operative Zwischen-Source-of-Truth. Öffentliche Partneranfragen dürfen keine unkontrollierte zweite Datenhaltung erzeugen.
 
-### 10. Bewusst nicht in GitHub
+### 11. Bewusst nicht in GitHub
 
 Nicht hier dokumentiert werden:
 
+- Passwörter oder API-/SMTP-Zugangsdaten,
 - konkrete Mitgliederlisten,
+- vollständige WordPress-Benutzerlisten,
+- Formularinhalte,
 - individuelle Kinderschutzmeldungen,
 - Gesundheitsdaten,
 - Führungszeugnisinhalte,
 - konkrete Lohn-/Sozialleistungsdaten,
-- Zugangsdaten,
 - konkrete personenbezogene Datenpannenfälle,
 - sensible Betroffenenanfragen.
 
@@ -256,21 +316,18 @@ Nicht hier dokumentiert werden:
 - `HOMEPAGE-PRIVACY-CHECK.md`
 - `HOMEPAGE-CONTACT-INVENTORY.md`
 - `HOMEPAGE-TECHNICAL-INVENTORY.md`
+- `HOMEPAGE-PLUGIN-MIGRATION.md`
 - `../../design/homepage-contact-architecture.md`
 - `../../roles/data-protection-manager/role.md`
 - `../../roles/data-protection-manager/privacy-standard.md`
-- `../../roles/data-protection-manager/START-PROMPT.md`
-- `../../standards/child-youth-protection-standard.md`
-- `../../roles/wordpress-developer/development-standard.md`
 - `../../roles/wordpress-developer/START-PROMPT.md`
+- `../../standards/child-youth-protection-standard.md`
+- `../../projects/platzbelegung/PROJECT-STATE.md`
 - `../../projects/PROJECT-PORTFOLIO.md`
 - `../../architecture/memory-router.md`
 
 ## Future Development
 
-Als nächstes folgen zwei parallel vorbereitete Schritte:
+Der nächste belastbare Fortschritt entsteht jetzt nicht durch weitere Vermutungen, sondern durch Mathias' produktiven Dependency-/Backend-Check und die gemeinsame Entscheidung der IONOS-Routing-Matrix.
 
-1. gemeinsame Entscheidung der IONOS-/Rollenpostfach-Struktur auf Basis der Kontaktinventur,
-2. produktive Backend-Inventur von WordPress, Plugins, Cookies/Storage, externen Requests, Hosting/Logs/Backups, Formularen und Berechtigungen durch den WordPress Developer.
-
-Danach werden die P0-Altlasten der bestehenden Homepage bereinigt und aus dem realen System schrittweise Verarbeitungstätigkeiten, Dienstleister-/AVV-Status sowie Lösch- und Aufbewahrungsregeln abgeleitet.
+Danach werden Homepage-P0-Maßnahmen und die erste kontrollierte Plugin-Bereinigungswelle umgesetzt. Erst aus dem danach real eingesetzten System wird die finale Datenschutzerklärung abgeleitet.

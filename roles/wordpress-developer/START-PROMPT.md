@@ -26,8 +26,8 @@ Arbeite nicht aus alter Chat-Erinnerung. Bootstrape deine Arbeit aus dem aktuell
 4. Lies `projects/README.md` und für die konkrete Aufgabe die zuständige `PROJECT-STATE.md` sowie die projektspezifische Dokumentation.
 5. Prüfe den aktuellen Quellcode, bestehende offene bzw. relevante Pull Requests und den dokumentierten Last Known Good, bevor du eine Änderung planst.
 6. Prüfe nur die für die Aufgabe relevanten ADRs und Architekturquellen. Bei architekturrelevanten Änderungen sind insbesondere `architecture/stability-and-simplicity.md`, `decisions/architecture-checklist.md` und bestehende einschlägige ADRs zu berücksichtigen.
-7. Bei sichtbaren UI-/Frontend-Änderungen lies zusätzlich `design/design-principles.md`, `design/ui-standard.md` und `design/logo.md`. Bei Homepage-Arbeit gelten außerdem `design/homepage-standard.md`, `design/homepage-contact-architecture.md`, `knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`, `knowledge/privacy/HOMEPAGE-CONTACT-INVENTORY.md` und `knowledge/privacy/HOMEPAGE-TECHNICAL-INVENTORY.md`.
-8. Bei Arbeiten an der bestehenden Homepage oder vor einer Homepage-Migration führe die in `knowledge/privacy/HOMEPAGE-TECHNICAL-INVENTORY.md` definierte produktive Backend-Inventur aus. Öffentlich beobachtete Hinweise sind nicht automatisch technische Wahrheit; bestätige Plugins, Cookies, Tracking, Formulare, externe Requests, Hosting/Logs, Backups und Berechtigungen im echten System.
+7. Bei sichtbaren UI-/Frontend-Änderungen lies zusätzlich `design/design-principles.md`, `design/ui-standard.md` und `design/logo.md`. Bei Homepage-Arbeit gelten außerdem `design/homepage-standard.md`, `design/homepage-contact-architecture.md`, `knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`, `knowledge/privacy/HOMEPAGE-CONTACT-INVENTORY.md`, `knowledge/privacy/HOMEPAGE-TECHNICAL-INVENTORY.md` und `knowledge/privacy/HOMEPAGE-PLUGIN-MIGRATION.md`.
+8. Bei Arbeiten an der bestehenden Homepage oder vor einer Homepage-Migration führe die in `knowledge/privacy/HOMEPAGE-TECHNICAL-INVENTORY.md` definierte produktive Backend-Inventur aus. Nutze die Plugin-Migrationsmatrix als Startpunkt, bestätige aber Abhängigkeiten im echten System. Deaktiviere oder lösche keine Altplugins allein aufgrund der vorläufigen Matrix; prüfe zuerst Seiten, Shortcodes, Widgets, Custom Post Types, Daten, Rollen und Ersatzfunktion.
 9. Bei Platzbelegungsarbeit lies zusätzlich `projects/platzbelegung/README.md` und `projects/platzbelegung/PROJECT-STATE.md`. Die Platzbelegung wird als eigenes WordPress-Plugin umgesetzt; ein direkt eingebetteter Google-Kalender ist nicht das Zielbild.
 10. Bei neuen Formularen, personenbezogenen Datenflüssen, externen Embeds/APIs, Cookies/Tracking oder Berechtigungsänderungen lies zusätzlich `roles/data-protection-manager/privacy-standard.md` und behandle den Privacy Check bis zur fachlichen Prüfung als offen.
 11. Lade fachliche Quellen anderer Rollen nur, wenn sie für die konkrete Funktion oder Datenquelle wirklich benötigt werden, z. B. Sponsoring, Matchday, Archiv oder Events.
@@ -75,6 +75,7 @@ Dein Ziel ist, **die einfachste robuste WordPress-Lösung zu bauen, die den real
 - `../../knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`
 - `../../knowledge/privacy/HOMEPAGE-CONTACT-INVENTORY.md`
 - `../../knowledge/privacy/HOMEPAGE-TECHNICAL-INVENTORY.md`
+- `../../knowledge/privacy/HOMEPAGE-PLUGIN-MIGRATION.md`
 - `../../projects/platzbelegung/README.md`
 - `../../projects/platzbelegung/PROJECT-STATE.md`
 - `../data-protection-manager/privacy-standard.md`
