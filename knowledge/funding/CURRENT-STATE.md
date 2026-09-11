@@ -1,6 +1,6 @@
 # Funding Current State
 
-Stand: 2026-09-10 – Projektportfolio und Primärquellen erneut abgeglichen
+Stand: 2026-09-11 – Runtime-Abgleich und neue Projektzuordnung Trainingskleidung integriert
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Der Förderprozess startet bei realen TuS-Vorhaben. Programme werden nur nach Pr
 
 ### 1. Organisatorischer Stand
 
-Status: `Förderradar operativ – drei neue qualifizierte Projektzuordnungen integriert`
+Status: `Förderradar operativ – aktive A-/B+-Pipeline aktualisiert`
 
 Der Funding & Grants Manager arbeitet auf Basis von:
 
@@ -22,19 +22,19 @@ Der Funding & Grants Manager arbeitet auf Basis von:
 - `../../roles/funding-grants-manager/funding-standard.md`
 - `FUNDING-RADAR.md`
 - `FUNDING-CALENDAR.md`
+- `ACTIVE-OPPORTUNITIES.md`
 - Programmdossiers unter `programs/`
 
 GitHub ist das nicht-vertrauliche Fördermittelgedächtnis. Verbindliche Anträge, Eigenmittelzusagen, externe Kommunikation und Projektfreigaben bleiben freigabepflichtig.
 
 ### 2. Projektinventar
 
-Status: `strukturiert erfasst und mit Förderwegen verknüpft`
-
 Besonders förderrelevant sind aktuell:
 
 - Aufbau Digitale Vereinsorganisation,
 - Arbeitsplatz Sportparkteam,
-- zusätzliche Tore,
+- Großfeldtore Haupt- und Trainingsplatz,
+- **Trainingskleidung Ausstattungsgrundstock**,
 - Umkleideböden,
 - Fassade Hauptgebäude bei tatsächlicher energetischer Sanierung,
 - Kunstrasen,
@@ -49,130 +49,105 @@ Besonders förderrelevant sind aktuell:
 - Theater / kulturelle Bildung,
 - langfristig weitere Sportpark-Infrastruktur.
 
-Digitale Projekte werden nicht pauschal als förderfähig behandelt. Förderfit entsteht nur, wenn ein konkreter geförderter Fachzweck tatsächlich vorliegt.
+Digitale oder soziale Etiketten werden nicht künstlich auf Projekte gelegt. Förderfit entsteht nur, wenn der reale Projektzweck tatsächlich zum Programm passt.
 
-### 3. Förderradar – aktuelle Prioritäten
+### 3. Aktive qualifizierte Chancen
 
-Zentrale Übersicht:
+Details und Opportunity Briefs stehen in `ACTIVE-OPPORTUNITIES.md`.
 
-- `FUNDING-RADAR.md`
-- entscheidungsreife Einzelchancen: `ACTIVE-OPPORTUNITIES.md`
+#### A – bewerben / sofort aktiv klären
 
-#### Neu qualifiziert am 10.09.2026
-
-1. **WISO MeinVerein des Jahres 2026 → Aufbau Digitale Vereinsorganisation**
-   - **A – heute einreichen**,
-   - Projektaward Digitalisierung: 10.000 €, 3.000 € oder 1.000 €,
-   - offizielle Frist **10.09.2026, 23:59 Uhr**,
-   - fertiger TuS-Antragsentwurf vorhanden,
-   - öffentliches WISO-Profil und tatsächlicher Einreichungsstatus offen.
-
-2. **§ 16i SGB II → Arbeitsplatz Sportparkteam**
-   - **B+ – sofort vorabklären**,
-   - gemeinnützige Arbeitgeber und sozialversicherungspflichtige Teilzeit sind offiziell zugelassen,
-   - bis zu 100/100/90/80/70 % Lohnkostenzuschuss über fünf Jahre; konkrete Höhe im Ermessen des Jobcenters,
-   - persönliche Förderfähigkeit nicht bestätigt,
-   - kein Arbeitsvertrag vor positiver Jobcenter-Rückmeldung.
-
-3. **Kellogg’s Herzensprojekt 2026 → Großfeldtore**
-   - **B+ – konkret vorbereiten**,
-   - bis 5.000 € für ein konkretes Sportvereinsprojekt,
-   - Bewerbung bis 31.10.2026, Voting 01.10.–30.11.2026,
-   - finaler Gesamtpreis, Vereins-Projektauswahl, Voting-Plan und Kombination mit BSB offen.
-
-#### A – hohe Priorität / sofort aktiv klären
-
-1. **BSB Nord Sportgeräteförderung 2026 → zusätzliche Tore**
+1. **BSB Nord Sportgeräteförderung 2026 → Großfeldtore**
    - 30 % der anerkannten Kosten,
-   - Tore als Satz bis 3.000 € förderfähiger Höchstbetrag,
-   - Anschaffung im Kalenderjahr 2026,
-   - Antrag bis 31.01.2027.
+   - Tore als Satz bis 3.000 € anerkannter Höchstbetrag,
+   - maximal ca. 900 € Zuschuss,
+   - Rechnung/Anschaffung 2026, Antrag bis 31.01.2027,
+   - konkrete Komponenten vor Kauf mit BSB klären.
 
 2. **BSB Nord Vereinssportstättenbau → Umkleideböden**
    - 30 % Regelförderung,
    - Mindestkosten über 3.500 €,
-   - kein Baubeginn / keine förderschädliche Beauftragung ohne Baufreigabe,
-   - Sanierung muss gegenüber bloßer Reparatur/Bauunterhaltung abgegrenzt werden.
+   - kein Baubeginn / keine Beauftragung vor Bewilligung oder Baufreigabe,
+   - Sanierung/Instandsetzung muss von Reparatur/Bauunterhaltung abgegrenzt werden.
 
 3. **Bad Schönborn Vereinsförderung → laufende Jugend-/Sportanlagenförderung**
-   - TuS Mingolsheim ist in der aktuellen kommunalen Richtlinie ausdrücklich als Sportverein gelistet,
-   - bis zu 25 € je nachgewiesenem aktivem Mitglied unter 18 Jahren im Rahmen eines Gesamtbudgets von 41.000 €,
-   - 0,17 €/m² jährlicher Unterhaltungszuschuss für die in Anlage 2 gelisteten Sportanlagen,
-   - Gemeinde übernimmt 80 % des für die Bewässerung der Sportanlagen notwendigen Wassers,
-   - Regelzuschussfrist ist jährlich 30.06.; für 2026 ist sie bereits verstrichen, daher sofort klären, ob der TuS fristgerecht beantragt hat.
+   - 2026-Regelfrist bereits vorbei; Status der erfolgten Antragstellung prüfen,
+   - Flächenzuschuss und 80-%-Bewässerungswasserübernahme praktisch prüfen.
 
 4. **Jubiläumsförderung 125 Jahre → Gemeinde + Landkreis Karlsruhe**
-   - Gemeinde Bad Schönborn: 5 € je Jubiläumsjahr, maximal 1.000 € → bei 125 Jahren rechnerisch 625 €,
-   - Landkreis Karlsruhe: 3 € je Jubiläumsjahr, maximal 300 € → bei 125 Jahren 300 €,
-   - zusammen rechnerisch 925 €, sofern beide Leistungen anwendbar und noch nicht beantragt/ausgezahlt sind,
-   - bei beiden Stellen sofort Status klären; eine öffentlich genannte Landkreis-Frist wurde nicht gefunden.
+   - rechnerisch 625 € Gemeinde + bis 300 € Landkreis,
+   - Status Antrag/Auszahlung weiterhin administrativ zu klären.
 
-#### B – vorbereiten / beobachten
+#### B+ – konkret vorbereiten
 
-- BSB Sportstättenbau → Kunstrasen und Bewässerungsanlage,
-- LEADER Kraichgau → umsetzungsreifes, innovatives Vereins-/Gemeinschaftsprojekt; aktueller Aufruf bis 30.09.2026,
-- Stiftung Kulturgut Baden-Württemberg → Historienarchiv / Erschließung / Digitalisierung; nächster Stichtag 31.01.2027,
-- Jugendstiftung Baden-Württemberg → echtes jugendgeleitetes Projekt; aktueller Stichtag 30.09.2026,
-- Landesverband Amateurtheater BW → Theaterprojekte 2027; 2026-Mittel ausgeschöpft,
-- BSB Inklusion 2026 → reales inklusives TuS-Vorhaben, Frist 30.09.2026,
-- Aktion Mensch „Sport und Kultur vor Ort“ → echtes partizipatives Inklusionsprojekt, Frist 15.10.2026,
-- DSEE Mikroförderprogramm → Ehrenamtsgewinnung/-bindung; offizieller PLZ-Fördergebietscheck für 76669 bleibt noch offen,
-- Kooperation Schule–Verein → Jugend-/Mädchenfußball, nächste Ausschreibung vorbereiten,
-- BEG Einzelmaßnahmen → Fassade nur bei echter energetischer Gebäudehüllensanierung,
-- Kommunale Sportstättenbauförderung BW → nur über kommunalen Träger,
-- Integration durch Sport → 2026 geschlossen, Folgerunde beobachten.
+1. **§ 16i SGB II → Arbeitsplatz Sportparkteam**
+   - bis zu 100/100/90/80/70 % Lohnkostenzuschuss über fünf Jahre,
+   - persönliche Förderfähigkeit ausschließlich durch Jobcenter zu bestätigen,
+   - Arbeitgeber-Erstkontakt intern bis 18.09.2026,
+   - kein Arbeitsvertrag vor positiver Rückmeldung.
 
-#### C – derzeit nicht verfolgen
+2. **Kellogg’s Herzensprojekt 2026 → Projektauswahl Trainingskleidung oder Großfeldtore**
+   - maximal 5.000 € je Projekt,
+   - Bewerbung bis 31.10.2026, Voting 01.10.–30.11.2026,
+   - laut offizieller Ausschreibung sind sowohl Sportausrüstung als auch **Sportkleidung für das Team** ausdrücklich passende Beispiele,
+   - laut Teilnahmebedingungen darf jeder Verein nur **ein** Projekt einreichen,
+   - neue qualifizierte Zuordnung `OPP-007`: Trainingskleidung Ausstattungsgrundstock,
+   - interne Projektauswahl bis 23.09.2026.
 
-- **Bad Schönborn Investitionskostenzuschuss 2026:** ausdrücklich für das Kalenderjahr 2026 ausgesetzt. Für Umkleiden, Kunstrasen und andere Investitionen darf daher kein kommunaler 2026-Investitionszuschuss eingeplant werden.
-- **Erasmus+ Small-scale Partnerships Sport** als Finanzierung interner TuS-Software: kein echter transnationaler Projektbedarf vorhanden.
-- **Landespreis Heimatforschung** als Projektfinanzierung: Preis für bereits abgeschlossene eigenständige Forschungsarbeiten, kein Zuschuss zum Aufbau des Archivs.
-- **Direkte Klimaschutz-Plus-Förderung BW für Vereine:** das aktuelle Programm richtet sich an Kommunen; kein direkter TuS-Antragsweg.
-- **LED Media Screen – direkte Zuschusssuche im aktuellen Scope:** BSB-Sportgeräte schließt Zuschauerinformationsanlagen aus, BSB-Sportstättenbau passt nicht belastbar und für LEADER fehlt die Umsetzungsreife. Kein Zuschuss wird in die Finanzierung eingerechnet.
+   **Funding-Empfehlung:** Trainingskleidung bevorzugen, sofern das reale SPORTINN/Joma-Angebot ≤ 5.000 € bleibt. Gründe: expliziter Fördergegenstand Sportkleidung, sehr klare Willkommens-/Teamstory, voraussichtlich vollständiger Kostenfit und keine Doppelfinanzierungsabgrenzung zur starken BSB-Torförderung.
 
-### 4. Neue Erkenntnisse der zweiten Radar-Runde
+3. **Stiftung Kulturgut Baden-Württemberg → Historienarchiv**
+   - nächster Stichtag 31.01.2027,
+   - Vorabskizze / EVALAG-Beratung bis 15.10.2026,
+   - institutionelle Eignung, öffentlicher Publikationsweg und Eigenanteil vorab klären.
 
-#### Kommunal
+### 4. Wesentliche Änderung seit 10.09.2026
 
-Die aktuelle Bad-Schönborn-Richtlinie wurde mit Wirkung zum 01.01.2026 geändert. Sie enthält für den TuS mehrere reale Dauerförderungen. Gleichzeitig wurde wegen der Haushaltslage der Investitionskostenzuschuss für 2026 ausdrücklich ausgesetzt.
+#### WISO MeinVerein des Jahres 2026
 
-Fördervereine sind in der kommunalen Richtlinie grundsätzlich als wirtschaftliche Vereine ausgeschlossen. Für diese Förderlinie ist daher sachlich der `Turn- und Sportverein 1901 Mingolsheim e.V.` der relevante Träger, sofern die jeweiligen weiteren Voraussetzungen erfüllt sind.
+Die offizielle Einreichungsfrist endete am **10.09.2026 um 23:59 Uhr**. Die Primärquelle bestätigt, dass nach Fristende erfolgende Teilnahmehandlungen nicht berücksichtigt werden.
 
-#### Region / EU
+Auf `main` ist weiterhin keine Einreichungsbestätigung dokumentiert. Deshalb gilt:
 
-LEADER ist für den Kraichgau ein realer EU-/Regionalförderweg. Der aktuelle sechste Aufruf läuft vom 03.08. bis 30.09.2026 und richtet sich ausdrücklich auch an Vereine. Gefördert werden nur umsetzungsreife Projekte im Aktionsgebiet bzw. mit Nutzen für das Aktionsgebiet; Projektstart vor Bewilligung ist kritisch. Der TuS besitzt aktuell noch kein ausreichend konkret dokumentiertes LEADER-Projekt, deshalb B statt A.
+- **wenn extern fristgerecht eingereicht:** Bestätigung/Screenshot bzw. Status in die Förderakte übernehmen und Opportunity auf `eingereicht` setzen,
+- **wenn nicht eingereicht:** Chance 2026 geschlossen; keine nachträgliche Einreichung möglich.
 
-#### Archiv / Vereinsgeschichte
+#### Trainingskleidung × Kellogg’s
 
-Die Stiftung Kulturgut Baden-Württemberg ist ein starker potenzieller Förderweg für das Historienarchiv. Sie fördert Erwerb, Erschließung, Erhaltung und Digitalisierung von Archiv- und Bibliotheksgut. Aktuelle Förderrichtlinien (Stand November 2025): Mindestförderung 5.000 €, juristische Personen mit Sitz in Baden-Württemberg sind antragsberechtigt, bei nichtstaatlicher Trägerschaft in der Regel 25 % Eigenbeteiligung; Digitalisate und Metadaten müssen dauerhaft professionell online zugänglich gemacht werden. Ein vergleichbares bewilligtes Projekt 2023 digitalisierte beim MARCHIVUM Mannheim Vereinsbestände, darunter den TSV 1846, mit 59.285 € Förderung. Der direkte TuS-Antrag ist formal möglich, die Einstufung als vergleichbare Einrichtung und das professionelle Erschließungs-/Zugänglichkeitskonzept müssen vorab mit EVALAG geklärt werden.
+Das am 11.09.2026 auf `main` sichtbare Projekt `Trainingskleidung Ausstattungsgrundstock` erzeugt einen neuen belastbaren B+-Fit zum bereits offenen Kellogg’s-Programm. Die Opportunity konkurriert nicht um einen zweiten Antrag, sondern zwingt zur sachlichen Auswahl des **einen** TuS-Projekts für diese Runde.
 
-#### Jugend
+### 5. Weiterhin B / beobachten – kein künstliches Hochstufen
 
-Die Jugendstiftung Baden-Württemberg fördert lokale innovative Projekte junger Menschen regelmäßig mit 1.500–6.000 € für Sachkosten und Honorare. Nächster aktueller Stichtag ist 30.09.2026. Ein TuS-Projekt darf hierfür nicht nachträglich als Jugendprojekt etikettiert werden; sinnvoll wäre nur ein tatsächlich von Jugendlichen mitgeplantes und mitumgesetztes Vorhaben.
+- LEADER Kraichgau bis 30.09.2026: aktuell kein ausreichend umsetzungsreifes reales TuS-Projekt dokumentiert.
+- Jugendstiftung BW bis 30.09.2026: nur bei echtem jugendgeleitetem Projekt; aktuell kein qualifizierter A/B+-Match.
+- BSB Inklusion bis 30.09.2026: 300 € je Maßnahme, aber nur für reales inklusives Vorhaben; kein künstlicher Antrag.
+- Aktion Mensch „Sport und Kultur vor Ort“ bis 15.10.2026: max. 50.000 €, bis 90 %, aber nur bei echter partizipativer inklusiver Zielgruppe und Maßnahme.
+- Landesverband Amateurtheater BW: nur bei konkretem Theaterprojekt 2027.
+- DSEE Mikroförderung: Fördergebiets-/Projektfit weiterhin klären.
+- BEG Einzelmaßnahmen: Fassade nur bei echter energetischer Gebäudehüllensanierung.
+- Kommunale Sportstättenbauförderung BW: nur über kommunalen Träger.
+- Integration durch Sport 2026: Antragsfenster geschlossen.
 
-#### Theater / Kultur
+### 6. C – derzeit nicht verfolgen
 
-Die Landesförderung über den Landesverband Amateurtheater Baden-Württemberg ist grundsätzlich relevant. Die Mittel 2026 sind ausgeschöpft; aktuell können 2027-Projekte beantragt werden. Besonders passend könnten je nach realem Theaterprojekt kulturelle Bildung, gesellschaftlich relevante Projekte oder partizipative Kulturprojekte sein. Vor Aufnahme eines konkreten Antrags muss die Theatergruppe ein tatsächliches Projekt benennen.
+- Bad Schönborn Investitionskostenzuschuss 2026: für 2026 ausdrücklich ausgesetzt.
+- Erasmus+ Small-scale Partnerships Sport für interne TuS-Software: kein realer transnationaler Kooperationsbedarf.
+- Landespreis Heimatforschung als Archiv-Aufbaufinanzierung: kein passender Förderzweck.
+- direkte Klimaschutz-Plus-Förderung BW für Vereine: kein direkter TuS-Antragsweg.
+- LED Media Screen im aktuellen Scope: kein belastbarer direkter Zuschuss; Finanzierung ohne unbestätigte Förderung planen.
 
-#### Klima – Organisationslernen
+### 7. Zeitkritische Entscheidungen September/Oktober 2026
 
-Auf der TuS-Homepage ist eine bereits realisierte Förderung aus der Nationalen Klimaschutzinitiative mit Förderkennzeichen `67K20201` und 35 % Förderquote dokumentiert. Dieses historische Förderprojekt wird als Organisationswissen gesichert. Die aktuelle Kommunalrichtlinie fördert weiterhin u. a. energieeffiziente Sportstättenbeleuchtung und nennt gemeinnützige Vereine als mögliche Antragsteller; ohne neues reales Beleuchtungsprojekt wird daraus jedoch keine aktuelle TuS-Chance konstruiert.
+1. **bis 18.09.2026:** Jobcenter-Vorabklärung Arbeitsplatz Sportparkteam; kein Vertrag vorher.
+2. **bis 23.09.2026:** Kellogg’s-Go/No-Go und Auswahl Trainingskleidung vs. Großfeldtore.
+3. **bis 24.09.2026:** bei Trainingskleidung-Go finales SPORTINN/Joma-Angebot, Bestand, 400-Zeichen-Text, Bildrechte und Votingplan schließen.
+4. **25.09.2026:** Ziel-Einreichung Kellogg’s mit Sicherheitsabstand zum Votingstart.
+5. **sofort:** Gemeinde/Landkreis Jubiläumsförderung und kommunale Regelzuschüsse 2026 administrativ prüfen.
+6. **bis 15.10.2026:** Historienarchiv-Vorabskizze mit EVALAG klären.
+7. **vor jeder Beauftragung Umkleiden/Kunstrasen/Bewässerung:** BSB-Förderweg und Baufreigabe klären.
+8. **vor Anschaffung Tore:** konkretes Angebot gegen BSB-Sportgeräteförderung prüfen.
 
-### 5. Zeitkritische Entscheidungen September/Oktober 2026
-
-1. **heute:** WISO-Einreichungsstatus prüfen; falls offen, vorhandenen Antrag bis 21:00 Uhr intern freigeben und vor 23:59 Uhr absenden.
-2. **bis 18.09.2026:** Arbeitgeber-Vorabklärung für den Arbeitsplatz Sportparkteam beim Jobcenter Bruchsal; kein Vertrag.
-3. **bis 23.09.2026:** Kellogg’s-Go/No-Go und Entscheidung, ob die Großfeldtore das eine TuS-Projekt sind.
-4. **bis 25.09.2026:** bei Go Kellogg’s mit finalem Preis, 400-Zeichen-Text und Voting-Plan einreichen.
-5. **sofort:** Gemeinde und Landkreis prüfen, ob die 125-Jahre-Jubiläumszuschüsse beantragt bzw. ausgezahlt wurden.
-6. **sofort:** kommunalen Regelzuschuss 2026 sowie Bewässerungswasser/Flächenzuschuss administrativ prüfen.
-7. **bis 11.09.2026:** LEADER, Jugendstiftung und BSB-Inklusion nur bei bereits realem Projekt weiterführen; sonst bewusst auslassen.
-8. **bis 15.09.2026:** Aktion Mensch nur bei realer Zielgruppe und partizipativer Projektentwicklung.
-9. **bis 15.10.2026:** Stiftung Kulturgut mit einer Vorabskizze zum Historienarchiv kontaktieren; Zielstichtag 31.01.2027.
-10. **vor jeder Beauftragung Umkleiden/Kunstrasen/Bewässerung:** BSB-Förderweg und Baufreigabe klären.
-11. **vor Anschaffung Tore:** konkretes Angebot gegen BSB-Sportgeräteförderung und mögliche Kellogg’s-Kostentrennung prüfen.
-
-### 6. Rechtseinheiten
+### 8. Rechtseinheiten
 
 Beim TuS bestehen drei eigenständige Vereine:
 
@@ -180,59 +155,39 @@ Beim TuS bestehen drei eigenständige Vereine:
 2. Förderverein
 3. Jugendförderverein
 
-Die Rechtseinheit wird je Programm sachlich geprüft. Besonders wichtig:
+Die Rechtseinheit wird je Programm sachlich geprüft. Für BSB, Kellogg’s und kommunale Vereinsförderung ist nach aktuellem Stand der Hauptverein der naheliegende Träger; verbindliche Prüfung erfolgt jeweils vor Antrag.
 
-- kommunale Bad-Schönborn-Förderung: Fördervereine sind grundsätzlich ausgeschlossen; Hauptverein ist der naheliegende Antragsteller,
-- BSB: regelmäßig der beim Sportbund geführte Gesamtverein,
-- Stiftung Kulturgut: juristische Person mit Sitz in Baden-Württemberg; fachliche Eignung als archivische/vergleichbare Einrichtung zusätzlich vorab klären,
-- LEADER/Jugendstiftung/LABW: Gemeinnützigkeit und konkrete Projektträgerschaft nach jeweiliger Förderlinie prüfen.
+### 9. Offene Verifikationen
 
-### 7. Noch offene Verifikationen
-
-- Wurde der WISO-Projektaward bereits tatsächlich eingereicht?
-- Erfüllt die konkrete Person die Voraussetzungen für § 16i oder hilfsweise § 16e SGB II?
-- Sind Stundenmodell, Förderbasis und Arbeitgeberkosten für den Arbeitsplatz belastbar?
-- Bleibt das finale Torprojekt einschließlich Nebenleistungen unter 5.000 € und ist Kellogg’s zeitlich mit BSB vereinbar?
-- Hat der TuS die kommunalen Regelzuschüsse 2026 bereits fristgerecht beantragt?
-- Wurden Gemeinde- und Landkreis-Jubiläumszuschüsse für 125 Jahre bereits beantragt oder ausgezahlt?
-- Wie werden Flächenzuschuss und 80-%-Bewässerungswasserübernahme praktisch mit der Gemeinde abgerechnet?
-- Ist der Durchführungsort 76669 im interaktiven DSEE-Fördergebietscheck positiv?
-- Welche Eigentums-/Nutzungsverhältnisse bestehen für die einzelnen Sportparkgebäude/-flächen?
-- Was umfasst „Fassade Hauptgebäude“ technisch?
-- Sind die geplanten Umkleideböden förderfähige Sanierung oder reine Reparatur?
-- Existieren echte Projektideen aus Jugend, Inklusion und Theater für die aktuell offenen Programme?
-
-### 8. Förderkalender
-
-Status: `zweite Runde integriert und rückwärts geplant`
-
-- `FUNDING-CALENDAR.md`
-
-### 9. Programmdossiers
-
-Status: `aktualisiert und um § 16i / § 16e SGB II ergänzt`
-
-Die Dossiers enthalten nun zusätzlich die aktuelle Arbeitsplatzförderung, die aktualisierten WISO- und Kellogg’s-Bedingungen sowie die konkrete Projektzuordnung.
+- existiert ein fristgerechter WISO-Einreichungsnachweis außerhalb von GitHub?
+- erfüllt die konkrete Person die Voraussetzungen für § 16i / § 16e?
+- welches reale SPORTINN/Joma-Angebot liegt für den Trainingskleidungs-Grundstock vor?
+- welches der beiden Projekte soll der TuS bei Kellogg’s einreichen?
+- finaler Tor-Gesamtpreis und konkrete BSB-förderfähige Komponenten,
+- Status kommunale Regelzuschüsse/Jubiläumszuschüsse,
+- Eigentums-/Nutzungsverhältnisse Sportpark,
+- technischer Scope Umkleideböden und Fassade,
+- echte Projektideen aus Jugend, Inklusion und Theater.
 
 ### 10. Nächster sinnvoller Arbeitsstrang
 
-Der nächste operative Fokus bleibt die Umwandlung der besten Chancen in konkrete Projektpakete:
-
-1. WISO heute abschließen oder den bereits erfolgten Versand dokumentieren,
-2. Arbeitsplatz-Förderfähigkeit beim Jobcenter klären,
-3. Großfeldtore parallel für BSB und Kellogg’s entscheidungsreif machen,
-4. Jubiläumsgelder und kommunale Dauerförderung administrativ sichern,
-5. Archivförderung für 31.01.2027 vorbereiten,
-6. Programme ohne echtes Projekt bewusst nicht verfolgen,
-7. anschließend Kunstrasen-/Sportpark-Finanzierungsarchitektur langfristig vorbereiten.
+1. Jobcenter-Vorabklärung vorbereiten,
+2. Kellogg’s-Projektauswahl bis 23.09. entscheidungsreif machen,
+3. bei Trainingskleidung-Go Lieferantenangebot und Bewerbungspaket schließen,
+4. Tore unabhängig davon über BSB weiter absichern,
+5. kommunale/Jubiläums-Dauerförderung administrativ sichern,
+6. Archivförderung für 31.01.2027 vorbereiten,
+7. Programme ohne reales Projekt bewusst nicht verfolgen.
 
 ## Relationship to other documents
 
 - `README.md`
 - `FUNDING-RADAR.md`
 - `FUNDING-CALENDAR.md`
+- `ACTIVE-OPPORTUNITIES.md`
 - `../../roles/funding-grants-manager/role.md`
 - `../../roles/funding-grants-manager/funding-standard.md`
+- `../../roles/funding-grants-manager/runtime.md`
 - `../sponsoring/README.md`
 
 ## Future Development
