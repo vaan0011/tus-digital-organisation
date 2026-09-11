@@ -8,34 +8,34 @@ Der Pilot fokussiert zunächst den Aktivenbereich Herren 1 und Herren 2. Der Pro
 
 ## Core Principle
 
-> **Neue Spieler sollen beim ersten Training Teil des Teams sein – nicht erst nach der nächsten Sammelbestellung.**
+> **Vom ersten Training an Teil des Teams.**
+
+Dieser Satz ist der verbindliche Projekt- und Partnerschaftsslogan.
 
 Der Grundstock ist kein allgemeiner Fanshop-Bestand. Er dient gezielt der Sofortausstattung von Neuzugängen, Nachrückern und begründeten Ersatzbedarfen.
 
 ## Main Content
 
-### 1. Empfohlenes Starterset
+### 1. Verbindlicher Start-Scope
 
-Arbeitsannahme pro Spieler:
+Der Grundstock konzentriert sich zunächst bewusst auf die beiden Teile, die im Trainingsalltag am häufigsten gebraucht werden:
 
-- 2 Trainingsshirts kurz,
-- 1 Trainingsshorts,
-- 1 1/4-Zip-Trainingsoberteil,
-- 1 lange Trainingshose.
+- **2 Trainingsshirts kurz pro Spieler**, 
+- **1 kurze Trainingshose pro Spieler**.
 
-Mögliche spätere Erweiterungen sind Regenjacke, Sporttasche/Rucksack oder Präsentationsjacke. Diese gehören bewusst noch nicht zum Start-Scope.
+1/4-Zip, lange Trainingshose, Regenjacke, Sporttasche/Rucksack und Präsentationskleidung sind mögliche spätere Erweiterungen, gehören aber **nicht** zum verpflichtenden Start-Scope.
 
 ### 2. Bestandsmodell
 
 Drei sinnvolle Startgrößen werden geprüft:
 
-- `18 Sets` – Mindestvariante,
-- `25 Sets` – aktuell empfohlener Grundstock,
-- `30 Sets` – komfortabler Bestand.
+- `18 Core-Sets` = 36 Shirts + 18 Shorts,
+- `25 Core-Sets` = 50 Shirts + 25 Shorts,
+- `30 Core-Sets` = 60 Shirts + 30 Shorts.
 
-Aktuelle Empfehlung: **25 komplette Sets**.
+Aktuelle Empfehlung: **25 Core-Sets**.
 
-Vorläufiger Größenmix für 25 Sets:
+Vorläufiger Größenmix für 25 Spieler-Sets:
 
 - S: 2,
 - M: 6,
@@ -54,62 +54,58 @@ Für Lagerware gilt:
 - Bestand nach Artikel und Größe nachvollziehbar führen,
 - Kern-Größen M/L/XL nach Möglichkeit nie vollständig leer laufen lassen.
 
-### 3. Ausrüster und Beschaffung
+### 3. Ausrüster, Teamshop und Beschaffung
 
 Der TuS führt SPORTINN seit 2024 als Ausrüster und nutzt Joma für Trainings- und Freizeitkleidung.
 
-Öffentliche Quellen:
+Offizieller TuS-Teamshop:
 
-- TuS: `https://www.tus-mingolsheim.de/partner-der-jugend/`
-- SPORTINN: `https://sportinn.de/`
-- SPORTINN Teampartnerschaft: `https://sportinn.de/FAQ`
+`https://sportinn.eu/tus-mingolsheim`
 
-SPORTINN wird deshalb zuerst um ein konkretes Vereinsangebot für 18, 25 und 30 Sets gebeten.
+TuS-Informationsseite zum Shop:
+
+`https://www.tus-mingolsheim.de/shop/`
+
+Der vorhandene Teamshop und die dort geführte Joma-Spieler-/Trainingskollektion sind die erste Referenz für Artikel, Größen und Veredelung. SPORTINN wird zusätzlich um ein konkretes Vereinsangebot für 18, 25 und 30 Core-Sets gebeten.
 
 Zu klären sind insbesondere:
 
+- konkrete Shirt- und Shorts-Artikel aus der aktuellen TuS-Kollektion,
 - aktuelle TuS-Konditionen,
-- konkrete Joma-Serie und Farben,
 - Staffelpreise,
 - Kosten für TuS-Wappen und Sponsorlogo,
 - Freiware- bzw. Sachleistungsanteil,
 - Lieferzeiten,
 - langfristige Nachbestellbarkeit,
 - bestehende Ausrüster-, Logo- und Branchenrechte,
-- Möglichkeit eines kleinen neutralen Lagerbestands.
+- Möglichkeit eines neutralen Lagerbestands ohne Spielerinitialen.
 
 ### 4. Erste Budgetplanung
 
-Für die Planung wurden am 11.09.2026 öffentliche SPORTINN-Teamshoppreise vergleichbarer Joma-Artikel als Referenz verwendet:
+Als reine öffentliche Preisreferenz wurden am 11.09.2026 vergleichbare SPORTINN/Joma-Artikel herangezogen:
 
 - Trainingsshirt: ca. 16,90 EUR,
-- Trainingsshorts: ca. 14,90 EUR,
-- 1/4-Zip: ca. 29,90 EUR,
-- lange Trainingshose: ca. 26,90 EUR.
+- Trainingsshorts: ca. 14,90 EUR.
 
-Referenz: `https://sportinn.de/LSC-Training-Spieler`
+Damit liegt ein Core-Set aus zwei Shirts und einer kurzen Hose bei rund **48,70 EUR** vor projektspezifischer Veredelung, Versand und möglichen Vereinsrabatten.
 
-Daraus ergibt sich für das Arbeitsset mit zwei Shirts ein reiner Referenzwert von ca. **105,50 EUR je Set** vor noch offenen projektspezifischen Druck-, Versand- oder Sonderkosten.
+Reine Warenwert-Referenz:
 
-Aktuelle Planungskorridore:
+- 18 Core-Sets: ca. 877 EUR,
+- 25 Core-Sets: ca. 1.218 EUR,
+- 30 Core-Sets: ca. 1.461 EUR.
 
-- 18 Sets: ca. 2.300–2.600 EUR,
-- 25 Sets: ca. 3.200–3.500 EUR,
-- 30 Sets: ca. 3.700–4.000 EUR.
+Bis ein echtes TuS-Angebot vorliegt, wird für **25 Core-Sets** mit einem vorläufigen Gesamtbudget von etwa **1.500–1.800 EUR** inklusive noch offener Veredelungs-/Nebenkosten geplant.
 
-Für die spätere jährliche Nachfüllung werden zunächst 8–12 Sets bzw. grob 1.000–1.500 EUR als Planwert angenommen.
-
-Diese Werte sind **keine Bestellung und kein Lieferantenangebot**. Maßgeblich ist das konkrete TuS-Angebot.
+Diese Werte sind **keine Bestellung und kein Lieferantenangebot**. Maßgeblich ist das konkrete SPORTINN-Angebot.
 
 ### 5. Partnerschaftsmodell
 
-Der Grundstock soll möglichst über eine klare, mehrjährige Partnerschaft finanziert werden.
-
 Arbeitstitel:
 
-> **TuS Trainingspartner – Willkommen im Team**
+> **TuS Trainingspartner**
 
-Leitstory:
+Verbindlicher Slogan:
 
 > **Vom ersten Training an Teil des Teams.**
 
@@ -119,12 +115,6 @@ Der Partner finanziert damit nicht nur Textilien. Er ermöglicht:
 - einen einheitlichen professionellen Auftritt,
 - weniger Einzelbestellungen und Verwaltungsaufwand,
 - einen dauerhaft funktionsfähigen Ausstattungsprozess.
-
-Aktuelle Planungsgröße:
-
-- Initialbedarf: rund 3.500 EUR für den empfohlenen 25er-Grundstock,
-- Nachfüllung: rund 1.000–1.500 EUR pro Saison,
-- bevorzugt als mehrjährige Partnerschaft, z. B. drei Jahre.
 
 Ziel ist **ein klarer Hauptpartner statt eines Logo-Teppichs**. Konkrete Platzierungen, Exklusivitäten, Werberechte und steuerliche Zuordnung werden erst nach Prüfung der bestehenden Ausrüster- und Sponsorenverträge zugesagt.
 
@@ -136,7 +126,7 @@ Geplanter Ablauf:
 
 1. Neuzugang bzw. Ausgabeanspruch ist bestätigt.
 2. Größe wird festgestellt.
-3. Starterset wird aus dem Bestand ausgegeben.
+3. zwei Trainingsshirts und eine kurze Trainingshose werden aus dem Bestand ausgegeben.
 4. Ausgabe und Restbestand werden dokumentiert.
 5. Mindestbestand wird geprüft.
 6. Bei Unterschreitung wird nachbestellt.
@@ -170,8 +160,8 @@ Darin liegen:
 Vor einer Bestellung oder Sponsorenzusage müssen mindestens geklärt sein:
 
 - Pilotumfang,
-- finales Set,
-- konkrete Joma-Serie und reale Preise,
+- konkrete Shirt-/Shorts-Artikel im TuS-Teamshop,
+- reale Preise,
 - belastbarer Größenmix,
 - Eigentum bzw. Umgang mit Kleidung bei späteren Abgängen,
 - Lagerort und Verantwortlichkeit,
@@ -196,14 +186,15 @@ Aktuell wurde **keine Bestellung ausgelöst und keine Sponsorenzusage erteilt**.
 
 ## Future Development
 
-Der nächste Reifegewinn entsteht nicht durch weitere Produktideen, sondern durch reale Beschaffungs- und Nutzungsdaten:
+Der nächste Reifegewinn entsteht durch reale Beschaffungs- und Nutzungsdaten:
 
-1. SPORTINN-Angebot für 18 / 25 / 30 Sets einholen,
-2. aktuelle TuS-Ausrüster- und Sponsorrechte prüfen,
-3. realen Größenmix der Aktiven validieren,
-4. finales Set und Zielbestand beschließen,
-5. Hauptpartnerpaket auf Basis echter Kosten finalisieren,
-6. priorisierte Partner gezielt ansprechen,
-7. erst nach Finanzierung und Freigabe bestellen,
-8. ersten Saisonzyklus auswerten,
-9. erst danach eine Ausweitung auf weitere Mannschaften entscheiden.
+1. konkrete Shirt-/Shorts-Artikel aus dem TuS-Teamshop festlegen,
+2. SPORTINN-Angebot für 18 / 25 / 30 Core-Sets einholen,
+3. aktuelle TuS-Ausrüster- und Sponsorrechte prüfen,
+4. realen Größenmix der Aktiven validieren,
+5. Zielbestand beschließen,
+6. Hauptpartnerpaket auf Basis echter Kosten finalisieren,
+7. priorisierte Partner gezielt ansprechen,
+8. erst nach Finanzierung und Freigabe bestellen,
+9. ersten Saisonzyklus auswerten,
+10. erst danach eine Ausweitung auf weitere Mannschaften entscheiden.
