@@ -1,6 +1,6 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-09-10 – Funding-Abgleich aktualisiert  
+**Stand:** 2026-09-11 – WISO-Friststatus mit aktuellem Funding-Stand reconciliiert  
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
@@ -16,7 +16,7 @@ Es dokumentiert die abgrenzbare Aufbauphase der TuS Digital Organisation und tre
 
 > **Das Projekt baut die Organisation auf. Die Organisation selbst bleibt danach bestehen.**
 
-Die digitale Vereinsorganisation wird nicht als einzelnes Softwareprojekt verstanden. Sie verbindet Organisationsmodell, Verantwortlichkeiten, Rollen, Mitarbeiter, Wissen, Prozesse, Standards und Werkzeuge.
+Die digitale Vereinsorganisation ist kein einzelnes Softwareprojekt. Sie verbindet Organisationsmodell, Verantwortlichkeiten, Rollen, Mitarbeiter, Wissen, Prozesse, Standards und Werkzeuge.
 
 ## Main Content
 
@@ -24,30 +24,27 @@ Die digitale Vereinsorganisation wird nicht als einzelnes Softwareprojekt versta
 
 Der TuS baut seit 2026 eine digitale Vereinsorganisation auf, die Ehrenamtliche entlasten, Wissen dauerhaft sichern und Verantwortlichkeiten unabhängig von einzelnen Personen oder Technologien erhalten soll.
 
-Bereits real vorhanden sind:
+Bereits vorhanden sind insbesondere:
 
-- ein umfangreiches GitHub-Repository als Organisations- und Wissensbasis,
+- GitHub als Organisations- und Wissensbasis,
 - Vision, Kultur, Werte und Organisationsprinzipien,
 - Organisationsmodell und Organigramm,
 - Plattform- und Wissensarchitektur,
 - gemeinsame Mitarbeiter- und Arbeitsstandards,
-- ein Rollenmodell mit mehreren real eingesetzten Fachrollen,
-- ein Projektportfolio und formale Projektzustände,
-- erste aktive bzw. formalisierte digitale Fachprojekte,
-- ein zentraler Google-Drive-Artefaktraum für große Projektdateien.
+- mehrere real eingesetzte Fachrollen,
+- zentrales Projektportfolio und formale Projektzustände,
+- aktive bzw. formalisierte digitale Fachprojekte,
+- zentraler Google-Drive-Artefaktraum für große Projektdateien,
+- erste wiederkehrende Rollen-Runtimes mit reproduzierbaren Sources of Truth.
 
-Das Vorhaben ist damit über eine lose Idee hinaus und befindet sich in einer realen Aufbau- und Konsolidierungsphase.
+Das Vorhaben befindet sich damit in einer realen Aufbau- und Konsolidierungsphase.
 
 ### 2. Projektabgrenzung
 
-Das Projekt umfasst den Aufbau der organisationsweiten Grundlagen.
+Das Projekt umfasst den Aufbau organisationsweiter Grundlagen, insbesondere:
 
-Es umfasst insbesondere:
-
-- Organisationsmodell,
-- Verantwortungsbereiche,
-- Rollenmodell,
-- Modell für digitale Mitarbeiter,
+- Organisationsmodell und Verantwortungsbereiche,
+- Rollen- und Mitarbeitermodell,
 - gemeinsame Standards,
 - Wissens- und Entscheidungsstruktur,
 - Projektgovernance,
@@ -56,57 +53,33 @@ Es umfasst insbesondere:
 - Pilotierung der Arbeitsweise an realen Vereinsaufgaben,
 - Übergabe der geschaffenen Grundlagen in den Regelbetrieb.
 
-Nicht Bestandteil dieses Projekts ist die vollständige fachliche Umsetzung aller einzelnen digitalen Produkte. Event Planner, Partnerportal, Partner Hub, Team Manager und andere Fachprojekte behalten ihre eigenen Projektzustände.
+Nicht Bestandteil ist die vollständige fachliche Umsetzung aller digitalen Produkte. Event Planner, Partnerportal, Partner Hub, Team Manager und andere Fachprojekte behalten eigene Projektzustände.
 
-### 3. Verbindliche vorhandene Grundlagen
+### 3. Verbindliche Grundlagen
 
-#### Organisation
+Wesentliche Quellen sind:
 
 - `../../organization/organization-model.md`
 - `../../organization/organization-chart.md`
 - `../../organization/organization-principles.md`
-- weitere Kultur-, Werte- und Leitprinzipiendokumente unter `../../organization/`
-
-Zentrales Organisationsprinzip:
-
-> **Wir bauen keine Hierarchie aus Mitarbeitern. Wir bauen ein Netzwerk aus Verantwortlichkeiten.**
-
-#### Rollen und Mitarbeiter
-
 - `../../roles/README.md`
 - `../../employees/README.md`
-- `../../decisions/ADR-0001-role-and-employee-separation.md`
+- `../../architecture/platform-architecture.md`
+- `../../architecture/knowledge-graph.md`
+- `../../architecture/stability-and-simplicity.md`
+- `../../system/system-overview.md`
+- `../../standards/employee-operating-standard.md`
+- `../../standards/approval-and-escalation.md`
+- `../../standards/learning-loop.md`
+- `../../standards/iteration-and-progress.md`
 
-Verbindliche Trennung:
+Verbindlich bleibt die Trennung:
 
 - Rolle = dauerhafte Verantwortung,
 - Mitarbeiter = konkrete Besetzung einer oder mehrerer Rollen,
 - Chat = mögliche Arbeitsoberfläche, aber nicht der Mitarbeiter selbst.
 
-#### Architektur und Wissen
-
-- `../../architecture/platform-architecture.md`
-- `../../architecture/knowledge-graph.md`
-- `../../architecture/stability-and-simplicity.md`
-- `../../system/system-overview.md`
-
-Kernprinzipien:
-
-- zentrale Informationen besitzen eine fachliche Quelle der Wahrheit,
-- Fachsysteme erzeugen keine unabhängigen Datenwelten,
-- Oberflächen bestimmen nicht das Datenmodell,
-- Werkzeuge sind austauschbar,
-- Wissen und Beziehungen sollen langfristig Organisationsgedächtnis bilden.
-
-#### Arbeitsstandards
-
-- `../../standards/employee-operating-standard.md`
-- `../../standards/approval-and-escalation.md`
-- `../../standards/learning-loop.md`
-- `../../standards/iteration-and-progress.md`
-- `../../standards/working-standards.md`
-
-### 4. Aktuelle visuelle Projektgrundlage
+### 4. Visuelle Projektgrundlage
 
 Google-Drive-Projektordner:
 
@@ -116,36 +89,15 @@ Aktuelles Artefakt:
 
 - `TuS_Digitale_Organisation.png`
 
-Die Grafik vom 05.09.2026 ist der derzeit neueste visuelle Arbeitsstand.
+Die Grafik ist Arbeitsdarstellung, nicht automatische fachliche Source of Truth. Bei Abweichungen hat der aktuelle kanonische GitHub-Stand Vorrang, bis eine bewusste Reconciliation erfolgt.
 
-Sie zeigt unter anderem:
+### 5. Aktuelle Pflegepunkte
 
-- TuS Mingolsheim als organisatorischen Rahmen,
-- eine gemeinsame Organisationsplattform,
-- mehrere fachliche Verantwortungsbereiche,
-- konkrete digitale Mitarbeiter bzw. Spezialisten,
-- die digitale Organisation als Netzwerk und nicht als klassische Hierarchie.
-
-Die Grafik ist nicht automatisch die fachliche Source of Truth. Wenn Grafik und Repository voneinander abweichen, wird die Abweichung geprüft und bewusst aufgelöst.
-
-### 5. Abgleich Grafik ↔ GitHub
-
-Der grundlegende Ansatz ist konsistent:
-
-- Netzwerk aus Verantwortlichkeiten statt Mitarbeiterhierarchie,
-- Menschen und digitale Mitarbeiter arbeiten gemeinsam,
-- Verantwortung besteht unabhängig von der Person,
-- Wissen gehört der Organisation,
-- Prozesse verbinden Verantwortungsbereiche,
-- Werkzeuge unterstützen die Organisation und können ersetzt werden.
-
-Aktuell erkannte Abweichungen bzw. Pflegepunkte:
-
-1. Die Drive-Grafik ist neuer als die alte `organization/organization-map.png` im Repository.
-2. Die Grafik vermischt teilweise Verantwortungsbereiche, Rollen und konkrete Mitarbeiter.
-3. `system/system-overview.md` bildet ältere Plugin-/Systembegriffe ab und ist nicht vollständig mit dem heutigen Projektstand synchronisiert.
-4. `employees/` enthält bislang nur wenige konkrete Mitarbeiterakten, obwohl inzwischen mehrere dauerhaft benannte digitale Rollen real eingesetzt werden.
-5. Das Root-README zeigt eine vereinfachte Vier-Ebenen-Darstellung, während `organization-model.md` fünf Organisationsebenen beschreibt. Dies ist nicht zwingend ein Widerspruch, sollte aber als vereinfachte Darstellung eindeutig bleiben.
+1. Drive-Grafik und Repository-Begriffe weiter abgleichen.
+2. Verantwortungsbereiche, Rollen und konkrete Mitarbeiter visuell sauber trennen.
+3. `system/system-overview.md` mit realen heutigen Projekten und Systemgrenzen synchronisieren.
+4. Mitarbeiterakten nur dort konkretisieren, wo reale Nutzung dies rechtfertigt.
+5. Vereinfachte Darstellungen eindeutig als solche kennzeichnen, wenn sie vom vollständigen Organisationsmodell abstrahieren.
 
 ### 6. Bereits erreichte Aufbauleistungen
 
@@ -161,72 +113,69 @@ Bereits umgesetzt bzw. organisationsweit eingeführt sind unter anderem:
 - zentrales Projektportfolio,
 - dezentrale `PROJECT-STATE.md` als Projektgedächtnis,
 - zentrale Ablagelogik GitHub ↔ Google Drive,
-- fachliche Plattformarchitektur und Knowledge-Graph-Zielbild.
+- fachliche Plattformarchitektur und Knowledge-Graph-Zielbild,
+- wiederkehrende Runtime-Logik für mehrere Rollen.
 
-### 7. Aktuelle Lücken / offene Arbeitspakete
+### 7. Aktuelle Arbeitspakete
 
 #### AP1 – Organisationsmodell konsolidieren
 
-- neue visuelle Organisationsdarstellung mit GitHub-Begriffen abgleichen,
-- Verantwortungsbereiche, Rollen und konkrete Mitarbeiter visuell sauber trennen,
-- `organization-map.png` bzw. visuelle Referenz aktualisieren, wenn fachlich freigegeben.
+- visuelle Organisationsdarstellung mit GitHub-Begriffen abgleichen,
+- Verantwortungsbereiche, Rollen und Mitarbeiter sauber trennen,
+- visuelle Referenz bei fachlicher Freigabe aktualisieren.
 
 #### AP2 – Mitarbeiterabbildung konkretisieren
 
-- dauerhaft benannte digitale Mitarbeiter den vorhandenen Rollen zuordnen,
-- nur dort Mitarbeiterakten anlegen, wo reale Nutzung dies rechtfertigt,
-- keine rollenspezifischen Standards in Mitarbeiterakten duplizieren.
+- dauerhaft benannte digitale Mitarbeiter vorhandenen Rollen zuordnen,
+- Mitarbeiterakten nur bei realer Nutzung anlegen,
+- Rollenstandards nicht in Mitarbeiterakten duplizieren.
 
 #### AP3 – Systemübersicht aktualisieren
 
-- `system/system-overview.md` mit realen heutigen Projekten und Systemgrenzen synchronisieren,
-- alte Platzhalter-/Pluginbegriffe nur weiterführen, wenn sie weiterhin fachlich gelten.
+- `system/system-overview.md` mit realen Projekten und Systemgrenzen synchronisieren,
+- alte Platzhalter-/Pluginbegriffe nur weiterführen, wenn sie fachlich noch gelten.
 
 #### AP4 – minimale Betriebsarchitektur konkretisieren
 
-- festlegen, welche Systeme welche Verantwortung besitzen,
-- Daten-/Wissensquellen und Integrationsgrenzen klar halten,
-- Automatisierungen und technische Orchestrierung nur dort konkretisieren, wo reale Prozesse dies benötigen,
+- Systemverantwortungen und fachliche Sources of Truth festlegen,
+- Integrationsgrenzen einfach halten,
+- Automatisierungen nur für reale Prozesse konkretisieren,
 - Austauschbarkeit von Werkzeugen erhalten.
 
 #### AP5 – Wirkung und Pilotierung
 
 - reale Arbeitsfälle dokumentieren,
-- Zeitersparnis, weniger Doppelpflege, schnelleren Wissenstransfer oder andere Nutzenindikatoren erfassen,
-- daraus belastbare Wirkungsargumente für Vorstand, Mitglieder und mögliche Fördergeber ableiten.
+- Zeitersparnis, weniger Doppelpflege und schnelleren Wissenstransfer erfassen,
+- daraus belastbare Wirkungsargumente ableiten.
 
 #### AP6 – Förderprojekt schärfen
 
-- geeignete Förderprogramme identifizieren,
-- prüfen, ob ein Gesamtprojekt oder ein klar abgegrenztes Teilprojekt sinnvoller ist,
-- förderfähige Leistungen, Projektzeitraum, Budget und Eigenanteil definieren,
-- messbare Ergebnisse und Zielgruppen beschreiben,
-- vor förderschädlichem Vorhabenbeginn Förderbedingungen prüfen.
+- geeignete Programme nur bei realem Projektfit verfolgen,
+- Gesamtprojekt bei Bedarf in messbare Arbeitspakete schneiden,
+- förderfähige Leistungen, Zeitraum, Budget und Eigenanteil definieren,
+- vor förderschädlichem Vorhabenbeginn Bedingungen prüfen.
 
 ### 8. Förderrelevanz – aktueller Stand
 
-Der Nutzer möchte das Projekt ausdrücklich formal führen, weil **mögliche Fördermittel** für den weiteren Aufbau geprüft werden sollen.
-
-Damit ist das Projekt ab sofort für den Funding & Grants Manager als reales TuS-Projekt relevant.
-
-Aktuell qualifizierter Förderweg:
+Der bisher qualifizierte kurzfristige Förderweg war:
 
 - **WISO MeinVerein des Jahres 2026 – Projektaward, Kategorie Digitalisierung**
-- Priorität: **A – heute einreichen**
 - offizielle Frist: **10.09.2026, 23:59 Uhr**
-- mögliche Preise je Kategorie: 10.000 €, 3.000 € oder 1.000 €
-- vollständiger Antragsentwurf: `../../knowledge/funding/applications/wiso-meinverein-2026/APPLICATION-DRAFT.md`
-- qualifizierter Opportunity Brief: `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
+- möglicher Preis: 10.000 €, 3.000 € oder 1.000 €
+- Antragsentwurf: `../../knowledge/funding/applications/wiso-meinverein-2026/APPLICATION-DRAFT.md`
+- Opportunity-Kontext: `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
 
-Der Preis hat einen belastbaren Fit, weil er die reale Aufbauleistung, Wirkung, Innovation und Nachhaltigkeit bewertet. Die externe Einreichung und das erforderliche öffentliche WISO-Profil sind im Repository noch nicht dokumentiert.
+Die Frist ist inzwischen abgelaufen. Laut aktuellem `../../knowledge/funding/CURRENT-STATE.md` ist auf `main` **kein Einreichungsnachweis dokumentiert**.
 
-Für spätere klassische Zuschussprogramme bleibt das breite Organisationsprogramm in klar messbare Arbeitspakete oder Teilvorhaben zu schneiden. Der aktuelle DSEE-Fördermarkt bietet keinen gleichwertigen offenen Digitalisierungszuschuss: `100xDigital` und `transform_D` werden offiziell als geschlossen geführt; das Mikroförderprogramm passt nur zu einem zusätzlichen realen Ehrenamtsprojekt, nicht zur pauschalen Finanzierung der internen Software-/Organisationsarbeit.
+Deshalb gilt verbindlich:
 
-Nicht behauptet werden eine Bewilligungswahrscheinlichkeit oder weitere aktuelle Förderquoten.
+- wenn extern fristgerecht eingereicht wurde, Eingangsbestätigung/Screenshot bzw. belastbaren Status in der Förderakte dokumentieren und den Vorgang als `eingereicht` führen,
+- wenn nicht fristgerecht eingereicht wurde, ist die WISO-Chance 2026 geschlossen,
+- es wird keine nachträgliche Einreichungsmöglichkeit behauptet.
+
+Für spätere Zuschussprogramme bleibt das breite Organisationsprogramm bei Bedarf in klar messbare Arbeitspakete oder Teilvorhaben zu schneiden. Förderlogik bestimmt nicht die Organisation, sondern folgt realem Fachbedarf.
 
 ### 9. Abhängigkeiten
-
-Das Projekt wirkt organisationsweit und hat deshalb Verbindungen zu praktisch allen Fachprojekten.
 
 Besonders relevant sind:
 
@@ -235,24 +184,24 @@ Besonders relevant sind:
 - WordPress Developer – technische Umsetzungen und gemeinsame Architektur,
 - Datenschutz & IT – Daten, Berechtigungen und Systemgrenzen,
 - alle Fachrollen – reale Pilotierung und Organisationslernen,
-- Vorstand / fachliche Entscheidungsträger – Prioritäten, Freigaben und mögliche Finanzierung.
+- Vorstand / fachliche Entscheidungsträger – Prioritäten, Freigaben und Finanzierung.
 
 ### 10. Projektrisiken
 
-- das Projekt wird zu breit und verliert einen klaren Abschluss,
-- laufender Organisationsbetrieb wird mit förderfähiger Aufbauarbeit vermischt,
-- einzelne Fachprojekte werden doppelt im Gesamtprojekt gesteuert,
-- Rollen, Mitarbeiter und Verantwortungsbereiche werden wieder vermischt,
+- Projekt wird zu breit und verliert einen klaren Abschluss,
+- laufender Organisationsbetrieb wird mit Aufbauarbeit vermischt,
+- Fachprojekte werden doppelt gesteuert,
+- Rollen, Mitarbeiter und Verantwortungsbereiche werden vermischt,
 - zu viele Tools oder Integrationen erhöhen Komplexität statt Nutzen,
 - Förderlogik bestimmt die Organisation statt umgekehrt,
-- bereits begonnene Leistungen können bei einzelnen Programmen nicht mehr förderfähig sein.
+- bereits begonnene Leistungen können bei einzelnen Programmen nicht förderfähig sein.
 
 ### 11. Nächster sinnvoller Schritt
 
-1. Sofort prüfen, ob der WISO-Projektaward bereits eingereicht wurde.
-2. Falls offen: öffentliches Profil, finale Freigabe, Bildrechte und Hamburg-Teilnahme klären und den vorhandenen Entwurf noch am 10.09.2026 mit Sicherheitsabstand einreichen.
-3. Eingangsbestätigung und tatsächlich eingereichten Wortlaut dokumentieren.
-4. Danach den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand und offenem Budget strukturieren.
+1. Außerhalb von GitHub prüfen, ob WISO bis 10.09.2026, 23:59 Uhr tatsächlich eingereicht wurde.
+2. Bei Einreichung: Nachweis und tatsächlich eingereichten Wortlaut in der Förderakte dokumentieren; bei Nicht-Einreichung: Chance 2026 schließen.
+3. Unabhängig davon den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand, Zeitraum und offenem Budget strukturieren.
+4. Die aktuell bereits real eingesetzten Rollen/Runtimes als Pilotierungs- und Wirkungsbelege erfassen.
 5. Weitere Förderprogramme nur bei echtem Fachzweck und aktuellem Primärquellen-Fit verfolgen.
 
 ## Relationship to other documents

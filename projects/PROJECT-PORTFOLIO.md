@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-10 – Förderabgleich der formalen Projekte integriert
+Stand: 2026-09-11 – Runtime-Abgleich bis einschließlich PR #74
 
 ## Purpose
 
@@ -20,56 +20,62 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Arbeitsstandprüfung ergibt:
 
-- **10 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **2 Aktiv**, **1 Geplant** und **7 Discovery**,
+- **11 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **2 Aktiv**, **1 Geplant** und **8 Discovery**,
 - mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
 - mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm.
+
+Seit dem letzten vollständigen Portfolio-Abgleich wurde über PR #72 das formale Projekt `trainingskleidung-ausstattungsgrundstock/` angelegt. PR #73 hat den Start-Scope auf zwei Trainingsshirts und eine kurze Trainingshose je Core-Set sowie die Zielgröße auf 50 Core-Sets geschärft. Der aktuelle Projektzustand trennt SPORTINN/Joma als bestehenden Ausrüster von einem noch zu gewinnenden separaten Finanzierungspartner. PR #74 verankert das Projekt zusätzlich in der operativen Partnership-Runtime und im geschützten Partner-CRM.
 
 Der LED Media Screen wurde am 05.09.2026 vom Kandidaten zum formalen Projekt hochgestuft, weil inzwischen ein konkreter Standort, zwei Visualisierungen, ein belastbares Lieferantenangebot, technische Eckdaten und ein eigenes Finanzierungs-/Partnerkonzept vorliegen.
 
 Die **Digitale Vereinsorganisation** bleibt langfristig das übergeordnete Organisationsprogramm des TuS. Zusätzlich wird die aktuelle, klar abgrenzbare **Aufbau- und Konsolidierungsphase** seit 05.09.2026 als formales Projekt `digital-organisation/` geführt. Damit können Aufbauziele, Arbeitspakete, Wirkung und mögliche Fördermittel sauber dokumentiert werden, ohne den späteren Dauerbetrieb zu einem ewigen Megaprojekt zu machen.
 
-Die bisher als Einzelmaßnahme geführte Beschaffung zusätzlicher Tore wird am 05.09.2026 als formales Projekt `grossfeldtore-haupt-trainingsplatz/` hochgestuft. Der Umfang ist inzwischen klar größer als ein einzelner Kauf: zwei vorhandene mobile Tore werden auf das Trainingsfeld verlagert, auf dem Hauptfeld soll eine neue herausnehmbare Hülsentor-Anlage entstehen, eine konkrete technische Lösung und Kostenbasis liegen vor und Förderung, Fundamentierung, Einbau sowie Beschluss müssen vor Bestellung koordiniert werden.
+Die bisher als Einzelmaßnahme geführte Beschaffung zusätzlicher Tore wird seit 05.09.2026 als formales Projekt `grossfeldtore-haupt-trainingsplatz/` geführt. Der Umfang umfasst technische Lösung, Förderung, Fundamentierung, Einbau, Finanzierung und Beschluss vor Bestellung.
 
-Am 09.09.2026 wird das Vorhaben `arbeitsplatz-sportparkteam/` als formales Projekt angelegt. Ziel ist, aus einer bestehenden öffentlich geförderten Tätigkeit im Sportparkteam eine reguläre sozialversicherungspflichtige Beschäftigung mit langfristiger Perspektive zu entwickeln. Die Detailarbeit verbindet Jobcenter-Förderprüfung, Beschäftigungsmodell, Arbeitgeberkosten, soziale Wirkung, Vorstandsbeschluss und eine schrittweise Partnerfinanzierung. Personenbezogene Sozial-, Leistungs-, Lohn- und Vertragsdaten bleiben ausdrücklich außerhalb von GitHub und werden nur im geschützten Drive-Artefaktraum geführt.
+Seit 09.09.2026 wird das Vorhaben `arbeitsplatz-sportparkteam/` als formales Projekt geführt. Ziel ist ein regulärer sozialversicherungspflichtiger Beschäftigungsübergang mit Förderprüfung, Beschäftigungsmodell, Arbeitgeberkosten, sozialer Wirkung, Vorstandsbeschluss und schrittweiser Partnerfinanzierung. Personenbezogene Sozial-, Leistungs-, Lohn- und Vertragsdaten bleiben außerhalb von GitHub.
 
-Der Runtime-Abgleich am 10.09.2026 bestätigt weiterhin zehn formale Projekte und dieselbe Statusverteilung. PR #68 hat die veralteten Detailzustände von TuS Tauschbörse und Team Manager dokumentarisch reconciliiert. Beim Event Planner wurden Dashboard V1 und der erste Historienbereich nach den gemergten PRs #52, #58 und #61 im Projektzustand nachgezogen; die automatisierten Workflows waren erfolgreich, die manuelle Prüfung des aktuellen Stands und ein formaler Last Known Good bleiben offen.
+Der Runtime-Abgleich am 11.09.2026 bestätigt die bereits in PR #68 korrigierten Detailzustände von TuS Tauschbörse und Team Manager. Beide sind auf `main` aktuell; frühere Portfolio-Hinweise auf einen noch offenen Initial-Scope-Branch waren veraltet und werden hier entfernt.
 
-Die neue Funding-Pipeline führt vier qualifizierte Chancen: Großfeldtore und Umkleideböden mit Priorität A sowie Historienarchiv und Arbeitsplatz Sportparkteam mit Priorität B+. Diese Befunde schärfen die nächsten Aktionen, ändern aber allein weder Projektfreigabe noch Portfolio-Status.
+Die Funding-Pipeline führt weiterhin qualifizierte Chancen für Großfeldtore, Umkleideböden, Historienarchiv und Arbeitsplatz Sportparkteam. Zusätzlich wird Trainingskleidung als reales Projekt im Förderinventar geführt, ohne dass daraus aktuell eine eigene qualifizierte A/B+-Förderchance folgt. REWE läuft bereits; Kellogg’s wurde laut Funding Current State bereits beantragt und darf nicht erneut als offene Projektauswahl behandelt werden.
 
-Für offene Pull Requests gilt weiterhin: Sie sind als bekannter Arbeitsstand relevant, werden aber bis zum Merge **nicht** als verbindliche `main`-Wahrheit behandelt. Zum Zeitpunkt dieses Abgleichs besteht kein offener Pull Request.
+Für WISO gilt seit 11.09.: Die Einreichungsfrist 10.09.2026, 23:59 Uhr ist verstrichen. Auf `main` ist weiterhin kein Einreichungsnachweis dokumentiert. Der Status ist daher nicht mehr „heute einreichen“, sondern **Einreichungsstatus extern prüfen und danach entweder `eingereicht` dokumentieren oder die Chance 2026 schließen**.
+
+Offene Pull Requests werden als Arbeitsstand berücksichtigt, aber erst nach Merge als `main`-Wahrheit behandelt.
 
 ### 2. Formale Projekte
 
 | Projekt | Fachlicher Verantwortungsbereich / Owner | Status | Verbindliche Detailquelle | Nächster sinnvoller Schritt | Wesentliche Abhängigkeit / Portfolio-Hinweis | Querschnitt |
 |---|---|---|---|---|---|---|
-| Event Planner | Veranstaltungen; technischer Owner: WordPress Developer; fachlicher Produkt-Owner nicht explizit benannt | Aktiv | `event-planner/PROJECT-STATE.md` | aktuellen Dashboard-/Historienstand im Playground manuell prüfen, Ergebnis dokumentieren und danach die Event-Anlegen-UI in einem kleinen persistenten Inkrement umsetzen | Dashboard V1 und erster Historienbereich sind über PR #52/#58/#61 auf `main`; automatisierte Workflows erfolgreich, manuelle Prüfung und formaler LKG noch offen; gemeinsame Personen- und Mannschaftsidentität beeinflusst spätere Ausbaustufen | Entwicklung, Design, Mitglieder & Engagement, Team Manager, Homepage |
+| Event Planner | Veranstaltungen; technischer Owner: WordPress Developer; fachlicher Produkt-Owner nicht explizit benannt | Aktiv | `event-planner/PROJECT-STATE.md` | aktuellen Dashboard-/Historienstand im Playground manuell prüfen, Ergebnis dokumentieren und danach die Event-Anlegen-UI in einem kleinen persistenten Inkrement umsetzen | Dashboard V1 und erster Historienbereich sind auf `main`; automatisierte Workflows erfolgreich, manuelle Prüfung und formaler LKG noch offen | Entwicklung, Design, Mitglieder & Engagement, Team Manager, Homepage |
 | Mitglieder & Engagement | noch kein eindeutiger einzelner Verantwortungsbereich/Owner; fachlicher Kontext Mitglieder / Engagement / Organisation | Discovery | `member-engagement/PROJECT-STATE.md` | bestehende Mitgliederverwaltung analysieren und gemeinsame Personen-/Mitgliedsidentität definieren | darf keine zweite Personendatenwelt erzeugen; hängt eng an Event Planner und Team Manager | Entwicklung, Datenschutz, Veranstaltungen, Sport, ggf. Funding/Ehrenamt |
-| Partner Hub | Sponsoring / Partnership Manager | Discovery | `partner-hub/PROJECT-STATE.md` | gemeinsame Partnerdatenbasis, Rollen/Freigaben, Account-Lifecycle und MVP-Grenzen konkretisieren | Produktabgrenzung ist verbindlich entschieden: Partner Hub = partnerseitige Oberfläche für bestehende Partner; gemeinsame Partnerdatenbasis mit Partnerportal | Sponsoring, Entwicklung, Design, Homepage, Event Planner, Portfolio |
-| Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren, gemeinsame Partnerdatenbasis definieren und internes MVP reduzieren | Produktabgrenzung ist verbindlich entschieden: Partnerportal = internes TuS-Arbeitswerkzeug; keine getrennte Partnerdatenwelt zum Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design, Homepage |
-| TuS Tauschbörse | Gesellschaft & Soziales; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `reuse-marketplace/PROJECT-STATE.md` | konto-freien Vermittlungsablauf, Datenschutz/Missbrauchsschutz und realen `Kinder von Atibie`-Spendenweg konkretisieren; danach MVP festlegen | `PROJECT-STATE.md` ist teilweise veraltet: der dort genannte Initial-Scope-Branch wurde über PR #18 bereits gemergt; noch kein Plugin-Code | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales, ggf. Funding |
-| Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | `PROJECT-STATE.md` ist teilweise veraltet: Initial-Scope PR #17 ist bereits gemergt; keine parallele Mannschafts- oder Personendatenwelt aufbauen | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
-| LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | Technikbeiblatt, Fundament, Strom, Genehmigung und Gesamtfinanzierung **ohne unbestätigten Direktzuschuss** klären | Funding-Check 10.09.: kein qualifizierter direkter Zuschuss im aktuellen Scope; Angebot 48.779 € netto nach Rabatt; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
-| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | WISO-Einreichungsstatus sofort prüfen und offenen Antrag noch am 10.09. vor 23:59 Uhr abschließen; danach Arbeitspakete schärfen | qualifizierte A-Chance: WISO Projektaward Digitalisierung, 10.000 / 3.000 / 1.000 €; Entwurf vorhanden | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
-| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | BSB-Konfiguration klären und bis 23.09. Kellogg’s-Go/No-Go treffen; dann Netze, Fracht, Fundament, Gesamtpreis und Beschluss schließen | A: BSB bis max. 900 €; B+: Kellogg’s bis 5.000 €; Kombination und Doppelfinanzierung vorab klären; keine Bestellung | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
-| Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; fachlicher Projekt-Owner noch offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | bis 18.09. § 16i beim Jobcenter Bruchsal vorabklären, § 16e hilfsweise; bis 25.09. Tätigkeitsprofil und Stundenmodelle | B+; gemeinnütziger Arbeitgeber/Teilzeit zulässig, persönliche Förderfähigkeit offen; Vertrag erst nach positiver Rückmeldung | Funding & Grants, Partnership Manager, Infrastruktur, Finanzen/Lohn, Datenschutz, Vorstand |
+| Partner Hub | Sponsoring / Partnership Manager | Discovery | `partner-hub/PROJECT-STATE.md` | gemeinsame Partnerdatenbasis, Rollen/Freigaben, Account-Lifecycle und MVP-Grenzen konkretisieren | Partner Hub = partnerseitige Oberfläche für bestehende Partner; gemeinsame Partnerdatenbasis mit Partnerportal | Sponsoring, Entwicklung, Design, Homepage, Event Planner, Portfolio |
+| Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren, gemeinsame Partnerdatenbasis definieren und internes MVP reduzieren | Partnerportal = internes TuS-Arbeitswerkzeug; natives Partner-CRM ist operative Zwischen-SoT, keine getrennte Datenwelt zum Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design, Homepage |
+| TuS Tauschbörse | Gesellschaft & Soziales; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `reuse-marketplace/PROJECT-STATE.md` | konto-freien Vermittlungsablauf, Datenschutz/Missbrauchsschutz und realen `Kinder von Atibie`-Spendenweg konkretisieren; danach MVP festlegen | Initial-Scope PR #18 ist im Projektzustand als gemergt reconciliiert; kein aktiver Implementierungsbranch, noch kein Plugin-Code | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales, ggf. Funding |
+| Team Manager | Sport; fachlicher Produkt-Owner nicht explizit benannt | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren; danach Jahrgangs-/Ressourcenlogik und fussball.de-Anbindung untersuchen | Initial-Scope PR #17 ist im Projektzustand als gemergt reconciliiert; keine parallele Mannschafts- oder Personendatenwelt | Sport, Entwicklung, Datenschutz, Event Planner, Mitglieder & Engagement, Homepage |
+| LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; fachlicher Projekt-Owner noch offen | Discovery | `led-media-screen/PROJECT-STATE.md` | Technikbeiblatt, Fundament, Strom, Genehmigung und Gesamtfinanzierung **ohne unbestätigten Direktzuschuss** klären | kein qualifizierter direkter Zuschuss im aktuellen Scope; Angebot 48.779 € netto nach Rabatt; keine Bestellung ausgelöst | Partnership Manager, Funding & Grants, Infrastruktur, Finanzen, Kommunikation/Design, Vorstand |
+| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; fachlicher Projekt-Owner noch offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | WISO-Einreichungsstatus außerhalb GitHub prüfen; bei fristgerechter Einreichung Nachweis dokumentieren, sonst Chance 2026 schließen; danach Arbeitspakete schärfen | WISO-Frist 10.09.2026 23:59 ist abgelaufen; `PROJECT-STATE.md` enthält noch den vor Fristende formulierten Schritt und ist in diesem Punkt nachzuziehen | Funding & Grants, Project Portfolio, WordPress Developer, Datenschutz & IT, alle Fachbereiche, Vorstand |
+| Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; fachlicher Projekt-Owner noch offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | BSB-Konfiguration und konkretes Angebot vor Anschaffung klären; Kellogg’s nur noch als bereits eingereichten Vorgang nachhalten, sobald das tatsächlich eingereichte Projekt eindeutig zugeordnet ist | BSB A-Chance; Kellogg’s-Bewerbung laut Funding Current State bereits erfolgt; keine zweite Bewerbung vorbereiten; keine Bestellung | Funding & Grants, Sport, Infrastruktur, Finanzen, Vorstand |
+| Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; fachlicher Projekt-Owner noch offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | bis 18.09. § 16i beim Jobcenter Bruchsal vorabklären, § 16e hilfsweise; danach Tätigkeitsprofil und Stundenmodelle | B+; persönliche Förderfähigkeit offen; Vertrag erst nach positiver Rückmeldung | Funding & Grants, Partnership Manager, Infrastruktur, Finanzen/Lohn, Datenschutz, Vorstand |
+| Trainingskleidung Ausstattungsgrundstock | Sport / Ausstattung / Partnerships; fachlicher Projekt-Owner noch offen | Discovery | `trainingskleidung-ausstattungsgrundstock/PROJECT-STATE.md` | auf Basis von 2.435 € Warenwert das Hauptpartnerangebot konkretisieren, 3–5 passende Partner qualifizieren, Sponsorlogo-/Ausrüsterrechte und reale Größenverteilung klären | 50 Core-Sets = 100 Shirts + 50 Shorts; SPORTINN/Joma bleibt Ausrüster, separater Finanzierungspartner erforderlich; keine Bestellung/Sponsorenzusage | Partnership Manager, Sport, Ausstattung, Finanzen/Steuer, Design, Vorstand |
 
 ### 3. Aktualität der formalen Projektzustände
 
 | Projekt | Portfolio-Befund | Erforderliche Pflege |
 |---|---|---|
-| Event Planner | **aktuell nach Reconciliation / manuelle Prüfung offen** | Dashboard V1 und Eventhistorie sind im Projektzustand nachgezogen; nächste Aktualisierung nach dokumentiertem Playground-Test, neuem LKG oder nächstem Implementierungs-PR |
+| Event Planner | **aktuell nach Reconciliation / manuelle Prüfung offen** | nächste Aktualisierung nach dokumentiertem Playground-Test, neuem LKG oder nächstem Implementierungs-PR |
 | Mitglieder & Engagement | **aktuell / ausreichend** | keine künstliche Aktualisierung; nächste reale Änderung erst nach Analyse der Mitgliederverwaltung bzw. Architekturentscheidung |
 | Partner Hub | **aktuell** | nächste Aktualisierung nach Entscheidung zu gemeinsamer Partnerdatenbasis, Rollen/Freigaben oder MVP |
-| Partnerportal | **aktuell** | nächste Aktualisierung nach Konsolidierung realer Sponsorendaten, Steuer-Ist oder gemeinsamer Partnerdatenbasis |
-| TuS Tauschbörse | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nur die danach verbleibenden Discovery-Schritte führen |
-| Team Manager | **teilweise veraltet** | gemergten Initial-Scope als erledigt markieren und nächsten Architektur-/Discovery-Schritt als aktuellen Einstieg setzen |
-| LED Media Screen | **aktuell – Funding 10.09.** | bei Änderung von Angebot, Owner, Förder-Scope, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
-| Aufbau Digitale Vereinsorganisation | **aktuell – zeitkritisch** | WISO-Einreichungsstatus sofort nachziehen; danach bei Änderung von Owner, Projektzuschnitt, Arbeitspaketen oder Übergang aktualisieren |
-| Großfeldtore Haupt- und Trainingsplatz | **aktuell – Funding 10.09.** | bei Kellogg’s-Go/No-Go, BSB-Antwort, Produktauswahl, Preis, Netzen, Fracht, Fundament/Einbau, Beschluss oder Bestellung aktualisieren |
-| Arbeitsplatz Sportparkteam | **aktuell – Funding 10.09.** | bei Jobcenter-Antwort, Förderfähigkeit, Stundenmodell, Arbeitgeberkosten, Partnerfinanzierung, Vorstandsbeschluss oder Vertrag aktualisieren |
+| Partnerportal | **aktuell** | nächste Aktualisierung nach Bestandspartner-Konsolidierung, Steuer-Ist oder gemeinsamer Partnerdatenbasis |
+| TuS Tauschbörse | **aktuell nach PR #68** | keine weitere Reconciliation nötig; verbleibende Discovery-Schritte aus `PROJECT-STATE.md` bearbeiten |
+| Team Manager | **aktuell nach PR #68** | keine weitere Reconciliation nötig; gemeinsame Mannschaftsidentität und Saisonmodell sind der aktuelle Einstieg |
+| LED Media Screen | **aktuell** | bei Änderung von Angebot, Owner, Förder-Scope, Genehmigung, Finanzierung oder Beauftragungsstatus aktualisieren |
+| Aufbau Digitale Vereinsorganisation | **teilweise veraltet – WISO-Frist abgelaufen** | nur den dokumentierten WISO-Status nachziehen: Einreichungsnachweis prüfen; bei fehlender Einreichung Chance 2026 schließen; keine nachträgliche Einreichung behaupten |
+| Großfeldtore Haupt- und Trainingsplatz | **aktuell mit Funding-Handoff 11.09.** | Kellogg’s nicht erneut als offene Bewerbung behandeln; BSB und realen Bestellscope vor Anschaffung klären |
+| Arbeitsplatz Sportparkteam | **aktuell – Funding 11.09.** | bei Jobcenter-Antwort, Förderfähigkeit, Stundenmodell, Arbeitgeberkosten, Partnerfinanzierung, Vorstandsbeschluss oder Vertrag aktualisieren |
+| Trainingskleidung Ausstattungsgrundstock | **aktuell – neu seit PR #72/#73** | nächste Aktualisierung bei Partnerqualifizierung/Freigabe, Rechteklärung, Artikel-/Größenfestlegung, Finanzierung oder Bestellung |
 
-Alle zehn formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
+Alle elf formalen Projekte erfüllen die minimale Projektstruktur aus `projects/README.md`.
 
 ### 4. Reale Projektkandidaten
 
@@ -77,7 +83,7 @@ Die folgenden Vorhaben sind ausreichend relevant, um im Portfolio sichtbar zu bl
 
 | Vorhaben | Status | Möglicher fachlicher Bereich / Owner | Warum portfolio-relevant | Nächste Portfolio-Aktion | Querschnitt |
 |---|---|---|---|---|---|
-| Neuaufbau TuS-Homepage | Kandidat | Kommunikation; fachlicher Projekt-Owner noch festzulegen | Zielbild, Startseitenarchitektur, Responsive-Regeln, Datenquellen und Umsetzungsreihenfolge sind bereits in `../design/homepage-standard.md` dokumentiert; damit deutlich mehr als eine lose Idee | aktuellen technischen Ist-Stand, Umsetzungsweg und fachlichen Owner klären; **vor aktiver Implementierung prüfen, ob eigener Projektzustand nötig ist** | Entwicklung, Graphic Designer, Team Manager/fussball.de, Event Planner, Partnerdaten, Archiv/Content |
+| Neuaufbau TuS-Homepage | Kandidat | Kommunikation; fachlicher Projekt-Owner noch festzulegen | Zielbild, Startseitenarchitektur, Responsive-Regeln, Datenquellen und Umsetzungsreihenfolge sind bereits in `../design/homepage-standard.md` dokumentiert | aktuellen technischen Ist-Stand, Umsetzungsweg und fachlichen Owner klären; vor aktiver Implementierung prüfen, ob eigener Projektzustand nötig ist | Entwicklung, Graphic Designer, Team Manager/fussball.de, Event Planner, Partnerdaten, Archiv/Content |
 | Umkleideböden / klar abgegrenzte Umkleidesanierung | Kandidat | Infrastruktur / Sport; Owner offen | qualifizierte Funding-Chance `OPP-002` mit Priorität A; konkrete kurzfristige Investitionsmaßnahme und vor jeder Beauftragung fördersensibel | technischen Scope, Ist-/Zielzustand, Kosten und Eigentums-/Nutzungsrecht klären; anschließend BSB-Vorabklärung vor förderschädlichem Vorhabenbeginn | Funding, Infrastruktur, Finanzen, Sport, ggf. Sponsoring |
 | Hauptgebäude / Fassade | Kandidat | Infrastruktur; Owner offen | kurzfristig priorisierte Gebäudeaufwertung mit möglichem Partner-/Förderbezug | zuerst trennen: reine Optik/Instandhaltung oder echte energetische Sanierung; danach Kosten, Finanzierung und Owner klären | Funding, Sponsoring, Infrastruktur, Finanzen, Design |
 | Kunstrasen | Kandidat | Infrastruktur / Sport / Finanzen; Owner offen | großes langfristiges Sportstätten- und Finanzierungsprojekt mit hohem Planungsbedarf | Zielbild, Trägerschaft/Eigentum, Kostenrahmen, Priorität und Vorplanung klären; Förder-/Finanzierungsweg früh einbeziehen | Funding, Infrastruktur, Sport, Finanzen, Sponsoring |
@@ -86,13 +92,11 @@ Die folgenden Vorhaben sind ausreichend relevant, um im Portfolio sichtbar zu bl
 | Bekleidungslager / physischer Vereins-Shop | Kandidat | Organisation / Merch / Finanzen; Owner offen | reale organisatorische und ggf. räumliche Infrastrukturfrage | physischen Lager-/Ausgabebedarf vom extern gehosteten Webshop trennen und nur den tatsächlich abgegrenzten Projektumfang weiterführen | Organisation, Finanzen, Design, Sponsoring |
 | Energie / PV / Speicher / Klimaschutzmaßnahmen | Kandidat | Infrastruktur / Nachhaltigkeit / Finanzen; Owner offen | potentiell größere Investitions- und Fördermaßnahmen | konkretes Gebäude/Anlage, Energieproblem, technische Zielsetzung und Wirtschaftlichkeit bestimmen | Funding, Infrastruktur, Finanzen |
 | Bewässerungsanlage / nachhaltige Platzpflege-Investition | Kandidat | Infrastruktur / Sport; Owner offen | im Funding-Radar als konkretes Investitionsfeld erkennbar; von laufender Platzpflege zu trennen | realen Investitionsbedarf, technische Lösung, Eigentums-/Nutzungsrecht, Kosten und laufende Wasserförderung klären | Funding, Infrastruktur, Sport, Finanzen |
-| Aufbau / nachhaltige Organisation Sportparkteam | Kandidat | Infrastruktur / Vereinsentwicklung; Owner offen | das breitere organisatorische Vorhaben bleibt vom formalen Projekt `arbeitsplatz-sportparkteam/` getrennt; dieses löst einen konkreten Beschäftigungsübergang, nicht die gesamte Organisation des Sportparkteams | prüfen, ob neben dem konkreten Arbeitsplatzprojekt noch eine eigenständige Aufbau-/Entwicklungsinitiative für das gesamte Sportparkteam erforderlich ist | Vereinsentwicklung, Infrastruktur, Funding, Sponsoring |
-| Historienarchiv – abgegrenztes Erschließungs-/Digitalisierungsprojekt | Kandidat | Archiv & Vereinsgeschichte / Archivist | qualifizierte Funding-Chance `OPP-003` mit Priorität B+; das Historienarchiv als Ganzes bleibt Regelbetrieb, ein klar abgegrenztes Erschließungs-/Digitalisierungspaket kann projektfähig werden | aus dem aktuellen Live-Archivstand eine kurze Vorabskizze mit Bestand, Ziel, Output, Metadaten, professioneller Zugänglichkeit und Kosten erstellen und Förderfähigkeit mit EVALAG klären; Zielstichtag 31.01.2027 | Archivist, Funding, Kommunikation, Design, Datenschutz/IT |
+| Aufbau / nachhaltige Organisation Sportparkteam | Kandidat | Infrastruktur / Vereinsentwicklung; Owner offen | das breitere organisatorische Vorhaben bleibt vom formalen Projekt `arbeitsplatz-sportparkteam/` getrennt | prüfen, ob neben dem konkreten Arbeitsplatzprojekt noch eine eigenständige Aufbau-/Entwicklungsinitiative erforderlich ist | Vereinsentwicklung, Infrastruktur, Funding, Sponsoring |
+| Historienarchiv – abgegrenztes Erschließungs-/Digitalisierungsprojekt | Kandidat | Archiv & Vereinsgeschichte / Archivist | qualifizierte Funding-Chance `OPP-003` mit Priorität B+; das Historienarchiv als Ganzes bleibt Regelbetrieb | aus dem Live-Archivstand Vorabskizze mit Bestand, Ziel, Output, Metadaten, Zugänglichkeit und Kosten erstellen und Förderfähigkeit mit EVALAG klären; Zielstichtag 31.01.2027 | Archivist, Funding, Kommunikation, Design, Datenschutz/IT |
 | Historien-/Jubiläumspublikation oder andere konkrete Archiv-Ausgabe | Kandidat | Archiv & Vereinsgeschichte / Kommunikation | Archivarbeit erzeugt wiederverwendbare Inhalte; eine konkrete Publikation kann ein eigenes abgrenzbares Ergebnis besitzen | nur bei klar beschlossenem Produkt, Zielgruppe, Umfang, Termin und Owner als Projekt führen | Archivist, Kommunikation, Graphic Designer, Homepage/Print |
 
 ### 5. Bewusst nicht als eigenständige Projekte geführt
-
-Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstlich zu Projekten werden.
 
 | Thema / Vorhaben | Einordnung | Portfolio-Begründung / Zuordnung |
 |---|---|---|
@@ -103,13 +107,13 @@ Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstli
 | Konsolidierung historischer Sponsorendaten | **Arbeitsaufgabe / Discovery-Zulieferung** | operative Grundlage für Sponsoring und Partnerportal, aktuell kein eigener Projektordner nötig |
 | Funding Radar / Förderkalender / Programmdossiers | **Regelbetrieb / Fachbereich** | dauerhafte Aufgabe des Funding & Grants Managers; konkrete geförderte Vereinsvorhaben bleiben eigene Projekte/Kandidaten |
 | Vereinsgeschichte / Historienarchiv als Ganzes | **Regelbetrieb / Fachbereich** | dauerhafte Archivistenaufgabe ohne natürliches Projektende; nur abgegrenzte Digitalisierungs-, Erschließungs- oder Publikationsvorhaben werden Projekte |
-| TuS Digital Organisation – dauerhafter Betrieb nach der Aufbauphase | **Programm / Regelbetrieb** | das formale Projekt `digital-organisation/` beschreibt die aktuelle Aufbau- und Konsolidierungsphase; die digitale Organisation selbst bleibt danach die übergeordnete organisatorische Klammer und wird nicht als ewiges Megaprojekt geführt |
+| TuS Digital Organisation – dauerhafter Betrieb nach der Aufbauphase | **Programm / Regelbetrieb** | das formale Projekt `digital-organisation/` beschreibt die aktuelle Aufbau- und Konsolidierungsphase; der Dauerbetrieb bleibt organisatorische Klammer |
 | externer Webshop – laufende UX/UI-Angleichung | **laufende Design-/Betriebsaufgabe** | erst bei einem klaren Relaunch-/Migrationsvorhaben mit eigenem Zielzustand als Projekt prüfen |
 | Jugend- und Mädchenfußball allgemein | **laufendes Fach-/Förderfeld** | bestehende sportliche Arbeit; konkrete Camps, Kooperationen oder Entwicklungsprojekte können separat projektfähig werden |
 | Trainer- und Schiedsrichterentwicklung | **laufendes Fach-/Förderfeld** | laufende Qualifizierungsarbeit; nur klar abgegrenzte Programme/Initiativen als Projekte führen |
 | FSJ / Bildung / Ausbildung | **laufendes Fach-/Förderfeld** | wiederkehrende Vereinsarbeit; konkrete neue Einführung/Programmänderung separat prüfen |
-| Ghana-Unterstützung / `Kinder von Atibie` allgemein | **laufendes soziales Feld** | kein eigenständiger Projektzustand erkennbar; der konkrete Spendenweg ist derzeit eine Abhängigkeit/Funktion der TuS Tauschbörse |
-| Integration / Beschäftigung / soziale Träger | **laufendes Fach-/Förderfeld** | das konkrete Vorhaben `arbeitsplatz-sportparkteam/` ist formalisiert; weitere Beschäftigungs- oder Integrationsmaßnahmen werden nur bei eigenem klaren Ziel und Umfang zu Projekten |
+| Ghana-Unterstützung / `Kinder von Atibie` allgemein | **laufendes soziales Feld** | kein eigenständiger Projektzustand; der konkrete Spendenweg ist derzeit eine Abhängigkeit/Funktion der TuS Tauschbörse |
+| Integration / Beschäftigung / soziale Träger | **laufendes Fach-/Förderfeld** | das konkrete Vorhaben `arbeitsplatz-sportparkteam/` ist formalisiert; weitere Maßnahmen nur bei eigenem klaren Ziel und Umfang als Projekte |
 | Barrierefreiheit / Teilhabe | **Projektfeld, noch kein konkretes Projekt** | Funding-Arbeitsstand zeigt Chancen, aber aktuell kein ausreichend abgegrenztes TuS-Vorhaben dokumentiert |
 | Theater / Kultur allgemein | **laufender Vereinsbereich / Förderfeld** | konkrete Produktionen oder partizipative Projekte erst bei realem Scope als Projekt führen |
 | Gesundheits-, Sicherheits- und Präventionsangebote | **Themen-/Partnerfeld** | aktuell kein ausreichend abgegrenztes Projektvorhaben dokumentiert |
@@ -119,136 +123,66 @@ Diese Einordnung verhindert, dass Aufgaben, Facharbeit und Wunschlisten künstli
 
 #### Aufbau Digitale Vereinsorganisation ↔ alle Fachprojekte
 
-Das Aufbauprojekt schafft gemeinsame Organisations-, Rollen-, Wissens-, Governance- und Architekturgrundlagen, übernimmt aber **nicht** die fachliche Leitung der einzelnen Projekte.
-
-Besonders zu sichern sind:
-
-- klare Trennung von Verantwortungsbereich, Rolle und Mitarbeiter,
-- gemeinsame Arbeits- und Dokumentationsstandards,
-- eindeutige fachliche Quellen der Wahrheit,
-- wiederverwendbare Core- und Architekturprinzipien,
-- austauschbare Werkzeuge statt technischer Lock-in,
-- messbarer Nutzen für Ehrenamt und Zusammenarbeit.
-
-Für mögliche Fördermittel muss die breite Aufbauphase gegebenenfalls in klar abgegrenzte Arbeitspakete oder Teilprojekte mit Ziel, Zeitraum, Budget und Wirkung geschnitten werden.
+Das Aufbauprojekt schafft gemeinsame Organisations-, Rollen-, Wissens-, Governance- und Architekturgrundlagen, übernimmt aber nicht die fachliche Leitung der einzelnen Projekte.
 
 #### Event Planner ↔ Mitglieder & Engagement ↔ Team Manager
 
-Die drei Projekte dürfen keine getrennten Personen- und Mannschaftsdatenwelten aufbauen.
+Die drei Projekte dürfen keine getrennten Personen- und Mannschaftsdatenwelten aufbauen. Gemeinsame Personen-/Mitgliedsidentität, Mannschaftsidentität, Saison-/Gruppenzuordnungen und Objektverantwortung bleiben vorgelagerte Architekturthemen.
 
-Verbindlich zu klären sind insbesondere:
-
-- gemeinsame Personen-/Mitgliedsidentität,
-- gemeinsame Mannschaftsidentität,
-- Saison-/Gruppenzuordnungen,
-- klare Objektverantwortung für Helferschichten und Jahres-/Periodensummen.
-
-Der Event Planner bleibt Quelle für konkrete Helferschichten und bestätigte Einsatzzeiten; Mitglieder & Engagement aggregiert die personenbezogene Jahres-/Periodensicht.
-
-#### Partnerportal ↔ Partner Hub
+#### Partnerportal ↔ Partner Hub ↔ operatives Partner-CRM
 
 Die Produktabgrenzung ist verbindlich entschieden:
 
 > **öffentlich gewinnen → intern managen → im Partner Hub gemeinsam nutzen**
 
-Dabei ist:
+Das native Google Sheet `TuS Partner CRM – Operative Source of Truth` ist derzeit die geschützte operative Zwischenlösung. Es ersetzt weder die fachliche Partnerstrategie noch erzeugt es eine zweite langfristige Partnerdatenwelt. Langfristig kann das interne Partnerportal die operative CRM-Verantwortung übernehmen.
 
-- die öffentliche Partnerseite der Akquise-Einstieg,
-- das Partnerportal das interne TuS-Arbeitswerkzeug,
-- der Partner Hub die partnerseitige Oberfläche bestehender Partner,
-- die Partnerdatenbasis gemeinsam.
+#### Trainingskleidung ↔ Partnership / Sport / Ausrüster
 
-Offen bleiben die technische gemeinsame Datenbasis, Objektverantwortung, Rollen/Freigaben, Account-Lifecycle und die konkreten MVP-Grenzen.
-
-Repository-Hygiene: Auf `main` existieren derzeit zwei akzeptierte ADR-Dateien mit der Nummer `ADR-0007` (`central-project-portfolio` sowie `partnerportal-und-partner-hub-abgrenzung`). Die fachlichen Entscheidungen sind gültig; die doppelte Nummerierung sollte separat bereinigt werden, ohne die Entscheidungen zu verändern.
+Das Projekt benötigt eine klare Trennung zwischen Ausrüsterkonditionen und Finanzierungspartnerschaft. SPORTINN/Joma ist bestehender Ausrüster und nicht der zusätzliche Finanzierungspartner. Vor Bestellung müssen Sponsorlogo-/Ausrüsterrechte, konkrete Artikel, Größenmix, Lager-/Ausgabeprozess, Rechtseinheit und Finanzierung geklärt sein.
 
 #### Homepage ↔ fachliche Systeme
 
-Die Homepage soll keine zweite Datenpflege aufbauen.
-
-Geplante führende Quellen:
-
-- Spiele → `fussball.de` / perspektivisch Team-Manager-Integration,
-- Veranstaltungen → Event Planner,
-- Partner → gemeinsamer Partnerdatenbestand,
-- historische Inhalte → Archiv & Vereinsgeschichte,
-- Design → zentrale TuS Design Standards.
-
-Die öffentliche Partner-Landingpage aus der Sponsoringarbeit und der allgemeine Homepage-Neuaufbau müssen als **eine konsistente öffentliche Weblandschaft** geplant werden, nicht als zwei unabhängig gepflegte öffentliche Systeme.
+Die Homepage soll keine zweite Datenpflege aufbauen. Führende Quellen bleiben fachliche Systeme und Wissensquellen; öffentliche Partnerseite und allgemeiner Homepage-Neuaufbau müssen als eine konsistente Weblandschaft geplant werden.
 
 #### `plugins/event-manager/` ↔ Event Planner
 
-Das bestehende Event-Manager-Zielbild beschreibt einen sehr breiten vollständigen Event-Lebenszyklus und überschneidet sich in Aufgaben, Helfern, Kommunikation, Archivierung, Wiederverwendung und Ressourcen mit dem formalen Event-Planner-Projekt.
-
-Vor einer Nutzung als Entwicklungsquelle ist zu entscheiden, ob `plugins/event-manager/`:
-
-- fachliche Langfristvision des Event Planners,
-- allgemeine Architektur-/Domänenreferenz,
-- oder historischer/supersedierter Konzeptstand
-
-ist.
-
-Bis dahin entsteht daraus **kein zweites Eventprojekt**.
+Das bestehende Event-Manager-Zielbild überschneidet sich stark mit dem formalen Event-Planner-Projekt. Bis zur Einordnung als Langfristvision, Domänenreferenz oder historischer Konzeptstand entsteht daraus kein zweites Eventprojekt.
 
 #### Infrastrukturprojekte ↔ Funding / Sponsoring / Finanzen
 
-Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV, Großfeldtore und LED Media Screen teilen wiederkehrende Abhängigkeiten:
-
-- fachlicher Owner,
-- Eigentums-/Nutzungsrecht,
-- belastbarer Scope,
-- Kosten-/Finanzierungsplan,
-- Genehmigungen,
-- Förderbedingungen und möglicher förderschädlicher Vorhabenbeginn,
-- Sponsoring-/Partnerpotenzial.
-
-Funding prüft die Förderfähigkeit; Sponsoring entwickelt mögliche Partnerbeiträge. Beide Rollen übernehmen **nicht** die fachliche Projektverantwortung.
-
-Für den LED Media Screen sind Angebot, Technik und Artefakte inzwischen in `led-media-screen/PROJECT-STATE.md` konkret dokumentiert. Eine Bestellung ist ausdrücklich noch nicht ausgelöst.
-
-Für die Großfeldtore sind favorisierte Kübler-Komponenten, Direktlinks, aktueller Hardware-Zwischenstand, Förderrechnung und Bestellcheckliste in `grossfeldtore-haupt-trainingsplatz/` dokumentiert. Auch hier ist noch keine Bestellung ausgelöst.
+Umkleideböden, Fassade, Kunstrasen, Bewässerung, Jugendräume, Festplatzgebäude, Energie/PV, Großfeldtore und LED Media Screen teilen wiederkehrende Abhängigkeiten: Owner, Eigentums-/Nutzungsrecht, Scope, Kosten-/Finanzierungsplan, Genehmigungen, Förderbedingungen, Vorhabenbeginn und Partnerpotenzial.
 
 #### Arbeitsplatz Sportparkteam ↔ Funding / Sponsoring / Vereinsentwicklung
 
-Das Projekt `arbeitsplatz-sportparkteam/` ist ein konkreter Beschäftigungsübergang und nicht das gesamte Organisationsprojekt des Sportparkteams.
-
-Funding klärt vorrangig die Förderfähigkeit nach § 16i SGB II und hilfsweise § 16e SGB II. Sponsoring entwickelt eine langfristige Partnerfinanzierung für Eigenanteile und die Anschlussphase. Vereinsentwicklung / Sportpark definiert Tätigkeitsprofil, Arbeitsumfang und fachliche Einbindung.
-
-Besonders zu beachten sind:
-
-- Arbeitsvertrag erst nach positiver Förderentscheidung,
-- tatsächliche finanzielle Verbesserung für die beschäftigte Person,
-- belastbare Arbeitgeberkosten,
-- langfristige Finanzierung bis zum Renteneintritt,
-- strikte Trennung personenbezogener Daten vom öffentlichen Repository.
+Funding klärt vorrangig § 16i und hilfsweise § 16e. Sponsoring entwickelt eine langfristige Partnerfinanzierung für Eigenanteile und Anschlussphase. Vereinsentwicklung/Sportpark definiert Tätigkeitsprofil, Arbeitsumfang und fachliche Einbindung.
 
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
-1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation, Großfeldtore Haupt- und Trainingsplatz und Arbeitsplatz Sportparkteam ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
-2. **Event Planner verifizieren:** Dashboard V1 und Eventhistorie sind dokumentarisch reconciliiert; jetzt den aktuellen Plugin-Stand im Playground manuell prüfen, Ergebnis sichern und erst nach vollständigem Smoke-Test einen neuen LKG festlegen.
-3. **Partnerplattform weiter konkretisieren:** Nach der verbindlichen Produktabgrenzung nun gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden.
-4. **Funding-Radar als verbindlichen Arbeitsstand nutzen:** PR #30 ist gemergt. Bei investiven Vorhaben weiterhin vor Beauftragung prüfen, ob Förderbedingungen einen Vorhabenbeginn sperren oder besondere Nachweise verlangen.
-5. **WISO heute entscheiden:** Einreichungsstatus prüfen; falls offen, Antrag zur Digitalen Vereinsorganisation nach Freigabe vor 23:59 Uhr einreichen.
-6. **Großfeldtore bestellreif machen:** BSB-Konfiguration klären, bis 23.09. Kellogg’s-Go/No-Go treffen, Netze/Fracht/Fundament ergänzen und Kombination ohne Doppelfinanzierung dokumentieren.
-7. **LED Media Screen bis Go/No-Go schärfen:** Funding-Check ist abgeschlossen; technisches Beiblatt, Fundament, Strom, Genehmigung, Rechtseinheit und Finanzierung ohne angenommenen Zuschuss klären.
-8. **Arbeitsplatz Sportparkteam förder- und entscheidungsreif machen:** bis 18.09. Jobcenter vorabklären, dann Tätigkeitsprofil, 20-/25-/30-Stunden-Kosten und Partnerfinanzierung entwickeln; erst danach Vorstandsbeschluss und Vertrag.
-9. **Digitale Vereinsorganisation nach WISO schärfen:** aktuelle Aufbauleistungen, offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren.
-10. **Homepage formalisierungsreif machen:** fachlichen Owner, technischen Ist-Stand und Umsetzungsweg klären. Erst dann entscheiden, ob ein eigener Projektordner/`PROJECT-STATE.md` notwendig ist.
-11. **Event-Manager-Artefakt einordnen:** Verhältnis von `plugins/event-manager/` zu `projects/event-planner/` klären und Doppelentwicklung verhindern.
-12. **Weitere Infrastruktur-Kandidaten schärfen:** nicht alle gleichzeitig formalisieren; zuerst die Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
-13. **Archiv sauber trennen:** Archiv als Regelbetrieb beibehalten; nur konkret abgegrenzte Digitalisierungs-/Erschließungs-/Publikationsvorhaben als Projekte führen.
-14. **ADR-Nummerierung bereinigen:** zwei akzeptierte `ADR-0007` sind vorhanden; Nummerierung ohne Änderung der fachlichen Entscheidungen konfliktfrei machen.
+1. **Fachliche Owner präzisieren:** Für Event Planner, Mitglieder & Engagement, TuS Tauschbörse, Team Manager, LED Media Screen, Aufbau Digitale Vereinsorganisation, Großfeldtore, Arbeitsplatz Sportparkteam und Trainingskleidung ist kein expliziter fachlicher Projekt-/Produkt-Owner dokumentiert. Bei Mitglieder & Engagement ist zusätzlich der federführende Verantwortungsbereich nicht eindeutig.
+2. **Event Planner verifizieren:** aktuellen Plugin-Stand manuell prüfen und erst nach vollständigem Smoke-Test einen neuen LKG festlegen.
+3. **Partnerplattform konkretisieren:** gemeinsame Partnerdatenbasis, Objektverantwortung, Rollen/Freigaben und MVP-Grenzen entscheiden; operative CRM-Zwischenlösung nicht zur parallelen Langfristarchitektur ausbauen.
+4. **WISO-Status korrigieren:** Frist ist abgelaufen; externen Einreichungsnachweis prüfen und Projekt-/Funding-State entsprechend nachziehen.
+5. **Großfeldtore bestellreif machen:** BSB-Konfiguration und Gesamtpreis klären; Kellogg’s nur als bereits eingereichten Vorgang nachhalten, sobald Projektzuordnung bekannt ist.
+6. **LED Media Screen bis Go/No-Go schärfen:** Technik, Fundament, Strom, Genehmigung, Rechtseinheit und Finanzierung ohne angenommenen Zuschuss klären.
+7. **Arbeitsplatz Sportparkteam förder- und entscheidungsreif machen:** bis 18.09. Jobcenter vorabklären, dann Tätigkeitsprofil, Stundenmodelle und Partnerfinanzierung entwickeln.
+8. **Trainingskleidung partnerschafts- und bestellreif machen:** Partnerangebot konkretisieren, 3–5 Leads qualifizieren, Rechte/Artikel/Größen klären und erst nach Finanzierung/Freigabe bestellen.
+9. **Digitale Vereinsorganisation nach WISO schärfen:** Aufbauleistungen, offene Arbeitspakete, Zielgruppen, messbare Wirkung, Zeitraum und Budget strukturieren.
+10. **Homepage formalisierungsreif machen:** Owner, technischen Ist-Stand und Umsetzungsweg klären; erst dann eigenen Projektordner entscheiden.
+11. **Event-Manager-Artefakt einordnen:** Doppelentwicklung verhindern.
+12. **Weitere Infrastruktur-Kandidaten schärfen:** zuerst Vorhaben mit realer Entscheidung, Finanzierung, Frist oder Vorhabenbeginn-Risiko.
+13. **Archiv sauber trennen:** Archiv als Regelbetrieb; nur abgegrenzte Erschließungs-/Digitalisierungs-/Publikationsvorhaben als Projekte.
 
 ### 8. Nutzung durch andere Mitarbeiter
 
 Andere Rollen verwenden dieses Portfolio zur Orientierung und springen anschließend in die jeweilige Detailquelle.
 
-- Funding & Grants Manager → findet reale Projekte, Kandidaten und fördersensible Investitionen,
-- Partnership Manager → erkennt Projekte mit Partner-/Finanzierungs-/Aktivierungspotenzial,
-- WordPress Developer → erkennt technische Projekte und vorgelagerte Architekturentscheidungen,
-- Graphic Designer → erkennt Homepage-, Partner-, Merch-, Infrastruktur- und Publikationsvorhaben mit Designbedarf,
-- Archivist → trennt dauerhaften Archivbetrieb von echten Erschließungs-/Digitalisierungs-/Publikationsprojekten,
-- Fachbereiche → erkennen, wo ein Owner, Scope oder nächster Projektentscheid fehlt.
+- Funding & Grants Manager → reale Projekte, Kandidaten und fördersensible Investitionen,
+- Partnership Manager → Projekte mit Partner-/Finanzierungs-/Aktivierungspotenzial,
+- WordPress Developer → technische Projekte und vorgelagerte Architekturentscheidungen,
+- Graphic Designer → Homepage-, Partner-, Merch-, Infrastruktur- und Publikationsvorhaben mit Designbedarf,
+- Archivist → Trennung von dauerhaftem Archivbetrieb und echten Projekten,
+- Fachbereiche → Owner-, Scope- und Entscheidungsbedarf.
 
 ### 9. Aktualisierungsregel
 
@@ -283,9 +217,4 @@ Ein offener PR kann als bekannter Arbeitsstand erwähnt werden, ersetzt aber nic
 
 Das Portfolio bleibt kompakt und wird nicht zu einem zweiten Projektmanagement-System ausgebaut.
 
-Der nächste Reifegewinn entsteht nicht durch zusätzliche Felder, sondern durch:
-
-- aktuelle Projektzustände,
-- eindeutige fachliche Owner,
-- geklärte Systemgrenzen,
-- und die gezielte Formalisierung nur der Vorhaben, die tatsächlich einen eigenen dauerhaften Projektzustand benötigen.
+Der nächste Reifegewinn entsteht durch aktuelle Projektzustände, eindeutige fachliche Owner, geklärte Systemgrenzen und die gezielte Formalisierung nur tatsächlich eigenständiger Vorhaben.
