@@ -34,9 +34,9 @@ Die Partnerarbeit besitzt drei klar getrennte Zugänge:
 
 #### Öffentlich
 
-Eine öffentliche Partner-Landingpage soll Unternehmen verständlich zeigen, welche Formen einer Partnerschaft möglich sind.
+Eine öffentliche Partner-Landingpage auf der künftigen TuS-Homepage soll Unternehmen verständlich zeigen, welche Formen einer Partnerschaft möglich sind.
 
-Der Einstieg erfolgt bevorzugt über die Frage:
+Der Einstieg erfolgt über die Frage:
 
 > **Was möchten Sie mit einer Partnerschaft erreichen?**
 
@@ -50,9 +50,24 @@ Mögliche Ziele:
 - gesellschaftliche Wirkung erzielen
 - Netzwerk aufbauen
 
-Unternehmen sollen ihre Wünsche und Ideen über eine interaktive Anfrage übermitteln können.
+Unternehmen sollen ihre Wünsche und Ideen über einen kurzen Partner-Fit-Check übermitteln können.
 
 Diese Anfrage soll direkt in die interne Partnerarbeit übergehen und keine isolierte E-Mail-Insel erzeugen.
+
+Die verbindliche Detailanforderung für Homepage, Datenübergabe und WordPress-Entwicklung liegt in:
+
+- `PUBLIC-PARTNER-ENTRY.md`
+
+Dort sind insbesondere festgelegt:
+
+- sichtbarer Homepage-Einstieg `Partner werden`,
+- zielbasierter statt paketbasierter Einstieg,
+- kurzer mobiler Partner-Fit-Check,
+- strukturierte Lead-Übergabe in die operative Partnerarbeit,
+- keine harte dauerhafte Kopplung der Homepage an Google-Sheet-Spalten,
+- serverseitige Validierung, Datenschutz und Missbrauchsschutz,
+- spätere Austauschbarkeit der CRM-Anbindung,
+- klare MVP-Abnahmekriterien.
 
 #### Internes TuS-Team – Partnerportal
 
@@ -132,6 +147,8 @@ Ein Soft Exit kann eine kleine Unterstützung, einen Sachpreis, eine Tombola, ei
 
 Partnerziele und Ergebnisse des jährlichen Partner-Check-ins fließen in Bedarfsanalyse, Aktivierung und Verlängerung zurück.
 
+Die Akquise- und Betreuungslogik inklusive Homepage-Einstieg, Partner-One-Pager, Partner-Präsentation und Jahreszyklus ist in `../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md` dokumentiert.
+
 ### 4. Kampagnen
 
 Eine Kampagne verbindet vorhandene Daten und soll mit wenigen Eingaben angelegt werden.
@@ -180,6 +197,7 @@ Beispiele:
 - Der Event Planner ist fachliche Quelle eines Events; Partnerportal und Partner Hub referenzieren es.
 - Ein im Partner Hub eingereichter und vom TuS freigegebener Job kann auf der Homepage erscheinen, ohne erneut angelegt zu werden.
 - Partnerstammdaten, Partnerziele und vereinbarte Leistungen werden zentral geführt und nur kontextbezogen dargestellt.
+- Eine öffentliche Partneranfrage erzeugt einen strukturierten Lead und keine parallele Homepage-Kontaktdatenbank.
 
 ### 7. UX- und UI-Standard
 
@@ -213,33 +231,39 @@ Der erste Stand soll die **interne Partnerarbeit zuverlässig organisieren**.
 ## Relationship to other documents
 
 - `PROJECT-STATE.md`
+- `PUBLIC-PARTNER-ENTRY.md`
 - `../partner-hub/README.md`
 - `../partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../knowledge/sponsoring/README.md`
+- `../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
 - `../../roles/wordpress-developer/role.md`
 - `../../roles/wordpress-developer/development-standard.md`
 - `../../standards/iteration-and-progress.md`
-- `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
+- `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
 Vor Beginn der Implementierung werden gemeinsame Partnerdatenbasis, Objektverantwortung, zentrale Ansichten und MVP-Umfang kompakt festgelegt.
 
+Für den öffentlichen Homepage-Einstieg wird zusätzlich die Intake-Schnittstelle zwischen Homepage und operativer Partnerarbeit festgelegt. Die öffentliche UX kann zuvor bereits als statischer Prototyp entwickelt und getestet werden.
+
 Ein neuer Entwickler oder Coding-Chat liest vor Arbeitsbeginn mindestens:
 
 1. `PROJECT-STATE.md`
 2. `README.md`
-3. `../partner-hub/PROJECT-STATE.md`
-4. `../../knowledge/sponsoring/README.md`
-5. `../../decisions/ADR-0007-partnerportal-und-partner-hub-abgrenzung.md`
-6. `../../roles/wordpress-developer/role.md`
-7. `../../roles/wordpress-developer/development-standard.md`
-8. `../../architecture/stability-and-simplicity.md`
-9. `../../design/design-principles.md`
-10. `../../design/ui-standard.md`
-11. `../../standards/iteration-and-progress.md`
+3. `PUBLIC-PARTNER-ENTRY.md`
+4. `../partner-hub/PROJECT-STATE.md`
+5. `../../knowledge/sponsoring/README.md`
+6. `../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md`
+7. `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
+8. `../../roles/wordpress-developer/role.md`
+9. `../../roles/wordpress-developer/development-standard.md`
+10. `../../architecture/stability-and-simplicity.md`
+11. `../../design/design-principles.md`
+12. `../../design/ui-standard.md`
+13. `../../standards/iteration-and-progress.md`
 
 Neue Funktionen werden erst ergänzt, wenn ihr praktischer Nutzen den zusätzlichen Bedien- und Wartungsaufwand rechtfertigt.
