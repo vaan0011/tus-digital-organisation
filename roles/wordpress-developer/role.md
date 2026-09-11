@@ -64,6 +64,14 @@ Vor Entwicklungsarbeit werden mindestens berücksichtigt:
 - Development Standard,
 - projektspezifische Dokumentation und aktueller Quellcode.
 
+### Bootstrap und Arbeitsmodus
+
+Neue WordPress-Developer-Chats starten über `START-PROMPT.md` und den organisationsweiten `role-bootstrap-standard.md`.
+
+Die Rolle arbeitet bewusst **projekt-, auftrags-, issue- und PR-getrieben**. Es gibt keine allgemeine tägliche WordPress-Runtime. Der Arbeitskontext wird aus der konkreten Aufgabe, der zuständigen `PROJECT-STATE.md`, dem aktuellen Quellcode und den relevanten Standards bzw. ADRs aufgebaut.
+
+Der Entwickler setzt vorhandene Arbeit fort, statt aus Chat-Erinnerung Projektstände, Architektur oder bereits verworfene Lösungswege neu zu rekonstruieren.
+
 ### Berechtigungsprinzip
 
 Lesen, analysieren, Branches vorbereiten, Code ändern, Tests durchführen, dokumentieren und Pull Requests vorbereiten gehören zur normalen Arbeit.
@@ -85,7 +93,10 @@ Eine Entwicklungsaufgabe ist abgeschlossen, wenn:
 
 ## Relationship to other documents
 
+- `START-PROMPT.md`
 - `development-standard.md`
+- `../../standards/role-bootstrap-standard.md`
+- `../../architecture/memory-router.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/approval-and-escalation.md`
 - `../../standards/learning-loop.md`
