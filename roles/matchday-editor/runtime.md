@@ -20,6 +20,7 @@ Für einen Runtime-Lauf gelten unterschiedliche Zuständigkeiten:
 - aktueller verifizierter Saisonstand → `season-state.md`,
 - aktuelle Spieldaten → `fussball.de`,
 - fertige veröffentlichungsfähige Berichte → verbindlicher Google-Drive-Spielberichtsordner,
+- öffentliche Homepage-Darstellung kommender Spiele → `../../design/homepage-standard.md`,
 - organisationsweite Bootstrap-/Routing-Regeln → `role-bootstrap-standard.md` und `memory-router.md`.
 
 Der Chat ist keine Source of Truth.
@@ -122,7 +123,22 @@ Nach einem vollständig verarbeiteten Spiel enthält er mindestens:
 
 Die Tabellenposition ist nur eine Momentaufnahme und wird vor Veröffentlichung erneut geprüft.
 
-### 8. Write-back
+### 8. Homepage-Spieleblock und Datenverantwortung
+
+Die öffentliche TuS-Homepage soll die **nächsten anstehenden Spiele automatisiert** in einem eigenen Startseitenblock anzeigen. Die fachliche und gestalterische Spezifikation liegt in `../../design/homepage-standard.md`.
+
+Für die Verantwortungsgrenze gilt:
+
+- `fussball.de` bleibt die fachliche Quelle für aktuelle Spieltermine und Spielinformationen,
+- der WordPress Developer verantwortet die technische Homepage-Integration und die `MatchCard`-Darstellung,
+- der Matchday Editor pflegt keine kommenden Spiele zusätzlich manuell in WordPress,
+- `season-state.md` ist redaktionelles Gedächtnis und **nicht** die öffentliche Homepage-Datenbank,
+- dieselben Spielinformationen werden nicht unabhängig in mehreren Systemen gepflegt,
+- ändern sich Mannschafts-IDs, Saisonparameter oder andere für die Integration relevante Quellenreferenzen, wird dies in der zuständigen Matchday-Quelle aktualisiert und als Handoff an die Homepage-/Entwicklungsarbeit sichtbar gemacht.
+
+Die Homepage darf die nächsten Spiele also automatisch darstellen, ohne dass der Matchday Editor bei jedem Spieltag einen zweiten Pflegeprozess auslösen muss.
+
+### 9. Write-back
 
 Nach relevanter Arbeit gilt:
 
@@ -130,11 +146,12 @@ Nach relevanter Arbeit gilt:
 - aktueller Saisonstand → `season-state.md`,
 - neue dauerhafte redaktionelle Regel → `editorial-standard.md`,
 - Rollenänderung → `role.md`,
+- dauerhafte Änderung einer Homepage-Anforderung → `../../design/homepage-standard.md`,
 - langfristige organisationsweite Entscheidung → zuständige ADR/Standard-Quelle.
 
 Eine Chat-Zusammenfassung ersetzt keinen Write-back.
 
-### 9. Eskalation
+### 10. Eskalation
 
 Eskaliert wird insbesondere bei:
 
@@ -147,7 +164,7 @@ Eskaliert wird insbesondere bei:
 
 Ein fehlender Rohbericht allein ist keine Eskalation.
 
-### 10. Stop-Bedingungen
+### 11. Stop-Bedingungen
 
 Ein Lauf stoppt, wenn:
 
@@ -158,7 +175,7 @@ Ein Lauf stoppt, wenn:
 
 Ein Zwischenbericht ist keine Stop-Bedingung, solange intern ausführbare Arbeit verbleibt.
 
-### 11. Meldelogik
+### 12. Meldelogik
 
 Der Nutzer wird kompakt informiert, wenn:
 
@@ -175,6 +192,7 @@ Wenn kein neues Spiel und keine fehlende Arbeit vorliegen, ist keine ausführlic
 - `role.md`
 - `editorial-standard.md`
 - `season-state.md`
+- `../../design/homepage-standard.md`
 - `../../standards/role-bootstrap-standard.md`
 - `../../architecture/memory-router.md`
 - `../../standards/approval-and-escalation.md`
