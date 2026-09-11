@@ -1,6 +1,6 @@
 # PROJECT STATE – TuS Partnerportal
 
-**Stand:** 2026-09-04  
+**Stand:** 2026-09-11  
 **Phase:** Fachliches Konzept / Vorbereitung  
 **Implementierung:** Noch nicht gestartet
 
@@ -36,6 +36,10 @@ Das ausführlichere fachliche Fundament liegt unter:
 
 `../../knowledge/sponsoring/README.md`
 
+Die ergänzende Akquise- und Betreuungsschicht liegt unter:
+
+`../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md`
+
 ### 2. Verbindliche Produktabgrenzung
 
 Die frühere Überschneidung zwischen Partnerportal und Partner Hub ist entschieden.
@@ -46,10 +50,17 @@ Die verbindliche Logik lautet:
 
 #### Öffentliche Partnerseite
 
+- ist Bestandteil der künftigen TuS-Homepage,
 - spricht neue Unternehmen an,
-- fragt Unternehmensziele ab,
+- startet mit dem Unternehmensziel statt mit Werbepaketen,
+- bietet einen kurzen Partner-Fit-Check,
 - erzeugt strukturierte Partnerschaftsanfragen,
-- führt diese direkt in die interne Partnerarbeit.
+- führt diese direkt in die interne Partnerarbeit,
+- erzeugt keine isolierte E-Mail- oder Formulardatenbank.
+
+Die fachliche und technische Spezifikation liegt in:
+
+- `PUBLIC-PARTNER-ENTRY.md`
 
 #### Partnerportal
 
@@ -90,6 +101,23 @@ Partnerportal und Partner Hub greifen auf gemeinsame fachliche Partnerdaten zur�
 - wenige Schritte je Aufgabe
 - konsistente Muster mit Event Planner, Partner Hub und Homepage
 - keine typische WordPress-Backend-Optik
+
+#### Öffentlicher Partner-Einstieg
+
+Status: `fachlich spezifiziert`
+
+Verbindlich sind:
+
+- klar sichtbarer Homepage-Einstieg `Partner werden`,
+- erste Leitfrage: **„Was möchten Sie mit einer Partnerschaft erreichen?“**,
+- ungefähr vier bis fünf kurze Schritte,
+- Mehrfachauswahl von Unternehmenszielen,
+- passende Partnerwelten / Projekte / Aktivierungsrichtungen als Orientierung,
+- keine automatische Preis- oder Leistungszusage,
+- strukturierte Lead-Übergabe in die interne Partnerarbeit,
+- mobile first,
+- serverseitige Validierung und Datenschutz,
+- keine dauerhafte harte Kopplung der Homepage an konkrete Google-Sheet-Spalten.
 
 ### 4. Geplante Kernbereiche
 
@@ -137,6 +165,8 @@ Zusätzlich vorgesehen:
 
 Ergebnisse des jährlichen Partner-Check-ins aus dem Partner Hub können neue Ziele, Aktivierungen und Verlängerung vorbereiten.
 
+Der minimale Partner-Jahreszyklus ist fachlich in `../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md` beschrieben.
+
 ### 6. Kampagnen
 
 Kampagnen sind als zentrales verbindendes Objekt vorgesehen.
@@ -164,6 +194,16 @@ Noch ausstehend:
 - jährliche Einnahme
 - Vertragsende
 - ggf. Ansprechpartner und weitere Vertragsdetails
+
+#### Operatives CRM
+
+Aktuelle geschützte operative Source of Truth:
+
+- `TuS Partner CRM – Operative Source of Truth`
+
+Der Partnership Manager arbeitet dort mit Partnern, Leads, Status, nächsten Schritten, Zieldaten und Projekt-/Kampagnenbezug.
+
+Das ältere `TuS_Partner_System_V1.xlsx` ist nur noch historische Arbeitsreferenz.
 
 #### Bandenwerbung
 
@@ -231,11 +271,18 @@ Bereits identifizierte Asset- und Produktgruppen umfassen unter anderem:
 
 Diese Liste ist ein fachlicher Katalog und keine Aufforderung, jede Möglichkeit als eigenes komplexes Produkt anzulegen.
 
+Für Akquise und Gespräche sind zusätzlich vorgesehen:
+
+- TuS Partner-One-Pager,
+- kompakte Partner-Präsentation,
+- projektspezifische One-Pager nur bei Bedarf,
+- reale freigegebene Partnerstories.
+
 ### 10. Gemeinsame Datenbasis und Objektverantwortung
 
 Partnerportal und Partner Hub dürfen gemeinsame Informationen nicht unabhängig pflegen.
 
-Vor Implementierung muss entschieden werden, wo die fachliche Quelle liegt für:
+Vor Implementierung muss entschieden werden, wo die langfristige fachliche Quelle liegt für:
 
 - Partner / Unternehmen
 - Ansprechpartner
@@ -249,9 +296,16 @@ Für externe gemeinsame Objekte gilt dieselbe Logik:
 
 - Event Planner soll fachliche Quelle eines Events sein,
 - Partnerportal und Partner Hub referenzieren das Event,
-- Homepage stellt freigegebene öffentliche Informationen dar.
+- Homepage stellt freigegebene öffentliche Informationen dar,
+- Homepage-Partneranfragen werden strukturiert an die operative Partnerarbeit übergeben.
 
-Die konkrete technische Architektur ist noch offen.
+Aktuell ist das native Partner-CRM die operative Source of Truth. Langfristig kann das Partnerportal diese Verantwortung übernehmen.
+
+Für die Homepage gilt deshalb:
+
+> **Die öffentliche Partneranfrage wird über eine austauschbare serverseitige Intake-Grenze angebunden und nicht dauerhaft direkt an konkrete Google-Sheet-Spalten gekoppelt.**
+
+Die konkrete technische Architektur der Intake-Schnittstelle ist noch offen und wird vor Implementierung gegen Architecture Checklist und Stability & Simplicity geprüft.
 
 ### 11. Steuer- und Finanzstruktur – noch offen
 
@@ -298,7 +352,7 @@ Nicht im öffentlichen Repository speichern:
 - vertrauliche Vereinbarungen
 - nicht öffentliche Finanzdetails
 
-Solche Daten gehören später in das geschützte Partnerportal bzw. in die dafür vorgesehenen Finanzsysteme.
+Öffentliche Homepage-Anfragen verarbeiten personenbezogene Daten. Die technische Umsetzung muss die in `PUBLIC-PARTNER-ENTRY.md` definierten Validierungs-, Datenschutz- und Sicherheitsanforderungen erfüllen.
 
 ### 13. Parallele TuS-Systeme
 
@@ -307,7 +361,7 @@ Parallel entstehen bzw. bestehen:
 - Event Planner
 - internes Partnerportal
 - Partner Hub
-- neue Homepage
+- neue Homepage mit öffentlichem Partner-Einstieg
 
 Zusätzlich wird der extern gehostete Webshop UX-/UI-seitig mitgedacht.
 
@@ -324,19 +378,23 @@ Noch nicht bauen:
 - LED-Steuerung
 - komplexe Marketingautomation
 - partnerseitigen Self-Service im Partnerportal; dieser gehört in den Partner Hub
+- automatischen Preis- oder Vertragsabschluss im öffentlichen Partner-Fit-Check
 
-Version 1 muss zuerst die **interne Partnerarbeit** überzeugend organisieren.
+Version 1 muss zuerst die **interne Partnerarbeit** überzeugend organisieren. Der öffentliche Homepage-Einstieg kann unabhängig davon als kleiner UX-/Intake-Baustein prototypisiert werden, solange noch kein produktiver CRM-Write-back ohne geklärte Schnittstelle erfolgt.
 
 ## Relationship to other documents
 
 - `README.md`
+- `PUBLIC-PARTNER-ENTRY.md`
 - `../partner-hub/README.md`
 - `../partner-hub/PROJECT-STATE.md`
 - `../../knowledge/sponsoring/README.md`
 - `../../knowledge/sponsoring/CURRENT-STATE.md`
+- `../../knowledge/sponsoring/PARTNER-AKQUISE-UND-BETREUUNG.md`
 - `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 - `../event-planner/PROJECT-STATE.md`
 - `../../architecture/stability-and-simplicity.md`
+- `../../decisions/architecture-checklist.md`
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
 - `../../roles/wordpress-developer/role.md`
@@ -354,9 +412,11 @@ Version 1 muss zuerst die **interne Partnerarbeit** überzeugend organisieren.
 5. daraus das minimale Datenmodell des internen Partnerportals ableiten,
 6. drei bis fünf zentrale interne Screens definieren,
 7. MVP verbindlich begrenzen,
-8. erst danach Implementierung starten.
+8. Intake-Schnittstelle für den öffentlichen Homepage-Einstieg festlegen,
+9. Homepage-Partner-Einstieg zunächst als statischen/mobile-first UX-Prototyp umsetzen und prüfen,
+10. erst danach produktiven CRM-Write-back aktivieren.
 
-### Abnahmekriterium für den Start der Entwicklung
+### Abnahmekriterium für den Start der internen Portalentwicklung
 
 Die Entwicklung startet, wenn klar beantwortet werden kann:
 
@@ -368,4 +428,6 @@ Die Entwicklung startet, wenn klar beantwortet werden kann:
 - Welche Daten dürfen nicht doppelt gepflegt werden?
 - Welche steuerlichen Informationen müssen gespeichert, aber nicht automatisch bewertet werden?
 
-Bis dahin bleibt das Projekt bewusst in der Konzeptphase.
+Für den **öffentlichen Partner-Einstieg** gelten zusätzlich die Abnahmekriterien aus `PUBLIC-PARTNER-ENTRY.md`.
+
+Bis dahin bleibt das interne Partnerportal bewusst in der Konzeptphase.
