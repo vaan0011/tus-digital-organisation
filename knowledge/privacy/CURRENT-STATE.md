@@ -22,6 +22,8 @@ Der erste konkrete Privacy Check wurde am 11.09.2026 auf die öffentliche TuS-Ho
 
 Als zweiter Homepage-Schritt wurde die öffentlich sichtbare Kontaktlandschaft inventarisiert. Der belastbare Arbeitsstand und die Ableitung für die spätere IONOS-Struktur liegen in `HOMEPAGE-CONTACT-INVENTORY.md`.
 
+Als dritter Homepage-Schritt wurde die öffentlich feststellbare technische Ist-Situation aufgenommen und eine verbindliche Backend-Inventur für den WordPress Developer definiert. Der Arbeitsstand liegt in `HOMEPAGE-TECHNICAL-INVENTORY.md`.
+
 ### 2. Bekannte relevante Systeme / Bereiche
 
 Für die erste Datenschutz-Inventur sind insbesondere zu prüfen:
@@ -59,6 +61,7 @@ Bereits verbindlich bzw. fachlich gesetzt:
 - Die neue Homepage soll fachlich führende Daten möglichst über kontrollierte serverseitige Adapter bzw. eigene Darstellung nutzen, statt Besucherbrowser direkt an Drittanbieter-iframes oder Skripte zu koppeln.
 - Öffentliche Kontaktwege sollen rollenbasiert und auf offizielle TuS-Adressen konzentriert werden; persönliche Mobilnummern und private Adressen sind nicht das Standardmodell.
 - Die Platzbelegung wird als eigenes WordPress-Plugin umgesetzt; ein direkt eingebetteter Google-Kalender ist nicht das Zielmodell.
+- Öffentliche Technikbeobachtung ist Hinweis, aber keine automatische Source of Truth für Plugins, Tracking, Cookies oder Hosting. Diese Punkte werden im produktiven System verifiziert.
 
 ### 4. Formelle Datenschutzbeauftragten-Frage
 
@@ -108,13 +111,45 @@ Wesentliche Konsequenz:
 - eine öffentliche Adresse muss technisch nicht zwingend ein eigenes Postfach sein; Alias, Weiterleitung oder kontrollierter Workflow sind je Zweck zu entscheiden,
 - die vollständige Arbeitsinventur steht in `HOMEPAGE-CONTACT-INVENTORY.md`.
 
-### 7. Erste operative Prioritäten
+### 7. Homepage Technical Inventory – 11.09.2026
 
-1. **Homepage P0 abarbeiten**
+Öffentlich belastbar bzw. als Arbeitsbefund festgehalten:
+
+- die Website läuft auf WordPress,
+- der öffentliche Footer nennt Colibri,
+- die Platzbelegung verwendet einen direkten Google-Calendar-iframe,
+- auf der Platzbelegungsseite wurden externe Bildressourcen über `i0.wp.com` beobachtet,
+- die Datenschutzerklärung behauptet Google Analytics, die technische Aktivität ist jedoch noch nicht bestätigt,
+- Facebook und Instagram sind als normale externe Links sichtbar,
+- die Homepage verweist auf mindestens einen Kontaktformularprozess; dessen technische Implementierung ist öffentlich nicht belastbar identifiziert.
+
+Noch im produktiven System zu verifizieren sind insbesondere:
+
+- WordPress-/PHP-/Theme-Stand,
+- vollständige Pluginliste,
+- Benutzer und Berechtigungen,
+- aktive Formulare und deren Empfänger/Speicherung,
+- Cookies/Local Storage/Session Storage,
+- externe Network-Requests,
+- Analytics/Tag Manager/Consent tatsächlich aktiv oder nicht,
+- Hosting, Serverlogs, Backups und Staging,
+- E-Mail-Versand aus WordPress,
+- Medien-/CDN-Konfiguration.
+
+Die genaue Prüflogik und Migrationsklassifikation `BEHALTEN / HÄRTEN / ERSETZEN / ENTFERNEN / OFFEN` stehen in `HOMEPAGE-TECHNICAL-INVENTORY.md`.
+
+### 8. Erste operative Prioritäten
+
+1. **Homepage P0 und technische Backend-Inventur abarbeiten**
    - Google-Analytics-Ist technisch verifizieren,
    - öffentliche DSB-Bezeichnung prüfen/korrigieren,
    - Impressumsreferenz aktualisieren,
-   - aktuelle WordPress-/Plugin-/Cookie-/External-Resource-Inventur erstellen.
+   - WordPress/Core/Theme/Plugins inventarisieren,
+   - Formulare und Empfänger prüfen,
+   - Cookies/Storage und externe Requests technisch prüfen,
+   - Hosting/Logs/Backups/Staging aufnehmen,
+   - Benutzer/Berechtigungen prüfen,
+   - Komponenten für Migration klassifizieren.
 
 2. **IONOS-/Kontaktstruktur entscheiden**
    - bestehende Rollenadressen bestätigen,
@@ -175,13 +210,13 @@ Wesentliche Konsequenz:
    - Eskalationslogik,
    - Fristenmanagement.
 
-### 8. Aktuelle wichtige Abhängigkeiten
+### 9. Aktuelle wichtige Abhängigkeiten
 
 #### Homepage / WordPress
 
 Die Homepage ist aktuell der erste aktive Privacy-Schwerpunkt.
 
-Für den Neuaufbau gelten `HOMEPAGE-PRIVACY-CHECK.md`, `HOMEPAGE-CONTACT-INVENTORY.md` und `../../design/homepage-contact-architecture.md`. Der WordPress Developer liest diese Quellen bei Homepage-Arbeit verbindlich mit.
+Für den Neuaufbau gelten `HOMEPAGE-PRIVACY-CHECK.md`, `HOMEPAGE-CONTACT-INVENTORY.md`, `HOMEPAGE-TECHNICAL-INVENTORY.md` und `../../design/homepage-contact-architecture.md`. Der WordPress Developer liest diese Quellen bei Homepage-Arbeit verbindlich mit.
 
 Vor Go-live muss die tatsächliche technische Konfiguration der produktiven Website inventarisiert sein; erst daraus wird die finale Datenschutzerklärung abgeleitet.
 
@@ -203,7 +238,7 @@ Diese Projekte dürfen keine parallele Personenidentität aufbauen. Vor Umsetzun
 
 Das bestehende geschützte Partner-CRM ist operative Zwischen-Source-of-Truth. Öffentliche Partneranfragen dürfen keine unkontrollierte zweite Datenhaltung erzeugen.
 
-### 9. Bewusst nicht in GitHub
+### 10. Bewusst nicht in GitHub
 
 Nicht hier dokumentiert werden:
 
@@ -220,6 +255,7 @@ Nicht hier dokumentiert werden:
 
 - `HOMEPAGE-PRIVACY-CHECK.md`
 - `HOMEPAGE-CONTACT-INVENTORY.md`
+- `HOMEPAGE-TECHNICAL-INVENTORY.md`
 - `../../design/homepage-contact-architecture.md`
 - `../../roles/data-protection-manager/role.md`
 - `../../roles/data-protection-manager/privacy-standard.md`
@@ -232,9 +268,9 @@ Nicht hier dokumentiert werden:
 
 ## Future Development
 
-Als nächstes folgen zwei voneinander getrennte Schritte:
+Als nächstes folgen zwei parallel vorbereitete Schritte:
 
 1. gemeinsame Entscheidung der IONOS-/Rollenpostfach-Struktur auf Basis der Kontaktinventur,
-2. technische Ist-Inventur von WordPress, Plugins, Cookies, externen Requests, Hosting/Logs und eingebundenen Diensten.
+2. produktive Backend-Inventur von WordPress, Plugins, Cookies/Storage, externen Requests, Hosting/Logs/Backups, Formularen und Berechtigungen durch den WordPress Developer.
 
-Danach werden aus dem realen System schrittweise Verarbeitungstätigkeiten, Berechtigungen, Dienstleister-/AVV-Status sowie Lösch- und Aufbewahrungsregeln abgeleitet.
+Danach werden die P0-Altlasten der bestehenden Homepage bereinigt und aus dem realen System schrittweise Verarbeitungstätigkeiten, Dienstleister-/AVV-Status sowie Lösch- und Aufbewahrungsregeln abgeleitet.
