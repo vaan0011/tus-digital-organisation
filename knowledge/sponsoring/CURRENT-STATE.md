@@ -1,6 +1,6 @@
 # Sponsoring Current State
 
-Stand: 2026-09-10
+Stand: 2026-09-11
 
 ## Purpose
 
@@ -151,28 +151,18 @@ Leistungen, Laufzeiten, Gegenleistungen und Einnahmen je aktuellem Sponsor solle
 
 Vertrauliche Einzelinformationen bleiben außerhalb des öffentlichen Repositorys.
 
-### 6. Operative Partnersteuerung und Runtime-Reife
+### 6. Operative Partnersteuerung und Runtime
 
-Status: `operative Struktur vorhanden / Runtime noch nicht aktivieren`
+Status: `native CRM-Source-of-Truth vorhanden / Runtime bereit`
 
-Im geschützten Google Drive existiert der Arbeitsstand:
+Die verbindliche geschützte operative Source of Truth ist das native Google Sheet:
 
-- `TuS_Partner_System_V1.xlsx`
+- `TuS Partner CRM – Operative Source of Truth`
+- operativer Tab: `Partner-CRM`
 
-Die Datei enthält bereits strukturierte Arbeitsbereiche für:
+Der Tab enthält aktuell die Felder:
 
-- Asset-Katalog,
-- Partnerprodukt-Katalog,
-- Projektportfolio für Finanzierungs-/Partnerideen,
-- Partner & Leads,
-- Eventportfolio,
-- Pricing & Wertanker,
-- Steuer- & Vereinsmatrix,
-- Partner-CRM,
-- Ideen-Parkplatz.
-
-Der Tab `08 – Partner-CRM` enthält bereits die für operative Partnerarbeit sinnvollen Felder:
-
+- CRM-ID,
 - Partner / Lead,
 - Segment,
 - Owner,
@@ -180,21 +170,32 @@ Der Tab `08 – Partner-CRM` enthält bereits die für operative Partnerarbeit s
 - letzter Kontakt,
 - nächster Schritt,
 - Zieldatum,
-- Potenzial,
+- Potenzial min/max,
 - Partnerwelt,
 - Priorität,
+- Projekt / Kampagne,
+- Quelle / Referenz,
 - Notiz.
 
-Damit ist eine fachlich brauchbare Queue-Struktur grundsätzlich vorhanden. Der bestehende V1-Arbeitsstand ist jedoch älter als mehrere inzwischen in GitHub getroffene Sponsoring-, Projekt- und Architekturentscheidungen und die Bestandspartner sind noch nicht vollständig einzeln importiert.
+Initial wurden die sechs operativen CRM-Einträge aus dem älteren V1-Arbeitsstand übernommen. Zusätzlich wurde `SPORTINN / Joma` als projektbezogene Chance für `Trainingskleidung Ausstattungsgrundstock` aufgenommen. Damit existiert erstmals eine zuverlässig beschreibbare operative Queue, die eine Partnership-Runtime verwenden und fortschreiben kann.
 
-Deshalb gilt:
+Das ältere:
 
-- strategische und projektbezogene Wahrheit wird vor Nutzung mit dem aktuellen GitHub-Stand reconciliiert,
-- vertrauliche operative Partnerdaten werden nicht nach GitHub kopiert,
-- das V1-Excel wird nicht stillschweigend zur neuen zentralen Wahrheit erklärt,
-- eine wiederkehrende Partnership-Runtime wird erst aktiviert, wenn die operative Partner-/CRM-Quelle als geschützte, zuverlässig beschreibbare Source of Truth festgelegt ist.
+- `TuS_Partner_System_V1.xlsx`
 
-Als bevorzugte einfache Zwischenlösung ist zu prüfen, ob der operative CRM-Teil in ein geschütztes natives Google Sheet überführt wird. Langfristig kann das interne Partnerportal diese operative Quelle übernehmen. Es wird keine zusätzliche CRM-Datenwelt nur für eine Automation angelegt.
+bleibt als historische Arbeitsreferenz erhalten. Es enthält weiterhin wertvolle ältere Kataloge und Arbeitsstände, ist aber **nicht mehr die operative CRM-Wahrheit** und darf neuere GitHub-Entscheidungen oder den nativen CRM-Stand nicht überschreiben.
+
+Für operative Partnerarbeit gilt damit:
+
+- strategische und projektbezogene Wahrheit → aktuelle GitHub-Sources-of-Truth,
+- Kontaktstatus, Wiedervorlagen und operative Lead-Arbeit → natives Partner-CRM,
+- vertrauliche Partnerdaten → ausschließlich geschützte operative Quellen,
+- alte V1-Inhalte → nur als Kontext oder Migrationsquelle,
+- Runtime-Logik → `../../roles/partnership-manager/runtime.md`.
+
+Die etwa 50 Bestandspartner sind noch nicht vollständig einzeln in das native CRM migriert. `CRM001` bildet dafür bewusst den offenen Konsolidierungsauftrag ab.
+
+Die Runtime darf interne Recherche, Priorisierung, Entwürfe, Datenpflege und Handoffs selbstständig ausführen. Externe Partnerkontakte, verbindliche Angebote, Preis-/Exklusivitätszusagen und Verträge bleiben freigabepflichtig.
 
 Zweiter operativer Drive-Stand:
 
@@ -273,14 +274,15 @@ Vor verbindlichen Entscheidungen werden Angebot, Technik, Finanzierung, Steuer-/
 
 ### 10. Nächste sinnvolle Arbeitsschwerpunkte
 
-1. operative CRM-Quelle festlegen und den bestehenden V1-CRM-Stand gegen den aktuellen GitHub-Stand reconciliieren,
-2. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner konsolidieren,
-3. historische Sponsorendaten normalisieren und Dubletten erkennen,
-4. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
-5. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
-6. gemeinsam mit der technischen Konzeption die zentrale Partnerdatenbasis und Objektverantwortung definieren,
-7. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen,
-8. für reale LED-Akquisegespräche zunächst wenige starke Moment-Partner-Rollen testen und erst danach Preise bzw. Standardpakete verfestigen.
+1. etwa 50 aktuelle Bestandspartner aus der Finanzvorstands-/Sponsorendatei einzeln in das native CRM konsolidieren und Dubletten vermeiden,
+2. aktuelle Leistungen, Laufzeiten, Gegenleistungen und Einnahmen der Bestandspartner ergänzen,
+3. aktive `A`-Leads und projektbezogene Partnerchancen über die Runtime reproduzierbar weiterbearbeiten,
+4. historische Sponsorendaten normalisieren und mit den aktuellen Partnern verbinden,
+5. Werbeflächen-Inventur mit Partnerbestand, Vertragsstatus und bestehender Preislogik verbinden,
+6. steuerliche Ist-Struktur der drei Vereine anhand realer Unterlagen rekonstruieren,
+7. gemeinsam mit der technischen Konzeption die spätere Übernahme der operativen CRM-Verantwortung durch das interne Partnerportal definieren,
+8. Partnerportal und Partner Hub jeweils auf einen kleinen MVP begrenzen,
+9. für reale LED-Akquisegespräche zunächst wenige starke Moment-Partner-Rollen testen und erst danach Preise bzw. Standardpakete verfestigen.
 
 ### 11. GitHub-Pflicht
 
@@ -295,6 +297,8 @@ Je nach Inhalt werden aktualisiert:
 - ADRs bei langfristigen Grundsatzentscheidungen,
 - betroffene Rollen oder Standards.
 
+Operative Partnerstände werden dagegen im geschützten nativen CRM gepflegt und nicht nach GitHub dupliziert.
+
 ## Relationship to other documents
 
 - `README.md`
@@ -302,17 +306,19 @@ Je nach Inhalt werden aktualisiert:
 - `MOMENT-PARTNER-MODELLE.md`
 - `../../roles/partnership-manager/role.md`
 - `../../roles/partnership-manager/partnership-standard.md`
+- `../../roles/partnership-manager/runtime.md`
 - `../../roles/partnership-manager/START-PROMPT.md`
 - `../../projects/partner-portal/README.md`
 - `../../projects/partner-portal/PROJECT-STATE.md`
 - `../../projects/partner-hub/FUNCTIONAL-SCOPE.md`
 - `../../projects/partner-hub/PROJECT-STATE.md`
 - `../../projects/led-media-screen/PROJECT-STATE.md`
+- `../../projects/trainingskleidung-ausstattungsgrundstock/PROJECT-STATE.md`
 - `../../decisions/ADR-0005-partnership-manager-and-sponsoring-memory.md`
 - `../../decisions/ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 
 ## Future Development
 
-Dieser Checkpoint bleibt bewusst kurz. Detailwissen wird in den bestehenden fachlichen Quellen gepflegt und hier nur als aktueller Arbeitsstand verknüpft.
+Der nächste Reifegewinn liegt nicht in einem weiteren Sponsoring-Dokument, sondern in realer Nutzung der operativen Queue: Bestandspartner importieren, Wiedervorlagen pflegen, Projektchancen qualifizieren und Erfahrungen aus echten Partnergesprächen in die bestehende Struktur zurückschreiben.
 
-Sobald die operative CRM-Quelle verbindlich festgelegt und zuverlässig beschreibbar ist, kann für den Partnership Manager eine wiederkehrende Runtime mit Wiedervorlagen, Partner-Check-ins, Kampagnen- und Projektchancen ergänzt werden.
+Langfristig kann das interne Partnerportal die CRM-Verantwortung übernehmen. Bis dahin bleibt das native Google Sheet die einzige operative Partner-CRM-Source-of-Truth.
