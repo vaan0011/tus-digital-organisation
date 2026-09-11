@@ -1,6 +1,6 @@
 # PROJECT STATE – Trainingskleidung Ausstattungsgrundstock
 
-**Stand:** 2026-09-11 – Projekt angelegt, Bedarf und Sponsoringansatz initialisiert  
+**Stand:** 2026-09-11 – Slogan festgeschrieben, Start-Scope auf Shirt/Shorts fokussiert  
 **Status:** Discovery  
 **Beschaffung:** Noch nicht gestartet  
 **Finanzierung / Sponsor:** Noch nicht zugesagt  
@@ -10,11 +10,13 @@
 
 Dieses Dokument ist der verbindliche Einstiegspunkt für den aktuellen operativen Stand des Projekts `Trainingskleidung Ausstattungsgrundstock`.
 
-Es hält den bestätigten Bedarf, die aktuelle Arbeitsannahme für Menge und Set, die Beschaffungs- und Sponsoringlogik, offene Entscheidungen und den nächsten sinnvollen Schritt fest.
+Es hält bestätigten Bedarf, Zielmenge, Beschaffungs- und Sponsoringlogik, offene Entscheidungen und den nächsten sinnvollen Schritt fest.
 
 ## Core Principle
 
-> **Neue Spieler sollen beim ersten Training Teil des Teams sein – nicht erst nach der nächsten Sammelbestellung.**
+> **Vom ersten Training an Teil des Teams.**
+
+Dieser Satz ist der verbindliche Projekt- und Partnerschaftsslogan.
 
 Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragfähig sein. Er wird erst bestellt, wenn realer Bedarf, Ausrüsterangebot, Rechte und Finanzierung belastbar geklärt sind.
 
@@ -24,7 +26,6 @@ Der Grundstock soll organisatorisch einfach, nachbestellbar und finanziell tragf
 
 Das Vorhaben wird als formales Projekt geführt, weil es mehr als eine Einzelbestellung ist und mehrere Bereiche dauerhaft koordiniert werden müssen:
 
-- Definition eines standardisierten Startersets,
 - Aufbau und Pflege eines Größenbestands,
 - bestehender Ausrüster SPORTINN / Joma,
 - Sponsorfinanzierung,
@@ -36,43 +37,38 @@ Das Vorhaben wird als formales Projekt geführt, weil es mehr als eine Einzelbes
 
 Pilotbereich ist zunächst Herren 1 und Herren 2.
 
-### 2. Aktuelle Set-Arbeitsannahme
+### 2. Verbindlicher Start-Scope
 
-Pro Spieler:
+Core-Set je neuem Spieler:
 
-- 2 Trainingsshirts kurz,
-- 1 Trainingsshorts,
-- 1 1/4-Zip-Trainingsoberteil,
-- 1 lange Trainingshose.
+- **2 Trainingsshirts kurz**, 
+- **1 kurze Trainingshose**.
 
-Noch nicht Bestandteil des Start-Scope:
+Nicht Bestandteil des verpflichtenden Start-Scope:
 
+- 1/4-Zip,
+- lange Trainingshose,
 - Regenjacke,
 - Sporttasche / Rucksack,
-- Präsentationsjacke.
+- Präsentationskleidung.
 
-Das finale Set wird erst nach Ausrüsterangebot und sportlicher Abstimmung beschlossen.
+Diese Teile können später ergänzt werden, wenn reale Nutzung und Finanzierung dies rechtfertigen.
 
 ### 3. Mengenplanung
 
 Arbeitsvarianten:
 
-- Minimum: 18 Sets,
-- Empfehlung: 25 Sets,
-- komfortabler Bestand: 30 Sets.
+- Minimum: 18 Core-Sets = 36 Shirts + 18 Shorts,
+- Empfehlung: 25 Core-Sets = 50 Shirts + 25 Shorts,
+- komfortabler Bestand: 30 Core-Sets = 60 Shirts + 30 Shorts.
 
-Aktuelle Empfehlung: **25 komplette Sets**.
+Aktuelle Empfehlung: **25 Core-Sets**.
 
-Begründung:
-
-- ausreichend Puffer für mehrere Neuzugänge und Größenwechsel,
-- noch überschaubare Kapitalbindung,
-- sinnvoller Ausgangspunkt für einen echten Lager- und Nachbestellprozess,
-- geeignet, um den Bedarf nach einem Saisonzyklus mit realen Daten zu kalibrieren.
+Die Menge wird vor Bestellung mit realem Spielerwechsel-/Neuzugangsbedarf und Größenverteilung gegengeprüft.
 
 ### 4. Vorläufiger Größenmix
 
-Arbeitsannahme für 25 Sets:
+Arbeitsannahme für 25 Spieler-Sets:
 
 | Größe | Sets |
 |---|---:|
@@ -86,49 +82,45 @@ Arbeitsannahme für 25 Sets:
 
 Diese Verteilung ist **noch nicht bestellreif**.
 
-Vor Bestellung werden:
-
-1. reale Größen der aktuellen Aktiven bzw. jüngerer Neuzugänge ausgewertet,
-2. Joma-Größen / Anprobe geprüft,
-3. der Mix entsprechend korrigiert.
+Vor Bestellung werden reale Größen der Aktiven sowie Joma-Größen/Anprobe geprüft.
 
 ### 5. Budgetstand
 
-Am 11.09.2026 wurden öffentliche SPORTINN-Teamshoppreise vergleichbarer Joma-Produkte als reine Planreferenz geprüft:
+Am 11.09.2026 wurden öffentliche SPORTINN/Joma-Preise vergleichbarer Artikel als reine Planreferenz herangezogen:
 
-- Shirt: 16,90 EUR,
-- Shorts: 14,90 EUR,
-- 1/4-Zip: 29,90 EUR,
-- lange Hose: 26,90 EUR.
+- Trainingsshirt: ca. 16,90 EUR,
+- kurze Trainingshose: ca. 14,90 EUR.
 
-Mit zwei Shirts ergibt das ca. 105,50 EUR je Set vor offenen projektspezifischen Druck-, Versand- und Sonderkosten.
+Ein Core-Set aus zwei Shirts und einer kurzen Hose liegt damit bei ca. **48,70 EUR** vor projektspezifischer Veredelung, Versand und Vereinsrabatten.
 
-Aktuelle Planungskorridore:
+Reiner Warenwert:
 
-- 18 Sets: ca. 2.300–2.600 EUR,
-- 25 Sets: ca. 3.200–3.500 EUR,
-- 30 Sets: ca. 3.700–4.000 EUR.
+- 18 Core-Sets: ca. 877 EUR,
+- 25 Core-Sets: ca. 1.218 EUR,
+- 30 Core-Sets: ca. 1.461 EUR.
 
-Für den empfohlenen 25er-Bestand wird deshalb aktuell mit einem **Planbudget von rund 3.500 EUR** gearbeitet.
-
-Für spätere Nachfüllung werden zunächst 8–12 Sets bzw. grob 1.000–1.500 EUR pro Saison als Planwert angenommen.
+Für 25 Core-Sets wird bis zum echten Angebot mit einem vorläufigen Gesamtbudget von etwa **1.500–1.800 EUR** gearbeitet.
 
 Diese Werte ersetzen kein Lieferantenangebot.
 
-### 6. Ausrüsterstatus
+### 6. Ausrüster- und Teamshopstatus
 
-Der TuS nennt SPORTINN seit 2024 als Ausrüster und Joma als gewählte Marke für Trikots sowie Trainings- und Freizeitkleidung.
+Der TuS nennt SPORTINN seit 2024 als Ausrüster und Joma als Marke für Trikots sowie Trainings- und Freizeitkleidung.
 
-SPORTINN dokumentiert für Teampartner u. a. bessere Konditionen, Mengenrabatte, persönliche Betreuung, Teamshops und ein vom Umfang der Partnerschaft abhängiges Freiware-Kontingent.
+Offizieller TuS-Teamshop:
 
-Deshalb ist SPORTINN der erste operative Beschaffungsschritt.
+`https://sportinn.eu/tus-mingolsheim`
 
-Anzufragen:
+TuS-Informationsseite:
 
-- Angebot 18 Sets,
-- Angebot 25 Sets,
-- Angebot 30 Sets,
-- exakte Artikel / Serie / Farbe,
+`https://www.tus-mingolsheim.de/shop/`
+
+Der Teamshop führt die TuS-Spieler-/Trainingskollektion und ist die erste Referenz für die konkreten Shirt-/Shorts-Artikel.
+
+Anzufragen bzw. zu klären:
+
+- konkrete Shirt- und Shorts-Artikel aus dem aktuellen TuS-Teamshop,
+- Angebot 18 / 25 / 30 Core-Sets,
 - Veredelung TuS-Wappen,
 - zusätzliche Sponsorlogo-Veredelung,
 - Freiware / Rabatt,
@@ -139,21 +131,17 @@ Anzufragen:
 
 ### 7. Sponsoringstatus
 
-Empfohlenes Modell:
+Arbeitstitel:
 
-> **TuS Trainingspartner – Willkommen im Team**
+> **TuS Trainingspartner**
 
-Leitstory:
+Verbindlicher Slogan:
 
 > **Vom ersten Training an Teil des Teams.**
 
-Aktuelles Finanzierungsziel:
+Der Partner wird nicht primär als Logo-Käufer positioniert. Er finanziert eine direkte Willkommensleistung und einen dauerhaft funktionierenden Ausstattungsprozess für Neuzugänge.
 
-- Initialaufbau: rund 3.500 EUR,
-- anschließend ca. 1.000–1.500 EUR pro Saison,
-- bevorzugt über eine mehrjährige Hauptpartnerschaft.
-
-Der Partner wird nicht primär als Logo-Käufer positioniert. Partnernutzen kann je nach Unternehmen insbesondere entstehen über:
+Partnernutzen kann je nach Unternehmen entstehen über:
 
 - regionale Sichtbarkeit,
 - Team- und Willkommenskultur,
@@ -161,9 +149,7 @@ Der Partner wird nicht primär als Logo-Käufer positioniert. Partnernutzen kann
 - Training / Fitness / Gesundheit,
 - lokale Verbundenheit.
 
-Die priorisierte Partnerpipeline liegt im geschützten Drive-Artefaktraum. Darin werden sowohl bestehende warme TuS-Kontakte als auch öffentlich recherchierte Kandidaten geführt.
-
-GitHub speichert keine vertraulichen Partnerkontakte oder Verhandlungsdetails.
+Die priorisierte Partnerpipeline liegt im geschützten Drive-Artefaktraum. GitHub speichert keine vertraulichen Partnerkontakte oder Verhandlungsdetails.
 
 ### 8. Drive-Projektartefakte
 
@@ -187,18 +173,17 @@ Aktuelle Arbeitsprodukte:
 Vor Bestellung offen:
 
 1. finaler Pilotumfang,
-2. finales Set,
-3. reale 18/25/30-Set-Preise,
-4. finale Joma-Serie und Farben,
-5. bestätigter Größenmix,
-6. Lagerort,
-7. operative Bestandsverantwortung,
-8. Eigentums-/Rückgabelogik bei Spielerabgängen,
-9. Sponsorlogo-Platzierung,
-10. bestehende Ausrüster- und Branchenexklusivitäten,
-11. Hauptpartner und Vertragslaufzeit,
-12. steuerlich richtige Rechtseinheit,
-13. interne Budget-/Vorstandsfreigabe soweit erforderlich.
+2. konkrete Shirt-/Shorts-Artikel aus dem Teamshop,
+3. reale 18/25/30-Core-Set-Preise,
+4. bestätigter Größenmix,
+5. Lagerort,
+6. operative Bestandsverantwortung,
+7. Eigentums-/Rückgabelogik bei Spielerabgängen,
+8. Sponsorlogo-Platzierung,
+9. bestehende Ausrüster- und Branchenexklusivitäten,
+10. Hauptpartner und Vertragslaufzeit,
+11. steuerlich richtige Rechtseinheit,
+12. interne Budget-/Vorstandsfreigabe soweit erforderlich.
 
 Es wurde **keine Bestellung ausgelöst**.
 
@@ -208,13 +193,13 @@ Es wurde **keine Sponsorenzusage erteilt**.
 
 Die unmittelbar nächste Arbeitssequenz lautet:
 
-1. SPORTINN um konkrete Angebote für 18 / 25 / 30 Sets inklusive Veredelung, Freiware/Rabatt und Nachbestellbedingungen bitten.
-2. Bestehende Ausrüster- und Sponsorlogo-Rechte klären.
-3. Reale TuS-Größenverteilung erheben und Größenmix validieren.
-4. Danach das Hauptpartnerpaket mit echten Kosten finalisieren.
-5. Bestehende warme Partner im geschützten CRM gegen diese Story prüfen.
-6. Maximal drei bis fünf priorisierte Partner gezielt ansprechen.
-7. Erst nach Finanzierung, Rechteprüfung und interner Freigabe bestellen.
+1. konkrete Trainingsshirt-/Shorts-Artikel aus dem TuS-Teamshop festlegen,
+2. SPORTINN um Angebote für 18 / 25 / 30 Core-Sets inklusive Veredelung, Freiware/Rabatt und Nachbestellbedingungen bitten,
+3. bestehende Ausrüster- und Sponsorlogo-Rechte klären,
+4. reale TuS-Größenverteilung erheben und Größenmix validieren,
+5. danach das Hauptpartnerpaket mit echten Kosten finalisieren,
+6. maximal drei bis fünf priorisierte Partner gezielt ansprechen,
+7. erst nach Finanzierung, Rechteprüfung und interner Freigabe bestellen.
 
 ## Relationship to other documents
 
@@ -232,7 +217,7 @@ Die unmittelbar nächste Arbeitssequenz lautet:
 Der Projektzustand wird aktualisiert, sobald sich mindestens einer dieser Punkte ändert:
 
 - reales Ausrüsterangebot,
-- Zielmenge oder Set,
+- Zielmenge oder Core-Set,
 - Größenmix,
 - Sponsorstatus / Finanzierung,
 - Werbe-/Ausrüsterrechte,
