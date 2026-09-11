@@ -18,6 +18,8 @@ Der TuS hat mehrere digitale Fachsysteme, Projektideen und Automationspfade im A
 
 Mit der Rolle `Data Protection & Information Protection Manager` wird diese Querschnittsverantwortung erstmals dauerhaft gebündelt.
 
+Der erste konkrete Privacy Check wurde am 11.09.2026 auf die öffentliche TuS-Homepage priorisiert. Die Ergebnisse und der Developer-Handoff liegen in `HOMEPAGE-PRIVACY-CHECK.md`.
+
 ### 2. Bekannte relevante Systeme / Bereiche
 
 Für die erste Datenschutz-Inventur sind insbesondere zu prüfen:
@@ -51,6 +53,8 @@ Bereits verbindlich bzw. fachlich gesetzt:
 - Konkrete Kinderschutzmeldungen werden besonders geschützt und menschlich verantwortet verarbeitet.
 - Öffentliche Homepage-Formulare sollen serverseitig validiert und technisch sauber gegen Missbrauch abgesichert werden.
 - Neue Systeme sollen keine unnötigen parallelen Personen- oder Partnerdatenwelten erzeugen.
+- Für die neue Homepage ist Privacy-by-Design das Ziel: möglichst keine unnötigen Drittanbieter-Embeds, kein beiläufiges Tracking und kein pauschales Cookie-Banner ohne tatsächlichen Bedarf.
+- Die neue Homepage soll fachlich führende Daten möglichst über kontrollierte serverseitige Adapter bzw. eigene Darstellung nutzen, statt Besucherbrowser direkt an Drittanbieter-iframes oder Skripte zu koppeln.
 
 ### 4. Formelle Datenschutzbeauftragten-Frage
 
@@ -65,9 +69,32 @@ Dafür ist eine belastbare Bestandsaufnahme erforderlich, insbesondere:
 
 Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bezeichnet.
 
-### 5. Erste operative Prioritäten
+Die aktuelle öffentliche Homepage verwendet derzeit dennoch die Bezeichnung `Datenschutzbeauftragter`. Diese öffentliche Formulierung ist als P0-Korrektur markiert, sofern keine formelle Bestellung nachgewiesen wird.
 
-1. **Datenschutz-Inventur erstellen**
+### 5. Erster Homepage Privacy Check – 11.09.2026
+
+Belastbar öffentlich festgestellt:
+
+- die aktuelle Datenschutzseite beschreibt Google Analytics mit `berechtigtem Interesse`; ob Analytics technisch noch aktiv ist, ist noch zu verifizieren,
+- die aktuelle Cookie-Erklärung ist generisch und auf Browser-Einstellungen ausgerichtet,
+- die aktuelle Seite bezeichnet `datenschutz@tus-mingolsheim.de` als Kontakt des `Datenschutzbeauftragten`, obwohl der formelle Status noch offen ist,
+- das Impressum referenziert noch `§ 55 Abs. 2 RStV`; die aktuelle medienrechtliche Referenz ist zu aktualisieren,
+- die Seite `Platzbelegung` lädt einen iframe von `calendar.google.com`,
+- auf derselben Seite sind externe Bildressourcen über `i0.wp.com` sichtbar,
+- Facebook und Instagram sind auf der Startseite als normale externe Links vorhanden; dieses Muster ist datenschutzseitig einfacher als ein automatisch ladender Social Feed.
+
+Die vollständige Bewertung, Prioritäten und Entwicklerregeln stehen in `HOMEPAGE-PRIVACY-CHECK.md`.
+
+### 6. Erste operative Prioritäten
+
+1. **Homepage P0 abarbeiten**
+   - Google-Analytics-Ist technisch verifizieren,
+   - öffentliche DSB-Bezeichnung prüfen/korrigieren,
+   - Impressumsreferenz aktualisieren,
+   - Google-Calendar-iframe bewerten,
+   - aktuelle WordPress-/Plugin-/Cookie-/External-Resource-Inventur erstellen.
+
+2. **Datenschutz-Inventur erstellen**
    - Systeme,
    - Zwecke,
    - Datenkategorien,
@@ -76,16 +103,16 @@ Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bez
    - Empfänger/Dienstleister,
    - Speicherorte.
 
-2. **Berechtigungsinventur starten**
+3. **Berechtigungsinventur starten**
    - besonders Google Drive, WordPress, Partnerdaten und künftige E-Mail-Queues.
 
-3. **Verzeichnis der Verarbeitungstätigkeiten vorbereiten**
+4. **Verzeichnis der Verarbeitungstätigkeiten vorbereiten**
    - nicht als Papierübung, sondern aus den realen Datenflüssen.
 
-4. **Dienstleister-/AVV-Check**
+5. **Dienstleister-/AVV-Check**
    - nur für tatsächlich personenbezogene Verarbeitungen und aktuell genutzte Systeme.
 
-5. **Lösch-/Aufbewahrungslogik priorisieren**
+6. **Lösch-/Aufbewahrungslogik priorisieren**
    - Mitgliederdaten,
    - Kontakte/CRM,
    - E-Mail-Eingänge,
@@ -94,11 +121,11 @@ Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bez
    - Fotos/Medien,
    - sensible Sonderbereiche.
 
-6. **E-Mail-/n8n-Architektur vor produktiver Automatisierung prüfen**
+7. **E-Mail-/n8n-Architektur vor produktiver Automatisierung prüfen**
    - `redaktion@` kann Pilot werden,
    - Schutzfall- und sensible Postfächer separat behandeln.
 
-7. **Privacy Check in Entwicklungsprojekte integrieren**
+8. **Privacy Check in Entwicklungsprojekte integrieren**
    - insbesondere Mitglieder & Engagement,
    - Team Manager,
    - Partnerportal/Partner Hub,
@@ -106,13 +133,21 @@ Bis zur Entscheidung wird die interne Rolle nicht als formell bestellter DSB bez
    - Event Planner,
    - Tauschbörse.
 
-8. **Datenpannen- und Betroffenenprozess definieren**
+9. **Datenpannen- und Betroffenenprozess definieren**
    - Zuständigkeit,
    - sicherer Dokumentationsweg,
    - Eskalationslogik,
    - Fristenmanagement.
 
-### 6. Aktuelle wichtige Abhängigkeiten
+### 7. Aktuelle wichtige Abhängigkeiten
+
+#### Homepage / WordPress
+
+Die Homepage ist aktuell der erste aktive Privacy-Schwerpunkt.
+
+Für den Neuaufbau gelten die Regeln aus `HOMEPAGE-PRIVACY-CHECK.md`. Der WordPress Developer liest diese Quelle bei Homepage-Arbeit verbindlich mit.
+
+Vor Go-live muss die tatsächliche technische Konfiguration der produktiven Website inventarisiert sein; erst daraus wird die finale Datenschutzerklärung abgeleitet.
 
 #### Kinder- und Jugendschutz
 
@@ -130,11 +165,7 @@ Diese Projekte dürfen keine parallele Personenidentität aufbauen. Vor Umsetzun
 
 Das bestehende geschützte Partner-CRM ist operative Zwischen-Source-of-Truth. Öffentliche Partneranfragen dürfen keine unkontrollierte zweite Datenhaltung erzeugen.
 
-#### WordPress / Homepage
-
-Neue öffentliche Formulare und Nutzerfunktionen benötigen vor produktiver Freigabe einen risikoadäquaten Privacy Check.
-
-### 7. Bewusst nicht in GitHub
+### 8. Bewusst nicht in GitHub
 
 Nicht hier dokumentiert werden:
 
@@ -149,14 +180,18 @@ Nicht hier dokumentiert werden:
 
 ## Relationship to other documents
 
+- `HOMEPAGE-PRIVACY-CHECK.md`
 - `../../roles/data-protection-manager/role.md`
 - `../../roles/data-protection-manager/privacy-standard.md`
 - `../../roles/data-protection-manager/START-PROMPT.md`
 - `../../standards/child-youth-protection-standard.md`
 - `../../roles/wordpress-developer/development-standard.md`
+- `../../roles/wordpress-developer/START-PROMPT.md`
 - `../../projects/PROJECT-PORTFOLIO.md`
 - `../../architecture/memory-router.md`
 
 ## Future Development
 
 Nach der ersten Inventur werden aus diesem Current State nur belastbare nächste Schritte weitergeführt. Detailregister wie Verarbeitungstätigkeiten, Dienstleister-/AVV-Status oder Berechtigungsprüfungen erhalten nur dann eigene operative Quellen, wenn sie real benötigt werden und dadurch kein paralleles Bürokratiesystem entsteht.
+
+Für die Homepage folgt als nächstes die technische Ist-Inventur von WordPress, Plugins, Cookies, externen Requests, Hosting/Logs und eingebundenen Diensten.
