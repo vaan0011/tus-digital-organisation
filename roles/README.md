@@ -51,8 +51,9 @@ Damit bleibt der Chat austauschbar, ohne dass die Rolle bei jedem Neustart fachl
 - `funding-grants-manager/` – Förderprogramme, Förderkalender, Antragsstrategie und Fördermittel-Lernen
 - `project-portfolio-manager/` – organisationsweiter Überblick über Projekte, Vorhaben, Status und Abhängigkeiten
 - `matchday-editor/` – faktenbasierte, emotionale und mediengerechte Spielberichte mit verbindlicher Drive-Ablage
+- `data-protection-manager/` – Datenschutz-by-Design, Informationsschutz, Datenflüsse, Berechtigungen und Privacy Checks
 
-Aktuell ist `graphic-designer/START-PROMPT.md` die erste Umsetzung des gemeinsamen Bootstrap-Musters. Weitere Rollen folgen anhand realer Arbeit.
+Das gemeinsame Bootstrap-Muster wird inzwischen von mehreren Rollen verwendet. Neue Rollen übernehmen dasselbe Prinzip, ohne Fachwissen in Startprompts zu duplizieren.
 
 ## Relationship to other documents
 
