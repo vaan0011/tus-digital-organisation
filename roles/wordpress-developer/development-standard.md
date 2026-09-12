@@ -19,7 +19,7 @@ Vor konkreter Coding-Arbeit gelten organisationsweit:
 - `../../standards/software-development-quality-standard.md`,
 - `../../standards/data-persistence-and-database-standard.md`,
 - `../../architecture/stability-and-simplicity.md`,
-- bei sichtbaren Oberflächen `../../design/design-principles.md` und `../../design/ui-standard.md`,
+- bei sichtbaren Oberflächen `../../design/design-principles.md`, `../../design/ui-standard.md` und `../../design/brand-identity.md`,
 - bei personenbezogenen Daten `../data-protection-manager/privacy-standard.md`.
 
 Zusätzlich gelten die jeweils aktuellen offiziellen WordPress Coding Standards für PHP, JavaScript, CSS und HTML sowie die WordPress Security- und Accessibility-Grundsätze.
@@ -107,16 +107,27 @@ Bestehende Funktionen werden nicht stillschweigend verändert.
 
 Wenn eine Änderung bestehendes Verhalten absichtlich ersetzt, muss dies im PR sichtbar beschrieben werden.
 
-### 8. UI, Accessibility und Markenassets
+### 8. UI, Theme, Accessibility und Markenassets
 
 Vor Änderungen an sichtbaren Oberflächen werden geprüft:
 
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
+- `../../design/brand-identity.md`
 - `../../design/logo.md`
 - projektspezifische UI-/Homepage-Standards, wenn relevant.
 
 Bestehende TuS-UI-Muster werden wiederverwendet, bevor projektspezifische Varianten entstehen.
+
+Für öffentliche WordPress-Komponenten gilt verbindlich:
+
+- das aktive Theme ist Runtime-Source-of-Truth für Brand-Farben und Brand-Typografie,
+- Plugin-Code verwendet bevorzugt WordPress Global Styles bzw. stabile semantische Theme-CSS-Variablen,
+- Markenfarben werden nicht als plugin-eigene feste Hex-Palette dupliziert,
+- Markenfonts werden nicht plugin-eigen ausgeliefert oder fest verdrahtet,
+- ein Theme-Wechsel darf keine fachliche Plugin-Codeänderung benötigen, solange die vereinbarte Style-/Token-Schnittstelle erfüllt wird.
+
+Interne Backend-Oberflächen orientieren sich bevorzugt an nativen WordPress-Admin-Mustern bzw. neutralen gemeinsamen Bedienmustern. Sie müssen die öffentliche Theme-Gestaltung nicht künstlich nachbauen.
 
 Offizielle Logos werden aus der zentralen freigegebenen Quelle übernommen und nicht nachgebaut oder eigenmächtig verändert.
 
@@ -174,11 +185,12 @@ Insbesondere werden vermieden:
 - global geladenes CSS/JavaScript für nur lokal benötigte Funktionen,
 - große neue Bibliotheken für kleine Funktionen,
 - häufiges Polling, wenn Trigger/Event oder bedarfsgesteuerter Abruf genügt,
-- dauerhafte Hintergrundjobs ohne klaren fachlichen Zweck.
+- dauerhafte Hintergrundjobs ohne klaren fachlichen Zweck,
+- duplizierte Brand-CSS-/Font-Pakete, wenn das Theme diese bereits bereitstellt.
 
 Caches dürfen Performance verbessern, sind aber keine fachliche Source of Truth.
 
-WordPress-Core-/Browser-Funktionen werden bevorzugt, wenn sie den Bedarf robust erfüllen.
+WordPress-Core-/Browser-/Theme-Funktionen werden bevorzugt, wenn sie den Bedarf robust erfüllen.
 
 Für öffentliche Komponenten gelten die im Software Development Quality Standard beschriebenen Core-Web-Vitals-Ziele, sobald reale Messung möglich ist.
 
@@ -197,7 +209,8 @@ Mindestens wird – soweit für den Scope relevant – geprüft:
 - funktionieren Desktop/Tablet/Mobile,
 - funktionieren zentrale Tastatur-/Fokuspfade,
 - existiert ein sinnvoller Fallback bei externen Fehlern,
-- funktionieren Migrationen mit repräsentativem Altbestand.
+- funktionieren Migrationen mit repräsentativem Altbestand,
+- respektieren öffentliche UI-Komponenten Theme-Tokens statt eigene Brand-Werte zu erzwingen.
 
 Tests werden stufenweise ausgeführt:
 
@@ -237,7 +250,7 @@ Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 - Software Development Quality Standard,
 - Data Persistence & Database Standard,
 - Stability & Simplicity,
-- UI- und Markenstandards bei sichtbaren Änderungen,
+- UI-, Theme- und Markenstandards bei sichtbaren Änderungen,
 - Accessibility und Responsive-Verhalten,
 - Sicherheits- und Privacy-Risiken,
 - Performance,
@@ -274,6 +287,7 @@ Versionstexte oder Changelogs sollen nicht als Ersatz für belastbare Projektdok
 - `../../decisions/architecture-checklist.md`
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
+- `../../design/brand-identity.md`
 - `../../design/logo.md`
 - `../../architecture/stability-and-simplicity.md`
 
