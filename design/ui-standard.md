@@ -4,7 +4,7 @@
 
 Dieses Dokument definiert den gemeinsamen UI-Standard für digitale Produkte der TuS Digital Organisation.
 
-Dazu gehören insbesondere WordPress-Plugins, Portale, interne Arbeitsoberflächen und zukünftige Webanwendungen.
+Dazu gehören insbesondere WordPress-Plugins, Portale, interne Arbeitsoberflächen, die öffentliche Homepage und zukünftige Webanwendungen.
 
 ## Core Principle
 
@@ -47,7 +47,35 @@ Farben werden nach Funktion eingesetzt:
 
 Ein neues Projekt führt nicht ohne Grund weitere Primärfarben ein.
 
-### 4. Flächen und Karten
+### 4. Typografie für Bedienoberflächen
+
+Bis eine eigene UI-Schrift ausdrücklich als `Approved` festgelegt ist, verwenden TuS-Bedienoberflächen bevorzugt eine performante Systemschriftfamilie statt externe Webfonts nur für dekorative Wirkung zu laden.
+
+Referenzrichtung:
+
+`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`
+
+Dies ist eine technische UI-Baseline und keine Festlegung der Marken-Hausschrift für Print, Merch oder Kampagnen.
+
+Typografie folgt einer klaren Hierarchie. Ein Plugin erfindet nicht für einzelne Seiten neue Schriftfamilien, Überschriftensysteme oder zufällige Größenabstufungen.
+
+### 5. Spacing und Rhythmus
+
+Abstände sollen projektübergreifend aus einem kleinen gemeinsamen Raster entstehen.
+
+Referenzskala für neue Komponenten:
+
+- `4px`
+- `8px`
+- `12px`
+- `16px`
+- `24px`
+- `32px`
+- `48px`
+
+Nicht jede Komponente muss jede Stufe verwenden. Willkürliche Einzelwerte werden vermieden, wenn eine bestehende Stufe denselben Zweck erfüllt.
+
+### 6. Flächen und Karten
 
 Inhalte werden bevorzugt in klaren, ruhigen Bereichen strukturiert.
 
@@ -60,7 +88,7 @@ Referenzmuster:
 - ausreichender Innenabstand,
 - klar erkennbare Überschrift und Funktion.
 
-### 5. Buttons und Eingaben
+### 7. Buttons und Eingaben
 
 Buttons und Formelemente sollen projektübergreifend vertraut wirken.
 
@@ -71,9 +99,12 @@ Referenzmuster:
 - Radius typischerweise `8px`,
 - sichtbarer Fokuszustand,
 - klare Beschriftung statt unklarer Symbolaktionen,
-- destruktive Aktionen eindeutig als solche erkennbar.
+- destruktive Aktionen eindeutig als solche erkennbar,
+- Icon-only-Aktionen nur, wenn Bedeutung eindeutig ist und ein zugänglicher Name/Tooltip vorhanden ist.
 
-### 6. Navigation
+Auf Touch-Oberflächen erhalten zentrale Interaktionsflächen ausreichend Raum und werden nicht unnötig klein gestaltet.
+
+### 8. Navigation
 
 Navigation orientiert sich an Aufgaben und nicht an technischen Modulen.
 
@@ -84,18 +115,21 @@ Tabs, Menüs und Navigationseinträge:
 - vermeiden unnötige Ebenen,
 - zeigen nur kontextrelevante Optionen.
 
-### 7. Formulare
+### 9. Formulare
 
 Formulare werden so kurz wie fachlich möglich gehalten.
 
 Regeln:
 
 - nur notwendige Felder,
-- verständliche Labels,
+- verständliche sichtbare Labels,
 - sinnvolle Defaults,
 - zusammengehörige Angaben gruppieren,
 - Fehler möglichst direkt am Problem erklären,
-- keine doppelte Eingabe bereits vorhandener Informationen.
+- Fehlerzustände nicht nur über Farbe darstellen,
+- Pflicht/optional verständlich machen,
+- keine doppelte Eingabe bereits vorhandener Informationen,
+- Tastaturreihenfolge folgt der visuellen/fachlichen Reihenfolge.
 
 #### Datumsfelder und Kalender-Picker
 
@@ -116,7 +150,7 @@ Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberfläch
 
 Als verifiziertes Referenzmuster gilt die Umsetzung im Event Planner: Ein neu erzeugter Event-Tag erhält seinen kontextbezogenen Default bereits beim Anlegen des Felds (`vorheriger Event-Tag + 1 Tag`). Dadurch zeigt das Feld den richtigen Wert, bevor der native Picker geöffnet wird; eine spätere manuelle Auswahl bleibt unangetastet. Der zuvor erprobte Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, wurde im manuellen Browser-Test als unzuverlässig verworfen.
 
-### 8. Status und Feedback
+### 10. Status, Feedback und Zustände
 
 Nach wichtigen Aktionen muss der Nutzer erkennen können, was passiert ist.
 
@@ -126,17 +160,92 @@ Das System kommuniziert insbesondere:
 - Fehler,
 - fehlende Eingaben,
 - laufende Verarbeitung,
+- leere Zustände,
+- fehlende Berechtigung,
 - irreversible Folgen vor der Ausführung.
 
-### 9. Responsive Verhalten
+Ladezustände dürfen nicht unnötig die gesamte Oberfläche blockieren, wenn nur ein Teilbereich verarbeitet wird.
 
-Oberflächen werden so gebaut, dass sie auch auf kleineren Displays sinnvoll nutzbar bleiben, wenn der Nutzungskontext dies erfordert.
+### 11. Responsive Verhalten
 
-Mehrspaltige Layouts brechen auf kleinere Breiten kontrolliert auf eine Spalte um.
+Mobile, Tablet und Desktop werden als echte Nutzungskontexte behandelt.
 
-### 10. Kein projektspezifisches UI-System ohne Grund
+Neue bzw. wesentlich geänderte Oberflächen werden mindestens auf folgenden Test-Viewports geprüft:
 
-Ein Entwickler erstellt nicht für jedes Plugin neue Button-, Karten-, Formular- oder Farbsysteme.
+- Smartphone um `360px`,
+- Tablet um `768px`,
+- Desktop um `1280px`.
+
+Diese Werte sind Testgrößen und keine vorgeschriebenen CSS-Breakpoints.
+
+Responsive Design verwendet je nach Kontext:
+
+- **Reflow** – Inhalte ordnen sich neu,
+- **Reduce** – sekundäre Informationen werden sinnvoll reduziert,
+- **Prioritize** – zentrale Information/Aktion bleibt zuerst sichtbar.
+
+Mehrspaltige Layouts brechen kontrolliert um. Tabellen erhalten für kleine Displays eine bewusste Lösung statt ungeplant horizontal aus dem Viewport zu laufen.
+
+Die Oberfläche muss ohne Zoom bedienbar sein; Browser-Zoom darf nicht deaktiviert werden.
+
+### 12. Accessibility – WCAG 2.2 AA
+
+Neue und wesentlich geänderte TuS-Oberflächen orientieren sich an WCAG 2.2 Level AA. Dies entspricht auch dem aktuellen Accessibility-Ziel für neuen bzw. geänderten WordPress-Code.
+
+Mindestens gelten:
+
+- semantisches HTML vor ARIA-Sonderkonstruktionen,
+- alle wesentlichen Interaktionen sind mit Tastatur erreichbar,
+- Fokus ist sichtbar und folgt einer nachvollziehbaren Reihenfolge,
+- modale Dialoge/Menüs verwalten Fokus nachvollziehbar,
+- Formularfelder besitzen programmatisch zugeordnete Labels,
+- Fehlermeldungen sind verständlich und dem Problem zugeordnet,
+- Farbe ist nie der einzige Informationsträger,
+- Text-/UI-Kontraste sind ausreichend,
+- relevante Bilder besitzen passende Alternativtexte,
+- dekorative Bilder werden assistiven Technologien nicht unnötig vorgelesen,
+- Links und Buttons haben einen verständlichen zugänglichen Namen,
+- Überschriften bilden eine sinnvolle Struktur,
+- Inhalte bleiben bei Vergrößerung und auf kleinen Displays nutzbar,
+- Animationen/Bewegungen bleiben sparsam und respektieren `prefers-reduced-motion`, wenn relevant.
+
+Accessibility ist Bestandteil von Design und Abnahme, nicht ein späteres Zusatzprojekt.
+
+### 13. Backend und Frontend – eine Familie, nicht dasselbe Layout
+
+Interne Arbeitsoberflächen und öffentliche Frontends müssen nicht identisch aussehen.
+
+Sie verwenden jedoch dieselbe visuelle und interaktive Grundsprache:
+
+- gemeinsame Farben/Tokens,
+- Typografie-Baseline,
+- Button- und Formularmuster,
+- Abstandslogik,
+- Status-/Fehlerlogik,
+- Fokus-/Accessibility-Verhalten.
+
+Interne Oberflächen priorisieren Effizienz und klare Arbeitsabläufe. Öffentliche Oberflächen priorisieren Orientierung, Markenwirkung und reduzierte Informationsführung.
+
+Der Nutzungskontext darf Varianten rechtfertigen; er rechtfertigt kein zweites unabhängiges Designsystem.
+
+### 14. Performance im UI
+
+Eine Oberfläche soll nicht nur gut aussehen, sondern unmittelbar reagieren.
+
+Daher gilt:
+
+- keine schweren UI-Bibliotheken ohne klaren Nutzen,
+- CSS/JS nur dort laden, wo es gebraucht wird,
+- Bilder passend dimensionieren,
+- keine unnötigen Layoutsprünge,
+- Ladezustände und asynchrone Prozesse nachvollziehbar darstellen,
+- externe Inhalte dürfen den Kern der Seite nicht unnötig blockieren.
+
+Für die öffentliche Homepage gelten zusätzlich die Performanceziele aus `../standards/software-development-quality-standard.md`.
+
+### 15. Kein projektspezifisches UI-System ohne Grund
+
+Ein Entwickler erstellt nicht für jedes Plugin neue Button-, Karten-, Formular-, Spacing-, Typografie- oder Farbsysteme.
 
 Wenn ein bestehendes Muster nicht ausreicht, wird zunächst geprüft:
 
@@ -144,7 +253,23 @@ Wenn ein bestehendes Muster nicht ausreicht, wird zunächst geprüft:
 - ist die neue Lösung auch für andere TuS-Produkte sinnvoll,
 - sollte daraus ein gemeinsames UI-Muster entstehen?
 
-### 11. Veränderung des UI Standards
+### 16. UI-Abnahme
+
+Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden mindestens geprüft:
+
+- Desktop, Tablet, Smartphone,
+- Tastaturbedienung und Fokus,
+- Labels/Fehlermeldungen,
+- Empty State,
+- Loading State,
+- Fehlerzustand,
+- lange/unerwartete Inhalte,
+- Berechtigungs-/Read-only-Zustand soweit relevant,
+- korrekte Originalassets und Brand-Tokens.
+
+Ein Agent dokumentiert nur tatsächlich durchgeführte Prüfungen als bestanden.
+
+### 17. Veränderung des UI Standards
 
 Neue UI-Muster dürfen im Projekt erprobt werden.
 
@@ -154,12 +279,17 @@ Zum organisationsweiten Standard werden sie erst, wenn sie sich bewährt haben u
 
 - `README.md`
 - `design-principles.md`
+- `brand-identity.md`
 - `logo.md`
 - `colors.md`
 - `typography.md`
+- `../standards/software-development-quality-standard.md`
+- `../standards/data-persistence-and-database-standard.md`
 - `../standards/iteration-and-progress.md`
 - `../roles/wordpress-developer/development-standard.md`
 
 ## Future Development
 
-Der Standard wird aus realen Produkten weiterentwickelt. Als nächste mögliche Ausbaustufen kommen gemeinsame Komponenten, Spacing-Tokens, Typografie, Statusmuster und Accessibility-Regeln infrage, sobald dafür echte wiederkehrende Anforderungen vorliegen.
+Der Standard wird aus realen Produkten weiterentwickelt. Wiederkehrende Komponenten, die sich in mehreren Produkten bewähren, sollen als gemeinsames TuS Digital Design System konkretisiert werden.
+
+Weitere Tokens oder Breakpoints werden nur ergänzt, wenn reale Produkte sie benötigen; es entsteht kein abstraktes Designsystem ohne Nutzung.
