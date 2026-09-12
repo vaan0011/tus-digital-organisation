@@ -34,6 +34,8 @@ Diese technischen Kopien dürfen jedoch keine eigenständigen Pflegequellen dars
 
 Es muss jederzeit eindeutig sein, welche Quelle fachlich maßgeblich ist.
 
+Caches und technische Kopien müssen aus der führenden Quelle regenerierbar sein.
+
 ### Wenige stabile Core-Objekte
 
 Die Plattform basiert auf einer begrenzten Anzahl stabiler Core-Objekte.
@@ -62,6 +64,8 @@ Beispiele:
 
 Keine Komponente soll Aufgaben übernehmen, für die bereits eine andere Komponente verantwortlich ist.
 
+Die konkreten Regeln für dauerhafte Daten, Sessions, Tabellen und Migrationen stehen in `../standards/data-persistence-and-database-standard.md`.
+
 ### Oberflächen folgen der Domäne
 
 Benutzeroberflächen und UI-Flows bestimmen nicht das Datenmodell.
@@ -84,6 +88,8 @@ Bevorzugt werden:
 - klare Fehlerbehandlung
 - sichere Wiederherstellung
 
+Die konkrete Qualitätsbasis für Security, Accessibility, Responsive, Performance, Fehlerbehandlung und Tests steht in `../standards/software-development-quality-standard.md`.
+
 ### Keine unnötigen Integrationen
 
 Eine Integration wird nur eingeführt, wenn ihr Nutzen größer ist als die dadurch entstehende Abhängigkeit und Wartungslast.
@@ -105,6 +111,8 @@ Der Ausfall einer einzelnen Oberfläche oder Automatisierung darf nicht zum Verl
 - `platform-architecture.md`
 - `knowledge-graph.md`
 - `object-lifecycle.md`
+- `../standards/software-development-quality-standard.md`
+- `../standards/data-persistence-and-database-standard.md`
 - `../core/core-object.md`
 - `../core/core-principles.md`
 
@@ -112,13 +120,13 @@ Der Ausfall einer einzelnen Oberfläche oder Automatisierung darf nicht zum Verl
 
 ## Future Development
 
-Später werden konkrete Standards ergänzt für:
+Die Qualitäts- und Persistenzgrundregeln sind organisationsweit definiert. Weiter auszubauen sind vor allem die betrieblichen Standards für:
 
-- Backup und Wiederherstellung
-- technische Redundanz
-- Monitoring
-- Fehlerbehandlung
-- Datenmigration
-- Performance
-- Ausfallszenarien
-- minimale Betriebsarchitektur
+- Backup und Wiederherstellung,
+- Monitoring/Observability,
+- technische Redundanz,
+- Ausfallszenarien,
+- Incident-/Recovery-Abläufe,
+- minimale produktive Betriebsarchitektur.
+
+Diese Betriebsstandards werden aus realen Produkt- und n8n-/WordPress-Betriebserfahrungen konkretisiert und nicht vorsorglich übermodelliert.
