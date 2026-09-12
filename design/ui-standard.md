@@ -10,58 +10,65 @@ Dazu gehören insbesondere WordPress-Plugins, Portale, interne Arbeitsoberfläch
 
 Ein TuS-Nutzer soll vertraute Muster wiedererkennen und nicht jedes digitale Produkt neu lernen müssen.
 
-Neue Produkte bauen auf dem gemeinsamen UI-System auf. Abweichungen benötigen einen fachlichen Grund.
+> **Funktion und Interaktion werden gemeinsam standardisiert. Die öffentliche Brand Identity kommt zur Laufzeit aus dem WordPress-Theme.**
+
+Plugins sollen schlank bleiben und weder ein zweites Designsystem noch eine zweite Brand-Quelle erzeugen.
 
 ## Main Content
 
 ### 1. Referenzimplementierung
 
-Die aktuelle moderne Oberfläche des Event Planers dient als erste praktische Referenz für UI v1.
+Die moderne Oberfläche des Event Planners dient als praktische Referenz für bewährte Bedienmuster.
 
-Sie ist keine unveränderbare Designgrenze. Bewährte Muster werden übernommen und gemeinsam weiterentwickelt.
+Sie ist keine unveränderbare Designgrenze und insbesondere keine technische Quelle für Markenfarben oder Markenfonts.
 
-### 2. UI v1 Tokens
+Bewährte Muster werden übernommen; konkrete Brand-Werte für öffentliche WordPress-Oberflächen kommen aus dem aktiven Theme.
 
-Die folgenden Werte stammen aus der bestehenden modernen Event-Planer-Oberfläche und bilden den Startpunkt für gemeinsame digitale Oberflächen:
+### 2. Theme als Runtime-Quelle für Frontend-Branding
 
-- Primary Action: `#0B5FD3`
-- Primary Hover: `#064AAB`
-- TuS Accent: `#B7192B`
-- Text: `#1F2937`
-- Strong Text: `#111827`
-- Muted Text: `#667085`
-- Border: `#DFE5EF`
-- Soft Background: `#F6F8FB`
-- Surface: `#FFFFFF`
+Für öffentliche WordPress-Oberflächen gilt:
 
-Diese Werte sind UI-Tokens. Sie ersetzen keine separat beschlossene Corporate-Design-Farbdefinition.
+- Farben und Typografie werden aus dem aktiven TuS-Theme geerbt,
+- bevorzugt werden WordPress Global Styles und/oder stabile semantische CSS-Custom-Properties des Themes genutzt,
+- Markenfarben werden nicht als feste Hex-Werte in jedem Plugin dupliziert,
+- Markenfonts werden nicht in jedem Plugin separat definiert oder ausgeliefert,
+- ein Plugin darf neutrale technische Fallbacks besitzen, wenn ein Theme-Token fehlt; diese Fallbacks sind keine zweite Brand-Source-of-Truth,
+- Original-Logos und andere Locked Assets bleiben zentrale Originalassets,
+- ein Theme-Wechsel darf keine fachliche Codeänderung in den Plugins erfordern, solange die vereinbarte Style-/Token-Schnittstelle erfüllt wird.
 
-### 3. Semantische Farbnutzung
+Das Theme verantwortet die technische Ausspielung der Brand Identity. Plugins verantworten Struktur, Verhalten, Semantik und fachliche Funktion.
 
-Farben werden nach Funktion eingesetzt:
+### 3. Semantische statt konkrete Brand-Tokens
 
-- Blau für primäre digitale Aktionen und Fokus,
-- TuS-Rot als markanter Vereinsakzent,
-- neutrale Flächen und Borders für Struktur,
-- Statusfarben ausschließlich mit zusätzlicher textlicher oder ikonischer Bedeutung.
+Plugin-Code verwendet bevorzugt semantische Rollen statt konkrete Markenwerte, beispielsweise:
 
-Ein neues Projekt führt nicht ohne Grund weitere Primärfarben ein.
+- `primary`,
+- `accent`,
+- `text`,
+- `muted`,
+- `surface`,
+- `border`,
+- `success`,
+- `warning`,
+- `error`.
 
-### 4. Typografie für Bedienoberflächen
+Die konkrete visuelle Ausprägung der öffentlichen Brand-Tokens liefert das Theme.
 
-Bis eine eigene UI-Schrift ausdrücklich als `Approved` festgelegt ist, verwenden TuS-Bedienoberflächen bevorzugt eine performante Systemschriftfamilie statt externe Webfonts nur für dekorative Wirkung zu laden.
+Statusfarben vermitteln Information nie ausschließlich über Farbe.
 
-Referenzrichtung:
+### 4. Typografie
 
-`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`
+Öffentliche Frontend-Komponenten erben die Typografie aus dem aktiven Theme und definieren keine eigene TuS-Hausschrift.
 
-Dies ist eine technische UI-Baseline und keine Festlegung der Marken-Hausschrift für Print, Merch oder Kampagnen.
+Interne WordPress-Backend-Oberflächen orientieren sich bevorzugt an der nativen WordPress-Admin-Typografie bzw. einer neutralen Systemschrift. Das Backend muss nicht künstlich die öffentliche Theme-Typografie nachbauen.
 
-Typografie folgt einer klaren Hierarchie. Ein Plugin erfindet nicht für einzelne Seiten neue Schriftfamilien, Überschriftensysteme oder zufällige Größenabstufungen.
+Ein Plugin lädt keine externe Schrift nur für dekorative Wirkung.
+
+Typografie folgt einer klaren Hierarchie; einzelne Plugin-Seiten erfinden keine unabhängigen Schrift- oder Überschriftensysteme.
 
 ### 5. Spacing und Rhythmus
 
-Abstände sollen projektübergreifend aus einem kleinen gemeinsamen Raster entstehen.
+Abstände entstehen aus einem kleinen gemeinsamen Raster.
 
 Referenzskala für neue Komponenten:
 
@@ -73,36 +80,35 @@ Referenzskala für neue Komponenten:
 - `32px`
 - `48px`
 
-Nicht jede Komponente muss jede Stufe verwenden. Willkürliche Einzelwerte werden vermieden, wenn eine bestehende Stufe denselben Zweck erfüllt.
+Willkürliche Einzelwerte werden vermieden, wenn eine bestehende Stufe denselben Zweck erfüllt.
 
-### 6. Flächen und Karten
+### 6. Flächen, Karten und Container
 
 Inhalte werden bevorzugt in klaren, ruhigen Bereichen strukturiert.
 
-Referenzmuster:
+Komponenten besitzen:
 
-- weiße Surface,
-- dezente Border,
-- zurückhaltender Schatten,
-- Kartenradius typischerweise `12–16px`,
-- ausreichender Innenabstand,
-- klar erkennbare Überschrift und Funktion.
+- nachvollziehbare Informationshierarchie,
+- ausreichenden Innenabstand,
+- klar erkennbare Überschrift und Funktion,
+- keine rein dekorative Komplexität ohne Nutzwert.
+
+Öffentliche Flächen beziehen Farben, Borders und Typografie aus Theme-Tokens. Interne Backend-Flächen dürfen native WordPress-Admin-Muster verwenden.
 
 ### 7. Buttons und Eingaben
 
 Buttons und Formelemente sollen projektübergreifend vertraut wirken.
 
-Referenzmuster:
+Verbindlich:
 
-- primäre Aktionen deutlich hervorgehoben,
-- sekundäre Aktionen visuell zurückhaltender,
-- Radius typischerweise `8px`,
+- primäre und sekundäre Aktionen sind klar unterscheidbar,
 - sichtbarer Fokuszustand,
 - klare Beschriftung statt unklarer Symbolaktionen,
-- destruktive Aktionen eindeutig als solche erkennbar,
-- Icon-only-Aktionen nur, wenn Bedeutung eindeutig ist und ein zugänglicher Name/Tooltip vorhanden ist.
+- destruktive Aktionen eindeutig erkennbar,
+- Icon-only-Aktionen nur mit eindeutigem zugänglichem Namen,
+- zentrale Touch-Ziele werden nicht unnötig klein gestaltet.
 
-Auf Touch-Oberflächen erhalten zentrale Interaktionsflächen ausreichend Raum und werden nicht unnötig klein gestaltet.
+Im öffentlichen Frontend kommen Farben und Typografie aus dem Theme. Die funktionalen Zustände werden im Plugin sauber definiert.
 
 ### 8. Navigation
 
@@ -125,34 +131,29 @@ Regeln:
 - verständliche sichtbare Labels,
 - sinnvolle Defaults,
 - zusammengehörige Angaben gruppieren,
-- Fehler möglichst direkt am Problem erklären,
+- Fehler direkt am Problem erklären,
 - Fehlerzustände nicht nur über Farbe darstellen,
 - Pflicht/optional verständlich machen,
 - keine doppelte Eingabe bereits vorhandener Informationen,
-- Tastaturreihenfolge folgt der visuellen/fachlichen Reihenfolge.
+- Tastaturreihenfolge folgt der visuellen und fachlichen Reihenfolge.
 
 #### Datumsfelder und Kalender-Picker
 
-Datumsfelder sollen vorhandenen fachlichen Kontext verwenden und den Nutzer nicht unnötig zu einem weit entfernten Datum navigieren lassen.
+Datumsfelder nutzen vorhandenen fachlichen Kontext.
 
-Verbindliche Regeln:
+Verbindlich:
 
-- Gibt es bereits ein fachlich relevantes Bezugsdatum, öffnet ein Datumsfeld im dazu passenden Zeitraum und nicht ohne Grund beim heutigen Datum.
-- Abhängige Datumsfelder verwenden einen sinnvollen Default aus dem vorhandenen Kontext, zum Beispiel `Enddatum = Startdatum`, solange der Nutzer noch keine eigene Auswahl getroffen hat.
-- Bei fortlaufenden Datumsreihen wird der nächste sinnvolle Wert aus dem vorherigen Eintrag abgeleitet, zum Beispiel `vorheriger Event-Tag + 1 Tag`.
-- Automatisch gesetzte Defaults dürfen eine spätere bewusste Nutzerauswahl nicht still überschreiben.
-- `min`- und `max`-Grenzen werden nur gesetzt, wenn sie eine fachliche Regel abbilden; sie werden nicht allein zur Navigation im Kalender missbraucht.
-- Kontextbezogene Defaults müssen gesetzt sein, **bevor** der native Kalender-Picker geöffnet wird. Eine Wertänderung erst während `pointerdown`, `focus` oder einer bereits gestarteten Picker-Interaktion gilt nicht als verlässliches Muster.
-- Bei dynamisch erzeugten Datumsfeldern wird der sinnvolle Default deshalb möglichst bereits beim Erzeugen des neuen Felds gesetzt.
-- Gibt es keinen fachlichen Datumsbezug, darf das native Standardverhalten des Browsers verwendet werden.
+- vorhandenes Bezugsdatum bestimmt den sinnvollen Zeitraum,
+- abhängige Datumsfelder verwenden einen sinnvollen Default, solange der Nutzer noch keine bewusste Auswahl getroffen hat,
+- fortlaufende Datumsreihen dürfen den nächsten logischen Wert ableiten,
+- automatisch gesetzte Defaults überschreiben keine spätere Nutzerauswahl,
+- `min`/`max` bilden fachliche Regeln ab und werden nicht als Navigationshack verwendet,
+- kontextbezogene Defaults stehen fest, bevor der native Picker geöffnet wird,
+- bei dynamischen Feldern wird der Default möglichst bereits beim Erzeugen gesetzt.
 
-Dieses Muster gilt organisationsweit für neue und überarbeitete TuS-Oberflächen mit Datumsfeldern.
-
-Als verifiziertes Referenzmuster gilt die Umsetzung im Event Planner: Ein neu erzeugter Event-Tag erhält seinen kontextbezogenen Default bereits beim Anlegen des Felds (`vorheriger Event-Tag + 1 Tag`). Dadurch zeigt das Feld den richtigen Wert, bevor der native Picker geöffnet wird; eine spätere manuelle Auswahl bleibt unangetastet. Der zuvor erprobte Ansatz, den Default erst während `pointerdown` oder `focus` zu setzen, wurde im manuellen Browser-Test als unzuverlässig verworfen.
+Das im Event Planner verifizierte Muster `vorheriger Event-Tag + 1 Tag` bleibt Referenz. Der frühere Ansatz, einen Default erst während `pointerdown` oder `focus` zu setzen, gilt als unzuverlässig.
 
 ### 10. Status, Feedback und Zustände
-
-Nach wichtigen Aktionen muss der Nutzer erkennen können, was passiert ist.
 
 Das System kommuniziert insbesondere:
 
@@ -164,7 +165,7 @@ Das System kommuniziert insbesondere:
 - fehlende Berechtigung,
 - irreversible Folgen vor der Ausführung.
 
-Ladezustände dürfen nicht unnötig die gesamte Oberfläche blockieren, wenn nur ein Teilbereich verarbeitet wird.
+Ladezustände blockieren nicht unnötig die gesamte Oberfläche, wenn nur ein Teilbereich verarbeitet wird.
 
 ### 11. Responsive Verhalten
 
@@ -176,70 +177,74 @@ Neue bzw. wesentlich geänderte Oberflächen werden mindestens auf folgenden Tes
 - Tablet um `768px`,
 - Desktop um `1280px`.
 
-Diese Werte sind Testgrößen und keine vorgeschriebenen CSS-Breakpoints.
+Diese Werte sind Testgrößen, keine vorgeschriebenen CSS-Breakpoints.
 
-Responsive Design verwendet je nach Kontext:
+Responsive Design nutzt je nach Kontext:
 
 - **Reflow** – Inhalte ordnen sich neu,
 - **Reduce** – sekundäre Informationen werden sinnvoll reduziert,
-- **Prioritize** – zentrale Information/Aktion bleibt zuerst sichtbar.
+- **Prioritize** – zentrale Information und Aktion bleiben zuerst sichtbar.
 
-Mehrspaltige Layouts brechen kontrolliert um. Tabellen erhalten für kleine Displays eine bewusste Lösung statt ungeplant horizontal aus dem Viewport zu laufen.
-
-Die Oberfläche muss ohne Zoom bedienbar sein; Browser-Zoom darf nicht deaktiviert werden.
+Tabellen und komplexe Ansichten benötigen für kleine Displays eine bewusste Lösung. Browser-Zoom wird nicht deaktiviert.
 
 ### 12. Accessibility – WCAG 2.2 AA
 
-Neue und wesentlich geänderte TuS-Oberflächen orientieren sich an WCAG 2.2 Level AA. Dies entspricht auch dem aktuellen Accessibility-Ziel für neuen bzw. geänderten WordPress-Code.
+Neue und wesentlich geänderte TuS-Oberflächen orientieren sich an WCAG 2.2 Level AA.
 
 Mindestens gelten:
 
 - semantisches HTML vor ARIA-Sonderkonstruktionen,
-- alle wesentlichen Interaktionen sind mit Tastatur erreichbar,
-- Fokus ist sichtbar und folgt einer nachvollziehbaren Reihenfolge,
-- modale Dialoge/Menüs verwalten Fokus nachvollziehbar,
-- Formularfelder besitzen programmatisch zugeordnete Labels,
-- Fehlermeldungen sind verständlich und dem Problem zugeordnet,
-- Farbe ist nie der einzige Informationsträger,
-- Text-/UI-Kontraste sind ausreichend,
-- relevante Bilder besitzen passende Alternativtexte,
-- dekorative Bilder werden assistiven Technologien nicht unnötig vorgelesen,
-- Links und Buttons haben einen verständlichen zugänglichen Namen,
-- Überschriften bilden eine sinnvolle Struktur,
-- Inhalte bleiben bei Vergrößerung und auf kleinen Displays nutzbar,
-- Animationen/Bewegungen bleiben sparsam und respektieren `prefers-reduced-motion`, wenn relevant.
+- wesentliche Interaktionen mit Tastatur erreichbar,
+- sichtbarer und nachvollziehbarer Fokus,
+- programmatisch zugeordnete Formularlabels,
+- verständliche zugeordnete Fehlermeldungen,
+- Farbe nie als einziger Informationsträger,
+- ausreichende Kontraste,
+- passende Alternativtexte für relevante Bilder,
+- dekorative Bilder korrekt ausblenden,
+- verständliche zugängliche Namen für Links und Buttons,
+- sinnvolle Überschriftenstruktur,
+- Nutzbarkeit bei Vergrößerung und auf kleinen Displays,
+- sparsame Bewegung; `prefers-reduced-motion` wird berücksichtigt, wenn relevant.
 
-Accessibility ist Bestandteil von Design und Abnahme, nicht ein späteres Zusatzprojekt.
+Accessibility ist Bestandteil von Design und Implementierung, kein späteres Zusatzprojekt.
 
-### 13. Backend und Frontend – eine Familie, nicht dasselbe Layout
+### 13. Backend und Frontend – gemeinsame Bedienlogik, getrennte Styling-Verantwortung
 
-Interne Arbeitsoberflächen und öffentliche Frontends müssen nicht identisch aussehen.
+Backend und öffentliches Frontend gehören zur selben Produktfamilie, müssen aber nicht identisch aussehen.
 
-Sie verwenden jedoch dieselbe visuelle und interaktive Grundsprache:
+Gemeinsam sind insbesondere:
 
-- gemeinsame Farben/Tokens,
-- Typografie-Baseline,
-- Button- und Formularmuster,
-- Abstandslogik,
-- Status-/Fehlerlogik,
-- Fokus-/Accessibility-Verhalten.
+- verständliche Begriffe,
+- Button-/Formularlogik,
+- Status-/Fehlerverhalten,
+- Spacing-Grundsätze,
+- Fokus-/Accessibility-Verhalten,
+- robuste Responsive-Grundsätze, soweit der Nutzungskontext dies erfordert.
+
+Für das Styling gilt:
+
+- **Frontend:** Theme liefert Brand-Farben und Brand-Typografie,
+- **Backend:** native WordPress-Admin-Muster bzw. neutrale gemeinsame Bedienmuster werden bevorzugt,
+- Plugins bauen keine parallele Brand-Schicht, die bei Theme-Wechsel separat gepflegt werden muss.
 
 Interne Oberflächen priorisieren Effizienz und klare Arbeitsabläufe. Öffentliche Oberflächen priorisieren Orientierung, Markenwirkung und reduzierte Informationsführung.
 
-Der Nutzungskontext darf Varianten rechtfertigen; er rechtfertigt kein zweites unabhängiges Designsystem.
+### 14. Schlanke UI und Performance
 
-### 14. Performance im UI
-
-Eine Oberfläche soll nicht nur gut aussehen, sondern unmittelbar reagieren.
+Eine Oberfläche soll unmittelbar reagieren und nur die Ressourcen laden, die für den aktuellen Kontext benötigt werden.
 
 Daher gilt:
 
 - keine schweren UI-Bibliotheken ohne klaren Nutzen,
+- bestehende WordPress-/Browser-Funktionen vor Eigenimplementierung prüfen,
 - CSS/JS nur dort laden, wo es gebraucht wird,
+- Theme-Branding wiederverwenden statt Brand-CSS in Plugins zu duplizieren,
 - Bilder passend dimensionieren,
 - keine unnötigen Layoutsprünge,
-- Ladezustände und asynchrone Prozesse nachvollziehbar darstellen,
-- externe Inhalte dürfen den Kern der Seite nicht unnötig blockieren.
+- asynchrone Prozesse und Ladezustände nachvollziehbar darstellen,
+- externe Inhalte dürfen den Kern der Seite nicht unnötig blockieren,
+- keine Komponenten für hypothetische zukünftige Anforderungen auf Vorrat bauen.
 
 Für die öffentliche Homepage gelten zusätzlich die Performanceziele aus `../standards/software-development-quality-standard.md`.
 
@@ -247,15 +252,17 @@ Für die öffentliche Homepage gelten zusätzlich die Performanceziele aus `../s
 
 Ein Entwickler erstellt nicht für jedes Plugin neue Button-, Karten-, Formular-, Spacing-, Typografie- oder Farbsysteme.
 
-Wenn ein bestehendes Muster nicht ausreicht, wird zunächst geprüft:
+Wenn ein bestehendes Muster nicht ausreicht, wird zuerst geprüft:
 
 - kann das bestehende Muster erweitert werden,
-- ist die neue Lösung auch für andere TuS-Produkte sinnvoll,
-- sollte daraus ein gemeinsames UI-Muster entstehen?
+- ist die neue Lösung auch für andere TuS-Produkte real relevant,
+- sollte daraus tatsächlich ein gemeinsames Muster entstehen?
+
+Keine Abstraktion wird nur deshalb gebaut, weil sie irgendwann eventuell wiederverwendbar sein könnte.
 
 ### 16. UI-Abnahme
 
-Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden mindestens geprüft:
+Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden – soweit für den Scope relevant – geprüft:
 
 - Desktop, Tablet, Smartphone,
 - Tastaturbedienung und Fokus,
@@ -264,8 +271,11 @@ Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden mindestens ge
 - Loading State,
 - Fehlerzustand,
 - lange/unerwartete Inhalte,
-- Berechtigungs-/Read-only-Zustand soweit relevant,
-- korrekte Originalassets und Brand-Tokens.
+- Berechtigungs-/Read-only-Zustand,
+- korrekte Originalassets,
+- öffentliche Komponenten reagieren korrekt auf Theme-Tokens statt eigene Brand-Werte zu erzwingen.
+
+Prüfungen werden risikobasiert gewählt; ein lokaler UI-Change löst nicht automatisch einen vollständigen Produkttest aus.
 
 Ein Agent dokumentiert nur tatsächlich durchgeführte Prüfungen als bestanden.
 
@@ -273,7 +283,7 @@ Ein Agent dokumentiert nur tatsächlich durchgeführte Prüfungen als bestanden.
 
 Neue UI-Muster dürfen im Projekt erprobt werden.
 
-Zum organisationsweiten Standard werden sie erst, wenn sie sich bewährt haben und nachvollziehbar übernommen wurden.
+Zum organisationsweiten Standard werden sie erst, wenn sie sich in realer Nutzung bewährt haben.
 
 ## Relationship to other documents
 
@@ -290,6 +300,6 @@ Zum organisationsweiten Standard werden sie erst, wenn sie sich bewährt haben u
 
 ## Future Development
 
-Der Standard wird aus realen Produkten weiterentwickelt. Wiederkehrende Komponenten, die sich in mehreren Produkten bewähren, sollen als gemeinsames TuS Digital Design System konkretisiert werden.
+Der Standard wird aus realen Produkten weiterentwickelt. Wiederkehrende Komponenten werden erst dann zum gemeinsamen TuS Digital Design System, wenn sie sich in mehreren echten Produkten bewährt haben.
 
-Weitere Tokens oder Breakpoints werden nur ergänzt, wenn reale Produkte sie benötigen; es entsteht kein abstraktes Designsystem ohne Nutzung.
+Weitere Tokens, Breakpoints oder Komponenten werden nur ergänzt, wenn reale Produkte sie benötigen. Die Brand-Werte selbst bleiben im WordPress-Theme und werden nicht in Plugins dupliziert.
