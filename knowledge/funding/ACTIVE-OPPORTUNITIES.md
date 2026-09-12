@@ -1,10 +1,10 @@
 # Active Funding Opportunities
 
-Stand: 2026-09-11 – Runtime-Abgleich, WISO-Frist und Kellogg’s-Projektauswahl aktualisiert
+Stand: 2026-09-12 – Kellogg’s/WISO bereinigt; `Gemeinsam engagiert in BW V` und Heimatverbunden ergänzt
 
 ## Purpose
 
-Diese Datei ist die entscheidungsorientierte Übersicht der aktuell qualifizierten Förderchancen für konkrete TuS-Projekte. Sie ist bewusst kleiner als der Förderradar: Hier stehen nur Chancen, aus denen eine konkrete nächste Handlung folgt.
+Diese Datei ist die entscheidungsorientierte Übersicht der aktuell qualifizierten Förderchancen für konkrete TuS-Projekte. Sie enthält nur Chancen, aus denen eine konkrete nächste Handlung folgt.
 
 > Ein guter Fördertreffer beantwortet nicht nur „Was gibt es?“, sondern „Was machen wir jetzt damit?“
 
@@ -14,377 +14,204 @@ Vor externer Kontaktaufnahme, Bestellung, Beauftragung oder Antragstellung werde
 
 | ID | TuS-Projekt | Förderchance | Priorität | Offizielle Frist / Sperre | Nächste interne Entscheidung |
 |---|---|---|---|---|---|
-| OPP-004 | Arbeitsplatz Sportparkteam | § 16i SGB II; § 16e als Rückfalloption | **B+ – sofort vorabklären** | keine feste Ausschreibungsfrist; **Vertrag erst nach positiver Jobcenter-Rückmeldung** | bis 18.09.2026: Arbeitgeber-Erstkontakt und persönliche Förderfähigkeit klären |
-| OPP-006 | Großfeldtore Haupt- und Trainingsplatz | Kellogg’s Herzensprojekt 2026 | **B+ – Projektauswahl offen** | Bewerbung bis **31.10.2026**; Voting 01.10.–30.11.2026 | bis 23.09.2026 zwischen Großfeldtoren und Trainingskleidung entscheiden |
-| OPP-007 | Trainingskleidung Ausstattungsgrundstock | Kellogg’s Herzensprojekt 2026 | **B+ – konkret vorbereiten** | Bewerbung bis **31.10.2026**; Voting 01.10.–30.11.2026 | bis 23.09.2026 Projektauswahl; bei Go Kosten/400-Zeichen-Text/Votingplan schließen |
+| OPP-008 | Aufbau Digitale Vereinsorganisation | Gemeinsam engagiert in BW V | **B+ – sofort vorabklären** | vollständiger Antrag bis **01.10.2026**; Vorhaben darf nicht begonnen sein | bis 15.09. Freistellungsbescheid + Scope vorabklären; bis 18.09. Go/No-Go |
+| OPP-004 | Arbeitsplatz Sportparkteam | § 16i SGB II; § 16e als Rückfalloption | **B+ – sofort vorabklären** | keine feste Ausschreibungsfrist; **Vertrag erst nach positiver Jobcenter-Rückmeldung** | bis 18.09.2026 Arbeitgeber-Erstkontakt und persönliche Förderfähigkeit klären |
+| OPP-009 | geeignete reale TuS-Projekte, zunächst Digitale Vereinsorganisation | Volksbank Kraichgau Heimatverbunden | **B+ – konkret vorbereiten** | keine allgemeine Einreichungsfrist veröffentlicht | Volksbank-Konto + akzeptierter Freistellungsbescheid/Registrierungsfähigkeit klären; danach erstes Projekt auswählen |
 | OPP-001 | Großfeldtore Haupt- und Trainingsplatz | BSB Sportgeräteförderung 2026 | **A – bewerben** | Rechnung 2026; Antrag bis 31.01.2027 | finale Konfiguration vor Kauf mit BSB absichern |
 | OPP-002 | Umkleideböden | BSB Vereinssportstättenbau | **A – sofortige Vorabklärung** | kein Start / keine Beauftragung vor Baufreigabe | technischen Sanierungs-Scope festziehen |
 | OPP-003 | Historienarchiv | Stiftung Kulturgut Baden-Württemberg | **B+ – konkret vorbereiten** | 31.01.2027 | Vorabskizze und EVALAG-Beratung bis 15.10.2026 |
 
-### Abgelaufener Statuspunkt
+### Geschlossene / bereits laufende Vorgänge
 
-**OPP-005 – Aufbau Digitale Vereinsorganisation × WISO MeinVerein des Jahres 2026:** Die offizielle Einreichungsfrist endete am **10.09.2026 um 23:59 Uhr**. Auf `main` ist weiterhin keine Einreichungsbestätigung dokumentiert. Ohne extern vorhandenen Einreichungsnachweis ist die Chance für 2026 geschlossen. Falls der Antrag extern eingereicht wurde, muss nur noch der Nachweis/Status in die Förderakte übernommen werden; eine nachträgliche Einreichung ist laut Teilnahmebedingungen nicht möglich.
+- **WISO MeinVerein des Jahres 2026:** geschlossen. Keine Suche nach Einreichungsnachweis. Ursache: zum erforderlichen Zeitpunkt kein ausreichend aktueller Gemeinnützigkeitsnachweis verfügbar.
+- **Kellogg’s Herzensprojekt 2026:** Bewerbung laut Nutzer bereits eingereicht. Keine zweite Bewerbung / keine Projektauswahl mehr vorbereiten. Nur eingereichtes Projekt noch eindeutig dokumentieren sowie Voting/Entscheidung/Nachweise nachhalten.
+- **REWE Scheine für Vereine 2026:** läuft bereits. Keine neue Bewerbungsentscheidung; nur operative Fristen, Einlösung und Prämien nachhalten.
+
+---
+
+## OPP-008 – Aufbau Digitale Vereinsorganisation × Gemeinsam engagiert in BW V
+
+**TuS-Projekt:** Aufbau Digitale Vereinsorganisation  
+**Programm:** Gemeinsam engagiert in BW V – Ministerium für Soziales, Arbeit und Gesundheit Baden-Württemberg  
+**Priorität:** **B+ – sofort vorabklären**  
+**Letzte Primärquellen-Verifizierung:** 2026-09-12  
+**Status:** fachlich starker Match; formale Freistellungsbescheid-Frage und neuer, noch nicht begonnener Teil-Scope müssen sofort geklärt werden
+
+### Fit
+
+Der aktuelle Förderaufruf stärkt Bürgerschaftliches Engagement und nennt im Schwerpunkt gesellschaftliche Resilienz ausdrücklich:
+
+- langfristige Strukturen zur Unterstützung Bürgerschaftlichen Engagements,
+- Fortbildungs- und Qualifizierungsangebote für Haupt- und Ehrenamtliche,
+- neue digitale Angebote und Instrumente, die Vermittlung, Koordination und Information von Freiwilligen erleichtern.
+
+Das trifft einen echten Teil des TuS-Projekts: Ehrenamtsentlastung, klare Rollen/Übergaben, Wissenssicherung, Qualifizierung und digitale Koordination. Nicht passend wäre eine Bewerbung als allgemeine interne IT-Modernisierung.
+
+### Empfohlene Förderstory
+
+**„Digitales Ehrenamts-OS – Wissen, Koordination und Einstieg ins Engagement vereinfachen.“**
+
+Der TuS entwickelt und pilotiert ein neues, noch nicht begonnenes Teilvorhaben, das ehrenamtliche Aufgaben leichter auffindbar und übergebbar macht, Wissen unabhängig von Einzelpersonen sichert, Verantwortliche qualifiziert und digitale Instrumente für Koordination und Information erprobt. Bereits umgesetzte TuS-OS-Arbeit ist Ausgangslage/Eigenleistung und wird nicht rückwirkend beantragt.
+
+### Ansprechpartner / Kontaktweg
+
+**Antragsberatung Gemeindenetzwerk:** Sandra Holzherr  
+Telefon: 07472 9419 444  
+E-Mail: `sandra.holzherr@gemeindenetzwerk-be.de`
+
+**Bewilligungsbehörde / Einreichung:** Sozialministerium Baden-Württemberg  
+E-Mail: `antraegeBE@sm.bwl.de`
+
+### Fristen / interne Vorfristen
+
+- offizielle Frist vollständiger Antrag: **01.10.2026**,
+- bis **15.09.2026**: Freistellungsbescheid-Frage und Scope mit Antragsberatung klären,
+- bis **18.09.2026**: internes Go/No-Go und Gemeinde Bad Schönborn einbinden,
+- bis **22.09.2026**: Projektbeschreibung, Maßnahmen, Wirkung, Zeitplan, Kosten-/Finanzierungsplan,
+- bis **24.09.2026**: verpflichtende kommunale Stellungnahme und Nachweise,
+- bis **28.09.2026**: Final Review / Unterschriften,
+- spätestens **01.10.2026**: vollständige Einreichung.
+
+### Förderung / Eigenanteil
+
+- Festbetragszuschuss: **10.000 Euro** je gefördertem Vorhaben,
+- mindestens **5 %** Eigenmittel und/oder Einnahmen/Drittmittel,
+- Kofinanzierung zulässig, aber keine Doppel-/Überfinanzierung,
+- Abschluss spätestens 31.03.2028.
+
+### Gemeinnützigkeitsnachweis
+
+Für eingetragene Vereine verlangt der Förderaufruf einen **Freistellungsbescheid des zuständigen Finanzamtes**. Der Förderaufruf nennt keine konkrete maximale Alter-/Aktualitätsgrenze. Da nur vollständige Anträge bis 01.10.2026 berücksichtigt werden und Gemeinnützigkeit Zuwendungsvoraussetzung ist, ist der Bescheid **bei Antragstellung/Vollständigkeitsprüfung** einzuplanen – nicht erst zur Auszahlung.
+
+**Offener TuS-Punkt:** Vor Go muss die Antragsberatung verbindlich klären, ob der vorhandene Bescheid akzeptiert wird. Falls zwingend ein neuer Herbst-2026-Bescheid verlangt wird und dieser nicht rechtzeitig vorliegt, ist diese Runde formal nicht nutzbar.
+
+### Benötigte Unterlagen / Partner / Beschlüsse
+
+- akzeptabler Freistellungsbescheid,
+- offizielles Antragsformular,
+- verpflichtende Stellungnahme der Gemeinde Bad Schönborn,
+- klar abgegrenztes neues, noch nicht begonnenes Teilvorhaben,
+- Zielgruppe / Maßnahmen / messbare Wirkung,
+- Kosten- und Finanzierungsplan,
+- mindestens 5 % Eigen-/Drittmittel,
+- projektbezogene Sachausgaben/externe Leistungen,
+- interne Freigabe für Antrag und Eigenanteil.
+
+### Antragsweg / Auswahlkriterien
+
+Vollständiger Antrag nach aktuellem Stand per E-Mail an das Sozialministerium; falls vor Einreichung das digitale Förderportal bereitgestellt wird, gilt der dort vorgeschriebene Weg. Das Vorhaben muss innovativ sein, einem der beiden aktuellen Schwerpunkte entsprechen und darf noch nicht begonnen sein. Nur ein Vorhaben je Zuwendungsempfänger ist förderfähig.
+
+### Vergleichbare Bewilligungen
+
+Offizielle frühere Runden zeigen starken Fit zu Engagement-/Digitalisierungsprojekten:
+
+- `Vereine 2030 – Zukunft gemeinsam gestalten` (Stadt Hemsbach, 2025),
+- `Alltagshilfen Aulendorf – Gemeinschaft engagiert für Digitale Teilhabe...` (Solidarische Gemeinde Aulendorf e. V., 2025),
+- digitale Plattform für Vereine/Initiativen in Ostfildern (2024),
+- digitaler Prozess/Datenbank zum Matching von Ehrenamtlichen und Aufgaben im Alb-Donau-Kreis (2024).
+
+Frühere Förderhöhen sind nicht auf 2026 übertragbar; 2026 sind 10.000 Euro festgelegt.
+
+### Risiken / offene Punkte
+
+- Freistellungsbescheid-Akzeptanz ungeklärt,
+- laufendes Gesamtprojekt: bereits begonnene Leistungen nicht förderfähig,
+- Story muss Ehrenamt/Engagement stärken, nicht nur interne Digitalisierung,
+- kommunale Stellungnahme ist Pflicht,
+- kurze verbleibende Antragszeit.
+
+### Nächste Aktion
+
+Vorabklärung mit Sandra Holzherr vorbereiten: (1) akzeptierter Freistellungsbescheid, (2) grundsätzlicher Fit des neuen Teilvorhabens nach Schwerpunkt 2.3.2 b/d/e. Bei positiver Rückmeldung auf **A – bewerben** hochstufen.
 
 ---
 
 ## OPP-004 – Arbeitsplatz Sportparkteam × § 16i / § 16e SGB II
 
 **TuS-Projekt:** Arbeitsplatz Sportparkteam  
-**Programm:** Teilhabe am Arbeitsmarkt nach § 16i SGB II; hilfsweise Eingliederung von Langzeitleistungsbeziehenden nach § 16e SGB II  
+**Programm:** Teilhabe am Arbeitsmarkt nach § 16i SGB II; hilfsweise § 16e SGB II  
 **Priorität:** B+ – sofort vorabklären  
-**Letzte Primärquellen-Verifizierung:** 2026-09-11  
-**Status:** Arbeitgeber- und Projektfit plausibel; persönliche Förderfähigkeit und Ermessensentscheidung offen
+**Letzte Primärquellen-Verifizierung:** 2026-09-11
 
-### Warum passt es fachlich und formal?
+### Fit / Story
 
-Das Projekt will eine bereits im Sportparkteam tätige Person in eine reguläre sozialversicherungspflichtige Beschäftigung mit langfristiger Perspektive überführen. Die Bundesagentur bestätigt für § 16i eine Förderung von bis zu fünf Jahren mit 100 % Lohnkostenzuschuss in den ersten beiden Jahren und anschließend 90/80/70 %. Die Förderfähigkeit der konkreten Person wird ausschließlich vom Jobcenter anhand geschützter Personendaten geprüft und hier nicht unterstellt.
-
-### Empfohlene Förderstory
-
-Der TuS schafft einen verlässlichen, arbeitsmarktnahen Arbeitsplatz mit klaren Aufgaben im Sportpark, guter fachlicher Einbindung und langfristiger Perspektive. Ziel ist soziale Teilhabe und nachhaltige Beschäftigung – nicht eine kurzfristige Billigarbeitskraft. Coaching, Qualifizierung und ein schrittweise wachsender TuS-/Partneranteil sichern den Übergang.
-
-### Zuständiger Ansprechpartner
-
-**Jobcenter Landkreis Karlsruhe – Geschäftsstelle Bruchsal**  
-Am Alten Güterbahnhof 9, 76646 Bruchsal  
-Telefon: 07251 7244-101  
-E-Mail: Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de  
-Kontakt zusätzlich über https://www.jobcenter.digital/ bzw. https://www.jobcenter-landkreis-karlsruhe.de/
-
-### Fristen und interne Vorfristen
-
-- keine feste Ausschreibungsfrist,
-- **Arbeitsvertrag erst nach positiver Jobcenter-Rückmeldung**,
-- Arbeitgeber-Erstkontakt intern bis 18.09.2026,
-- Tätigkeitsprofil und 20-/25-/30-Stunden-Kostenmodelle bis 25.09.2026,
-- Go/No-Go erst nach belastbarer Aussage zur persönlichen Förderfähigkeit und Förderhöhe.
-
-### Mögliche Förderung / Eigenanteil
-
-§ 16i: Jahre 1–2 bis 100 %, Jahr 3 bis 90 %, Jahr 4 bis 80 %, Jahr 5 bis 70 % der maßgeblichen Lohnkosten; zusätzlich Coaching und bis zu 3.000 Euro Weiterbildungskosten nach Maßgabe des Jobcenters. § 16e bleibt als kürzere Rückfalloption zu prüfen. Der reale Eigenanteil kann erst nach Stundenmodell, Vergütung und Jobcenter-Aussage seriös berechnet werden.
-
-### Benötigte Unterlagen, Nachweise und Beschlüsse
-
-- datenschutzkonforme Klärung der persönlichen Fördervoraussetzungen,
-- Arbeitgeber-/Vereinsdaten und Gemeinnützigkeitsnachweis,
-- Stellen- und Tätigkeitsbeschreibung,
-- Wochenstunden, Vergütung, Beginn und Dauer,
-- Kostenmodelle,
-- Einarbeitungs-/Betreuungs- und ggf. Qualifizierungskonzept,
-- Finanzierung des sinkenden Zuschusses und der Anschlussphase,
-- Vorstandsbeschluss vor Vertragsbindung.
-
-### Antragsweg
-
-Arbeitgeber-Erstkontakt → personenbezogene Prüfung durch Jobcenter → Arbeitgeberantrag/Portal → Förderentscheidung → erst danach Arbeitsvertrag und weitere geforderte Unterlagen.
-
-### Auswahlkriterien / Risiken
-
-Gesetzliche personenbezogene Voraussetzungen, sozialversicherungspflichtige Beschäftigung, Passung von Person/Aufgabe, Jobcenter-Ermessen und tragfähige längerfristige Beschäftigung. Personenbezogene Daten bleiben außerhalb des öffentlichen Repository.
-
-### Nächster konkreter Schritt
-
-Arbeitgeber-Vorabklärung mit anonymisiertem Stellenprofil nach TuS-Freigabe vorbereiten. Bis zur positiven Rückmeldung keinen Arbeitsvertrag schließen.
-
----
-
-## OPP-006 – Großfeldtore × Kellogg’s Herzensprojekt 2026
-
-**TuS-Projekt:** Großfeldtore Haupt- und Trainingsplatz  
-**Programm:** Kellogg’s Herzensprojekt 2026  
-**Priorität:** B+ – Projektauswahl offen  
-**Letzte Primärquellen-Verifizierung:** 2026-09-11  
-**Status:** formal passend; konkurriert vereinsintern mit OPP-007, weil laut Teilnahmebedingungen nur ein Projekt je Verein eingereicht werden kann
-
-### Warum passt es fachlich und formal?
-
-Eingetragene gemeinnützige Amateur-Sportvereine können genau ein Projekt einreichen. Sportausrüstung und Ausbau von Sporteinrichtungen werden ausdrücklich genannt. Das reale Torprojekt passt fachlich; sein vollständiger Preis einschließlich Netzen, Fracht, Fundamentierung und Einbau ist noch zu schließen.
-
-### Empfohlene Förderstory
-
-Vorhandene mobile Großfeldtore werden auf dem Trainingsfeld weitergenutzt; auf dem Hauptfeld ergänzt der TuS eine verlässliche herausnehmbare Lösung. Bestehende Ausstattung wird ressourcenschonend weitergenutzt und beide Plätze werden für Trainings- und Spielbetrieb funktionsfähig ausgestattet.
+Der TuS will eine reale Tätigkeit im Sportpark in eine reguläre sozialversicherungspflichtige Beschäftigung mit langfristiger Perspektive überführen. Die Story ist soziale Teilhabe und nachhaltige Beschäftigung mit klarer Einbindung, Coaching/Qualifizierung und tragfähiger Anschlussfinanzierung.
 
 ### Ansprechpartner
 
-- E-Mail: info@kelloggs-herzensprojekt.de
-- Bewerbung: https://www.kelloggs-herzensprojekt.de/bewerben
-- Teilnahmebedingungen: https://www.kelloggs-herzensprojekt.de/conditions-application
+Jobcenter Landkreis Karlsruhe – Geschäftsstelle Bruchsal  
+Am Alten Güterbahnhof 9, 76646 Bruchsal  
+Telefon: 07251 7244-101  
+E-Mail: `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de`
 
-### Fristen und interne Vorfristen
+### Förderung / Sperre / nächste Aktion
 
-- Bewerbung: bis **31.10.2026, 23:59 Uhr**,
-- Voting: 01.10.–30.11.2026,
-- interne Projektauswahl Großfeldtore vs. Trainingskleidung: **23.09.2026**,
-- bei Go: finale Kosten, Kurztext, Bildrechte und Votingplan bis 24.09.2026,
-- Ziel-Einreichung 25.09.2026.
-
-### Mögliche Förderung / Eigenanteil
-
-Gesamtpool 50.000 Euro; maximal 5.000 Euro pro Projekt. Kein fixer Eigenanteil veröffentlicht; Kosten oberhalb der Förderung trägt der TuS. Doppelfinanzierung derselben Kostenposition mit BSB ist auszuschließen.
-
-### Benötigte Unterlagen und Freigaben
-
-Finaler Gesamtpreis, Projektauswahl, max. 400-Zeichen-Beschreibung, Vereins-/Kontaktdaten, Logo/Bildrechte, realistischer Votingplan, im Gewinnfall Gemeinnützigkeitsnachweis/IBAN und Umsetzungsnachweise.
-
-### Antragsweg / Auswahlkriterium
-
-Online-Bewerbung; danach Freigabe und kaufbelegbasiertes Online-Voting. Die Rangfolge folgt den gültigen Stimmen, bis der Fördertopf ausgeschöpft ist.
-
-### Risiken / offene Punkte
-
-Nur ein Projekt je Verein; Tor-Gesamtpreis noch offen; Kombination mit BSB erzeugt zusätzliche Abgrenzungsarbeit; Ausgang hängt stark von Mobilisierung im Voting ab.
-
-### Nächster konkreter Schritt
-
-Nicht parallel als zweites Kellogg’s-Projekt weiterplanen. Bis 23.09.2026 Großfeldtore gegen OPP-007 Trainingskleidung entscheiden.
+§ 16i kann über fünf Jahre bis zu 100/100/90/80/70 % der maßgeblichen Lohnkosten fördern; individuelle Förderfähigkeit und Höhe entscheidet ausschließlich das Jobcenter. **Keinen Arbeitsvertrag vor positiver Jobcenter-Rückmeldung.** Arbeitgeber-Erstkontakt intern bis 18.09.2026; danach Tätigkeitsprofil und Stunden-/Kostenmodelle.
 
 ---
 
-## OPP-007 – Trainingskleidung Ausstattungsgrundstock × Kellogg’s Herzensprojekt 2026
+## OPP-009 – TuS-Projekte × Volksbank Kraichgau Heimatverbunden
 
-**TuS-Projekt:** Trainingskleidung Ausstattungsgrundstock  
-**Programm:** Kellogg’s Herzensprojekt 2026  
+**Programm:** Volksbank Kraichgau `Heimatverbunden`  
 **Priorität:** B+ – konkret vorbereiten  
-**Letzte Primärquellen-Verifizierung:** 2026-09-11  
-**Status:** neuer qualifizierter Projektmatch; vereinsinterne Auswahl gegen OPP-006 erforderlich
+**Letzte Primärquellen-Verifizierung:** 2026-09-12  
+**Status:** laufende regionale Spenden-/Förderplattform; keine allgemeine Einreichungsfrist veröffentlicht
 
-### Warum passt es fachlich und formal?
+### Fit / Story
 
-Das Projekt ist seit 11.09.2026 auf `main` als reales formales TuS-Projekt dokumentiert: ein verfügbarer Grundstock soll Neuzugänge unmittelbar mit einheitlicher Trainingskleidung ausstatten und Einzelbestellungen reduzieren. Kellogg’s nennt auf der offiziellen Aktionsseite ausdrücklich **Sportkleidung** bzw. „Sportkleidung für das Team“ als förderfähiges Beispiel. Eingetragene gemeinnützige Amateursportvereine sind antragsberechtigt. Die auf `main` dokumentierte Planungsgröße liegt im aktuell bekannten Projektstand grundsätzlich unter der maximalen Kellogg’s-Förderung von 5.000 Euro.
+Die Plattform eignet sich für klar abgegrenzte, öffentlich verständliche TuS-Projekte. Offiziell genannt werden unter anderem Sportgeräte, Vereinsheim-Renovierungen sowie nachhaltige/digitale Vorhaben. Für die Digitale Vereinsorganisation ist ein konkretes sichtbares Teilvorhaben sinnvoller als die abstrakte Gesamtarchitektur.
 
-### Empfohlene Förderstory
+### Formale Gates
 
-**„Vom ersten Training an Teil des Teams.“** Der TuS baut einen sofort verfügbaren Bestand an Trainingskleidung auf, damit neue Spieler nicht wochenlang auf Sammelbestellungen warten, sondern vom Einstieg an sichtbar dazugehören. Die Förderung finanziert einen konkreten, langlebigen Grundstock; der Verein etabliert gleichzeitig einen nachvollziehbaren Ausgabe- und Nachbestellprozess.
+- Gemeinnützigkeit ist nachzuweisen; für Vereine wird ein Freistellungsbescheid verlangt. Eine explizite maximale Aktualität ist auf den geprüften öffentlichen Bedingungen nicht genannt.
+- Auszahlung erfolgt ausschließlich auf ein Girokonto bei der Volksbank Kraichgau eG.
+- Vor Nutzung deshalb zuerst Kontovoraussetzung und Akzeptanz des vorhandenen Gemeinnützigkeitsnachweises klären.
 
-### Ansprechpartner / offizieller Weg
+### Ansprechpartner
 
-Ein persönlicher Programm-Ansprechpartner ist öffentlich nicht benannt.
+Dagmar Gepperth – Volksbank Kraichgau eG  
+E-Mail: `heimatverbunden@vbkraichgau.de`  
+Telefon: 06222 589-2350
 
-- E-Mail: info@kelloggs-herzensprojekt.de
-- Bewerbung: https://www.kelloggs-herzensprojekt.de/bewerben
-- Teilnahmebedingungen: https://www.kelloggs-herzensprojekt.de/conditions-application
+### Förderung / nächste Aktion
 
-### Fristen und interne Vorfristen
-
-- Bewerbung: **01.09.–31.10.2026, 23:59 Uhr**,
-- Voting: **01.10.–30.11.2026**,
-- vereinsinterne Auswahl Großfeldtore vs. Trainingskleidung: **23.09.2026**,
-- bei Go: finale SPORTINN/Joma-Artikel, Angebot, beantragter Betrag, max. 400-Zeichen-Projekttext und Bildrechte bis 24.09.2026,
-- Ziel-Einreichung: 25.09.2026, um möglichst vor Votingstart freigeschaltet zu sein.
-
-### Mögliche Förderung / Eigenanteil / Vorfinanzierung
-
-- Gesamtfördertopf: 50.000 Euro,
-- maximal **5.000 Euro je Projekt**,
-- kein veröffentlichter fixer Eigenanteil,
-- beantragte Projektkosten müssen real und nachweisbar sein,
-- nicht gedeckte Kosten sowie mögliche Vorfinanzierung trägt der TuS.
-
-### Benötigte Unterlagen / Angebote / Nachweise / Beschlüsse
-
-- Entscheidung, dass Trainingskleidung das eine Kellogg’s-Projekt des TuS ist,
-- finales SPORTINN/Joma-Angebot mit konkreten Artikeln, Stückzahlen, Veredelung und Gesamtpreis,
-- bestätigter Größen-/Bestandsmix,
-- 400-Zeichen-Projektbeschreibung,
-- Vereinsdaten und bevollmächtigte Kontaktperson,
-- Logo/Bild mit geklärten Nutzungsrechten,
-- realistischer Voting-/Kommunikationsplan,
-- im Gewinnfall Freistellungsbescheid, Vereins-IBAN, Rechnungen/Fotos/Umsetzungsnachweise,
-- interne Freigabe für Restfinanzierung und Beschaffung.
-
-### Antragsweg
-
-1. Ein TuS-Projekt für die Kellogg’s-Runde auswählen.
-2. Projektkosten anhand eines realen Lieferantenangebots festlegen.
-3. Online-Bewerbung mit Vereinsdaten, Kontakt, Kurztext, Kosten und optional Bild/Logo einreichen.
-4. Freigabe durch Veranstalter abwarten.
-5. Im Votingzeitraum Unterstützer gemäß den offiziellen Bedingungen mobilisieren.
-6. Bei Gewinn zweckgebunden umsetzen und geforderte Nachweise liefern.
-
-### Entscheidende Auswahlkriterien
-
-Es gibt keine qualitative Jurywertung als Hauptmechanismus. Entscheidend ist die Rangfolge aus gültigen Stimmen. Für den TuS bedeutet das: verständliche, emotional anschlussfähige Story, frühe Freischaltung und realistische Mobilisierung. Das Trainingskleidungsprojekt hat hier einen Kommunikationsvorteil, weil Nutzen und Story unmittelbar verständlich sind.
-
-### Vergleichbare Bewilligungen
-
-Für die aktuelle 2026-Runde liegt noch keine abgeschlossene Gewinnerliste vor. Die offizielle Ausschreibung selbst nennt neue Trikots/Sportkleidung als typisches Herzensprojekt; daraus folgt ein belastbarer Fördergegenstands-Fit, aber keine Erfolgsgarantie.
-
-### Risiken / offene Punkte
-
-- nur ein Projekt je Verein: OPP-006 und OPP-007 sind gegenseitig ausschließend,
-- aktueller `main`-Projektstand enthält noch Arbeitsannahmen; finale Artikel und reale Preise fehlen,
-- eine breite Voting-Kampagne ist erfolgskritisch,
-- Bestellung darf nicht vor interner Finanzierungs-/Rechtefreigabe ausgelöst werden,
-- Kellogg’s-Förderung ersetzt nicht die Prüfung bestehender Sponsor-/Ausrüsterrechte.
-
-### Nächster konkreter Schritt
-
-Bis 23.09.2026 entscheiden, ob der TuS Kellogg’s für **Trainingskleidung** oder **Großfeldtore** nutzt. Fachliche Empfehlung des Funding Managers: **Trainingskleidung bevorzugen**, sofern das reale SPORTINN-Angebot unter 5.000 Euro liegt. Begründung: expliziter Fördergegenstand „Sportkleidung“, sehr klare emotionale Story, voraussichtlich vollständigerer Kostenfit und keine Überschneidung mit der separat starken BSB-Sportgeräteförderung der Tore.
+Kein fixer Zuschussbetrag: Finanzierung über Volksbank-Spendencodes und Privatspenden; der bis Projektende gesammelte Betrag kann auch bei Nichterreichen des Finanzierungsziels ausgezahlt werden. Zuerst Rechtsträger/Konto/Registrierung klären, danach erstes reales Projekt auswählen und Projektbeschreibung, Finanzierungsbedarf, Bilder und Mobilisierungsplan vorbereiten.
 
 ---
 
 ## OPP-001 – Großfeldtore × BSB Sportgeräteförderung 2026
 
 **TuS-Projekt:** Großfeldtore Haupt- und Trainingsplatz  
-**Programm:** Sportgeräteförderung 2026 – Badischer Sportbund Nord  
 **Priorität:** A – bewerben  
-**Letzte Primärquellen-Verifizierung:** 2026-09-11  
-**Status:** vor Kauf / Bestellung konkrete Komponenten absichern
+**Letzte Primärquellen-Verifizierung:** 2026-09-11
 
-### Warum passt es fachlich und formal?
-
-Der TuS plant zwei neue Großfeldtore als sportlich notwendige Ausstattung. Tore werden im offiziellen BSB-Katalog als förderfähiger Satz geführt. Die geplante Lösung kombiniert Neuanschaffung und Weiterverwendung vorhandener mobiler Tore.
-
-### Empfohlene Förderstory
-
-Vorhandene mobile Tore werden auf dem Trainingsfeld weitergenutzt; die neue herausnehmbare Lösung verbessert den verlässlichen Trainings- und Spielbetrieb auf dem Hauptfeld. Der Förderzweck ist die sportliche Nutzung, nicht eine optische Aufwertung.
-
-### Ansprechpartner
-
-**Fabian Schmider**, Badischer Sportbund Nord  
-Telefon: 0721/1808-30  
-E-Mail: f.schmider@badischer-sportbund.de  
-Offizielle Seite: https://www.badischer-sportbund.de/zuschuesse/sportgeraete/
-
-### Fristen und interne Vorfristen
-
-- Anschaffung und Rechnung: 01.01.–31.12.2026,
-- offizieller Antrag im BSBnet: bis **31.01.2027**,
-- interne Förderfähigkeitsklärung: vor Bestellung,
-- Unterlagen vollständig: 15.01.2027,
-- Final Review: 22.01.2027.
-
-### Mögliche Förderung / Eigenanteil
-
-30 % der anerkannten Kosten; Tore als Satz bis 3.000 Euro anerkannter Höchstbetrag, damit maximal 900 Euro Zuschuss. Nicht anerkannte Kosten und Restfinanzierung trägt der TuS.
-
-### Benötigte Unterlagen und Freigaben
-
-Finale Konfiguration und Angebot, Rechnung aus 2026, unbarer Zahlungsnachweis, gültiger Freistellungsbescheid, BSBnet-Zugang und interne Kauf-/Vorstandsfreigabe. Zubehör, Fracht und Einbau sind vorab einzeln zu klären.
-
-### Antragsweg / Auswahlkriterien
-
-Anschaffung im Förderjahr; danach Online-Antrag über BSBnet mit Rechnung/Zahlungsnachweis. Voraussetzung sind förderfähiges Sportgerät, sportartspezifische Mitgliedermeldung, vollständige Belege und Einhaltung des Rechnungsjahres.
-
-### Risiken / offene Fragen
-
-Einordnung von Zubehör, Eigentums-/Nutzungsverhältnis, kommunale Grundausstattungs-Ausnahme und finaler Gesamtpreis.
-
-### Nächster konkreter Schritt
-
-Finales Angebot an Fabian Schmider zur unverbindlichen Förderfähigkeitsklärung vorbereiten und erst nach Rückmeldung/interner Freigabe bestellen.
+30 % der anerkannten Kosten; Tore als Satz bis 3.000 Euro anerkannter Höchstbetrag, damit maximal ca. 900 Euro Zuschuss. Anschaffung/Rechnung 2026, Antrag im BSBnet bis **31.01.2027**. Benötigt werden finale Konfiguration/Angebot, Rechnung, unbarer Zahlungsnachweis, gültiger Freistellungsbescheid und interne Kauf-/Vorstandsfreigabe. Vor Kauf konkrete Komponenten mit Fabian Schmider (0721/1808-30, `f.schmider@badischer-sportbund.de`) klären.
 
 ---
 
 ## OPP-002 – Umkleideböden × BSB Vereinssportstättenbau
 
 **TuS-Vorhaben:** Umkleideböden / klar abgegrenzte Umkleidesanierung  
-**Programm:** Vereinssportstättenbau – Badischer Sportbund Nord  
 **Priorität:** A – sofortige Vorabklärung  
-**Letzte Primärquellen-Verifizierung:** 2026-09-11  
-**Status:** Projektabgrenzung vor jeder Beauftragung
+**Letzte Primärquellen-Verifizierung:** 2026-09-11
 
-### Warum passt es fachlich und formal?
-
-Der reale Infrastrukturbedarf kann passen, wenn es sich um förderfähige Sanierung/Instandsetzung unmittelbar sportlich genutzter Räume handelt. Reine Reparatur oder Bauunterhaltung ist nicht förderfähig. Das Vorhaben muss grundsätzlich über 3.500 Euro liegen.
-
-### Empfohlene Förderstory
-
-Der TuS stellt einen dauerhaft sicheren, hygienischen und funktionsfähigen Zustand seiner sportlich genutzten Umkleideinfrastruktur her. Ausgangszustand, Schadensbild, Zielzustand und langfristiger Nutzen werden technisch belegt.
-
-### Ansprechpartner
-
-**Wolfgang Elfner**, Badischer Sportbund Nord  
-Telefon: 0721/1808-18  
-E-Mail: bau@badischer-sportbund.de  
-Offizielle Seite: https://www.badischer-sportbund.de/zuschuesse/sportstaetten/
-
-### Fristen und interne Vorfristen
-
-Keine fixe Jahresfrist auf der aktuellen Förderseite. Maßgeblich ist: **keine Beauftragung und kein Baubeginn vor Bewilligungsbescheid oder Baufreigabe**. Ein Vorhaben gilt laut BSB bereits mit Abschluss entsprechender Lieferungs-/Leistungsverträge als begonnen.
-
-### Mögliche Förderung / Eigenanteil
-
-Regelförderung 30 % des förderfähigen Aufwandes innerhalb der jeweiligen Höchstgrenzen. Mindestens 70 % plus nicht anerkannte Positionen und Vorfinanzierung trägt der TuS.
-
-### Benötigte Unterlagen / Antragsweg
-
-Ist-/Schadensbeschreibung, Fotos, Flächen/Räume, technische Zielausführung, Kostenberechnung/Angebote, Finanzierung, Nutzungs-/Eigentumsnachweis, Pläne soweit erforderlich und gültige Gemeinnützigkeit. Vorabberatung → Antrag → ausdrückliche Baufreigabe → erst dann beauftragen/bauen.
-
-### Nächster konkreter Schritt
-
-Technischen Scope und Kostenspanne erstellen und vor jeder Beauftragung mit Wolfgang Elfner klären.
+Regelförderung 30 % des förderfähigen Aufwandes. Der Scope muss echte Sanierung/Instandsetzung sportlich genutzter Räume und nicht bloße Reparatur/Bauunterhaltung sein. **Keine Beauftragung / kein Baubeginn vor Bewilligung oder ausdrücklicher Baufreigabe.** Technischen Scope, Schadensbild, Fotos, Kosten/Angebote, Finanzierung und Nutzungs-/Eigentumsnachweis vorbereiten; mit Wolfgang Elfner (0721/1808-18, `bau@badischer-sportbund.de`) vorab klären.
 
 ---
 
 ## OPP-003 – Historienarchiv × Stiftung Kulturgut Baden-Württemberg
 
 **TuS-Vorhaben:** Historienarchiv – abgegrenzte Erschließung und Digitalisierung  
-**Programm:** Stiftung Kulturgut Baden-Württemberg  
 **Priorität:** B+ – konkret vorbereiten  
-**Letzte Primärquellen-Verifizierung:** 2026-09-10  
-**Status:** Vorabberatung und Projektabgrenzung erforderlich
+**Letzte Primärquellen-Verifizierung:** 2026-09-10
 
-### Warum passt es fachlich und formal?
-
-Der TuS baut bereits ein quellenbasiertes Historienarchiv mit Quellenindex, Erschließungsdokumenten und Registern auf. Die Stiftung fördert Erschließung, Erhaltung und Digitalisierung von Archiv- und Bibliotheksgut. Juristische Personen in Baden-Württemberg sind grundsätzlich antragsberechtigt; die Einordnung des TuS als geeignete archivische oder vergleichbare Einrichtung muss vorab geklärt werden.
-
-### Empfohlene Förderstory
-
-Mehr als 125 Jahre lokale Vereins-, Sport- und Sozialgeschichte werden als dauerhaft erschlossener, auffindbarer und öffentlich nutzbarer Quellenbestand gesichert. Das Projekt verbindet fachliche Erschließung, Metadaten, Bestandssicherung, Digitalisierung und professionelle öffentliche Zugänglichkeit.
-
-### Ansprechpartner
-
-**Sabine Berganski**, EVALAG / Beratung Stiftung Kulturgut Baden-Württemberg  
-Telefon: 06221/405462-92  
-E-Mail: antragstiftungkulturgut@evalag.de  
-Offizielle Seite: https://mwk.baden-wuerttemberg.de/de/kunst-kultur/kultursparten/archivwesen-und-kulturgut
-
-### Fristen und interne Vorfristen
-
-- nächster Stichtag: **31.01.2027**,
-- Vorabberatung / Go-No-Go: 15.10.2026,
-- Projektunterlagen intern: 15.12.2026,
-- Final Review: 15.01.2027.
-
-### Mögliche Förderung / Eigenanteil
-
-Mindestförderung 5.000 Euro; bei nichtstaatlicher Trägerschaft regelmäßig 25 % Eigenbeteiligung. Förderfähiger Scope und institutionelle Eignung sind vorab zu klären.
-
-### Benötigte Unterlagen / Antragsweg
-
-Bestandsübersicht, abgegrenztes Quellenpaket, Erschließungsplan, Metadaten-/Digitalisierungskonzept, Rechteklärung, dauerhafter professioneller Online-Zugang, Zeitplan, Kosten-/Finanzierungsplan und regelmäßig zwei Angebote für Scanleistungen. Vorabskizze mit EVALAG klären, danach formalen Antrag vorbereiten.
-
-### Vergleichbare Bewilligung
-
-Ein 2023 bewilligtes Projekt des MARCHIVUM Mannheim digitalisierte Vereinsbestände einschließlich des TSV 1846 und erhielt 59.285 Euro. Umfang und institutionelle Ausstattung sind nicht unmittelbar auf den TuS übertragbar.
-
-### Risiken / offene Punkte
-
-Institutionelle Förderfähigkeit, Publikationsweg, Rechte, Bestandsauswahl, förderfähige Kosten und Eigenanteil sind offen.
-
-### Nächster konkreter Schritt
-
-Zweiseitige Vorabskizze aus dem realen Archivstand erstellen und bis 15.10.2026 mit EVALAG besprechen.
+Fachlich starker Fit für Erschließung, Erhaltung und Digitalisierung. Mindestförderung 5.000 Euro; bei nichtstaatlicher Trägerschaft regelmäßig 25 % Eigenbeteiligung. Institutionelle Eignung, Publikationsweg und Förder-Scope vorab klären. Nächster Stichtag **31.01.2027**; Vorabskizze/EVALAG-Beratung intern bis **15.10.2026**. Ansprechpartnerin: Sabine Berganski, 06221/405462-92, `antragstiftungkulturgut@evalag.de`.
 
 ---
 
 ## Opportunity-Brief-Template
 
-Jede neue qualifizierte Chance enthält mindestens:
-
-- Opportunity-ID, Projekt, Programm, Priorität, Status und Verifizierungsdatum,
-- fachlichen und formalen Fit,
-- belastbare Förderstory,
-- zuständigen Ansprechpartner / offiziellen Beratungsweg,
-- offizielle Frist und interne Vorfristen,
-- Fördersumme, Fördersatz, Eigenanteil und Vorfinanzierung,
-- benötigte Unterlagen, Angebote, Nachweise, Partner und Beschlüsse,
-- Antragsweg,
-- Auswahlkriterien,
-- bekannte vergleichbare Bewilligungen,
-- Risiken und offene Fragen,
-- nächsten konkreten Schritt.
+Jede neue qualifizierte Chance enthält mindestens Projekt, Programm, Priorität, Verifizierungsdatum, Fit, Förderstory, Ansprechpartner, Fristen, Förderung/Eigenanteil, benötigte Unterlagen/Partner/Beschlüsse, Antragsweg, Auswahlkriterien, vergleichbare Bewilligungen, Risiken und nächste Aktion.
 
 ## Relationship to other documents
 
@@ -398,4 +225,4 @@ Jede neue qualifizierte Chance enthält mindestens:
 
 ## Future Development
 
-Wenn die Zahl gleichzeitig aktiver Chancen deutlich wächst, können einzelne Opportunity Briefs in eigene Dateien ausgelagert werden. Bis dahin bleibt diese zentrale Management-Übersicht die Source of Truth.
+Nur aktuell handlungsrelevante A-/B+-Chancen bleiben in dieser Datei. Eingereichte, geschlossene oder schwächere Fälle werden in den fachlich passenden Status überführt, damit die Entscheidungslage klein und verlässlich bleibt.
