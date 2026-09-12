@@ -15,12 +15,16 @@ Vor der ersten konkreten Entwicklungsarbeit einer Session:
 2. Lies `standards/role-bootstrap-standard.md`.
 3. Lies `roles/wordpress-developer/role.md`.
 4. Lies `roles/wordpress-developer/development-standard.md`.
-5. Lies `roles/wordpress-developer/START-PROMPT.md`.
-6. Wende `architecture/memory-router.md` auf den konkreten Auftrag an.
-7. Lies `projects/README.md` und anschließend nur die für den Auftrag relevante Projektdokumentation und `PROJECT-STATE.md`.
-8. Prüfe den aktuellen Quellcode und vorhandene relevante Entscheidungen, bevor du Änderungen planst.
+5. Lies `standards/software-development-quality-standard.md`.
+6. Lies `standards/data-persistence-and-database-standard.md`.
+7. Lies `roles/wordpress-developer/START-PROMPT.md`.
+8. Wende `architecture/memory-router.md` auf den konkreten Auftrag an.
+9. Lies `projects/README.md` und anschließend nur die für den Auftrag relevante Projektdokumentation und `PROJECT-STATE.md`.
+10. Prüfe den aktuellen Quellcode und vorhandene relevante Entscheidungen, bevor du Änderungen planst.
 
-Lade zusätzliche Standards und Fachquellen nur bei Bedarf. Vermeide unnötiges Voll-Laden des Repositories.
+Bei sichtbaren Oberflächen lies zusätzlich `design/design-principles.md` und `design/ui-standard.md`. Bei personenbezogenen Daten lies zusätzlich `roles/data-protection-manager/privacy-standard.md`.
+
+Lade weitere Standards und Fachquellen nur bei Bedarf. Vermeide unnötiges Voll-Laden des Repositories.
 
 ## Arbeitsauftrag
 
@@ -39,13 +43,20 @@ Die vorhandene produktive WordPress-Installation ist nicht dein direkter Arbeits
 
 - Kläre gewünschtes Verhalten und überprüfbares Erfolgskriterium aus Auftrag und Projektzustand.
 - Lies bestehenden Code, bevor du neuen Code schreibst.
+- Bestimme vor einer Änderung die fachliche Source of Truth und die betroffenen Datenobjekte.
 - Bevorzuge kleine, robuste Änderungen gegenüber großen Refactorings.
 - Verwende vorhandene Patterns, gemeinsame Komponenten und Architekturentscheidungen.
 - Keine neue parallele Datenhaltung, wenn ein führendes TuS-System existiert.
-- Deutsche, mobile, selbsterklärende UX ist Standard.
+- Dauerhafte Fachdaten niemals nur über Sessions, Session-IDs, URL-/Browserzustand, Transients oder Caches halten.
+- Deutsche, responsive und selbsterklärende UX ist Standard.
+- Neue und wesentlich geänderte UI folgt dem gemeinsamen TuS-UI-Standard und WCAG 2.2 AA als Zielstandard.
+- Sichtbare Änderungen auf relevanten Smartphone-, Tablet- und Desktop-Größen berücksichtigen.
 - Keine Fantasielogos oder nachgebauten Markenassets.
+- Eingaben, Berechtigungen, Nonces, Escaping, Datenbankzugriffe, Uploads und externe Requests sicher behandeln.
 - Datenschutz, Berechtigungen und Datenminimierung bei relevanten Datenflüssen berücksichtigen.
+- Performance, Empty States, Fehlerfälle und Fallbacks bereits beim Implementieren berücksichtigen.
 - Keine Secrets oder personenbezogenen Produktivdaten in Repository, Logs oder Testfixtures übernehmen.
+- WordPress-/Browser-Standardfunktionen vor unnötigen neuen Abhängigkeiten bevorzugen.
 
 ## Git-Workflow
 
@@ -67,7 +78,9 @@ Wenn eine Aufgabe Wissen aus der Live-WordPress-Installation benötigt, das nich
 Ein Entwicklungsauftrag ist erst übergabefähig, wenn:
 
 - der vereinbarte Scope umgesetzt oder ein klarer Blocker dokumentiert ist,
-- relevante Tests gelaufen sind,
+- relevante Tests tatsächlich gelaufen sind,
+- dauerhafte Daten korrekt gespeichert und erneut geladen werden können, soweit der Scope Persistenz betrifft,
+- relevante Security-/Privacy-/Accessibility-/Responsive-/Performance-Auswirkungen geprüft sind,
 - keine bekannten kritischen Regressionen offen sind,
 - der Projektzustand bei dauerhaft relevanten Änderungen aktualisiert ist,
 - Branch und Änderungen nachvollziehbar sind,
