@@ -87,22 +87,65 @@ Zu entscheiden sind insbesondere:
 - jährliche Prüfung,
 - finanzielle Auswirkung auf den Verein.
 
-### 6. Satzung und Beitragsordnung zuerst prüfen
+### 6. Verifizierte Satzungsgrundlage
 
-Vor einem endgültigen Beitragsbeschluss müssen die aktuelle TuS-Satzung und die geltende Beitragsordnung bzw. Beitragsregelung vorliegen und geprüft werden.
+Die aktuelle vorliegende Vereinssatzung ist die **Satzung des Turn- und Sportverein 1901 Mingolsheim e.V. vom 29.03.2019**.
 
-Aktuell liegen diese Unterlagen im bekannten digitalen Arbeitsstand noch nicht belastbar als kanonische Quelle vor. Bereits in der Finanzvorstands-Checkliste ist die Beschaffung der aktuellen Satzungen als offener Punkt vermerkt.
+Für die Beitragsfrage sind insbesondere folgende Regelungen maßgeblich:
 
-Zu klären ist insbesondere:
+#### § 4 Abs. 6 – Beiträge
 
-- welches Organ Beitragshöhen und Beitragsklassen beschließen darf,
-- ob Ermäßigungen bzw. Befreiungen bereits vorgesehen sind,
-- ob für das gewünschte Modell eine Beitragsordnungsänderung genügt oder eine Satzungsänderung erforderlich wäre,
-- ab welchem Zeitpunkt eine neue Regel rechtssicher und administrativ sinnvoll gelten kann.
+Die Mitglieder sind zur Entrichtung eines Jahresbeitrags verpflichtet.
 
-Ohne diese Prüfung wird kein technischer Automatismus und keine rückwirkende Beitragsänderung umgesetzt.
+Die Einzelheiten werden ausdrücklich in einer **Beitragsordnung** geregelt. Diese wird **auf Vorschlag des Vorstands von der Generalversammlung beschlossen**.
 
-### 7. Zielbild für den Prozess
+Daraus folgt für das geplante Anerkennungsmodell:
+
+- Der Vorstand kann das Modell fachlich vorbereiten und der Generalversammlung vorschlagen.
+- Ein dauerhaftes allgemeines Beitragsmodell für Trainer, Betreuer, Schiedsrichter oder Helfer soll nicht allein durch einen Vorstandsbeschluss eingeführt werden, solange die geltende Beitragsordnung dafür keine bereits beschlossene Ermächtigung enthält.
+- Vor einer endgültigen Umsetzung muss deshalb die aktuell geltende Beitragsordnung beschafft und geprüft werden.
+
+#### § 7 Abs. 8 i – Zuständigkeit der Generalversammlung
+
+Die Satzung bestätigt zusätzlich ausdrücklich, dass die Generalversammlung die Beitragsordnung gemäß § 4 Abs. 6 verabschiedet.
+
+Damit ist für eine Änderung der allgemeinen Beitragslogik nach aktuellem Satzungsstand grundsätzlich die Generalversammlung die maßgebliche Beschlussebene.
+
+#### § 3 Abs. 5 – Ehrenmitglieder
+
+Eine bereits satzungsmäßig geregelte Beitragsfreiheit besteht für Ehrenmitglieder:
+
+- Personen, die sich um die Förderung des Sports und der Jugend besonders verdient gemacht haben, können durch Vorstandsbeschluss zu Ehrenmitgliedern ernannt werden.
+- Ehrenmitglieder können Beitragsfreiheit in Anspruch nehmen.
+
+Diese Regel ist keine allgemeine Beitragsbefreiung für Trainer, Schiedsrichter oder Helfer. Eine solche Anerkennung soll deshalb transparent über die Beitragsordnung und nicht über eine künstliche Ausweitung des Ehrenmitgliedsstatus erfolgen.
+
+#### § 6 Abs. 2 und 3 – Ehrenamt und Aufwendungen
+
+Die Satzung unterscheidet außerdem zwischen Mitgliedsbeitrag und finanzieller Anerkennung bzw. Aufwendungsersatz für ehrenamtliche Tätigkeit.
+
+Vereins- und Organämter werden grundsätzlich ehrenamtlich ausgeübt. Im Rahmen der haushaltsrechtlichen Möglichkeiten können Aufwandsentschädigungen vorgesehen sein; notwendige Aufwendungen können unter den satzungsmäßigen Voraussetzungen ersetzt werden.
+
+Diese Instrumente werden nicht automatisch mit einem Beitragsnachlass vermischt. Beitragsanerkennung, Aufwendungsersatz und mögliche Aufwandsentschädigung bleiben fachlich getrennte Mechanismen.
+
+### 7. Noch fehlende Beitragsordnung
+
+Im aktuell zugänglichen Drive-Bestand wurde die geltende Beitragsordnung noch nicht gefunden.
+
+Sie ist der nächste notwendige Quellennachweis.
+
+Zu prüfen ist dort insbesondere:
+
+- aktuelle Beitragshöhen und Beitragsklassen,
+- bestehende Ermäßigungen und Befreiungen,
+- mögliche Härtefall- oder Einzelfallregelungen,
+- eventuell bereits an den Vorstand delegierte Entscheidungsspielräume,
+- Beginn und Ende von Beitragsänderungen,
+- Regelungen zu Familien, Alter oder Funktionsträgern.
+
+Erst danach lässt sich sicher beurteilen, ob lediglich die Beitragsordnung geändert werden muss oder ob weiterer formaler Anpassungsbedarf besteht.
+
+### 8. Zielbild für den Prozess
 
 ```text
 Funktion / Schiedsrichtertätigkeit / bestätigte Helferstunden
@@ -118,13 +161,15 @@ Funktion / Schiedsrichtertätigkeit / bestätigte Helferstunden
            Beitragsänderung / Nachlass
 ```
 
-### 8. Sinnvoller Vorstandsbeschluss als erster Schritt
+### 9. Sinnvoller Vorstandsbeschluss als erster Schritt
 
-Der Vorstand soll zunächst nur die Grundsatzrichtung klären:
+Für die Vorstandssitzung soll noch **keine konkrete Beitragsänderung** beschlossen werden.
 
-> Soll ein transparentes Beitragsanerkennungsmodell für nachweisbares Vereinsengagement entwickelt werden, das Funktionsträger, Schiedsrichter und bestätigte Helferstunden berücksichtigt?
+Sinnvoll ist stattdessen folgender Grundsatzbeschluss:
 
-Bei Zustimmung folgt noch kein unmittelbarer Nachlass. Danach werden Satzungs-/Beitragsgrundlage, Personengruppen, Finanzwirkung und konkrete Regelvarianten vorbereitet und erneut zur Entscheidung vorgelegt.
+> **Der Vorstand befürwortet die Entwicklung eines transparenten Beitragsanerkennungsmodells für nachweisbares Vereinsengagement. Das Modell soll Funktionsträger, aktive Schiedsrichter und bestätigte Helferleistungen berücksichtigen. Auf Basis der geltenden Beitragsordnung, der finanziellen Auswirkungen und einfacher Regelvarianten erarbeitet der Vorstand einen Vorschlag zur Beschlussfassung durch die Generalversammlung.**
+
+Bei Zustimmung folgt noch kein unmittelbarer Nachlass. Danach werden Beitragsordnung, Personengruppen, Finanzwirkung und konkrete Regelvarianten vorbereitet.
 
 ## Relationship to other documents
 
@@ -133,9 +178,12 @@ Bei Zustimmung folgt noch kein unmittelbarer Nachlass. Danach werden Satzungs-/B
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../../standards/approval-and-escalation.md`
 - `../../roles/data-protection-manager/`
+- Satzung des Turn- und Sportverein 1901 Mingolsheim e.V. vom 29.03.2019 – geschützte Originalquelle in Google Drive
 
 ## Future Development
 
-Nach dem Grundsatzentscheid werden die geltenden Vereinsunterlagen geprüft und anschließend 2–3 einfache Regelvarianten mit finanzieller Wirkung vorbereitet.
+Als Nächstes wird die aktuell geltende Beitragsordnung beschafft und gegen die Satzung geprüft.
 
-Erst nach einem formalen Vereinsbeschluss werden die gewählten Regeln in das Mitglieder- und Engagement-Modul übernommen. Das System soll Regeln historisieren können, damit spätere Änderungen frühere Beitragsjahre nicht rückwirkend verfälschen.
+Danach werden 2–3 einfache Regelvarianten mit finanzieller Wirkung vorbereitet und – sofern erforderlich – als Änderung der Beitragsordnung der Generalversammlung zur Beschlussfassung vorgeschlagen.
+
+Erst nach dem formalen Vereinsbeschluss werden die gewählten Regeln in das Mitglieder- und Engagement-Modul übernommen. Das System soll Regeln historisieren können, damit spätere Änderungen frühere Beitragsjahre nicht rückwirkend verfälschen.
