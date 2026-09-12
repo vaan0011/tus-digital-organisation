@@ -85,6 +85,36 @@ Noch offen:
 
 Erste Arbeitshypothese, **keine Rollenentscheidung**: Dies ist sehr wahrscheinlich eine dauerhafte fachliche Verantwortung. Vor Anlage einer formalen Rolle soll der vollständige Prozessumfang einmal inventarisiert werden, damit nicht nur Anmeldung und Kündigung modelliert werden.
 
+### 4. Materialwart / Beschaffungsradar
+
+Realer wiederkehrender Bedarf:
+
+- Trainings- und Fußballmaterial regelmäßig auf attraktive Beschaffungsmöglichkeiten prüfen,
+- insbesondere Fußbälle, Hütchen, Leibchen, Trainingsstangen, Koordinationsmaterial, Minitore, Ballnetze, Pumpen, Markierungs- und vergleichbares Verbrauchs-/Trainingsmaterial,
+- Vereins-, Mengen- und Aktionsangebote bei seriösen Händlern beobachten,
+- nur bei **außergewöhnlich gutem Preis-Leistungs-Verhältnis** aktiv melden.
+
+Gewünschte spätere Runtime:
+
+- **Cadence:** wöchentlich über n8n,
+- aktuelle Preise und Angebote gegen realistische Markt-/Referenzpreise und – soweit vorhanden – frühere TuS-Beschaffungspreise vergleichen,
+- Qualität, Vereins-Eignung, Stück-/Mengenpreis, Versand und Mengenstaffeln berücksichtigen,
+- reine Marketingrabatte oder gewöhnliche Preisbewegungen ignorieren,
+- bei einem echten Schnäppchen eine kurze Beschaffungsempfehlung mit Artikel, Händler, Endpreis, Vergleichspreis, Ersparnis, Mengenhinweis und Angebotsfrist ausgeben,
+- keine Bestellung automatisch auslösen; Beschaffung bleibt freigabepflichtig.
+
+Der Schwellwert für `außergewöhnlich günstig` soll nicht blind als fixer Rabatt-Prozentsatz definiert werden. Maßgeblich ist ein belastbarer Vergleich aus Marktpreis, Produktqualität, benötigter Menge und TuS-Bedarf. Ein konfigurierbarer Deal-Score bzw. Schwellenwert kann später aus realen Läufen kalibriert werden.
+
+Noch zu entscheiden:
+
+- Ist `Materialwart` eine eigene dauerhafte Rolle oder ein Beschaffungs-Skill/Runtime unter Sport bzw. Vereinsverwaltung?
+- Welche Materialgruppen gehören dauerhaft auf die Watchlist?
+- Soll zusätzlich ein Soll-/Ist-Lagerbestand geführt werden, damit nur wirklich benötigtes Material beobachtet wird?
+- Welche Händler und Ausrüster sind bevorzugt bzw. wegen bestehender Partnerschaften oder Konditionen besonders zu berücksichtigen?
+- Wie wird verhindert, dass ein günstiges Angebot gekauft wird, obwohl kein realer Bedarf besteht?
+
+Erste Arbeitshypothese, **noch keine Rollenfreigabe**: Der wiederkehrende Preis- und Bedarfscheck ist ein klarer Kandidat für einen späteren n8n-Runtime-Loop. Ob dafür ein eigener digitaler Mitarbeiter `Materialwart` entsteht oder der Loop einer bestehenden Sport-/Beschaffungsverantwortung zugeordnet wird, wird nach den ersten realen Anforderungen entschieden.
+
 ## Relationship to other documents
 
 - `README.md` – Prinzip und aktuelle formale Rollen
