@@ -24,6 +24,7 @@ Vor neuer Arbeit wird geprüft, was bereits gewusst, entschieden, gelernt, verwo
 
 - [`archive/`](archive/) – Historienarchiv, Quellen-/Register-Routing, aktueller Einstieg und Archiv-Second-Brain
 - [`funding/`](funding/) – Förderprogramme, Förderchancen, Förderkalender, Antragswissen und Learnings
+- [`governance/`](governance/) – Vorstandsarbeit, Agenda-/Beschluss-/Aufgabenlogik und organisationsweite Governance-Abläufe
 - [`sponsoring/`](sponsoring/) – Sponsoring- und Partnerwissen, Strategie, Partnerlogik und aktueller Arbeitsstand
 
 Weitere fachliche Wissensdomänen werden nur angelegt, wenn bestehende Rollen-, Projekt-, Design-, Archiv- oder andere Fachquellen nicht bereits die bessere kanonische Heimat sind.
