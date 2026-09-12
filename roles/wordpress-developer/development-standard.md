@@ -194,7 +194,43 @@ WordPress-Core-/Browser-/Theme-Funktionen werden bevorzugt, wenn sie den Bedarf 
 
 Für öffentliche Komponenten gelten die im Software Development Quality Standard beschriebenen Core-Web-Vitals-Ziele, sobald reale Messung möglich ist.
 
-### 12. Tests
+### 12. Plugin-Identität, Lifecycle und Kompatibilität
+
+Mehrere TuS-Plugins müssen gleichzeitig auf derselben WordPress-Installation sicher betrieben werden können.
+
+Daher besitzt jedes Plugin eine eindeutige technische Identität. Verbindlich sind insbesondere:
+
+- eigener stabiler Plugin-Slug und Text Domain,
+- eindeutiger PHP-Prefix bzw. Namespace für Klassen, Funktionen und Konstanten,
+- eindeutige Prefixe/Namen für Options, Transients, Cron-Hooks, REST-Routen, AJAX-Actions, Datenbanktabellen, Shortcodes und andere globale WordPress-Bezeichner,
+- ausreichend spezifische CSS-Klassen bzw. Scopes und JavaScript-Namensräume, damit Plugins einander und das Theme nicht unbeabsichtigt überschreiben.
+
+Generische globale Namen wie `save_data`, `settings`, `events` oder ungescopte CSS-Regeln sind zu vermeiden, wenn sie Kollisionsrisiken erzeugen.
+
+Für den Plugin-Lifecycle gilt:
+
+- Aktivierung ist wiederholbar bzw. idempotent und darf keine unkontrollierten Duplikate erzeugen,
+- Aktivierung führt keine unnötigen externen Requests oder lang laufenden Arbeiten aus,
+- Deaktivierung ist grundsätzlich **nicht destruktiv** und löscht keine fachlichen Daten,
+- Deaktivierung darf eigene temporäre Jobs/Cron-Hooks sauber stoppen, wenn dies erforderlich ist,
+- Deinstallation/Uninstall und dauerhafte Datenlöschung werden bewusst getrennt von Deaktivierung behandelt,
+- ein Uninstall löscht fachliche Daten nur nach dokumentierter Produktentscheidung und – bei produktiven bzw. potenziell relevanten Daten – menschlicher Freigabe,
+- Schema-Upgrades erfolgen über die dokumentierte Migrationslogik und nicht nur über Aktivierungstricks.
+
+Kompatibilität wird nicht geraten. Vor einem produktiven Release besitzt jedes Plugin einen dokumentierten und getesteten Support-Rahmen für mindestens:
+
+- minimale unterstützte WordPress-Version,
+- minimale unterstützte PHP-Version,
+- relevante Browser-/Frontend-Annahmen, soweit nötig,
+- notwendige Plugin-/Theme-/API-Abhängigkeiten.
+
+Die WordPress-Plugin-Header (`Requires at least`, `Requires PHP` usw.) werden passend gepflegt, sobald die getestete produktive Baseline feststeht.
+
+Eine Playground-Konfiguration wie `latest` oder eine Entwicklungs-PHP-Version ist **kein Beweis** für die produktive Mindestkompatibilität.
+
+Wenn die reale produktive WordPress-/PHP-Version noch nicht bekannt ist, darf Mathias für die Entwicklung eine dokumentierte Testbasis verwenden, aber keine unbelegte Mindestkompatibilität behaupten. Vor Deployment wird die reale Zielumgebung durch eine autorisierte Person bestätigt.
+
+### 13. Tests
 
 Tests richten sich nach Art und Risiko der Änderung.
 
@@ -210,7 +246,9 @@ Mindestens wird – soweit für den Scope relevant – geprüft:
 - funktionieren zentrale Tastatur-/Fokuspfade,
 - existiert ein sinnvoller Fallback bei externen Fehlern,
 - funktionieren Migrationen mit repräsentativem Altbestand,
-- respektieren öffentliche UI-Komponenten Theme-Tokens statt eigene Brand-Werte zu erzwingen.
+- respektieren öffentliche UI-Komponenten Theme-Tokens statt eigene Brand-Werte zu erzwingen,
+- bleibt bei Lifecycle-relevanten Änderungen Aktivierung wiederholbar und Deaktivierung nicht destruktiv,
+- entstehen keine offensichtlichen Namens-/Style-Kollisionen mit anderen TuS-Plugins oder WordPress/Theme.
 
 Tests werden stufenweise ausgeführt:
 
@@ -226,7 +264,7 @@ Ein Agent behauptet keinen Test als `PASSED`, wenn er ihn nicht tatsächlich dur
 
 Ein Stand wird erst nach erfolgreicher Prüfung als neuer Last Known Good behandelt.
 
-### 13. Pull Request
+### 14. Pull Request
 
 Jede relevante Änderung wird als PR vorbereitet.
 
@@ -241,7 +279,7 @@ Ein guter PR beschreibt knapp:
 
 Der PR beschreibt nicht künstlich zusätzliche Arbeit, die für das erreichte Ziel nicht benötigt wurde.
 
-### 14. Review vor Merge
+### 15. Review vor Merge
 
 Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 
@@ -254,12 +292,13 @@ Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 - Accessibility und Responsive-Verhalten,
 - Sicherheits- und Privacy-Risiken,
 - Performance,
+- Plugin-Grenzen, Lifecycle und Kompatibilität soweit betroffen,
 - unnötige Abhängigkeiten/Komplexität,
 - Definition of Done.
 
 Merge in `main` benötigt menschliche Freigabe, sofern nicht ausdrücklich anders geregelt.
 
-### 15. Dokumentation und Projekt-Checkpoint
+### 16. Dokumentation und Projekt-Checkpoint
 
 Dokumentation wird aktualisiert, wenn die Änderung:
 

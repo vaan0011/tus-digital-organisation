@@ -1,4 +1,26 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "default_agent": "mathias"
+  "default_agent": "mathias",
+  "permission": {
+    "edit": "allow",
+    "webfetch": "ask",
+    "bash": {
+      "*": "ask",
+      "git status": "allow",
+      "git status *": "allow",
+      "git diff": "allow",
+      "git diff *": "allow",
+      "git log": "allow",
+      "git log *": "allow",
+      "git show": "allow",
+      "git show *": "allow",
+      "git grep *": "allow",
+      "php -l *": "allow",
+      "git push": "deny",
+      "git push *": "deny",
+      "git reset --hard *": "deny",
+      "git clean *": "deny",
+      "rm -rf *": "deny"
+    }
+  }
 }
