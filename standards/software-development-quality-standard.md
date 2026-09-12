@@ -177,7 +177,21 @@ WordPress-APIs werden gegenüber unnötigen Eigenimplementierungen bevorzugt, da
 
 Upgradepfade berücksichtigen bestehende Daten und Installationen.
 
-### 12. Tests und Qualitätsnachweis
+### 12. Versionierung, Sprache, Datum und Zeit
+
+Plugin- und Datenbankschemaversionen werden bewusst geführt.
+
+Insbesondere:
+
+- Plugin-Header, zentrale Versionskonstante und Release-Artefakt dürfen nicht unbemerkt unterschiedliche Versionen behaupten,
+- eine Datenbankschemaversion wird getrennt geführt, wenn Migrationen nicht allein aus der Pluginversion sicher ableitbar sind,
+- ein Versionssprung ersetzt keine Migrationslogik,
+- Nutzertexte sind standardmäßig deutsch; WordPress-i18n-Funktionen werden bevorzugt, damit Strings zentral und technisch sauber behandelt werden,
+- Datums-/Zeitlogik verwendet WordPress-/Projektzeitfunktionen statt verstreuter Serverzeit-Annahmen,
+- Zeitzone und fachliche Bedeutung von Zeitstempeln müssen bei relevanten Funktionen eindeutig sein,
+- Anzeigeformat und Speicherformat werden nicht verwechselt.
+
+### 13. Tests und Qualitätsnachweis
 
 Tests richten sich nach Risiko und Änderungstyp. Ein Agent darf einen Test nicht als `PASSED` dokumentieren, wenn er ihn nicht tatsächlich ausgeführt hat.
 
@@ -198,7 +212,7 @@ Wo praktikabel werden automatisierte Tests, PHP-/Syntaxchecks, statische Analyse
 
 WordPress Playground ist ein bevorzugtes reproduzierbares Testmedium für unsere Plugins, ersetzt aber nicht jede fachliche oder gerätespezifische Prüfung.
 
-### 13. Definition of Done für Codeänderungen
+### 14. Definition of Done für Codeänderungen
 
 Eine Änderung ist erst übergabefähig, wenn:
 
@@ -212,6 +226,7 @@ Eine Änderung ist erst übergabefähig, wenn:
 - Fehler-/Empty-/Fallback-Zustände berücksichtigt sind,
 - notwendige Tests tatsächlich durchgeführt und dokumentiert wurden,
 - Datenbankänderungen einen nachvollziehbaren Migrationsweg besitzen,
+- Versionen bei betroffenen Release-/Schemaänderungen konsistent sind,
 - Projektzustand/Dokumentation bei dauerhaften Änderungen aktualisiert ist,
 - Branch und PR die Änderung nachvollziehbar beschreiben.
 
