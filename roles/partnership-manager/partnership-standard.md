@@ -38,6 +38,8 @@ Grundgedanke:
 
 > **Wenn Verein und Unternehmen ohnehin wirtschaftlich zusammenarbeiten, wird geprüft, ob daraus zusätzlich eine partnerschaftliche Beziehung mit erkennbarem beiderseitigem Nutzen entstehen kann.**
 
+Wenn operative Eignung und beiderseitiger Nutzen stimmen, wird eine Partnerschaft aktiv angestrebt statt die Beziehung auf eine reine Lieferanten-/Kundenbeziehung zu begrenzen.
+
 Das bedeutet ausdrücklich nicht:
 
 - jeder Lieferant muss Sponsor werden,
