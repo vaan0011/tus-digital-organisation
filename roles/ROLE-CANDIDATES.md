@@ -16,7 +16,7 @@ Nicht jeder wiederkehrende Vorgang benötigt einen eigenen digitalen Mitarbeiter
 
 ### Statuslogik
 
-Alle Einträge in diesem Dokument sind zunächst **ungeprüfte Kandidaten**.
+Neue Einträge in diesem Dokument sind zunächst **ungeprüfte Kandidaten**.
 
 Bei späterer Bearbeitung wird je Themenblock entschieden, ob der Bedarf am besten abgebildet wird durch:
 
@@ -28,23 +28,26 @@ Bei späterer Bearbeitung wird je Themenblock entschieden, ob der Bedarf am best
 - einen organisatorischen Prozess,
 - oder eine Kombination daraus.
 
-### 1. Vorstandssitzung / Vorstandsarbeit
+Geklärte Kandidaten werden auf ihre neue kanonische Quelle verwiesen und hier nicht parallel weitergeführt.
 
-Schnellnotizen:
+### 1. Vorstandssitzung / Vorstandsarbeit – entschieden
+
+Ursprüngliche Schnellnotizen:
 
 - Projekte
 - Agendabuilder
 - Nachverfolgung von Sitzungen
 - Anfragen an `vorstand@tus`
 
-Noch offen:
+**Entscheidung vom 12.09.2026:** Aus diesem Bedarf wird vorerst **keine eigene neue Rolle**.
 
-- Wer ist fachlich Owner für Vorbereitung, Durchführung und Nachverfolgung von Vorstandssitzungen?
-- Welche Informationen kommen aus dem Project Portfolio Manager und welche gehören in einen eigenen Sitzungsprozess?
-- Soll `vorstand@tus` lediglich Eingangskanal sein oder Teil eines strukturierten Triage-/Follow-up-Loops?
-- Ist ein Agendabuilder ein eigenes Produkt/Feature oder nur eine Ansicht auf bestehende Projekte, offene Entscheidungen und eingegangene Anfragen?
+Die Vorstandsarbeit wird als organisationsweiter **Sarah Governance Loop** weiterentwickelt. Sarah koordiniert Agenda-Vorbereitung, Triage, Aufgaben-/Beschlussnachverfolgung und die Verbindung zu bestehenden fachlichen Quellen. Entscheidungen bleiben beim zuständigen Vorstand.
 
-Erste Arbeitshypothese, **keine Rollenentscheidung**: Hier könnte ein dauerhafter Governance-/Vorstandsoperations-Bedarf entstehen. Vor einer neuen Rolle soll geprüft werden, wie viel davon durch Project Portfolio Manager, Posteingangs-Triage und einen Sitzungs-Loop abgedeckt werden kann.
+Kanonischer aktueller Stand:
+
+- `../knowledge/governance/CURRENT-STATE.md`
+
+Der Project Portfolio Manager bleibt fachliche Quelle für Projektstatus und Projektabhängigkeiten. Der Event Planner soll wiederkehrende operative Veranstaltungsdetails aus Vorstandssitzungen herausnehmen.
 
 ### 2. Sportpark
 
@@ -85,6 +88,7 @@ Erste Arbeitshypothese, **keine Rollenentscheidung**: Dies ist sehr wahrscheinli
 ## Relationship to other documents
 
 - `README.md` – Prinzip und aktuelle formale Rollen
+- `../knowledge/governance/CURRENT-STATE.md` – geklärter Governance-/Vorstandsbedarf
 - `../projects/PROJECT-PORTFOLIO.md` – formale Projekte und Projektkandidaten
 - `project-portfolio-manager/` – Projekte, Abhängigkeiten und Projektstatus
 - `data-protection-manager/` – Datenschutz und Informationsschutz bei personenbezogenen Prozessen
