@@ -10,7 +10,21 @@ Jede Änderung soll klein, überprüfbar, rückverfolgbar und möglichst risikoa
 
 ## Main Content
 
-### 1. Vor der Änderung
+### 1. Verbindliche Entwicklungsbasis
+
+Vor konkreter Coding-Arbeit gelten organisationsweit:
+
+- `../../standards/software-development-quality-standard.md`,
+- `../../standards/data-persistence-and-database-standard.md`,
+- `../../architecture/stability-and-simplicity.md`,
+- bei sichtbaren Oberflächen `../../design/design-principles.md` und `../../design/ui-standard.md`,
+- bei personenbezogenen Daten `../data-protection-manager/privacy-standard.md`.
+
+Zusätzlich gelten die jeweils aktuellen offiziellen WordPress Coding Standards für PHP, JavaScript, CSS und HTML sowie die WordPress Security- und Accessibility-Grundsätze.
+
+Projektspezifische Standards konkretisieren diese Basis, dürfen sie aber nicht stillschweigend abschwächen.
+
+### 2. Vor der Änderung
 
 Vor jeder Umsetzung wird geprüft:
 
@@ -23,6 +37,8 @@ Vor jeder Umsetzung wird geprüft:
 - Gibt es bereits passende Funktionen oder Muster?
 - Welche bestehenden Funktionen könnten unbeabsichtigt beeinflusst werden?
 - Ist die Änderung rein lokal oder architekturrelevant?
+- Welche dauerhaften Daten werden berührt und wo liegt deren Source of Truth?
+- Welche Security-, Privacy-, Accessibility-, Responsive- und Performance-Auswirkungen besitzt die Änderung?
 
 Bei länger laufenden Projekten wird zuerst die jeweilige `PROJECT-STATE.md` gelesen.
 
@@ -30,19 +46,19 @@ Relevante ADRs und Standards werden nicht nur bei neuen Chats, sondern vor Richt
 
 Bei architekturrelevanten Änderungen wird zusätzlich die Architecture Checklist angewendet.
 
-### 2. Branch statt direkter Änderung auf `main`
+### 3. Branch statt direkter Änderung auf `main`
 
 Normale Entwicklungsarbeit erfolgt auf einem eigenen Branch.
 
 Direkte Änderungen auf `main` sind nicht Teil des Standardprozesses.
 
-### 3. Scope klein halten
+### 4. Scope klein halten
 
 Ein PR soll ein klar umrissenes Ziel verfolgen.
 
 Unnötige Neben-Refactorings, kosmetische Umbauten oder zusätzliche Features werden vermieden, sofern sie nicht ausdrücklich Teil des Auftrags sind.
 
-### 4. Iterationen und Fehlersuche
+### 5. Iterationen und Fehlersuche
 
 Bei unklarer Ursache gilt der `Iteration & Progress Standard`.
 
@@ -55,68 +71,111 @@ Insbesondere:
 
 Bereits ausgeschlossene Wege werden nicht ohne neue belastbare Information wiederholt.
 
-### 5. Bestehendes Verhalten respektieren
+### 6. Bestehendes Verhalten respektieren
 
 Bestehende Funktionen werden nicht stillschweigend verändert.
 
 Wenn eine Änderung bestehendes Verhalten absichtlich ersetzt, muss dies im PR sichtbar beschrieben werden.
 
-### 6. UI und Markenassets
+### 7. UI, Accessibility und Markenassets
 
 Vor Änderungen an sichtbaren Oberflächen werden geprüft:
 
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
 - `../../design/logo.md`
+- projektspezifische UI-/Homepage-Standards, wenn relevant.
 
 Bestehende TuS-UI-Muster werden wiederverwendet, bevor projektspezifische Varianten entstehen.
 
 Offizielle Logos werden aus der zentralen freigegebenen Quelle übernommen und nicht nachgebaut oder eigenmächtig verändert.
 
-### 7. Sicherheits- und Datenregeln
+Neue oder wesentlich geänderte Oberflächen müssen auf relevanten Desktop-, Tablet- und Mobile-Viewports sowie auf zentrale Tastatur-/Fokus-/Accessibility-Pfade geprüft werden. WCAG 2.2 Level AA ist der Zielstandard für neue und geänderte TuS-UI.
 
-Besondere Aufmerksamkeit gilt:
+### 8. Sicherheits-, Privacy- und Datenregeln
 
-- Eingabevalidierung,
-- Ausgabe-Escaping,
-- Berechtigungsprüfungen,
-- Nonces bei schreibenden Aktionen,
-- Datenbankzugriffen,
-- Dateioperationen,
-- externen Requests,
+Der `Software Development Quality Standard` ist verbindlich.
+
+Besondere Aufmerksamkeit gilt insbesondere:
+
+- Eingabevalidierung und Sanitization,
+- kontextgerechtem Ausgabe-Escaping,
+- Berechtigungsprüfungen/Capabilities,
+- Nonces/CSRF-Schutz bei schreibenden Aktionen,
+- REST-`permission_callback`,
+- vorbereiteten Datenbankzugriffen,
+- Dateioperationen/Uploads,
+- externen Requests und deren Fehlerpfaden,
+- Secrets und Logs,
 - personenbezogenen Daten.
 
-Keine Datenmigration wird beiläufig als Nebeneffekt einer anderen Änderung eingeführt.
+Nonces ersetzen keine Berechtigungsprüfung.
 
-### 8. Datenbankänderungen
+Bei personenbezogenen Daten gilt zusätzlich der Privacy & Information Protection Standard.
+
+### 9. Datenhaltung und Datenbankänderungen
+
+Der `../../standards/data-persistence-and-database-standard.md` ist organisationsweit verbindlich.
+
+Dauerhafte Fachdaten dürfen insbesondere nicht über Session-IDs, Browser-Sessions, Query-Parameter, Local/Session Storage, JavaScript-Runtime-State, Transients oder Caches als alleinige Source of Truth gehalten werden.
 
 Schema- oder Migrationsänderungen benötigen einen klaren Migrationspfad.
 
 Vor Umsetzung wird festgelegt:
 
 - wie bestehende Daten erhalten bleiben,
+- welche Source of Truth gilt,
 - wie Fehler erkannt werden,
-- ob ein Rollback möglich ist,
-- wie die Änderung getestet wird.
+- ob ein Rollback oder sicherer Vorwärts-/Wiederherstellungsweg möglich ist,
+- wie die Änderung mit repräsentativem Altbestand getestet wird,
+- welche Indizes und Abfragepfade bei eigenen Tabellen tatsächlich benötigt werden.
 
 Datenmigrationen mit möglichem Datenverlust benötigen menschliche Freigabe.
 
-### 9. Tests
+### 10. Performance und Abhängigkeiten
+
+Performance wird bereits beim Design berücksichtigt.
+
+Insbesondere werden vermieden:
+
+- unnötige Datenbankabfragen in Schleifen,
+- unlimitierte große Listen,
+- externe synchrone Requests bei jedem Seitenaufruf ohne fachlichen Grund,
+- global geladenes CSS/JavaScript für nur lokal benötigte Funktionen,
+- große neue Bibliotheken für kleine Funktionen.
+
+Caches dürfen Performance verbessern, sind aber keine fachliche Source of Truth.
+
+WordPress-Core-/Browser-Funktionen werden bevorzugt, wenn sie den Bedarf robust erfüllen.
+
+Für öffentliche Komponenten gelten die im Software Development Quality Standard beschriebenen Core-Web-Vitals-Ziele, sobald reale Messung möglich ist.
+
+### 11. Tests
 
 Tests richten sich nach Art und Risiko der Änderung.
 
-Mindestens wird geprüft:
+Mindestens wird – soweit für den Scope relevant – geprüft:
 
 - funktioniert das neue Verhalten,
 - funktionieren relevante bestehende Abläufe weiterhin,
 - entstehen offensichtliche PHP-/WordPress-Fehler,
-- verhält sich die Änderung mit leeren, ungültigen oder unerwarteten Eingaben sinnvoll.
+- verhält sich die Änderung mit leeren, ungültigen oder unerwarteten Eingaben sinnvoll,
+- funktionieren Berechtigungsgrenzen,
+- bleiben dauerhafte Daten nach Reload/erneutem Öffnen erhalten,
+- funktionieren Desktop/Tablet/Mobile,
+- funktionieren zentrale Tastatur-/Fokuspfade,
+- existiert ein sinnvoller Fallback bei externen Fehlern,
+- funktionieren Migrationen mit repräsentativem Altbestand.
 
-Automatisierte Tests werden bevorzugt, wenn sie praktikabel sind. Manuelle Prüfungen werden dokumentiert, wenn keine geeignete Automatisierung vorhanden ist.
+Automatisierte Tests, Syntax-/Lint-/statische Checks und WordPress Coding Standards werden bevorzugt, wenn sie praktikabel sind. WordPress Playground ist ein bevorzugtes reproduzierbares Testmedium.
+
+Manuelle Prüfungen werden dokumentiert, wenn keine geeignete Automatisierung vorhanden ist.
+
+Ein Agent behauptet keinen Test als `PASSED`, wenn er ihn nicht tatsächlich durchgeführt hat.
 
 Ein Stand wird erst nach erfolgreicher Prüfung als neuer Last Known Good behandelt.
 
-### 10. Pull Request
+### 12. Pull Request
 
 Jede relevante Änderung wird als PR vorbereitet.
 
@@ -125,23 +184,28 @@ Ein guter PR beschreibt knapp:
 - Ziel,
 - wesentliche Änderungen,
 - durchgeführte Tests,
+- Security-/Privacy-/Daten-/UI-Auswirkungen soweit relevant,
 - bekannte Einschränkungen oder Risiken,
 - notwendige Folgeschritte.
 
-### 11. Review vor Merge
+### 13. Review vor Merge
 
 Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 
 - vereinbarten Scope,
 - Core Principles,
+- Software Development Quality Standard,
+- Data Persistence & Database Standard,
 - Stability & Simplicity,
 - UI- und Markenstandards bei sichtbaren Änderungen,
-- Sicherheitsrisiken,
+- Accessibility und Responsive-Verhalten,
+- Sicherheits- und Privacy-Risiken,
+- Performance,
 - Definition of Done.
 
 Merge in `main` benötigt menschliche Freigabe, sofern nicht ausdrücklich anders geregelt.
 
-### 12. Dokumentation und Projekt-Checkpoint
+### 14. Dokumentation und Projekt-Checkpoint
 
 Dokumentation wird aktualisiert, wenn die Änderung:
 
@@ -157,9 +221,12 @@ Versionstexte oder Changelogs sollen nicht als Ersatz für belastbare Projektdok
 ## Relationship to other documents
 
 - `role.md`
+- `../../standards/software-development-quality-standard.md`
+- `../../standards/data-persistence-and-database-standard.md`
 - `../../standards/employee-operating-standard.md`
 - `../../standards/iteration-and-progress.md`
 - `../../standards/approval-and-escalation.md`
+- `../data-protection-manager/privacy-standard.md`
 - `../../decisions/README.md`
 - `../../decisions/architecture-checklist.md`
 - `../../design/design-principles.md`
@@ -169,4 +236,6 @@ Versionstexte oder Changelogs sollen nicht als Ersatz für belastbare Projektdok
 
 ## Future Development
 
-Dieser Standard wird aus realen WordPress-Projekten erweitert, etwa um konkrete Regeln für Datenmigrationen, Tests, Releases, Backups oder CI, sobald diese wiederkehrend benötigt werden.
+Die nächste technische Ausbaustufe ist keine weitere abstrakte Regel, sondern reproduzierbares Tooling zur Durchsetzung: WordPress Coding Standards/PHPCS, PHP-Syntaxchecks, Plugin Check und projektspezifische automatisierte Tests.
+
+Solche Checks werden erst als Merge-Gate behandelt, wenn sie stabil und reproduzierbar im Repository laufen.

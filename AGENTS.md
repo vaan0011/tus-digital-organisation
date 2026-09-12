@@ -21,11 +21,15 @@ Vor konkreter Coding-Arbeit lies in dieser Reihenfolge:
 1. `standards/role-bootstrap-standard.md`
 2. `roles/wordpress-developer/role.md`
 3. `roles/wordpress-developer/development-standard.md`
-4. `roles/wordpress-developer/START-PROMPT.md`
-5. `architecture/memory-router.md`
-6. `projects/README.md`
-7. die für den Auftrag zuständige `PROJECT-STATE.md`
-8. den aktuellen Quellcode des betroffenen Projekts
+4. `standards/software-development-quality-standard.md`
+5. `standards/data-persistence-and-database-standard.md`
+6. `roles/wordpress-developer/START-PROMPT.md`
+7. `architecture/memory-router.md`
+8. `projects/README.md`
+9. die für den Auftrag zuständige `PROJECT-STATE.md`
+10. den aktuellen Quellcode des betroffenen Projekts
+
+Bei sichtbarer UI gelten zusätzlich `design/design-principles.md` und `design/ui-standard.md`. Bei personenbezogenen Daten gilt zusätzlich `roles/data-protection-manager/privacy-standard.md`.
 
 Lade weitere ADRs, Design-, Privacy-, Sponsoring-, Matchday-, Archiv- oder andere Fachquellen nur, wenn sie für die konkrete Aufgabe relevant sind.
 
@@ -73,24 +77,36 @@ Bei einem ausreichend klaren Auftrag:
 
 1. relevanten Projektzustand und Code lesen,
 2. gewünschtes Verhalten und Erfolgskriterium bestimmen,
-3. vorhandene Architektur und Patterns wiederverwenden,
-4. kleinsten robusten Änderungsscope wählen,
-5. auf einem eigenen Branch arbeiten,
-6. relevante Tests/Checks ausführen,
-7. Fehler nicht mit unbegründeten Neben-Refactorings kaschieren,
-8. dauerhafte Erkenntnisse im zuständigen `PROJECT-STATE.md` bzw. der fachlich richtigen Source of Truth zurückschreiben,
-9. Änderungen als nachvollziehbaren PR vorbereiten.
+3. Datenquelle/Source of Truth und Auswirkungen auf Security, Privacy, Accessibility, Responsive und Performance bestimmen,
+4. vorhandene Architektur und Patterns wiederverwenden,
+5. kleinsten robusten Änderungsscope wählen,
+6. auf einem eigenen Branch arbeiten,
+7. relevante Tests/Checks ausführen,
+8. Fehler nicht mit unbegründeten Neben-Refactorings kaschieren,
+9. dauerhafte Erkenntnisse im zuständigen `PROJECT-STATE.md` bzw. der fachlich richtigen Source of Truth zurückschreiben,
+10. Änderungen als nachvollziehbaren PR vorbereiten.
 
 Merge nach `main`, produktives Deployment und irreversible Änderungen bleiben menschlich freigabepflichtig, sofern nicht ausdrücklich anders vereinbart.
 
 ### 5. Qualitäts- und Sicherheitsregeln
 
-- Keine Secrets, Passwörter, API-Keys oder personenbezogenen Produktivdaten in GitHub schreiben.
-- Keine Fantasielogos oder nachgebauten TuS-Markenassets erzeugen.
-- Bestehende Design- und Privacy-Standards bei relevanten Änderungen lesen und einhalten.
-- Keine neue Parallelarchitektur einführen, wenn bereits ein führendes TuS-System existiert.
-- Deutsche Nutzeroberflächen und selbsterklärende, mobile UX sind Standard für TuS-Produkte.
-- Funktion vor Komplexität: keine zusätzliche Bibliothek, Schicht oder Abstraktion ohne klaren Nutzen.
+Der `Software Development Quality Standard` und der `Data Persistence & Database Standard` sind für Coding-Arbeit verbindlich.
+
+Insbesondere:
+
+- dauerhafte Fachdaten nicht in Sessions, Session-IDs, URL-/Browserzustand oder Caches als Source of Truth halten,
+- Eingaben validieren/sanitizen und Ausgaben kontextgerecht escapen,
+- Capabilities und Nonces/CSRF-Schutz bewusst verwenden,
+- Datenbankzugriffe sicher und strukturiert umsetzen,
+- Security, Privacy und Least Privilege beachten,
+- Desktop/Tablet/Mobile bei sichtbaren Änderungen prüfen,
+- WCAG 2.2 AA für neue und geänderte UI als Zielstandard verwenden,
+- gemeinsame TuS-UI-Muster und Original-Brandassets nutzen,
+- Performance und Fehler-/Fallback-Zustände bereits bei der Umsetzung berücksichtigen,
+- keine Secrets, Passwörter, API-Keys oder personenbezogenen Produktivdaten in GitHub, Logs oder Testfixtures schreiben,
+- keine neue Parallelarchitektur einführen, wenn bereits ein führendes TuS-System existiert,
+- deutsche Nutzeroberflächen und selbsterklärende UX sind Standard für TuS-Produkte,
+- Funktion vor Komplexität: keine zusätzliche Bibliothek, Schicht oder Abstraktion ohne klaren Nutzen,
 - Änderungen müssen für einen späteren Entwickler nachvollziehbar bleiben.
 
 ### 6. Verhalten bei fehlendem Backendwissen
@@ -105,10 +121,15 @@ Wenn eine Aufgabe Informationen aus der bestehenden Live-WordPress-Installation 
 ## Relationship to other documents
 
 - `standards/role-bootstrap-standard.md`
+- `standards/software-development-quality-standard.md`
+- `standards/data-persistence-and-database-standard.md`
 - `roles/wordpress-developer/role.md`
 - `roles/wordpress-developer/development-standard.md`
 - `roles/wordpress-developer/START-PROMPT.md`
 - `architecture/memory-router.md`
+- `design/design-principles.md`
+- `design/ui-standard.md`
+- `roles/data-protection-manager/privacy-standard.md`
 - `projects/README.md`
 - `.opencode/agents/mathias.md`
 - `employees/wordpress-developer/opencode-workplace.md`
