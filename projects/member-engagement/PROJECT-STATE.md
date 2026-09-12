@@ -21,7 +21,8 @@ Aktueller Stand:
 - noch kein Plugin-Code,
 - noch keine produktive Personendatenbank,
 - noch kein Abgleich zur bestehenden Mitgliederverwaltung,
-- fachlicher Scope in `FUNCTIONAL-SCOPE.md` dokumentiert.
+- fachlicher Scope in `FUNCTIONAL-SCOPE.md` dokumentiert,
+- Beitragsanerkennung in `CONTRIBUTION-RECOGNITION.md` als eigener Fachstand dokumentiert.
 
 ## Verified
 
@@ -34,6 +35,28 @@ Aktueller Stand:
 - Helferschichten sollen gezielt an Gruppen verteilt werden können, ohne unnötige zusätzliche Registrierung.
 - Eine Rabatt-/Nachlass-Berechtigung kann aus anerkannten Stunden und Soll-Regeln ermittelt werden.
 - Die tatsächliche Beitragsänderung erfolgt zunächst nicht automatisch, sondern über einen geprüften Abgleich mit der bestehenden Mitgliederverwaltung.
+- Die Satzung vom 29.03.2019 weist die Einzelheiten der Beiträge der Beitragsordnung zu; diese wird auf Vorschlag des Vorstands von der Generalversammlung beschlossen.
+
+## Existing Contribution Decision – Source Reconciliation Open
+
+Nach aktueller Auskunft aus der Vereinsführung hat die Generalversammlung etwa zwei Jahre vor September 2026 bereits einen **Funktionärsnachlass von bis zu 25 %** beschlossen.
+
+Dieser bestehende Beschluss ist bei der weiteren Modellierung zu berücksichtigen und nicht als neuer Regelvorschlag erneut von Grund auf zu öffnen.
+
+Noch nicht im digitalen Quellenbestand gefunden wurden:
+
+- der damalige Generalversammlungsbeschluss bzw. das Protokoll,
+- die aktuell geltende Beitragsordnung.
+
+Bis zum Quellenabgleich bleibt deshalb offen:
+
+- exakter Wortlaut des 25-%-Beschlusses,
+- welche Funktionen erfasst sind,
+- wer die konkrete Höhe innerhalb des Rahmens festlegt,
+- Inkrafttreten und heutige administrative Umsetzung,
+- ob der Beschluss als Änderung/Ergänzung der Beitragsordnung oder ausdrücklich als Satzungsänderung gefasst wurde.
+
+Kanonischer Fachstand: `CONTRIBUTION-RECOGNITION.md`.
 
 ## Open Architecture Questions
 
@@ -97,11 +120,16 @@ Vor Implementierung muss der Verein die fachliche Regel bestimmen, unter anderem
 
 Diese Regeln werden nicht im Code versteckt, sondern nachvollziehbar konfiguriert und historisiert.
 
-### 7. Beitragsnachlass
+### 7. Beitragsanerkennung
 
-Zu klären sind:
+Zu klären bzw. nachzuziehen sind:
 
-- Art und Höhe des Nachlasses,
+- Primärquelle des bereits beschlossenen Funktionärsnachlasses bis 25 %,
+- geltende Beitragsordnung,
+- konkrete Reichweite und Administration des bestehenden Funktionärsnachlasses,
+- Behandlung aktiver Schiedsrichter,
+- Helferstunden-Regel,
+- maximale Gesamtentlastung und Kombinationslogik,
 - Zeitpunkt der Ermittlung,
 - Freigabeprozess,
 - Export-/Abgleichformat,
@@ -128,6 +156,7 @@ Für die erste Ausbaustufe nicht vorgesehen:
 ## Relevant Decisions & Standards
 
 - `FUNCTIONAL-SCOPE.md`
+- `CONTRIBUTION-RECOGNITION.md`
 - `README.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../team-manager/`
@@ -143,10 +172,11 @@ Für die erste Ausbaustufe nicht vorgesehen:
 Vor dem ersten Plugin-Code:
 
 1. aktuelle Mitgliederverwaltung mit Datenfeldern und Export-/Schnittstellenmöglichkeiten analysieren,
-2. gemeinsame Person-/Mitgliedsidentität als Architekturentscheidung definieren,
-3. Verantwortungsgrenze Event Planner ↔ Mitglieder-Modul technisch festlegen,
-4. minimales Abgleichmodell für Mitglied + Mannschaft/Abteilung + Helferstunden definieren,
-5. erst danach MVP-Scope und Testumgebung aufsetzen.
+2. aktuelle Beitragsordnung und Primärbeleg des 25-%-Funktionärsbeschlusses nachziehen,
+3. gemeinsame Person-/Mitgliedsidentität als Architekturentscheidung definieren,
+4. Verantwortungsgrenze Event Planner ↔ Mitglieder-Modul technisch festlegen,
+5. minimales Abgleichmodell für Mitglied + Mannschaft/Abteilung + Helferstunden definieren,
+6. erst danach MVP-Scope und Testumgebung aufsetzen.
 
 ## Update Rule
 
