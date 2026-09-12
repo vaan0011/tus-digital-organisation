@@ -57,16 +57,42 @@ Schnellnotizen:
 - 1-€-Jobber Stunden
 - Wetterdaten und Taskliste
 - Angebotssuche
+- Bestellwesen
+- Getränkeversorgung / Getränkebestellung Kiosk
+
+#### Beschaffung und Versorgung
+
+Der Sportpark benötigt neben Aufgaben- und Stundensteuerung wahrscheinlich eine einfache wiederkehrende Beschaffungs- und Versorgungslogik.
+
+Relevante Beispiele:
+
+- Trainings- und Fußballmaterial,
+- Verbrauchsmaterial,
+- Platz-/Pflegematerial,
+- Kioskgetränke,
+- weitere regelmäßig benötigte Sportparkartikel.
+
+Für den Kiosk ist später insbesondere zu klären:
+
+- aktueller Bestand und Mindestbestand je relevanter Ware,
+- erwarteter Bedarf aus Heimspielen, Veranstaltungen und Saisonverlauf,
+- Bestellmenge und Gebinde,
+- Lieferant sowie Lieferung versus Selbstabholung,
+- Lieferzeit, Mindestbestellwert und Rückgabe-/Leergutlogik,
+- Verbindung zum künftigen Getränkepartner,
+- Freigabe vor tatsächlicher Bestellung.
+
+Ein späterer n8n-Loop könnte aus Bestand, anstehenden Heimspielen/Events und Lieferzeiten einen **Bestellvorschlag** erzeugen. Eine Bestellung wird nicht ohne ausdrücklich definierten Freigabeprozess ausgelöst.
 
 Noch offen:
 
 - Welche Aufgaben gehören zum Sportparkteam, zu Greenkeeping/Hartmut oder zu Verwaltung/Beschaffung?
-- Welche Daten müssen dauerhaft erfasst werden: Aufgaben, Verantwortliche, Stunden, Material, Maschinen, Wetterbezug, Kosten?
+- Welche Daten müssen dauerhaft erfasst werden: Aufgaben, Verantwortliche, Stunden, Material, Maschinen, Wetterbezug, Kosten und Bestände?
 - Welche Aufgaben können regelbasiert aus Wetterdaten abgeleitet oder priorisiert werden?
-- Was bedeutet `Angebotssuche` im konkreten Ablauf: Material, Dienstleistungen, Maschinen, Verbrauchsmittel oder mehrere Kategorien?
+- Welche Teile des Bestellwesens gehören zum Materialwart und welche zu einer breiteren Beschaffungs-/Versorgungsverantwortung?
 - Welche Teile sind operative Tagesarbeit und welche sind Projekt-/Investitionsthemen?
 
-Erste Arbeitshypothese, **keine Rollenentscheidung**: Wahrscheinlich zunächst ein gemeinsamer Sportpark-Operations-Bereich mit Task-/Stundenerfassung und späteren Automationen. Ob dafür eine neue Rolle nötig ist, wird gegen bestehende Sportpark-/Greenkeeper-Verantwortung geprüft.
+Erste Arbeitshypothese, **keine Rollenentscheidung**: Wahrscheinlich zunächst ein gemeinsamer Sportpark-Operations-Bereich mit Task-/Stundenerfassung, Bestands-/Bestelllogik und späteren Automationen. Ob dafür eine neue Rolle nötig ist, wird gegen bestehende Sportpark-/Greenkeeper-/Beschaffungsverantwortung geprüft.
 
 ### 3. Mitgliederverwaltung
 
@@ -105,6 +131,8 @@ Gewünschte spätere Runtime:
 
 Der Schwellwert für `außergewöhnlich günstig` soll nicht blind als fixer Rabatt-Prozentsatz definiert werden. Maßgeblich ist ein belastbarer Vergleich aus Marktpreis, Produktqualität, benötigter Menge und TuS-Bedarf. Ein konfigurierbarer Deal-Score bzw. Schwellenwert kann später aus realen Läufen kalibriert werden.
 
+Der Kandidat hängt eng mit dem Sportpark-Bestellwesen zusammen. Der reine Angebotsradar soll nicht unnötig vom realen Bestand und Bedarf getrennt werden.
+
 Noch zu entscheiden:
 
 - Ist `Materialwart` eine eigene dauerhafte Rolle oder ein Beschaffungs-Skill/Runtime unter Sport bzw. Vereinsverwaltung?
@@ -112,8 +140,71 @@ Noch zu entscheiden:
 - Soll zusätzlich ein Soll-/Ist-Lagerbestand geführt werden, damit nur wirklich benötigtes Material beobachtet wird?
 - Welche Händler und Ausrüster sind bevorzugt bzw. wegen bestehender Partnerschaften oder Konditionen besonders zu berücksichtigen?
 - Wie wird verhindert, dass ein günstiges Angebot gekauft wird, obwohl kein realer Bedarf besteht?
+- Gehört die Kiosk-/Getränkeversorgung in dieselbe Verantwortung oder nur in denselben Beschaffungsprozess?
 
 Erste Arbeitshypothese, **noch keine Rollenfreigabe**: Der wiederkehrende Preis- und Bedarfscheck ist ein klarer Kandidat für einen späteren n8n-Runtime-Loop. Ob dafür ein eigener digitaler Mitarbeiter `Materialwart` entsteht oder der Loop einer bestehenden Sport-/Beschaffungsverantwortung zugeordnet wird, wird nach den ersten realen Anforderungen entschieden.
+
+### 5. Scouting – Jugend und Herren
+
+Realer wiederkehrender Bedarf:
+
+Der TuS möchte den regionalen Fußballmarkt systematischer beobachten und potenziell interessante Spieler frühzeitig erkennen, statt nur auf persönliche Zufallshinweise zu reagieren.
+
+Vorgesehener Beobachtungsraum:
+
+- Kreisligen und Kreisklassen im Raum **Bruchsal**,
+- Kreisligen und Kreisklassen im Raum **Karlsruhe**,
+- Kreisligen und Kreisklassen im Raum **Heidelberg**,
+- **Landesligen Baden**,
+- **Verbandsliga Baden**.
+
+Der Arbeitsbedarf umfasst grundsätzlich **Herren und Jugend**, wird aber wegen unterschiedlicher Schutz- und Datenschutzanforderungen nicht identisch behandelt.
+
+#### Mögliche spätere Herren-Runtime
+
+Ein Scouting-Run könnte regelmäßig öffentlich verfügbare sportliche Informationen aus belastbaren Quellen sichten und daraus Kandidatenhinweise erzeugen.
+
+Denkbare Kriterien, die fachlich noch festzulegen sind:
+
+- Position,
+- Alter,
+- aktuelles und bisheriges Spielniveau,
+- Einsätze / Spielminuten,
+- Tore und weitere belastbar verfügbare Leistungsindikatoren,
+- Entwicklung über mehrere Spieltage / Saisons,
+- Vereinswechsel bzw. Wechselhistorie, soweit öffentlich und relevant,
+- regionale Erreichbarkeit,
+- erkennbarer Positions- oder Kaderbedarf des TuS.
+
+Ausgabe soll keine automatische Spielerbewertung als Wahrheit sein, sondern eine **Scouting-Shortlist mit Begründung und Quellen**, die anschließend durch sportlich Verantwortliche geprüft wird.
+
+#### Jugend – zusätzliche Grenzen
+
+Für Jugendspieler gelten strengere Leitplanken.
+
+Vorgesehen ist ausschließlich die Nutzung **öffentlicher sportlicher Informationen aus legitimen Fußball-/Verbandsquellen**. Nicht vorgesehen sind insbesondere:
+
+- private oder halbprivate Social-Media-Recherche,
+- Sammlung von Schul-, Familien-, Wohn- oder privaten Kontaktdaten,
+- verdeckte Persönlichkeits- oder Verhaltensprofile,
+- automatisierte Kontaktaufnahme mit Minderjährigen,
+- automatisierte Transfer-/Wechselempfehlungen ohne menschliche sportliche Prüfung.
+
+Bei Jugendspielern dient ein digitaler Scouting-Run zunächst nur der sportlichen Vorauswahl bzw. Beobachtung. Jede weitere Prüfung und Ansprache bleibt bei den zuständigen menschlichen Vereinsverantwortlichen und muss zu Jugend-/Datenschutzstandards passen.
+
+#### Noch zu entscheiden
+
+- Wird `Scouting` eine eigene Rolle oder ein Skill/Runtime unter Sport / sportlicher Leitung?
+- Welche Mannschaften des TuS sollen konkret unterstützt werden?
+- Welche Altersklassen im Jugendbereich sind tatsächlich relevant?
+- Welche Positionen und Kaderbedarfe werden als Input benötigt?
+- Welche öffentlichen Datenquellen sind dauerhaft nutzbar, belastbar und technisch zugänglich?
+- Wie oft soll der Markt geprüft werden: wöchentlich, rund um Transferperioden oder ereignisbasiert?
+- Welche Kriterien erzeugen einen Hinweis und welche nur Beobachtung?
+- Wo wird eine Shortlist geschützt geführt und wer darf sie sehen?
+- Wie werden bereits geprüfte / verworfene Kandidaten markiert, damit keine Schleifen entstehen?
+
+Erste Arbeitshypothese, **noch keine Rollenfreigabe**: Der Bedarf ist dauerhaft und klar genug für einen späteren Scouting-Loop. Vor einem eigenen digitalen Mitarbeiter werden zunächst Datenquellen, sportliche Kriterien, Jugendgrenzen und der Handoff an Trainer bzw. sportlich Verantwortliche definiert.
 
 ## Relationship to other documents
 
@@ -122,6 +213,7 @@ Erste Arbeitshypothese, **noch keine Rollenfreigabe**: Der wiederkehrende Preis-
 - `../projects/PROJECT-PORTFOLIO.md` – formale Projekte und Projektkandidaten
 - `project-portfolio-manager/` – Projekte, Abhängigkeiten und Projektstatus
 - `data-protection-manager/` – Datenschutz und Informationsschutz bei personenbezogenen Prozessen
+- `../standards/child-youth-protection.md` – Schutzanforderungen bei Jugendbezug
 - `../organization/organization-model.md` – Organisationsmodell und Verantwortung
 
 ## Future Development
