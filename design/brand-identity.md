@@ -12,6 +12,12 @@ Die Marke wird nicht bei jedem Produkt neu erfunden.
 
 Offizielle Assets und freigegebene Designentscheidungen sind Organisationswissen und werden wiederverwendet.
 
+Für WordPress gilt zusätzlich:
+
+> **Die Brand Identity wird zur Laufzeit vom aktiven Theme bereitgestellt. Plugins liefern Funktion und Struktur, nicht ihre eigene Markenidentität.**
+
+Ein späterer Theme-Wechsel darf deshalb nicht erfordern, Farben oder Schriften in jedem TuS-Plugin einzeln anzupassen.
+
 ## Main Content
 
 ### 1. Markencharakter
@@ -22,18 +28,36 @@ Gestaltung darf sportlich, emotional und zeitgemäß sein, ohne beliebig oder au
 
 ### 2. Verbindliche Quellen
 
-Die jeweils verbindlichen Details liegen in:
+Die fachlich verbindlichen Details liegen in:
 
 - `logo.md` für offizielle Logos,
-- `colors.md` für freigegebene Markenfarben,
+- `colors.md` für freigegebene Markenfarben und deren semantische Bedeutung,
 - `typography.md` für freigegebene Schriften,
 - `visual-language.md` für Bild- und Formensprache,
 - `ui-standard.md` für digitale Bedienoberflächen,
 - `product-types.md` für produktspezifische Anforderungen.
 
-Diese Dokumente sind die fachliche Source of Truth. Einzelne Entwürfe, Chats oder generierte Bilder ersetzen sie nicht.
+Diese Dokumente sind die Governance- und Design-Source-of-Truth. Einzelne Entwürfe, Chats oder generierte Bilder ersetzen sie nicht.
 
-### 3. Status von Markenbestandteilen
+Für die **technische Ausspielung in WordPress** ist das aktive TuS-Theme die Runtime-Source-of-Truth für Brand-Tokens wie Farben und Typografie. Das Theme setzt die freigegebenen Markenentscheidungen über WordPress Global Styles, Theme-Konfiguration und/oder stabile CSS-Custom-Properties um.
+
+Plugins duplizieren diese Werte nicht als eigene Markenquelle.
+
+### 3. Theme und Plugins
+
+Für TuS-WordPress-Produkte gilt:
+
+- öffentliche Plugin-Komponenten erben Farben und Typografie aus dem aktiven Theme,
+- Plugins verwenden bevorzugt WordPress Global Styles bzw. vom Theme bereitgestellte semantische CSS-Variablen,
+- Markenfarben und Markenfonts werden nicht als feste Hex-Werte oder eigene Font-Dateien in jedem Plugin dupliziert,
+- ein Plugin darf neutrale technische Fallbacks besitzen, wenn ein Theme-Token fehlt; der Fallback wird nicht zur zweiten Brand-Source-of-Truth,
+- Layout-, Abstands-, Accessibility- und Interaktionsregeln dürfen im Plugin definiert werden, soweit sie funktional erforderlich sind,
+- Original-Logos und andere Locked Assets werden weiterhin aus der zentral freigegebenen Asset-Quelle verwendet,
+- ein Theme-Wechsel muss ohne fachliche Codeänderung in den Plugins möglich bleiben, solange die vereinbarte Token-/Style-Schnittstelle erfüllt wird.
+
+Interne WordPress-Backend-Oberflächen dürfen sich stärker an nativen WordPress-Admin-Mustern orientieren. Sie sollen funktional konsistent bleiben, müssen aber nicht die öffentliche Theme-Gestaltung künstlich nachbauen.
+
+### 4. Status von Markenbestandteilen
 
 Jeder Markenbestandteil gehört zu einem der folgenden Zustände:
 
@@ -44,7 +68,7 @@ Jeder Markenbestandteil gehört zu einem der folgenden Zustände:
 
 Ein Designer darf einen noch offenen Bereich nicht eigenmächtig als `Approved` behandeln.
 
-### 4. Wiedererkennbarkeit vor Effekthascherei
+### 5. Wiedererkennbarkeit vor Effekthascherei
 
 Ein starkes Einzelmotiv darf die Vereinsidentität nicht verdrängen.
 
@@ -57,7 +81,7 @@ Insbesondere bleiben:
 
 auch dann verbindlich, wenn ein kreativer Entwurf mit anderen Varianten optisch spektakulärer wirken würde.
 
-### 5. Produktgerechte Anwendung
+### 6. Produktgerechte Anwendung
 
 Brand Identity bedeutet nicht, jedes Medium identisch zu gestalten.
 
@@ -67,7 +91,7 @@ Sie müssen jedoch dieselbe Markenbasis respektieren.
 
 Produktspezifische Unterschiede werden in `product-types.md` beschrieben.
 
-### 6. Originale statt Rekonstruktionen
+### 7. Originale statt Rekonstruktionen
 
 Verbindliche Assets werden aus ihren freigegebenen Quelldateien übernommen.
 
@@ -78,7 +102,7 @@ Sie werden nicht:
 - aus einem Mockup rekonstruiert,
 - aus einer niedrig aufgelösten Vorschau neu gebaut.
 
-### 7. Lernende Brand Identity
+### 8. Lernende Brand Identity
 
 Die Brand Identity darf wachsen.
 
@@ -97,7 +121,8 @@ Eine erfolgreiche Einzelgrafik wird nicht automatisch zur neuen Markenregel.
 - `product-types.md`
 - `design-workflow.md`
 - `../decisions/ADR-0003-central-brand-assets-and-shared-ui.md`
+- `../standards/software-development-quality-standard.md`
 
 ## Future Development
 
-Die Brand Identity wird durch freigegebene reale Arbeiten weiter konkretisiert. Insbesondere Farben, Typografie, Bildsprache und Produktvorlagen sollen schrittweise aus tatsächlich genutzten und bewährten Designs entstehen.
+Die Brand Identity wird durch freigegebene reale Arbeiten weiter konkretisiert. Farben, Typografie und weitere digitale Brand-Tokens werden im Theme als technische Runtime-Konfiguration gepflegt, damit die Plugins von konkreten Markenwerten entkoppelt bleiben.
