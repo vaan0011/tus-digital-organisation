@@ -10,9 +10,11 @@ Der Standard ergänzt projektspezifische Anforderungen. Er ersetzt keine fachlic
 
 ## Core Principle
 
-> **Funktional richtig reicht nicht. TuS-Software muss verständlich, sicher, dauerhaft, zugänglich, performant und wartbar sein.**
+> **Funktional richtig reicht nicht. TuS-Software muss verständlich, sicher, dauerhaft, zugänglich, performant, ressourceneffizient und wartbar sein.**
 
 Eine kurzfristig funktionierende Lösung darf keine dauerhafte technische Schuld erzeugen, wenn eine einfache robuste Lösung möglich ist.
+
+**Schlank in Entwicklung und Betrieb, robust im Verhalten.** Weniger Code, weniger Abhängigkeiten und kürzere Arbeitsläufe sind ein Qualitätsgewinn, solange Sicherheit, Datenintegrität, Accessibility, Verständlichkeit und notwendige Fehlerbehandlung nicht geopfert werden.
 
 ## Main Content
 
@@ -208,6 +210,14 @@ Je nach Änderung werden mindestens geprüft:
 - externe API-Fehler/Fallbacks,
 - Migrationen mit repräsentativem Altbestand.
 
+Tests werden **risikobasiert und stufenweise** ausgeführt:
+
+1. zuerst der kleinste gezielte Check für die geänderte Funktion,
+2. danach direkt betroffene Regressionstests,
+3. erst bei querschnittlicher Änderung, erhöhtem Risiko oder Release-Bedarf breitere Test-Suites.
+
+Unveränderte teure Tests werden nicht ohne Grund mehrfach im selben Arbeitslauf wiederholt. Ein vollständiger Testlauf ist kein Selbstzweck und ersetzt keine gezielte Prüfung des geänderten Verhaltens.
+
 Wo praktikabel werden automatisierte Tests, PHP-/Syntaxchecks, statische Analyse und WordPress Coding Standards eingesetzt.
 
 WordPress Playground ist ein bevorzugtes reproduzierbares Testmedium für unsere Plugins, ersetzt aber nicht jede fachliche oder gerätespezifische Prüfung.
@@ -227,8 +237,114 @@ Eine Änderung ist erst übergabefähig, wenn:
 - notwendige Tests tatsächlich durchgeführt und dokumentiert wurden,
 - Datenbankänderungen einen nachvollziehbaren Migrationsweg besitzen,
 - Versionen bei betroffenen Release-/Schemaänderungen konsistent sind,
+- keine unnötige neue Abhängigkeit, Parallelarchitektur oder spekulative Funktion eingeführt wurde,
+- die Lösung für den aktuellen realen Bedarf nicht unnötig komplex ist,
 - Projektzustand/Dokumentation bei dauerhaften Änderungen aktualisiert ist,
 - Branch und PR die Änderung nachvollziehbar beschreiben.
+
+### 15. Entwicklungsökonomie und Ressourceneffizienz
+
+Entwicklungszeit, KI-/Agent-Laufzeit, Modell-Tokens, CI-Laufzeit, externe API-Aufrufe, Datenbanklast, Netzwerkverkehr, Speicher und dauerhafte Wartung sind begrenzte Ressourcen.
+
+Sie werden bewusst eingesetzt. Ziel ist **nicht maximale Aktivität**, sondern die kleinste belastbare Änderung, die den realen Bedarf vollständig erfüllt.
+
+#### Minimum Effective Change
+
+Für jede Aufgabe gilt:
+
+> **Implementiere die kleinste robuste Änderung, die das vereinbarte Erfolgskriterium erfüllt.**
+
+Das bedeutet insbesondere:
+
+- keinen zusätzlichen Scope ohne konkreten Auftrag oder nachgewiesene technische Notwendigkeit,
+- keine Features „für später“ auf Vorrat,
+- keine spekulative Generalisierung für hypothetische Anwendungsfälle,
+- keine großen Refactorings, wenn eine kleine saubere Änderung genügt,
+- keine zusätzliche Abstraktionsschicht nur wegen möglicher zukünftiger Wiederverwendung,
+- keine neue Bibliothek, Tabelle, API, Queue oder Infrastruktur, wenn vorhandene Mittel den Bedarf robust erfüllen,
+- vorhandene gemeinsame Komponenten und WordPress-/Browser-Mechanismen wiederverwenden,
+- wenn Entfernen oder Vereinfachen das Problem besser löst als Hinzufügen, wird Vereinfachen bevorzugt.
+
+#### Zielgerichtete Agent-Läufe
+
+Vor einem Coding-Lauf werden – soweit aus Auftrag und Projektstand ableitbar – bestimmt:
+
+- konkretes Erfolgskriterium,
+- betroffener Projekt-/Dateibereich,
+- kleinster sinnvoller Änderungsscope,
+- notwendige statt nur mögliche Kontextquellen,
+- zuerst auszuführende gezielte Tests,
+- Stop Condition des Laufs.
+
+Ein Coding-Agent:
+
+- lädt nicht vorsorglich das gesamte Repository oder alle Fachbereiche,
+- verwendet Suche und gezielte Dateien vor breit angelegten Repository-Audits,
+- führt keine wiederholten unveränderten Suchen oder Tests ohne neuen Erkenntnisgewinn aus,
+- untersucht zunächst die wahrscheinlichste und kleinste Fehler-/Änderungsfläche,
+- erweitert den Scope nur, wenn neue Evidenz dies erforderlich macht,
+- beendet den Lauf, sobald Erfolgskriterium und notwendige Qualitätschecks erfüllt sind,
+- setzt nicht eigenständig mit optionalen Verbesserungen, Schönheitsrefactorings oder „nice to have“-Features fort.
+
+Wenn ein zunächst kleiner Auftrag während der Arbeit deutlich größer wird, mehrere neue Architekturfragen öffnet oder einen unklaren Langlauf erzeugen würde, wird ein reproduzierbarer Checkpoint erstellt und der zusätzliche Scope getrennt bewertet, statt stillschweigend weiterzulaufen.
+
+#### Proportionale Prüfung statt Vollprüfung aus Gewohnheit
+
+Qualitätsprüfungen richten sich nach Risiko und Änderungsfläche.
+
+Beispiele:
+
+- reine Text-/Labeländerung benötigt keine vollständige Datenbank-Regression,
+- lokale CSS-Anpassung benötigt keinen vollständigen Plugin-Smoketest, wenn keine Logik betroffen ist,
+- neue Persistenzlogik benötigt dagegen Speichern-/Reload-/Migrationsprüfungen,
+- neue Berechtigungslogik benötigt positive und negative Capability-Tests,
+- querschnittliche Core-/Schemaänderungen rechtfertigen einen breiteren Regressionstest.
+
+Tests werden nicht weggelassen, um Laufzeit zu sparen; sie werden **passend statt pauschal** gewählt.
+
+#### Schlanke Produktarchitektur
+
+Auch das fertige Produkt nutzt Ressourcen sparsam:
+
+- kein Polling, wenn ein Event/Trigger oder bedarfsgesteuerter Abruf genügt,
+- Polling-Frequenzen werden an die reale Änderungsrate angepasst,
+- externe APIs werden gebündelt, gecacht oder vorab synchronisiert, wenn dadurch unnötige wiederholte Requests vermieden werden,
+- keine N+1-Abfragen oder unnötige Datenbankrunden,
+- keine vollständigen Datenmengen laden, wenn eine begrenzte Ansicht genügt,
+- Frontend-Assets nur dort laden, wo sie benötigt werden,
+- keine dauerhaften Hintergrundjobs ohne klaren Zweck,
+- keine Datenkopien ohne fachlichen oder technischen Nutzen,
+- keine Optimierung für hypothetische Größenordnungen, die beim TuS nicht absehbar sind.
+
+Die Architektur soll mit realem Bedarf wachsen. Sie muss erweiterbar sein, aber sie wird nicht vorsorglich für theoretischen Enterprise-Maßstab überbaut.
+
+#### Robustheit wird nicht eingespart
+
+Ressourceneffizienz bedeutet ausdrücklich **nicht**:
+
+- fehlende Validierung,
+- fehlende Berechtigungsprüfung,
+- flüchtige statt dauerhafte Datenhaltung,
+- ausgelassene notwendige Tests,
+- fehlende Fehlerbehandlung,
+- schlechtere Accessibility,
+- unverständlichen oder absichtlich verdichteten Code,
+- Verzicht auf notwendige Migrationen oder Datenintegrität.
+
+Eine leicht längere, klare und robuste Implementierung ist besser als cleverer Minimalcode, der schwer wartbar oder fehleranfällig ist.
+
+#### Stop Conditions
+
+Ein Entwicklungsarbeitslauf wird beendet bzw. übergeben, wenn eine der folgenden Bedingungen erreicht ist:
+
+- Erfolgskriterium ist erfüllt und die relevanten Checks sind erfolgreich,
+- eine menschliche/fachliche Entscheidung wird benötigt,
+- eine notwendige Information ist nicht aus den verfügbaren Quellen beschaffbar,
+- der Scope wächst wesentlich über den Auftrag hinaus,
+- weitere Versuche erzeugen keinen neuen Erkenntnisgewinn,
+- die nächste sinnvolle Arbeit ist ein eigenständiger Folgeauftrag.
+
+„Es gäbe noch weitere Verbesserungsmöglichkeiten“ ist **kein Grund**, einen erfolgreichen Arbeitslauf fortzusetzen.
 
 ## Relationship to other documents
 
@@ -254,3 +370,5 @@ Externe Referenzstandards:
 Die Regeln sollen schrittweise durch automatisierte Qualitätschecks unterstützt werden, insbesondere WordPress Coding Standards/PHPCS, PHP-Syntaxchecks, Plugin Check und projektspezifische Tests.
 
 Messwerte und Tooling werden erst dann zentral verschärft, wenn sie reproduzierbar in der bestehenden Entwicklungsumgebung laufen; Standards werden nicht durch CI-Scheinprüfungen ersetzt.
+
+Auch neue Quality Gates müssen ihren eigenen Ressourcenverbrauch rechtfertigen: dauerhaft teure Checks werden nur eingeführt, wenn ihr Qualitätsnutzen den zusätzlichen Laufzeit-/Wartungsaufwand sinnvoll übersteigt.
