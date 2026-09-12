@@ -29,7 +29,7 @@ Vor konkreter Coding-Arbeit lies in dieser Reihenfolge:
 9. die für den Auftrag zuständige `PROJECT-STATE.md`
 10. den aktuellen Quellcode des betroffenen Projekts
 
-Bei sichtbarer UI gelten zusätzlich `design/design-principles.md` und `design/ui-standard.md`. Bei personenbezogenen Daten gilt zusätzlich `roles/data-protection-manager/privacy-standard.md`.
+Bei sichtbarer UI gelten zusätzlich `design/design-principles.md`, `design/ui-standard.md` und `design/brand-identity.md`. Bei personenbezogenen Daten gilt zusätzlich `roles/data-protection-manager/privacy-standard.md`.
 
 Lade weitere ADRs, Design-, Privacy-, Sponsoring-, Matchday-, Archiv- oder andere Fachquellen nur, wenn sie für die konkrete Aufgabe relevant sind.
 
@@ -77,18 +77,19 @@ Bei einem ausreichend klaren Auftrag:
 
 1. relevanten Projektzustand und Code lesen,
 2. gewünschtes Verhalten und Erfolgskriterium bestimmen,
-3. Datenquelle/Source of Truth und Auswirkungen auf Security, Privacy, Accessibility, Responsive und Performance bestimmen,
-4. vorhandene Architektur und Patterns wiederverwenden,
-5. kleinsten robusten Änderungsscope wählen,
+3. kleinsten robusten Scope und Stop Condition des Arbeitslaufs bestimmen,
+4. Datenquelle/Source of Truth und Auswirkungen auf Security, Privacy, Accessibility, Responsive und Performance bestimmen,
+5. vorhandene Architektur und Patterns wiederverwenden,
 6. auf einem eigenen Branch arbeiten,
-7. relevante Tests/Checks ausführen,
+7. zuerst gezielte, danach nur bei Bedarf breitere Tests/Checks ausführen,
 8. Fehler nicht mit unbegründeten Neben-Refactorings kaschieren,
 9. dauerhafte Erkenntnisse im zuständigen `PROJECT-STATE.md` bzw. der fachlich richtigen Source of Truth zurückschreiben,
-10. Änderungen als nachvollziehbaren PR vorbereiten.
+10. Änderungen als nachvollziehbaren PR vorbereiten,
+11. nach erfülltem Erfolgskriterium und notwendigen Qualitätschecks den Lauf beenden.
 
 Merge nach `main`, produktives Deployment und irreversible Änderungen bleiben menschlich freigabepflichtig, sofern nicht ausdrücklich anders vereinbart.
 
-### 5. Qualitäts- und Sicherheitsregeln
+### 5. Qualitäts-, Theme- und Sicherheitsregeln
 
 Der `Software Development Quality Standard` und der `Data Persistence & Database Standard` sind für Coding-Arbeit verbindlich.
 
@@ -102,6 +103,9 @@ Insbesondere:
 - Desktop/Tablet/Mobile bei sichtbaren Änderungen prüfen,
 - WCAG 2.2 AA für neue und geänderte UI als Zielstandard verwenden,
 - gemeinsame TuS-UI-Muster und Original-Brandassets nutzen,
+- öffentliche Plugin-UIs beziehen Brand-Farben und Brand-Typografie aus dem aktiven WordPress-Theme/Global Styles statt sie im Plugin fest zu verdrahten,
+- ein Theme-Wechsel soll keine fachliche Plugin-Codeänderung erfordern,
+- Backend-UIs dürfen native WordPress-Admin-Muster verwenden und müssen das öffentliche Theme nicht nachbauen,
 - Performance und Fehler-/Fallback-Zustände bereits bei der Umsetzung berücksichtigen,
 - keine Secrets, Passwörter, API-Keys oder personenbezogenen Produktivdaten in GitHub, Logs oder Testfixtures schreiben,
 - keine neue Parallelarchitektur einführen, wenn bereits ein führendes TuS-System existiert,
@@ -109,7 +113,27 @@ Insbesondere:
 - Funktion vor Komplexität: keine zusätzliche Bibliothek, Schicht oder Abstraktion ohne klaren Nutzen,
 - Änderungen müssen für einen späteren Entwickler nachvollziehbar bleiben.
 
-### 6. Verhalten bei fehlendem Backendwissen
+### 6. Ressourcendisziplin
+
+Für Coding-Agents gilt **Minimum Effective Change**:
+
+- nur den Kontext laden, der für den konkreten Auftrag benötigt wird,
+- Suche und gezielte Dateien vor vollständigen Repository-Audits verwenden,
+- nicht vorsorglich alle Projekte, Rollen oder historischen Dokumente lesen,
+- keinen zusätzlichen Scope, keine spekulativen Features und keine Zukunftsabstraktionen ohne realen Bedarf entwickeln,
+- bestehende Funktionen und Komponenten vor Neuerfindung wiederverwenden,
+- kleine robuste Änderungen großen Refactorings vorziehen,
+- gezielte Tests zuerst ausführen; breite Suites nur bei entsprechendem Risiko,
+- identische Suchen oder teure Tests nicht ohne neue Evidenz wiederholen,
+- keine optionalen Verbesserungen nach erledigtem Auftrag automatisch anhängen.
+
+Wenn der Scope während der Arbeit wesentlich wächst, mehrere neue Architekturfragen öffnet oder ein unklarer Langlauf entsteht, wird ein reproduzierbarer Checkpoint erstellt und der zusätzliche Scope getrennt behandelt.
+
+**Ein erfolgreicher Lauf endet, wenn das vereinbarte Erfolgskriterium erfüllt und die notwendigen Qualitätschecks durchgeführt sind.**
+
+Längere Laufzeit ist kein Qualitätsmerkmal. Kürzere Laufzeit ist aber ebenfalls kein Ziel, wenn dadurch Security, Datenintegrität, Accessibility, Robustheit oder notwendige Tests fehlen würden.
+
+### 7. Verhalten bei fehlendem Backendwissen
 
 Wenn eine Aufgabe Informationen aus der bestehenden Live-WordPress-Installation benötigt, die im Repository nicht vorhanden sind:
 
@@ -129,6 +153,7 @@ Wenn eine Aufgabe Informationen aus der bestehenden Live-WordPress-Installation 
 - `architecture/memory-router.md`
 - `design/design-principles.md`
 - `design/ui-standard.md`
+- `design/brand-identity.md`
 - `roles/data-protection-manager/privacy-standard.md`
 - `projects/README.md`
 - `.opencode/agents/mathias.md`

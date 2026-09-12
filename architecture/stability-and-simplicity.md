@@ -14,6 +14,10 @@ Die Plattform wird so einfach wie möglich und nur so komplex wie nötig entwick
 
 Mächtigkeit entsteht nicht durch viele Systeme, Tabellen oder Benutzeroberflächen, sondern durch klare Core-Objekte, bedeutungsvolle Beziehungen und kontextbezogene Nutzung gemeinsamer Informationen.
 
+> **Wir bauen für den realen TuS-Bedarf – nicht für hypothetische Enterprise-Szenarien.**
+
+Robustheit entsteht durch klare Zuständigkeiten, gute Datenmodelle, sichere Fehlerpfade und kontrollierte Erweiterbarkeit; nicht durch vorsorglich eingebaute Komplexität.
+
 ---
 
 ## Main Content
@@ -88,7 +92,37 @@ Bevorzugt werden:
 - klare Fehlerbehandlung
 - sichere Wiederherstellung
 
-Die konkrete Qualitätsbasis für Security, Accessibility, Responsive, Performance, Fehlerbehandlung und Tests steht in `../standards/software-development-quality-standard.md`.
+Die konkrete Qualitätsbasis für Security, Accessibility, Responsive, Performance, Fehlerbehandlung, Tests und Entwicklungsökonomie steht in `../standards/software-development-quality-standard.md`.
+
+### Schlankheit vor vorsorglicher Komplexität
+
+Eine Architekturentscheidung muss ihre zusätzliche Komplexität rechtfertigen.
+
+Daher gilt:
+
+- keine Microservice-/Queue-/API-Schicht nur für theoretische spätere Skalierung,
+- keine eigene Tabelle, wenn ein bestehendes robustes Datenmodell den Bedarf sauber erfüllt,
+- keine zusätzliche Datenkopie ohne klaren Zweck,
+- keine dauerhaften Hintergrundprozesse ohne realen fachlichen Trigger,
+- keine große Bibliothek für eine kleine native Funktion,
+- keine Generalisierung, bevor mindestens ein realer Wiederverwendungsfall erkennbar ist,
+- keine Optimierung für Größenordnungen, die beim TuS derzeit nicht plausibel sind.
+
+Erweiterbarkeit bedeutet, eine saubere Grenze und einen verständlichen nächsten Ausbaupunkt zu hinterlassen. Erweiterbarkeit bedeutet nicht, alle später denkbaren Fälle heute schon zu implementieren.
+
+### Ressourcen folgen dem realen Bedarf
+
+CPU, Speicher, Datenbankzugriffe, Netzwerk, externe API-Aufrufe, CI-Läufe, Automationsfrequenzen und KI-/Agent-Laufzeit sind Ressourcen.
+
+Ihre Nutzung wird proportional zum realen Nutzen gestaltet.
+
+- Ereignis-/Trigger-basierte Abläufe werden bevorzugt, wenn sie unnötiges Polling vermeiden.
+- Polling wird nur so häufig ausgeführt, wie sich die zugrunde liegende Information sinnvoll ändern kann.
+- Daten werden bedarfsgerecht geladen statt vorsorglich vollständig.
+- Caching wird dort eingesetzt, wo es nachweisbar wiederholte Arbeit reduziert; nicht als Ersatz für ein sauberes Datenmodell.
+- Entwickler- und Agentenläufe enden, wenn das vereinbarte Ergebnis belastbar erreicht ist.
+
+Ressourcenschonung darf keine Security-, Datenintegritäts-, Accessibility- oder Robustheitsanforderung aushebeln.
 
 ### Keine unnötigen Integrationen
 

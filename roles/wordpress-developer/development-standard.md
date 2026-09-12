@@ -6,7 +6,9 @@ Dieses Dokument definiert die verbindliche Arbeitsweise für Änderungen an Word
 
 ## Core Principle
 
-Jede Änderung soll klein, überprüfbar, rückverfolgbar und möglichst risikoarm sein.
+Jede Änderung soll klein, überprüfbar, rückverfolgbar, ressourceneffizient und möglichst risikoarm sein.
+
+> **Minimum Effective Change: die kleinste robuste Änderung, die das reale Erfolgskriterium erfüllt.**
 
 ## Main Content
 
@@ -17,7 +19,7 @@ Vor konkreter Coding-Arbeit gelten organisationsweit:
 - `../../standards/software-development-quality-standard.md`,
 - `../../standards/data-persistence-and-database-standard.md`,
 - `../../architecture/stability-and-simplicity.md`,
-- bei sichtbaren Oberflächen `../../design/design-principles.md` und `../../design/ui-standard.md`,
+- bei sichtbaren Oberflächen `../../design/design-principles.md`, `../../design/ui-standard.md` und `../../design/brand-identity.md`,
 - bei personenbezogenen Daten `../data-protection-manager/privacy-standard.md`.
 
 Zusätzlich gelten die jeweils aktuellen offiziellen WordPress Coding Standards für PHP, JavaScript, CSS und HTML sowie die WordPress Security- und Accessibility-Grundsätze.
@@ -30,15 +32,18 @@ Vor jeder Umsetzung wird geprüft:
 
 - Was ist das konkrete gewünschte Verhalten?
 - Was ist das überprüfbare Erfolgskriterium?
+- Was ist ausdrücklich **nicht** Teil dieses Auftrags?
+- Was ist die Stop Condition des Arbeitslaufs?
 - Was ist der letzte dokumentierte Projektstand?
 - Gibt es einen Last Known Good?
 - Welche relevanten Entscheidungen wurden bereits getroffen?
-- Welche Dateien und Komponenten sind betroffen?
+- Welche Dateien und Komponenten sind voraussichtlich tatsächlich betroffen?
 - Gibt es bereits passende Funktionen oder Muster?
 - Welche bestehenden Funktionen könnten unbeabsichtigt beeinflusst werden?
 - Ist die Änderung rein lokal oder architekturrelevant?
 - Welche dauerhaften Daten werden berührt und wo liegt deren Source of Truth?
 - Welche Security-, Privacy-, Accessibility-, Responsive- und Performance-Auswirkungen besitzt die Änderung?
+- Welche kleinsten gezielten Tests belegen das gewünschte Verhalten zuerst?
 
 Bei länger laufenden Projekten wird zuerst die jeweilige `PROJECT-STATE.md` gelesen.
 
@@ -56,9 +61,34 @@ Direkte Änderungen auf `main` sind nicht Teil des Standardprozesses.
 
 Ein PR soll ein klar umrissenes Ziel verfolgen.
 
-Unnötige Neben-Refactorings, kosmetische Umbauten oder zusätzliche Features werden vermieden, sofern sie nicht ausdrücklich Teil des Auftrags sind.
+Unnötige Neben-Refactorings, kosmetische Umbauten oder zusätzliche Features werden vermieden, sofern sie nicht ausdrücklich Teil des Auftrags oder technisch erforderlich sind.
 
-### 5. Iterationen und Fehlersuche
+Insbesondere gilt:
+
+- keine Features auf Vorrat,
+- keine spekulative Generalisierung für hypothetische Zukunftsfälle,
+- keine neue Abstraktionsschicht ohne aktuellen Nutzen,
+- keine neue Bibliothek, Tabelle, API oder Infrastruktur, wenn vorhandene Mittel den Bedarf robust erfüllen,
+- keine automatisch angehängten `nice to have`-Verbesserungen nach erfülltem Auftrag.
+
+Wenn der Scope während der Arbeit wesentlich wächst, wird nicht still weiterentwickelt. Der belastbare Zwischenstand wird dokumentiert und der zusätzliche Scope als Folgearbeit getrennt behandelt.
+
+### 5. Ressourceneffiziente Arbeitsläufe
+
+Entwicklungszeit, KI-/Agent-Laufzeit, Modell-Tokens, CI-Laufzeit, API-Aufrufe und spätere Wartung sind Ressourcen.
+
+Daher gilt:
+
+- nur die für die Aufgabe notwendigen Dateien und Quellen laden,
+- gezielte Suche vor vollständigem Repository-Scanning,
+- zuerst die kleinste wahrscheinliche Änderungs-/Fehlerfläche untersuchen,
+- Tests stufenweise nach Risiko ausführen,
+- identische Suchen, Builds und Tests nicht ohne neuen Erkenntnisgewinn wiederholen,
+- einen erfolgreichen Lauf nach erfülltem Erfolgskriterium und notwendigen Checks beenden.
+
+Lange Läufe werden nicht künstlich vermieden, wenn ein reales Problem tatsächlich Tiefe benötigt. Ein Lauf darf aber nicht nur deshalb wachsen, weil weitere theoretische Verbesserungen möglich wären.
+
+### 6. Iterationen und Fehlersuche
 
 Bei unklarer Ursache gilt der `Iteration & Progress Standard`.
 
@@ -71,28 +101,39 @@ Insbesondere:
 
 Bereits ausgeschlossene Wege werden nicht ohne neue belastbare Information wiederholt.
 
-### 6. Bestehendes Verhalten respektieren
+### 7. Bestehendes Verhalten respektieren
 
 Bestehende Funktionen werden nicht stillschweigend verändert.
 
 Wenn eine Änderung bestehendes Verhalten absichtlich ersetzt, muss dies im PR sichtbar beschrieben werden.
 
-### 7. UI, Accessibility und Markenassets
+### 8. UI, Theme, Accessibility und Markenassets
 
 Vor Änderungen an sichtbaren Oberflächen werden geprüft:
 
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
+- `../../design/brand-identity.md`
 - `../../design/logo.md`
 - projektspezifische UI-/Homepage-Standards, wenn relevant.
 
 Bestehende TuS-UI-Muster werden wiederverwendet, bevor projektspezifische Varianten entstehen.
 
+Für öffentliche WordPress-Komponenten gilt verbindlich:
+
+- das aktive Theme ist Runtime-Source-of-Truth für Brand-Farben und Brand-Typografie,
+- Plugin-Code verwendet bevorzugt WordPress Global Styles bzw. stabile semantische Theme-CSS-Variablen,
+- Markenfarben werden nicht als plugin-eigene feste Hex-Palette dupliziert,
+- Markenfonts werden nicht plugin-eigen ausgeliefert oder fest verdrahtet,
+- ein Theme-Wechsel darf keine fachliche Plugin-Codeänderung benötigen, solange die vereinbarte Style-/Token-Schnittstelle erfüllt wird.
+
+Interne Backend-Oberflächen orientieren sich bevorzugt an nativen WordPress-Admin-Mustern bzw. neutralen gemeinsamen Bedienmustern. Sie müssen die öffentliche Theme-Gestaltung nicht künstlich nachbauen.
+
 Offizielle Logos werden aus der zentralen freigegebenen Quelle übernommen und nicht nachgebaut oder eigenmächtig verändert.
 
 Neue oder wesentlich geänderte Oberflächen müssen auf relevanten Desktop-, Tablet- und Mobile-Viewports sowie auf zentrale Tastatur-/Fokus-/Accessibility-Pfade geprüft werden. WCAG 2.2 Level AA ist der Zielstandard für neue und geänderte TuS-UI.
 
-### 8. Sicherheits-, Privacy- und Datenregeln
+### 9. Sicherheits-, Privacy- und Datenregeln
 
 Der `Software Development Quality Standard` ist verbindlich.
 
@@ -113,7 +154,7 @@ Nonces ersetzen keine Berechtigungsprüfung.
 
 Bei personenbezogenen Daten gilt zusätzlich der Privacy & Information Protection Standard.
 
-### 9. Datenhaltung und Datenbankänderungen
+### 10. Datenhaltung und Datenbankänderungen
 
 Der `../../standards/data-persistence-and-database-standard.md` ist organisationsweit verbindlich.
 
@@ -132,7 +173,7 @@ Vor Umsetzung wird festgelegt:
 
 Datenmigrationen mit möglichem Datenverlust benötigen menschliche Freigabe.
 
-### 10. Performance und Abhängigkeiten
+### 11. Performance und Abhängigkeiten
 
 Performance wird bereits beim Design berücksichtigt.
 
@@ -142,15 +183,18 @@ Insbesondere werden vermieden:
 - unlimitierte große Listen,
 - externe synchrone Requests bei jedem Seitenaufruf ohne fachlichen Grund,
 - global geladenes CSS/JavaScript für nur lokal benötigte Funktionen,
-- große neue Bibliotheken für kleine Funktionen.
+- große neue Bibliotheken für kleine Funktionen,
+- häufiges Polling, wenn Trigger/Event oder bedarfsgesteuerter Abruf genügt,
+- dauerhafte Hintergrundjobs ohne klaren fachlichen Zweck,
+- duplizierte Brand-CSS-/Font-Pakete, wenn das Theme diese bereits bereitstellt.
 
 Caches dürfen Performance verbessern, sind aber keine fachliche Source of Truth.
 
-WordPress-Core-/Browser-Funktionen werden bevorzugt, wenn sie den Bedarf robust erfüllen.
+WordPress-Core-/Browser-/Theme-Funktionen werden bevorzugt, wenn sie den Bedarf robust erfüllen.
 
 Für öffentliche Komponenten gelten die im Software Development Quality Standard beschriebenen Core-Web-Vitals-Ziele, sobald reale Messung möglich ist.
 
-### 11. Tests
+### 12. Tests
 
 Tests richten sich nach Art und Risiko der Änderung.
 
@@ -165,7 +209,14 @@ Mindestens wird – soweit für den Scope relevant – geprüft:
 - funktionieren Desktop/Tablet/Mobile,
 - funktionieren zentrale Tastatur-/Fokuspfade,
 - existiert ein sinnvoller Fallback bei externen Fehlern,
-- funktionieren Migrationen mit repräsentativem Altbestand.
+- funktionieren Migrationen mit repräsentativem Altbestand,
+- respektieren öffentliche UI-Komponenten Theme-Tokens statt eigene Brand-Werte zu erzwingen.
+
+Tests werden stufenweise ausgeführt:
+
+1. gezielter Test der geänderten Funktion,
+2. direkt betroffene Regressionen,
+3. breitere Suite nur bei entsprechendem Risiko, Querschnitt oder Releasebedarf.
 
 Automatisierte Tests, Syntax-/Lint-/statische Checks und WordPress Coding Standards werden bevorzugt, wenn sie praktikabel sind. WordPress Playground ist ein bevorzugtes reproduzierbares Testmedium.
 
@@ -175,7 +226,7 @@ Ein Agent behauptet keinen Test als `PASSED`, wenn er ihn nicht tatsächlich dur
 
 Ein Stand wird erst nach erfolgreicher Prüfung als neuer Last Known Good behandelt.
 
-### 12. Pull Request
+### 13. Pull Request
 
 Jede relevante Änderung wird als PR vorbereitet.
 
@@ -188,7 +239,9 @@ Ein guter PR beschreibt knapp:
 - bekannte Einschränkungen oder Risiken,
 - notwendige Folgeschritte.
 
-### 13. Review vor Merge
+Der PR beschreibt nicht künstlich zusätzliche Arbeit, die für das erreichte Ziel nicht benötigt wurde.
+
+### 14. Review vor Merge
 
 Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 
@@ -197,15 +250,16 @@ Der Entwickler bewertet seine eigene Änderung vor Übergabe noch einmal gegen:
 - Software Development Quality Standard,
 - Data Persistence & Database Standard,
 - Stability & Simplicity,
-- UI- und Markenstandards bei sichtbaren Änderungen,
+- UI-, Theme- und Markenstandards bei sichtbaren Änderungen,
 - Accessibility und Responsive-Verhalten,
 - Sicherheits- und Privacy-Risiken,
 - Performance,
+- unnötige Abhängigkeiten/Komplexität,
 - Definition of Done.
 
 Merge in `main` benötigt menschliche Freigabe, sofern nicht ausdrücklich anders geregelt.
 
-### 14. Dokumentation und Projekt-Checkpoint
+### 15. Dokumentation und Projekt-Checkpoint
 
 Dokumentation wird aktualisiert, wenn die Änderung:
 
@@ -213,6 +267,8 @@ Dokumentation wird aktualisiert, wenn die Änderung:
 - Architektur oder Datenmodell beeinflusst,
 - neue Abhängigkeiten schafft,
 - neue wiederkehrende Entwicklungsregeln hervorbringt.
+
+Es wird keine zusätzliche Dokumentation nur um der Dokumentation willen erzeugt. Bestehende Source-of-Truth-Dokumente werden bevorzugt aktualisiert, statt parallele neue Dateien anzulegen.
 
 Bei länger laufenden Projekten wird `PROJECT-STATE.md` aktualisiert, wenn sich Ziel, Last Known Good, relevante Ausschlüsse, Entscheidungen, Risiken oder der nächste sinnvolle Schritt verändert haben.
 
@@ -231,6 +287,7 @@ Versionstexte oder Changelogs sollen nicht als Ersatz für belastbare Projektdok
 - `../../decisions/architecture-checklist.md`
 - `../../design/design-principles.md`
 - `../../design/ui-standard.md`
+- `../../design/brand-identity.md`
 - `../../design/logo.md`
 - `../../architecture/stability-and-simplicity.md`
 
@@ -238,4 +295,4 @@ Versionstexte oder Changelogs sollen nicht als Ersatz für belastbare Projektdok
 
 Die nächste technische Ausbaustufe ist keine weitere abstrakte Regel, sondern reproduzierbares Tooling zur Durchsetzung: WordPress Coding Standards/PHPCS, PHP-Syntaxchecks, Plugin Check und projektspezifische automatisierte Tests.
 
-Solche Checks werden erst als Merge-Gate behandelt, wenn sie stabil und reproduzierbar im Repository laufen.
+Solche Checks werden erst als Merge-Gate behandelt, wenn sie stabil, reproduzierbar und gemessen an ihrem Qualitätsgewinn ressourcenseitig sinnvoll im Repository laufen.
