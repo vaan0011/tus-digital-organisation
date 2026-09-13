@@ -26,6 +26,7 @@ Vor neuer Arbeit wird geprüft, was bereits gewusst, entschieden, gelernt, verwo
 - [`funding/`](funding/) – Förderprogramme, Förderchancen, Förderkalender, Antragswissen und Learnings
 - [`governance/`](governance/) – Vorstandsarbeit, Agenda-/Beschluss-/Aufgabenlogik und organisationsweite Governance-Abläufe
 - [`sponsoring/`](sponsoring/) – Sponsoring- und Partnerwissen, Strategie, Partnerlogik und aktueller Arbeitsstand
+- [`sportpark/`](sportpark/) – operative Sportpark-Arbeit, Instandhaltung, Material-/Versorgungsbedarfe und reale Pilotfälle für spätere Operations-Loops
 
 Weitere fachliche Wissensdomänen werden nur angelegt, wenn bestehende Rollen-, Projekt-, Design-, Archiv- oder andere Fachquellen nicht bereits die bessere kanonische Heimat sind.
 
