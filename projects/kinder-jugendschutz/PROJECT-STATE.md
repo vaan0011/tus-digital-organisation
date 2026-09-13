@@ -1,6 +1,6 @@
 # PROJECT STATE – Kinder- und Jugendschutz einführen
 
-**Stand:** 2026-09-11  
+**Stand:** 2026-09-13 – Aktionstaler Kinder- und Jugendschutz 2.0 als B+-Förderweg qualifiziert  
 **Status:** Discovery  
 **Phase:** Konzept / organisatorische Einführung  
 **Fachlicher Bereich:** Jugend / Vereinsentwicklung / Schutz & Prävention  
@@ -159,7 +159,34 @@ Vor technischer Verarbeitung sind mindestens zu definieren:
 - Landkreis-Angebot `Verein aktiv im Jugendschutz` prüfen,
 - operative Regeln für Jugendveranstaltungen und Veranstaltungen mit Minderjährigen integrieren.
 
-### 8. Priorität / empfohlene Reihenfolge
+### 8. Förderrelevanz – Aktionstaler Kinder- und Jugendschutz 2.0
+
+Der Funding & Grants Manager hat am 13.09.2026 den aktuellen `Aktionstaler Kinder- und Jugendschutz 2.0` der Allianz für Beteiligung als **B+ – konkret vorbereiten** qualifiziert.
+
+Der Förderweg passt nicht zum abstrakten Gesamtaufbau des Schutzsystems, aber sehr gut zu einem konkreten noch nicht begonnenen Teilvorhaben aus AP2/AP4/AP6, zum Beispiel einer kombinierten Präventions- und Sensibilisierungsaktion zu Grenzen, sexualisierter Gewalt, digitalisierter/mediatisierter Gewalt und sichtbaren Hilfewegen.
+
+Rahmen:
+
+- bis 2.000 Euro Zuschuss,
+- kein verpflichtender Eigenanteil,
+- Sachkosten einschließlich Honorare,
+- Vereine in Baden-Württemberg antragsberechtigt,
+- kommunale Stellungnahme und Kosten-/Finanzierungsplan erforderlich,
+- keine förderfähigen Kosten vor Förderzusage,
+- Phase 1 läuft 01.09.2026–31.03.2027; Antragstellung seit 01.09.2026 möglich,
+- nach den am 13.09.2026 veröffentlichten Bedingungen wird kein Freistellungsbescheid als Pflichtunterlage genannt.
+
+Programmdossier:
+
+- `../../knowledge/funding/programs/aktionstaler-kinder-jugendschutz-2-0.md`
+
+Opportunity Brief:
+
+- `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md` → `OPP-010`
+
+Wichtig: Das Förderprogramm verändert nicht die fachliche Reihenfolge des Schutzprojekts. Verantwortlichkeit, Jugendamt-/§72a-Klärung und Risikoanalyse bleiben notwendige Grundlagen; die Förderung kann einen konkreten Befähigungs-/Präventionsbaustein finanzieren.
+
+### 9. Priorität / empfohlene Reihenfolge
 
 1. Vorstandsverantwortung + Vertrauenspersonen,
 2. Kontakt Jugendamt / §72a,
@@ -171,7 +198,9 @@ Vor technischer Verarbeitung sind mindestens zu definieren:
 8. Homepage/Aushang/Elterninformation,
 9. jährlicher Review.
 
-### 9. Definition of Done
+Parallel förderseitig: ersten realen Präventions-/Sensibilisierungsbaustein für den Aktionstaler abgrenzen, ohne die fachliche Reihenfolge zu umgehen.
+
+### 10. Definition of Done
 
 Das Einführungsprojekt ist abgeschlossen, wenn:
 
@@ -186,14 +215,13 @@ Das Einführungsprojekt ist abgeschlossen, wenn:
 - Schutzfall-Datenweg datenschutzgerecht geregelt ist,
 - jährlicher Review fest verankert ist.
 
-### 10. Nächster sinnvoller Schritt
-
-**Vor einer weiteren Detailverfeinerung zuerst organisatorische Verantwortung schaffen:**
+### 11. Nächster sinnvoller Schritt
 
 1. Im Vorstand eine verantwortliche Person bestimmen.
 2. Zwei mögliche Vertrauenspersonen identifizieren.
 3. Jugendamt Landkreis Karlsruhe kontaktieren und §72a-Vereinbarungsstatus sowie aktuellen Ablauf klären.
 4. Anschließend eine 60–90-minütige TuS-Risikoanalyse mit Vorstand/Jugendleitung/Trainern und ausgewählten Eltern/Jugendperspektiven durchführen.
+5. Parallel aus den bereits geplanten Präventions-/Befähigungsmaßnahmen einen konkreten `Aktionstaler`-Scope mit Zielgruppe, Fachreferent/in und Grobbudget schneiden; Gemeinde Bad Schönborn wegen der erforderlichen Stellungnahme frühzeitig einbinden.
 
 Erst danach den Arbeitsentwurf zur beschlussfähigen Fassung finalisieren.
 
@@ -204,6 +232,8 @@ Erst danach den Arbeitsentwurf zur beschlussfähigen Fassung finalisieren.
 - `../PROJECT-PORTFOLIO.md`
 - `../../standards/approval-and-escalation.md`
 - `../../design/homepage-standard.md`
+- `../../knowledge/funding/ACTIVE-OPPORTUNITIES.md`
+- `../../knowledge/funding/programs/aktionstaler-kinder-jugendschutz-2-0.md`
 
 ## Future Development
 
