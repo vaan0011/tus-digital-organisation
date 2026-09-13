@@ -1,6 +1,6 @@
 # Funding Calendar
 
-Stand: 2026-09-12 – neue B+-Chance `Gemeinsam engagiert in BW V`; WISO/Kellogg’s/REWE bereinigt
+Stand: 2026-09-13 – Aktionstaler Kinder- und Jugendschutz 2.0 ergänzt
 
 ## Purpose
 
@@ -17,6 +17,7 @@ Dieser Kalender bündelt relevante Förderfristen und interne Vorfristen für de
 | Programm | TuS-Projekt / Thema | Priorität | Status | Offizielle Frist / Sperre | Interne Vorfristen | Ansprechpartner | Nächster Schritt |
 |---|---|---|---|---|---|---|---|
 | **Gemeinsam engagiert in BW V** | Aufbau Digitale Vereinsorganisation – neues Ehrenamts-Teilvorhaben | **B+ – sofort vorabklären** | offen / verifiziert | **01.10.2026**, vollständiger Antrag; Vorhaben darf nicht begonnen sein | **15.09.** Freistellungsbescheid + Scope klären; **18.09.** Go/No-Go; **22.09.** Inhalt/Budget; **24.09.** Kommune/Nachweise; **28.09.** Final Review | Sandra Holzherr, 07472 9419 444, `sandra.holzherr@gemeindenetzwerk-be.de`; formal `antraegeBE@sm.bwl.de` | vorhandenen Freistellungsbescheid und neuen, noch nicht begonnenen Scope vorab klären; Gemeinde Bad Schönborn wegen Pflicht-Stellungnahme einbinden |
+| **Aktionstaler Kinder- und Jugendschutz 2.0** | Kinder- und Jugendschutz einführen – konkrete Präventions-/Sensibilisierungsaktion | **B+ – konkret vorbereiten** | Phase 1 offen | Phase 1: 01.09.2026–31.03.2027; Antrag seit 01.09. möglich; **keine separate Endfrist veröffentlicht**; keine Kosten vor Förderzusage | **20.09.** Scope/Zielgruppe/Verantwortung; **24.09.** Infoveranstaltung; **30.09.** Budget + kommunale Stellungnahme anstoßen; Ziel Antrag Oktober | Benjamin Müller, 0711 34 22 56 15, `Benjamin.Mueller@afb-bw.de` | ersten realen Schutzaktions-Baustein festziehen, Kosten ermitteln und Gemeinde wegen Stellungnahme einbinden |
 | § 16i SGB II / § 16e hilfsweise | Arbeitsplatz Sportparkteam | **B+** | persönliche Förderfähigkeit offen | keine feste Frist; **kein Arbeitsvertrag vor positiver Jobcenter-Rückmeldung** | **18.09.2026** Arbeitgeber-Erstkontakt; 25.09. Tätigkeitsprofil/Stundenmodelle | Jobcenter Bruchsal, 07251 7244-101, `Jobcenter-Landkreis-Karlsruhe@jobcenter-ge.de` | Förderfähigkeit und Arbeitgeberprozess klären |
 | Kellogg’s Herzensprojekt 2026 | bereits eingereichtes TuS-Projekt | **laufender Vorgang** | laut Nutzer bereits eingereicht | Voting 01.10.–30.11.2026; Bewerbungsfrist 31.10.2026 ist für TuS kein offener Schritt mehr | keine neue Einreichung | `info@kelloggs-herzensprojekt.de` | eingereichtes Projekt im Repository eindeutig zuordnen; Voting/Entscheidung/Nachweise nachhalten |
 | REWE Scheine für Vereine 2026 | laufende Vereinsaktion | **B – operativ** | laut Nutzer bereits laufend | Ausgabe bis 11.10.; Zuordnung bis 25.10.; Prämienbestellung bis **08.11.2026** | Prämienbedarf rechtzeitig festlegen | offizielles REWE-Portal | Scheine/Einlösung und Prämienauswahl operativ nachhalten; nicht erneut als neuen Treffer melden |
@@ -42,6 +43,10 @@ Sobald der neue aktuelle Gemeinnützigkeits-/Freistellungsnachweis vorliegt, wer
 
 - DSEE Mikroförderprogramm: offizieller 2026-Aufruf verlangt bei Organisationsregistrierung ausdrücklich einen **aktuellen Freistellungsbescheid**; zusätzlich muss die Standortförderfähigkeit (ländlicher/strukturschwacher Raum) positiv geprüft werden.
 - künftige DSEE-100xDigital-Runde: fachlich sehr starker Fit zum organisationsweiten digitalen Wandel, 2026 jedoch geschlossen; Anforderungen der nächsten Ausschreibung neu prüfen.
+
+**Bereits vor neuem Freistellungsbescheid realistisch nutzbar:**
+
+- Aktionstaler Kinder- und Jugendschutz 2.0: veröffentlichte Förderbedingungen nennen Vereine als antragsberechtigte Akteure und führen keinen Freistellungs-/Gemeinnützigkeitsnachweis als Pflichtunterlage auf; Portal-Pflichtfelder vor finaler Einreichung nochmals prüfen.
 
 ## Relationship to other documents
 
