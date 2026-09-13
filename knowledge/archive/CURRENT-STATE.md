@@ -1,6 +1,6 @@
 # Historienarchiv – Current State
 
-Stand: 2026-09-10
+Stand: 2026-09-13
 
 ## Purpose
 
@@ -107,6 +107,31 @@ Nach bzw. parallel zur Bestandserschließung werden insbesondere verfolgt:
 
 Rankings werden nur als **dokumentierte Werte in den erhaltenen Quellen** formuliert, solange die Überlieferung nicht vollständig ist.
 
+### 6a. Digitale Zeitbrücke bis zur Gegenwart
+
+Am 13.09.2026 wurden drei offizielle digitale Vereinsquellen als echte Quellen in die operative Queue aufgenommen:
+
+- `WEB-01` – `https://www.tus-mingolsheim.de/`
+- `FB-01` – `https://www.facebook.com/TuSMingolsheim/`
+- `IG-01` – `https://www.instagram.com/tusmingolsheim/?hl=de`
+
+Sie sind bewusst mit Priorität `C` inventarisiert. Damit werden zuerst die höher priorisierten historischen Buch-, Scan- und Dokumentquellen abgearbeitet. Danach führt die Runtime **ohne neuen Auftrag** über Homepage, Facebook und Instagram bis in die heutige Zeit weiter.
+
+Die verbindliche Arbeitsweise steht in `../../roles/archivist/runtime.md`, Abschnitt `4a. Übergang von der historischen Sammlung in die digitale Gegenwart`.
+
+Grundprinzipien:
+
+- mit dem ältesten reproduzierbar erreichbaren öffentlichen Inhalt beginnen,
+- chronologisch bis zur Gegenwart arbeiten,
+- Homepage zuerst, Facebook und Instagram ergänzend,
+- bestehende Ereignisse/Register zuerst prüfen und Dubletten vermeiden,
+- Plattformen als zusätzliche Quellenbelege an vorhandene Ereignisse hängen,
+- keine privaten Accounts oder personenbezogene Nebenrecherche,
+- technische Plattformlücken transparent dokumentieren,
+- nach dem Erreichen der Gegenwart einen reproduzierbaren Abschlusscheckpoint setzen.
+
+Damit endet die historische Bestandserschließung nicht künstlich mit den vorhandenen Büchern, sondern schließt an die heutige öffentliche Vereinskommunikation an.
+
 ### 7. Write-back
 
 Der neue Chat schreibt dauerhaften Fortschritt nicht in diesen Current State hinein, wenn der Quellenindex bereits die bessere operative Source of Truth ist.
@@ -126,3 +151,5 @@ Dieses Dokument wird nur aktualisiert, wenn sich der Einstieg, die Source-of-Tru
 ## Future Development
 
 Sobald die alten `IN BEARBEITUNG`-Einträge vollständig auf Runtime-Checkpoints migriert sind, wird die Migrationsschuld aus diesem Dokument entfernt. Danach soll ein neuer Chat allein über Bootstrap, Runtime und Live-Quellenindex ohne spezielle Übergabedokumente arbeitsfähig sein.
+
+Nach dem erstmaligen Aufarbeiten von `WEB-01`, `FB-01` und `IG-01` kann aus realer Nutzung entschieden werden, ob zusätzlich ein sparsamer inkrementeller Gegenwarts-Loop für neue Veröffentlichungen sinnvoll ist.
