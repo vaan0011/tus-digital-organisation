@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-12 – Runtime-Abgleich bis einschließlich gemergtem PR #97
+Stand: 2026-09-13 – Runtime-Abgleich bis einschließlich gemergtem PR #103
 
 ## Purpose
 
@@ -25,17 +25,13 @@ Die aktuelle Repository- und Arbeitsstandprüfung ergibt:
 - mehrere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
 - mehrere Themen, die bewusst **kein eigenes Projekt** sind, sondern Einzelmaßnahmen, Regelbetrieb, Fachfelder oder ein übergeordnetes Programm.
 
-Seit dem letzten vollständigen Portfolio-Abgleich wurden drei weitere formale Projekte gemergt:
+Seit dem letzten vollständigen Portfolio-Abgleich wurden keine weiteren formalen Projekte angelegt.
 
-- `kinder-jugendschutz/` über PR #80,
-- `stadionheft/` über PR #81,
-- `platzbelegung/` über PR #85.
+PR #98 und PR #100 konkretisieren im Projekt `Mitglieder & Engagement` lediglich den bereits erfassten fachlichen Stand zum bestehenden Funktionärsnachlass und zu den noch fehlenden Primärquellen. Status, Architektur- und Integrationsreihenfolge ändern sich dadurch nicht.
 
-Zusätzlich wurde mit PR #79 der Förderstatus von `digital-organisation/` fachlich geklärt: WISO 2026 ist geschlossen, weil zum erforderlichen Zeitpunkt kein aktueller Gemeinnützigkeitsnachweis vorlag. Der nächste Förderweg ist deshalb eine systematische Ersatzprogrammsuche; eine Suche nach einem WISO-Einreichungsnachweis ist nicht mehr erforderlich.
+PR #101 und PR #102 dokumentieren Sportpark-Beschaffung/Versorgung und Scouting als **Rollen-, Skill- bzw. Runtime-Kandidaten**. Sie werden aktuell nicht als eigene Projekte oder Projektkandidaten hochgestuft, weil ihre organisatorische Form noch ausdrücklich offen ist und beide Bedarfe primär wiederkehrenden Betrieb beschreiben. Eine spätere klar abgegrenzte technische Einführung kann erneut auf Projektwürdigkeit geprüft werden.
 
-PR #97 erweitert im Projekt `Mitglieder & Engagement` die bereits vorgesehene Beitragsnachlass-Logik fachlich um ein gemeinsames Anerkennungsmodell für Funktionsträger, aktive Schiedsrichter und bestätigte Helferleistungen. Die Architektur- und Integrationsreihenfolge des Projekts ändert sich dadurch noch nicht; konkrete Beitragsregeln bleiben eine spätere Vereinsentscheidung.
-
-Offene Pull Requests werden als Arbeitsstand berücksichtigt, aber erst nach Merge als `main`-Wahrheit behandelt. PR #98 ist daher noch nicht Bestandteil dieses Portfolio-Stands.
+PR #103 erweitert den bestehenden Archivisten-Regelbetrieb um Homepage, Facebook und Instagram als digitale Quellen nach Abschluss der historischen Quellen. Daraus entsteht kein eigenständiges Archivprojekt; die bestehende Trennung zwischen dauerhaftem Archivbetrieb und abgegrenzten Erschließungs-/Publikationsprojekten bleibt bestehen.
 
 ### 2. Formale Projekte
 
@@ -106,6 +102,9 @@ Die folgenden Vorhaben sind ausreichend relevant, um im Portfolio sichtbar zu bl
 | Konsolidierung historischer Sponsorendaten | Arbeitsaufgabe / Discovery-Zulieferung | operative Grundlage für Sponsoring und Partnerportal |
 | Funding Radar / Förderkalender / Programmdossiers | Regelbetrieb / Fachbereich | Funding & Grants Manager; konkrete Vereinsvorhaben bleiben Projekte/Kandidaten |
 | Vereinsgeschichte / Historienarchiv als Ganzes | Regelbetrieb / Fachbereich | dauerhafte Archivistenaufgabe; nur abgegrenzte Outputs werden Projekte |
+| Homepage/Facebook/Instagram als Archivquellen | Regelbetrieb / Fachquelle | seit PR #103 Bestandteil des Archivisten-Loops; kein eigenständiges Projekt |
+| Sportpark-Beschaffung / Kioskversorgung / Materialradar | Arbeits-/Runtime-Kandidat | wiederkehrender Betriebsbedarf; organisatorische Form als Rolle, Skill oder Loop noch offen; keine automatische Projektaufnahme |
+| Scouting Jugend und Herren | Arbeits-/Runtime-Kandidat | wiederkehrender sportlicher Beobachtungsprozess; Datenquellen, Kriterien und Verantwortung noch zu klären; keine automatische Projektaufnahme |
 | TuS Digital Organisation – dauerhafter Betrieb nach der Aufbauphase | Programm / Regelbetrieb | `digital-organisation/` beschreibt nur Aufbau/Konsolidierung |
 | externer Webshop – laufende UX/UI-Angleichung | laufende Design-/Betriebsaufgabe | erst bei klarer Relaunch-/Migration als Projekt prüfen |
 | Jugend- und Mädchenfußball allgemein | laufendes Fach-/Förderfeld | konkrete Camps/Kooperationen separat prüfen |
