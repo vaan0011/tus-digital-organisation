@@ -1,6 +1,6 @@
 # Active Funding Opportunities
 
-Stand: 2026-09-12 – Kellogg’s/WISO bereinigt; `Gemeinsam engagiert in BW V` und Heimatverbunden ergänzt
+Stand: 2026-09-13 – Aktionstaler Kinder- und Jugendschutz 2.0 als neuer B+-Treffer ergänzt
 
 ## Purpose
 
@@ -15,6 +15,7 @@ Vor externer Kontaktaufnahme, Bestellung, Beauftragung oder Antragstellung werde
 | ID | TuS-Projekt | Förderchance | Priorität | Offizielle Frist / Sperre | Nächste interne Entscheidung |
 |---|---|---|---|---|---|
 | OPP-008 | Aufbau Digitale Vereinsorganisation | Gemeinsam engagiert in BW V | **B+ – sofort vorabklären** | vollständiger Antrag bis **01.10.2026**; Vorhaben darf nicht begonnen sein | bis 15.09. Freistellungsbescheid + Scope vorabklären; bis 18.09. Go/No-Go |
+| OPP-010 | Kinder- und Jugendschutz einführen | Aktionstaler Kinder- und Jugendschutz 2.0 | **B+ – konkret vorbereiten** | Phase 1 läuft 01.09.2026–31.03.2027; Kosten erst nach Förderzusage | Aktionsscope, Budget und kommunale Stellungnahme konkretisieren; Infoveranstaltung 24.09. nutzen |
 | OPP-004 | Arbeitsplatz Sportparkteam | § 16i SGB II; § 16e als Rückfalloption | **B+ – sofort vorabklären** | keine feste Ausschreibungsfrist; **Vertrag erst nach positiver Jobcenter-Rückmeldung** | bis 18.09.2026 Arbeitgeber-Erstkontakt und persönliche Förderfähigkeit klären |
 | OPP-009 | geeignete reale TuS-Projekte, zunächst Digitale Vereinsorganisation | Volksbank Kraichgau Heimatverbunden | **B+ – konkret vorbereiten** | keine allgemeine Einreichungsfrist veröffentlicht | Volksbank-Konto + akzeptierter Freistellungsbescheid/Registrierungsfähigkeit klären; danach erstes Projekt auswählen |
 | OPP-001 | Großfeldtore Haupt- und Trainingsplatz | BSB Sportgeräteförderung 2026 | **A – bewerben** | Rechnung 2026; Antrag bis 31.01.2027 | finale Konfiguration vor Kauf mit BSB absichern |
@@ -176,6 +177,97 @@ Telefon: 06222 589-2350
 ### Förderung / nächste Aktion
 
 Kein fixer Zuschussbetrag: Finanzierung über Volksbank-Spendencodes und Privatspenden; der bis Projektende gesammelte Betrag kann auch bei Nichterreichen des Finanzierungsziels ausgezahlt werden. Zuerst Rechtsträger/Konto/Registrierung klären, danach erstes reales Projekt auswählen und Projektbeschreibung, Finanzierungsbedarf, Bilder und Mobilisierungsplan vorbereiten.
+
+---
+
+## OPP-010 – Kinder- und Jugendschutz × Aktionstaler Kinder- und Jugendschutz 2.0
+
+**TuS-Projekt:** Kinder- und Jugendschutz einführen  
+**Programm:** Aktionstaler Kinder- und Jugendschutz 2.0 – Allianz für Beteiligung e. V. / Land Baden-Württemberg  
+**Priorität:** **B+ – konkret vorbereiten**  
+**Letzte Primärquellen-Verifizierung:** 2026-09-13  
+**Status:** Antragstellung für Phase 1 seit 01.09.2026 möglich; konkreter TuS-Aktionsscope und kommunale Stellungnahme noch offen
+
+### Fit
+
+Das formale TuS-Projekt plant bereits reale Schutz- und Präventionsmaßnahmen: Sensibilisierung der Jugendtrainer und Betreuer, Elterninformation, kind-/jugendgerechte Kommunikation, Regeln gegen sexualisierte Gewalt sowie Schutz bei digitaler Kommunikation und Bild-/Videonutzung. Der Aktionstaler fördert ausdrücklich Prävention im Bereich sexualisierter Gewalt, Information/Sensibilisierung zu digitalisierter und mediatisierter Gewalt sowie Angebote für Kinder und Jugendliche mit erhöhtem Gewaltrisiko.
+
+### Empfohlene Förderstory
+
+**„TuS Schutzraum – Grenzen erkennen, digital sicher handeln, Hilfe finden.“**
+
+Ein klar abgegrenztes, noch nicht begonnenes TuS-Teilvorhaben verbindet externe Präventions-/Sensibilisierung für Jugendtrainer und Betreuer mit altersgerechten Einheiten für Kinder/Jugendliche, Elterninformation sowie sichtbaren Hilfewegen. Das Gesamt-Schutzkonzept wird nicht als Förderprojekt umetikettiert; beantragt wird ein konkreter bereits fachlich vorgesehener Präventions- und Befähigungsbaustein.
+
+### Ansprechpartner / Kontaktweg
+
+**Benjamin Müller**, Projektmitarbeiter, Allianz für Beteiligung e. V.  
+E-Mail: `Benjamin.Mueller@afb-bw.de`  
+Telefon: 0711 34 22 56 15  
+Antrag: digitales Förderportal der Allianz für Beteiligung.
+
+Die offizielle Programmseite kündigt eine zweite Online-Informationsveranstaltung am **24.09.2026, 12:00–13:00 Uhr** an.
+
+### Fristen / interne Vorfristen
+
+- Durchführungsphase 1: **01.09.2026–31.03.2027**; Antragstellung seit 01.09.2026 möglich.
+- Die offizielle Programmseite nennt für Phase 1 keine separate kalendarische Endfrist, weist aber auf ausreichende Vorlaufzeit für Prüfung und Förderzusage hin.
+- Phase 2: 01.03.–30.09.2027; Antragstellung ab 01.02.2027.
+- intern bis 20.09.2026: möglichen TuS-Aktionsscope, Zielgruppe und Verantwortlichkeit festziehen,
+- 24.09.2026: Infoveranstaltung nutzen bzw. verbleibende Fragen klären,
+- bis 30.09.2026: Grobbudget und kommunale Stellungnahme anstoßen,
+- Ziel: Antrag Phase 1 im Oktober 2026, sofern Scope freigegeben und noch nicht begonnen.
+
+### Förderung / Eigenanteil
+
+- bis **2.000 Euro Zuschuss** pro Projekt,
+- **kein verpflichtender Eigenanteil**,
+- Sachkosten einschließlich Honorarkosten,
+- Honorare max. 100 Euro netto/Stunde bzw. 800 Euro netto/Tag zzgl. MwSt.,
+- Einzelgegenstände max. 800 Euro netto zzgl. MwSt.,
+- Fortbildungen für Ehrenamtliche sind möglich, wenn sie in ein konkretes Projekt münden,
+- Personalkosten und Vergütung ehrenamtlicher Tätigkeit sind nicht förderfähig.
+
+### Gemeinnützigkeits-/Freistellungsnachweis
+
+Die am 13.09.2026 geprüfte offizielle Programmseite nennt **keinen Freistellungsbescheid und keinen Gemeinnützigkeitsnachweis als veröffentlichte Fördervoraussetzung** und führt Vereine allgemein als antragsberechtigte zivilgesellschaftliche Akteure auf. Damit ist der Förderweg nach öffentlich sichtbarem Stand **bereits vor Vorliegen des neuen aktuellen TuS-Freistellungsbescheids realistisch nutzbar**.
+
+Vor finaler Einreichung sind die organisationsbezogenen Pflichtfelder des Förderportals nochmals zu prüfen; falls dort zusätzliche Nachweise verlangt werden, wird der Status angepasst.
+
+### Benötigte Unterlagen / Partner / Beschlüsse
+
+- freigegebener konkreter Aktionsscope,
+- Zielgruppe und Maßnahmenbeschreibung,
+- Kosten- und Finanzierungsplan,
+- verpflichtende kommunale Stellungnahme,
+- Begründung, warum die beantragten Ausgaben nicht anderweitig finanziert werden können,
+- geeignete externe Fachreferentin/Fachreferent bzw. Angebot/Honorarkalkulation,
+- interne Verantwortlichkeit und Freigabe,
+- keine kostenwirksame Beauftragung vor Förderzusage.
+
+### Antragsweg / Auswahlkriterien
+
+Antrag über das Förderportal der Allianz für Beteiligung. Dargestellt werden müssen Ziele, konkrete Kinderschutzmaßnahmen und Bürgerbeteiligung. Die Ausgaben müssen unmittelbar mit der Aktion zusammenhängen. Das Projekt darf noch nicht begonnen haben; vor Förderzusage entstandene Kosten sind nicht förderfähig.
+
+### Vergleichbare Bewilligungen
+
+Offizielle geförderte Beispiele belegen einen direkten Praxisfit:
+
+- `Kinderschutztag` in Staufen: Präventionsworkshops für Jugendliche plus Einführung von Jugendleiterinnen/Jugendleitern in Bausteine eines Kinderschutzkonzepts,
+- `Kinderschutzkonzept – Selbstbehauptungskurse` in Waldkirch: Kinder-/Jugendprävention plus Sensibilisierung von Eltern und Trainerinnen/Trainern,
+- `SeSiSta – Selbstbewusst, Sicher, Stark` in Karlsruhe: Prävention für Kinder plus Elternabend,
+- weitere Aktionen zu persönlichen Grenzen, sexualisierter Gewalt und digitalisierter Gewalt.
+
+### Risiken / offene Punkte
+
+- Projekt-Owner und Vertrauenspersonen sind noch nicht benannt,
+- konkreter erster Aktionsbaustein muss fachlich beschlossen werden,
+- kommunale Stellungnahme ist Pflicht,
+- Kosten dürfen erst nach Förderzusage entstehen,
+- das Programm finanziert eine konkrete Aktion, nicht den gesamten organisatorischen Aufbau des Schutzsystems.
+
+### Nächste Aktion
+
+Aus AP2/AP4/AP6 des Projektzustands eine konkrete erste Schutzaktion schneiden, Kosten für Fachreferent/in + Materialien ermitteln, Gemeinde Bad Schönborn für die Stellungnahme vorbereiten und die Infoveranstaltung am 24.09. nutzen. Danach Go/No-Go und Antrag Phase 1.
 
 ---
 
