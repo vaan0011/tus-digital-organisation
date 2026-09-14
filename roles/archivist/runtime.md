@@ -109,6 +109,24 @@ Für jede dieser Quellen gilt:
 11. Nach vollständiger Aufarbeitung bis zur Gegenwart einen reproduzierbaren Abschlusscheckpoint setzen, z. B. `bis einschließlich 2026-09-13 / letzter erreichbarer Beitrag vollständig geprüft`.
 12. Der historische Altbestand einer digitalen Quelle wird danach nicht wieder von vorn durchsucht. Eine spätere laufende Aktualisierung darf nur ab dem dokumentierten Gegenwartscheckpoint ansetzen.
 
+### 4b. Technische Quellenlücken ohne Runtime-Schleife
+
+Eine einzelne technische Lücke in einer digitalen Quelle darf den Runtime-Fortschritt nicht dauerhaft blockieren.
+
+Für technisch nicht reproduzierbare Anschlussstellen gilt deshalb:
+
+1. Der Archivist dokumentiert die Lücke konkret im Unsicherheiten-Register und hält den letzten belastbaren Vollständigkeitscursor fest.
+2. Er prüft mehrere **tatsächlich unterschiedliche** Rekonstruktionswege. Bereits dokumentierte Suchwege werden in Folgeläufen nicht lediglich mit anderer Formulierung wiederholt.
+3. Wenn nach den dokumentierten unterschiedlichen Rekonstruktionswegen kein reproduzierbarer Anschluss gefunden wurde, wird die einzelne Unsicherheit als `GEPARKT – TECHNISCHE QUELLENLÜCKE` behandelt.
+4. Ein geparkter Lückenpunkt bedeutet ausdrücklich **nicht**, dass die Quelle vollständig erschlossen ist. Der Vollständigkeitscursor wird nicht künstlich über die Lücke hinausgesetzt.
+5. Reproduzierbar erreichbare spätere offizielle Inhalte dürfen als klar gekennzeichnete nicht-kontiguierliche Backfills weiter erschlossen werden.
+6. Wenn innerhalb eines Laufs an der betroffenen digitalen Quelle kein produktiver Fortschritt mehr möglich ist, wechselt der Archivist zur nächsten unblocked Quelle derselben Priorität, z. B. von `WEB-01` zu `FB-01` und danach `IG-01`.
+7. Eine geparkte technische Lücke wird nur wieder geöffnet, wenn **neue Evidenz**, ein **neuer reproduzierbarer Zugriffsweg**, eine **neue offizielle Quelle** oder eine andere materiell neue Prüfmöglichkeit vorliegt.
+8. Dieselbe geparkte Lücke darf nicht zum Hauptinhalt aufeinanderfolgender Runtime-Läufe werden.
+9. `BLOCKIERT` wird nur verwendet, wenn die Fortsetzung der Quelle tatsächlich nicht sinnvoll möglich ist und auch keine andere zulässige Arbeit derselben Priorität weitergeführt werden kann.
+
+Damit bleiben historische Lücken sichtbar, ohne dass die Runtime in einer Suchschleife stehen bleibt.
+
 ### 5. Arbeitszyklus je Quelle
 
 Für jede gewählte Quelle:
@@ -138,6 +156,8 @@ Für den Runtime-Pilot gelten fachlich folgende Bedeutungen:
 - `BLOCKIERT` – Fortsetzung derzeit nur nach echter Eskalation möglich.
 
 Der Archivist darf vorhandene präzisere Statusformulierungen weiterverwenden, solange ihre Bedeutung eindeutig bleibt.
+
+Eine einzelne geparkte technische Quellenlücke nach Abschnitt 4b erzwingt weder den Quellenstatus `BLOCKIERT` noch einen Runtime-Stopp.
 
 ### 7. Checkpoint-Qualität
 
@@ -193,7 +213,8 @@ Der Archivist stoppt **nicht** nur weil:
 - zwei historische Quellen widersprechen,
 - eine Personenidentität noch nicht sicher ist,
 - ein Detail später mit einer anderen Quelle geprüft werden sollte,
-- einzelne ältere Social-Media-Inhalte technisch nicht mehr erreichbar sind, solange andere zulässige Inhalte/Quellen weiterbearbeitet werden können.
+- einzelne ältere Social-Media-Inhalte technisch nicht mehr erreichbar sind, solange andere zulässige Inhalte/Quellen weiterbearbeitet werden können,
+- eine technische Anschlusslücke nach Abschnitt 4b geparkt wurde und spätere Inhalte oder andere Quellen weiterbearbeitet werden können.
 
 Solche Fälle werden gemäß Archivstandard in `Unsicherheiten` bzw. im jeweiligen Datensatz dokumentiert; danach wird weitergearbeitet.
 
@@ -218,7 +239,7 @@ Phase 1 ist abgeschlossen, wenn jede bekannte Quelle im Quellenindex entweder:
 - als `ERSCHLOSSEN MIT OFFENEN PRÜFSTELLEN` mit konkreten Restfragen dokumentiert ist,
 - oder als `BLOCKIERT` mit konkretem Blocker dokumentiert ist.
 
-Für `WEB-01`, `FB-01` und `IG-01` bedeutet dies zusätzlich: Der reproduzierbar erreichbare öffentliche Altbestand wurde bis zur Gegenwart aufgearbeitet und ein genauer Gegenwartscheckpoint dokumentiert.
+Für `WEB-01`, `FB-01` und `IG-01` bedeutet dies zusätzlich: Der **reproduzierbar erreichbare** öffentliche Altbestand wurde bis zur Gegenwart aufgearbeitet und ein genauer Gegenwartscheckpoint dokumentiert. Nicht reproduzierbare Teilstrecken dürfen als klar dokumentierte geparkte technische Quellenlücken bestehen bleiben; sie dürfen weder als vollständig erschlossen ausgegeben werden noch den übrigen erreichbaren Bestand dauerhaft blockieren.
 
 Es darf keine Quelle nur deshalb offen bleiben, weil nach einem Zwischenbericht keine neue Aufforderung kam.
 
