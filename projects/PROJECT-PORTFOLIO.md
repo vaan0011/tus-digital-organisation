@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-13 – Runtime-Abgleich bis einschließlich gemergtem PR #103
+Stand: 2026-09-14 – Runtime-Abgleich bis einschließlich gemergtem PR #108
 
 ## Purpose
 
@@ -32,6 +32,14 @@ PR #98 und PR #100 konkretisieren im Projekt `Mitglieder & Engagement` lediglich
 PR #101 und PR #102 dokumentieren Sportpark-Beschaffung/Versorgung und Scouting als **Rollen-, Skill- bzw. Runtime-Kandidaten**. Sie werden aktuell nicht als eigene Projekte oder Projektkandidaten hochgestuft, weil ihre organisatorische Form noch ausdrücklich offen ist und beide Bedarfe primär wiederkehrenden Betrieb beschreiben. Eine spätere klar abgegrenzte technische Einführung kann erneut auf Projektwürdigkeit geprüft werden.
 
 PR #103 erweitert den bestehenden Archivisten-Regelbetrieb um Homepage, Facebook und Instagram als digitale Quellen nach Abschluss der historischen Quellen. Daraus entsteht kein eigenständiges Archivprojekt; die bestehende Trennung zwischen dauerhaftem Archivbetrieb und abgegrenzten Erschließungs-/Publikationsprojekten bleibt bestehen.
+
+PR #105 konkretisiert Beschaffung und Preislisten als fachlichen Teil des bestehenden Event-Planner-Kontexts. Der verbindliche `PROJECT-STATE.md` bleibt unverändert: Der unmittelbare Projektfokus ist weiterhin die manuelle Playground-Verifikation des aktuellen Dashboard-/Historienstands und danach die Event-Anlegen-UI. Es entsteht kein zweites Beschaffungsprojekt.
+
+PR #106 führt einen eigenen nicht-sensitiven `Sportpark – Current State` für wiederkehrende Instandhaltungs-, Material- und Versorgungsarbeit ein. Der erste Pilotfall „Raucher-/Gruppenraum streichen“ ist dort ausdrücklich als operative Instandhaltungsaufgabe und nicht als eigenständiges Projekt klassifiziert. Das bestätigt die bestehende Portfolio-Einordnung von Sportpark-Operations als Regelbetrieb bzw. Runtime-Kandidat.
+
+PR #107 aktualisiert ausschließlich den laufenden Matchday-/Saisonstand nach dem dritten Pflichtspieltag. Daraus folgt kein neuer Projektstatus und kein zusätzlicher Projektkandidat.
+
+PR #108 schärft die Archivist-Runtime gegen technische Quellenloops. Das ist eine Laufzeitregel für den bestehenden Archivbetrieb und ändert weder den Projektbestand noch die Trennung zwischen Archiv-Regelbetrieb und abgegrenzten Archivprojekten.
 
 ### 2. Formale Projekte
 
