@@ -16,7 +16,7 @@ Tabellenplätze und Wettbewerbsdaten sind Momentaufnahmen und werden vor einer V
 
 ### Saison 2026/27
 
-Letzte Verifikation: **09.09.2026**
+Letzte Verifikation: **14.09.2026**
 Primärquelle: `fussball.de`
 
 ## Herren 1 – TuS Mingolsheim
@@ -28,12 +28,12 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 2
-- Siege: 2
+- Spiele: 3
+- Siege: 3
 - Unentschieden: 0
 - Niederlagen: 0
-- Tore: 5:2
-- Punkte: 6
+- Tore: 7:3
+- Punkte: 9
 - Tabellenplatz: **3**
 
 ### Ergebnisse
@@ -42,6 +42,7 @@ Mannschaftsseite:
 |---|---:|---|---|---:|
 | 30.08.2026 | 1 | TuS Mingolsheim | VfR Kronau | 3:2 |
 | 06.09.2026 | 2 | FV Neuthard | TuS Mingolsheim | 0:2 |
+| 13.09.2026 | 3 | TuS Mingolsheim | TSV Stettfeld | 2:1 |
 
 ## Herren 2 – TuS Mingolsheim 2
 
@@ -52,13 +53,13 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 2
+- Spiele: 3
 - Siege: 2
 - Unentschieden: 0
-- Niederlagen: 0
-- Tore: 11:3
+- Niederlagen: 1
+- Tore: 12:7
 - Punkte: 6
-- Tabellenplatz: **3**
+- Tabellenplatz: **6**
 
 ### Ergebnisse
 
@@ -66,6 +67,7 @@ Mannschaftsseite:
 |---|---:|---|---|---:|
 | 30.08.2026 | 1 | TuS Mingolsheim 2 | VfR Kronau 2 | 5:1 |
 | 06.09.2026 | 2 | FV Ubstadt 2 | TuS Mingolsheim 2 | 2:6 |
+| 13.09.2026 | 3 | TuS Mingolsheim 2 | FV 1912 Wiesental 2 | 1:4 |
 
 ## Redaktionelle Nutzung
 
