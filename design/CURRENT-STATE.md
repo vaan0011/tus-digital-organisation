@@ -1,6 +1,6 @@
 # Design Current State
 
-Stand: 2026-09-10 – erste Chat-to-Brain-Migration Brand & Merch
+Stand: 2026-09-15 – Social- & Event-Kommunikation standardisiert
 
 ## Purpose
 
@@ -25,7 +25,10 @@ Die Designorganisation ist grundsätzlich etabliert:
 - Mockup, Entwurf und Produktionsdatei sind getrennte Artefakte,
 - längere Designaufgaben verwenden Approved Direction, Locked Elements und einen belastbaren Design State,
 - nach zwei erfolglosen Versuchen am selben konkreten Problem wird die Methode gewechselt statt weiter gepromptet,
-- Brand Preflight ist Voraussetzung für den Status `FINAL`.
+- Brand Preflight ist Voraussetzung für den Status `FINAL`,
+- für Social Posts, Stories, Plakate und Eventkommunikation gilt zusätzlich `social-event-visual-standard.md`,
+- Social-/Eventdesign optimiert **Stopping Power, Verständlichkeit, Wiedererkennbarkeit und Teilbarkeit**; Viralität wird nicht als gestalterisch garantierbares Ergebnis behandelt,
+- eine starke Hauptidee, klare Informationshierarchie, Authentizität, mobile Lesbarkeit und bewusster Weißraum besitzen Vorrang vor Effekten und dekorativer Überladung.
 
 Verbindliche Grundsatzentscheidung: `../decisions/ADR-0004-brand-controlled-design-production.md`.
 
@@ -50,7 +53,8 @@ Aktuelle Arbeitsregel:
 
 - bei bestehenden freigegebenen Designs die tatsächliche Referenzschrift möglichst identisch weiterverwenden,
 - keine stillen Font-Substitutionen,
-- bei neuen, noch nicht referenzgebundenen Font-Entscheidungen frei verfügbare bzw. offen lizenzierte Fonts bevorzugen, sofern sie gestalterisch passen und dauerhaft nutzbar sind.
+- bei neuen, noch nicht referenzgebundenen Font-Entscheidungen frei verfügbare bzw. offen lizenzierte Fonts bevorzugen, sofern sie gestalterisch passen und dauerhaft nutzbar sind,
+- bei Social-/Eventmedien maximal zwei Schriftfamilien, bevorzugt eine Familie mit sinnvoll eingesetzten Schnitten.
 
 Verbindliche Detailquelle: `typography.md`.
 
@@ -61,6 +65,8 @@ Status: `teilweise offen`
 Eine vollständige Corporate-Design-Farbpalette für Merch, Print und Kommunikation ist noch nicht als `Approved` dokumentiert.
 
 Farben werden nicht aus Screenshots oder Mockups geschätzt. Technische Farbwerte werden erst aus einer verifizierten Quelle bzw. passend zum Produktionsverfahren festgelegt.
+
+Für Social-/Eventmedien gibt es keine starre Zwei-bis-vier-Farben-Regel. Verwendet werden belastbare TuS-Farben, neutrale Kontraste und bei Bedarf eine bewusste Event-/Kampagnenakzentfarbe.
 
 Verbindliche Detailquelle: `colors.md`.
 
@@ -76,6 +82,8 @@ Welche bestehenden Arbeiten als belastbare Referenz, eingeschränkte Referenz od
 
 Eine Referenz ist nicht automatisch ein technischer Master für Font, Farbe oder Logo.
 
+Für neue Social-/Eventmotive wird eine konkrete TuS-Referenz bevorzugt gegenüber allgemeinen Stilbegriffen wie `premium`, `cinematic`, `modern` oder `Designagentur`.
+
 ### 6. Design Production System
 
 Status: `etabliert`
@@ -89,9 +97,32 @@ Besonders relevant:
 - `design-production-system.md`
 - `design-workflow.md`
 - `generative-design-standard.md`
+- `social-event-visual-standard.md`
 - `product-types.md`
 
-### 7. Merchandising
+### 7. Social- & Event-Kommunikation
+
+Status: `etabliert`
+
+Verbindliche Detailquelle:
+
+- `social-event-visual-standard.md`
+
+Zentrale Wirkungslogik:
+
+`Stoppen → Verstehen → Merken → Handeln`
+
+Dauerhafte Regeln:
+
+- eine klare Hauptidee statt vieler gleich starker Elemente,
+- Informationen hierarchisieren statt vollständig auf die Grafik zu schreiben,
+- echte TuS-Fotografie vor generischen KI-Szenen prüfen,
+- keine automatische Neon-/Glow-/Partikel-/3D-/Pseudo-Cinematic-Ästhetik,
+- Plakat und Story teilen eine Kampagnenidee, werden aber medienspezifisch komponiert,
+- Grafik ist nicht die Caption,
+- finale Kontrolle enthält 1-Sekunden-, Thumbnail-, Telefon-, Kontrast-, Authentizitäts- und Handlungs-Test.
+
+### 8. Merchandising
 
 Status: `operativ in Vorbereitung`
 
@@ -105,7 +136,7 @@ Einstieg:
 
 Der aktuelle Produktstatus wird nicht in GitHub doppelt gepflegt. Operative Source of Truth ist das Google Sheet **TuS Merch Production Master**.
 
-### 8. Wichtigste bekannte Anti-Loop-Learnings
+### 9. Wichtigste bekannte Anti-Loop-Learnings
 
 Folgende Muster werden nicht erneut als Standardweg ausprobiert, solange keine neue belastbare technische Möglichkeit vorliegt:
 
@@ -115,9 +146,11 @@ Folgende Muster werden nicht erneut als Standardweg ausprobiert, solange keine n
 - Mockups als Druckdateien behandeln,
 - Farben oder Maße aus Mockups schätzen,
 - eine Referenz frei neu interpretieren, wenn ausdrücklich Referenztreue gefordert ist,
-- nach mehreren identischen Fehlern nur den Prompt leicht verändern und dieselbe ungeeignete Methode fortsetzen.
+- nach mehreren identischen Fehlern nur den Prompt leicht verändern und dieselbe ungeeignete Methode fortsetzen,
+- Social-/Eventmotive mit generischen KI-Effekten aufblasen, wenn keine starke Kommunikationsidee vorhanden ist,
+- freie Fläche reflexartig mit Icons, Partikeln, Formen oder Badges füllen.
 
-### 9. Offene Strukturpunkte
+### 10. Offene Strukturpunkte
 
 Noch nicht vollständig kanonisiert bzw. freigegeben sind insbesondere:
 
@@ -128,13 +161,14 @@ Noch nicht vollständig kanonisiert bzw. freigegeben sind insbesondere:
 - freigegebene Master-Artworks für die aktuelle Merch-Linie,
 - technische Produktionsparameter der aktuellen Merch-Produkte.
 
-### 10. Nächste sinnvolle Schritte
+### 11. Nächste sinnvolle Schritte
 
 1. aktuelle Merch-Produktion anhand der Ausstatter-Rückmeldung technisch vervollständigen,
 2. Heritage Classic als ersten kontrollierten Artwork-Master fertigstellen,
 3. freigegebene Referenzarbeiten im Reference Register nach und nach mit ihren konkreten Quelldateien verknüpfen,
-4. daraus belastbare Typografie-, Farb- und Visual-Language-Regeln ableiten,
-5. erst danach wiederverwendbare Templates aus realer Produktion standardisieren.
+4. kommende reale Social-/Eventmotive nach dem neuen Standard gestalten und Wirkung über passende reale Kennzahlen bzw. qualitative Rückmeldungen beurteilen,
+5. daraus belastbare Typografie-, Farb- und Visual-Language-Regeln ableiten,
+6. erst danach wiederverwendbare Templates aus realer Produktion standardisieren.
 
 ## Relationship to other documents
 
@@ -147,6 +181,7 @@ Noch nicht vollständig kanonisiert bzw. freigegeben sind insbesondere:
 - `design-workflow.md`
 - `design-production-system.md`
 - `generative-design-standard.md`
+- `social-event-visual-standard.md`
 - `merch/README.md`
 - `../roles/graphic-designer/role.md`
 - `../decisions/ADR-0004-brand-controlled-design-production.md`

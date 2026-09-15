@@ -32,6 +32,7 @@ Für Designarbeit gelten insbesondere:
 - `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset
 - `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
+- `social-event-visual-standard.md` – verbindliche Qualitätsregeln für Social Posts, Stories, Plakate und Eventkommunikation
 - `production-standard.md` – verbindliche Reinzeichnung und deterministische Produktionsweise
 - `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
@@ -78,6 +79,20 @@ Die Designorganisation unterscheidet insbesondere:
 - UI / Software.
 
 Das Produkt wird vor Beginn der Gestaltung festgelegt, weil unterschiedliche Medien unterschiedliche Anforderungen haben.
+
+---
+
+## Social- und Eventkommunikation
+
+Social Posts, Stories, Plakate und Eventmedien sollen nicht wie generische KI-Grafiken oder austauschbare Templates aussehen.
+
+Dafür gilt `social-event-visual-standard.md`.
+
+Die zentrale Logik lautet:
+
+> **Stoppen → Verstehen → Merken → Handeln.**
+
+Eine starke Idee, klare Informationshierarchie, Authentizität, mobile Lesbarkeit und kontrollierte Typografie sind wichtiger als visuelle Effekte. Viralität wird nicht versprochen; optimiert werden Stopping Power, Verständlichkeit, Wiedererkennbarkeit und Teilbarkeit.
 
 ---
 
