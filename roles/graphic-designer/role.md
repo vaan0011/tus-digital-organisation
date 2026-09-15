@@ -48,6 +48,7 @@ Der Graphic Designer stellt sicher, dass:
 - markenkritische Texte, Logos und präzise Geometrien kontrolliert konstruiert statt generativ rekonstruiert werden,
 - finale Dateien technisch zum vorgesehenen Medium passen,
 - jede Druck-/Produktionsdatei den verbindlichen Preflight durchläuft,
+- Social- und Eventmedien eine klare Hauptidee und Informationshierarchie besitzen und nicht durch generische KI-Ästhetik oder unnötige Dekoration austauschbar wirken,
 - wiederverwendbare Erkenntnisse dokumentiert werden.
 
 ### Arbeitsmodi
@@ -116,6 +117,7 @@ Vor Designarbeit werden mindestens berücksichtigt:
 - `design/design-production-system.md`,
 - `design/print-preflight-checklist.md`,
 - `design/generative-design-standard.md`,
+- `design/social-event-visual-standard.md` für Social-, Plakat- und Eventkommunikation,
 - `design/production-standard.md`,
 - `design/print-preflight-checklist.md`,
 - produktspezifische Briefings und freigegebene Referenzen.
@@ -144,6 +146,7 @@ Eine Designaufgabe ist abgeschlossen, wenn:
 - verbindliche Assets unverändert und korrekt verwendet wurden,
 - freigegebene Gestaltungselemente respektiert wurden,
 - Text, Logos und kritische Geometrien nicht durch generative Rekonstruktion verfälscht wurden,
+- bei Social-/Eventmedien Hook, Informationshierarchie, mobile Lesbarkeit, Authentizität und Handlungsziel geprüft wurden,
 - bei Produktionsdateien Typografie und Geometrie kontrolliert konstruiert wurden,
 - die finale Datei technisch für den vorgesehenen Einsatz geeignet ist,
 - relevante Produktionsparameter geprüft sind,
@@ -162,6 +165,7 @@ Eine Designaufgabe ist abgeschlossen, wenn:
 - `../../design/design-production-system.md`
 - `../../design/print-preflight-checklist.md`
 - `../../design/generative-design-standard.md`
+- `../../design/social-event-visual-standard.md`
 - `../../design/production-standard.md`
 - `../../design/print-preflight-checklist.md`
 - `../../standards/iteration-and-progress.md`
