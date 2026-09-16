@@ -40,6 +40,10 @@ Verbindliche Struktur und Fortschrittslogik für `Event bearbeiten`:
 
 `EVENT-EDIT-UI.md`
 
+Verbindliche Semantik für Fortschritts- und Statusfarben:
+
+`STATUS-COLOR-STANDARD.md`
+
 Verbindliche Regel für dauerhafte Datenhaltung:
 
 `DATA-PERSISTENCE.md`
@@ -59,16 +63,17 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 3. `EVENTS-OVERVIEW.md`
 4. `EVENT-FORM-UI.md`
 5. `EVENT-EDIT-UI.md`
-6. `DATA-PERSISTENCE.md`
-7. `URL-INPUT-STANDARD.md`
-8. `PROJECT-STATE.md`
-9. `../../roles/wordpress-developer/role.md`
-10. `../../roles/wordpress-developer/development-standard.md`
-11. `../../standards/iteration-and-progress.md`
-12. `../../design/design-principles.md`
-13. `../../design/ui-standard.md`
-14. `../../design/logo.md`
-15. relevante Einträge unter `../../decisions/`
+6. `STATUS-COLOR-STANDARD.md`
+7. `DATA-PERSISTENCE.md`
+8. `URL-INPUT-STANDARD.md`
+9. `PROJECT-STATE.md`
+10. `../../roles/wordpress-developer/role.md`
+11. `../../roles/wordpress-developer/development-standard.md`
+12. `../../standards/iteration-and-progress.md`
+13. `../../design/design-principles.md`
+14. `../../design/ui-standard.md`
+15. `../../design/logo.md`
+16. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -88,6 +93,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `EVENT-EDIT-UI.md` beschreibt, **wie** der Event-Bearbeitungsscreen als kompakte Arbeitszentrale aufgebaut ist, wie die fünf Fortschrittsstufen berechnet werden und wie die Tagescontainer bedient werden.
 
+`STATUS-COLOR-STANDARD.md` beschreibt, **wie** Grau, Blau, Gelb/Orange, Grün und Rot fachlich verwendet werden. Rot ist dabei ausdrücklich nur für echte kritische Zustände vorgesehen.
+
 `DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
 
 `URL-INPUT-STANDARD.md` beschreibt, **wie** normale Web-URLs nutzerfreundlich eingegeben, automatisch normalisiert und dauerhaft vollständig gespeichert werden.
@@ -101,6 +108,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
 - `EVENT-EDIT-UI.md`
+- `STATUS-COLOR-STANDARD.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
 - `PROJECT-STATE.md`
