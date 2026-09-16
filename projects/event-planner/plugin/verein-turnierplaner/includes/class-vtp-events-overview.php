@@ -49,34 +49,59 @@ class VTP_Events_Overview {
  private static function load_events(){
   global $wpdb;
   $events=VTP_DB::table('events');
-  $items=VTP_DB::table('event_items');
-  $needs=VTP_DB::table('helper_needs');
-  $shifts=VTP_DB::table('shifts');
-  $tournaments=VTP_DB::table('tournaments');
   $today=current_time('Y-m-d');
 
+  // Event-Grunddaten bewusst separat laden. Ein Fehler in einer operativen
+  // Nebenabfrage darf niemals die Eventkarte selbst verschwinden lassen.
   $sql=$wpdb->prepare(
-   "SELECT e.*,
-    (SELECT COUNT(*) FROM $items i WHERE i.event_id=e.id) AS program_count,
-    (SELECT COUNT(*) FROM $needs h WHERE h.event_id=e.id) AS helper_need_count,
-    (SELECT COUNT(*) FROM $shifts s WHERE s.event_id=e.id) AS shift_count,
-    (SELECT COUNT(*) FROM $tournaments t WHERE t.event_id=e.id AND COALESCE(t.status,'')<>'archiviert') AS tournament_count
-    FROM $events e
-    WHERE COALESCE(e.status,'')<>'archiviert'
+   "SELECT * FROM $events
+    WHERE COALESCE(status,'')<>'archiviert'
       AND (
-       e.start_date IS NULL
-       OR e.start_date=''
-       OR e.start_date='0000-00-00'
-       OR COALESCE(NULLIF(NULLIF(e.end_date,''),'0000-00-00'),e.start_date) >= %s
+       start_date IS NULL
+       OR start_date=''
+       OR start_date='0000-00-00'
+       OR COALESCE(NULLIF(NULLIF(end_date,''),'0000-00-00'),start_date) >= %s
       )
     ORDER BY
-      CASE WHEN e.start_date IS NULL OR e.start_date='' OR e.start_date='0000-00-00' THEN 1 ELSE 0 END,
-      e.start_date ASC,
-      e.name ASC",
+      CASE WHEN start_date IS NULL OR start_date='' OR start_date='0000-00-00' THEN 1 ELSE 0 END,
+      start_date ASC,
+      name ASC",
    $today
   );
 
-  return $wpdb->get_results($sql) ?: [];
+  $rows=$wpdb->get_results($sql) ?: [];
+  foreach($rows as $event){
+   self::add_operational_counts($event);
+  }
+  return $rows;
+ }
+
+ private static function add_operational_counts($event){
+  global $wpdb;
+  $event_id=absint($event->id??0);
+
+  $event->program_count=0;
+  $event->helper_need_count=0;
+  $event->shift_count=0;
+  $event->tournament_count=0;
+  if(!$event_id) return;
+
+  $event->program_count=(int)$wpdb->get_var($wpdb->prepare(
+   'SELECT COUNT(*) FROM '.VTP_DB::table('event_items').' WHERE event_id=%d',
+   $event_id
+  ));
+  $event->helper_need_count=(int)$wpdb->get_var($wpdb->prepare(
+   'SELECT COUNT(*) FROM '.VTP_DB::table('helper_needs').' WHERE event_id=%d',
+   $event_id
+  ));
+  $event->shift_count=(int)$wpdb->get_var($wpdb->prepare(
+   'SELECT COUNT(*) FROM '.VTP_DB::table('shifts').' WHERE event_id=%d',
+   $event_id
+  ));
+  $event->tournament_count=(int)$wpdb->get_var($wpdb->prepare(
+   "SELECT COUNT(*) FROM ".VTP_DB::table('tournaments')." WHERE event_id=%d AND COALESCE(status,'')<>'archiviert'",
+   $event_id
+  ));
  }
 
  private static function is_operationally_active($event){
