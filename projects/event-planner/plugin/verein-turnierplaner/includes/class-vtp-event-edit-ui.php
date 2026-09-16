@@ -1,0 +1,138 @@
+<?php
+if (!defined('ABSPATH')) exit;
+
+class VTP_Event_Edit_UI {
+ public static function init(){
+  add_action('admin_enqueue_scripts',[__CLASS__,'assets']);
+ }
+
+ public static function assets($hook){
+  if(($_GET['page']??'')!=='vtp-events') return;
+  $event_id=absint($_GET['edit_event']??0);
+  if(!$event_id) return;
+
+  global $wpdb;
+  $event=$wpdb->get_row($wpdb->prepare('SELECT * FROM '.VTP_DB::table('events').' WHERE id=%d',$event_id));
+  if(!$event) return;
+
+  wp_enqueue_style('vtp-event-edit',VTP_URL.'assets/event-edit.css',['vtp-admin'],VTP_VERSION);
+  wp_enqueue_script('vtp-event-edit',VTP_URL.'assets/event-edit.js',[],VTP_VERSION,true);
+
+  $items_table=VTP_DB::table('event_items');
+  $shifts_table=VTP_DB::table('shifts');
+  $signups_table=VTP_DB::table('shift_signups');
+  $tournaments_table=VTP_DB::table('tournaments');
+
+  $program_count=(int)$wpdb->get_var($wpdb->prepare(
+   "SELECT COUNT(*) FROM $items_table WHERE event_id=%d",
+   $event_id
+  ));
+  $public_program_count=(int)$wpdb->get_var($wpdb->prepare(
+   "SELECT COUNT(*) FROM $items_table WHERE event_id=%d AND COALESCE(visibility,'public')='public'",
+   $event_id
+  ));
+
+  $shift_rows=$wpdb->get_results($wpdb->prepare(
+   "SELECT s.id,s.slots_needed,COUNT(g.id) signups
+    FROM $shifts_table s
+    LEFT JOIN $signups_table g ON g.shift_id=s.id
+    WHERE s.event_id=%d
+    GROUP BY s.id,s.slots_needed
+    ORDER BY s.shift_date,s.start_time,s.id",
+   $event_id
+  ));
+
+  $shift_count=count($shift_rows?:[]);
+  $full_shift_count=0;
+  $slots_needed=0;
+  $slots_filled=0;
+  foreach($shift_rows?:[] as $shift){
+   $needed=max(0,absint($shift->slots_needed));
+   $filled=max(0,absint($shift->signups));
+   $slots_needed += $needed;
+   $slots_filled += min($filled,$needed ?: $filled);
+   if($needed>0 && $filled >= $needed) $full_shift_count++;
+  }
+
+  $linked_tournaments=$wpdb->get_results($wpdb->prepare(
+   "SELECT id,name,start_date,start_time,event_type
+    FROM $tournaments_table
+    WHERE (event_id=%d OR parent_event=%s)
+      AND COALESCE(status,'')<>'archiviert'
+    ORDER BY start_date,start_time,name",
+   $event_id,
+   $event->name
+  ));
+
+  $day_set=[];
+  $saved_days=get_option('vtp_event_days_'.$event_id,[]);
+  if(is_array($saved_days)){
+   foreach($saved_days as $day){
+    if(VTP_Plugin::is_valid_event_date($day)) $day_set[$day]=true;
+   }
+  }
+  $item_days=$wpdb->get_col($wpdb->prepare(
+   "SELECT DISTINCT item_date FROM $items_table WHERE event_id=%d AND item_date IS NOT NULL AND item_date<>''",
+   $event_id
+  ));
+  foreach($item_days?:[] as $day){
+   if(VTP_Plugin::is_valid_event_date($day)) $day_set[$day]=true;
+  }
+  if(VTP_Plugin::is_valid_event_date((string)$event->start_date)){
+   $start=strtotime($event->start_date.' 00:00:00');
+   $end=VTP_Plugin::is_valid_event_date((string)$event->end_date)?strtotime($event->end_date.' 00:00:00'):$start;
+   if($end<$start) $end=$start;
+   for($cursor=$start;$cursor<=$end;$cursor=strtotime('+1 day',$cursor)){
+    $day_set[date('Y-m-d',$cursor)]=true;
+   }
+  }
+  $day_count=count($day_set);
+  if($day_count===0) $day_count=1;
+
+  $date_label='Datum offen';
+  if(VTP_Plugin::is_valid_event_date((string)$event->start_date)){
+   $date_label=date_i18n('d.m.Y',strtotime($event->start_date));
+   if(VTP_Plugin::is_valid_event_date((string)$event->end_date) && $event->end_date!==$event->start_date){
+    $date_label.=' – '.date_i18n('d.m.Y',strtotime($event->end_date));
+   }
+  }
+
+  $linked=[];
+  foreach($linked_tournaments?:[] as $t){
+   $linked[]=[
+    'name'=>(string)$t->name,
+    'date'=>$t->start_date ? date_i18n('d.m.Y',strtotime($t->start_date)) : '',
+    'time'=>$t->start_time ? substr((string)$t->start_time,0,5) : '',
+   ];
+  }
+
+  wp_localize_script('vtp-event-edit','VTPEventEdit',[
+   'event'=>[
+    'id'=>$event_id,
+    'name'=>(string)$event->name,
+    'dateLabel'=>$date_label,
+    'location'=>(string)($event->location?:'Ort offen'),
+    'publicUrl'=>VTP_Public::event_url($event),
+   ],
+   'navigation'=>[
+    'new'=>admin_url('admin.php?page=vtp-events&view=new'),
+    'overview'=>admin_url('admin.php?page=vtp-events&view=active'),
+    'templates'=>admin_url('admin.php?page=vtp-events&view=templates'),
+    'archive'=>admin_url('admin.php?page=vtp-events&view=archive'),
+   ],
+   'linkedTournaments'=>$linked,
+   'progress'=>[
+    'days'=>$day_count,
+    'programCount'=>$program_count,
+    'programPublished'=>($public_program_count>0 && absint($event->public_page_id)>0),
+    'tasksDone'=>0,
+    'tasksTotal'=>0,
+    'tasksAvailable'=>false,
+    'shiftsFull'=>$full_shift_count,
+    'shiftsTotal'=>$shift_count,
+    'helpersFilled'=>$slots_filled,
+    'helpersNeeded'=>$slots_needed,
+   ],
+  ]);
+ }
+}

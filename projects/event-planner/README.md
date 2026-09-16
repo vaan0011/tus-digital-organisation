@@ -36,6 +36,10 @@ Verbindliche Struktur für Event-Anlage und Sponsorenpflege:
 
 `EVENT-FORM-UI.md`
 
+Verbindliche Struktur und Fortschrittslogik für `Event bearbeiten`:
+
+`EVENT-EDIT-UI.md`
+
 Verbindliche Regel für dauerhafte Datenhaltung:
 
 `DATA-PERSISTENCE.md`
@@ -54,16 +58,17 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 2. `DASHBOARD-LOGIC.md`
 3. `EVENTS-OVERVIEW.md`
 4. `EVENT-FORM-UI.md`
-5. `DATA-PERSISTENCE.md`
-6. `URL-INPUT-STANDARD.md`
-7. `PROJECT-STATE.md`
-8. `../../roles/wordpress-developer/role.md`
-9. `../../roles/wordpress-developer/development-standard.md`
-10. `../../standards/iteration-and-progress.md`
-11. `../../design/design-principles.md`
-12. `../../design/ui-standard.md`
-13. `../../design/logo.md`
-14. relevante Einträge unter `../../decisions/`
+5. `EVENT-EDIT-UI.md`
+6. `DATA-PERSISTENCE.md`
+7. `URL-INPUT-STANDARD.md`
+8. `PROJECT-STATE.md`
+9. `../../roles/wordpress-developer/role.md`
+10. `../../roles/wordpress-developer/development-standard.md`
+11. `../../standards/iteration-and-progress.md`
+12. `../../design/design-principles.md`
+13. `../../design/ui-standard.md`
+14. `../../design/logo.md`
+15. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -81,6 +86,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `EVENT-FORM-UI.md` beschreibt, **wie** die Event-Anlage strukturiert wird, einschließlich Navigation, Vorlagen-Auswahl und zeilenweiser Sponsorenpflege.
 
+`EVENT-EDIT-UI.md` beschreibt, **wie** der Event-Bearbeitungsscreen als kompakte Arbeitszentrale aufgebaut ist, wie die fünf Fortschrittsstufen berechnet werden und wie die Tagescontainer bedient werden.
+
 `DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
 
 `URL-INPUT-STANDARD.md` beschreibt, **wie** normale Web-URLs nutzerfreundlich eingegeben, automatisch normalisiert und dauerhaft vollständig gespeichert werden.
@@ -93,6 +100,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `DASHBOARD-LOGIC.md`
 - `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
+- `EVENT-EDIT-UI.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
 - `PROJECT-STATE.md`
