@@ -98,21 +98,67 @@
 
   grid.appendChild(statusCard(String(p.days),'Tage','Event erstellt','done'));
 
-  var programDone=!!p.programPublished;
-  grid.appendChild(statusCard(String(p.programCount),'Programmpunkte',programDone?'veröffentlicht':'noch nicht veröffentlicht',programDone?'done':'open'));
+  var programState='neutral';
+  var programStatus='noch nicht geplant';
+  if(p.programCount>0){
+   if(p.programPublished){
+    programState='done';
+    programStatus='veröffentlicht';
+   } else {
+    programState='active';
+    programStatus='noch nicht veröffentlicht';
+   }
+  }
+  grid.appendChild(statusCard(String(p.programCount),'Programmpunkte',programStatus,programState));
 
   var taskMetric=p.tasksAvailable ? (p.tasksDone+'/'+p.tasksTotal) : '0';
-  var taskStatus=p.tasksAvailable ? (p.tasksTotal>0 && p.tasksDone>=p.tasksTotal ? 'erledigt' : 'noch offen') : 'noch nicht geplant';
-  var taskDone=p.tasksAvailable && p.tasksTotal>0 && p.tasksDone>=p.tasksTotal;
-  grid.appendChild(statusCard(taskMetric,'Aufgaben',taskStatus,taskDone?'done':'open'));
+  var taskState='neutral';
+  var taskStatus='noch nicht geplant';
+  if(p.tasksAvailable && p.tasksTotal>0){
+   if(p.tasksDone>=p.tasksTotal){
+    taskState='done';
+    taskStatus='erledigt';
+   } else if(p.tasksDone>0){
+    taskState='warning';
+    taskStatus=(p.tasksTotal-p.tasksDone)+' offen';
+   } else {
+    taskState='active';
+    taskStatus='geplant';
+   }
+  }
+  grid.appendChild(statusCard(taskMetric,'Aufgaben',taskStatus,taskState));
 
-  var shiftsDone=p.shiftsTotal>0 && p.shiftsFull>=p.shiftsTotal;
-  var shiftsStatus=p.shiftsTotal===0 ? 'noch nicht geplant' : (shiftsDone ? 'belegt' : ((p.shiftsTotal-p.shiftsFull)+' offen'));
-  grid.appendChild(statusCard(p.shiftsFull+'/'+p.shiftsTotal,'Schichten',shiftsStatus,shiftsDone?'done':'open'));
+  var shiftsState='neutral';
+  var shiftsStatus='noch nicht geplant';
+  if(p.shiftsTotal>0){
+   if(p.shiftsFull>=p.shiftsTotal){
+    shiftsState='done';
+    shiftsStatus='belegt';
+   } else if(p.shiftsFull>0){
+    shiftsState='warning';
+    shiftsStatus=(p.shiftsTotal-p.shiftsFull)+' offen';
+   } else {
+    shiftsState='active';
+    shiftsStatus='geplant';
+   }
+  }
+  grid.appendChild(statusCard(p.shiftsFull+'/'+p.shiftsTotal,'Schichten',shiftsStatus,shiftsState));
 
-  var helpersDone=p.helpersNeeded>0 && p.helpersFilled>=p.helpersNeeded;
-  var helpersStatus=p.helpersNeeded===0 ? 'noch nicht geplant' : (helpersDone ? 'organisiert' : (Math.max(0,p.helpersNeeded-p.helpersFilled)+' offen'));
-  grid.appendChild(statusCard(p.helpersFilled+'/'+p.helpersNeeded,'Helfer',helpersStatus,helpersDone?'done':'open'));
+  var helpersState='neutral';
+  var helpersStatus='noch nicht geplant';
+  if(p.helpersNeeded>0){
+   if(p.helpersFilled>=p.helpersNeeded){
+    helpersState='done';
+    helpersStatus='organisiert';
+   } else if(p.helpersFilled>0){
+    helpersState='warning';
+    helpersStatus=Math.max(0,p.helpersNeeded-p.helpersFilled)+' offen';
+   } else {
+    helpersState='active';
+    helpersStatus='Bedarf geplant';
+   }
+  }
+  grid.appendChild(statusCard(p.helpersFilled+'/'+p.helpersNeeded,'Helfer',helpersStatus,helpersState));
 
   section.appendChild(grid);
   return section;
