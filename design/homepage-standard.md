@@ -102,7 +102,20 @@ Im mobilen Header stehen im Wesentlichen:
 - Suche
 - Burger-Menü
 
-Die Navigation öffnet sich als klarer Drawer oder Vollbildbereich. Eine Desktopnavigation wird nicht lediglich verkleinert.
+Die mobile Hauptnavigation öffnet sich **verbindlich als rechter Drawer**. Ein Vollbildmenü ist für V1 nicht vorgesehen.
+
+Für den Drawer gelten folgende Regeln:
+
+- Öffnung von rechts über das Burger-Menü.
+- Breite ungefähr 85–90 % des Viewports; auf größeren Smartphones kann die Breite technisch begrenzt werden.
+- Die darunterliegende Seite bleibt erkennbar, wird aber durch ein Overlay abgedunkelt.
+- Hauptpunkte werden vertikal mit ausreichend großen Touch-Flächen dargestellt.
+- Unterpunkte werden innerhalb des Drawers als auf- und zuklappbare Bereiche geführt; es entsteht keine verkleinerte Desktopnavigation.
+- Schließen ist mindestens über ein gut sichtbares `X` und über das Overlay möglich. Eine saubere Tastatur- und Fokussteuerung ist vorzusehen.
+- Während der Drawer geöffnet ist, scrollt die Hintergrundseite nicht weiter.
+- Suche bleibt im mobilen Header direkt erreichbar und muss nicht zuerst über den Drawer geöffnet werden.
+
+Der Drawer unterstützt damit das Grundprinzip **„Weniger zeigen. Besser führen.“**: Die Navigation bleibt vertraut, kompakt und schnell bedienbar, ohne den gesamten mobilen Bildschirm dauerhaft in eine separate Navigationsfläche zu verwandeln.
 
 ### 5. Hero
 
