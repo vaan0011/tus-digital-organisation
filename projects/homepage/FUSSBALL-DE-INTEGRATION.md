@@ -4,7 +4,7 @@
 
 Dieses Dokument definiert das Zielmodell und den notwendigen technischen Spike für die automatisierte Anzeige der TuS-Spiele auf der Homepage.
 
-Es entscheidet bewusst noch keinen ungeprüften Transportweg, legt aber Source of Truth, Datenmodell, Synchronisationsverhalten und Fallbacks verbindlich fest.
+Der offizielle Transportweg ist inzwischen teilweise geklärt: Eine direkte FUSSBALL.DE-API steht derzeit nicht zur Verfügung; automatisierte Lieferungen werden über Sportmedia per SFTP angeboten. Dieses Dokument legt die daraus folgende Modulgrenze, den verbleibenden Provider-Spike, das Datenmodell, Synchronisationsverhalten und Fallbacks verbindlich fest.
 
 ## Core Principle
 
@@ -15,7 +15,10 @@ Es entscheidet bewusst noch keinen ungeprüften Transportweg, legt aber Source o
 ### 1. Bestätigter Ausgangspunkt
 
 - FUSSBALL.DE ist fachlich führend für Spielansetzungen, Status und Ergebnisse.
-- FUSSBALL.DE stellt registrierten Nutzern offizielle Website-Widgets unter `Meine Widgets` bereit.
+- Die offizielle FUSSBALL.DE-FAQ erklärt, dass eine direkte Schnittstelle derzeit nicht möglich ist.
+- Für automatisierte Datenlieferungen verweist FUSSBALL.DE auf Sportmedia und einen automatisierten Versand per SFTP.
+- Als verfügbare Datenprodukte werden Ergebnisse und Tabellen, Spielberichte sowie Spielpläne genannt.
+- FUSSBALL.DE stellt registrierten Nutzern zusätzlich offizielle Website-Widgets unter `Meine Widgets` bereit.
 - Offizielle Widgets umfassen beziehungsweise umfassten Verein, Mannschaft, Wettbewerb sowie letzte/nächste Spiele.
 - 2025 wurden die offiziellen Wettbewerbs-Widgets um weitere Wettbewerbsarten ergänzt.
 - Das heute installierte WordPress-Plugin `Include Fussball.de Widgets` ist im offiziellen WordPress-Plugin-Verzeichnis seit 07.11.2025 wegen eines Sicherheitsproblems geschlossen.
@@ -23,6 +26,7 @@ Es entscheidet bewusst noch keinen ungeprüften Transportweg, legt aber Source o
 
 Offizielle Ausgangsquellen:
 
+- https://next.fussball.de/faq – Abschnitt „Gibt es eine Schnittstelle/API“
 - https://www.fussball.de/newsdetail/so-baue-ich-widgets-ein-tipps-fuer-webmaster/-/article-id/130660
 - https://www.fussball.de/newsdetail/neue-wettbewerbs-widgets-fuer-eure-vereinsseite-jetzt-mit-pokalen-und-turnieren/-/article-id/10062803
 - https://wordpress.org/plugins/include-fussball-de-widgets/
@@ -63,7 +67,9 @@ Führende Quelle für:
 - Zuordnung zur externen FUSSBALL.DE-Mannschaft,
 - Prioritätsgruppe Herren/Frauen/Jugend.
 
-#### Matchdaten-Adapter
+#### Team-Manager-Matchdaten-Modul
+
+Gemäß `ADR-0012` ist der Matchdaten-Adapter ein abgegrenztes Modul des Team Managers.
 
 Verantwortlich für:
 
@@ -159,35 +165,39 @@ Der genaue Rhythmus wird erst nach Kenntnis von Quelle, Rate Limits und realem �
 2. **Noch kein erfolgreicher Import:** neutraler Empty State mit Link zum offiziellen Vereinsspielplan.
 3. **Zuordnung fehlt:** betroffene externe Mannschaft nicht automatisch einer internen Mannschaft zuweisen; administrativ als ungeklärte Zuordnung melden.
 4. **Daten sind erkennbar veraltet:** Stand transparent machen und offiziellen Link anbieten.
-5. **Matchplugin fehlt oder ist deaktiviert:** Homepage bleibt funktionsfähig; Matchbereich fällt kontrolliert auf einen Link zurück.
+5. **Team Manager beziehungsweise Matchdaten-Modul fehlt oder ist deaktiviert:** Homepage bleibt funktionsfähig; Matchbereich fällt kontrolliert auf einen Link zurück.
 
-### 9. Technischer Spike vor Implementierung
+### 9. Provider-Spike vor Implementierung
 
-Der Spike beantwortet mit einem echten TuS-Widget beziehungsweise freigegebenen Website-Zugang:
+Der fachliche Transportweg ist eingegrenzt: Ziel ist eine offizielle Sportmedia-Datenlieferung per SFTP. Vor produktivem Connector-Code werden folgende Punkte mit einem realen TuS-Datenprodukt verifiziert:
 
-1. Welche aktuelle offizielle Widget-Variante steht für `tus-mingolsheim.de` zur Verfügung?
-2. Welche IDs und Konfigurationswerte liefert `Code anzeigen`?
-3. Erfolgt die Datenübertragung als dokumentiertes JSON, serverseitig nutzbare Quelle oder ausschließlich als Browser-Widget?
-4. Welche Felder, Statuswerte und Zeitstempel werden tatsächlich geliefert?
-5. Welche Nutzungsbedingungen gelten für eigenes serverseitiges Rendering beziehungsweise Zwischenspeicherung?
-6. Gibt es Rate Limits, Domainbindung oder Token-/Key-Regeln?
-7. Lassen sich Vereinsspielplan und Mannschaftsspielpläne stabil zuordnen?
-8. Wie werden Verlegungen, Absetzungen und Ergebnisse dargestellt?
-9. Welche Privacy-/Drittanbieterrequests entstehen bei der offiziellen Widget-Variante?
-10. Reicht der offizielle Weg für eine eigene MatchCard oder ist eine Abstimmung mit FUSSBALL.DE/DFB erforderlich?
+1. Ansprechpartner, Bestell-/Antragsweg und technische Bereitstellung,
+2. Nutzungsbedingungen und mögliche Kosten,
+3. repräsentative Beispieldatei,
+4. Dateiformat, Zeichencodierung und Schema,
+5. Lieferfrequenz und Änderungsverhalten,
+6. externe IDs für Verein, Mannschaft, Wettbewerb und Spiel,
+7. Statuswerte für angesetzt, verlegt, abgesetzt, laufend und beendet,
+8. Zuordnung von Vereinsspielplan und Mannschaftsspielplänen,
+9. Umfang von Spielort, Ergebnis und Halbzeitstand,
+10. Eignung für Homepage-Block und lesende Matchday-Schnittstelle,
+11. Authentifizierung, Secret-Verwaltung, Retry und Aufbewahrung,
+12. datenschutzbezogener Umfang und Datenminimierung.
 
-Bis diese Fragen beantwortet sind, wird kein HTML-Scraping oder inoffizieller Endpoint als dauerhaft akzeptierte Schnittstelle implementiert.
+Bis diese Fragen beantwortet sind, wird kein produktiver SFTP-Connector implementiert. HTML-Scraping, inoffizielle Endpunkte und saisonale Widget-Codes werden nicht als dauerhafte Ausweichlösung eingebaut.
 
 ### 10. Spike-Erfolgskriterium
 
-Der Spike ist erfolgreich, wenn:
+Der Provider-Spike ist erfolgreich, wenn:
 
-- mindestens ein echter TuS-Vereins- oder Mannschaftsdatensatz reproduzierbar abgerufen wurde,
-- Felder und IDs dokumentiert sind,
-- die Nutzung für die geplante TuS-Darstellung vertretbar ist,
+- eine reale oder repräsentative Sportmedia-Lieferung reproduzierbar verarbeitet werden kann,
+- Bedingungen, mögliche Kosten und Betriebsweg dokumentiert sind,
+- Felder, IDs, Statuswerte und Zeichencodierung bekannt sind,
+- die saisonbezogene Mannschaftszuordnung belastbar möglich ist,
 - Fehler- und Aktualisierungsverhalten bekannt sind,
-- eine Entscheidung `offizieller Adapter möglich`, `nur offizielles Widget möglich` oder `Klärung mit Anbieter erforderlich` dokumentiert wurde,
-- kein Secret im Repository landet.
+- Homepage- und Matchday-Bedarf gegen die gelieferten Daten geprüft sind,
+- kein Secret im Repository landet,
+- eine Entscheidung `Sportmedia-Connector umsetzen` oder `Transportentscheidung gemäß ADR-0012 erneut öffnen` dokumentiert wurde.
 
 ### 11. Abnahmekriterien der späteren Integration
 
@@ -209,10 +219,12 @@ Der Spike ist erfolgreich, wenn:
 - `CONTENT-MODEL.md`
 - `../team-manager/PROJECT-STATE.md`
 - `../team-manager/FUNCTIONAL-SCOPE.md`
+- `../team-manager/MATCH-DATA-MODULE.md`
+- `../../decisions/ADR-0012-team-manager-match-data-module.md`
 - `../../design/homepage-standard.md`
 - `../../knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`
 - `../../knowledge/privacy/HOMEPAGE-PLUGIN-MIGRATION.md`
 
 ## Future Development
 
-Nach dem Spike wird dieses Dokument um den tatsächlich gewählten Transport, Authentifizierung, Update-Rhythmus, Datenmapping und die konkreten technischen Testfälle ergänzt. Erst dann beginnt der Adapter-Code.
+Nach dem Provider-Spike wird dieses Dokument um die verifizierten Sportmedia-Transportdetails, Authentifizierung, den Update-Rhythmus, das reale Datenmapping und die konkreten technischen Testfälle ergänzt. Erst dann beginnt der produktive Connector-Code.
