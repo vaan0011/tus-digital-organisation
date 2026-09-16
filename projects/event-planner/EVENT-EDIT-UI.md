@@ -121,9 +121,23 @@ Die vorhandene Datums-Picker-Logik bleibt verbindlich: neue Event-Tage orientier
 
 ### 5. Farben und Status
 
-Canva-Mockups definieren Struktur und Informationshierarchie, nicht die Farbpalette.
+Verbindliche Quelle für die Statussemantik:
 
-Die Oberfläche verwendet die bestehenden Event-Planner-/TuS-UI-Tokens. Für Statuszustände dürfen die bereits im Plugin vorhandenen Erfolgs-/Offen-Farben verwendet werden.
+`STATUS-COLOR-STANDARD.md`
+
+Die Fortschrittskacheln verwenden folgende fachliche Zustände:
+
+- Grau = noch nicht begonnen / noch nicht geplant,
+- Blau = geplant / in Bearbeitung,
+- Gelb oder Orange = teilweise erledigt / Aufmerksamkeit nötig,
+- Grün = vollständig erfüllt,
+- Rot = echter kritischer Zustand.
+
+Rot ist ausdrücklich **kein normaler Offen-Zustand**. Ein frisch angelegtes Event mit noch nicht begonnenem Programm, Aufgaben, Schichten oder Helferplanung zeigt diese Bereiche deshalb grau und nicht rot.
+
+Farbe wird nie allein verwendet. Jede Kachel zeigt zusätzlich einen verständlichen Status-Text.
+
+Canva-Mockups definieren Struktur und Informationshierarchie, nicht die Farbpalette. Die Oberfläche verwendet die bestehenden Event-Planner-/TuS-UI-Tokens.
 
 ### 6. Persistenz
 
@@ -137,6 +151,7 @@ Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persisten
 - `DASHBOARD-LOGIC.md`
 - `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
+- `STATUS-COLOR-STANDARD.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
 - `PROJECT-STATE.md`
@@ -144,5 +159,7 @@ Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persisten
 ## Future Development
 
 Sobald das persistente Aufgabenmodul existiert, wird die dritte Fortschrittskachel an die echten Aufgabenstände angebunden.
+
+Zeitabhängige rote Warnzustände werden erst ergänzt, wenn fachlich belastbare Fristen bzw. Eskalationsregeln existieren. Offene Planung allein erzeugt keinen roten Status.
 
 Weitere Bereiche des Bearbeitungsscreens – insbesondere Helferbedarf, Schichtplanung, Bestellungen, Ausgaben und Archivierung – sollen schrittweise auf dasselbe Muster `Überblick → Containergruppe → gezielte Bearbeitung` umgestellt werden, ohne die bestehende funktionierende Persistenz unnötig umzubauen.
