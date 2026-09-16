@@ -22,6 +22,10 @@ Aktueller Projektstand:
 
 `PROJECT-STATE.md`
 
+Konkreter Mitglieder-Service „Mitgliedsbescheinigung anfordern“:
+
+`MEMBERSHIP-CERTIFICATE-WORKFLOW.md`
+
 Für Entwicklung gelten insbesondere:
 
 1. `../../roles/wordpress-developer/role.md`
@@ -36,9 +40,12 @@ Für Entwicklung gelten insbesondere:
 
 - `FUNCTIONAL-SCOPE.md` beschreibt das langfristige fachliche Zielbild.
 - `PROJECT-STATE.md` beschreibt den aktuellen Stand, offene Architekturfragen und den nächsten sinnvollen Schritt.
+- `MEMBERSHIP-CERTIFICATE-WORKFLOW.md` beschreibt Anfrage, Prüfung, Dokumenterstellung, Freigabe und Zustellung einer Mitgliedsbescheinigung sowie die mögliche Trennung zwischen Homepage-Einstieg und Agenten-/n8n-Workflow.
 - `../event-planner/FUNCTIONAL-SCOPE.md` beschreibt Planung und Durchführung von Helferschichten im Event Planner.
 - `../team-manager/` benötigt dieselben Personen-/Mitgliedsidentitäten für Mannschafts- und Rollenbezüge.
 
 ## Future Development
 
 Ob dieses Modul später zu einer vollständigen Mitgliederverwaltung ausgebaut wird, wird erst nach Analyse des bestehenden Systems und der tatsächlichen Lücken entschieden. Bis dahin liegt der Fokus auf der gemeinsamen Mitgliedsidentität und der verlässlichen Engagement-Historie.
+
+Standardisierte Mitglieder-Services wie die Mitgliedsbescheinigung sollen nach Möglichkeit dieselbe Identitäts-, Berechtigungs- und Dokumentlogik wiederverwenden, statt eigene Datenwelten aufzubauen.
