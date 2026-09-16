@@ -28,6 +28,10 @@ Verbindliche Dashboard- und Auswertungslogik:
 
 `DASHBOARD-LOGIC.md`
 
+Verbindliche Logik der Ansicht `aktive Events`:
+
+`EVENTS-OVERVIEW.md`
+
 Verbindliche Struktur für Event-Anlage und Sponsorenpflege:
 
 `EVENT-FORM-UI.md`
@@ -48,17 +52,18 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 
 1. `FUNCTIONAL-SCOPE.md`
 2. `DASHBOARD-LOGIC.md`
-3. `EVENT-FORM-UI.md`
-4. `DATA-PERSISTENCE.md`
-5. `URL-INPUT-STANDARD.md`
-6. `PROJECT-STATE.md`
-7. `../../roles/wordpress-developer/role.md`
-8. `../../roles/wordpress-developer/development-standard.md`
-9. `../../standards/iteration-and-progress.md`
-10. `../../design/design-principles.md`
-11. `../../design/ui-standard.md`
-12. `../../design/logo.md`
-13. relevante Einträge unter `../../decisions/`
+3. `EVENTS-OVERVIEW.md`
+4. `EVENT-FORM-UI.md`
+5. `DATA-PERSISTENCE.md`
+6. `URL-INPUT-STANDARD.md`
+7. `PROJECT-STATE.md`
+8. `../../roles/wordpress-developer/role.md`
+9. `../../roles/wordpress-developer/development-standard.md`
+10. `../../standards/iteration-and-progress.md`
+11. `../../design/design-principles.md`
+12. `../../design/ui-standard.md`
+13. `../../design/logo.md`
+14. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -72,6 +77,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `DASHBOARD-LOGIC.md` beschreibt, **wie** Dashboard, operative Aufgaben und die Richtung von Auswertung/Historie fachlich funktionieren sollen.
 
+`EVENTS-OVERVIEW.md` beschreibt, **wie** anstehende Events in aktive und geplante Veranstaltungen aufgeteilt werden, ohne einen zweiten manuell gepflegten Planungsstatus einzuführen.
+
 `EVENT-FORM-UI.md` beschreibt, **wie** die Event-Anlage strukturiert wird, einschließlich Navigation, Vorlagen-Auswahl und zeilenweiser Sponsorenpflege.
 
 `DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
@@ -84,6 +91,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 - `FUNCTIONAL-SCOPE.md`
 - `DASHBOARD-LOGIC.md`
+- `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
