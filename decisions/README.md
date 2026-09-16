@@ -60,6 +60,8 @@ Entscheidungen werden fortlaufend nummeriert:
 - `ADR-0008`
 - `ADR-0009`
 - `ADR-0010`
+- `ADR-0011`
+- `ADR-0012`
 
 Die Nummer bleibt dauerhaft bestehen.
 
@@ -105,6 +107,8 @@ Der Projekt-Checkpoint verweist auf relevante ADRs, dupliziert ihre Begründung 
 - `ADR-0008-partnerportal-und-partner-hub-abgrenzung.md`
 - `ADR-0009-employee-runtime-and-archivist-pilot.md`
 - `ADR-0010-second-brain-and-memory-router.md`
+- `ADR-0011-wordpress-theme-and-domain-content-boundary.md`
+- `ADR-0012-team-manager-match-data-module.md`
 
 ## Related Documents
 

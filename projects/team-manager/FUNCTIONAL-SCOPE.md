@@ -118,9 +118,11 @@ Mindestens vorgesehen sind:
 - Wettbewerb bzw. Staffel, soweit für die Darstellung sinnvoll,
 - zuverlässige Aktualisierung der Homepage-Ankündigungen.
 
-Der konkrete technische Zugriffsweg auf fussball.de ist **noch nicht entschieden**.
+Der offizielle Zugriffsweg ist teilweise geklärt: FUSSBALL.DE bietet laut eigener FAQ derzeit keine direkte API an und verweist für automatisierte Datenlieferungen auf Sportmedia sowie einen Versand per SFTP.
 
-Vor Implementierung wird geprüft, welche stabile, zulässige und wartbare Schnittstelle, Einbettung oder Datenquelle verfügbar ist. Eine fragile Scraping-Lösung wird nicht ohne vorherige Prüfung zum Standard gemacht.
+Die Matchdaten-Funktion wird gemäß `ADR-0012` als abgegrenztes Modul des Team Managers umgesetzt. Der Sportmedia-Zugang ist der bevorzugte produktive Transportweg, muss aber vor Connector-Code hinsichtlich Zugang, Format, Nutzungsbedingungen, Kosten, Aktualisierung und realer Beispieldaten verifiziert werden.
+
+Eine fragile Scraping-Lösung, ein inoffizieller Endpoint und saisonale Widget-Codes werden nicht zum Architekturstandard gemacht. Der vollständige Modulvertrag steht in `MATCH-DATA-MODULE.md`.
 
 Für die spätere technische Umsetzung gilt als Ziel:
 
@@ -278,6 +280,7 @@ Insbesondere soll es möglich sein:
 
 - `README.md` beschreibt Einstieg und Arbeitsweise des Projekts.
 - `PROJECT-STATE.md` beschreibt den aktuellen Projektstand und die offenen Vorentscheidungen.
+- `MATCH-DATA-MODULE.md` definiert die verbindliche Matchdaten-Architektur und den ersten Provider-Spike.
 - `../event-planner/FUNCTIONAL-SCOPE.md` beschreibt die Nutzung von Mannschaften im Event Planner.
 - `../../architecture/platform-architecture.md` ist für die Entscheidung über gemeinsam genutzte Mannschaftsdaten relevant.
 - `../../design/ui-standard.md` definiert gemeinsame UI-Muster.
@@ -292,10 +295,10 @@ Vor der Implementierung ist folgende Reihenfolge sinnvoll:
 1. fachliches Mannschafts- und Saisonmodell konkretisieren,
 2. Altersklassen-/Jahrgangsregeln verifizieren,
 3. gemeinsame Mannschaftsidentität mit Event Planner architektonisch entscheiden,
-4. Trainingsstätten, Teilflächen, wiederkehrende Zeiten und Sondertermine als einfaches Ressourcenmodell konkretisieren,
-5. technischen Zugriffsweg auf fussball.de prüfen,
-6. erst danach ein kleines erstes Plugin-Inkrement entwickeln,
+4. parallel den Sportmedia-Zugang mit realen Beispieldaten prüfen,
+5. Matchmodell und saisonbezogene externe Mannschaftszuordnung konkretisieren,
+6. das kleine erste Matchdaten-Inkrement gemäß `MATCH-DATA-MODULE.md` entwickeln,
 7. öffentliche Mannschaftsseite und Saisonwechsel schrittweise aufbauen,
-8. Spiel-Synchronisation und Trainings-/Belegungsansichten anschließend ergänzen.
+8. Trainings-/Belegungsansichten anschließend ergänzen.
 
 Die Reihenfolge ist eine Orientierung. Die Umsetzung bleibt in kleinen, testbaren Pull Requests.
