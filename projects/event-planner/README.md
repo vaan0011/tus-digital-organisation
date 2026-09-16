@@ -36,6 +36,10 @@ Verbindliche Regel für dauerhafte Datenhaltung:
 
 `DATA-PERSISTENCE.md`
 
+Verbindlicher UX-/Speicherstandard für normale Web-URLs:
+
+`URL-INPUT-STANDARD.md`
+
 Verbindlicher Projekt-Checkpoint:
 
 `PROJECT-STATE.md`
@@ -46,14 +50,15 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 2. `DASHBOARD-LOGIC.md`
 3. `EVENT-FORM-UI.md`
 4. `DATA-PERSISTENCE.md`
-5. `PROJECT-STATE.md`
-6. `../../roles/wordpress-developer/role.md`
-7. `../../roles/wordpress-developer/development-standard.md`
-8. `../../standards/iteration-and-progress.md`
-9. `../../design/design-principles.md`
-10. `../../design/ui-standard.md`
-11. `../../design/logo.md`
-12. relevante Einträge unter `../../decisions/`
+5. `URL-INPUT-STANDARD.md`
+6. `PROJECT-STATE.md`
+7. `../../roles/wordpress-developer/role.md`
+8. `../../roles/wordpress-developer/development-standard.md`
+9. `../../standards/iteration-and-progress.md`
+10. `../../design/design-principles.md`
+11. `../../design/ui-standard.md`
+12. `../../design/logo.md`
+13. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -71,6 +76,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
 
+`URL-INPUT-STANDARD.md` beschreibt, **wie** normale Web-URLs nutzerfreundlich eingegeben, automatisch normalisiert und dauerhaft vollständig gespeichert werden.
+
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
 ## Relationship to other documents
@@ -79,6 +86,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `DASHBOARD-LOGIC.md`
 - `EVENT-FORM-UI.md`
 - `DATA-PERSISTENCE.md`
+- `URL-INPUT-STANDARD.md`
 - `PROJECT-STATE.md`
 - `SMOKE-TEST.md`
 - `../member-engagement/`
