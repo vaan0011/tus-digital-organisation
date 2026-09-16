@@ -33,15 +33,15 @@ class VTP_Events_Overview {
 
  private static function render_nav(){
   $items=[
-   'new'=>['neues Event','admin.php?page=vtp-events&view=new'],
-   'active'=>['aktive Events','admin.php?page=vtp-events&view=active'],
-   'templates'=>['Vorlagen','admin.php?page=vtp-events&view=templates'],
-   'archive'=>['Archiv','admin.php?page=vtp-events&view=archive'],
+   ['label'=>'neues Event','url'=>admin_url('admin.php?page=vtp-events&view=new'),'external'=>false],
+   ['label'=>'Veranstaltungskalender','url'=>VTP_Public::calendar_url(),'external'=>true],
+   ['label'=>'Vorlagen','url'=>admin_url('admin.php?page=vtp-events&view=templates'),'external'=>false],
+   ['label'=>'Archiv','url'=>admin_url('admin.php?page=vtp-events&view=archive'),'external'=>false],
   ];
   echo '<nav class="vtp-event-create-nav" aria-label="Event-Bereiche">';
-  foreach($items as $key=>$item){
-   $classes='button vtp-event-nav-button'.($key==='active'?' is-active':'');
-   echo '<a class="'.esc_attr($classes).'" href="'.esc_url(admin_url($item[1])).'">'.esc_html($item[0]).'</a>';
+  foreach($items as $item){
+   $target=$item['external']?' target="_blank" rel="noopener noreferrer"':'';
+   echo '<a class="button vtp-event-nav-button"'.$target.' href="'.esc_url($item['url']).'">'.esc_html($item['label']).'</a>';
   }
   echo '</nav>';
  }
@@ -60,16 +60,17 @@ class VTP_Events_Overview {
     (SELECT COUNT(*) FROM $items i WHERE i.event_id=e.id) AS program_count,
     (SELECT COUNT(*) FROM $needs h WHERE h.event_id=e.id) AS helper_need_count,
     (SELECT COUNT(*) FROM $shifts s WHERE s.event_id=e.id) AS shift_count,
-    (SELECT COUNT(*) FROM $tournaments t WHERE t.event_id=e.id AND t.status<>'archiviert') AS tournament_count
+    (SELECT COUNT(*) FROM $tournaments t WHERE t.event_id=e.id AND COALESCE(t.status,'')<>'archiviert') AS tournament_count
     FROM $events e
-    WHERE e.status<>'archiviert'
+    WHERE COALESCE(e.status,'')<>'archiviert'
       AND (
        e.start_date IS NULL
+       OR e.start_date=''
        OR e.start_date='0000-00-00'
-       OR COALESCE(NULLIF(e.end_date,'0000-00-00'),e.start_date) >= %s
+       OR COALESCE(NULLIF(NULLIF(e.end_date,''),'0000-00-00'),e.start_date) >= %s
       )
     ORDER BY
-      CASE WHEN e.start_date IS NULL OR e.start_date='0000-00-00' THEN 1 ELSE 0 END,
+      CASE WHEN e.start_date IS NULL OR e.start_date='' OR e.start_date='0000-00-00' THEN 1 ELSE 0 END,
       e.start_date ASC,
       e.name ASC",
    $today

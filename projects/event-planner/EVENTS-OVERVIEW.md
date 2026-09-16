@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Dieses Dokument beschreibt die fachliche Logik der Ansicht `aktive Events`.
+Dieses Dokument beschreibt die fachliche Logik der Eventübersicht.
 
 Die Übersicht soll anstehende TuS-Veranstaltungen schnell erfassbar machen und zwischen bereits operativ bearbeiteten und lediglich vorgemerkten Veranstaltungen unterscheiden, ohne einen zusätzlichen manuell gepflegten Status zu erzeugen.
 
@@ -25,14 +25,16 @@ Spätere operative Bausteine wie echte Event-Aufgaben, Bestellungen oder Ausgabe
 
 ### Navigation
 
-Die obere Navigation bleibt einheitlich:
+Die Eventübersicht benötigt keinen Button, der auf dieselbe Ansicht zurückführt.
+
+Die obere Navigation enthält deshalb:
 
 - `neues Event`
-- `aktive Events`
+- `Veranstaltungskalender`
 - `Vorlagen`
 - `Archiv`
 
-In dieser Ansicht ist `aktive Events` hervorgehoben.
+`Veranstaltungskalender` öffnet die bereits vorhandene öffentliche TuS-Veranstaltungsübersicht über `VTP_Public::calendar_url()`. Dadurch wird dieselbe öffentliche Quelle verwendet, die auch für den Shortcode `[verein_veranstaltungskalender]` vorgesehen ist.
 
 ### Aktive Veranstaltungen
 
@@ -51,6 +53,8 @@ Eine Karte zeigt mindestens:
 
 Rechts erscheinen anstehende, nicht archivierte Veranstaltungen, die bislang nur als Veranstaltung angelegt wurden und noch keine operative Planung enthalten.
 
+Ein frisch angelegtes Event ohne Programmpunkte, Helferbedarf, Schichten oder verknüpftes Turnier muss hier unmittelbar sichtbar sein.
+
 Sie können über `Öffnen` bearbeitet und anschließend durch reale Planungsdaten automatisch zu einer aktiven Veranstaltung werden.
 
 ### Zeitbezug
@@ -62,6 +66,8 @@ Deshalb werden dargestellt:
 - zukünftige Veranstaltungen,
 - aktuell laufende mehrtägige Veranstaltungen,
 - Veranstaltungen ohne festes Datum.
+
+Für eintägige Veranstaltungen ist ein leeres Enddatum zulässig und wird fachlich wie `Enddatum = Startdatum` behandelt. Ein leeres Enddatum darf deshalb ein zukünftiges Event nicht aus der Übersicht herausfiltern.
 
 Vergangene, nicht archivierte Veranstaltungen gehören nicht in diese anstehende Übersicht; sie werden im Dashboard als Nachbereitungs-/Archivierungsbedarf behandelt.
 
