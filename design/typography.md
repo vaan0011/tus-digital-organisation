@@ -14,13 +14,38 @@ Nur dokumentierte und freigegebene Fonts sind verbindliche Markenbestandteile.
 
 ### 1. Aktueller Status
 
-Zum Zeitpunkt dieser Version ist im Repository noch keine vollständige offizielle TuS-Schriftfamilie als `Approved` dokumentiert.
+Für digitale öffentliche TuS-Oberflächen ist **Barlow** als UI-Schrift freigegeben.
 
-Das bedeutet ausdrücklich nicht, dass beliebige Fonts verwendet werden dürfen.
+Status: `Approved – Digital UI`
 
-Bei bestehenden freigegebenen Designs wird die dort verwendete Schrift möglichst identisch weiterverwendet. Ist sie nicht sicher identifizierbar oder verfügbar, wird dies vor einer finalen Produktion geklärt.
+Diese Freigabe gilt insbesondere für:
 
-### 2. Font-Register
+- öffentliche TuS-Homepage,
+- öffentliche WordPress-Frontend-Komponenten,
+- weitere digitale TuS-Oberflächen, die ihre Brand-Typografie aus dem aktiven Theme beziehen.
+
+Sie macht Barlow ausdrücklich **nicht automatisch zur universellen TuS-Hausschrift für Merch, Print, Plakate, Eintrittskarten oder bestehende referenzgebundene Designs**.
+
+Für diese Medien bleibt die vollständige übergreifende TuS-Typografie teilweise offen und wird aus belastbaren Referenzen bzw. Quelldateien weiterentwickelt.
+
+### 2. Approved Digital UI Font
+
+#### Barlow
+
+- **Status:** `Approved – Digital UI`
+- **Schriftfamilie:** Barlow
+- **Einsatz:** öffentliche Website und digitale UI
+- **Lizenz:** offen lizenzierte Schriftfamilie; für die technische Einbindung wird eine dauerhaft reproduzierbare, datenschutzgerechte Bereitstellung bevorzugt
+- **Bevorzugte Schnitte:**
+  - `400` Regular für Fließtext
+  - `500` Medium für hervorgehobene UI-Texte
+  - `600` SemiBold für Zwischenüberschriften und wichtige Labels
+  - `700` Bold für Hauptüberschriften und starke Hervorhebungen
+- **Fallback:** `Arial, Helvetica, sans-serif`
+
+Die öffentliche Homepage soll Barlow nach Möglichkeit selbst bzw. über das Theme ausliefern, statt für den Seitenaufruf zwingend einen externen Font-Dienst zu benötigen.
+
+### 3. Font-Register
 
 Jede künftig freigegebene Schrift wird hier mit mindestens folgenden Angaben registriert:
 
@@ -32,7 +57,7 @@ Jede künftig freigegebene Schrift wird hier mit mindestens folgenden Angaben re
 - Lizenzhinweis, soweit relevant,
 - erlaubte Ersatzschrift, falls eine definiert ist.
 
-### 3. Präferenz für frei verfügbare Fonts
+### 4. Präferenz für frei verfügbare Fonts
 
 Bei **neuen, noch nicht referenzgebundenen** Schriftentscheidungen werden frei verfügbare bzw. offen lizenzierte Fonts bevorzugt, sofern sie:
 
@@ -46,7 +71,7 @@ Diese Präferenz dient Reproduzierbarkeit, Kostenkontrolle und langfristiger Una
 
 Sie rechtfertigt ausdrücklich **keine** stille Ersetzung eines Fonts, der durch ein freigegebenes Referenzdesign, ein bestehendes Artwork oder eine konkrete Produktionsvorgabe festgelegt ist.
 
-### 4. Keine stillen Substitutionen
+### 5. Keine stillen Substitutionen
 
 Wenn ein Produkt eine bestimmte Schrift verlangt, darf sie nicht stillschweigend durch eine optisch ähnliche Schrift ersetzt werden.
 
@@ -63,7 +88,7 @@ muss die verwendete Schrift nachvollziehbar sein.
 
 Wenn eine Referenzschrift nicht verfügbar oder nicht sicher identifizierbar ist, bleibt dies ein offener technischer Punkt statt durch eine ähnliche Schrift verdeckt zu werden.
 
-### 5. Generative Bildwerkzeuge sind keine Typografie-Engine
+### 6. Generative Bildwerkzeuge sind keine Typografie-Engine
 
 Finale Texte, Vereinsnamen, Koordinaten, Slogans, Partnernamen und andere exakte Schriftinformationen sollen nicht durch Bildgenerierung erzeugt werden, wenn korrekte Buchstabenformen und reproduzierbare Typografie wichtig sind.
 
@@ -73,9 +98,13 @@ Der bevorzugte Ablauf lautet:
 2. Text separat mit der richtigen Schrift setzen,
 3. finale Komposition prüfen.
 
-### 6. UI-Typografie ist ein eigener Anwendungsfall
+### 7. UI-Typografie ist ein eigener Anwendungsfall
 
-Digitale Bedienoberflächen dürfen aus Gründen von Lesbarkeit, Performance und Systemintegration eine definierte UI-Schrift bzw. Systemschrift verwenden.
+Digitale Bedienoberflächen dürfen aus Gründen von Lesbarkeit, Performance und Systemintegration eine definierte UI-Schrift verwenden.
+
+Für öffentliche TuS-Weboberflächen ist diese Rolle durch Barlow besetzt.
+
+Plugins definieren Barlow nicht eigenständig. Sie erben die Typografie aus dem aktiven Theme. Damit bleibt das Theme die technische Runtime-Source-of-Truth und ein späterer Theme-Wechsel erfordert keine fachliche Änderung in jedem Plugin.
 
 Eine UI-Schrift wird dadurch nicht automatisch zur Marken-Hausschrift für Merch oder Print.
 
@@ -84,6 +113,7 @@ Eine UI-Schrift wird dadurch nicht automatisch zur Marken-Hausschrift für Merch
 - `CURRENT-STATE.md`
 - `REFERENCE-REGISTER.md`
 - `brand-identity.md`
+- `homepage-standard.md`
 - `design-workflow.md`
 - `design-production-system.md`
 - `generative-design-standard.md`
@@ -91,4 +121,6 @@ Eine UI-Schrift wird dadurch nicht automatisch zur Marken-Hausschrift für Merch
 
 ## Future Development
 
-Sobald die tatsächlich gewünschten TuS-Schriften anhand vorhandener Designs oder Quelldateien sicher bestimmt und freigegeben sind, wird das Font-Register ergänzt. Ab diesem Zeitpunkt sind diese Einträge für neue passende Produkte verbindlich.
+Die vollständige medienübergreifende TuS-Typografie wird anhand vorhandener Designs und Quelldateien weiter bestimmt und freigegeben.
+
+Barlow bleibt bis zu einer bewusst dokumentierten Änderung die verbindliche Digital-/UI-Schrift für die öffentliche TuS-Weboberfläche.
