@@ -25,16 +25,16 @@ Spätere operative Bausteine wie echte Event-Aufgaben, Bestellungen oder Ausgabe
 
 ### Navigation
 
-Die Eventübersicht benötigt keinen Button, der auf dieselbe Ansicht zurückführt.
-
-Die obere Navigation enthält deshalb:
+Die obere Navigation der Eventübersicht enthält:
 
 - `neues Event`
 - `Veranstaltungskalender`
 - `Vorlagen`
 - `Archiv`
 
-`Veranstaltungskalender` öffnet die bereits vorhandene öffentliche TuS-Veranstaltungsübersicht über `VTP_Public::calendar_url()`. Dadurch wird dieselbe öffentliche Quelle verwendet, die auch für den Shortcode `[verein_veranstaltungskalender]` vorgesehen ist.
+Ein zusätzlicher Selbstlink auf die bereits geöffnete Eventübersicht ist nicht vorgesehen.
+
+`Veranstaltungskalender` verwendet die zentrale öffentliche Kalender-URL des Plugins (`VTP_Public::calendar_url()`) und öffnet die öffentliche TuS-Veranstaltungsübersicht in einem neuen Tab.
 
 ### Aktive Veranstaltungen
 
@@ -53,7 +53,7 @@ Eine Karte zeigt mindestens:
 
 Rechts erscheinen anstehende, nicht archivierte Veranstaltungen, die bislang nur als Veranstaltung angelegt wurden und noch keine operative Planung enthalten.
 
-Ein frisch angelegtes Event ohne Programmpunkte, Helferbedarf, Schichten oder verknüpftes Turnier muss hier unmittelbar sichtbar sein.
+Ein neu angelegtes zukünftiges Event muss unmittelbar nach dem Speichern hier erscheinen, solange noch kein operativer Planungsbaustein vorhanden ist.
 
 Sie können über `Öffnen` bearbeitet und anschließend durch reale Planungsdaten automatisch zu einer aktiven Veranstaltung werden.
 
@@ -67,9 +67,19 @@ Deshalb werden dargestellt:
 - aktuell laufende mehrtägige Veranstaltungen,
 - Veranstaltungen ohne festes Datum.
 
-Für eintägige Veranstaltungen ist ein leeres Enddatum zulässig und wird fachlich wie `Enddatum = Startdatum` behandelt. Ein leeres Enddatum darf deshalb ein zukünftiges Event nicht aus der Übersicht herausfiltern.
+Ein leeres Enddatum bedeutet bei eintägigen Veranstaltungen fachlich `Enddatum = Startdatum` und darf ein Event nicht aus der Übersicht herausfiltern.
 
 Vergangene, nicht archivierte Veranstaltungen gehören nicht in diese anstehende Übersicht; sie werden im Dashboard als Nachbereitungs-/Archivierungsbedarf behandelt.
+
+### Robuste Lade-Logik
+
+Die Event-Grunddaten werden zuerst separat aus der persistenten Event-Tabelle geladen.
+
+Operative Zähler wie Programmpunkte, Helferbedarf, Schichten und verknüpfte Turniere werden anschließend je Event ergänzt.
+
+Damit kann ein Fehler oder eine Abweichung in einer Nebenabfrage niemals dazu führen, dass das eigentliche Event vollständig aus der Eventübersicht verschwindet.
+
+Diese Trennung folgt dem Prinzip: **Event-Sichtbarkeit zuerst aus Event-Stammdaten, Planungsstatus anschließend aus operativen Fachdaten ableiten.**
 
 ### Farben
 
