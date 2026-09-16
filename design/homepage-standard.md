@@ -26,12 +26,13 @@ Eine Homepage-Komponente gilt erst dann als fertig, wenn Desktop-, Tablet- und S
 
 ### 1. Marken- und Asset-Regeln
 
-- Hauptfarben des Vereins sind Rot und Weiß. Exakte technische Farbwerte werden ausschließlich aus dem zentralen Brand-Standard übernommen, sobald sie freigegeben sind.
+- Hauptfarben des Vereins sind Rot und Weiß. Exakte technische Farbwerte werden ausschließlich aus `colors.md` übernommen.
 - Das TuS-Logo ist ein Locked Asset.
 - Für die Homepage werden ausschließlich die offiziellen Dateien aus `design/logo/` verwendet, insbesondere `tus_logo.png` und `tus_logo_flach.png`.
 - Das Logo wird niemals durch generative Bildwerkzeuge neu erzeugt, nachgezeichnet, interpretiert oder verändert.
 - Generierte Mockups dürfen nur Layout- und Stilkonzepte liefern. Finale Oberflächen verwenden die Originalassets.
 - Finale Websitebilder sollen bevorzugt echte TuS-Personen, Mannschaften, Veranstaltungen, Vereinsgeschichte und den Sportpark zeigen. Generische Fußballmotive sind kein Ersatz für authentisches Vereinsmaterial.
+- Für die öffentliche Website gilt die in `typography.md` freigegebene Digital-/UI-Typografie.
 
 ### 2. Rolle der öffentlichen Kanäle
 
@@ -94,28 +95,27 @@ Unter `Abteilungen` werden die jeweils aktuellen Vereinsbereiche geführt, beisp
 
 Die Struktur muss erweiterbar sein und darf nicht technisch auf eine feste Liste beschränkt werden.
 
-#### Mobile
+#### Mobile und Tablet
 
-Im mobilen Header stehen im Wesentlichen:
+Im kompakten Header stehen im Wesentlichen:
 
 - Original-TuS-Logo
 - Suche
 - Burger-Menü
 
-Die mobile Hauptnavigation öffnet sich **verbindlich als rechter Drawer**. Ein Vollbildmenü ist für V1 nicht vorgesehen.
+Die Hauptnavigation öffnet sich **verbindlich als rechter Drawer**. Ein Vollbildmenü ist für V1 nicht vorgesehen.
 
 Für den Drawer gelten folgende Regeln:
 
 - Öffnung von rechts über das Burger-Menü.
-- Breite ungefähr 85–90 % des Viewports; auf größeren Smartphones kann die Breite technisch begrenzt werden.
+- Breite ungefähr 85–90 % des Viewports; auf größeren Geräten kann die Breite technisch begrenzt werden.
 - Die darunterliegende Seite bleibt erkennbar, wird aber durch ein Overlay abgedunkelt.
 - Hauptpunkte werden vertikal mit ausreichend großen Touch-Flächen dargestellt.
 - Unterpunkte werden innerhalb des Drawers als auf- und zuklappbare Bereiche geführt; es entsteht keine verkleinerte Desktopnavigation.
-- Schließen ist mindestens über ein gut sichtbares `X` und über das Overlay möglich. Eine saubere Tastatur- und Fokussteuerung ist vorzusehen.
+- Schließen ist mindestens über ein gut sichtbares `X` und über das Overlay möglich. Tastatur- und Fokussteuerung sind vorzusehen.
 - Während der Drawer geöffnet ist, scrollt die Hintergrundseite nicht weiter.
-- Suche bleibt im mobilen Header direkt erreichbar und muss nicht zuerst über den Drawer geöffnet werden.
-
-Der Drawer unterstützt damit das Grundprinzip **„Weniger zeigen. Besser führen.“**: Die Navigation bleibt vertraut, kompakt und schnell bedienbar, ohne den gesamten mobilen Bildschirm dauerhaft in eine separate Navigationsfläche zu verwandeln.
+- Suche bleibt im Header direkt erreichbar und muss nicht zuerst über den Drawer geöffnet werden.
+- Der Drawer bleibt bis einschließlich Tablet-Bereich vorgesehen; die vollständige Desktopnavigation wird ab `1024px` verwendet.
 
 ### 5. Hero
 
@@ -131,7 +131,14 @@ Referenzrichtung:
 
 Der Hero verwendet bevorzugt echte TuS-Fotografie.
 
-Auf Mobile wird das Bild sinnvoll für Hochformat/Crop angepasst. Text und Handlungsoptionen müssen ohne Zoom lesbar und bedienbar sein.
+Verbindliche Bildregeln:
+
+- Desktop: Bildfläche bevorzugt im Verhältnis `16:7`.
+- Tablet: bevorzugt `16:9`.
+- Mobile: bevorzugt `4:5` oder ein vergleichbarer Hochformat-Crop.
+- Fotos verwenden `object-fit: cover`.
+- Ein redaktionell definierbarer Fokuspunkt soll unterstützt werden, damit Gesichter, Ball oder andere wichtige Motive beim Responsive Crop nicht verschwinden.
+- Text und Handlungsoptionen müssen ohne Zoom lesbar und bedienbar sein.
 
 ### 6. Nächste Spiele
 
@@ -161,7 +168,13 @@ Auf der Startseite werden nicht alle Spiele gleichgewichtig dargestellt. Prioris
 
 Jugendspiele dürfen beispielsweise als `8 weitere Jugendspiele diese Woche` zusammengefasst werden.
 
-Desktop kann mehrere Match Cards gleichzeitig zeigen. Mobile zeigt eine reduzierte Auswahl beziehungsweise horizontal swipebare Karten plus `Alle Spiele`.
+Verbindliches Responsive-Verhalten:
+
+- **Mobile:** horizontal swipebare MatchCards mit CSS `scroll-snap`; eine Karte ist fast vollständig sichtbar, die nächste darf leicht angeschnitten werden, damit die horizontale Interaktion erkennbar ist. Kein automatisches Sliden.
+- Auf der Startseite werden mobil nur die wichtigsten nächsten Spiele gezeigt; als Richtwert maximal etwa 4–5 Karten plus `Alle Spiele`.
+- **Tablet:** in der Regel zwei Karten gleichzeitig sichtbar.
+- **Desktop:** drei bis vier Karten gleichzeitig als Reihe oder Grid, abhängig von verfügbarer Breite und Inhalt.
+- Die Reihenfolge folgt der fachlichen Priorisierung und nicht einer zufälligen technischen Reihenfolge.
 
 ### 7. Schnelleinstiege
 
@@ -174,6 +187,12 @@ V1:
 - Mithelfen – `Ich möchte mich beim TuS engagieren.`
 - Partner werden – `Ich möchte den TuS unterstützen.`
 
+Responsive:
+
+- Mobile: einspaltig oder zwei kompakte Karten pro Reihe, wenn Lesbarkeit und Touch-Flächen erhalten bleiben.
+- Tablet: bevorzugt `2 × 2`.
+- Desktop: vier Einstiege in einer Reihe, sofern die Inhaltsbreite dies sinnvoll zulässt.
+
 ### 8. Aktuelles
 
 WordPress-Beiträge werden redaktionell gewichtet und nicht lediglich als chronologische Liste ausgegeben.
@@ -184,7 +203,17 @@ Referenzmuster:
 - zwei oder mehrere kleinere News
 - `Alle Nachrichten`
 
-Mobile priorisiert die Lead Story und verwendet anschließend kompaktere News Cards.
+Responsive:
+
+- Mobile priorisiert die Lead Story und verwendet anschließend kompaktere News Cards.
+- Tablet verwendet in der Regel zwei Spalten.
+- Desktop darf Lead Story und kleinere News asymmetrisch gewichten.
+
+Bildregeln:
+
+- normale News- und Content-Cards verwenden grundsätzlich `16:9`.
+- Fotos verwenden `object-fit: cover` und einen kontrollierbaren Fokuspunkt.
+- Logos, Magazincover und andere vollständige Originalgrafiken werden nicht gecroppt, sondern mit `object-fit: contain` dargestellt.
 
 ### 9. Jubiläumsmagazin
 
@@ -192,7 +221,7 @@ Das veröffentlichte Magazin `125 Jahre TuS Magazin V2` ist 2026 ein prominenter
 
 Das echte Magazincover wird als Originalasset beziehungsweise kontrolliertes Mockup verwendet und nicht generativ nachgebaut.
 
-Der Einstieg verweist direkt auf die digitale Ausgabe/PDF.
+Der Einstieg verweist direkt auf die digitale Ausgabe/PDF. Das Magazincover wird nicht gecroppt.
 
 ### 10. Abteilungen
 
@@ -225,6 +254,8 @@ Eine `EventCard` kann enthalten:
 - Ort
 - Link zur Veranstaltung
 
+Event- und Contentbilder verwenden grundsätzlich `16:9`, sofern das zugrunde liegende Asset nicht als vollständige Grafik erhalten bleiben muss.
+
 Grundprinzip: **einmal pflegen – mehrfach verwenden.**
 
 ### 12. Der Verein und Kennzahlen
@@ -251,6 +282,8 @@ Vorgesehene Einstiege:
 
 Perspektivisch können die Daten aus dem Partnerportal kommen.
 
+Partnerlogos werden vollständig und unverzerrt dargestellt; kein Logo-Crop.
+
 ### 14. Social Media
 
 Instagram kann mit wenigen aktuellen Beiträgen eingebunden werden.
@@ -276,9 +309,13 @@ Der Desktop-Footer bündelt insbesondere:
 - Instagram
 - Facebook
 
-Auf Mobile werden umfangreiche Linkgruppen bevorzugt als übersichtliche Akkordeons oder gestapelte Bereiche dargestellt.
+Verbindliches Responsive-Verhalten:
 
-### 16. Responsive Prinzipien
+- **Mobile und Tablet:** Linkgruppen werden als zugängliche Akkordeons dargestellt.
+- **Desktop:** klassische mehrspaltige Footer-Struktur.
+- Impressum, Datenschutz und andere rechtlich wichtige Links bleiben immer unmittelbar erreichbar und dürfen nicht in schwer auffindbaren Unterstrukturen verschwinden.
+
+### 16. Responsive Prinzipien und Layoutsystem
 
 Responsive Design folgt drei Mechanismen:
 
@@ -300,9 +337,53 @@ Die wichtigste Information erscheint zuerst. Bei einer Match Card beispielsweise
 4. Ort
 5. sekundäre Ligainformationen
 
-Touch-Ziele, Lesbarkeit, Kontrast und Ladezeit sind Teil der Gestaltung und keine nachträgliche Optimierung.
+#### Viewport-Bereiche
 
-### 17. Gemeinsame UI-Komponenten
+Für V1 gelten als Implementierungsrichtung:
+
+- Mobile: `< 768px`
+- Tablet: `768px–1023px`
+- Desktop: `>= 1024px`
+
+Komponenten dürfen zusätzliche inhaltsgetriebene Breakpoints verwenden, wenn der Inhalt sichtbar bricht. Die drei Bereiche sind keine Aufforderung, jede Komponente starr nur an genau diesen Werten umzuschalten.
+
+#### Inhaltsbreite und Seitengutter
+
+- maximale Standard-Inhaltsbreite: `1280px`
+- Mobile Seitengutter: `16px`
+- Tablet Seitengutter: `24px`
+- Desktop Seitengutter: `32px`
+- auf sehr breiten Screens darf das äußere Gutter auf `48px` anwachsen
+- lange Lesetexte werden zusätzlich auf eine komfortable Zeilenlänge von ungefähr `70–75` Zeichen begrenzt
+
+#### Grid
+
+- Mobile: konzeptionell `4` Spalten
+- Tablet: `8` Spalten
+- Desktop: `12` Spalten
+
+Normale Karten sind mobil grundsätzlich vollbreit, sofern kein bewusstes horizontales Swipe-Muster verwendet wird. Tablet verwendet typischerweise zwei Karten pro Reihe, Desktop je nach Komponente drei bis vier.
+
+#### Touch-Ziele
+
+Wichtige interaktive Ziele besitzen mindestens `44 × 44 CSS-Pixel`. Dazu gehören insbesondere Buttons, Icon-Aktionen, Navigation, Drawer-Steuerung, Slider-/Carousel-Steuerung und vergleichbare primäre Interaktionen.
+
+Primäre Mobile-Buttons dürfen bevorzugt mindestens `48px` hoch sein.
+
+### 17. Bild- und Crop-Regeln
+
+Verbindliche Standardverhältnisse:
+
+- Hero Desktop: `16:7`
+- Hero Tablet: `16:9`
+- Hero Mobile: `4:5`
+- News-, Event- und allgemeine Content-Cards: `16:9`
+- Personenportraits, wenn als Portrait-Komponente vorgesehen: `4:5`
+- Logos, Magazincover und andere vollständige Grafiken: kein Crop, `object-fit: contain`
+
+Für fotografische Bilder gilt grundsätzlich `object-fit: cover` mit redaktionell kontrollierbarem Fokuspunkt. Ein Responsive Crop darf zentrale Personen, Gesichter, Ball oder das fachlich wichtige Hauptmotiv nicht versehentlich entfernen.
+
+### 18. Gemeinsame UI-Komponenten
 
 Die Homepage dient als praktische Quelle für wiederverwendbare öffentliche TuS-Komponenten.
 
@@ -324,7 +405,7 @@ V1-Kandidaten:
 
 Diese Komponenten sollen nicht ausschließlich für die Homepage gedacht werden. Geeignete Muster werden in das gemeinsame TuS Digital Design System übernommen und können unter anderem Eventplaner, Partnerportal und weitere öffentliche TuS-Anwendungen unterstützen.
 
-### 18. Daten- und Systemgrenzen
+### 19. Daten- und Systemgrenzen
 
 Zielarchitektur:
 
@@ -349,7 +430,41 @@ WordPress / TuS Frontend
 
 Die Homepage soll Daten aus fachlich führenden Systemen aufbereiten, statt dieselben Informationen erneut manuell zu speichern.
 
-### 19. Abnahmekriterien für neue Homepage-Komponenten
+### 20. Browser-Support
+
+Unterstützt werden:
+
+- aktuelle und vorherige Hauptversion von Chrome,
+- aktuelle und vorherige Hauptversion von Edge,
+- aktuelle und vorherige Hauptversion von Firefox,
+- aktuelle und vorherige Hauptversion von Safari auf macOS,
+- aktuelle und vorherige Hauptversion von Safari auf iOS,
+- aktuelle und vorherige Hauptversion von Chrome auf Android.
+
+Internet Explorer und andere Legacy-Browser werden nicht unterstützt.
+
+Neue oder experimentelle Browserfeatures dürfen verwendet werden, wenn Kerninhalte, Navigation und wesentliche Interaktionen durch Progressive Enhancement weiterhin nutzbar bleiben.
+
+### 21. Testmatrix
+
+Neue oder wesentlich geänderte Homepage-Komponenten werden mindestens auf folgenden Breiten geprüft:
+
+- `320px`
+- `360px` oder `390px`
+- `768px`
+- `1024px`
+- `1280px`
+- `1440px`
+
+Zusätzlich:
+
+- mindestens ein Smartphone-Querformat,
+- mindestens ein reales iPhone mit Safari,
+- mindestens ein reales Android-Gerät mit Chrome,
+- Tastaturbedienung und sichtbarer Fokus,
+- Browser-Zoom und vergrößerte Schrift dürfen die Kernnutzung nicht zerstören.
+
+### 22. Abnahmekriterien für neue Homepage-Komponenten
 
 Eine neue oder veränderte Komponente gilt erst als designseitig belastbar, wenn mindestens geprüft wurde:
 
@@ -358,10 +473,13 @@ Eine neue oder veränderte Komponente gilt erst als designseitig belastbar, wenn
 - Tablet-Verhalten ist definiert.
 - Mobile-Verhalten ist definiert.
 - Touch- und Tastaturbedienung wurden berücksichtigt.
+- Touch-Ziele erfüllen die Mindestgröße.
 - Informationshierarchie bleibt auf kleinen Displays verständlich.
 - unnötige Inhalte werden auf Mobile reduziert statt nur verkleinert.
 - Datenquelle und Fallback-Verhalten sind bekannt.
+- Bildformat und Crop-Verhalten sind definiert.
 - die Komponente erfindet kein unabhängiges Farb-, Typografie- oder Interaktionssystem.
+- die relevante Browser- und Viewport-Matrix wurde risikobasiert geprüft.
 
 ## Relationship to other documents
 
