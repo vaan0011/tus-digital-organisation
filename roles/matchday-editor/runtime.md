@@ -18,7 +18,8 @@ Für einen Runtime-Lauf gelten unterschiedliche Zuständigkeiten:
 
 - Rolle und redaktionelle Regeln → `role.md` und `editorial-standard.md`,
 - aktueller verifizierter Saisonstand → `season-state.md`,
-- aktuelle Spieldaten → `fussball.de`,
+- aktuelle Match-Grunddaten → nach Bereitstellung das Team-Manager-Matchdaten-Modul; bis dahin `fussball.de`,
+- zusätzliche redaktionelle Faktenprüfung → `fussball.de` und weitere belastbare Quellen,
 - fertige veröffentlichungsfähige Berichte → verbindlicher Google-Drive-Spielberichtsordner,
 - öffentliche Homepage-Darstellung kommender Spiele → `../../design/homepage-standard.md`,
 - organisationsweite Bootstrap-/Routing-Regeln → `role-bootstrap-standard.md` und `memory-router.md`.
@@ -43,7 +44,7 @@ Danach werden nur die für den konkreten Lauf benötigten externen Quellen geöf
 Die operative Queue ergibt sich aus dem Abgleich von:
 
 - letztem verifizierten Stand in `season-state.md`,
-- aktuell absolvierten Pflichtspielen auf `fussball.de`,
+- neuen abgeschlossenen Spielen aus dem Team-Manager-Matchdaten-Modul, sobald dessen lesende Schnittstelle verfügbar ist; bis dahin den aktuell absolvierten Pflichtspielen auf `fussball.de`,
 - bereits vorhandenen finalen Google-Drive-Dokumenten.
 
 Priorisierung:
@@ -125,18 +126,22 @@ Die Tabellenposition ist nur eine Momentaufnahme und wird vor Veröffentlichung 
 
 ### 8. Homepage-Spieleblock und Datenverantwortung
 
-Die öffentliche TuS-Homepage soll die **nächsten anstehenden Spiele automatisiert** in einem eigenen Startseitenblock anzeigen. Die fachliche und gestalterische Spezifikation liegt in `../../design/homepage-standard.md`.
+Die öffentliche TuS-Homepage zeigt die nächsten anstehenden Spiele automatisiert über das Matchdaten-Modul des Team Managers an. Die fachliche und gestalterische Spezifikation liegt in `../../design/homepage-standard.md`; die technische Modulgrenze in `../../projects/team-manager/MATCH-DATA-MODULE.md` und `../../decisions/ADR-0012-team-manager-match-data-module.md`.
 
 Für die Verantwortungsgrenze gilt:
 
-- `fussball.de` bleibt die fachliche Quelle für aktuelle Spieltermine und Spielinformationen,
-- der WordPress Developer verantwortet die technische Homepage-Integration und die `MatchCard`-Darstellung,
-- der Matchday Editor pflegt keine kommenden Spiele zusätzlich manuell in WordPress,
-- `season-state.md` ist redaktionelles Gedächtnis und **nicht** die öffentliche Homepage-Datenbank,
-- dieselben Spielinformationen werden nicht unabhängig in mehreren Systemen gepflegt,
-- ändern sich Mannschafts-IDs, Saisonparameter oder andere für die Integration relevante Quellenreferenzen, wird dies in der zuständigen Matchday-Quelle aktualisiert und als Handoff an die Homepage-/Entwicklungsarbeit sichtbar gemacht.
+- offizielle Spielbetriebsdaten bleiben die fachliche Quelle,
+- der Team Manager verantwortet Import, Normalisierung, saisonbezogene Mannschaftszuordnung, lokale Projektion und öffentliche Match-Schnittstelle,
+- der WordPress Developer verantwortet die technische Umsetzung des Moduls und des dynamischen Blocks,
+- das Theme verantwortet ausschließlich die visuelle MatchCard-Darstellung,
+- der Matchday Editor darf die normalisierten Matchdaten lesend zur Erkennung neuer abgeschlossener Spiele verwenden,
+- der Matchday Editor pflegt keine kommenden Spiele zusätzlich in WordPress und schreibt keine Matchdaten zurück,
+- `season-state.md` bleibt redaktionelles Gedächtnis und ist nicht die öffentliche Homepage-Datenbank,
+- dieselben Spielinformationen werden nicht unabhängig in mehreren Systemen gepflegt.
 
-Die Homepage darf die nächsten Spiele also automatisch darstellen, ohne dass der Matchday Editor bei jedem Spieltag einen zweiten Pflegeprozess auslösen muss.
+Bis die lesende Schnittstelle verfügbar ist, prüft der Matchday Editor Spiele weiterhin direkt auf `fussball.de`. Auch danach werden berichtsrelevante Details gegen belastbare Quellen verifiziert, wenn die lokale Projektion sie nicht enthält.
+
+Die Homepage funktioniert unabhängig von einem Matchday-Lauf. Ein ausgefallener oder pausierter Redaktionsprozess darf den Spieleblock nicht stoppen.
 
 ### 9. Write-back
 
@@ -193,6 +198,8 @@ Wenn kein neues Spiel und keine fehlende Arbeit vorliegen, ist keine ausführlic
 - `editorial-standard.md`
 - `season-state.md`
 - `../../design/homepage-standard.md`
+- `../../projects/team-manager/MATCH-DATA-MODULE.md`
+- `../../decisions/ADR-0012-team-manager-match-data-module.md`
 - `../../standards/role-bootstrap-standard.md`
 - `../../architecture/memory-router.md`
 - `../../standards/approval-and-escalation.md`
