@@ -14,9 +14,9 @@ Vor der Plugin-Implementierung werden die fachlichen und architektonischen Grund
 
 ### Current Goal
 
-Nach dem gemergten initialen Scope wird das Projekt auf die erste belastbare Architekturentscheidung vorbereitet: gemeinsame Mannschaftsidentität und Saisonmodell.
+Die gemeinsame Mannschaftsidentität und das Saisonmodell werden konkretisiert. Parallel wird das erste abgegrenzte Plugin-Modul vorbereitet: automatisierter Matchdaten-Import, lokale Projektion und gemeinsame Nutzung durch Homepage und Matchday Editor.
 
-Es existiert noch kein Team-Manager-Plugin-Code.
+Es existiert noch kein Team-Manager-Plugin-Code. Die Matchdaten-Architektur ist in `ADR-0012` und `MATCH-DATA-MODULE.md` verbindlich festgelegt.
 
 ### Verified
 
@@ -26,6 +26,8 @@ Es existiert noch kein Team-Manager-Plugin-Code.
 - Mannschaftsdaten werden auch außerhalb dieses zukünftigen Plugins benötigt: Der Event Planner soll Helferschichten Mannschaften oder Abteilungen zuweisen können.
 - Saison, Jahrgänge, Trainer/Kontakte, Trainingszeiten, Trainingsorte und externe Spielzuordnungen sind teilweise saisonabhängig und dürfen historische Saisons nicht rückwirkend überschreiben.
 - Trainingszeiten und Platz-/Hallenbelegung sollen aus derselben Datenquelle erzeugt werden.
+- FUSSBALL.DE bietet laut offizieller FAQ derzeit keine direkte API an und verweist für automatisierte Datenlieferungen auf Sportmedia per SFTP.
+- `ADR-0012` legt das Matchdaten-Modul als Bestandteil des Team Managers fest; der Matchday Editor wird lesender Verbraucher und nicht Homepage-Datenquelle.
 
 ### Open
 
@@ -46,35 +48,38 @@ Vor dem ersten funktionalen Code müssen mindestens folgende Punkte geklärt wer
 5. **Trainingsressourcen:**
    Die konkreten TuS-Teilflächen/Quadranten, externe Trainingsstätten, Winterstätten und Hallenzeit-Logik müssen als einfache konfigurierbare Ressourcen modelliert werden.
 
-6. **fussball.de:**
-   Der gewünschte automatisierte Spielimport ist fachlich gesetzt. Der technische Spike und das normalisierte Zielmodell stehen in `../homepage/FUSSBALL-DE-INTEGRATION.md`; der tatsächliche Transportweg bleibt bis zur Prüfung auf Stabilität, Zulässigkeit und Wartbarkeit offen.
+6. **Sportmedia-Datenlieferung:**
+   Der bevorzugte Transportweg ist identifiziert. Offen sind Kontakt, Zugang, Bedingungen, mögliche Kosten, reales Dateiformat, Lieferfrequenz, Feldbelegung und Statuswerte. Diese Punkte werden im Provider-Spike aus `MATCH-DATA-MODULE.md` verifiziert.
 
-7. **Homepage-Integration:**
-   Die Verantwortungsgrenze ist durch `ADR-0011` festgelegt: Team-/Match-Funktionen liefern einen dynamischen öffentlichen Block beziehungsweise eine stabile Render-Schnittstelle; das Theme liefert den Look. Der konkrete Blockvertrag wird nach dem Mannschafts-/Saisonmodell festgelegt.
+7. **Homepage- und Matchday-Schnittstellen:**
+   Die Verantwortungsgrenze ist durch `ADR-0011` und `ADR-0012` festgelegt. Offen bleibt der konkrete Block- und Read-only-Vertrag nach Abschluss von Mannschafts-/Saisonmodell und Provider-Spike.
 
 ### Excluded / Not Yet Decided
 
 - Kein Scraping von fussball.de wird ungeprüft als Architekturstandard festgelegt.
+- Saisonale FUSSBALL.DE-Widget-Codes werden nicht zur Zielarchitektur.
+- Der Matchday Editor und `season-state.md` werden nicht zur öffentlichen Matchdatenbank.
 - Es werden nicht parallel eigene Mannschaftslisten im Event Planner und Team Manager aufgebaut.
 - WordPress-Seiten werden nicht als fachliche Hauptdatenquelle für Mannschaftsdaten verwendet.
 - Es wird noch kein großes kombiniertes Plugin-Inkrement begonnen, bevor die offenen Architekturfragen geklärt sind.
 
 ### Active Development
 
-Kein aktiver Entwicklungsbranch. Der initiale Dokumentationsscope ist über PR #17 gemergt; funktionaler Plugin-Code wurde noch nicht begonnen.
+Aktiver Dokumentationsbranch `team-manager/match-data-module-decision`. Funktionaler Plugin-Code wurde noch nicht begonnen.
 
 ### Next Meaningful Step
 
 1. gemeinsame Mannschaftsidentität mit Event Planner gegen die Plattformarchitektur prüfen,
-2. einfaches Mannschaft/Saison-Datenmodell entwerfen,
-3. danach Altersklassen-/Jahrgangslogik und Trainingsressourcen konkretisieren,
-4. parallel die technische Integrationsmöglichkeit von fussball.de untersuchen,
-5. erst dann das erste kleine Plugin-Inkrement definieren.
+2. einfaches Mannschaft-/Saisonmodell einschließlich Team-Saison-ID entwerfen,
+3. parallel Sportmedia kontaktieren und repräsentative Beispieldaten sowie Bedingungen sichern,
+4. Provider-Spike und Matchmapping gegen die Beispieldaten durchführen,
+5. danach das erste kleine Matchdaten-Inkrement aus `MATCH-DATA-MODULE.md` umsetzen.
 
 ## Relationship to other documents
 
 - `README.md`
 - `FUNCTIONAL-SCOPE.md`
+- `MATCH-DATA-MODULE.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../../architecture/platform-architecture.md`
 - `../../architecture/stability-and-simplicity.md`
@@ -83,7 +88,8 @@ Kein aktiver Entwicklungsbranch. Der initiale Dokumentationsscope ist über PR #
 - `../../design/ui-standard.md`
 - `../homepage/FUSSBALL-DE-INTEGRATION.md`
 - `../../decisions/ADR-0011-wordpress-theme-and-domain-content-boundary.md`
+- `../../decisions/ADR-0012-team-manager-match-data-module.md`
 
 ## Future Development
 
-Sobald eine Architekturentscheidung zur gemeinsamen Mannschaftsidentität getroffen und dokumentiert ist, wird dieser Projektstand auf das erste konkrete, kleine Entwicklungsziel aktualisiert.
+Nach Abschluss des Mannschafts-/Saisonmodells und des Sportmedia-Provider-Spikes wird dieser Projektstand auf das erste testbare Matchdaten-Inkrement aktualisiert.
