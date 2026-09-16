@@ -35,11 +35,14 @@ Die akzeptierte visuelle Richtung wird in eine implementierbare WordPress-Zielar
 - Kontakte sollen rollenbasiert und nicht personengebunden veröffentlicht werden.
 - Homepage V1 startet ohne Marketing-/Verhaltens-Tracking und ohne unnötige Drittanbieter-Embeds.
 - FUSSBALL.DE bietet weiterhin offizielle Website-Widgets über `Meine Widgets` an.
+- FUSSBALL.DE bietet laut offizieller FAQ derzeit keine direkte API an und verweist für automatisierte Datenlieferungen auf Sportmedia per SFTP.
+- Das Matchdaten-Modul ist gemäß `ADR-0012` Bestandteil des Team Managers und versorgt Homepage sowie später den Matchday Editor lesend.
 - Das heute aktive WordPress-Plugin `Include Fussball.de Widgets` ist seit 07.11.2025 im offiziellen WordPress-Plugin-Verzeichnis wegen eines Sicherheitsproblems geschlossen und ist keine Zielbasis.
 
 ### Accepted Decisions
 
 - `ADR-0011` trennt Theme, WordPress-Inhalte und Fachplugins verbindlich.
+- `ADR-0012` legt Matchdaten als Team-Manager-Modul mit lokaler Projektion, Homepage-Block und lesender Matchday-Schnittstelle fest.
 - Ziel ist ein eigenes Block-Theme `tus-mingolsheim`, kein neuer Page Builder.
 - Das Theme enthält keine fachliche Datenhaltung und keine externe Synchronisation.
 - Normale redaktionelle Inhalte bleiben in WordPress Core.
@@ -54,8 +57,8 @@ Die akzeptierte visuelle Richtung wird in eine implementierbare WordPress-Zielar
 1. Produktive WordPress- und PHP-Version bestätigen.
 2. Staging-, Deployment-, Backup- und Rollback-Weg bestätigen.
 3. Exakte Farb- und Fontwerte des freigegebenen Mockups gegen die noch offenen Brand-Standards freigeben.
-4. Offiziellen FUSSBALL.DE-Widget-/Datenzugang für `tus-mingolsheim.de` bereitstellen und technisch untersuchen.
-5. Zulässigkeit, Stabilität, verfügbare Felder und Aktualisierungsverhalten des Matchdaten-Zugriffs verifizieren.
+4. Sportmedia-Ansprechpartner, Zugang, Bedingungen, mögliche Kosten und repräsentative Beispieldaten sichern.
+5. Dateiformat, verfügbare Felder, Statuswerte, Aktualisierungsverhalten und Mannschaftszuordnung im Provider-Spike verifizieren.
 6. Endgültige Shop-, Magazin-PDF- und gegebenenfalls Online-Lesen-URLs eintragen.
 7. Kommunikations-/Produkt-Owner für die Homepage benennen.
 8. Relevante Legacy-Seiten, URLs, Colibri-Templates, Stackable-Blöcke, Shortcodes und Widgets vor Migration inventarisieren.
@@ -85,8 +88,8 @@ Die bestehende produktive Homepage bleibt unverändert. Der belastbare neue Stan
 
 ### Next Meaningful Step
 
-1. FUSSBALL.DE-Widget-Code beziehungsweise freigegebenen Website-Zugang für den TuS sichern.
-2. Den in `FUSSBALL-DE-INTEGRATION.md` beschriebenen Spike durchführen und die Transportentscheidung dokumentieren.
+1. Sportmedia-Datenzugang und repräsentative Beispieldatei für den TuS klären.
+2. Den in `FUSSBALL-DE-INTEGRATION.md` und `../team-manager/MATCH-DATA-MODULE.md` beschriebenen Provider-Spike durchführen.
 3. Produktive WordPress-/PHP-Baseline und Staging-Weg bestätigen.
 4. Danach das minimale Theme-Inkrement mit `theme.json`, Header, Footer, `index.html`, `front-page.html` und lokalem Original-Logo auf einem eigenen Branch umsetzen.
 5. Dieses Inkrement auf 360 px, 768 px und 1280 px sowie per Tastatur prüfen.
@@ -98,9 +101,11 @@ Die bestehende produktive Homepage bleibt unverändert. Der belastbare neue Stan
 - `CONTENT-MODEL.md`
 - `FUSSBALL-DE-INTEGRATION.md`
 - `../../decisions/ADR-0011-wordpress-theme-and-domain-content-boundary.md`
+- `../../decisions/ADR-0012-team-manager-match-data-module.md`
 - `../../design/homepage-standard.md`
 - `../../knowledge/privacy/HOMEPAGE-PLUGIN-CLEANUP-PLAN.md`
 - `../team-manager/PROJECT-STATE.md`
+- `../team-manager/MATCH-DATA-MODULE.md`
 - `../event-planner/PROJECT-STATE.md`
 - `../platzbelegung/PROJECT-STATE.md`
 
