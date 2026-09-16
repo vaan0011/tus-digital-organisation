@@ -53,9 +53,11 @@ Eine Karte zeigt mindestens:
 
 Rechts erscheinen anstehende, nicht archivierte Veranstaltungen, die bislang nur als Veranstaltung angelegt wurden und noch keine operative Planung enthalten.
 
-Ein frisch angelegtes Event ohne Programmpunkte, Helferbedarf, Schichten oder verknüpftes Turnier muss hier unmittelbar sichtbar sein.
+**Ein neu angelegtes zukünftiges Event muss unmittelbar nach dem Speichern unter `Geplante Veranstaltungen` sichtbar sein.**
 
-Sie können über `Öffnen` bearbeitet und anschließend durch reale Planungsdaten automatisch zu einer aktiven Veranstaltung werden.
+Es darf nicht davon abhängen, ob bereits Programmpunkte, Helferbedarf, Schichten oder Turniere existieren. Diese operativen Daten bestimmen ausschließlich, ob das Event später von `geplant` zu `aktiv` wechselt.
+
+Die Karte kann über `Öffnen` bearbeitet werden.
 
 ### Zeitbezug
 
@@ -70,6 +72,18 @@ Deshalb werden dargestellt:
 Für eintägige Veranstaltungen ist ein leeres Enddatum zulässig und wird fachlich wie `Enddatum = Startdatum` behandelt. Ein leeres Enddatum darf deshalb ein zukünftiges Event nicht aus der Übersicht herausfiltern.
 
 Vergangene, nicht archivierte Veranstaltungen gehören nicht in diese anstehende Übersicht; sie werden im Dashboard als Nachbereitungs-/Archivierungsbedarf behandelt.
+
+### Robuste Lade-Logik
+
+Event-Sichtbarkeit und Planungsstatus werden technisch getrennt.
+
+1. Die Event-Grunddaten werden zuerst separat aus der persistenten Event-Tabelle geladen.
+2. Erst danach werden je Event Programmpunkte, Helferbedarf, Schichten und verknüpfte Turniere gezählt.
+3. Aus diesen operativen Daten wird anschließend `geplant` oder `aktiv` abgeleitet.
+
+Damit kann ein Fehler oder eine Abweichung in einer Nebenabfrage niemals dazu führen, dass das eigentliche Event vollständig aus der Eventübersicht verschwindet.
+
+**Event-Sichtbarkeit kommt aus den Event-Stammdaten. Der Planungsstatus kommt aus den operativen Fachdaten.**
 
 ### Farben
 
