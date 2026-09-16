@@ -53,9 +53,11 @@ Eine Karte zeigt mindestens:
 
 Rechts erscheinen anstehende, nicht archivierte Veranstaltungen, die bislang nur als Veranstaltung angelegt wurden und noch keine operative Planung enthalten.
 
-Ein neu angelegtes zukünftiges Event muss unmittelbar nach dem Speichern hier erscheinen, solange noch kein operativer Planungsbaustein vorhanden ist.
+**Ein neu angelegtes zukünftiges Event muss unmittelbar nach dem Speichern unter `Geplante Veranstaltungen` sichtbar sein.**
 
-Sie können über `Öffnen` bearbeitet und anschließend durch reale Planungsdaten automatisch zu einer aktiven Veranstaltung werden.
+Es darf nicht davon abhängen, ob bereits Programmpunkte, Helferbedarf, Schichten oder Turniere existieren. Diese operativen Daten bestimmen ausschließlich, ob das Event später von `geplant` zu `aktiv` wechselt.
+
+Die Karte kann über `Öffnen` bearbeitet werden.
 
 ### Zeitbezug
 
