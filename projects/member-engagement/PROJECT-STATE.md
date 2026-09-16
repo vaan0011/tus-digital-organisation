@@ -22,7 +22,8 @@ Aktueller Stand:
 - noch keine produktive Personendatenbank,
 - noch kein Abgleich zur bestehenden Mitgliederverwaltung,
 - fachlicher Scope in `FUNCTIONAL-SCOPE.md` dokumentiert,
-- Beitragsanerkennung in `CONTRIBUTION-RECOGNITION.md` als eigener Fachstand dokumentiert.
+- Beitragsanerkennung in `CONTRIBUTION-RECOGNITION.md` als eigener Fachstand dokumentiert,
+- Self-Service-Use-Case `Mitgliedsbescheinigung anfordern` in `MEMBERSHIP-CERTIFICATE-WORKFLOW.md` dokumentiert.
 
 ## Verified
 
@@ -36,6 +37,7 @@ Aktueller Stand:
 - Eine Rabatt-/Nachlass-Berechtigung kann aus anerkannten Stunden und Soll-Regeln ermittelt werden.
 - Die tatsächliche Beitragsänderung erfolgt zunächst nicht automatisch, sondern über einen geprüften Abgleich mit der bestehenden Mitgliederverwaltung.
 - Die Satzung vom 29.03.2019 weist die Einzelheiten der Beiträge der Beitragsordnung zu; diese wird auf Vorschlag des Vorstands von der Generalversammlung beschlossen.
+- Die Anfrage einer Mitgliedsbescheinigung ist als konkreter künftiger Mitglieder-Service aufgenommen. Die Homepage kann dafür Einstieg sein; Mitgliedsdaten und Dokumentlogik bleiben jedoch in der Mitglieder-Source-of-Truth bzw. im kontrollierten Workflow.
 
 ## Existing Contribution Decision – Source Reconciliation Open
 
@@ -141,6 +143,22 @@ Keine automatische Beitragsänderung ohne menschliche Freigabe und ausdrücklich
 
 Vor Speicherung personenbezogener Engagement-Daten müssen Rollen, Sichtbarkeit, Lösch-/Aufbewahrungsregeln und Protokollierung definiert werden.
 
+### 9. Mitglieder-Service: Mitgliedsbescheinigung
+
+Der fachliche Ablauf ist in `MEMBERSHIP-CERTIFICATE-WORKFLOW.md` beschrieben.
+
+Vor Umsetzung sind noch festzulegen:
+
+- sicherer Identifikationsweg,
+- offizielle Dokumentvorlage und Pflichtinhalt,
+- Freigabe-/Unterschriftsregel,
+- geschützter Zustellweg,
+- Behandlung Minderjähriger,
+- Aufbewahrung/Löschung,
+- Grenze zwischen automatisch erzeugbarem Standardfall und menschlichem Klärungsfall.
+
+Die Homepage kann den Self-Service bereitstellen. Sie wird dadurch nicht zur Source of Truth für Mitgliedsdaten.
+
 ## Excluded / Not Intended
 
 Für die erste Ausbaustufe nicht vorgesehen:
@@ -157,6 +175,7 @@ Für die erste Ausbaustufe nicht vorgesehen:
 
 - `FUNCTIONAL-SCOPE.md`
 - `CONTRIBUTION-RECOGNITION.md`
+- `MEMBERSHIP-CERTIFICATE-WORKFLOW.md`
 - `README.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../team-manager/`
@@ -176,7 +195,8 @@ Vor dem ersten Plugin-Code:
 3. gemeinsame Person-/Mitgliedsidentität als Architekturentscheidung definieren,
 4. Verantwortungsgrenze Event Planner ↔ Mitglieder-Modul technisch festlegen,
 5. minimales Abgleichmodell für Mitglied + Mannschaft/Abteilung + Helferstunden definieren,
-6. erst danach MVP-Scope und Testumgebung aufsetzen.
+6. für den Mitglieder-Service Mitgliedsbescheinigung Identifikation, Vorlage, Freigabe und Zustellung festlegen,
+7. erst danach MVP-Scope und Testumgebung aufsetzen.
 
 ## Update Rule
 
