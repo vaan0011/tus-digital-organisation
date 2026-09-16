@@ -60,6 +60,8 @@ Statusfarben vermitteln Information nie ausschließlich über Farbe.
 
 Öffentliche Frontend-Komponenten erben die Typografie aus dem aktiven Theme und definieren keine eigene TuS-Hausschrift.
 
+Für die öffentliche digitale TuS-Oberfläche ist Barlow gemäß `typography.md` als `Approved – Digital UI` freigegeben. Plugins laden diese Schrift nicht eigenständig, sondern erben sie über das Theme.
+
 Interne WordPress-Backend-Oberflächen orientieren sich bevorzugt an der nativen WordPress-Admin-Typografie bzw. einer neutralen Systemschrift. Das Backend muss nicht künstlich die öffentliche Theme-Typografie nachbauen.
 
 Ein Plugin lädt keine externe Schrift nur für dekorative Wirkung.
@@ -95,7 +97,9 @@ Komponenten besitzen:
 
 Öffentliche Flächen beziehen Farben, Borders und Typografie aus Theme-Tokens. Interne Backend-Flächen dürfen native WordPress-Admin-Muster verwenden.
 
-### 7. Buttons und Eingaben
+Für die öffentliche Homepage gelten zusätzlich die konkreten Inhaltsbreiten, Gutter-, Grid-, Karten- und Bildregeln aus `homepage-standard.md`.
+
+### 7. Buttons, Eingaben und Touch-Ziele
 
 Buttons und Formelemente sollen projektübergreifend vertraut wirken.
 
@@ -106,7 +110,10 @@ Verbindlich:
 - klare Beschriftung statt unklarer Symbolaktionen,
 - destruktive Aktionen eindeutig erkennbar,
 - Icon-only-Aktionen nur mit eindeutigem zugänglichem Namen,
-- zentrale Touch-Ziele werden nicht unnötig klein gestaltet.
+- **wichtige interaktive Touch-Ziele mindestens `44 × 44 CSS-Pixel`**, soweit keine eng begrenzte Ausnahme fachlich begründet ist,
+- primäre Mobile-Aktionen dürfen bevorzugt mindestens `48px` hoch sein.
+
+Die Mindestgröße gilt insbesondere für Buttons, Navigationseinträge, Icon-Aktionen, Drawer-Steuerung, Slider-/Carousel-Steuerung und vergleichbare wichtige Interaktionen.
 
 Im öffentlichen Frontend kommen Farben und Typografie aus dem Theme. Die funktionalen Zustände werden im Plugin sauber definiert.
 
@@ -120,6 +127,8 @@ Tabs, Menüs und Navigationseinträge:
 - bleiben möglichst stabil,
 - vermeiden unnötige Ebenen,
 - zeigen nur kontextrelevante Optionen.
+
+Die konkrete öffentliche Mobile-/Tablet-Navigation der Homepage ist in `homepage-standard.md` als rechter Drawer definiert.
 
 ### 9. Formulare
 
@@ -171,19 +180,36 @@ Ladezustände blockieren nicht unnötig die gesamte Oberfläche, wenn nur ein Te
 
 Mobile, Tablet und Desktop werden als echte Nutzungskontexte behandelt.
 
+Für öffentliche Frontends gilt als gemeinsame Implementierungsrichtung:
+
+- Mobile: `< 768px`
+- Tablet: `768px–1023px`
+- Desktop: `>= 1024px`
+
+Komponenten dürfen zusätzliche inhaltsgetriebene Breakpoints verwenden, wenn der Inhalt sichtbar früher oder später bricht. Die Bereiche sind keine Aufforderung zu starren Layouts.
+
 Neue bzw. wesentlich geänderte Oberflächen werden mindestens auf folgenden Test-Viewports geprüft:
 
-- Smartphone um `360px`,
+- `320px`,
+- Smartphone um `360px` oder `390px`,
 - Tablet um `768px`,
-- Desktop um `1280px`.
+- `1024px`,
+- Desktop um `1280px`,
+- große Desktopbreite um `1440px`.
 
-Diese Werte sind Testgrößen, keine vorgeschriebenen CSS-Breakpoints.
+Zusätzlich werden bei relevanten Änderungen geprüft:
+
+- Smartphone-Querformat,
+- mindestens ein reales iPhone mit Safari,
+- mindestens ein reales Android-Gerät mit Chrome.
 
 Responsive Design nutzt je nach Kontext:
 
 - **Reflow** – Inhalte ordnen sich neu,
 - **Reduce** – sekundäre Informationen werden sinnvoll reduziert,
 - **Prioritize** – zentrale Information und Aktion bleiben zuerst sichtbar.
+
+Tablet ist ein eigener Nutzungskontext und wird nicht pauschal als großes Smartphone behandelt. Für jede wesentliche Komponente soll das Tablet-Verhalten bewusst beschrieben oder aus einem klaren gemeinsamen Muster ableitbar sein.
 
 Tabellen und komplexe Ansichten benötigen für kleine Displays eine bewusste Lösung. Browser-Zoom wird nicht deaktiviert.
 
@@ -230,7 +256,22 @@ Für das Styling gilt:
 
 Interne Oberflächen priorisieren Effizienz und klare Arbeitsabläufe. Öffentliche Oberflächen priorisieren Orientierung, Markenwirkung und reduzierte Informationsführung.
 
-### 14. Schlanke UI und Performance
+### 14. Browser-Support
+
+Für öffentliche TuS-Weboberflächen werden unterstützt:
+
+- aktuelle und vorherige Hauptversion von Chrome,
+- aktuelle und vorherige Hauptversion von Edge,
+- aktuelle und vorherige Hauptversion von Firefox,
+- aktuelle und vorherige Hauptversion von Safari auf macOS,
+- aktuelle und vorherige Hauptversion von Safari auf iOS,
+- aktuelle und vorherige Hauptversion von Chrome auf Android.
+
+Internet Explorer und andere Legacy-Browser werden nicht unterstützt.
+
+Progressive Enhancement ist zu bevorzugen: Kerninhalte, Navigation und wesentliche Interaktionen dürfen nicht ausschließlich von experimentellen Browserfeatures abhängen.
+
+### 15. Schlanke UI und Performance
 
 Eine Oberfläche soll unmittelbar reagieren und nur die Ressourcen laden, die für den aktuellen Kontext benötigt werden.
 
@@ -248,7 +289,7 @@ Daher gilt:
 
 Für die öffentliche Homepage gelten zusätzlich die Performanceziele aus `../standards/software-development-quality-standard.md`.
 
-### 15. Kein projektspezifisches UI-System ohne Grund
+### 16. Kein projektspezifisches UI-System ohne Grund
 
 Ein Entwickler erstellt nicht für jedes Plugin neue Button-, Karten-, Formular-, Spacing-, Typografie- oder Farbsysteme.
 
@@ -260,12 +301,15 @@ Wenn ein bestehendes Muster nicht ausreicht, wird zuerst geprüft:
 
 Keine Abstraktion wird nur deshalb gebaut, weil sie irgendwann eventuell wiederverwendbar sein könnte.
 
-### 16. UI-Abnahme
+### 17. UI-Abnahme
 
 Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden – soweit für den Scope relevant – geprüft:
 
 - Desktop, Tablet, Smartphone,
+- `320px` Mindestbreite,
+- Smartphone-Querformat,
 - Tastaturbedienung und Fokus,
+- Touch-Ziele,
 - Labels/Fehlermeldungen,
 - Empty State,
 - Loading State,
@@ -273,13 +317,14 @@ Bei neuen bzw. wesentlich geänderten sichtbaren Funktionen werden – soweit f�
 - lange/unerwartete Inhalte,
 - Berechtigungs-/Read-only-Zustand,
 - korrekte Originalassets,
-- öffentliche Komponenten reagieren korrekt auf Theme-Tokens statt eigene Brand-Werte zu erzwingen.
+- öffentliche Komponenten reagieren korrekt auf Theme-Tokens statt eigene Brand-Werte zu erzwingen,
+- relevante reale Geräte und unterstützte Browser.
 
 Prüfungen werden risikobasiert gewählt; ein lokaler UI-Change löst nicht automatisch einen vollständigen Produkttest aus.
 
 Ein Agent dokumentiert nur tatsächlich durchgeführte Prüfungen als bestanden.
 
-### 17. Veränderung des UI Standards
+### 18. Veränderung des UI Standards
 
 Neue UI-Muster dürfen im Projekt erprobt werden.
 
@@ -293,6 +338,7 @@ Zum organisationsweiten Standard werden sie erst, wenn sie sich in realer Nutzun
 - `logo.md`
 - `colors.md`
 - `typography.md`
+- `homepage-standard.md`
 - `../standards/software-development-quality-standard.md`
 - `../standards/data-persistence-and-database-standard.md`
 - `../standards/iteration-and-progress.md`
