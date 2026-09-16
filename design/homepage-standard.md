@@ -364,6 +364,10 @@ Eine neue oder veränderte Komponente gilt erst als designseitig belastbar, wenn
 - `product-types.md` – Einordnung von Website und UI als Produktklassen
 - Eventplaner – perspektivische führende Quelle für Veranstaltungsdaten
 - Partnerportal – perspektivische führende Quelle für Partnerdaten
+- `../projects/homepage/ARCHITECTURE.md` – technische Schichten und Komponentenverantwortung
+- `../projects/homepage/CONTENT-MODEL.md` – redaktionelle und fachliche Inhaltsquellen
+- `../projects/homepage/FUSSBALL-DE-INTEGRATION.md` – Matchdaten-Zielmodell und technischer Spike
+- `../decisions/ADR-0011-wordpress-theme-and-domain-content-boundary.md` – verbindliche Theme-/Content-Trennung
 
 ## Future Development
 

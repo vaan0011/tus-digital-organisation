@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-15 – Drive-Projektinventur formalisiert
+Stand: 2026-09-16 – Homepage-Projekt formalisiert
 
 ## Purpose
 
@@ -20,9 +20,9 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Drive-Prüfung ergibt:
 
-- **21 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **3 Aktiv**, **1 Geplant** und **17 Discovery**,
-- weitere reale Projektkandidaten aus Homepage-, Infrastruktur-, Archiv- und Förderarbeit,
+- **22 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **4 Aktiv**, **1 Geplant** und **17 Discovery**,
+- weitere reale Projektkandidaten aus Infrastruktur-, Archiv- und Förderarbeit,
 - laufende Facharbeit und Regelbetrieb bleiben bewusst außerhalb des Projektmodells.
 
 Am 15.09.2026 wurden sieben bereits real vorhandene Drive-Projektordner formalisiert:
@@ -47,6 +47,7 @@ Die explizite Projektentscheidung hebt `Kunstrasen` vom bisherigen Kandidaten zu
 | Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren und internes MVP reduzieren | internes TuS-Arbeitswerkzeug; gemeinsame Partnerdatenbasis mit Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design |
 | TuS Tauschbörse | Gesellschaft & Soziales; Owner offen | Discovery | `reuse-marketplace/PROJECT-STATE.md` | Vermittlungsablauf, Datenschutz/Missbrauchsschutz und Spendenweg konkretisieren | noch kein produktiver Implementierungsstand | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales |
 | Team Manager | Sport; Owner offen | Discovery | `team-manager/PROJECT-STATE.md` | gemeinsame Mannschaftsidentität und Saisonmodell definieren | keine parallele Mannschafts-/Personendatenwelt | Sport, Entwicklung, Datenschutz, Platzbelegung, Homepage |
+| Neuaufbau TuS-Homepage | Kommunikation; technischer Owner: WordPress Developer; fachlicher Owner offen | Aktiv | `homepage/PROJECT-STATE.md` | FUSSBALL.DE-Zugriffsweg verifizieren, produktive WordPress-/PHP-Baseline bestätigen und danach Block-Theme-Grundgerüst umsetzen | Theme liefert Look; WordPress/Fachplugins liefern Content, Daten und Funktionen; Colibri erst nach Staging-Migration ablösen | Entwicklung, Design, Team Manager, Event Planner, Platzbelegung, Partnerdaten, Datenschutz, Archiv |
 | LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; Owner offen | Discovery | `led-media-screen/PROJECT-STATE.md` | Technik, Fundament, Strom, Genehmigung und Gesamtfinanzierung klären | keine Bestellung ausgelöst | Partnership, Funding, Infrastruktur, Finanzen, Vorstand |
 | Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; Owner offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Ersatzförderung recherchieren und Aufbauarbeitspakete weiter schärfen | Aufbauprojekt, nicht dauerhafter Regelbetrieb | Funding, Portfolio, Entwicklung, Datenschutz/IT, Vorstand |
 | Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; Owner offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | BSB-Konfiguration, Eigentums-/Nutzungsstatus, Netze, Versand, Fundament und Gesamtpreis klären | vor Bestellung förder-/budgetseitig absichern | Funding, Sport, Infrastruktur, Finanzen, Vorstand |
@@ -83,7 +84,6 @@ Die zuvor bestehenden vierzehn Projektzustände bleiben unverändert verbindlich
 
 | Vorhaben | Status | Möglicher fachlicher Bereich / Owner | Warum portfolio-relevant | Nächste Portfolio-Aktion | Querschnitt |
 |---|---|---|---|---|---|
-| Neuaufbau TuS-Homepage | Kandidat | Kommunikation; Owner festzulegen | Zielbild und technische Migrationsbefunde sind gereift | Owner und Relaunch-/Migrationsscope klären | Entwicklung, Design, Team Manager, Event Planner, Partnerdaten, Datenschutz, Archiv |
 | Umkleideböden / klar abgegrenzte Umkleidesanierung | Kandidat | Infrastruktur / Sport | qualifizierte Förder-/Investitionschance | technischen Scope, Ist-/Zielzustand, Kosten und Eigentum/Nutzungsrecht klären; DFB-Vereinsheim-Analyse nutzen | Funding, Infrastruktur, Finanzen, Sport |
 | Hauptgebäude / Fassade | Kandidat | Infrastruktur | kurzfristig priorisierte Gebäudeaufwertung | Optik/Instandhaltung von energetischer Sanierung trennen; in DFB Vereinsheim 2.0 einordnen | Funding, Sponsoring, Infrastruktur, Finanzen, Design |
 | Jugendräume | Kandidat | Jugend / Infrastruktur | mittelfristiges Infrastruktur-/Jugendvorhaben | Bedarf, Nutzergruppen, Standort, Scope und Finanzierung über DFB-Vereinsheim-Analyse schärfen | Funding, Jugend, Infrastruktur, Sponsoring, Design |
@@ -153,7 +153,7 @@ Advanced Football darf keine dauerhafte parallele Personendatenbank etablieren. 
 
 #### Homepage ↔ Platzbelegung ↔ fachliche Systeme
 
-Die Homepage bleibt Kandidat für einen eigenen Relaunch-/Migrationszustand. Sie darf keine zweite Datenpflege für Platz-, Team-, Event-, Partner- oder Archivdaten erzeugen.
+Die Homepage ist als formales Projekt `homepage/` aktiv. Gemäß `ADR-0011` liefert das Theme Look und Layout; WordPress-Inhalte und Fachplugins liefern Content, Daten und Funktionen. Die Homepage erzeugt keine zweite Datenpflege für Platz-, Team-, Event-, Partner- oder Archivdaten.
 
 #### Stadionheft ↔ Archiv / Partnership / Event Planner / Matchday
 
@@ -166,15 +166,16 @@ Schutzfallkommunikation wird nicht in normale KI-/n8n-Prozesse geroutet.
 ### 7. Offene Portfolio-Lücken und nächste Koordinationspunkte
 
 1. Fachliche Owner für die neu formalisierten Projekte benennen.
-2. Getränkelieferant 2027 mit Kioskbedarf vervollständigen und Angebote vergleichbar einholen.
-3. Kunstrasen: Scope der drei Flächen, Trägerschaft und aktuellen Kostenstand klären.
-4. DFB Vereinsheim 2.0: Projektteam bilden und Vereinssteckbrief/Bedarf starten.
-5. Raucherraum/Kioskbereich: Zielnutzung entscheiden.
-6. Zaunanlage: aktuelles Aufmaß und Angebot herstellen.
-7. Advanced Football: Anbieter-/Nutzen-/Datenschutzprüfung durchführen.
-8. Veranstaltungsorganisation 2026/27: Eventliste, Termine und Owner konsolidieren.
-9. Bestehende Software-/Fachprojekte nach ihren jeweiligen `PROJECT-STATE.md` weiterführen.
-10. Infrastrukturkandidaten mit den Ergebnissen aus DFB Vereinsheim 2.0 neu priorisieren, ohne sie vorschnell zusammenzulegen.
+2. Homepage: FUSSBALL.DE-Zugriffsweg und produktive WordPress-/PHP-/Staging-Baseline bestätigen, danach Theme-Grundgerüst umsetzen.
+3. Getränkelieferant 2027 mit Kioskbedarf vervollständigen und Angebote vergleichbar einholen.
+4. Kunstrasen: Scope der drei Flächen, Trägerschaft und aktuellen Kostenstand klären.
+5. DFB Vereinsheim 2.0: Projektteam bilden und Vereinssteckbrief/Bedarf starten.
+6. Raucherraum/Kioskbereich: Zielnutzung entscheiden.
+7. Zaunanlage: aktuelles Aufmaß und Angebot herstellen.
+8. Advanced Football: Anbieter-/Nutzen-/Datenschutzprüfung durchführen.
+9. Veranstaltungsorganisation 2026/27: Eventliste, Termine und Owner konsolidieren.
+10. Bestehende Software-/Fachprojekte nach ihren jeweiligen `PROJECT-STATE.md` weiterführen.
+11. Infrastrukturkandidaten mit den Ergebnissen aus DFB Vereinsheim 2.0 neu priorisieren, ohne sie vorschnell zusammenzulegen.
 
 ### 8. Nutzung durch andere Mitarbeiter
 

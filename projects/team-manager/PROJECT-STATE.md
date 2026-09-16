@@ -47,10 +47,10 @@ Vor dem ersten funktionalen Code müssen mindestens folgende Punkte geklärt wer
    Die konkreten TuS-Teilflächen/Quadranten, externe Trainingsstätten, Winterstätten und Hallenzeit-Logik müssen als einfache konfigurierbare Ressourcen modelliert werden.
 
 6. **fussball.de:**
-   Der gewünschte automatisierte Spielimport ist fachlich gesetzt. Der technische Zugriffsweg ist noch nicht entschieden und muss auf Stabilität, Zulässigkeit und Wartbarkeit geprüft werden.
+   Der gewünschte automatisierte Spielimport ist fachlich gesetzt. Der technische Spike und das normalisierte Zielmodell stehen in `../homepage/FUSSBALL-DE-INTEGRATION.md`; der tatsächliche Transportweg bleibt bis zur Prüfung auf Stabilität, Zulässigkeit und Wartbarkeit offen.
 
 7. **Homepage-Integration:**
-   Die öffentliche Ausgabe soll dynamisch aus zentralen Daten entstehen. Ob dies über eigene Seiten, Templates, Blöcke oder Shortcodes erfolgt, wird erst nach Datenmodell und bestehender Homepage-Architektur entschieden.
+   Die Verantwortungsgrenze ist durch `ADR-0011` festgelegt: Team-/Match-Funktionen liefern einen dynamischen öffentlichen Block beziehungsweise eine stabile Render-Schnittstelle; das Theme liefert den Look. Der konkrete Blockvertrag wird nach dem Mannschafts-/Saisonmodell festgelegt.
 
 ### Excluded / Not Yet Decided
 
@@ -81,6 +81,8 @@ Kein aktiver Entwicklungsbranch. Der initiale Dokumentationsscope ist über PR #
 - `../../standards/iteration-and-progress.md`
 - `../../roles/wordpress-developer/development-standard.md`
 - `../../design/ui-standard.md`
+- `../homepage/FUSSBALL-DE-INTEGRATION.md`
+- `../../decisions/ADR-0011-wordpress-theme-and-domain-content-boundary.md`
 
 ## Future Development
 
