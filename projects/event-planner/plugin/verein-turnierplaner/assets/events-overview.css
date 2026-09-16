@@ -1,0 +1,16 @@
+.vtp-events-overview-page{max-width:1500px}
+.vtp-events-overview-shell{padding:28px!important}
+.vtp-events-overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px}
+.vtp-event-overview-column h2{font-size:24px!important;margin:0 0 20px!important;color:#111827}
+.vtp-event-overview-list{display:flex;flex-direction:column;gap:18px}
+.vtp-event-overview-item{position:relative;background:#fff;border:1px solid var(--vtp-border);border-radius:16px;padding:22px 24px;box-shadow:0 1px 5px rgba(15,23,42,.04);overflow:hidden}
+.vtp-event-overview-item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--vtp-blue)}
+.vtp-event-overview-item.is-planned:before{background:#98a2b3}
+.vtp-event-overview-item h3{font-size:22px!important;line-height:1.2;margin:0 0 14px!important;color:#111827!important}
+.vtp-event-overview-date,.vtp-event-overview-location{font-size:17px;line-height:1.35;margin:0 0 7px;color:var(--vtp-text)}
+.vtp-event-overview-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.vtp-event-outline-button{display:inline-flex!important;align-items:center;justify-content:center;min-height:42px;padding:0 18px!important;border:2px solid var(--vtp-blue)!important;background:#fff!important;color:var(--vtp-blue)!important;font-weight:700!important;border-radius:10px!important;box-shadow:none!important}
+.vtp-event-outline-button:hover,.vtp-event-outline-button:focus{border-color:var(--vtp-blue-dark)!important;background:#f3f7ff!important;color:var(--vtp-blue-dark)!important}
+.vtp-event-overview-empty{border:1px dashed var(--vtp-border);border-radius:14px;padding:22px;color:var(--vtp-muted);background:#fbfcfe}
+@media(max-width:1000px){.vtp-events-overview-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:780px){.vtp-events-overview-shell{padding:16px!important}.vtp-event-overview-item{padding:18px 18px 18px 22px}.vtp-event-overview-column h2{font-size:21px!important}.vtp-event-overview-item h3{font-size:20px!important}.vtp-event-overview-date,.vtp-event-overview-location{font-size:16px}}
