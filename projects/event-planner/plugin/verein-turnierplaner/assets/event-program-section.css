@@ -1,0 +1,9 @@
+.vtp-event-program-card .vtp-event-program-section-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px}
+.vtp-event-program-card .vtp-event-program-section-header h2{margin:0!important}
+.vtp-event-program-card .vtp-event-program-section-toggle{flex:0 0 44px}
+.vtp-event-program-card.is-section-collapsed>.description,
+.vtp-event-program-card.is-section-collapsed>form{display:none!important}
+.vtp-event-program-card.is-section-collapsed{padding-bottom:22px!important}
+@media(max-width:782px){
+ .vtp-event-program-card .vtp-event-program-section-header{align-items:center}
+}

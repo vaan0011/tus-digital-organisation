@@ -141,6 +141,10 @@ Create und Edit arbeiten auf derselben persistenten Datenbasis.
 
 ### 5. Programmpunkte und Ablaufplanung
 
+Die gesamte Arbeitssektion `Programmpunkte und Ablaufplanung` ist ein- und ausklappbar. Die Überschrift und das Auf-/Zuklapp-Icon bleiben immer sichtbar; Beschreibung, Aktionen, Tagescontainer und Speicherbutton werden beim Einklappen ausgeblendet.
+
+Der Bereich startet standardmäßig geöffnet. Das Ein- und Ausklappen ist reiner UI-Zustand und verändert keine fachlichen Daten und keine Persistenz.
+
 Die Event-Tage werden als Containergruppen dargestellt.
 
 Jeder Tag zeigt zunächst kompakt:
