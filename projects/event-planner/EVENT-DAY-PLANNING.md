@@ -1,0 +1,119 @@
+# Event Planner – Event-Tage und Ablaufplanung
+
+## Purpose
+
+Dieses Dokument beschreibt die verbindliche Logik für Event-Tage, Aufbau, Abbau und die Zuordnung von Programmpunkten im Event Planner.
+
+## Core Principle
+
+**Tage sind persistente fachliche Objekte und keine rein visuelle Gruppierung.**
+
+Ein Event-Tag besitzt dauerhaft ein Datum, eine Rolle und eine Reihenfolge. Programmpunkte gehören eindeutig zu einem konkreten Event-Tag.
+
+## Main Content
+
+### 1. Tagesrollen
+
+Der Event Planner kennt drei Rollen:
+
+- `event` – normaler Veranstaltungstag,
+- `setup` – Aufbau,
+- `teardown` – Abbau.
+
+Aufbau und Abbau sind eigenständige Tagescontainer. Dadurch können sie bei Bedarf dasselbe Kalenderdatum wie ein normaler Event-Tag besitzen, ohne mit diesem zusammenzufallen.
+
+### 2. Neuer Event-Tag
+
+`Neuen Tag hinzufügen` erzeugt einen normalen Event-Tag.
+
+Der Default ist:
+
+**letzter normaler Event-Tag + 1 Kalendertag**.
+
+Beispiel:
+
+- letzter Event-Tag: 25.10.2026,
+- neuer Event-Tag: 26.10.2026,
+- nächster neuer Event-Tag: 27.10.2026.
+
+Der Nutzer kann das Datum anschließend normal bearbeiten.
+
+### 3. Aufbau hinzufügen
+
+`Aufbau hinzufügen` erzeugt einen neuen Tagescontainer vom Typ `setup`.
+
+Default:
+
+**frühester vorhandener Tag − 1 Kalendertag**.
+
+Der Container enthält initial einen Programmpunkt:
+
+- Typ: `Aufbau`,
+- Titel: `Aufbau`.
+
+Das Datum bleibt editierbar. Der Aufbau darf deshalb auch auf denselben Kalendertag wie der erste eigentliche Event-Tag gelegt werden.
+
+### 4. Abbau hinzufügen
+
+`Abbau hinzufügen` erzeugt einen neuen Tagescontainer vom Typ `teardown`.
+
+Default:
+
+**spätester vorhandener Tag + 1 Kalendertag**.
+
+Der Container enthält initial einen Programmpunkt:
+
+- Typ: `Abbau`,
+- Titel: `Abbau`.
+
+Das Datum bleibt editierbar. Der Abbau darf deshalb auch auf denselben Kalendertag wie der letzte eigentliche Event-Tag gelegt werden.
+
+### 5. Überschriften
+
+Normale Event-Tage werden nur untereinander nummeriert. Aufbau und Abbau zählen nicht in die `Tag X`-Nummerierung hinein.
+
+Format:
+
+- `Tag 1 – Montag, 19. Oktober 2026`
+- `Tag 2 – Dienstag, 20. Oktober 2026`
+- `Aufbau – Sonntag, 18. Oktober 2026`
+- `Abbau – Mittwoch, 21. Oktober 2026`
+
+### 6. CRUD und Bearbeitung
+
+Jeder Tagescontainer folgt weiterhin demselben Muster:
+
+1. Aufklappen / Einklappen,
+2. Bearbeiten,
+3. Speichern,
+4. Löschen.
+
+Innerhalb eines aufgeklappten Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
+
+### 7. Persistenz
+
+Event-Tage werden dauerhaft in der Datenbank gespeichert.
+
+Dafür existiert die Tabelle `vtp_event_days` mit mindestens:
+
+- Event-ID,
+- Datum,
+- Tagesrolle,
+- Reihenfolge.
+
+Programmpunkte erhalten zusätzlich eine dauerhafte Zuordnung zum konkreten Event-Tag über `event_day_id`.
+
+Damit bleiben auch zwei unterschiedliche Tagescontainer mit demselben Kalenderdatum eindeutig unterscheidbar.
+
+Bestehende ältere Eventdaten werden beim Upgrade in normale Event-Tage migriert. Die bisherige `vtp_event_days_<event_id>`-Option bleibt nur als Rückwärtskompatibilitätsabbild bestehen und ist nicht mehr die fachliche Source of Truth.
+
+## Relationship to other documents
+
+- `EVENT-EDIT-UI.md`
+- `DATA-PERSISTENCE.md`
+- `EVENT-FORM-UI.md`
+- `PROJECT-STATE.md`
+
+## Future Development
+
+Die Tagesrollen können später für Templates, Aufgaben, Helferbedarf und Schichten genutzt werden. Neue Rollen werden nur eingeführt, wenn sie einen echten wiederkehrenden fachlichen Nutzen besitzen.

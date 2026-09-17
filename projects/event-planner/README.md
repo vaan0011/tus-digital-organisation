@@ -40,6 +40,10 @@ Verbindliche Struktur und Fortschrittslogik für `Event bearbeiten`:
 
 `EVENT-EDIT-UI.md`
 
+Verbindliche Logik für Event-Tage, Aufbau, Abbau und Programmpunkt-Zuordnung:
+
+`EVENT-DAY-PLANNING.md`
+
 Verbindliche Semantik für Fortschritts- und Statusfarben:
 
 `STATUS-COLOR-STANDARD.md`
@@ -67,18 +71,19 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 3. `EVENTS-OVERVIEW.md`
 4. `EVENT-FORM-UI.md`
 5. `EVENT-EDIT-UI.md`
-6. `STATUS-COLOR-STANDARD.md`
-7. `DATA-PERSISTENCE.md`
-8. `URL-INPUT-STANDARD.md`
-9. `PROJECT-STATE.md`
-10. `../../roles/wordpress-developer/role.md`
-11. `../../roles/wordpress-developer/development-standard.md`
-12. `../../standards/iteration-and-progress.md`
-13. `../../design/design-principles.md`
-14. `../../design/ui-standard.md`
-15. `../../design/backend-form-standard.md`
-16. `../../design/logo.md`
-17. relevante Einträge unter `../../decisions/`
+6. `EVENT-DAY-PLANNING.md`
+7. `STATUS-COLOR-STANDARD.md`
+8. `DATA-PERSISTENCE.md`
+9. `URL-INPUT-STANDARD.md`
+10. `PROJECT-STATE.md`
+11. `../../roles/wordpress-developer/role.md`
+12. `../../roles/wordpress-developer/development-standard.md`
+13. `../../standards/iteration-and-progress.md`
+14. `../../design/design-principles.md`
+15. `../../design/ui-standard.md`
+16. `../../design/backend-form-standard.md`
+17. `../../design/logo.md`
+18. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -98,6 +103,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `EVENT-EDIT-UI.md` beschreibt, **wie** der Event-Bearbeitungsscreen als kompakte Arbeitszentrale aufgebaut ist, wie die fünf Fortschrittsstufen berechnet werden und wie die Tagescontainer bedient werden.
 
+`EVENT-DAY-PLANNING.md` beschreibt, **wie** normale Event-Tage, Aufbau und Abbau als persistente Tagesobjekte gespeichert, datiert und mit Programmpunkten verknüpft werden.
+
 `STATUS-COLOR-STANDARD.md` beschreibt, **wie** Grau, Blau, Gelb/Orange, Grün und Rot fachlich verwendet werden. Rot ist dabei ausdrücklich nur für echte kritische Zustände vorgesehen.
 
 `DATA-PERSISTENCE.md` beschreibt, **wo und wie** dauerhaft benötigte fachliche Informationen gespeichert werden. Persistente Daten gehören in die Datenbank und dürfen nicht von Sessions oder flüchtigem Browserzustand abhängen.
@@ -115,6 +122,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
 - `EVENT-EDIT-UI.md`
+- `EVENT-DAY-PLANNING.md`
 - `STATUS-COLOR-STANDARD.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`

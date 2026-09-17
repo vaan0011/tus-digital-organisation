@@ -1,0 +1,10 @@
+.vtp-event-program-card .vtp-event-day-actions-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:8px 0 20px}
+.vtp-event-program-card .vtp-event-day-actions-top .vtp-event-add-day{margin:0!important}
+.vtp-event-program-card .vtp-event-day-actions-top .vtp-event-add-special:before{font-size:22px}
+.vtp-event-program-card .vtp-day-card[data-day-type="setup"],
+.vtp-event-program-card .vtp-day-card[data-day-type="teardown"]{background:#fbfcfe!important}
+.vtp-event-program-card .vtp-day-card[data-day-type="setup"] .vtp-day-head h3,
+.vtp-event-program-card .vtp-day-card[data-day-type="teardown"] .vtp-day-head h3{font-weight:750}
+@media(max-width:782px){
+ .vtp-event-program-card .vtp-event-day-actions-top{align-items:flex-start;flex-direction:column;gap:6px}
+}
