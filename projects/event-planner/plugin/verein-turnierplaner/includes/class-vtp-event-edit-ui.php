@@ -19,17 +19,29 @@ class VTP_Event_Edit_UI {
   wp_enqueue_script('vtp-event-edit',VTP_URL.'assets/event-edit.js',['vtp-event-create'],VTP_VERSION,true);
 
   $items_table=VTP_DB::table('event_items');
+  $days_table=VTP_DB::table('event_days');
   $shifts_table=VTP_DB::table('shifts');
   $signups_table=VTP_DB::table('shift_signups');
   $tournaments_table=VTP_DB::table('tournaments');
   $sponsors_table=VTP_DB::table('event_sponsors');
 
   $program_count=(int)$wpdb->get_var($wpdb->prepare(
-   "SELECT COUNT(*) FROM $items_table WHERE event_id=%d",
+   "SELECT COUNT(*)
+    FROM $items_table i
+    LEFT JOIN $days_table d ON d.id=i.event_day_id
+    WHERE i.event_id=%d
+      AND COALESCE(i.item_type,'') NOT IN ('Aufbau','Abbau')
+      AND (d.id IS NULL OR d.day_type='event')",
    $event_id
   ));
   $public_program_count=(int)$wpdb->get_var($wpdb->prepare(
-   "SELECT COUNT(*) FROM $items_table WHERE event_id=%d AND COALESCE(visibility,'public')='public'",
+   "SELECT COUNT(*)
+    FROM $items_table i
+    LEFT JOIN $days_table d ON d.id=i.event_day_id
+    WHERE i.event_id=%d
+      AND COALESCE(i.visibility,'public')='public'
+      AND COALESCE(i.item_type,'') NOT IN ('Aufbau','Abbau')
+      AND (d.id IS NULL OR d.day_type='event')",
    $event_id
   ));
 
@@ -73,29 +85,17 @@ class VTP_Event_Edit_UI {
    $event_id
   ));
 
-  $day_set=[];
-  $saved_days=get_option('vtp_event_days_'.$event_id,[]);
-  if(is_array($saved_days)){
-   foreach($saved_days as $day){
-    if(VTP_Plugin::is_valid_event_date($day)) $day_set[$day]=true;
-   }
-  }
-  $item_days=$wpdb->get_col($wpdb->prepare(
-   "SELECT DISTINCT item_date FROM $items_table WHERE event_id=%d AND item_date IS NOT NULL AND item_date<>''",
+  $day_count=(int)$wpdb->get_var($wpdb->prepare(
+   "SELECT COUNT(*) FROM $days_table WHERE event_id=%d AND day_type='event'",
    $event_id
   ));
-  foreach($item_days?:[] as $day){
-   if(VTP_Plugin::is_valid_event_date($day)) $day_set[$day]=true;
-  }
-  if(VTP_Plugin::is_valid_event_date((string)$event->start_date)){
+
+  if($day_count===0 && VTP_Plugin::is_valid_event_date((string)$event->start_date)){
    $start=strtotime($event->start_date.' 00:00:00');
    $end=VTP_Plugin::is_valid_event_date((string)$event->end_date)?strtotime($event->end_date.' 00:00:00'):$start;
    if($end<$start) $end=$start;
-   for($cursor=$start;$cursor<=$end;$cursor=strtotime('+1 day',$cursor)){
-    $day_set[date('Y-m-d',$cursor)]=true;
-   }
+   $day_count=(int)floor(($end-$start)/DAY_IN_SECONDS)+1;
   }
-  $day_count=count($day_set);
   if($day_count===0) $day_count=1;
 
   $date_label='Datum offen';
