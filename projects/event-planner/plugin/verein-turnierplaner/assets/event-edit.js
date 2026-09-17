@@ -93,6 +93,7 @@
   var p=data.progress;
   var section=document.createElement('section');
   section.className='vtp-card vtp-event-progress-section';
+  section.setAttribute('aria-label','Fortschritt der Eventplanung');
   var grid=document.createElement('div');
   grid.className='vtp-event-progress-grid';
 
@@ -162,6 +163,169 @@
 
   section.appendChild(grid);
   return section;
+ }
+
+ function wrapField(labelText,control){
+  var label=document.createElement('label');
+  label.className='vtp-event-field';
+  var title=document.createElement('span');
+  title.textContent=labelText;
+  label.appendChild(title);
+  label.appendChild(control);
+  return label;
+ }
+
+ function sponsorRow(sponsor){
+  sponsor=sponsor||{};
+  var row=document.createElement('div');
+  row.className='vtp-sponsor-row';
+  row.setAttribute('data-sponsor-row','');
+
+  var nameLabel=document.createElement('label');
+  nameLabel.innerHTML='<span>Name</span>';
+  var name=document.createElement('input');
+  name.type='text';
+  name.name='sponsor_name[]';
+  name.autocomplete='organization';
+  name.value=sponsor.name||'';
+  nameLabel.appendChild(name);
+
+  var logoLabel=document.createElement('label');
+  logoLabel.className='vtp-sponsor-logo-field';
+  logoLabel.innerHTML='<span>Logo</span>';
+  var logoId=document.createElement('input');
+  logoId.type='hidden';
+  logoId.name='sponsor_logo_id[]';
+  logoId.value=sponsor.logoId||'';
+  logoId.setAttribute('data-logo-id','');
+  logoLabel.appendChild(logoId);
+  var media=document.createElement('button');
+  media.type='button';
+  media.className='button vtp-sponsor-media-button';
+  media.setAttribute('aria-label','Sponsorlogo auswählen');
+  media.innerHTML='<span class="dashicons dashicons-upload" aria-hidden="true"></span><span data-logo-label></span>';
+  media.querySelector('[data-logo-label]').textContent=sponsor.logoLabel||'Logo auswählen';
+  logoLabel.appendChild(media);
+
+  var urlLabel=document.createElement('label');
+  urlLabel.innerHTML='<span>Link zur Homepage</span>';
+  var url=document.createElement('input');
+  url.type='url';
+  url.name='sponsor_url[]';
+  url.placeholder='https://';
+  url.value=sponsor.url||'';
+  urlLabel.appendChild(url);
+
+  var actions=document.createElement('div');
+  actions.className='vtp-sponsor-actions';
+  actions.innerHTML='<button type="button" class="button-link-delete vtp-remove-sponsor" aria-label="Sponsor entfernen" title="Sponsor entfernen"><span class="dashicons dashicons-trash" aria-hidden="true"></span></button>';
+
+  row.appendChild(nameLabel);
+  row.appendChild(logoLabel);
+  row.appendChild(urlLabel);
+  row.appendChild(actions);
+  return row;
+ }
+
+ function enhanceEventDataEditor(legacyEditor,data){
+  var form=legacyEditor.querySelector('form');
+  if(!form || form.dataset.vtpEditFormEnhanced==='1') return;
+  form.dataset.vtpEditFormEnhanced='1';
+  form.classList.add('vtp-event-create-form','vtp-event-edit-form');
+  legacyEditor.classList.add('vtp-event-create-card','vtp-event-edit-form-card');
+
+  var heading=legacyEditor.querySelector(':scope > h2');
+  if(heading) heading.textContent='Veranstaltungsdaten bearbeiten';
+
+  var name=form.querySelector('[name="name"]');
+  var start=form.querySelector('[name="start_date"]');
+  var end=form.querySelector('[name="end_date"]');
+  var location=form.querySelector('[name="location"]');
+  var contentUrl=form.querySelector('[name="content_url"]');
+  var description=form.querySelector('[name="description"]');
+  var calendar=form.querySelector('[name="calendar_visible"]');
+  var legacySponsors=form.querySelector('[name="sponsors"]');
+  if(!name || !start || !end || !location || !contentUrl || !description || !calendar) return;
+
+  [name,start,end,location,contentUrl,description].forEach(function(control){
+   control.classList.remove('regular-text','large-text');
+  });
+
+  var dataBox=document.createElement('div');
+  dataBox.className='vtp-event-data-box';
+  var dataHeading=document.createElement('h3');
+  dataHeading.textContent='Veranstaltungsdaten';
+  dataBox.appendChild(dataHeading);
+  var grid=document.createElement('div');
+  grid.className='vtp-event-data-grid';
+  var left=document.createElement('div');
+  left.className='vtp-event-data-column';
+  left.appendChild(wrapField('Veranstaltungsname',name));
+  left.appendChild(wrapField('Startdatum',start));
+  left.appendChild(wrapField('Enddatum',end));
+  left.appendChild(wrapField('Veranstaltungsort',location));
+
+  var right=document.createElement('div');
+  right.className='vtp-event-data-column';
+  right.appendChild(wrapField('Veranstaltungsbeschreibung',description));
+  right.appendChild(wrapField('zusätzlicher Link zur Veranstaltung',contentUrl));
+  var calendarBlock=document.createElement('label');
+  calendarBlock.className='vtp-event-calendar';
+  calendarBlock.innerHTML='<span>Veranstaltung im öffentlichen Kalender anzeigen?</span>';
+  var checkLine=document.createElement('span');
+  checkLine.className='vtp-checkbox-line';
+  checkLine.appendChild(calendar);
+  var checkText=document.createElement('span');
+  checkText.textContent='im öffentlichen Veranstaltungskalender anzeigen';
+  checkLine.appendChild(checkText);
+  calendarBlock.appendChild(checkLine);
+  right.appendChild(calendarBlock);
+  grid.appendChild(left);
+  grid.appendChild(right);
+  dataBox.appendChild(grid);
+
+  var sponsorBox=document.createElement('div');
+  sponsorBox.className='vtp-event-sponsor-box vtp-event-edit-sponsor-box';
+  var sponsorHeading=document.createElement('h2');
+  sponsorHeading.textContent='Sponsorenübersicht';
+  sponsorBox.appendChild(sponsorHeading);
+  var addSponsor=document.createElement('button');
+  addSponsor.type='button';
+  addSponsor.className='button vtp-add-sponsor';
+  addSponsor.setAttribute('data-action','add-sponsor');
+  addSponsor.innerHTML='<span class="dashicons dashicons-plus-alt2" aria-hidden="true"></span> Neuen Sponsor hinzufügen';
+  sponsorBox.appendChild(addSponsor);
+
+  var sponsorList=document.createElement('div');
+  sponsorList.className='vtp-sponsor-list';
+  sponsorList.setAttribute('data-sponsor-list','');
+  var sponsors=(data.sponsors&&data.sponsors.length)?data.sponsors:[{}];
+  sponsors.forEach(function(item){ sponsorList.appendChild(sponsorRow(item)); });
+  sponsorBox.appendChild(sponsorList);
+
+  var template=document.createElement('template');
+  template.id='vtp-sponsor-row-template';
+  template.content.appendChild(sponsorRow({}));
+  sponsorBox.appendChild(template);
+
+  var submitButton=form.querySelector('.submit .button-primary, .submit input[type="submit"], .submit button[type="submit"], input[type="submit"].button-primary, button[type="submit"].button-primary');
+  var oldSubmit=submitButton ? submitButton.closest('.submit') : null;
+  var submit=document.createElement('p');
+  submit.className='submit vtp-event-edit-submit';
+  if(submitButton){
+   if(submitButton.tagName==='INPUT') submitButton.value='Event aktualisieren';
+   else submitButton.textContent='Event aktualisieren';
+   submitButton.classList.add('vtp-event-submit');
+   submit.appendChild(submitButton);
+  }
+
+  Array.from(form.querySelectorAll('.vtp-form-section')).forEach(function(section){ section.remove(); });
+  if(legacySponsors) legacySponsors.remove();
+  if(oldSubmit && oldSubmit.parentNode) oldSubmit.remove();
+
+  form.appendChild(dataBox);
+  form.appendChild(sponsorBox);
+  if(submitButton) form.appendChild(submit);
  }
 
  function iconizeToggle(button,collapsed){
@@ -309,6 +473,7 @@
   });
   if(!legacyEditor) return;
   legacyEditor.classList.add('vtp-event-data-editor');
+  enhanceEventDataEditor(legacyEditor,data);
 
   var publicCard=findCardByHeading(root,'Öffentliche Seiten');
   var linkedCard=findCardByHeading(root,'Verknüpfte Turniere');
@@ -318,9 +483,10 @@
   var oldStatus=findCardByHeading(root,'Event-Status');
   if(oldStatus) oldStatus.classList.add('vtp-event-legacy-status');
 
+  var progress=buildProgress(data);
+  legacyEditor.insertAdjacentElement('beforebegin',progress);
   var summary=buildSummary(root,data,legacyEditor);
   legacyEditor.insertAdjacentElement('beforebegin',summary);
-  summary.insertAdjacentElement('afterend',buildProgress(data));
 
   var programCard=findCardByHeading(root,'Event-Ablauf');
   if(programCard){
