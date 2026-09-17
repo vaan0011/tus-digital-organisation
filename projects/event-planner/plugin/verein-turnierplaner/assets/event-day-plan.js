@@ -9,7 +9,7 @@
  function escapeHtml(value){
   return String(value==null?'':value)
    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-   .replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+   .replace(/\"/g,'&quot;').replace(/'/g,'&#039;');
  }
 
  function addDays(value,days){
@@ -46,7 +46,7 @@
    '<input type="time" name="start_time[]" value="'+escapeHtml((item.start||'').slice(0,5))+'" aria-label="Start">'+
    '<input type="time" name="end_time[]" value="'+escapeHtml((item.end||'').slice(0,5))+'" aria-label="Ende">'+
    '<select name="item_type[]">'+
-    option('Aufbau',type)+option('Abbau',type)+option('Programmpunkt',type)+option('Musik',type)+option('Spiel',type)+
+    option('Programmpunkt',type)+option('Musik',type)+option('Spiel',type)+
    '</select>'+
    '<input type="text" name="title[]" value="'+escapeHtml(item.title||'')+'" placeholder="Titel">'+
    '<select name="visibility[]" aria-label="Sichtbarkeit">'+
@@ -113,13 +113,13 @@
   }).map(cardDate).filter(Boolean).sort();
  }
 
- function createDay(type,date,item){
+ function createDay(type,date){
   return {
    id:0,
    ref:uniqueRef(),
    type:type,
    date:date,
-   items:item?[item]:[]
+   items:[]
   };
  }
 
@@ -133,6 +133,8 @@
 
   var itemsByDay={};
   (data.items||[]).forEach(function(item){
+   var itemType=item.type||'Programmpunkt';
+   if(itemType==='Aufbau' || itemType==='Abbau') return;
    var key=String(item.dayId||0);
    if(!itemsByDay[key]) itemsByDay[key]=[];
    itemsByDay[key].push(item);
@@ -200,7 +202,7 @@
     var eventDates=datesFor(box,'event');
     var base=eventDates.length?eventDates[eventDates.length-1]:(data.startDate||'');
     var next=base?addDays(base,1):'';
-    insertDay(createDay('event',next,null),'before-teardown');
+    insertDay(createDay('event',next),'before-teardown');
    });
   }
 
@@ -208,14 +210,14 @@
    var allDates=datesFor(box);
    var base=allDates.length?allDates[0]:(data.startDate||'');
    var date=base?addDays(base,-1):'';
-   insertDay(createDay('setup',date,{type:'Aufbau',title:'Aufbau',visibility:'public'}),'first');
+   insertDay(createDay('setup',date),'first');
   });
 
   addTeardown.addEventListener('click',function(){
    var allDates=datesFor(box);
    var base=allDates.length?allDates[allDates.length-1]:(data.endDate||data.startDate||'');
    var date=base?addDays(base,1):'';
-   insertDay(createDay('teardown',date,{type:'Abbau',title:'Abbau',visibility:'public'}),'last');
+   insertDay(createDay('teardown',date),'last');
   });
 
   document.addEventListener('click',function(event){
