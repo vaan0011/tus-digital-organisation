@@ -15,13 +15,14 @@ class VTP_Event_Edit_UI {
   $event=$wpdb->get_row($wpdb->prepare('SELECT * FROM '.VTP_DB::table('events').' WHERE id=%d',$event_id));
   if(!$event) return;
 
-  wp_enqueue_style('vtp-event-edit',VTP_URL.'assets/event-edit.css',['vtp-admin'],VTP_VERSION);
-  wp_enqueue_script('vtp-event-edit',VTP_URL.'assets/event-edit.js',[],VTP_VERSION,true);
+  wp_enqueue_style('vtp-event-edit',VTP_URL.'assets/event-edit.css',['vtp-admin','vtp-event-create'],VTP_VERSION);
+  wp_enqueue_script('vtp-event-edit',VTP_URL.'assets/event-edit.js',['vtp-event-create'],VTP_VERSION,true);
 
   $items_table=VTP_DB::table('event_items');
   $shifts_table=VTP_DB::table('shifts');
   $signups_table=VTP_DB::table('shift_signups');
   $tournaments_table=VTP_DB::table('tournaments');
+  $sponsors_table=VTP_DB::table('event_sponsors');
 
   $program_count=(int)$wpdb->get_var($wpdb->prepare(
    "SELECT COUNT(*) FROM $items_table WHERE event_id=%d",
@@ -62,6 +63,14 @@ class VTP_Event_Edit_UI {
     ORDER BY start_date,start_time,name",
    $event_id,
    $event->name
+  ));
+
+  $sponsor_rows=$wpdb->get_results($wpdb->prepare(
+   "SELECT name,logo_attachment_id,homepage_url
+    FROM $sponsors_table
+    WHERE event_id=%d
+    ORDER BY sort_order,id",
+   $event_id
   ));
 
   $day_set=[];
@@ -106,6 +115,25 @@ class VTP_Event_Edit_UI {
    ];
   }
 
+  $sponsors=[];
+  foreach($sponsor_rows?:[] as $sponsor){
+   $logo_id=absint($sponsor->logo_attachment_id);
+   $label='';
+   if($logo_id){
+    $label=(string)get_the_title($logo_id);
+    if($label===''){
+     $file=get_attached_file($logo_id);
+     if($file) $label=basename($file);
+    }
+   }
+   $sponsors[]=[
+    'name'=>(string)$sponsor->name,
+    'logoId'=>$logo_id,
+    'logoLabel'=>$label ?: ($logo_id ? 'Logo ausgewählt' : 'Logo auswählen'),
+    'url'=>(string)$sponsor->homepage_url,
+   ];
+  }
+
   wp_localize_script('vtp-event-edit','VTPEventEdit',[
    'event'=>[
     'id'=>$event_id,
@@ -121,6 +149,7 @@ class VTP_Event_Edit_UI {
     'archive'=>admin_url('admin.php?page=vtp-events&view=archive'),
    ],
    'linkedTournaments'=>$linked,
+   'sponsors'=>$sponsors,
    'progress'=>[
     'days'=>$day_count,
     'programCount'=>$program_count,
