@@ -35,6 +35,7 @@ Die dauerhafte Architekturentscheidung steht in:
 
 Die konkrete technische Aufteilung steht in:
 
+- `VISITOR-FUNCTION-MAP.md`
 - `ARCHITECTURE.md`
 - `CONTENT-MODEL.md`
 - `FUSSBALL-DE-INTEGRATION.md`
@@ -88,6 +89,7 @@ Das Projekt ist fachlich erfolgreich, wenn:
 ## Relationship to other documents
 
 - `PROJECT-STATE.md`
+- `VISITOR-FUNCTION-MAP.md`
 - `ARCHITECTURE.md`
 - `CONTENT-MODEL.md`
 - `FUSSBALL-DE-INTEGRATION.md`
