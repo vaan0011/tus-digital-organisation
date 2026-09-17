@@ -1,6 +1,6 @@
 # Neuaufbau TuS-Homepage – Project State
 
-Stand: 2026-09-16 – Projekt formalisiert und Zielarchitektur festgelegt
+Stand: 2026-09-17 – Besucher- und Funktionslandkarte konsolidiert
 
 ## Purpose
 
@@ -24,7 +24,11 @@ Die akzeptierte visuelle Richtung wird in eine implementierbare WordPress-Zielar
 
 - Ein hochwertiges responsives Homepage-Mockup wurde vom Vorstand als visuelle Richtung bestätigt.
 - Der `design/homepage-standard.md` definiert Informationsarchitektur, Nutzerwege und Komponenten der Startseite.
+- `VISITOR-FUNCTION-MAP.md` ordnet häufige Besucherfragen den öffentlichen Wegen, führenden Quellen, Komponenten und Fallbacks zu.
+- `Schiedsrichter werden` ist als eigener häufig nachgefragter Nutzerweg erkannt; der Google-Drive-Bestand bestätigt Schiedsrichter als sichtbaren Vereinsbereich.
+- Der öffentliche Partnerbereich erfüllt zwei getrennte Aufgaben: bestehende Partner sichtbar würdigen und neue Unternehmen über `Partner werden` gewinnen.
 - Der `design/ui-standard.md` legt fest, dass öffentliche Plugins Brand-Tokens aus dem aktiven Theme beziehen.
+- Barlow ist als verbindliche Digital-/UI-Schrift für die öffentliche Homepage freigegeben.
 - Original-TuS-Logos liegen verbindlich unter `design/logo/`.
 - Die bestehende Homepage läuft auf WordPress und nutzt Colibri als Page-Builder-Basis.
 - 28 aktive Plugins wurden als Migrationskontext inventarisiert.
@@ -51,17 +55,22 @@ Die akzeptierte visuelle Richtung wird in eine implementierbare WordPress-Zielar
 - Externe Daten werden nicht bei jedem öffentlichen Seitenaufruf live angefordert.
 - FUSSBALL.DE-Daten werden nach verifiziertem Zugriffsweg serverseitig synchronisiert und als lokale, regenerierbare Projektion dargestellt.
 - Colibri und Altplugins bleiben bis zu erfolgreicher Staging-Migration unangetastet.
+- Die öffentliche Informationsarchitektur folgt Besucherfragen und nicht den Namen interner Plugins.
+- `Schiedsrichter werden` erhält einen eigenen, klar auffindbaren Nutzerweg unter `Mitmachen` und einen kontextbezogenen Startseiteneinstieg.
+- `Unsere Partner` und `Partner werden` bleiben getrennte öffentliche Aktionen; eine reine Footer- oder Logo-Wand-Darstellung genügt nicht.
 
 ### Open
 
 1. Produktive WordPress- und PHP-Version bestätigen.
 2. Staging-, Deployment-, Backup- und Rollback-Weg bestätigen.
-3. Exakte Farb- und Fontwerte des freigegebenen Mockups gegen die noch offenen Brand-Standards freigeben.
+3. Exakten HEX-/RGB-Wert des Primärrots technisch aus dem freigegebenen Original-Logo verifizieren und in `design/colors.md` registrieren.
 4. Sportmedia-Ansprechpartner, Zugang, Bedingungen, mögliche Kosten und repräsentative Beispieldaten sichern.
 5. Dateiformat, verfügbare Felder, Statuswerte, Aktualisierungsverhalten und Mannschaftszuordnung im Provider-Spike verifizieren.
 6. Endgültige Shop-, Magazin-PDF- und gegebenenfalls Online-Lesen-URLs eintragen.
 7. Kommunikations-/Produkt-Owner für die Homepage benennen.
 8. Relevante Legacy-Seiten, URLs, Colibri-Templates, Stackable-Blöcke, Shortcodes und Widgets vor Migration inventarisieren.
+9. Für `Schiedsrichter werden` fachlichen Content-Owner, rollenbasierten Kontaktweg und aktuelle Verbandsinformationen bestätigen.
+10. Übergangsquelle und kuratierte Auswahl für `Unsere Partner` festlegen, bis die gemeinsame Partnerdatenquelle bereitsteht.
 
 ### Risks
 
@@ -88,15 +97,17 @@ Die bestehende produktive Homepage bleibt unverändert. Der belastbare neue Stan
 
 ### Next Meaningful Step
 
-1. Sportmedia-Datenzugang und repräsentative Beispieldatei für den TuS klären.
-2. Den in `FUSSBALL-DE-INTEGRATION.md` und `../team-manager/MATCH-DATA-MODULE.md` beschriebenen Provider-Spike durchführen.
-3. Produktive WordPress-/PHP-Baseline und Staging-Weg bestätigen.
-4. Danach das minimale Theme-Inkrement mit `theme.json`, Header, Footer, `index.html`, `front-page.html` und lokalem Original-Logo auf einem eigenen Branch umsetzen.
-5. Dieses Inkrement auf 360 px, 768 px und 1280 px sowie per Tastatur prüfen.
+1. Besucher- und Funktionslandkarte prüfen und die bestätigten Ergänzungen in Homepage-Standard und UI-Mockup spiegeln.
+2. Sportmedia-Datenzugang und repräsentative Beispieldatei für den TuS klären.
+3. Den in `FUSSBALL-DE-INTEGRATION.md` und `../team-manager/MATCH-DATA-MODULE.md` beschriebenen Provider-Spike durchführen.
+4. Produktive WordPress-/PHP-Baseline und Staging-Weg bestätigen.
+5. Danach das minimale Theme-Inkrement mit `theme.json`, Header, Footer, `index.html`, `front-page.html` und lokalem Original-Logo auf einem eigenen Branch umsetzen.
+6. Dieses Inkrement gemäß der vollständigen Viewport-, Browser-, Geräte-, Tastatur- und Accessibility-Matrix aus `design/homepage-standard.md` prüfen.
 
 ## Relationship to other documents
 
 - `README.md`
+- `VISITOR-FUNCTION-MAP.md`
 - `ARCHITECTURE.md`
 - `CONTENT-MODEL.md`
 - `FUSSBALL-DE-INTEGRATION.md`
