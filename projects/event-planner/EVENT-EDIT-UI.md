@@ -8,9 +8,15 @@ Der Bearbeitungsscreen soll nicht alle Funktionen gleichzeitig offen darstellen,
 
 ## Core Principle
 
-**Zuerst Überblick, dann Bearbeitung.**
+**Zuerst Status, dann Überblick, dann Bearbeitung.**
 
-Bestehende persistente Event-, Programm-, Schicht- und Helferdaten bleiben Source of Truth. Die neue Oberfläche ordnet diese Informationen neu und erzeugt keinen zweiten manuellen Fortschrittsstatus.
+Bestehende persistente Event-, Programm-, Schicht- und Helferdaten bleiben Source of Truth. Die Oberfläche ordnet diese Informationen neu und erzeugt keinen zweiten manuellen Fortschrittsstatus.
+
+Für Create und Edit gilt außerdem der zentrale Backend-Formstandard:
+
+`../../design/backend-form-standard.md`
+
+Anlegen und Bearbeiten eines Events verwenden dieselbe Form-Sprache. Feldanzahl und Feldnamen dürfen variieren; Karten, Feldgruppen, Buttons, Abstände, Typografie und Interaktionsmuster bleiben konsistent.
 
 ## Main Content
 
@@ -22,33 +28,13 @@ Der Screen beginnt mit:
 - kurzer Beschreibung,
 - Navigation zu `neues Event`, `aktive Events`, `Vorlagen` und `Archiv`.
 
-### 2. Event-Zentrale
+### 2. Fortschritt der Eventplanung
 
-Direkt unter der Navigation stehen drei kompakte Bereiche:
+Die Fortschrittsleiste steht **oberhalb** der Event-Zentrale.
 
-#### Veranstaltungsdaten
+Sie ist ein übergeordnetes Element und zeigt auf einen Blick, welche Planungsbereiche für das Event bereits angelegt bzw. erledigt sind.
 
-Zeigt mindestens:
-
-- Veranstaltungsname,
-- Datum bzw. Datumsbereich,
-- Veranstaltungsort.
-
-Ein Edit-Stift öffnet die detaillierte Bearbeitung der Event-Stammdaten.
-
-#### Öffentliche Seite
-
-Bietet den direkten Absprung auf die öffentliche Event-/Programmseite.
-
-#### Verknüpfte Turniere
-
-Zeigt die mit dem Event verbundenen Turniere kompakt an. Wenn keine Turniere verbunden sind, wird ein klarer Leerzustand angezeigt.
-
-### 3. Fortschritt der Eventplanung
-
-Die fünf Statuskacheln bilden die Planung von links nach rechts ab.
-
-Sie werden aus realen Fachdaten berechnet und nicht separat gepflegt.
+Die fünf Statuskacheln bilden die Planung von links nach rechts ab und werden aus realen Fachdaten berechnet.
 
 #### Stufe 1 – Event erstellt
 
@@ -74,7 +60,7 @@ Zielkennzahl:
 
 - `erledigte Aufgaben / Aufgaben gesamt`.
 
-Das persistente Event-Aufgabenmodell existiert noch nicht. Bis zu dessen Einführung zeigt die Kachel transparent `0 Aufgaben` und `noch nicht geplant`. Es werden keine erfundenen oder flüchtigen Aufgabenstände erzeugt.
+Das persistente Event-Aufgabenmodell existiert noch nicht. Bis zu dessen Einführung zeigt die Kachel transparent `0 Aufgaben` und `noch nicht geplant`.
 
 #### Stufe 4 – Schichten
 
@@ -90,9 +76,70 @@ Kennzahl:
 
 - `belegte Helferplätze / benötigte Helferplätze`.
 
-Die Kennzahl beschreibt die Besetzung der Helferplätze im Event. Personenbezogene Jahresstunden und Mitgliederrabatte bleiben Aufgabe des Mitglieder-&-Engagement-Moduls.
+Personenbezogene Jahresstunden und Mitgliederrabatte bleiben Aufgabe des Mitglieder-&-Engagement-Moduls.
 
-### 4. Programmpunkte und Ablaufplanung
+### 3. Event-Zentrale
+
+Unterhalb der Fortschrittsleiste stehen drei kompakte Bereiche.
+
+#### Veranstaltungsdaten
+
+Zeigt mindestens:
+
+- Veranstaltungsname,
+- Datum bzw. Datumsbereich,
+- Veranstaltungsort.
+
+Ein Edit-Stift öffnet direkt darunter die detaillierte Bearbeitung der Event-Stammdaten.
+
+#### Öffentliche Seite
+
+Bietet den direkten Absprung auf die öffentliche Event-/Programmseite.
+
+#### Verknüpfte Turniere
+
+Zeigt die mit dem Event verbundenen Turniere kompakt an. Wenn keine Turniere verbunden sind, wird ein klarer Leerzustand angezeigt.
+
+### 4. Event-Stammdaten bearbeiten
+
+Die Bearbeitung verwendet dieselbe Form-Sprache wie `Neues Event anlegen`.
+
+Verbindlich sind:
+
+- dieselbe Karten- und Containerlogik,
+- dieselbe zweispaltige Desktop-Struktur,
+- dieselben Feld- und Label-Stile,
+- dieselben Abstände und Buttonmuster,
+- dieselbe Checkbox- und URL-Logik,
+- dieselbe responsive Einspalten-Darstellung auf kleinen Displays,
+- dieselbe zeilenweise Sponsorenpflege.
+
+Die Event-Stammdaten werden links und rechts fachlich gruppiert:
+
+**linke Spalte**
+
+- Veranstaltungsname,
+- Startdatum,
+- Enddatum,
+- Veranstaltungsort.
+
+**rechte Spalte**
+
+- Veranstaltungsbeschreibung,
+- zusätzlicher Link zur Veranstaltung,
+- Sichtbarkeit im öffentlichen Veranstaltungskalender.
+
+Die Sponsorenübersicht verwendet dieselben strukturierten Sponsorzeilen wie bei der Event-Anlage:
+
+- Name,
+- Logo,
+- Link zur Homepage,
+- eindeutige Entfernen-Aktion,
+- `Neuen Sponsor hinzufügen`.
+
+Create und Edit arbeiten auf derselben persistenten Datenbasis.
+
+### 5. Programmpunkte und Ablaufplanung
 
 Die Event-Tage werden als Containergruppen dargestellt.
 
@@ -119,7 +166,7 @@ Das Aufklapp-Icon öffnet den Container und zeigt die Programmpunkte des Tages. 
 
 Die vorhandene Datums-Picker-Logik bleibt verbindlich: neue Event-Tage orientieren sich am bestehenden Event-/Vortagsdatum und dürfen nicht unnötig im heutigen Monat starten.
 
-### 5. Farben und Status
+### 6. Farben und Status
 
 Verbindliche Quelle für die Statussemantik:
 
@@ -133,13 +180,13 @@ Die Fortschrittskacheln verwenden folgende fachliche Zustände:
 - Grün = vollständig erfüllt,
 - Rot = echter kritischer Zustand.
 
-Rot ist ausdrücklich **kein normaler Offen-Zustand**. Ein frisch angelegtes Event mit noch nicht begonnenem Programm, Aufgaben, Schichten oder Helferplanung zeigt diese Bereiche deshalb grau und nicht rot.
+Rot ist ausdrücklich **kein normaler Offen-Zustand**.
 
 Farbe wird nie allein verwendet. Jede Kachel zeigt zusätzlich einen verständlichen Status-Text.
 
-Canva-Mockups definieren Struktur und Informationshierarchie, nicht die Farbpalette. Die Oberfläche verwendet die bestehenden Event-Planner-/TuS-UI-Tokens.
+Canva-Mockups definieren Struktur und Informationshierarchie, nicht die Farbpalette.
 
-### 6. Persistenz
+### 7. Persistenz
 
 Diese UI führt keine Session-basierte oder nur clientseitige Fachdatenhaltung ein.
 
@@ -155,11 +202,12 @@ Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persisten
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
 - `PROJECT-STATE.md`
+- `../../design/backend-form-standard.md`
 
 ## Future Development
 
 Sobald das persistente Aufgabenmodul existiert, wird die dritte Fortschrittskachel an die echten Aufgabenstände angebunden.
 
-Zeitabhängige rote Warnzustände werden erst ergänzt, wenn fachlich belastbare Fristen bzw. Eskalationsregeln existieren. Offene Planung allein erzeugt keinen roten Status.
+Zeitabhängige rote Warnzustände werden erst ergänzt, wenn fachlich belastbare Fristen bzw. Eskalationsregeln existieren.
 
-Weitere Bereiche des Bearbeitungsscreens – insbesondere Helferbedarf, Schichtplanung, Bestellungen, Ausgaben und Archivierung – sollen schrittweise auf dasselbe Muster `Überblick → Containergruppe → gezielte Bearbeitung` umgestellt werden, ohne die bestehende funktionierende Persistenz unnötig umzubauen.
+Weitere Bereiche des Bearbeitungsscreens – insbesondere Helferbedarf, Schichtplanung, Bestellungen, Ausgaben und Archivierung – sollen schrittweise auf dasselbe Muster `Status → Überblick → Containergruppe → gezielte Bearbeitung` umgestellt werden, ohne die bestehende funktionierende Persistenz unnötig umzubauen.
