@@ -22,7 +22,29 @@ Der Event Planner kennt drei Rollen:
 
 Aufbau und Abbau sind eigenständige Tagescontainer. Dadurch können sie bei Bedarf dasselbe Kalenderdatum wie ein normaler Event-Tag besitzen, ohne mit diesem zusammenzufallen.
 
-### 2. Neuer Event-Tag
+### 2. Automatische Initialisierung aus dem Event-Datumsbereich
+
+Beim Anlegen eines Events werden Start- und Enddatum bereits als fachliche Stammdaten gespeichert.
+
+Wenn für ein Event noch keine persistenten Tagescontainer existieren, erzeugt der Ablaufplan beim ersten Öffnen automatisch für **jeden Kalendertag des Event-Datumsbereichs** einen normalen Event-Tag.
+
+Beispiel:
+
+- Startdatum: 19.09.2026
+- Enddatum: 22.09.2026
+
+Der Ablaufplan startet automatisch mit:
+
+- Tag 1 – 19.09.2026
+- Tag 2 – 20.09.2026
+- Tag 3 – 21.09.2026
+- Tag 4 – 22.09.2026
+
+Bei einem eintägigen Event entsteht genau ein normaler Event-Tag.
+
+Diese Initialisierung greift nur, solange noch keine eigenen Tagescontainer für das Event existieren. Bereits bearbeitete Ablaufpläne werden nicht automatisch überschrieben oder erneut aus dem Stammdatenbereich aufgebaut.
+
+### 3. Neuer Event-Tag
 
 `Neuen Tag hinzufügen` erzeugt einen normalen Event-Tag.
 
@@ -38,7 +60,7 @@ Beispiel:
 
 Der Nutzer kann das Datum anschließend normal bearbeiten.
 
-### 3. Aufbau hinzufügen
+### 4. Aufbau hinzufügen
 
 `Aufbau hinzufügen` erzeugt einen neuen Tagescontainer vom Typ `setup`.
 
@@ -53,7 +75,7 @@ Der Container enthält initial einen Programmpunkt:
 
 Das Datum bleibt editierbar. Der Aufbau darf deshalb auch auf denselben Kalendertag wie der erste eigentliche Event-Tag gelegt werden.
 
-### 4. Abbau hinzufügen
+### 5. Abbau hinzufügen
 
 `Abbau hinzufügen` erzeugt einen neuen Tagescontainer vom Typ `teardown`.
 
@@ -68,7 +90,7 @@ Der Container enthält initial einen Programmpunkt:
 
 Das Datum bleibt editierbar. Der Abbau darf deshalb auch auf denselben Kalendertag wie der letzte eigentliche Event-Tag gelegt werden.
 
-### 5. Überschriften
+### 6. Überschriften
 
 Normale Event-Tage werden nur untereinander nummeriert. Aufbau und Abbau zählen nicht in die `Tag X`-Nummerierung hinein.
 
@@ -79,7 +101,7 @@ Format:
 - `Aufbau – Sonntag, 18. Oktober 2026`
 - `Abbau – Mittwoch, 21. Oktober 2026`
 
-### 6. CRUD und Bearbeitung
+### 7. CRUD und Bearbeitung
 
 Jeder Tagescontainer folgt weiterhin demselben Muster:
 
@@ -90,7 +112,7 @@ Jeder Tagescontainer folgt weiterhin demselben Muster:
 
 Innerhalb eines aufgeklappten Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
 
-### 7. Persistenz
+### 8. Persistenz
 
 Event-Tage werden dauerhaft in der Datenbank gespeichert.
 

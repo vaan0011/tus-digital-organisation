@@ -109,6 +109,52 @@ class VTP_Event_Day_Planner {
   }
  }
 
+ private static function ensure_initial_event_days($event){
+  global $wpdb;
+  $eid=absint($event->id??0);
+  if(!$eid) return;
+
+  $days=self::table();
+  $existing=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $days WHERE event_id=%d",$eid));
+  if($existing>0) return;
+
+  $start_date=(string)($event->start_date??'');
+  if(!VTP_Plugin::is_valid_event_date($start_date)) return;
+
+  $end_date=(string)($event->end_date??'');
+  if(!VTP_Plugin::is_valid_event_date($end_date)) $end_date=$start_date;
+
+  $start=strtotime($start_date.' 00:00:00');
+  $end=strtotime($end_date.' 00:00:00');
+  if($end<$start) $end=$start;
+
+  $now=current_time('mysql');
+  $legacy=[];
+  $order=0;
+  $guard=0;
+
+  $wpdb->query('START TRANSACTION');
+  for($cursor=$start;$cursor<=$end && $guard<366;$cursor=strtotime('+1 day',$cursor),$guard++){
+   $date=date('Y-m-d',$cursor);
+   $ok=$wpdb->insert($days,[
+    'event_id'=>$eid,
+    'event_date'=>$date,
+    'day_type'=>'event',
+    'sort_order'=>$order++,
+    'created_at'=>$now,
+    'updated_at'=>$now,
+   ]);
+   if($ok===false){
+    $wpdb->query('ROLLBACK');
+    return;
+   }
+   $legacy[]=$date;
+  }
+  $wpdb->query('COMMIT');
+
+  update_option('vtp_event_days_'.$eid,$legacy,false);
+ }
+
  public static function assets($hook){
   if(($_GET['page']??'')!=='vtp-events') return;
   $event_id=absint($_GET['edit_event']??0);
@@ -120,6 +166,8 @@ class VTP_Event_Day_Planner {
    $event_id
   ));
   if(!$event) return;
+
+  self::ensure_initial_event_days($event);
 
   $days=$wpdb->get_results($wpdb->prepare(
    'SELECT id,event_date,day_type,sort_order FROM '.self::table().' WHERE event_id=%d ORDER BY sort_order,id',
