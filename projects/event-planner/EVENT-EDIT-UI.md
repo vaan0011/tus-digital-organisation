@@ -40,7 +40,9 @@ Die fünf Statuskacheln bilden die Planung von links nach rechts ab und werden a
 
 Kennzahl:
 
-- Anzahl der Event-Tage.
+- Anzahl der **normalen Event-Tage** (`day_type = event`).
+
+`Aufbau` und `Abbau` sind organisatorische Zusatzcontainer und zählen ausdrücklich **nicht** als Event-Tage in dieser Kennzahl.
 
 Status:
 
@@ -50,9 +52,11 @@ Status:
 
 Kennzahl:
 
-- Anzahl der Programmpunkte.
+- Anzahl der echten Programmpunkte innerhalb normaler Event-Tage.
 
-Status ist erfüllt, wenn mindestens ein öffentlicher Programmpunkt vorhanden ist und die öffentliche Eventseite existiert.
+`Aufbau` und `Abbau` sind keine Programmpunkte und werden weder in der Programmpunktzahl noch für den Status `veröffentlicht` berücksichtigt. Inhalte innerhalb eigener Aufbau-/Abbau-Container zählen ebenfalls nicht zum öffentlichen Eventprogramm.
+
+Status ist erfüllt, wenn mindestens ein öffentlicher echter Programmpunkt vorhanden ist und die öffentliche Eventseite existiert.
 
 #### Stufe 3 – Aufgaben
 
