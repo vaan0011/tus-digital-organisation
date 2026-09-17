@@ -52,6 +52,10 @@ Verbindlicher UX-/Speicherstandard für normale Web-URLs:
 
 `URL-INPUT-STANDARD.md`
 
+Verbindlicher gemeinsamer Standard für Backend-Formulare:
+
+`../../design/backend-form-standard.md`
+
 Verbindlicher Projekt-Checkpoint:
 
 `PROJECT-STATE.md`
@@ -72,8 +76,9 @@ Ein neuer Entwickler oder ein neuer Coding-Chat liest vor Arbeitsbeginn mindeste
 12. `../../standards/iteration-and-progress.md`
 13. `../../design/design-principles.md`
 14. `../../design/ui-standard.md`
-15. `../../design/logo.md`
-16. relevante Einträge unter `../../decisions/`
+15. `../../design/backend-form-standard.md`
+16. `../../design/logo.md`
+17. relevante Einträge unter `../../decisions/`
 
 ## Working Rule
 
@@ -99,6 +104,8 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 
 `URL-INPUT-STANDARD.md` beschreibt, **wie** normale Web-URLs nutzerfreundlich eingegeben, automatisch normalisiert und dauerhaft vollständig gespeichert werden.
 
+`../../design/backend-form-standard.md` beschreibt, **wie** Create- und Edit-Formulare dieselbe gemeinsame Backend-Form-Sprache verwenden.
+
 `PROJECT-STATE.md` beschreibt, **wo** die Entwicklung aktuell steht und was als Nächstes sinnvoll ist.
 
 ## Relationship to other documents
@@ -117,6 +124,7 @@ Langfristige fachliche Ziele, Entscheidungen, ausgeschlossene Lösungswege und d
 - `../../roles/wordpress-developer/`
 - `../../standards/`
 - `../../design/`
+- `../../design/backend-form-standard.md`
 - `../../decisions/`
 
 ## Future Development
