@@ -169,8 +169,9 @@ Vor Bestätigung einer Trainingsserie wird geprüft:
 2. Die Trainingsserie liegt innerhalb ihrer Trainingsperiode und alle Ressourcen sind im Zeitraum aktiv.
 3. Kind- und Elternressource werden nicht widersprüchlich parallel belegt.
 4. Zwei bestätigte Serien belegen nicht dieselbe Ressource zur selben Zeit.
-5. JSG-Trainingsort und saisonale Standortregel widersprechen sich nicht.
-6. Eine öffentliche Trainingszeit ist nur sichtbar, wenn Mannschaftssaison und Serie veröffentlicht sind.
+5. Die Platzbelegung meldet für den Zeitraum keine aktive Ressourcensperrung oder blockierenden Sondertermin.
+6. JSG-Trainingsort und saisonale Standortregel widersprechen sich nicht.
+7. Eine öffentliche Trainingszeit ist nur sichtbar, wenn Mannschaftssaison und Serie veröffentlicht sind.
 
 Ein erkannter Konflikt wird nicht stillschweigend überschrieben. Der Datensatz erhält `conflict` und benötigt fachliche Klärung.
 
@@ -191,7 +192,7 @@ Vor Veröffentlichung werden alle Vorschläge einzeln bestätigt. Historische Da
 ### 9. Verbraucher und Verantwortungsgrenzen
 
 - Team Manager besitzt Mannschaft, Mannschaftssaison, Rollen, Trainingsserien und Trainingsressourcen.
-- Platzbelegung liest Trainingsserien und kombiniert sie mit Spielen, Events, Sperrungen und Sonderbelegungen.
+- Platzbelegung liest Trainingsserien und kombiniert sie mit Spielen und Events. Sie besitzt Verfügbarkeitsfenster, Ressourcensperrungen, Hallen-Sondertermine und die daraus berechnete Auslastungsanalyse.
 - Event Planner referenziert bei konkreten Veranstaltungen `team_season_id`; `team_id` dient nur zur saisonübergreifenden Suche.
 - Matchdaten-Modul referenziert `team_season_id` und saisonale externe Kennungen.
 - Homepage und Theme speichern keine Kopien dieser Daten.
@@ -237,6 +238,7 @@ Die Trainerliste auf Google Drive ist operative Quelle, aber keine Freigabe zur 
 - `MATCH-DATA-MODULE.md`
 - `../../decisions/ADR-0013-shared-team-identity-and-season-model.md`
 - `../platzbelegung/README.md`
+- `../platzbelegung/CAPACITY-AND-BLOCKING.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../../architecture/platform-architecture.md`
 
