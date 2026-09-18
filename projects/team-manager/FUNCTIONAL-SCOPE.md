@@ -181,7 +181,7 @@ Aktuell bekannte externe Nutzungen sind unter anderem:
 
 Diese Angaben sind fachliche Ausgangsdaten und müssen später konfigurierbar bleiben; sie dürfen nicht als dauerhaft unveränderliche Programmlogik eingebaut werden.
 
-Die genaue Benennung und Anzahl der Teilflächen der beiden TuS-Trainingsfelder wird bei der späteren Einrichtung als konfigurierbare Ressourcen festgelegt.
+Die reale Ressourcenstruktur ist für den aktuellen Stand verifiziert: Trainingsfeld 1 besteht aus Quadrant 1 und 2, Trainingsfeld 2 aus Quadrant 3 und 4. Die Ressourcen bleiben konfigurierbar; Einzelheiten und stabile IDs stehen in `DATA-STANDARD.md` und `SEASON-2026-27.md`.
 
 ### 10. Platz- und Hallenbelegung
 
@@ -236,15 +236,12 @@ Der Event Planner weist Helferschichten künftig auch Mannschaften oder Abteilun
 
 Deshalb darf der Team Manager keine isolierte Mannschaftsliste erzeugen, die im Event Planner nochmals separat gepflegt werden muss.
 
-Vor der Implementierung wird architektonisch entschieden, wie eine gemeinsam nutzbare Mannschaftsidentität bereitgestellt wird.
+`ADR-0013` entscheidet verbindlich:
 
-Arbeitshypothese:
-
-- Mannschaften sind fachlich geteilte Stammdaten,
-- saisonbezogene Mannschaftsinformationen gehören zum Team-Management,
-- andere Module referenzieren dieselbe Mannschaftsidentität.
-
-Diese Arbeitshypothese ist noch keine Architekturfreigabe und muss vor der Implementierung gegen die Plattformarchitektur geprüft werden.
+- Mannschaften besitzen eine gemeinsam nutzbare saisonübergreifende `team_id`,
+- saisonbezogene Mannschaftsinformationen liegen in `team_season`,
+- Event Planner, Platzbelegung und Matchdaten-Modul referenzieren dieselben stabilen IDs,
+- andere Module bauen keine eigenen Mannschaftslisten auf.
 
 ### 14. Vereinfachungsregeln
 
@@ -279,10 +276,13 @@ Insbesondere soll es möglich sein:
 ## Relationship to other documents
 
 - `README.md` beschreibt Einstieg und Arbeitsweise des Projekts.
-- `PROJECT-STATE.md` beschreibt den aktuellen Projektstand und die offenen Vorentscheidungen.
+- `PROJECT-STATE.md` beschreibt den aktuellen Projektstand und die offenen Datenklärungen.
+- `DATA-STANDARD.md` definiert den verbindlichen Mannschafts-, Saison-, Rollen-, Ressourcen- und Trainingsvertrag.
+- `SEASON-2026-27.md` strukturiert die aktuellen Saisonquellen und markiert Widersprüche.
 - `MATCH-DATA-MODULE.md` definiert die verbindliche Matchdaten-Architektur und den ersten Provider-Spike.
 - `../event-planner/FUNCTIONAL-SCOPE.md` beschreibt die Nutzung von Mannschaften im Event Planner.
-- `../../architecture/platform-architecture.md` ist für die Entscheidung über gemeinsam genutzte Mannschaftsdaten relevant.
+- `../../decisions/ADR-0013-shared-team-identity-and-season-model.md` entscheidet die gemeinsam genutzte Mannschaftsidentität.
+- `../../architecture/platform-architecture.md` liefert den organisationsweiten Rahmen.
 - `../../design/ui-standard.md` definiert gemeinsame UI-Muster.
 - `../../roles/wordpress-developer/development-standard.md` definiert den technischen Entwicklungsstandard.
 
@@ -290,15 +290,13 @@ Dieses Dokument ist die fachliche Quelle für den langfristig vorgesehenen Funkt
 
 ## Future Development
 
-Vor der Implementierung ist folgende Reihenfolge sinnvoll:
+Die fachliche Modell- und Identitätsentscheidung ist abgeschlossen. Die nächste sinnvolle Reihenfolge lautet:
 
-1. fachliches Mannschafts- und Saisonmodell konkretisieren,
-2. Altersklassen-/Jahrgangsregeln verifizieren,
-3. gemeinsame Mannschaftsidentität mit Event Planner architektonisch entscheiden,
-4. parallel den Sportmedia-Zugang mit realen Beispieldaten prüfen,
-5. Matchmodell und saisonbezogene externe Mannschaftszuordnung konkretisieren,
-6. das kleine erste Matchdaten-Inkrement gemäß `MATCH-DATA-MODULE.md` entwickeln,
-7. öffentliche Mannschaftsseite und Saisonwechsel schrittweise aufbauen,
-8. Trainings-/Belegungsansichten anschließend ergänzen.
+1. offene Quelldaten aus `SEASON-2026-27.md` fachlich klären,
+2. bestätigte nicht personenbezogene Seed-Daten vorbereiten,
+3. technisches Schema und Migrationen aus `DATA-STANDARD.md` ableiten,
+4. ein kleines Trainingsdaten-Inkrement mit Ressourcen, Konfliktprüfung und lesender Wochenansicht umsetzen,
+5. parallel den Sportmedia-Zugang mit realen Beispieldaten prüfen,
+6. danach Matchdaten-Inkrement und öffentliche Mannschaftsseite schrittweise ergänzen.
 
 Die Reihenfolge ist eine Orientierung. Die Umsetzung bleibt in kleinen, testbaren Pull Requests.
