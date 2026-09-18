@@ -30,6 +30,7 @@ Es existiert noch kein Team-Manager-Plugin-Code.
 - Das TuS-Sportgelände besitzt Hauptplatz, Trainingsfeld 1 mit Q1/Q2 sowie Trainingsfeld 2 mit Q3/Q4.
 - Für den Winterbetrieb sind Schönbornhalle, Ohrenberghalle und das Kunstrasen-Kleinfeld am TuS-Gelände als Trainingsstätten bestätigt.
 - Außen- und Winterplan werden als getrennte `training_period` innerhalb derselben Saison geführt; ein Plan überschreibt den anderen nicht.
+- `../platzbelegung/CAPACITY-AND-BLOCKING.md` definiert die Auslastung je Ressource, Hallen-Sondertermine, freie Trainingsfenster und Quadrantensperrungen.
 - Im Quellbild gilt: Q1 oben rechts, Q2 oben links, Q3 unten rechts, Q4 unten links.
 - Der aktuelle TuS-Trainingsplan mit Zeiten und roten Quadrantenzuordnungen ist vollständig als Prüftabelle dokumentiert.
 - Die männlichen A-, B- und C-Junioren bilden 2026/27 eine JSG aus TuS Mingolsheim, VfR Kronau und TSV Langenbrücken.
@@ -58,7 +59,7 @@ Vor Veröffentlichung oder produktivem Seed-Import müssen die betroffenen Daten
 1. Technisches Schema und Migrationen einschließlich `training_period` aus dem fachlichen Datenstandard ableiten.
 2. Geschützte Personen-/Kontaktdatenhaltung und Feldfreigaben implementieren.
 3. Seed-/Importformat für bestätigte Saison- und Ressourcendaten einschließlich gemeinsamer Trainingsserien festlegen.
-4. Konfliktprüfung für Ressourcenhierarchie und Zeitüberschneidungen implementieren.
+4. Konfliktprüfung für Ressourcenhierarchie, Zeitüberschneidungen sowie aktive Sperrungen und Sondertermine der Platzbelegung implementieren.
 5. Lesende Servicegrenze für Event Planner und Platzbelegung definieren.
 6. Sportmedia-Zugang, Bedingungen, Kosten, Dateiformat und Beispieldaten verifizieren.
 7. Homepage- und Matchday-Read-only-Verträge nach Schema- und Provider-Spike konkretisieren.
@@ -82,7 +83,7 @@ Dokumentationsbranch für Datenstandard, Saisonstand und Architekturentscheidung
 1. die neun offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
 2. bestätigte, nicht personenbezogene Seed-Daten aus `SEASON-2026-27.md` erzeugen,
 3. technisches Schema und Migrationen für `team`, `team_season`, Ressourcen und Trainingsserien entwerfen,
-4. ein kleines vertikales Inkrement mit Konfliktprüfung und lesender Wochenansicht umsetzen,
+4. ein kleines vertikales Inkrement mit Konfliktprüfung gegen Sperrungen/Sondertermine und lesender Wochenansicht umsetzen,
 5. parallel den Sportmedia-Provider-Spike fortführen.
 
 ## Relationship to other documents
@@ -94,6 +95,7 @@ Dokumentationsbranch für Datenstandard, Saisonstand und Architekturentscheidung
 - `MATCH-DATA-MODULE.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
 - `../platzbelegung/PROJECT-STATE.md`
+- `../platzbelegung/CAPACITY-AND-BLOCKING.md`
 - `../../architecture/platform-architecture.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../standards/iteration-and-progress.md`

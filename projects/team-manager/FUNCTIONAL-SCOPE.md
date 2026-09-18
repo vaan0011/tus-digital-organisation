@@ -194,14 +194,17 @@ Das System soll insbesondere unterstützen:
 - Darstellung je Teilfläche/Quadrant,
 - parallele Belegung verschiedener Teilflächen,
 - Erkennen offensichtlicher Doppelbelegungen,
+- Berücksichtigung aktiver Sperrungen einzelner Quadranten oder ganzer Ressourcen,
+- Auslastungsanalyse je Q1–Q4, Kunstrasen-Kleinfeld und Halle,
+- Suche nach freien zusammenhängenden Trainingsfenstern,
 - saisonale bzw. winterliche Belegungspläne,
 - Veröffentlichung einer verständlichen Trainingsübersicht.
 
-Die Belegungsplanung ist damit keine zweite Datenpflege, sondern eine andere Sicht auf dieselben Trainingsdaten.
+Die Belegungsplanung ist damit keine zweite Datenpflege, sondern eine andere Sicht auf dieselben Trainingsdaten. Verfügbarkeiten, Sperrungen, Hallen-Sondertermine und Berechnungslogik liegen verbindlich im Projekt Platzbelegung unter `../platzbelegung/CAPACITY-AND-BLOCKING.md`.
 
 ### 11. Sondertermine und Hallenzeiten
 
-Neben festen wöchentlichen Trainingszeiten gibt es insbesondere im Hallenbetrieb zusätzliche, unregelmäßige Zeitfenster.
+Neben festen wöchentlichen Trainingszeiten gibt es insbesondere im Hallenbetrieb zusätzliche, unregelmäßige Zeitfenster, die als Liste geliefert werden können.
 
 Das System soll deshalb auch einmalige Sondertermine verwalten können.
 
@@ -213,7 +216,7 @@ Beispiele:
 - Ausfall eines regulären Termins,
 - Tausch einer Fläche oder Halle.
 
-Sondertermine dürfen den normalen Trainingsplan nicht unnötig kompliziert machen. Sie werden als Ausnahme zum wiederkehrenden Grundplan geführt.
+Sondertermine dürfen den normalen Trainingsplan nicht unnötig kompliziert machen. Sie werden nach Importvorschau und fachlicher Bestätigung als Ausnahme zum wiederkehrenden Grundplan geführt und verändern die Auslastungsanalyse unmittelbar.
 
 ### 12. Historie
 
@@ -281,6 +284,7 @@ Insbesondere soll es möglich sein:
 - `SEASON-2026-27.md` strukturiert die aktuellen Saisonquellen und markiert Widersprüche.
 - `MATCH-DATA-MODULE.md` definiert die verbindliche Matchdaten-Architektur und den ersten Provider-Spike.
 - `../event-planner/FUNCTIONAL-SCOPE.md` beschreibt die Nutzung von Mannschaften im Event Planner.
+- `../platzbelegung/CAPACITY-AND-BLOCKING.md` definiert Verfügbarkeit, Auslastung, Hallen-Sondertermine und Ressourcensperrungen.
 - `../../decisions/ADR-0013-shared-team-identity-and-season-model.md` entscheidet die gemeinsam genutzte Mannschaftsidentität.
 - `../../architecture/platform-architecture.md` liefert den organisationsweiten Rahmen.
 - `../../design/ui-standard.md` definiert gemeinsame UI-Muster.
