@@ -49,13 +49,11 @@ Vor Veröffentlichung oder produktivem Seed-Import müssen die betroffenen Daten
 6. Bei C-Juniorinnen fehlen Rolle und Kontaktstatus der zweiten Person.
 7. Exakte Zeiten und Ressourcen der B-/C-Junioren an den Partnerstandorten fehlen.
 8. Offizielle JSG-Bezeichnung, Vereinsreihenfolge und federführender Verein sind zu bestätigen.
-9. Der Sammeltermin E2/E3 benötigt zwei Mannschaftsreferenzen oder ein kleines Trainingsgruppenmodell.
-
 ### Open Technical Work
 
 1. Technisches Schema und Migrationen aus dem fachlichen Datenstandard ableiten.
 2. Geschützte Personen-/Kontaktdatenhaltung und Feldfreigaben implementieren.
-3. Seed-/Importformat für bestätigte Saison- und Ressourcendaten festlegen.
+3. Seed-/Importformat für bestätigte Saison- und Ressourcendaten einschließlich gemeinsamer Trainingsserien festlegen.
 4. Konfliktprüfung für Ressourcenhierarchie und Zeitüberschneidungen implementieren.
 5. Lesende Servicegrenze für Event Planner und Platzbelegung definieren.
 6. Sportmedia-Zugang, Bedingungen, Kosten, Dateiformat und Beispieldaten verifizieren.
@@ -77,7 +75,7 @@ Dokumentationsbranch für Datenstandard, Saisonstand und Architekturentscheidung
 
 ### Next Meaningful Step
 
-1. die neun offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
+1. die acht offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
 2. bestätigte, nicht personenbezogene Seed-Daten aus `SEASON-2026-27.md` erzeugen,
 3. technisches Schema und Migrationen für `team`, `team_season`, Ressourcen und Trainingsserien entwerfen,
 4. ein kleines vertikales Inkrement mit Konfliktprüfung und lesender Wochenansicht umsetzen,
