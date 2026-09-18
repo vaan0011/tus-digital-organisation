@@ -42,21 +42,24 @@ Das Plugin soll perspektivisch mindestens unterscheiden können zwischen:
 - Turnieren und Veranstaltungen,
 - Sonderbelegungen,
 - saisonalen bzw. Winterbelegungen,
-- Sperrungen oder nicht verfügbaren Flächen.
+- Sperrungen oder nicht verfügbaren Flächen,
+- Auslastung und freien Trainingskapazitäten je Ressource.
 
 ### 3. Ressourcenmodell
 
 Sportstätten und Ressourcen werden konfigurierbar geführt und nicht hart im Frontend programmiert.
 
-Beispiele können sein:
+Verifizierte Ressourcen sind insbesondere:
 
-- Hauptspielfeld,
-- Trainingsplatz,
-- Kunstrasen,
-- Hallen,
-- weitere zukünftig relevante Flächen.
+- Hauptplatz,
+- Trainingsfeld 1 mit Q1 und Q2,
+- Trainingsfeld 2 mit Q3 und Q4,
+- Kunstrasen-Kleinfeld,
+- Schönbornhalle,
+- Ohrenberghalle,
+- externe Trainingsstätten bei Partnervereinen.
 
-Die finale Ressourcenliste wird aus dem realen TuS-Betrieb aufgenommen.
+Weitere Ressourcen und echte Hallenteilflächen bleiben konfigurierbar.
 
 ### 4. Belegungsobjekt
 
@@ -75,7 +78,22 @@ Ein Belegungseintrag benötigt mindestens ein belastbares fachliches Modell für
 
 Personenbezogene Trainer- oder Teilnehmerdaten gehören nicht automatisch in die öffentliche Platzbelegung.
 
-### 5. Öffentliche UX
+### 5. Auslastung, Sondertermine und Sperrungen
+
+Die Platzbelegung berechnet die Auslastung von Q1–Q4, Kunstrasen-Kleinfeld und Hallen aus definierten Verfügbarkeitszeiten, bestätigten Belegungen und Sperrungen.
+
+Sie unterstützt insbesondere:
+
+- Nutzungs-, Sperr- und freie Kapazität je Ressource,
+- zusammenhängende freie Zeitfenster für zusätzliche Trainingsgruppen,
+- Auswahl nach Außen-/Winterperiode, Woche und gewünschter Trainingsdauer,
+- Hallen-Sondertermine aus gelieferten Listen mit Importvorschau,
+- einmalige und wiederkehrende Sperrungen einzelner Quadranten oder übergeordneter Ressourcen,
+- hierarchische Sperrwirkung von Platz zu Quadrant.
+
+Die verbindliche Fachlogik steht in `CAPACITY-AND-BLOCKING.md`.
+
+### 6. Öffentliche UX
 
 Die öffentliche Ansicht soll insbesondere unterstützen:
 
@@ -89,7 +107,7 @@ Die öffentliche Ansicht soll insbesondere unterstützen:
 
 Die genaue UI folgt dem TuS Digital Design System und dem Homepage Standard.
 
-### 6. Pflege und Berechtigungen
+### 7. Pflege und Berechtigungen
 
 Die Platzbelegung darf nicht voraussetzen, dass Ehrenamtliche im normalen WordPress-Backend arbeiten müssen.
 
@@ -97,7 +115,7 @@ Für spätere Pflege ist eine einfache geschützte Bedienoberfläche vorzusehen.
 
 Berechtigungen folgen Rollenbedarf und Least Privilege.
 
-### 7. Datenquellen und Integrationen
+### 8. Datenquellen und Integrationen
 
 Vor Implementierung wird entschieden, welche Informationen im Platzbelegungs-Plugin führend sind und welche nur referenziert bzw. synchronisiert werden.
 
@@ -114,7 +132,7 @@ Wichtig:
 
 Eine mögliche Google-Kalender-Synchronisation wäre nur eine kontrollierte serverseitige Adapterlösung bzw. Übergangslösung. Der Browser lädt nicht direkt den Google-Kalender als Kernoberfläche.
 
-### 8. Datenschutz und Informationsschutz
+### 9. Datenschutz und Informationsschutz
 
 Öffentlich werden nur die für die Belegungsinformation notwendigen Daten gezeigt.
 
@@ -129,19 +147,22 @@ Standardmäßig nicht öffentlich:
 
 Technisch sind Eingabevalidierung, Berechtigungsprüfung, CSRF-/Nonce-Schutz, Ausgabe-Escaping und angemessene Protokollierung zu berücksichtigen.
 
-### 9. MVP
+### 10. MVP
 
 Ein erster MVP soll bewusst klein bleiben:
 
-1. konfigurierbare Ressourcen,
+1. konfigurierbare Ressourcen und Verfügbarkeitsfenster,
 2. wiederkehrende und einmalige Belegungen,
-3. moderne öffentliche Wochen-/Tagesansicht,
-4. mobile Darstellung,
-5. einfache geschützte Pflege,
-6. keine direkten Drittanbieter-iframes,
-7. saubere Export-/Integrationsgrenze für spätere Automatisierung.
+3. einmalige und wiederkehrende Sperrungen,
+4. manuelle Sondertermine und Importvorschau für eine reale Hallenliste,
+5. interne Auslastungsanalyse und Suche nach freien Trainingsfenstern,
+6. moderne öffentliche Wochen-/Tagesansicht,
+7. mobile Darstellung,
+8. einfache geschützte Pflege,
+9. keine direkten Drittanbieter-iframes,
+10. saubere Export-/Integrationsgrenze für spätere Automatisierung.
 
-### 10. Bewusste Nicht-Ziele des ersten MVP
+### 11. Bewusste Nicht-Ziele des ersten MVP
 
 Nicht automatisch Teil von V1:
 
@@ -155,6 +176,7 @@ Nicht automatisch Teil von V1:
 ## Relationship to other documents
 
 - `PROJECT-STATE.md`
+- `CAPACITY-AND-BLOCKING.md`
 - `../../design/homepage-standard.md`
 - `../../design/homepage-contact-architecture.md`
 - `../../knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`
@@ -166,13 +188,4 @@ Nicht automatisch Teil von V1:
 
 ## Future Development
 
-Nach der Discovery wird entschieden:
-
-1. welche Ressourcen tatsächlich geführt werden,
-2. welche Quelle für Trainingsbelegungen heute existiert,
-3. welche Daten aus Spielplan und Event Planner automatisch einfließen können,
-4. welches minimale Datenmodell dafür genügt,
-5. wie der bestehende Google-Kalender bzw. statische Belegungsbilder abgelöst werden,
-6. wie die geschützte Pflegeoberfläche gestaltet wird.
-
-Erst danach beginnt die eigentliche Plugin-Implementierung in kleinen, prüfbaren PRs.
+Als nächste Discovery-Schritte werden die Verfügbarkeitsrahmen je Ressource, die reale Hallen-Sonderterminliste, Berechtigungen für Sperrungen und die Übergangsdaten aus dem heutigen Kalender aufgenommen. Danach entsteht das in `CAPACITY-AND-BLOCKING.md` definierte kleine, testbare Inkrement in einem eigenen Pull Request.
