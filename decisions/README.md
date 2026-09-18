@@ -62,6 +62,7 @@ Entscheidungen werden fortlaufend nummeriert:
 - `ADR-0010`
 - `ADR-0011`
 - `ADR-0012`
+- `ADR-0013`
 
 Die Nummer bleibt dauerhaft bestehen.
 
@@ -109,6 +110,7 @@ Der Projekt-Checkpoint verweist auf relevante ADRs, dupliziert ihre Begründung 
 - `ADR-0010-second-brain-and-memory-router.md`
 - `ADR-0011-wordpress-theme-and-domain-content-boundary.md`
 - `ADR-0012-team-manager-match-data-module.md`
+- `ADR-0013-shared-team-identity-and-season-model.md`
 
 ## Related Documents
 
