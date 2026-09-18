@@ -28,6 +28,7 @@ Mannschaft, Person und Ressource werden nicht in mehreren Plugins erneut angeleg
 | `site` | Sportgelände, Halle oder externer Standort | dauerhaft |
 | `resource` | Platz, Feld, Halle oder Teilfläche | dauerhaft/konfigurierbar |
 | `training_series` | wiederkehrender Trainingstermin | saison- oder zeitraumbezogen |
+| `training_series_team` | Zuordnung einer Trainingsserie zu einer oder mehreren Mannschaftssaisons | saisonbezogen |
 | `training_exception` | Ausfall, Verlegung, Zusatztraining oder Flächentausch | einzelterminbezogen |
 
 ### 2. Mannschaft und Mannschaftssaison
@@ -131,7 +132,6 @@ Ressourcen besitzen mindestens:
 `training_series` enthält mindestens:
 
 - `training_series_id`,
-- `team_season_id`,
 - Wochentag,
 - lokale Start- und Endzeit,
 - Zeitzone `Europe/Berlin`,
@@ -140,6 +140,8 @@ Ressourcen besitzen mindestens:
 - Status `draft`, `confirmed`, `conflict` oder `cancelled`,
 - interne Quelle und Verifikationsdatum,
 - optionale öffentliche Hinweise.
+
+Eine Trainingsserie referenziert über `training_series_team` mindestens eine `team_season_id`. Trainieren mehrere Mannschaften gemeinsam, wird eine gemeinsame Serie mit mehreren Mannschaftsreferenzen gespeichert. Dadurch entsteht weder eine künstliche Mannschaft noch ein falscher Ressourcenkonflikt.
 
 Mehrere Quadranten werden als mehrere Ressourcenreferenzen gespeichert, nicht als Text `1+2`.
 
