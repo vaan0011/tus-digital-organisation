@@ -49,6 +49,7 @@ Vor Veröffentlichung oder produktivem Seed-Import müssen die betroffenen Daten
 6. Bei C-Juniorinnen fehlen Rolle und Kontaktstatus der zweiten Person.
 7. Exakte Zeiten und Ressourcen der B-/C-Junioren an den Partnerstandorten fehlen.
 8. Offizielle JSG-Bezeichnung, Vereinsreihenfolge und federführender Verein sind zu bestätigen.
+
 ### Open Technical Work
 
 1. Technisches Schema und Migrationen aus dem fachlichen Datenstandard ableiten.
