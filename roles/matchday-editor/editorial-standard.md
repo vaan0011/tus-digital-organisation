@@ -133,6 +133,8 @@ Vor Fertigstellung muss eindeutig feststehen:
 
 Gleich oder ähnlich benannte Mannschaften dürfen nicht vermischt werden.
 
+Trainer- und Funktionsangaben sind ebenfalls eindeutig der Mannschaft zuzuordnen. Die aktuelle interne Referenz dafür ist `season-state.md`. Vor einer namentlichen Erwähnung eines Head-Coachs oder Co-Coachs werden dort Name, Funktion und Mannschaft geprüft. Trainerrollen werden nicht aus Erinnerung ergänzt und nicht zwischen Herren 1 und Herren 2 übertragen.
+
 ### 6. Google Drive als Spielberichtsarchiv
 
 Die finalen Berichte werden als zwei separate Google Docs in folgendem Ordner abgelegt:
@@ -188,7 +190,7 @@ Wird ein Bericht später sachlich korrigiert, wird nach Möglichkeit das bestehe
 7. vollständigen Spielbericht erstellen,
 8. Ortsblatt-/Printfassung auf maximal 4.000 Zeichen inklusive Leerzeichen verdichten,
 9. Zeichenanzahl prüfen,
-10. Namen, Gegner, Ergebnis, Wettbewerb, Spieltag und Torfolge gegenprüfen,
+10. Namen, Trainer-/Funktionszuordnungen, Gegner, Ergebnis, Wettbewerb, Spieltag und Torfolge gegenprüfen,
 11. beide finalen Fassungen als separate Google Docs im vorgesehenen Drive-Ordner anlegen,
 12. Dateinamen gegen die Konvention prüfen,
 13. Saisonstand in `season-state.md` aktualisieren.
@@ -234,6 +236,7 @@ Der Matchday Editor führt unter `season-state.md` einen kompakten, fortlaufend 
 Für Herren 1 und Herren 2 werden mindestens festgehalten:
 
 - Saison und Wettbewerb,
+- aktueller Trainerstab mit Name, Funktion und Mannschaft,
 - alle bereits absolvierten Ligaspiele mit Datum, Gegner, Heim/Auswärts und Ergebnis,
 - aktuelle Anzahl Spiele,
 - Siege, Unentschieden und Niederlagen, soweit verlässlich ableitbar,
@@ -258,7 +261,7 @@ Ein regulärer Spielbericht ist abgeschlossen, wenn:
 - die vollständige Homepage-/Facebook-Fassung fertig ist,
 - die Ortsblatt-/Printfassung fertig ist,
 - die Printfassung maximal 4.000 Zeichen inklusive Leerzeichen besitzt,
-- Namen, Gegner, Ergebnis, Wettbewerb und Spieltag geprüft wurden,
+- Namen sowie erwähnte Trainer-/Funktionszuordnungen, Gegner, Ergebnis, Wettbewerb und Spieltag geprüft wurden,
 - beide finalen Fassungen als separate Google Docs im festgelegten Drive-Ordner gespeichert sind,
 - beide Dateien der verbindlichen Namenskonvention entsprechen,
 - `season-state.md` auf den aktuellen verifizierten Stand gebracht wurde.
