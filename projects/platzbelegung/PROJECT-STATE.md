@@ -6,25 +6,25 @@ Dieses Dokument hält den aktuellen belastbaren Stand des Projekts `TuS Platzbel
 
 ## Core Principle
 
-> **Keine neue Kalenderinsel bauen. Erst reale Belegungsquellen verstehen, dann das kleinste robuste Plugin umsetzen.**
+> **Keine neue Kalenderinsel bauen. Belegungen aus fachlich führenden Quellen zusammenführen und als verständliche Sicht darstellen.**
 
 ## Main Content
 
 ### Status
 
-`Discovery`
+`Discovery – Ressourcen und Trainingsquelle verifiziert`
 
 ### Ausgangslage
 
 - Die aktuelle Homepage besitzt eine Seite `Platzbelegung`.
 - Der Spielbetrieb wird dort derzeit über einen direkten Google-Calendar-iframe dargestellt.
 - Trainings- und Winterbelegungen werden teilweise über statische Bilder dargestellt.
-- Der Nutzer hat am 11.09.2026 entschieden, dass Platzbelegung künftig als **eigenes WordPress-Plugin** auf der Homepage umgesetzt werden soll.
+- Der Nutzer hat am 11.09.2026 entschieden, dass Platzbelegung künftig als eigenes WordPress-Plugin umgesetzt wird.
 - Direkte Google-iframes sind für den Neuaufbau kein Zielbild.
 
 ### Ziel
 
-Ein eigenes TuS-Plugin stellt Platz- und Hallenbelegungen im TuS-Design dar und kann perspektivisch Daten aus fachlich führenden Systemen übernehmen.
+Ein eigenes TuS-Plugin stellt Platz- und Hallenbelegungen im TuS-Design dar. Es kombiniert Belegungen aus fachlich führenden Systemen, ohne Trainingszeiten, Spiele oder Events nochmals separat zu pflegen.
 
 ### Fachlicher Owner
 
@@ -43,44 +43,60 @@ Relevante Fachbereiche:
 - Datenschutz,
 - Homepage / Kommunikation.
 
+### Verifizierte Ressourcen und Quelle
+
+Der reale Trainingsbetrieb nutzt am TuS-Sportgelände:
+
+- Hauptplatz,
+- Trainingsfeld 1 mit Quadrant 1 und Quadrant 2,
+- Trainingsfeld 2 mit Quadrant 3 und Quadrant 4.
+
+Im maßgeblichen Quellbild gilt Q1 oben rechts, Q2 oben links, Q3 unten rechts und Q4 unten links. Die Richtungen sind bildbezogen und keine Himmelsrichtungen.
+
+Die fachlich führende Quelle für wiederkehrende Mannschaftstrainings wird der Team Manager. Sein `DATA-STANDARD.md` definiert Ressourcenhierarchie, Mannschaftssaison, Trainingsserie, Ausnahmen und Konfliktstatus. Der strukturierte Ausgangsplan 2026/27 steht in `../team-manager/SEASON-2026-27.md`.
+
+### Datenquellen und Verantwortungsgrenzen
+
+- Training → Team Manager,
+- Heimspiele → Matchdaten-Modul des Team Managers,
+- Veranstaltungen/Turniere → Event Planner,
+- Sperrungen und sonstige Sonderbelegungen → Platzbelegung,
+- bestehender Google-Kalender → nur Übergangs-/Migrationsquelle nach Discovery.
+
+Die Platzbelegung speichert keine zweite Kopie von Trainingsserien. Sie erzeugt eine gemeinsame zeitliche Sicht und darf eigene Einträge nur für Sachverhalte ohne andere fachlich führende Quelle führen.
+
 ### Aktuell bekannte Anforderungen
 
-- eigenes Plugin, keine bloße Seite mit eingebettetem externem Kalender,
-- moderne öffentliche Darstellung,
-- mobile first,
-- Ressourcen konfigurierbar,
-- wiederkehrende Trainingsbelegungen,
-- einmalige Spiele / Veranstaltungen / Sonderbelegungen,
+- eigenes Plugin, kein eingebetteter externer Kalender als Kernfunktion,
+- moderne öffentliche Darstellung und mobile first,
+- hierarchische konfigurierbare Ressourcen,
+- wiederkehrende und einmalige Belegungen,
+- Konflikterkennung auch zwischen Teil- und Elternressourcen,
 - keine unnötigen personenbezogenen Daten in der öffentlichen Ansicht,
 - geschützte einfache Pflege statt klassischer WordPress-Backend-Arbeit,
-- Integrationsfähigkeit mit Team Manager, Event Planner und Spielplandaten,
-- keine doppelte manuelle Pflege, wenn eine führende Quelle vorhanden ist.
+- keine doppelte manuelle Pflege.
 
 ### Offene Discovery-Fragen
 
-1. Welche Plätze und Hallen müssen tatsächlich geführt werden?
-2. Wo werden Trainingszeiten heute verbindlich gepflegt?
-3. Welcher konkrete Google-Kalender bzw. welche Kalender bilden aktuell den Spielbetrieb ab?
-4. Wer ändert heute Belegungen und mit welchem Prozess?
-5. Welche Informationen müssen öffentlich sichtbar sein?
-6. Welche internen Informationen werden zusätzlich benötigt?
-7. Welche Konfliktprüfung wird für V1 benötigt?
-8. Welche Daten können aus `fussball.de` bzw. dem Matchday-/Team-Kontext übernommen werden?
-9. Welche Veranstaltungen müssen aus dem Event Planner Belegungen erzeugen?
-10. Soll der bestehende Google-Kalender migriert, vorübergehend serverseitig synchronisiert oder vollständig ersetzt werden?
+1. Welche Hallen, Winterflächen und weiteren Ressourcen müssen zusätzlich geführt werden?
+2. Welcher konkrete Google-Kalender bildet heute welche Spiel-/Sonderbelegungen ab?
+3. Wer ändert heute Sonderbelegungen und Sperrungen?
+4. Welche internen Informationen werden zusätzlich zur öffentlichen Sicht benötigt?
+5. Welche Konflikte blockieren nur die Veröffentlichung und welche benötigen einen harten technischen Stopp?
+6. Wie werden bestehende Kalenderdaten migriert oder kontrolliert abgelöst?
+7. Wer übernimmt die fachliche Owner-Rolle?
 
 ### Noch keine Entscheidung
 
 Noch nicht entschieden sind:
 
-- konkretes WordPress-Datenmodell,
-- Custom Post Types vs. eigene Tabellen,
-- genaue Integrationsschnittstellen,
+- Custom Post Types versus eigene Tabellen,
+- konkrete technische Integrationsschnittstellen,
 - Migrationsweg des aktuellen Kalenders,
 - konkrete Rollen/Berechtigungen,
 - finale UI-Komponenten.
 
-Diese Punkte werden nicht vor der Discovery künstlich festgelegt.
+Diese Punkte werden aus dem gemeinsamen Datenstandard und einem kleinen ersten Inkrement abgeleitet.
 
 ### Privacy Status
 
@@ -96,28 +112,28 @@ Wesentliche Regeln:
 
 ### Next Action
 
-1. reale Ressourcenliste und aktuelle Belegungsquellen aufnehmen,
-2. bestehenden Google-Kalender-/Bildprozess technisch und fachlich dokumentieren,
-3. minimale V1-Datenobjekte definieren,
-4. Integrationsgrenzen zu Team Manager, Event Planner und Spielplan festlegen,
-5. daraus einen kleinen ersten Implementierungs-Scope für den WordPress Developer erstellen.
+1. offene Hallen-, Winter- und Sonderressourcen aufnehmen,
+2. bestehende Kalender-/Sonderbelegungsprozesse dokumentieren,
+3. lesende Schnittstelle zum Team-Manager-Trainingsmodell konkretisieren,
+4. aus den gemeinsamen Ressourcen und Belegungstypen einen kleinen V1-Scope ableiten,
+5. danach öffentliche Wochen-/Tagesansicht in einem prüfbaren Inkrement umsetzen.
 
 ### Last Known Good
 
-Kein Plugin-Code vorhanden. Aktuell existiert nur die bestehende öffentliche Platzbelegungsseite als Referenz für den Ist-Prozess.
+Kein Plugin-Code vorhanden. Ressourcenhierarchie und führende Trainingsquelle sind fachlich dokumentiert; aktuelle Quelldaten enthalten noch markierte Klärungsfälle und werden nicht ungeprüft veröffentlicht.
 
 ## Relationship to other documents
 
 - `README.md`
+- `../team-manager/DATA-STANDARD.md`
+- `../team-manager/SEASON-2026-27.md`
+- `../team-manager/PROJECT-STATE.md`
+- `../../decisions/ADR-0013-shared-team-identity-and-season-model.md`
 - `../../design/homepage-standard.md`
-- `../../design/homepage-contact-architecture.md`
 - `../../knowledge/privacy/HOMEPAGE-PRIVACY-CHECK.md`
 - `../../roles/wordpress-developer/START-PROMPT.md`
 - `../event-planner/PROJECT-STATE.md`
-- `../team-manager/PROJECT-STATE.md`
 
 ## Future Development
 
-Der Project Portfolio Manager reconciliiert das Projekt nach Merge in `projects/PROJECT-PORTFOLIO.md`.
-
-Der Projektzustand wird aktualisiert, sobald Datenquelle, Ressourcenmodell oder V1-Scope belastbar entschieden sind.
+Der Project Portfolio Manager reconciliiert das Projekt nach Merge in `projects/PROJECT-PORTFOLIO.md`. Der nächste Projektstand entsteht nach Klärung der offenen Ressourcen und der V1-Schnittstelle zum Team Manager.

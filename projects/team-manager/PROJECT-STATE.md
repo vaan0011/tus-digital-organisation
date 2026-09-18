@@ -4,92 +4,102 @@
 
 Diese Datei ist der kompakte Projekt-Checkpoint für den TuS Team Manager.
 
-Sie hält den aktuellen Stand, offene Vorentscheidungen, bekannte Risiken und den nächsten sinnvollen Schritt fest.
+Sie hält den aktuellen Stand, offene Datenklärungen, bekannte Risiken und den nächsten sinnvollen Schritt fest.
 
 ## Core Principle
 
-Vor der Plugin-Implementierung werden die fachlichen und architektonischen Grundlagen so weit geklärt, dass keine zweite Mannschaftsdatenwelt entsteht und saisonale Daten später historisch verlässlich bleiben.
+Die gemeinsame Mannschaftsidentität, die saisonale Historie und die reale Trainingsbelegung werden vor dem ersten Plugin-Inkrement so konkretisiert, dass keine zweite Mannschafts- oder Trainingsdatenwelt entsteht.
 
 ## Main Content
 
 ### Current Goal
 
-Die gemeinsame Mannschaftsidentität und das Saisonmodell werden konkretisiert. Parallel wird das erste abgegrenzte Plugin-Modul vorbereitet: automatisierter Matchdaten-Import, lokale Projektion und gemeinsame Nutzung durch Homepage und Matchday Editor.
+Die aus den realen Quellen abgeleiteten Saison- und Trainingsdaten werden fachlich bereinigt. Danach wird ein kleines vertikales Plugin-Inkrement vorbereitet: Mannschaftssaison, Trainingsressourcen, Trainingsserie, Konfliktprüfung und lesende Trainingsübersicht.
 
-Es existiert noch kein Team-Manager-Plugin-Code. Die Matchdaten-Architektur ist in `ADR-0012` und `MATCH-DATA-MODULE.md` verbindlich festgelegt.
+Parallel bleibt der bereits beschlossene Provider-Spike für das Matchdaten-Modul offen.
+
+Es existiert noch kein Team-Manager-Plugin-Code.
 
 ### Verified
 
-- Im Repository gab es vor diesem Projekt noch kein eigenes Team-/Mannschaftsprojekt.
 - Der langfristige fachliche Funktionsumfang ist in `FUNCTIONAL-SCOPE.md` dokumentiert.
-- Der initiale Projektscope wurde über PR #17 nach `main` übernommen.
-- Mannschaftsdaten werden auch außerhalb dieses zukünftigen Plugins benötigt: Der Event Planner soll Helferschichten Mannschaften oder Abteilungen zuweisen können.
-- Saison, Jahrgänge, Trainer/Kontakte, Trainingszeiten, Trainingsorte und externe Spielzuordnungen sind teilweise saisonabhängig und dürfen historische Saisons nicht rückwirkend überschreiben.
-- Trainingszeiten und Platz-/Hallenbelegung sollen aus derselben Datenquelle erzeugt werden.
-- FUSSBALL.DE bietet laut offizieller FAQ derzeit keine direkte API an und verweist für automatisierte Datenlieferungen auf Sportmedia per SFTP.
-- `ADR-0012` legt das Matchdaten-Modul als Bestandteil des Team Managers fest; der Matchday Editor wird lesender Verbraucher und nicht Homepage-Datenquelle.
+- `DATA-STANDARD.md` definiert Mannschaft, Mannschaftssaison, Personenrollen, JSG-Beziehungen, Ressourcen und Trainingseinheiten.
+- `ADR-0013` entscheidet eine gemeinsame saisonübergreifende `team_id` und eine saisonbezogene `team_season_id` für alle Verbraucher.
+- Event Planner, Platzbelegung und Matchdaten-Modul führen keine eigenen Mannschaftslisten.
+- Die realen Saisonquellen 2026/27 sind in `SEASON-2026-27.md` strukturiert ausgewertet.
+- Das TuS-Sportgelände besitzt Hauptplatz, Trainingsfeld 1 mit Q1/Q2 sowie Trainingsfeld 2 mit Q3/Q4.
+- Im Quellbild gilt: Q1 oben rechts, Q2 oben links, Q3 unten rechts, Q4 unten links.
+- Der aktuelle TuS-Trainingsplan mit Zeiten und roten Quadrantenzuordnungen ist vollständig als Prüftabelle dokumentiert.
+- Die männlichen A-, B- und C-Junioren bilden 2026/27 eine JSG aus TuS Mingolsheim, VfR Kronau und TSV Langenbrücken.
+- Reguläre JSG-Trainingsstandorte: A-Junioren Mingolsheim, B-Junioren Langenbrücken, C-Junioren Kronau.
+- Juniorinnen werden nicht aufgrund der Altersklasse automatisch der JSG zugeordnet.
+- Trainerrollen werden saisonbezogen modelliert; Name, Telefon und E-Mail besitzen getrennte Veröffentlichungsfreigaben mit Standard `false`.
+- Private Kontaktdaten aus der Drive-Trainerliste werden nicht in dieses öffentliche Repository kopiert.
+- `ADR-0012` legt das Matchdaten-Modul als Bestandteil des Team Managers fest; der Matchday Editor bleibt lesender Verbraucher.
 
-### Open
+### Open Data Clarifications
 
-Vor dem ersten funktionalen Code müssen mindestens folgende Punkte geklärt werden:
+Vor Veröffentlichung oder produktivem Seed-Import müssen die betroffenen Datensätze geklärt werden:
 
-1. **Gemeinsame Mannschaftsidentität:**
-   Soll `Mannschaft` als gemeinsam nutzbares Kernobjekt bereitgestellt werden, damit Event Planner und Team Manager dieselben Mannschaften referenzieren?
+1. Die TuS-Planzeile `B-Junioren` widerspricht dem bestätigten regulären Trainingsort Langenbrücken und überschneidet sich dienstags auf Q3 mit Herren 2. Zu prüfen ist insbesondere, ob `B-Juniorinnen` gemeint ist.
+2. Die Jahrgangsangabe `D1 – TuS 2014/2025` ist fehlerhaft; die vermutete Korrektur `2014/2015` benötigt Bestätigung.
+3. Jahrgänge E2, E3 und D-Juniorinnen fehlen.
+4. Bambini-Trainer fehlen.
+5. D-Juniorinnen-Trainer fehlen.
+6. Bei C-Juniorinnen fehlen Rolle und Kontaktstatus der zweiten Person.
+7. Exakte Zeiten und Ressourcen der B-/C-Junioren an den Partnerstandorten fehlen.
+8. Offizielle JSG-Bezeichnung, Vereinsreihenfolge und federführender Verein sind zu bestätigen.
 
-2. **Saisonmodell:**
-   Welche Angaben gehören zur dauerhaften Mannschaft und welche zu einer saisonbezogenen Mannschaftsausprägung?
+### Open Technical Work
 
-3. **Altersklassen/Jahrgänge:**
-   Die automatische Fortschreibung soll regelbasiert erfolgen. Das vollständige Regelwerk für alle relevanten Jugendklassen muss vor Implementierung verifiziert werden.
-
-4. **Kontakte/Personen:**
-   Es muss entschieden werden, ob Trainer/Betreuer zunächst innerhalb des Team Managers gepflegt oder später aus einer gemeinsamen Personen-/Kontaktquelle referenziert werden. Öffentliche Freigabe personenbezogener Daten ist getrennt zu behandeln.
-
-5. **Trainingsressourcen:**
-   Die konkreten TuS-Teilflächen/Quadranten, externe Trainingsstätten, Winterstätten und Hallenzeit-Logik müssen als einfache konfigurierbare Ressourcen modelliert werden.
-
-6. **Sportmedia-Datenlieferung:**
-   Der bevorzugte Transportweg ist identifiziert. Offen sind Kontakt, Zugang, Bedingungen, mögliche Kosten, reales Dateiformat, Lieferfrequenz, Feldbelegung und Statuswerte. Diese Punkte werden im Provider-Spike aus `MATCH-DATA-MODULE.md` verifiziert.
-
-7. **Homepage- und Matchday-Schnittstellen:**
-   Die Verantwortungsgrenze ist durch `ADR-0011` und `ADR-0012` festgelegt. Offen bleibt der konkrete Block- und Read-only-Vertrag nach Abschluss von Mannschafts-/Saisonmodell und Provider-Spike.
+1. Technisches Schema und Migrationen aus dem fachlichen Datenstandard ableiten.
+2. Geschützte Personen-/Kontaktdatenhaltung und Feldfreigaben implementieren.
+3. Seed-/Importformat für bestätigte Saison- und Ressourcendaten einschließlich gemeinsamer Trainingsserien festlegen.
+4. Konfliktprüfung für Ressourcenhierarchie und Zeitüberschneidungen implementieren.
+5. Lesende Servicegrenze für Event Planner und Platzbelegung definieren.
+6. Sportmedia-Zugang, Bedingungen, Kosten, Dateiformat und Beispieldaten verifizieren.
+7. Homepage- und Matchday-Read-only-Verträge nach Schema- und Provider-Spike konkretisieren.
 
 ### Excluded / Not Yet Decided
 
 - Kein Scraping von fussball.de wird ungeprüft als Architekturstandard festgelegt.
 - Saisonale FUSSBALL.DE-Widget-Codes werden nicht zur Zielarchitektur.
-- Der Matchday Editor und `season-state.md` werden nicht zur öffentlichen Matchdatenbank.
-- Es werden nicht parallel eigene Mannschaftslisten im Event Planner und Team Manager aufgebaut.
-- WordPress-Seiten werden nicht als fachliche Hauptdatenquelle für Mannschaftsdaten verwendet.
-- Es wird noch kein großes kombiniertes Plugin-Inkrement begonnen, bevor die offenen Architekturfragen geklärt sind.
+- WordPress-Seiten werden nicht zur fachlichen Hauptdatenquelle.
+- Private Kontaktdaten werden nicht in Seed-Dateien des öffentlichen Repositories abgelegt.
+- Widersprüchliche Quelldaten werden nicht stillschweigend korrigiert oder veröffentlicht.
+- Custom Post Types versus eigene Tabellen wird erst aus dem technischen Schema entschieden.
+- Es wird kein großes kombiniertes Plugin-Inkrement begonnen.
 
 ### Active Development
 
-Aktiver Dokumentationsbranch `team-manager/match-data-module-decision`. Funktionaler Plugin-Code wurde noch nicht begonnen.
+Dokumentationsbranch für Datenstandard, Saisonstand und Architekturentscheidung. Funktionaler Plugin-Code wurde noch nicht begonnen.
 
 ### Next Meaningful Step
 
-1. gemeinsame Mannschaftsidentität mit Event Planner gegen die Plattformarchitektur prüfen,
-2. einfaches Mannschaft-/Saisonmodell einschließlich Team-Saison-ID entwerfen,
-3. parallel Sportmedia kontaktieren und repräsentative Beispieldaten sowie Bedingungen sichern,
-4. Provider-Spike und Matchmapping gegen die Beispieldaten durchführen,
-5. danach das erste kleine Matchdaten-Inkrement aus `MATCH-DATA-MODULE.md` umsetzen.
+1. die acht offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
+2. bestätigte, nicht personenbezogene Seed-Daten aus `SEASON-2026-27.md` erzeugen,
+3. technisches Schema und Migrationen für `team`, `team_season`, Ressourcen und Trainingsserien entwerfen,
+4. ein kleines vertikales Inkrement mit Konfliktprüfung und lesender Wochenansicht umsetzen,
+5. parallel den Sportmedia-Provider-Spike fortführen.
 
 ## Relationship to other documents
 
 - `README.md`
+- `DATA-STANDARD.md`
+- `SEASON-2026-27.md`
 - `FUNCTIONAL-SCOPE.md`
 - `MATCH-DATA-MODULE.md`
 - `../event-planner/FUNCTIONAL-SCOPE.md`
+- `../platzbelegung/PROJECT-STATE.md`
 - `../../architecture/platform-architecture.md`
 - `../../architecture/stability-and-simplicity.md`
 - `../../standards/iteration-and-progress.md`
 - `../../roles/wordpress-developer/development-standard.md`
 - `../../design/ui-standard.md`
-- `../homepage/FUSSBALL-DE-INTEGRATION.md`
 - `../../decisions/ADR-0011-wordpress-theme-and-domain-content-boundary.md`
 - `../../decisions/ADR-0012-team-manager-match-data-module.md`
+- `../../decisions/ADR-0013-shared-team-identity-and-season-model.md`
 
 ## Future Development
 
-Nach Abschluss des Mannschafts-/Saisonmodells und des Sportmedia-Provider-Spikes wird dieser Projektstand auf das erste testbare Matchdaten-Inkrement aktualisiert.
+Nach fachlicher Klärung der markierten Quelldaten wird der Projektstand auf das erste testbare Trainingsdaten-Inkrement aktualisiert. Matchdaten bleiben ein abgegrenztes paralleles Modul mit eigenem Provider-Gate.
