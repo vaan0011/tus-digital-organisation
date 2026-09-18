@@ -49,7 +49,10 @@ Der reale Trainingsbetrieb nutzt am TuS-Sportgelände:
 
 - Hauptplatz,
 - Trainingsfeld 1 mit Quadrant 1 und Quadrant 2,
-- Trainingsfeld 2 mit Quadrant 3 und Quadrant 4.
+- Trainingsfeld 2 mit Quadrant 3 und Quadrant 4,
+- Kunstrasen-Kleinfeld für den Winterbetrieb.
+
+Im Winterbetrieb werden zusätzlich Schönbornhalle und Ohrenberghalle genutzt. Genaue Hallenteilungen und Winterzeiten sind noch aufzunehmen.
 
 Im maßgeblichen Quellbild gilt Q1 oben rechts, Q2 oben links, Q3 unten rechts und Q4 unten links. Die Richtungen sind bildbezogen und keine Himmelsrichtungen.
 
@@ -78,7 +81,7 @@ Die Platzbelegung speichert keine zweite Kopie von Trainingsserien. Sie erzeugt 
 
 ### Offene Discovery-Fragen
 
-1. Welche Hallen, Winterflächen und weiteren Ressourcen müssen zusätzlich geführt werden?
+1. Wie werden Schönbornhalle und Ohrenberghalle real in Teilflächen belegt und welche Mannschaften trainieren im Winter wann in den Hallen bzw. auf dem Kunstrasen-Kleinfeld?
 2. Welcher konkrete Google-Kalender bildet heute welche Spiel-/Sonderbelegungen ab?
 3. Wer ändert heute Sonderbelegungen und Sperrungen?
 4. Welche internen Informationen werden zusätzlich zur öffentlichen Sicht benötigt?
@@ -112,7 +115,7 @@ Wesentliche Regeln:
 
 ### Next Action
 
-1. offene Hallen-, Winter- und Sonderressourcen aufnehmen,
+1. Hallenteilungen, Winterperiode und Wintertrainingsplan aufnehmen,
 2. bestehende Kalender-/Sonderbelegungsprozesse dokumentieren,
 3. lesende Schnittstelle zum Team-Manager-Trainingsmodell konkretisieren,
 4. aus den gemeinsamen Ressourcen und Belegungstypen einen kleinen V1-Scope ableiten,
@@ -120,7 +123,7 @@ Wesentliche Regeln:
 
 ### Last Known Good
 
-Kein Plugin-Code vorhanden. Ressourcenhierarchie und führende Trainingsquelle sind fachlich dokumentiert; aktuelle Quelldaten enthalten noch markierte Klärungsfälle und werden nicht ungeprüft veröffentlicht.
+Kein Plugin-Code vorhanden. Außen- und Winterressourcen sowie die führende Trainingsquelle sind fachlich dokumentiert; aktuelle Quelldaten enthalten noch markierte Klärungsfälle und werden nicht ungeprüft veröffentlicht.
 
 ## Relationship to other documents
 
