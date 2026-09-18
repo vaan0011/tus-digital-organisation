@@ -156,10 +156,10 @@ Eine Trainingseinheit bzw. regelmäßige Trainingszeit soll mindestens Bezug hab
 - Endzeit,
 - Trainingsstätte,
 - konkreter Fläche bzw. Teilfläche, sofern relevant,
-- Gültigkeitszeitraum bzw. Saison-/Winterbezug,
+- Gültigkeitszeitraum und Trainingsperiode innerhalb der Saison, zum Beispiel Außen- oder Winterbetrieb,
 - optionalen Hinweisen.
 
-Wiederkehrende Trainingszeiten und einmalige Sondertermine müssen getrennt abbildbar sein.
+Wiederkehrende Trainingszeiten und einmalige Sondertermine müssen getrennt abbildbar sein. Außen- und Winterbetrieb werden als getrennte Trainingsperioden geführt, damit abweichende Zeiten und Ressourcen denselben Saisonstand nicht überschreiben.
 
 ### 9. Trainingsstätten und Flächen
 
@@ -169,9 +169,9 @@ Zum bekannten Nutzungskontext gehören insbesondere:
 
 - zwei Trainingsfelder beim TuS Mingolsheim,
 - deren Aufteilung in nutzbare Teilflächen/Quadranten,
-- ein Kleinspielfeld mit Kunstrasen für den Winterbetrieb,
-- Ohrenberghalle,
-- Schönbornhalle,
+- das Kunstrasen-Kleinfeld am TuS-Gelände für den Winterbetrieb,
+- Ohrenberghalle für den Winterbetrieb,
+- Schönbornhalle für den Winterbetrieb,
 - externe Trainingsstätten bei Partnervereinen.
 
 Aktuell bekannte externe Nutzungen sind unter anderem:
@@ -181,7 +181,7 @@ Aktuell bekannte externe Nutzungen sind unter anderem:
 
 Diese Angaben sind fachliche Ausgangsdaten und müssen später konfigurierbar bleiben; sie dürfen nicht als dauerhaft unveränderliche Programmlogik eingebaut werden.
 
-Die reale Ressourcenstruktur ist für den aktuellen Stand verifiziert: Trainingsfeld 1 besteht aus Quadrant 1 und 2, Trainingsfeld 2 aus Quadrant 3 und 4. Die Ressourcen bleiben konfigurierbar; Einzelheiten und stabile IDs stehen in `DATA-STANDARD.md` und `SEASON-2026-27.md`.
+Die reale Ressourcenstruktur ist für den aktuellen Stand verifiziert: Trainingsfeld 1 besteht aus Quadrant 1 und 2, Trainingsfeld 2 aus Quadrant 3 und 4. Für den Winterbetrieb sind zusätzlich Kunstrasen-Kleinfeld, Schönbornhalle und Ohrenberghalle bestätigt. Die Ressourcen bleiben konfigurierbar; Einzelheiten und stabile IDs stehen in `DATA-STANDARD.md` und `SEASON-2026-27.md`.
 
 ### 10. Platz- und Hallenbelegung
 

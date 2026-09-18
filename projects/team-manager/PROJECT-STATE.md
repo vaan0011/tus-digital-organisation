@@ -28,6 +28,8 @@ Es existiert noch kein Team-Manager-Plugin-Code.
 - Event Planner, Platzbelegung und Matchdaten-Modul führen keine eigenen Mannschaftslisten.
 - Die realen Saisonquellen 2026/27 sind in `SEASON-2026-27.md` strukturiert ausgewertet.
 - Das TuS-Sportgelände besitzt Hauptplatz, Trainingsfeld 1 mit Q1/Q2 sowie Trainingsfeld 2 mit Q3/Q4.
+- Für den Winterbetrieb sind Schönbornhalle, Ohrenberghalle und das Kunstrasen-Kleinfeld am TuS-Gelände als Trainingsstätten bestätigt.
+- Außen- und Winterplan werden als getrennte `training_period` innerhalb derselben Saison geführt; ein Plan überschreibt den anderen nicht.
 - Im Quellbild gilt: Q1 oben rechts, Q2 oben links, Q3 unten rechts, Q4 unten links.
 - Der aktuelle TuS-Trainingsplan mit Zeiten und roten Quadrantenzuordnungen ist vollständig als Prüftabelle dokumentiert.
 - Die männlichen A-, B- und C-Junioren bilden 2026/27 eine JSG aus TuS Mingolsheim, VfR Kronau und TSV Langenbrücken.
@@ -49,10 +51,11 @@ Vor Veröffentlichung oder produktivem Seed-Import müssen die betroffenen Daten
 6. Bei C-Juniorinnen fehlen Rolle und Kontaktstatus der zweiten Person.
 7. Exakte Zeiten und Ressourcen der B-/C-Junioren an den Partnerstandorten fehlen.
 8. Offizielle JSG-Bezeichnung, Vereinsreihenfolge und federführender Verein sind zu bestätigen.
+9. Für den Winterbetrieb fehlen Periodengrenzen, Mannschaftszuordnungen, Zeiten und gegebenenfalls Hallenteilflächen.
 
 ### Open Technical Work
 
-1. Technisches Schema und Migrationen aus dem fachlichen Datenstandard ableiten.
+1. Technisches Schema und Migrationen einschließlich `training_period` aus dem fachlichen Datenstandard ableiten.
 2. Geschützte Personen-/Kontaktdatenhaltung und Feldfreigaben implementieren.
 3. Seed-/Importformat für bestätigte Saison- und Ressourcendaten einschließlich gemeinsamer Trainingsserien festlegen.
 4. Konfliktprüfung für Ressourcenhierarchie und Zeitüberschneidungen implementieren.
@@ -76,7 +79,7 @@ Dokumentationsbranch für Datenstandard, Saisonstand und Architekturentscheidung
 
 ### Next Meaningful Step
 
-1. die acht offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
+1. die neun offenen Datenklärungen mit Jugendleitung bzw. Planverantwortlichen auflösen,
 2. bestätigte, nicht personenbezogene Seed-Daten aus `SEASON-2026-27.md` erzeugen,
 3. technisches Schema und Migrationen für `team`, `team_season`, Ressourcen und Trainingsserien entwerfen,
 4. ein kleines vertikales Inkrement mit Konfliktprüfung und lesender Wochenansicht umsetzen,

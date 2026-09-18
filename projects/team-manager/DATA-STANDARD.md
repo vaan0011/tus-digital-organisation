@@ -25,6 +25,7 @@ Mannschaft, Person und Ressource werden nicht in mehreren Plugins erneut angeleg
 | `team_season_club` | Beteiligung eines Vereins an einer Mannschaftssaison | saisonbezogen |
 | `person` | gemeinsame Personenidentität | dauerhaft |
 | `team_staff_assignment` | Rolle einer Person bei einer Mannschaftssaison | saisonbezogen |
+| `training_period` | Zeitlich begrenzter Trainingsplan innerhalb einer Saison, zum Beispiel Außen- oder Winterbetrieb | saisonbezogen |
 | `site` | Sportgelände, Halle oder externer Standort | dauerhaft |
 | `resource` | Platz, Feld, Halle oder Teilfläche | dauerhaft/konfigurierbar |
 | `training_series` | wiederkehrender Trainingstermin | saison- oder zeitraumbezogen |
@@ -115,6 +116,9 @@ Beispiel:
   - Trainingsfeld 2
     - Quadrant 3
     - Quadrant 4
+  - Kunstrasen-Kleinfeld
+- Schönbornhalle
+- Ohrenberghalle
 
 Die Belegung von `Quadrant 1` und `Quadrant 2` belegt abgeleitet das gesamte `Trainingsfeld 1`. Aggregierte Felder werden nicht zusätzlich als unabhängige Buchung gepflegt.
 
@@ -127,6 +131,8 @@ Ressourcen besitzen mindestens:
 - Aktivstatus,
 - Sortierreihenfolge.
 
+Das Kunstrasen-Kleinfeld ist eine Ressource des TuS-Sportgeländes. Schönbornhalle und Ohrenberghalle sind eigenständige Standorte für den Winterbetrieb. Hallenteilflächen werden erst angelegt, wenn die reale Hallennutzung eine getrennte Belegung erfordert.
+
 ### 6. Trainingseinheiten
 
 `training_series` enthält mindestens:
@@ -135,7 +141,8 @@ Ressourcen besitzen mindestens:
 - Wochentag,
 - lokale Start- und Endzeit,
 - Zeitzone `Europe/Berlin`,
-- Gültig-von und Gültig-bis oder Saisonbezug,
+- Referenz auf eine `training_period_id`,
+- Gültig-von und Gültig-bis innerhalb dieser Trainingsperiode,
 - eine oder mehrere `resource_id`,
 - Status `draft`, `confirmed`, `conflict` oder `cancelled`,
 - interne Quelle und Verifikationsdatum,
@@ -144,6 +151,8 @@ Ressourcen besitzen mindestens:
 Eine Trainingsserie referenziert über `training_series_team` mindestens eine `team_season_id`. Trainieren mehrere Mannschaften gemeinsam, wird eine gemeinsame Serie mit mehreren Mannschaftsreferenzen gespeichert. Dadurch entsteht weder eine künstliche Mannschaft noch ein falscher Ressourcenkonflikt.
 
 Mehrere Quadranten werden als mehrere Ressourcenreferenzen gespeichert, nicht als Text `1+2`.
+
+`training_period` trennt verschiedene Trainingspläne innerhalb derselben Saison. Eine Periode enthält mindestens `training_period_id`, `season_id`, Bezeichnung, Gültig-von, Gültig-bis und Status. Bezeichnungen wie `Außenbetrieb` oder `Winterbetrieb` sind konfigurierbar und keine fest programmierte Saisonlogik. So können dieselben Mannschaften im Winter andere Zeiten und Ressourcen verwenden, ohne den Außenplan zu überschreiben.
 
 Eine `training_exception` referenziert die Serie und beschreibt genau einen Termin als:
 
@@ -157,7 +166,7 @@ Eine `training_exception` referenziert die Serie und beschreibt genau einen Term
 Vor Bestätigung einer Trainingsserie wird geprüft:
 
 1. Start liegt vor Ende.
-2. Alle Ressourcen sind im Zeitraum aktiv.
+2. Die Trainingsserie liegt innerhalb ihrer Trainingsperiode und alle Ressourcen sind im Zeitraum aktiv.
 3. Kind- und Elternressource werden nicht widersprüchlich parallel belegt.
 4. Zwei bestätigte Serien belegen nicht dieselbe Ressource zur selben Zeit.
 5. JSG-Trainingsort und saisonale Standortregel widersprechen sich nicht.
