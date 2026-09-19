@@ -35,6 +35,26 @@ Alle Felder werden direkt bearbeitet. Es gibt keinen separaten Mini-Editmodus pr
 
 Gespeichert wird zentral über `Helferschichten speichern`.
 
+### Aufbau und Abbau aus dem Ablaufplan übernehmen
+
+Aufbau und Abbau bleiben im Ablaufplan **eigene organisatorische Tagesrollen** und sind weiterhin keine Programmpunkte.
+
+Sind für Aufbau oder Abbau Datum und Uhrzeit gepflegt, zeigt der Helferschicht-Block den Bereich `Aus Ablaufplan übernehmen`.
+
+Mit `Aufbau übernehmen` bzw. `Abbau übernehmen` wird eine neue Schichtzeile vorbereitet mit:
+
+- Bereich / Aufgabe = `Aufbau` bzw. `Abbau`,
+- Datum aus dem entsprechenden Tagescontainer,
+- Startzeit aus dem entsprechenden Tagescontainer.
+
+Endzeit und benötigte Helfer werden nicht aus dem Ablaufplan erfunden. Diese Werte werden anschließend in der Schichtzeile passend ergänzt bzw. angepasst.
+
+Die Übernahme erfolgt bewusst per explizitem Klick und nicht automatisch. Dadurch entsteht keine Helferschicht, nur weil ein Aufbau-/Abbau-Tagescontainer existiert.
+
+Ist bereits eine Schicht mit demselben Bereich, Datum und derselben Startzeit vorhanden, wird derselbe Kandidat nicht erneut angeboten.
+
+Nach der Übernahme ist die Helferschicht ein eigenständiger Planungsdatensatz. Eine spätere Änderung von Aufbau-/Abbau-Datum oder -Uhrzeit verändert bereits gespeicherte Helferschichten nicht still im Hintergrund.
+
 ### Schichtserie generieren
 
 `Schichtserie generieren` erzeugt mehrere aufeinanderfolgende Schichten für denselben Bereich.
