@@ -4,7 +4,7 @@
 
 Aufgaben, Helferschichten und Mitbringen-Einträge werden im Event intern geplant und anschließend über zwei öffentliche Arbeitslisten verteilt.
 
-Ziel ist, dass Verantwortliche und Mannschaften ohne Registrierung genau die für sie relevanten Informationen sehen und direkt Rückmeldung geben können.
+Ziel ist, dass Verantwortliche und Mannschaften ohne Registrierung genau die für sie relevanten Informationen sehen und direkt Rückmeldung geben können, während die vollständigen Admin-Gesamtübersichten geschützt bleiben.
 
 ## Core Principle
 
@@ -31,9 +31,7 @@ Die verantwortliche Person kann ohne Registrierung zurückmelden:
 
 Eine Rückmeldung `Erledigt` setzt auch den fachlichen Aufgabenstatus im Event auf `done`.
 
-Die öffentliche Ansicht zeigt keine privaten Kontaktdaten. Ein eingeloggter Admin sieht zusätzlich die konkrete Rückmeldung und den Namen des Rückmeldenden.
-
-Optional kann die Liste über `?person=<Name>` auf genau eine Person gefiltert und weitergegeben werden.
+Optional kann die Liste über `?person=<Name>` auf genau eine Person gefiltert und direkt weitergegeben werden. Dieser gefilterte Personenlink benötigt keinen Admin-PIN.
 
 ## 2. Schichten / Mitbringen
 
@@ -44,7 +42,7 @@ Die bestehende öffentliche Helferseite ist die gemeinsame Liste für:
 
 Die Gesamtansicht ist nach Mannschaft / Abteilung / Gruppe gegliedert.
 
-Über `?gruppe=<Gruppe>` wird dieselbe Seite auf eine einzelne Gruppe gefiltert. Dadurch kann z. B. ein E-Jugend-Link weitergegeben werden, ohne eine zweite Liste pflegen zu müssen.
+Über `?gruppe=<Gruppe>` wird dieselbe Seite auf eine einzelne Gruppe gefiltert. Dadurch kann z. B. ein E-Jugend-Link weitergegeben werden, ohne eine zweite Liste pflegen zu müssen. Dieser gefilterte Mannschaftslink benötigt keinen Admin-PIN.
 
 ### Helferschichten
 
@@ -74,18 +72,41 @@ Pro Rückmeldung werden gespeichert:
 - Menge,
 - optionale Kontaktmöglichkeit.
 
-Die öffentliche Ansicht zeigt Bedarf, bereits übernommene Menge und Restbedarf. Namen und Kontakte sind nur für eingeloggte Admins sichtbar.
+Die öffentliche Ansicht zeigt Bedarf, bereits übernommene Menge und Restbedarf.
 
-## Admin-Gesamtübersicht
+## Admin-Gesamtübersichten und PIN-Schutz
 
-Öffnet ein eingeloggter Admin die ungefilterte öffentliche Seite, sieht er:
+Die ungefilterten Gesamtübersichten `Aufgabenliste` und `Schichten / Mitbringen` sind Adminansichten.
+
+Sie sind geschützt durch:
+
+- einen Event-spezifischen Admin-PIN mit 4 bis 8 Ziffern,
+- oder einen bestehenden WordPress-Admin-Login.
+
+Der PIN wird im Event-Backend im Bereich `Öffentliche Seiten` gesetzt oder geändert.
+
+Der PIN wird **nicht im Klartext** gespeichert. Persistiert wird ausschließlich ein WordPress-Passworthash in `vtp_event_worklist_access`.
+
+Nach erfolgreicher PIN-Eingabe erhält der Browser für acht Stunden eine signierte, HttpOnly geschützte Freigabe für genau dieses Event. Wird der PIN geändert, verlieren bestehende Freigaben automatisch ihre Gültigkeit.
+
+Die Admin-Gesamtübersichten zeigen:
 
 - alle Personen bzw. Gruppen,
 - alle Aufgaben,
 - alle Schichten,
 - alle Mitbringen-Bedarfe,
 - die jeweiligen Rückmeldungen,
-- private Kontaktdaten der Rückmeldenden.
+- private Kontaktdaten der Rückmeldenden,
+- direkte Weiterleitungslinks für Personen bzw. Mannschaften.
+
+Die gefilterten Weiterleitungslinks bleiben bewusst ohne PIN erreichbar:
+
+- `?person=<Name>` für eine einzelne verantwortliche Person,
+- `?gruppe=<Gruppe>` für eine Mannschaft / Abteilung / Gruppe.
+
+Damit muss der Admin-PIN niemals an Eltern oder einzelne Aufgabenverantwortliche weitergegeben werden.
+
+## Event-Bearbeitung
 
 Im Event-Bearbeitungsscreen stehen unter `Öffentliche Seiten` direkte Links zu:
 
@@ -93,13 +114,15 @@ Im Event-Bearbeitungsscreen stehen unter `Öffentliche Seiten` direkte Links zu:
 - Aufgabenliste,
 - Schichten / Mitbringen.
 
-In der Gesamtansicht werden Admins zusätzlich gruppenspezifische Weiterleitungslinks angeboten.
+Im selben Bereich kann der Event-Admin den gemeinsamen Admin-PIN für die beiden Gesamtübersichten setzen oder ändern.
 
 ## Datenschutz
 
-- Keine Registrierung erforderlich.
-- Kontaktdaten werden nicht öffentlich ausgegeben.
+- Keine Registrierung für Personen- oder Mannschaftslinks erforderlich.
+- Die ungefilterten Admin-Gesamtübersichten sind PIN-geschützt.
+- Kontaktdaten werden nicht in gefilterten öffentlichen Ansichten ausgegeben.
 - Kontaktdaten sind nur für die Eventorganisation vorgesehen.
+- Der Admin-PIN wird ausschließlich gehasht gespeichert.
 - Öffentliche Seiten zeigen nur die für die Koordination notwendigen Informationen.
 
 ## Persistenz
@@ -114,7 +137,8 @@ Bestehende Tabellen bleiben fachliche Quelle:
 Ergänzt werden:
 
 - `vtp_event_task_feedback` für öffentliche Aufgaben-Rückmeldungen,
-- `vtp_event_bring_signups` für Mitbringen-Rückmeldungen.
+- `vtp_event_bring_signups` für Mitbringen-Rückmeldungen,
+- `vtp_event_worklist_access` für den gehashten Event-Admin-PIN.
 
 ## Future Development
 
