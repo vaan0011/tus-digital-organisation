@@ -38,6 +38,14 @@
   return '<option value="'+escapeHtml(value)+'"'+(value===current?' selected':'')+'>'+escapeHtml(label||value)+'</option>';
  }
 
+ function normalizeProgramTypeSelect(select){
+  if(!select) return;
+  Array.from(select.options).forEach(function(opt){
+   if(opt.value==='Aufbau' || opt.value==='Abbau' || opt.textContent==='Aufbau' || opt.textContent==='Abbau') opt.remove();
+  });
+  if(!['Programmpunkt','Musik','Spiel'].includes(select.value)) select.value='Programmpunkt';
+ }
+
  function programRow(item,dayRef,date){
   item=item||{};
   var type=item.type||'Programmpunkt';
@@ -152,6 +160,7 @@
    html+=dayCard({id:day.id,ref:'id-'+day.id,type:day.type,date:day.date},itemsByDay[String(day.id)]||[],linked);
   });
   box.innerHTML=html;
+  box.querySelectorAll('select[name="item_type[]"]').forEach(normalizeProgramTypeSelect);
 
   var addRow=form.querySelector('.vtp-event-add-row');
   var addDay=document.getElementById('vtp-add-day');
@@ -231,7 +240,7 @@
      if(!row) return;
      var type=row.querySelector('select[name="item_type[]"]');
      var title=row.querySelector('input[name="title[]"]');
-     if(type && !row.querySelector('input[name="item_day_ref[]"]')) type.value='Programmpunkt';
+     normalizeProgramTypeSelect(type);
      if(title && !row.querySelector('input[name="item_day_ref[]"]')) title.value='';
      if(!row.querySelector('input[name="item_day_ref[]"]')){
       var hidden=document.createElement('input');
