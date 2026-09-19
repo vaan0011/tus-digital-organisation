@@ -27,6 +27,8 @@ Für Designarbeit gelten insbesondere:
 - `typography.md` – freigegebene und noch offene Schriftdefinitionen
 - `design-principles.md` – übergreifende Gestaltungsprinzipien
 - `ui-standard.md` – gemeinsamer UI-Standard für digitale Oberflächen
+- `backend-form-standard.md` – gemeinsame Form-Sprache für interne WordPress-Oberflächen
+- `backend-ui-component-standard.md` – verbindliche Backend-Komponenten für Buttons, Felder, Karten, CRUD-Aktionen, Status, Sortierung und wiederholbare Einträge
 - `product-types.md` – Unterschiede zwischen Merch, Print, Tickets, Social, Web und UI
 - `design-workflow.md` – verbindlicher Arbeits- und Iterationsprozess
 - `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset

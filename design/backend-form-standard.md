@@ -6,6 +6,8 @@ Dieser Standard definiert die gemeinsame Form-Sprache für interne WordPress-Bac
 
 Ziel ist, dass Nutzer beim Anlegen und Bearbeiten derselben fachlichen Einheit nicht zwei unterschiedliche Bedienmuster lernen müssen.
 
+Die konkreten wiederverwendbaren UI-Bausteine – Buttons, Icon-Aktionen, Eingabefelder, Karten, Statuskacheln, Hinzufügen-Muster, aufklappbare Blöcke und Sortierregeln – sind ergänzend im `backend-ui-component-standard.md` definiert.
+
 ## Core Principle
 
 **Anlegen und Bearbeiten derselben Fachentität verwenden dieselbe Form-Sprache.**
@@ -34,6 +36,8 @@ Unterschiede entstehen nur aus dem fachlichen Kontext, nicht aus einer separaten
 Bestehende, verifizierte UI-Komponenten werden wiederverwendet.
 
 Wenn `Anlegen` und `Bearbeiten` dieselben Feldtypen oder Gruppen verwenden, sollen dieselben CSS-Klassen, Komponenten und Bedienmuster genutzt werden. Eine zweite nahezu identische Form-Implementierung wird vermieden.
+
+Die konkrete Ausprägung dieser Komponenten richtet sich nach `backend-ui-component-standard.md`.
 
 ### 3. Informationshierarchie
 
@@ -82,6 +86,7 @@ Der Event Planner ist die erste Referenzimplementierung dieses Musters:
 ## Relationship to other documents
 
 - `ui-standard.md`
+- `backend-ui-component-standard.md`
 - `design-principles.md`
 - `../projects/event-planner/EVENT-FORM-UI.md`
 - `../projects/event-planner/EVENT-EDIT-UI.md`
