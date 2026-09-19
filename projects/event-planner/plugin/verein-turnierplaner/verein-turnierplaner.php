@@ -28,6 +28,7 @@ require_once VTP_DIR.'includes/class-vtp-event-shift-operations.php';
 require_once VTP_DIR.'includes/class-vtp-event-catering.php';
 require_once VTP_DIR.'includes/class-vtp-event-finalize.php';
 require_once VTP_DIR.'includes/class-vtp-event-public-worklists.php';
+require_once VTP_DIR.'includes/event-public-worklist-admin.php';
 require_once VTP_DIR.'includes/class-vtp-events-overview.php';
 require_once VTP_DIR.'includes/class-vtp-url-input.php';
 require_once VTP_DIR.'includes/event-date-picker.php';
