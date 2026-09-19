@@ -140,9 +140,10 @@
   form.appendChild(hidden('event_id',String(data.eventId)));
   form.appendChild(hidden('_wpnonce',data.nonce));
 
-  var add=el('button','button vtp-event-add-task');
+  var add=el('button','vtp-event-add-task');
   add.type='button';
-  add.innerHTML='<span class="dashicons dashicons-plus-alt2" aria-hidden="true"></span><span>Aufgabe hinzufügen</span>';
+  add.appendChild(el('span','vtp-add-icon','+'));
+  add.appendChild(el('span','vtp-add-label','Aufgabe hinzufügen'));
   form.appendChild(add);
 
   var list=el('div','vtp-task-list');
