@@ -67,11 +67,23 @@ Wiederholbare Einträge verwenden ein gemeinsames Hinzufügen-Muster:
 
 - sichtbares Plus-Symbol in einer klar begrenzten quadratischen Aktionsfläche,
 - daneben eine verständliche Bezeichnung,
-- z. B. `Neuen Tag hinzufügen`, `Aufbau hinzufügen`, `Neuen Sponsor hinzufügen`.
+- z. B. `Neuen Tag hinzufügen`, `Aufbau hinzufügen`, `Neuen Sponsor hinzufügen`, `Aufgabe hinzufügen`.
 
 Das Plus-Muster wird für dieselbe Interaktionsart nicht in verschiedenen Modulen unterschiedlich gestaltet.
 
+Verbindlich für die Ausrichtung:
+
+- die gesamte Aktion verwendet `inline-flex` bzw. ein gleichwertiges Flex-Layout mit vertikaler Zentrierung,
+- die Plus-Fläche besitzt eine feste quadratische Breite und Höhe und schrumpft nicht,
+- das Plus selbst wird innerhalb dieser Fläche horizontal und vertikal zentriert,
+- Icon und Beschriftung verwenden einen festen Abstand aus der gemeinsamen Spacing-Skala,
+- die Position wird nicht mit individuellen `top`-, `margin-top`- oder ähnlichen Korrekturwerten optisch verschoben,
+- bei einfachen Plus-Aktionen ist ein direkt gerendertes `+` in einem Flex-Container einem Icon-Font vorzuziehen, wenn dessen Font-Baseline die Zentrierung verfälscht,
+- sichtbarer Hover- und Tastatur-Fokus müssen erhalten bleiben.
+
 Die sichtbare Icon-Fläche darf kleiner als das gesamte Touch-Ziel sein; die gesamte interaktive Fläche erfüllt jedoch mindestens `44 × 44 CSS-Pixel`.
+
+Referenz ist das Plus-Muster der Event-Tagesplanung: kompakte quadratische Plus-Fläche mit Text daneben, nicht ein eigenständiger großflächiger Formularbutton.
 
 ### 5. Icon-Aktionen
 
