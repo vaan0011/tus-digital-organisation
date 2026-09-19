@@ -48,6 +48,18 @@ Eingaben:
 - Helfer je Schicht,
 - optionale Zuordnung.
 
+Für den gewählten Eventtag werden `Von` und `Bis` automatisch aus dem vorhandenen Programm vorbelegt:
+
+- `Von` = früheste Startzeit eines regulären Programmpunkts an diesem Tag,
+- `Bis` = späteste Endzeit eines regulären Programmpunkts an diesem Tag,
+- Aufbau und Abbau werden dabei nicht als Programmpunkte berücksichtigt.
+
+Beispiel: Beginnt der erste Programmpunkt um `12:00` und endet der letzte um `23:00`, startet der Generator automatisch mit `12:00–23:00`.
+
+Die Zeiten bleiben Vorschläge und können vor der Generierung verändert werden.
+
+Eine Endzeit, die zeitlich vor der Startzeit liegt, bedeutet bewusst **Folgetag**. Beispiel: `20:00–02:00` erzeugt Schichten bis 02:00 Uhr am nächsten Kalendertag. Sobald eine generierte Schicht nach Mitternacht beginnt, erhält sie automatisch das Datum des Folgetags.
+
 Beispiel:
 
 `Ausschank`, 14:00–22:00, Blocklänge 120 Minuten, 3 Helfer je Schicht
@@ -74,6 +86,8 @@ Die benötigte Helferzahl einer konkreten Schicht liegt in `slots_needed`.
 Bestehende Anmeldungen bleiben erhalten, wenn eine Schicht bearbeitet wird.
 
 Wird eine bereits belegte Schicht bewusst gelöscht, wird im UI vor dem Entfernen gewarnt. Beim anschließenden Speichern werden die zugehörigen Anmeldungen ebenfalls gelöscht.
+
+Schichten dürfen über Mitternacht laufen. Technisch bleibt `shift_date` das Startdatum der Schicht. Eine kleinere Endzeit als Startzeit bedeutet Ende am Folgetag, z. B. `22:00–02:00`.
 
 ## Zuordnung zu Mannschaften / Abteilungen
 
@@ -120,8 +134,8 @@ Der öffentliche Helfer-Workflow selbst ist nicht Bestandteil dieser V1-Änderun
 
 ## Nicht Bestandteil von V1
 
-- wiederkehrende Schichten über mehrere Tage mit einem Klick,
-- automatisches Ableiten von Schichten aus Programmpunkten,
+- wiederkehrende Schichten über mehrere Eventtage mit einem Klick,
+- automatische Erzeugung konkreter Schichten aus einzelnen Programmpunkten,
 - automatische Mannschafts-/Abteilungsauswahl,
 - Prioritäten,
 - Check-in / tatsächlich geleistete Stunden,
