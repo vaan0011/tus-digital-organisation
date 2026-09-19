@@ -3,29 +3,39 @@ if (!defined('ABSPATH')) exit;
 
 class VTP_Event_Shift_Operations {
  const SOURCE_TYPE = 'event_day_operation';
- const SCHEMA_VERSION = '2';
+ const SCHEMA_VERSION = '3';
 
  public static function init(){
   self::ensure_schema();
+
   // Vor VTP_Event_Shifts::assets (Standard-Priorität 10) synchronisieren,
-  // damit die automatisch erzeugten Schichten sofort im modernen Helferblock erscheinen.
+  // damit automatisch erzeugte Schichten sofort im modernen Helferblock erscheinen.
   add_action('admin_enqueue_scripts',[__CLASS__,'prepare_event_edit'],5);
+
+  // Der eigentliche Ablauf-Save beendet den Request per Redirect/exit.
+  // Deshalb merken wir uns das Event vorher und synchronisieren sicher im Shutdown
+  // nach erfolgreichem DB-Commit des Ablaufplans.
+  add_action('admin_post_vtp_save_event_items',[__CLASS__,'schedule_sync_after_event_save'],1);
  }
 
  public static function ensure_schema(){
-  if(get_option('vtp_event_shift_operations_schema')===self::SCHEMA_VERSION) return;
-
   global $wpdb;
   $table=VTP_DB::table('shifts');
   $cols=$wpdb->get_col("DESC $table",0);
-  if(!$cols) return;
+  if(!$cols) return false;
 
+  // Nie nur einer gespeicherten Versionsoption vertrauen: entscheidend ist das reale Schema.
   if(!in_array('source_type',$cols,true)){
    $wpdb->query("ALTER TABLE $table ADD source_type VARCHAR(40) NULL AFTER assigned_group");
   }
+  $cols=$wpdb->get_col("DESC $table",0);
   if(!in_array('source_ref',$cols,true)){
-   $wpdb->query("ALTER TABLE $table ADD source_ref BIGINT UNSIGNED NULL AFTER source_type");
+   $after=in_array('source_type',$cols,true)?'source_type':'assigned_group';
+   $wpdb->query("ALTER TABLE $table ADD source_ref BIGINT UNSIGNED NULL AFTER $after");
   }
+
+  $cols=$wpdb->get_col("DESC $table",0);
+  if(!in_array('source_type',$cols,true) || !in_array('source_ref',$cols,true)) return false;
 
   $indexes=$wpdb->get_results("SHOW INDEX FROM $table");
   $has_source_ref=false;
@@ -40,6 +50,16 @@ class VTP_Event_Shift_Operations {
   }
 
   update_option('vtp_event_shift_operations_schema',self::SCHEMA_VERSION,false);
+  return true;
+ }
+
+ public static function schedule_sync_after_event_save(){
+  $event_id=absint($_POST['event_id']??0);
+  if(!$event_id || !current_user_can('manage_options')) return;
+
+  register_shutdown_function(function() use ($event_id){
+   VTP_Event_Shift_Operations::sync_for_event($event_id);
+  });
  }
 
  public static function prepare_event_edit($hook){
@@ -47,7 +67,7 @@ class VTP_Event_Shift_Operations {
   $event_id=absint($_GET['edit_event']??0);
   if(!$event_id) return;
 
-  self::sync_operation_shifts($event_id);
+  self::sync_for_event($event_id);
 
   // Entfernt nur die drei veralteten Legacy-Blöcke aus dem modernen Event-Edit-Screen.
   // Tabellen und alte Handler bleiben vorerst aus Rückwärtskompatibilität erhalten.
@@ -60,6 +80,12 @@ class VTP_Event_Shift_Operations {
   );
  }
 
+ public static function sync_for_event($event_id){
+  $event_id=absint($event_id);
+  if(!$event_id || !self::ensure_schema()) return false;
+  return self::sync_operation_shifts($event_id);
+ }
+
  private static function sync_operation_shifts($event_id){
   global $wpdb;
   $days=VTP_DB::table('event_days');
@@ -67,7 +93,7 @@ class VTP_Event_Shift_Operations {
   $signups=VTP_DB::table('shift_signups');
 
   $day_cols=$wpdb->get_col("DESC $days",0);
-  if(!$day_cols || !in_array('day_time',$day_cols,true)) return;
+  if(!$day_cols || !in_array('day_time',$day_cols,true)) return false;
 
   $operation_days=$wpdb->get_results($wpdb->prepare(
    "SELECT id,event_date,day_type,day_time
@@ -102,8 +128,8 @@ class VTP_Event_Shift_Operations {
    $label=$day->day_type==='setup'?'Aufbau':'Abbau';
    $row=$by_source[$day_id]??null;
 
-   // Bereits über PR #146 explizit übernommene Aufbau-/Abbau-Schichten werden
-   // nach Möglichkeit übernommen statt doppelt neu angelegt.
+   // Bereits früher manuell übernommene passende Aufbau-/Abbau-Schichten
+   // übernehmen statt eine Dublette anzulegen.
    if(!$row){
     $row=$wpdb->get_row($wpdb->prepare(
      "SELECT id,source_ref,end_time,slots_needed,assigned_group
@@ -138,7 +164,7 @@ class VTP_Event_Shift_Operations {
      'source_ref'=>$day_id,
     ],['id'=>absint($row->id),'event_id'=>$event_id]);
    } else {
-    $wpdb->insert($shifts,[
+    $ok=$wpdb->insert($shifts,[
      'event_id'=>$event_id,
      'area_name'=>$label,
      'shift_date'=>$date,
@@ -149,13 +175,12 @@ class VTP_Event_Shift_Operations {
      'source_type'=>self::SOURCE_TYPE,
      'source_ref'=>$day_id,
     ]);
+    if($ok===false) return false;
    }
   }
 
   // Wurde Aufbau/Abbau im Ablaufplan wieder entfernt, löschen wir eine automatisch
   // erzeugte Schicht nur dann still, wenn noch niemand darauf angemeldet ist.
-  // Bei vorhandenen Anmeldungen bleibt die Schicht aus Datenschutz-/Datenintegritätsgründen
-  // erhalten und wird von der Quelle entkoppelt.
   foreach($auto_rows?:[] as $row){
    $ref=absint($row->source_ref);
    if($ref && in_array($ref,$active_refs,true)) continue;
@@ -173,6 +198,8 @@ class VTP_Event_Shift_Operations {
     ],['id'=>$shift_id,'event_id'=>$event_id]);
    }
   }
+
+  return true;
  }
 
  private static function valid_date($date){
