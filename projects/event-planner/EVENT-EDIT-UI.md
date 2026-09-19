@@ -54,7 +54,7 @@ Kennzahl:
 
 - Anzahl der echten Programmpunkte innerhalb normaler Event-Tage.
 
-`Aufbau` und `Abbau` sind keine Programmpunkte und werden weder in der Programmpunktzahl noch für den Status `veröffentlicht` berücksichtigt. Inhalte innerhalb eigener Aufbau-/Abbau-Container zählen ebenfalls nicht zum öffentlichen Eventprogramm.
+`Aufbau` und `Abbau` sind keine Programmpunkte und werden weder in der Programmpunktzahl noch für den Status `veröffentlicht` berücksichtigt.
 
 Status ist erfüllt, wenn mindestens ein öffentlicher echter Programmpunkt vorhanden ist und die öffentliche Eventseite existiert.
 
@@ -143,36 +143,70 @@ Die Sponsorenübersicht verwendet dieselben strukturierten Sponsorzeilen wie bei
 
 Create und Edit arbeiten auf derselben persistenten Datenbasis.
 
-### 5. Programmpunkte und Ablaufplanung
+### 5. Programmpunkte und Ablaufplanung – akzeptierter Referenzstand
 
-Die gesamte Arbeitssektion `Programmpunkte und Ablaufplanung` ist ein- und ausklappbar. Die Überschrift und das Auf-/Zuklapp-Icon bleiben immer sichtbar; Beschreibung, Aktionen, Tagescontainer und Speicherbutton werden beim Einklappen ausgeblendet.
+Der aktuelle Stand der Arbeitssektion `Programmpunkte und Ablaufplanung` wurde im manuellen Test als intuitiv und fachlich passend bestätigt und gilt damit als **akzeptierter Referenzstand**. Dieser Bereich wird nicht ohne neuen konkreten fachlichen Bedarf oder reproduzierbaren Usability-Fehler grundlegend umgebaut.
+
+Die gesamte Arbeitssektion ist ein- und ausklappbar. Die Überschrift und das Auf-/Zuklapp-Icon bleiben immer sichtbar; Beschreibung, Aktionen, Tagescontainer und der zentrale Speicherbutton werden beim Einklappen ausgeblendet.
 
 Der Bereich startet standardmäßig geöffnet. Das Ein- und Ausklappen ist reiner UI-Zustand und verändert keine fachlichen Daten und keine Persistenz.
 
-Die Event-Tage werden als Containergruppen dargestellt.
+#### Event-Tage
 
-Jeder Tag zeigt zunächst kompakt:
+Normale Event-Tage werden beim ersten Öffnen automatisch aus dem Start-/Enddatumsbereich des Events erzeugt und persistent gespeichert.
+
+Ein normaler Event-Tag zeigt kompakt:
 
 - `Tag X – Wochentag, Datum`,
-- Datum,
-- Aktionen als Icons.
+- Anzahl der zugeordneten echten Programmpunkte,
+- direkt editierbares Datum mit Kalender-Picker,
+- Auf-/Zuklappen,
+- Löschen.
 
-Reihenfolge der Aktionen:
+Es gibt **keinen zusätzlichen Edit-Stift und keinen Speichern-Button pro Zeile**. Der gesamte Ablauf wird gesammelt über `Event-Ablauf speichern` gespeichert.
 
-1. Aufklappen / Einklappen,
-2. Bearbeiten,
-3. Speichern,
-4. Löschen.
+Die einzelnen Event-Tage können unabhängig von der gesamten Programmkachel auf- und zugeklappt werden. Im geöffneten Zustand können echte Programmpunkte angelegt, bearbeitet oder entfernt werden.
 
-Der Edit-Stift aktiviert die Datumsbearbeitung des Tages.
+Die zulässigen Programmpunkt-Typen sind aktuell:
 
-Die Diskette speichert den aktuellen Programmstand über die vorhandene persistente `vtp_save_event_items`-Logik.
+- `Programmpunkt`,
+- `Musik`,
+- `Spiel`.
 
-Das Aufklapp-Icon öffnet den Container und zeigt die Programmpunkte des Tages. Innerhalb des geöffneten Tages kann ein weiterer Programmpunkt hinzugefügt werden.
+`Aufbau` und `Abbau` sind ausdrücklich keine Programmpunkte.
 
-`Neuen Tag hinzufügen` steht oberhalb der Tagescontainer.
+#### Aufbau und Abbau
 
-Die vorhandene Datums-Picker-Logik bleibt verbindlich: neue Event-Tage orientieren sich am bestehenden Event-/Vortagsdatum und dürfen nicht unnötig im heutigen Monat starten.
+Aufbau und Abbau sind eigene persistente Tagesrollen und keine Programmtage.
+
+Sie zeigen ausschließlich:
+
+- `Aufbau – Wochentag, Datum` bzw. `Abbau – Wochentag, Datum`,
+- direkt editierbares Datum,
+- direkt editierbare Uhrzeit,
+- Löschen.
+
+Sie besitzen keinen aufklappbaren Programmbereich und keine Programmpunkte. Aufbau und Abbau dürfen dasselbe Kalenderdatum wie ein normaler Event-Tag besitzen.
+
+#### Hinzufügen und Reihenfolge
+
+Oberhalb der Container stehen:
+
+- `Neuen Tag hinzufügen`,
+- `Aufbau hinzufügen`,
+- `Abbau hinzufügen`.
+
+Ein neuer normaler Tag verwendet standardmäßig den letzten normalen Event-Tag + 1 Kalendertag. Aufbau startet standardmäßig vor dem frühesten vorhandenen Eventtag, Abbau nach dem spätesten vorhandenen Eventtag. Alle Datumswerte bleiben anschließend direkt editierbar.
+
+Nach dem Speichern werden die Container chronologisch sortiert. Bei gleichem Datum gilt:
+
+1. Aufbau,
+2. normaler Event-Tag,
+3. Abbau.
+
+Die Nummerierung `Tag 1`, `Tag 2`, … wird aus der chronologischen Reihenfolge der normalen Event-Tage neu abgeleitet.
+
+Die vorhandene Datums-Picker-Logik bleibt verbindlich: neue Datumswerte orientieren sich am Eventkontext und dürfen nicht unnötig im heutigen Monat starten.
 
 ### 6. Farben und Status
 
@@ -198,7 +232,9 @@ Canva-Mockups definieren Struktur und Informationshierarchie, nicht die Farbpale
 
 Diese UI führt keine Session-basierte oder nur clientseitige Fachdatenhaltung ein.
 
-Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persistenten Datenquellen gespeichert. Die UI-Schicht darf lediglich Darstellung, Auf-/Zuklappen und Bearbeitungsmodus lokal steuern.
+Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persistenten Datenquellen gespeichert. Dazu gehören auch Event-Tage, Tagesrollen, Aufbau-/Abbau-Uhrzeiten und Programmpunkte.
+
+Die UI-Schicht darf Darstellung und Auf-/Zuklappen lokal steuern; fachliche Werte werden persistent gespeichert.
 
 ## Relationship to other documents
 
@@ -206,6 +242,7 @@ Alle dauerhaft relevanten Daten werden weiterhin über die bestehenden persisten
 - `DASHBOARD-LOGIC.md`
 - `EVENTS-OVERVIEW.md`
 - `EVENT-FORM-UI.md`
+- `EVENT-DAY-PLANNING.md`
 - `STATUS-COLOR-STANDARD.md`
 - `DATA-PERSISTENCE.md`
 - `URL-INPUT-STANDARD.md`
@@ -218,4 +255,4 @@ Sobald das persistente Aufgabenmodul existiert, wird die dritte Fortschrittskach
 
 Zeitabhängige rote Warnzustände werden erst ergänzt, wenn fachlich belastbare Fristen bzw. Eskalationsregeln existieren.
 
-Weitere Bereiche des Bearbeitungsscreens – insbesondere Helferbedarf, Schichtplanung, Bestellungen, Ausgaben und Archivierung – sollen schrittweise auf dasselbe Muster `Status → Überblick → Containergruppe → gezielte Bearbeitung` umgestellt werden, ohne die bestehende funktionierende Persistenz unnötig umzubauen.
+Weitere Bereiche des Bearbeitungsscreens – insbesondere Helferbedarf, Schichtplanung, Bestellungen, Ausgaben und Archivierung – sollen schrittweise auf dasselbe Muster `Status → Überblick → Containergruppe → gezielte Bearbeitung` umgestellt werden, ohne den akzeptierten Referenzstand der Programm-/Ablaufplanung unnötig wieder zu öffnen.
