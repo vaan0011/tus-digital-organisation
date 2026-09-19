@@ -92,12 +92,44 @@
  function cardRef(card){ return card && card.dataset.dayRef ? card.dataset.dayRef : ''; }
  function cardDate(card){ var input=card&&card.querySelector('.vtp-day-date'); return input?input.value:''; }
 
+ function typeWeight(type){
+  if(type==='setup') return 0;
+  if(type==='event') return 1;
+  if(type==='teardown') return 2;
+  return 3;
+ }
+
+ function sortDayCards(box){
+  var cards=Array.from(box.querySelectorAll('.vtp-day-card'));
+  cards.sort(function(a,b){
+   var ad=cardDate(a)||'9999-12-31';
+   var bd=cardDate(b)||'9999-12-31';
+   if(ad!==bd) return ad.localeCompare(bd);
+   return typeWeight(cardType(a))-typeWeight(cardType(b));
+  });
+  cards.forEach(function(card){ box.appendChild(card); });
+ }
+
  function syncCard(card){
   if(!card) return;
   var date=cardDate(card);
   var ref=cardRef(card);
   card.querySelectorAll('input[name="item_date[]"]').forEach(function(input){ input.value=date; });
   card.querySelectorAll('input[name="item_day_ref[]"]').forEach(function(input){ input.value=ref; });
+ }
+
+ function updateHeading(heading,label,count,showCount){
+  heading.textContent='';
+  var text=document.createElement('span');
+  text.className='vtp-day-title-text';
+  text.textContent=label;
+  heading.appendChild(text);
+  if(showCount){
+   var badge=document.createElement('span');
+   badge.className='vtp-day-program-count';
+   badge.textContent=count+' '+(count===1?'Programmpunkt':'Programmpunkte');
+   heading.appendChild(badge);
+  }
  }
 
  function applyHeadings(box){
@@ -110,7 +142,8 @@
    if(type==='setup') prefix='Aufbau';
    else if(type==='teardown') prefix='Abbau';
    else { eventNo++; prefix='Tag '+eventNo; }
-   heading.textContent=prefix+' – '+longDate(cardDate(card));
+   var count=card.querySelectorAll('.vtp-program-row').length;
+   updateHeading(heading,prefix+' – '+longDate(cardDate(card)),count,type==='event');
    syncCard(card);
   });
  }
@@ -161,6 +194,7 @@
   });
   box.innerHTML=html;
   box.querySelectorAll('select[name="item_type[]"]').forEach(normalizeProgramTypeSelect);
+  sortDayCards(box);
 
   var addRow=form.querySelector('.vtp-event-add-row');
   var addDay=document.getElementById('vtp-add-day');
@@ -200,6 +234,7 @@
     var teardown=Array.from(box.querySelectorAll('.vtp-day-card')).find(function(c){ return cardType(c)==='teardown'; });
     if(teardown) box.insertBefore(card,teardown); else box.appendChild(card);
    } else box.appendChild(card);
+   sortDayCards(box);
    applyHeadings(box);
    return card;
   }
@@ -252,6 +287,11 @@
     },0);
    }
 
+   var removeProgram=event.target.closest && event.target.closest('.vtp-remove-program');
+   if(removeProgram){
+    window.setTimeout(function(){ applyHeadings(box); },0);
+   }
+
    if(event.target.closest && (event.target.closest('.vtp-remove-day') || event.target.closest('.vtp-toggle-day'))){
     window.setTimeout(function(){ applyHeadings(box); },0);
    }
@@ -266,6 +306,8 @@
   });
 
   form.addEventListener('submit',function(){
+   sortDayCards(box);
+   applyHeadings(box);
    box.querySelectorAll('.vtp-day-card').forEach(syncCard);
   });
 
