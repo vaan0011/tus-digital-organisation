@@ -109,7 +109,27 @@ Format:
 - `Aufbau – Sonntag, 18. Oktober 2026`
 - `Abbau – Mittwoch, 21. Oktober 2026`
 
-### 8. CRUD und Bearbeitung
+### 8. Chronologische Reihenfolge und Programmpunkt-Anzeige
+
+Die Tagesübersicht ist immer chronologisch nach dem eingestellten Datum sortiert.
+
+Wenn ein Nutzer das Datum eines Tages ändert und den Ablauf speichert, wird die Reihenfolge beim Speichern neu bestimmt. Die Nummerierung `Tag 1`, `Tag 2`, … folgt anschließend dieser chronologischen Reihenfolge und nicht der früheren Position im Formular.
+
+Für mehrere Tagescontainer am selben Kalenderdatum gilt die fachliche Reihenfolge:
+
+1. Aufbau,
+2. normaler Event-Tag,
+3. Abbau.
+
+In der kompakten Kopfzeile eines normalen Event-Tages wird zusätzlich die Zahl der diesem Tag zugeordneten echten Programmpunkte angezeigt, zum Beispiel:
+
+- `0 Programmpunkte`,
+- `1 Programmpunkt`,
+- `4 Programmpunkte`.
+
+Aufbau- und Abbau-Container erhalten keine Programmpunkt-Kennzahl. Frühere technische Einträge mit `item_type = Aufbau` oder `Abbau` werden nicht als echte Programmpunkte gezählt.
+
+### 9. CRUD und Bearbeitung
 
 Jeder Tagescontainer folgt weiterhin demselben Muster:
 
@@ -120,7 +140,7 @@ Jeder Tagescontainer folgt weiterhin demselben Muster:
 
 Innerhalb eines aufgeklappten normalen Event-Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
 
-### 9. Persistenz
+### 10. Persistenz
 
 Event-Tage werden dauerhaft in der Datenbank gespeichert.
 
