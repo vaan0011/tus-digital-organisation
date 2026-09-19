@@ -24,19 +24,20 @@
 .vtp-checkbox-line input[type=checkbox]{width:22px;height:22px;margin:0}
 .vtp-event-sponsors-card{padding:26px!important}
 .vtp-event-sponsor-box h2{font-size:25px!important;margin:0 0 18px!important}
-.vtp-add-sponsor{display:inline-flex!important;align-items:center;gap:7px;margin-bottom:18px!important;border:0!important;background:transparent!important;color:var(--vtp-text)!important;box-shadow:none!important;padding-left:0!important;font-size:17px!important}
-.vtp-add-sponsor:hover,.vtp-add-sponsor:focus{color:var(--vtp-blue)!important;background:transparent!important}
-.vtp-add-sponsor .dashicons{font-size:24px;width:24px;height:24px}
+.vtp-add-sponsor{display:inline-flex!important;align-items:center;gap:10px;margin:0 0 18px!important;border:0!important;background:transparent!important;color:#111827!important;box-shadow:none!important;padding:8px 6px!important;font-size:16px!important;font-weight:500!important;min-height:auto!important}
+.vtp-add-sponsor:before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border:2px solid currentColor;border-radius:5px;font-size:26px;line-height:1;box-sizing:border-box}
+.vtp-add-sponsor>.dashicons{display:none!important}
+.vtp-add-sponsor:hover,.vtp-add-sponsor:focus{color:var(--vtp-blue)!important;background:transparent!important;box-shadow:none!important}
 .vtp-sponsor-list{display:flex;flex-direction:column;gap:10px}
-.vtp-sponsor-row{display:grid;grid-template-columns:minmax(180px,1fr) minmax(220px,1fr) minmax(220px,1fr) auto;gap:18px;align-items:end;padding:14px 0;border-top:1px solid #e7ebf1}
+.vtp-sponsor-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:18px;align-items:end;padding:14px 0;border-top:1px solid #e7ebf1}
 .vtp-sponsor-row:first-child{border-top:0}
-.vtp-sponsor-row label{display:flex;flex-direction:column;gap:7px;font-size:15px}
-.vtp-sponsor-row input[type=text],.vtp-sponsor-row input[type=url]{width:100%;max-width:none}
-.vtp-sponsor-media-button{display:flex!important;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:40px;background:#fff!important;border:1px solid #cfd7e6!important;color:var(--vtp-text)!important}
-.vtp-sponsor-media-button .dashicons{margin-left:auto}
-.vtp-sponsor-actions{display:flex;align-items:center;justify-content:flex-end;min-height:40px}
-.vtp-remove-sponsor{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;color:#b42318;text-decoration:none}
-.vtp-remove-sponsor:hover,.vtp-remove-sponsor:focus{color:#8f1810}
+.vtp-sponsor-row label{display:flex;flex-direction:column;gap:7px;font-size:15px;min-width:0}
+.vtp-sponsor-row input[type=text],.vtp-sponsor-row input[type=url],.vtp-sponsor-media-button{width:100%;max-width:none;height:48px;min-height:48px;box-sizing:border-box}
+.vtp-sponsor-media-button{display:flex!important;align-items:center;justify-content:center;gap:10px;background:#fff!important;border:1px solid #cfd7e6!important;color:var(--vtp-text)!important;padding:0 14px!important}
+.vtp-sponsor-media-button .dashicons{margin:0;flex:0 0 auto}
+.vtp-sponsor-actions{display:flex;align-items:center;justify-content:flex-end;min-height:48px}
+.vtp-remove-sponsor{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;color:#b42318;text-decoration:none;border:1px solid #cfd7e6;border-radius:8px;background:#fff}
+.vtp-remove-sponsor:hover,.vtp-remove-sponsor:focus{color:#8f1810;border-color:#b42318;background:#fff7f7}
 .vtp-remove-sponsor .dashicons{font-size:24px;width:24px;height:24px}
 .vtp-event-submit{min-width:220px;min-height:48px;font-size:17px!important}
 .vtp-event-sponsors-card>.submit{margin:20px 0 0!important}
