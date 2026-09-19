@@ -116,7 +116,6 @@
   var header=el('div','vtp-event-tasks-header');
   var headingWrap=el('div','vtp-event-tasks-heading');
   headingWrap.appendChild(el('h2','', 'Aufgaben und Organisation'));
-  headingWrap.appendChild(el('p','description','Plane die organisatorischen Aufgaben dieses Events und halte Verantwortlichkeit sowie Fälligkeit fest.'));
   header.appendChild(headingWrap);
 
   var toggle=el('button','vtp-event-icon-button vtp-task-section-toggle dashicons-before dashicons-arrow-up-alt2');
@@ -125,6 +124,8 @@
   toggle.title='Aufgaben einklappen';
   header.appendChild(toggle);
   section.appendChild(header);
+
+  section.appendChild(el('p','description vtp-event-tasks-description','Plane die organisatorischen Aufgaben dieses Events und halte Verantwortlichkeit sowie Fälligkeit fest.'));
 
   var body=el('div','vtp-event-tasks-body');
   var form=document.createElement('form');
