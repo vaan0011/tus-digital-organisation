@@ -141,6 +141,8 @@ class VTP_Event_Edit_UI {
     'dateLabel'=>$date_label,
     'location'=>(string)($event->location?:'Ort offen'),
     'publicUrl'=>VTP_Public::event_url($event),
+    'tasksUrl'=>VTP_Event_Public_Worklists::tasks_url($event),
+    'teamworkUrl'=>VTP_Event_Public_Worklists::teamwork_url($event),
    ],
    'navigation'=>[
     'new'=>admin_url('admin.php?page=vtp-events&view=new'),
