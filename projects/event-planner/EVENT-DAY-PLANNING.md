@@ -22,6 +22,8 @@ Der Event Planner kennt drei Rollen:
 
 Aufbau und Abbau sind eigenständige Tagescontainer. Dadurch können sie bei Bedarf dasselbe Kalenderdatum wie ein normaler Event-Tag besitzen, ohne mit diesem zusammenzufallen.
 
+**Aufbau und Abbau sind keine Programmpunkt-Typen.** Sie werden deshalb nicht im Programmpunkt-Dropdown angeboten und erzeugen beim Anlegen keinen künstlichen Programmpunkt.
+
 ### 2. Automatische Initialisierung aus dem Event-Datumsbereich
 
 Beim Anlegen eines Events werden Start- und Enddatum bereits als fachliche Stammdaten gespeichert.
@@ -68,10 +70,7 @@ Default:
 
 **frühester vorhandener Tag − 1 Kalendertag**.
 
-Der Container enthält initial einen Programmpunkt:
-
-- Typ: `Aufbau`,
-- Titel: `Aufbau`.
+Der Container selbst repräsentiert den Aufbau. Es wird **kein Programmpunkt `Aufbau`** angelegt.
 
 Das Datum bleibt editierbar. Der Aufbau darf deshalb auch auf denselben Kalendertag wie der erste eigentliche Event-Tag gelegt werden.
 
@@ -83,14 +82,23 @@ Default:
 
 **spätester vorhandener Tag + 1 Kalendertag**.
 
-Der Container enthält initial einen Programmpunkt:
-
-- Typ: `Abbau`,
-- Titel: `Abbau`.
+Der Container selbst repräsentiert den Abbau. Es wird **kein Programmpunkt `Abbau`** angelegt.
 
 Das Datum bleibt editierbar. Der Abbau darf deshalb auch auf denselben Kalendertag wie der letzte eigentliche Event-Tag gelegt werden.
 
-### 6. Überschriften
+### 6. Programmpunkt-Typen
+
+Die Programmpunkt-Auswahl enthält ausschließlich echte Inhalte des Veranstaltungsprogramms.
+
+Aktuell zulässige Typen:
+
+- `Programmpunkt`,
+- `Musik`,
+- `Spiel`.
+
+`Aufbau` und `Abbau` gehören ausdrücklich nicht in diese Auswahl.
+
+### 7. Überschriften
 
 Normale Event-Tage werden nur untereinander nummeriert. Aufbau und Abbau zählen nicht in die `Tag X`-Nummerierung hinein.
 
@@ -101,7 +109,7 @@ Format:
 - `Aufbau – Sonntag, 18. Oktober 2026`
 - `Abbau – Mittwoch, 21. Oktober 2026`
 
-### 7. CRUD und Bearbeitung
+### 8. CRUD und Bearbeitung
 
 Jeder Tagescontainer folgt weiterhin demselben Muster:
 
@@ -110,9 +118,9 @@ Jeder Tagescontainer folgt weiterhin demselben Muster:
 3. Speichern,
 4. Löschen.
 
-Innerhalb eines aufgeklappten Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
+Innerhalb eines aufgeklappten normalen Event-Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
 
-### 8. Persistenz
+### 9. Persistenz
 
 Event-Tage werden dauerhaft in der Datenbank gespeichert.
 
@@ -128,6 +136,8 @@ Programmpunkte erhalten zusätzlich eine dauerhafte Zuordnung zum konkreten Even
 Damit bleiben auch zwei unterschiedliche Tagescontainer mit demselben Kalenderdatum eindeutig unterscheidbar.
 
 Bestehende ältere Eventdaten werden beim Upgrade in normale Event-Tage migriert. Die bisherige `vtp_event_days_<event_id>`-Option bleibt nur als Rückwärtskompatibilitätsabbild bestehen und ist nicht mehr die fachliche Source of Truth.
+
+Bestehende ältere Einträge mit `item_type = Aufbau` oder `Abbau` werden in der UI nicht mehr als reguläre Programmpunkte angeboten oder dargestellt. Die fachliche Repräsentation erfolgt über die Tagesrollen `setup` und `teardown`.
 
 ## Relationship to other documents
 
