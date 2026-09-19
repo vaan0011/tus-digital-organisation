@@ -35,11 +35,12 @@ class VTP_Event_Finalize {
  public static function assets($hook){
   if(($_GET['page']??'')!=='vtp-events') return;
 
-  wp_enqueue_style('vtp-event-finalize',VTP_URL.'assets/event-finalize.css',['vtp-event-edit'],VTP_VERSION);
-  wp_enqueue_script('vtp-event-finalize',VTP_URL.'assets/event-finalize.js',['vtp-event-edit'],VTP_VERSION,true);
-
   $event_id=absint($_GET['edit_event']??0);
   $view=sanitize_key($_GET['view']??'');
+  $dependency=$event_id?'vtp-event-catering':'vtp-event-create';
+  wp_enqueue_style('vtp-event-finalize',VTP_URL.'assets/event-finalize.css',[$dependency],VTP_VERSION);
+  wp_enqueue_script('vtp-event-finalize',VTP_URL.'assets/event-finalize.js',[$dependency],VTP_VERSION,true);
+
   $data=['mode'=>'none'];
 
   if($event_id){
