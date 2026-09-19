@@ -156,19 +156,23 @@ class VTP_Event_Finalize {
   $catering=[];
   $catering_table=VTP_DB::table('event_catering_items');
   if($wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s',$catering_table))===$catering_table){
+   $catering_cols=$wpdb->get_col("DESC $catering_table",0)?:[];
+   $group_select=in_array('assigned_group',$catering_cols,true)?'assigned_group':'NULL AS assigned_group';
    $catering_rows=$wpdb->get_results($wpdb->prepare(
-    "SELECT category,item_name,quantity,unit,note,sort_order
+    "SELECT category,item_name,quantity,unit,$group_select,note,sort_order
      FROM $catering_table
      WHERE event_id=%d
-     ORDER BY CASE category WHEN 'drink' THEN 0 ELSE 1 END,sort_order,id",
+     ORDER BY CASE category WHEN 'drink' THEN 0 WHEN 'food' THEN 1 ELSE 2 END,sort_order,id",
     $event_id
    ));
    foreach($catering_rows?:[] as $row){
+    $category=in_array((string)$row->category,['drink','food','bring'],true)?(string)$row->category:'drink';
     $catering[]=[
-     'category'=>$row->category==='food'?'food':'drink',
+     'category'=>$category,
      'item'=>(string)$row->item_name,
      'quantity'=>(float)$row->quantity,
      'unit'=>(string)$row->unit,
+     'assigned_group'=>$category==='bring'?(string)$row->assigned_group:'',
      'note'=>(string)$row->note,
      'sort_order'=>(int)$row->sort_order,
     ];
