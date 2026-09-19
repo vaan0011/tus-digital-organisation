@@ -5,9 +5,15 @@
 .vtp-event-program-card .vtp-day-card[data-day-type="teardown"]{background:#fbfcfe!important}
 .vtp-event-program-card .vtp-day-card[data-day-type="setup"] .vtp-day-head h3,
 .vtp-event-program-card .vtp-day-card[data-day-type="teardown"] .vtp-day-head h3{font-weight:750}
+.vtp-event-program-card .vtp-day-card[data-day-type="setup"] .vtp-day-body,
+.vtp-event-program-card .vtp-day-card[data-day-type="teardown"] .vtp-day-body{display:none!important}
+.vtp-event-program-card .vtp-day-time{min-width:120px}
+.vtp-event-program-card .vtp-day-time.is-locked{background:#fff;color:#111827;box-shadow:none;pointer-events:none}
+.vtp-event-program-card .vtp-day-card.is-editing .vtp-day-time{pointer-events:auto;background:#fff}
 .vtp-event-program-card .vtp-day-head h3{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .vtp-event-program-card .vtp-day-program-count{display:inline-flex;align-items:center;min-height:26px;padding:3px 9px;border-radius:999px;background:#f2f4f7;color:#667085;font-size:12px;font-weight:650;line-height:1;white-space:nowrap}
 @media(max-width:782px){
  .vtp-event-program-card .vtp-event-day-actions-top{align-items:flex-start;flex-direction:column;gap:6px}
  .vtp-event-program-card .vtp-day-head h3{align-items:flex-start;flex-direction:column;gap:6px}
+ .vtp-event-program-card .vtp-day-time{flex:1;min-width:0}
 }
