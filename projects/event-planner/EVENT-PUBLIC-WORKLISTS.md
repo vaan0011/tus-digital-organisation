@@ -99,6 +99,38 @@ Die Admin-Gesamtübersichten zeigen:
 - private Kontaktdaten der Rückmeldenden,
 - direkte Weiterleitungslinks für Personen bzw. Mannschaften.
 
+### Admin-Verwaltung: Aufgaben
+
+Auf der PIN-geschützten Aufgaben-Gesamtübersicht kann der Admin zusätzlich:
+
+- neue Aufgaben anlegen,
+- Titel, verantwortliche Person, optionale Kategorie und Fälligkeit pflegen,
+- eine bestehende öffentliche Rückmeldung zurücksetzen,
+- fehlerhafte Aufgaben dauerhaft löschen.
+
+`Rückmeldung zurücksetzen` und `Aufgabe löschen` sind fachlich getrennt:
+
+- Sagt eine verantwortliche Person ab, wird nur die Rückmeldung zurückgesetzt. Die Aufgabe bleibt bestehen und ist wieder `offen`.
+- Ist die Aufgabe selbst falsch oder nicht mehr erforderlich, wird sie gelöscht. Eine vorhandene öffentliche Rückmeldung wird dabei ebenfalls entfernt.
+
+### Admin-Verwaltung: Schichten und Mitbringen
+
+Auf der PIN-geschützten Gesamtübersicht `Schichten / Mitbringen` kann der Admin einzelne Rückmeldungen löschen.
+
+Bei einer gelöschten Schichtanmeldung:
+
+- wird ausschließlich die Anmeldung entfernt,
+- die Schicht bleibt bestehen,
+- der frei gewordene Platz ist sofort wieder öffentlich buchbar.
+
+Bei einer gelöschten Mitbringen-Rückmeldung:
+
+- wird ausschließlich die konkrete Zusage entfernt,
+- der Mitbringen-Bedarf bleibt bestehen,
+- die zuvor zugesagte Menge wird sofort wieder als offener Bedarf angezeigt.
+
+Diese Adminaktionen stehen nur in der geschützten Gesamtübersicht zur Verfügung, nicht in Personen- oder Mannschaftslinks.
+
 Die gefilterten Weiterleitungslinks bleiben bewusst ohne PIN erreichbar:
 
 - `?person=<Name>` für eine einzelne verantwortliche Person,
@@ -124,6 +156,7 @@ Im selben Bereich kann der Event-Admin den gemeinsamen Admin-PIN für die beiden
 - Kontaktdaten sind nur für die Eventorganisation vorgesehen.
 - Der Admin-PIN wird ausschließlich gehasht gespeichert.
 - Öffentliche Seiten zeigen nur die für die Koordination notwendigen Informationen.
+- Mutierende Adminaktionen prüfen zusätzlich die gültige Event-Adminfreigabe und einen WordPress-Nonce.
 
 ## Persistenz
 
