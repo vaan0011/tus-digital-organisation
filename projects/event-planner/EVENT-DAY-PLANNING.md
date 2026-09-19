@@ -22,7 +22,7 @@ Der Event Planner kennt drei Rollen:
 
 Aufbau und Abbau sind eigenständige Tagescontainer. Dadurch können sie bei Bedarf dasselbe Kalenderdatum wie ein normaler Event-Tag besitzen, ohne mit diesem zusammenzufallen.
 
-**Aufbau und Abbau sind keine Programmpunkt-Typen.** Sie werden deshalb nicht im Programmpunkt-Dropdown angeboten und erzeugen beim Anlegen keinen künstlichen Programmpunkt.
+**Aufbau und Abbau sind keine Programmpunkt-Typen und besitzen kein eigenes Programm.** Sie werden deshalb nicht im Programmpunkt-Dropdown angeboten und erzeugen beim Anlegen keinen künstlichen Programmpunkt.
 
 ### 2. Automatische Initialisierung aus dem Event-Datumsbereich
 
@@ -70,9 +70,14 @@ Default:
 
 **frühester vorhandener Tag − 1 Kalendertag**.
 
-Der Container selbst repräsentiert den Aufbau. Es wird **kein Programmpunkt `Aufbau`** angelegt.
+Der Container selbst repräsentiert den Aufbau. Es wird **kein Programmpunkt `Aufbau`** angelegt und es gibt innerhalb dieses Containers keine Programmpunkt-Liste.
 
-Das Datum bleibt editierbar. Der Aufbau darf deshalb auch auf denselben Kalendertag wie der erste eigentliche Event-Tag gelegt werden.
+Für den Aufbau werden ausschließlich folgende Planungsdaten gepflegt:
+
+- Datum,
+- Uhrzeit.
+
+Datum und Uhrzeit bleiben editierbar. Der Aufbau darf deshalb auch auf denselben Kalendertag wie der erste eigentliche Event-Tag gelegt werden.
 
 ### 5. Abbau hinzufügen
 
@@ -82,9 +87,14 @@ Default:
 
 **spätester vorhandener Tag + 1 Kalendertag**.
 
-Der Container selbst repräsentiert den Abbau. Es wird **kein Programmpunkt `Abbau`** angelegt.
+Der Container selbst repräsentiert den Abbau. Es wird **kein Programmpunkt `Abbau`** angelegt und es gibt innerhalb dieses Containers keine Programmpunkt-Liste.
 
-Das Datum bleibt editierbar. Der Abbau darf deshalb auch auf denselben Kalendertag wie der letzte eigentliche Event-Tag gelegt werden.
+Für den Abbau werden ausschließlich folgende Planungsdaten gepflegt:
+
+- Datum,
+- Uhrzeit.
+
+Datum und Uhrzeit bleiben editierbar. Der Abbau darf deshalb auch auf denselben Kalendertag wie der letzte eigentliche Event-Tag gelegt werden.
 
 ### 6. Programmpunkt-Typen
 
@@ -96,7 +106,7 @@ Aktuell zulässige Typen:
 - `Musik`,
 - `Spiel`.
 
-`Aufbau` und `Abbau` gehören ausdrücklich nicht in diese Auswahl.
+`Aufbau` und `Abbau` gehören ausdrücklich nicht in diese Auswahl und erhalten selbst keine Programmpunkte.
 
 ### 7. Überschriften
 
@@ -109,18 +119,47 @@ Format:
 - `Aufbau – Sonntag, 18. Oktober 2026`
 - `Abbau – Mittwoch, 21. Oktober 2026`
 
-### 8. CRUD und Bearbeitung
+### 8. Chronologische Reihenfolge und Programmpunkt-Anzeige
 
-Jeder Tagescontainer folgt weiterhin demselben Muster:
+Die Tagesübersicht ist immer chronologisch nach dem eingestellten Datum sortiert.
 
-1. Aufklappen / Einklappen,
-2. Bearbeiten,
-3. Speichern,
-4. Löschen.
+Wenn ein Nutzer das Datum eines Tages ändert und den Ablauf speichert, wird die Reihenfolge beim Speichern neu bestimmt. Die Nummerierung `Tag 1`, `Tag 2`, … folgt anschließend dieser chronologischen Reihenfolge und nicht der früheren Position im Formular.
 
-Innerhalb eines aufgeklappten normalen Event-Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
+Für mehrere Tagescontainer am selben Kalenderdatum gilt die fachliche Reihenfolge:
 
-### 9. Persistenz
+1. Aufbau,
+2. normaler Event-Tag,
+3. Abbau.
+
+In der kompakten Kopfzeile eines normalen Event-Tages wird zusätzlich die Zahl der diesem Tag zugeordneten echten Programmpunkte angezeigt, zum Beispiel:
+
+- `0 Programmpunkte`,
+- `1 Programmpunkt`,
+- `4 Programmpunkte`.
+
+Aufbau- und Abbau-Container erhalten keine Programmpunkt-Kennzahl. Frühere technische Einträge mit `item_type = Aufbau` oder `Abbau` werden nicht als echte Programmpunkte gezählt.
+
+### 9. Bearbeitung und Speichern
+
+Der gesamte Ablaufplan befindet sich bereits im Bearbeitungsmodus. Deshalb gibt es für einzelne Tageszeilen **keinen zusätzlichen Edit- oder Speichern-Modus**.
+
+Für normale Event-Tage gilt:
+
+1. Datum ist direkt über das Datumsfeld bzw. Kalender-Icon editierbar,
+2. Aufklappen / Einklappen steuert nur die Sichtbarkeit der Programmpunkte,
+3. Programmpunkte können innerhalb des aufgeklappten Tages gepflegt werden,
+4. Löschen entfernt den Tagescontainer.
+
+Für Aufbau und Abbau gilt:
+
+1. Datum ist direkt editierbar,
+2. Uhrzeit ist direkt editierbar,
+3. es gibt keinen Programmbereich und kein Auf-/Zuklappen,
+4. Löschen entfernt den Tagescontainer.
+
+**Gespeichert wird der komplette Ablaufplan gesammelt über `Event-Ablauf speichern`.** Separate Edit-Stifte oder Speicher-Buttons pro Zeile sind nicht vorgesehen.
+
+### 10. Persistenz
 
 Event-Tage werden dauerhaft in der Datenbank gespeichert.
 
@@ -129,9 +168,14 @@ Dafür existiert die Tabelle `vtp_event_days` mit mindestens:
 - Event-ID,
 - Datum,
 - Tagesrolle,
+- Uhrzeit für Aufbau/Abbau,
 - Reihenfolge.
 
+Die Uhrzeit von Aufbau und Abbau wird als Fachdatenwert am jeweiligen Tagescontainer gespeichert. Normale Event-Tage verwenden dieses Feld nicht; deren Uhrzeiten gehören zu den einzelnen Programmpunkten.
+
 Programmpunkte erhalten zusätzlich eine dauerhafte Zuordnung zum konkreten Event-Tag über `event_day_id`.
+
+Serverseitig werden Programmpunkte ausschließlich normalen Event-Tagen zugeordnet. Für `setup` und `teardown` werden keine Programmpunkte gespeichert.
 
 Damit bleiben auch zwei unterschiedliche Tagescontainer mit demselben Kalenderdatum eindeutig unterscheidbar.
 
