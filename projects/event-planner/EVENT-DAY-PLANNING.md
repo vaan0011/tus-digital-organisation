@@ -139,22 +139,25 @@ In der kompakten Kopfzeile eines normalen Event-Tages wird zusätzlich die Zahl 
 
 Aufbau- und Abbau-Container erhalten keine Programmpunkt-Kennzahl. Frühere technische Einträge mit `item_type = Aufbau` oder `Abbau` werden nicht als echte Programmpunkte gezählt.
 
-### 9. CRUD und Bearbeitung
+### 9. Bearbeitung und Speichern
 
-Normale Event-Tage verwenden:
+Der gesamte Ablaufplan befindet sich bereits im Bearbeitungsmodus. Deshalb gibt es für einzelne Tageszeilen **keinen zusätzlichen Edit- oder Speichern-Modus**.
 
-1. Aufklappen / Einklappen,
-2. Bearbeiten,
-3. Speichern,
-4. Löschen.
+Für normale Event-Tage gilt:
 
-Innerhalb eines aufgeklappten normalen Event-Tages können Programmpunkte ergänzt, bearbeitet oder entfernt werden.
+1. Datum ist direkt über das Datumsfeld bzw. Kalender-Icon editierbar,
+2. Aufklappen / Einklappen steuert nur die Sichtbarkeit der Programmpunkte,
+3. Programmpunkte können innerhalb des aufgeklappten Tages gepflegt werden,
+4. Löschen entfernt den Tagescontainer.
 
-Aufbau und Abbau besitzen bewusst keinen aufklappbaren Programmbereich. Dort werden direkt in der Kopfzeile nur Datum und Uhrzeit gepflegt. Die Aktionen beschränken sich auf:
+Für Aufbau und Abbau gilt:
 
-1. Bearbeiten,
-2. Speichern,
-3. Löschen.
+1. Datum ist direkt editierbar,
+2. Uhrzeit ist direkt editierbar,
+3. es gibt keinen Programmbereich und kein Auf-/Zuklappen,
+4. Löschen entfernt den Tagescontainer.
+
+**Gespeichert wird der komplette Ablaufplan gesammelt über `Event-Ablauf speichern`.** Separate Edit-Stifte oder Speicher-Buttons pro Zeile sind nicht vorgesehen.
 
 ### 10. Persistenz
 
