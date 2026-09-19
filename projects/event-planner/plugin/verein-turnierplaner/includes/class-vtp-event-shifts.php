@@ -97,6 +97,32 @@ class VTP_Event_Shifts {
    ];
   }
 
+  // Aufbau und Abbau sind organisatorische Tagesrollen. Wenn Datum und Uhrzeit
+  // gepflegt sind, können sie im Helferblock explizit als Schicht übernommen werden.
+  $operation_rows=$wpdb->get_results($wpdb->prepare(
+   "SELECT id,event_date,day_type,day_time,sort_order
+    FROM $days
+    WHERE event_id=%d AND day_type IN ('setup','teardown')
+    ORDER BY event_date,
+      CASE day_type WHEN 'setup' THEN 0 ELSE 2 END,
+      sort_order,id",
+   $event_id
+  ));
+  $operation_candidates=[];
+  foreach($operation_rows?:[] as $day){
+   $date=(string)$day->event_date;
+   $time=substr((string)$day->day_time,0,5);
+   if(!VTP_Plugin::is_valid_event_date($date) || !self::valid_time($time)) continue;
+   $type=$day->day_type==='setup'?'setup':'teardown';
+   $operation_candidates[]=[
+    'dayId'=>absint($day->id),
+    'type'=>$type,
+    'label'=>$type==='setup'?'Aufbau':'Abbau',
+    'date'=>$date,
+    'start'=>$time,
+   ];
+  }
+
   wp_enqueue_style('vtp-event-shifts',VTP_URL.'assets/event-shifts.css',['vtp-event-tasks'],VTP_VERSION);
   wp_enqueue_script('vtp-event-shifts',VTP_URL.'assets/event-shifts.js',['vtp-event-tasks'],VTP_VERSION,true);
   wp_localize_script('vtp-event-shifts','VTPEventShifts',[
@@ -107,6 +133,7 @@ class VTP_Event_Shifts {
    'nonce'=>wp_create_nonce('vtp_save_event_shifts_'.$event_id),
    'shifts'=>$shifts,
    'programWindows'=>$program_windows,
+   'operationShiftCandidates'=>$operation_candidates,
   ]);
  }
 
