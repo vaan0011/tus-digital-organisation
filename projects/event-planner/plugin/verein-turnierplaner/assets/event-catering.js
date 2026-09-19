@@ -40,19 +40,24 @@
 
  function itemRow(item){
   item=item||{};
-  var row=el('div','vtp-catering-row');
+  var category=item.category||'drink';
+  var row=el('div','vtp-catering-row'+(category==='bring'?' is-bring':''));
   row.dataset.cateringRow='1';
-  row.dataset.category=item.category||'drink';
+  row.dataset.category=category;
 
-  var category=document.createElement('input');
-  category.type='hidden';
-  category.dataset.field='category';
-  category.value=row.dataset.category;
-  row.appendChild(category);
+  var categoryInput=document.createElement('input');
+  categoryInput.type='hidden';
+  categoryInput.dataset.field='category';
+  categoryInput.value=category;
+  row.appendChild(categoryInput);
 
-  row.appendChild(field('Artikel','text','name',item.name||'',{required:true,placeholder:row.dataset.category==='drink'?'z. B. Pils':'z. B. Bratwurst'}));
-  row.appendChild(field('Bestellmenge','number','quantity',String(item.quantity||''),{required:true,min:0.01,step:0.01}));
-  row.appendChild(field('Einheit','text','unit',item.unit||'',{required:true,placeholder:'z. B. Kisten',list:'vtp-catering-units'}));
+  var placeholder=category==='drink'?'z. B. Pils':(category==='bring'?'z. B. Muffins':'z. B. Bratwurst');
+  row.appendChild(field('Artikel','text','name',item.name||'',{required:true,placeholder:placeholder}));
+  row.appendChild(field(category==='bring'?'Menge':'Bestellmenge','number','quantity',String(item.quantity||''),{required:true,min:0.01,step:0.01}));
+  row.appendChild(field('Einheit','text','unit',item.unit||'',{required:true,placeholder:category==='bring'?'z. B. Stück':'z. B. Kisten',list:'vtp-catering-units'}));
+  if(category==='bring'){
+   row.appendChild(field('Zuordnung','text','assignedGroup',item.assignedGroup||'',{placeholder:'z. B. C-Jugend'}));
+  }
   row.appendChild(field('Notiz','text','note',item.note||'',{placeholder:'optional'}));
 
   var actions=el('div','vtp-catering-actions');
@@ -77,6 +82,7 @@
     name:'catering_item['+i+']',
     quantity:'catering_quantity['+i+']',
     unit:'catering_unit['+i+']',
+    assignedGroup:'catering_assigned_group['+i+']',
     note:'catering_note['+i+']'
    };
    Object.keys(map).forEach(function(key){
@@ -84,6 +90,12 @@
     if(input) input.name=map[key];
    });
   });
+ }
+
+ function emptyText(category){
+  if(category==='drink') return 'Noch keine Getränke geplant.';
+  if(category==='bring') return 'Noch nichts zum Mitbringen geplant.';
+  return 'Noch kein Essen geplant.';
  }
 
  function buildGroup(category,title,buttonLabel,items){
@@ -97,7 +109,7 @@
   var list=el('div','vtp-catering-list');
   (items||[]).forEach(function(item){ list.appendChild(itemRow(item)); });
   group.appendChild(list);
-  var empty=el('p','description vtp-catering-empty',category==='drink'?'Noch keine Getränke geplant.':'Noch kein Essen geplant.');
+  var empty=el('p','description vtp-catering-empty',emptyText(category));
   group.appendChild(empty);
 
   function syncEmpty(){ empty.hidden=list.querySelectorAll('[data-catering-row]').length>0; }
@@ -128,7 +140,7 @@
   header.appendChild(toggle);
   section.appendChild(header);
 
-  var description=el('p','description vtp-event-catering-description','Plane, welche Getränke und Speisen in welcher Menge für das Event bestellt werden müssen.');
+  var description=el('p','description vtp-event-catering-description','Plane Bestellungen für Getränke und Essen sowie Dinge, die Mannschaften oder Abteilungen zum Event mitbringen sollen.');
   section.appendChild(description);
 
   var body=el('div','vtp-event-catering-body');
@@ -142,7 +154,7 @@
 
   var datalist=document.createElement('datalist');
   datalist.id='vtp-catering-units';
-  ['Kisten','Flaschen','Liter','Stück','kg','Packungen','Kartons','Dosen','Beutel'].forEach(function(value){
+  ['Kisten','Flaschen','Liter','Stück','kg','Packungen','Kartons','Dosen','Beutel','Bleche'].forEach(function(value){
    var option=document.createElement('option'); option.value=value; datalist.appendChild(option);
   });
   form.appendChild(datalist);
@@ -150,8 +162,10 @@
   var items=data.items||[];
   var drinks=items.filter(function(item){ return item.category==='drink'; });
   var food=items.filter(function(item){ return item.category==='food'; });
+  var bring=items.filter(function(item){ return item.category==='bring'; });
   form.appendChild(buildGroup('drink','Getränke','Getränk hinzufügen',drinks));
   form.appendChild(buildGroup('food','Essen','Essen hinzufügen',food));
+  form.appendChild(buildGroup('bring','Mitbringen','Mitbringen hinzufügen',bring));
 
   var submit=el('button','button button-primary vtp-catering-save','Bewirtung speichern');
   submit.type='submit';
