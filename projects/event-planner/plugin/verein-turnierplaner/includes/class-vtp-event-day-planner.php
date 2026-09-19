@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) exit;
 
 class VTP_Event_Day_Planner {
- const SCHEMA_VERSION='1';
+ const SCHEMA_VERSION='2';
 
  public static function init(){
   self::ensure_schema();
@@ -14,6 +14,11 @@ class VTP_Event_Day_Planner {
  }
 
  private static function table(){ return VTP_DB::table('event_days'); }
+
+ private static function normalize_time($value){
+  $value=sanitize_text_field(wp_unslash($value));
+  return preg_match('/^(?:[01]\d|2[0-3]):[0-5]\d$/',$value)?$value:'';
+ }
 
  private static function ensure_schema(){
   if(get_option('vtp_event_day_schema_version')===self::SCHEMA_VERSION) return;
@@ -28,6 +33,7 @@ class VTP_Event_Day_Planner {
    event_id BIGINT UNSIGNED NOT NULL,
    event_date DATE NOT NULL,
    day_type VARCHAR(20) NOT NULL DEFAULT 'event',
+   day_time VARCHAR(10) NULL,
    sort_order INT NOT NULL DEFAULT 0,
    created_at DATETIME NOT NULL,
    updated_at DATETIME NOT NULL,
@@ -94,6 +100,7 @@ class VTP_Event_Day_Planner {
      'event_id'=>$eid,
      'event_date'=>$date,
      'day_type'=>'event',
+     'day_time'=>'',
      'sort_order'=>$order,
      'created_at'=>$now,
      'updated_at'=>$now,
@@ -140,6 +147,7 @@ class VTP_Event_Day_Planner {
     'event_id'=>$eid,
     'event_date'=>$date,
     'day_type'=>'event',
+    'day_time'=>'',
     'sort_order'=>$order++,
     'created_at'=>$now,
     'updated_at'=>$now,
@@ -170,7 +178,7 @@ class VTP_Event_Day_Planner {
   self::ensure_initial_event_days($event);
 
   $days=$wpdb->get_results($wpdb->prepare(
-   'SELECT id,event_date,day_type,sort_order FROM '.self::table().' WHERE event_id=%d ORDER BY sort_order,id',
+   'SELECT id,event_date,day_type,day_time,sort_order FROM '.self::table().' WHERE event_id=%d ORDER BY sort_order,id',
    $event_id
   ));
   $items=$wpdb->get_results($wpdb->prepare(
@@ -188,6 +196,7 @@ class VTP_Event_Day_Planner {
     'id'=>absint($day->id),
     'date'=>(string)$day->event_date,
     'type'=>in_array($day->day_type,['event','setup','teardown'],true)?$day->day_type:'event',
+    'time'=>(string)$day->day_time,
     'sortOrder'=>(int)$day->sort_order,
    ];
   }
@@ -242,9 +251,11 @@ class VTP_Event_Day_Planner {
   $day_refs=(array)($_POST['event_day_ref']??[]);
   $day_dates=(array)($_POST['event_day']??[]);
   $day_types=(array)($_POST['event_day_type']??[]);
+  $day_times=(array)($_POST['event_day_time']??[]);
   $existing_ids=array_map('absint',$wpdb->get_col($wpdb->prepare("SELECT id FROM $day_table WHERE event_id=%d",$eid))?:[]);
   $kept_ids=[];
   $ref_map=[];
+  $day_type_map=[];
   $date_fallback=[];
   $legacy_dates=[];
   $now=current_time('mysql');
@@ -257,6 +268,7 @@ class VTP_Event_Day_Planner {
 
    $type=sanitize_key(wp_unslash($day_types[$index]??'event'));
    if(!in_array($type,['event','setup','teardown'],true)) $type='event';
+   $time=in_array($type,['setup','teardown'],true)?self::normalize_time($day_times[$index]??''):'';
    $ref=sanitize_text_field(wp_unslash($day_refs[$index]??('day-'.$index)));
    $day_id=absint($day_ids[$index]??0);
 
@@ -265,6 +277,7 @@ class VTP_Event_Day_Planner {
     $ok=$wpdb->update($day_table,[
      'event_date'=>$date,
      'day_type'=>$type,
+     'day_time'=>$time,
      'sort_order'=>$index,
      'updated_at'=>$now,
     ],['id'=>$day_id,'event_id'=>$eid]);
@@ -274,6 +287,7 @@ class VTP_Event_Day_Planner {
      'event_id'=>$eid,
      'event_date'=>$date,
      'day_type'=>$type,
+     'day_time'=>$time,
      'sort_order'=>$index,
      'created_at'=>$now,
      'updated_at'=>$now,
@@ -284,6 +298,7 @@ class VTP_Event_Day_Planner {
 
    $kept_ids[]=$day_id;
    $ref_map[$ref]=$day_id;
+   $day_type_map[$day_id]=$type;
    if(!isset($date_fallback[$date]) || $type==='event') $date_fallback[$date]=$day_id;
    $legacy_dates[$date]=true;
   }
@@ -316,12 +331,13 @@ class VTP_Event_Day_Planner {
    $day_id=absint($ref_map[$ref]??0);
    if(!$day_id && VTP_Plugin::is_valid_event_date($posted_date)) $day_id=absint($date_fallback[$posted_date]??0);
    if(!$day_id) continue;
+   if(($day_type_map[$day_id]??'event')!=='event') continue;
 
    $day_date=(string)$wpdb->get_var($wpdb->prepare("SELECT event_date FROM $day_table WHERE id=%d AND event_id=%d",$day_id,$eid));
    if(!VTP_Plugin::is_valid_event_date($day_date)) continue;
 
    $item_type=sanitize_text_field(wp_unslash($types[$index]??'Programmpunkt'));
-   if(!in_array($item_type,['Aufbau','Abbau','Programmpunkt','Musik','Spiel'],true)) $item_type='Programmpunkt';
+   if(!in_array($item_type,['Programmpunkt','Musik','Spiel'],true)) $item_type='Programmpunkt';
    $visibility=sanitize_key(wp_unslash($visibilities[$index]??'public'));
    if(!in_array($visibility,['public','private','ticket','members'],true)) $visibility='public';
    $start=sanitize_text_field(wp_unslash($starts[$index]??''));

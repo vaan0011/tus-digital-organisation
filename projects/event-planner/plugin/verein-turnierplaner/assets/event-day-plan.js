@@ -73,17 +73,25 @@
 
  function dayCard(day,items,linked){
   var ref=day.ref||('id-'+day.id);
-  var rows=(items||[]).map(function(item){ return programRow(item,ref,day.date); }).join('');
-  var linkedRows=(linked||[]).map(linkedRow).join('');
-  return '<div class="vtp-day-card" data-day-ref="'+escapeHtml(ref)+'" data-day-type="'+escapeHtml(day.type||'event')+'">'+
+  var type=day.type||'event';
+  var special=type==='setup'||type==='teardown';
+  var rows=special?'':(items||[]).map(function(item){ return programRow(item,ref,day.date); }).join('');
+  var linkedRows=special?'':(linked||[]).map(linkedRow).join('');
+  var timeControl=special
+   ? '<label>Uhrzeit <input type="time" class="vtp-day-time is-locked" name="event_day_time[]" value="'+escapeHtml((day.time||'').slice(0,5))+'" readonly></label> '
+   : '<input type="hidden" name="event_day_time[]" value="">';
+  var toggle=special?'':'<button type="button" class="button vtp-toggle-day">Einklappen</button> ';
+  var duplicate=special?'':'<button type="button" class="button vtp-duplicate-day">Tag duplizieren</button> ';
+  var addProgram=special?'':'<button type="button" class="button vtp-add-program">Programmpunkt hinzufügen</button> ';
+  return '<div class="vtp-day-card" data-day-ref="'+escapeHtml(ref)+'" data-day-type="'+escapeHtml(type)+'">'+
    '<input type="hidden" name="event_day_id[]" value="'+escapeHtml(day.id||0)+'">'+
    '<input type="hidden" name="event_day_ref[]" value="'+escapeHtml(ref)+'">'+
-   '<input type="hidden" name="event_day_type[]" value="'+escapeHtml(day.type||'event')+'">'+
+   '<input type="hidden" name="event_day_type[]" value="'+escapeHtml(type)+'">'+
+   (!special?timeControl:'')+
    '<div class="vtp-day-head"><h3></h3><p class="vtp-day-actions">'+
     '<label>Datum <input type="date" class="vtp-day-date" name="event_day[]" value="'+escapeHtml(day.date||'')+'" required></label> '+
-    '<button type="button" class="button vtp-toggle-day">Einklappen</button> '+
-    '<button type="button" class="button vtp-duplicate-day">Tag duplizieren</button> '+
-    '<button type="button" class="button vtp-add-program">Programmpunkt hinzufügen</button> '+
+    (special?timeControl:'')+
+    toggle+duplicate+addProgram+
     '<button type="button" class="button vtp-remove-day">Tag entfernen</button>'+
    '</p></div><div class="vtp-day-body"><div class="vtp-program-rows">'+rows+linkedRows+'</div></div></div>';
  }
@@ -142,7 +150,7 @@
    if(type==='setup') prefix='Aufbau';
    else if(type==='teardown') prefix='Abbau';
    else { eventNo++; prefix='Tag '+eventNo; }
-   var count=card.querySelectorAll('.vtp-program-row').length;
+   var count=type==='event'?card.querySelectorAll('.vtp-program-row').length:0;
    updateHeading(heading,prefix+' – '+longDate(cardDate(card)),count,type==='event');
    syncCard(card);
   });
@@ -160,6 +168,7 @@
    ref:uniqueRef(),
    type:type,
    date:date,
+   time:'',
    items:[]
   };
  }
@@ -190,7 +199,7 @@
   var html='';
   (data.days||[]).forEach(function(day){
    var linked=day.type==='event' ? (linkedByDate[day.date]||[]) : [];
-   html+=dayCard({id:day.id,ref:'id-'+day.id,type:day.type,date:day.date},itemsByDay[String(day.id)]||[],linked);
+   html+=dayCard({id:day.id,ref:'id-'+day.id,type:day.type,date:day.date,time:day.time||''},itemsByDay[String(day.id)]||[],linked);
   });
   box.innerHTML=html;
   box.querySelectorAll('select[name="item_type[]"]').forEach(normalizeProgramTypeSelect);
@@ -267,6 +276,12 @@
   document.addEventListener('click',function(event){
    var addProgram=event.target.closest && event.target.closest('.vtp-add-program');
    if(addProgram){
+    var programCard=addProgram.closest('.vtp-day-card');
+    if(programCard && cardType(programCard)!=='event'){
+     event.preventDefault();
+     event.stopPropagation();
+     return;
+    }
     window.setTimeout(function(){
      var card=addProgram.closest('.vtp-day-card');
      if(!card) return;
@@ -285,6 +300,16 @@
      syncCard(card);
      applyHeadings(box);
     },0);
+   }
+
+   var editDay=event.target.closest && event.target.closest('.vtp-edit-day');
+   if(editDay){
+    var editCard=editDay.closest('.vtp-day-card');
+    var timeInput=editCard && editCard.querySelector('.vtp-day-time');
+    if(timeInput){
+     timeInput.readOnly=false;
+     timeInput.classList.remove('is-locked');
+    }
    }
 
    var removeProgram=event.target.closest && event.target.closest('.vtp-remove-program');
