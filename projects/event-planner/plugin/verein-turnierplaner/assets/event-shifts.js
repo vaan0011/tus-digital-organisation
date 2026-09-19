@@ -114,8 +114,9 @@
   remove.addEventListener('click',function(){
    var signups=Number(row.dataset.signups||0);
    if(signups>0 && !window.confirm('Für diese Schicht gibt es bereits '+signups+' Anmeldung(en). Beim Speichern werden diese ebenfalls gelöscht. Schicht wirklich entfernen?')) return;
+   var parent=row.parentNode;
    row.remove();
-   row.dispatchEvent(new CustomEvent('vtp-shifts-changed',{bubbles:true}));
+   if(parent) parent.dispatchEvent(new CustomEvent('vtp-shifts-changed',{bubbles:true}));
   });
   return row;
  }
