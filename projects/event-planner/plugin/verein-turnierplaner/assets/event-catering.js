@@ -45,6 +45,12 @@
   row.dataset.cateringRow='1';
   row.dataset.category=category;
 
+  var idInput=document.createElement('input');
+  idInput.type='hidden';
+  idInput.dataset.field='id';
+  idInput.value=item.id||'';
+  row.appendChild(idInput);
+
   var categoryInput=document.createElement('input');
   categoryInput.type='hidden';
   categoryInput.dataset.field='category';
@@ -78,6 +84,7 @@
  function indexRows(form){
   Array.from(form.querySelectorAll('[data-catering-row]')).forEach(function(row,i){
    var map={
+    id:'catering_id['+i+']',
     category:'catering_category['+i+']',
     name:'catering_item['+i+']',
     quantity:'catering_quantity['+i+']',
