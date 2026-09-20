@@ -14,6 +14,92 @@
   return input;
  }
 
+ function findFormByAction(action){
+  return Array.from(document.querySelectorAll('form')).find(function(form){
+   var field=form.querySelector('input[name="action"]');
+   return field && field.value===action;
+  }) || null;
+ }
+
+ function prepareForm(form,label){
+  if(!form) return null;
+  if(typeof form.checkValidity==='function' && !form.checkValidity()){
+   if(typeof form.reportValidity==='function') form.reportValidity();
+   throw new Error('Bitte prüfe die Eingaben im Bereich „'+label+'“.');
+  }
+
+  // Die einzelnen Arbeitsblöcke bereiten beim submit ihre dynamischen Felder
+  // (Sortierung, Array-Namen usw.) vor. Wir lösen genau diese bestehende
+  // Submit-Logik aus, verhindern aber die normale Navigation des Browsers.
+  var prevent=function(event){ event.preventDefault(); };
+  form.addEventListener('submit',prevent,true);
+  try{
+   form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
+  } finally {
+   form.removeEventListener('submit',prevent,true);
+  }
+
+  if(typeof form.checkValidity==='function' && !form.checkValidity()){
+   if(typeof form.reportValidity==='function') form.reportValidity();
+   throw new Error('Bitte prüfe die Eingaben im Bereich „'+label+'“.');
+  }
+  return new FormData(form);
+ }
+
+ async function saveForm(form,label){
+  var payload=prepareForm(form,label);
+  if(!payload) return;
+  var response=await fetch(form.action,{method:(form.method||'post').toUpperCase(),body:payload,credentials:'same-origin',redirect:'follow'});
+  if(!response.ok) throw new Error('„'+label+'“ konnte nicht gespeichert werden.');
+ }
+
+ function reloadAsSaved(){
+  var url=new URL(window.location.href);
+  ['saved','tasks_saved','shifts_saved','catering_saved','template_saved','event_all_saved'].forEach(function(key){ url.searchParams.delete(key); });
+  url.searchParams.set('event_all_saved','1');
+  url.hash='vtp-event-finalize';
+  window.location.assign(url.toString());
+ }
+
+ async function saveEntireEvent(button,status){
+  var steps=[
+   ['vtp_save_event','Veranstaltungsdaten'],
+   ['vtp_save_event_tasks','Aufgaben'],
+   ['vtp_save_event_catering','Bewirtung'],
+   // Helferschichten bewusst vor dem Ablaufplan speichern. Der Ablaufplan
+   // synchronisiert danach Aufbau/Abbau und darf nicht von einem älteren
+   // Schichtformular wieder überschrieben werden.
+   ['vtp_save_event_shifts','Helferschichten'],
+   ['vtp_save_event_items','Ablaufplan und Programmpunkte']
+  ];
+
+  var forms=steps.map(function(step){ return [findFormByAction(step[0]),step[1]]; }).filter(function(step){ return !!step[0]; });
+  if(!forms.length){
+   status.textContent='Es wurden keine speicherbaren Event-Bereiche gefunden.';
+   status.className='vtp-finalize-save-status is-error';
+   status.hidden=false;
+   return;
+  }
+
+  var original=button.textContent;
+  button.disabled=true;
+  button.setAttribute('aria-busy','true');
+  button.textContent='Event wird gespeichert …';
+  status.hidden=true;
+
+  try{
+   for(var i=0;i<forms.length;i++) await saveForm(forms[i][0],forms[i][1]);
+   reloadAsSaved();
+  } catch(error){
+   status.textContent=(error && error.message) ? error.message : 'Event konnte nicht vollständig gespeichert werden.';
+   status.className='vtp-finalize-save-status is-error';
+   status.hidden=false;
+   button.disabled=false;
+   button.removeAttribute('aria-busy');
+   button.textContent=original;
+  }
+ }
+
  function enhanceFinalBlock(data){
   var root=document.querySelector('.wrap.vtp');
   if(!root) return;
@@ -56,13 +142,19 @@
 
   var description=document.createElement('p');
   description.className='description vtp-event-finalize-description';
-  description.textContent='Speichere den aktuellen Plan als wiederverwendbare Vorlage, archiviere das Event oder lösche es endgültig.';
+  description.textContent='Speichere den vollständigen aktuellen Arbeitsstand, lege eine wiederverwendbare Vorlage an, archiviere das Event oder lösche es endgültig.';
   card.appendChild(description);
 
   var body=document.createElement('div');
   body.className='vtp-event-finalize-body';
   var actions=document.createElement('div');
   actions.className='vtp-event-finalize-actions';
+
+  var saveButton=document.createElement('button');
+  saveButton.type='button';
+  saveButton.className='button button-primary vtp-finalize-action vtp-finalize-save';
+  saveButton.textContent='Event speichern';
+  actions.appendChild(saveButton);
 
   var templateForm=document.createElement('form');
   templateForm.method='post';
@@ -95,14 +187,27 @@
    actions.appendChild(deleteForm);
   }
 
+  var status=document.createElement('p');
+  status.className='vtp-finalize-save-status';
+  status.hidden=true;
+  body.appendChild(status);
   body.appendChild(actions);
+
+  if(new URL(window.location.href).searchParams.get('event_all_saved')==='1'){
+   var saved=document.createElement('p');
+   saved.className='vtp-finalize-success';
+   saved.textContent='Event vollständig gespeichert.';
+   body.insertBefore(saved,status);
+  }
 
   if(data.templateSaved){
    var success=document.createElement('p');
    success.className='vtp-finalize-success';
    success.textContent='Vorlage gespeichert bzw. aktualisiert.';
-   body.insertBefore(success,actions);
+   body.insertBefore(success,status);
   }
+
+  saveButton.addEventListener('click',function(){ saveEntireEvent(saveButton,status); });
 
   card.appendChild(body);
 
