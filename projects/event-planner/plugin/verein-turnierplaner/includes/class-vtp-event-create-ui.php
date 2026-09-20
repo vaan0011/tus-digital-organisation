@@ -249,6 +249,27 @@ class VTP_Event_Create_UI {
   return true;
  }
 
+ private static function unique_event_slug($name,$event_id=0){
+  global $wpdb;
+  $table=VTP_DB::table('events');
+  $base=sanitize_title($name);
+  if($base==='') $base='event';
+  $base=substr($base,0,180);
+  $slug=$base;
+  $suffix=2;
+  $event_id=absint($event_id);
+
+  while(true){
+   if($event_id){
+    $existing=(int)$wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE slug=%s AND id<>%d LIMIT 1",$slug,$event_id));
+   } else {
+    $existing=(int)$wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE slug=%s LIMIT 1",$slug));
+   }
+   if(!$existing) return $slug;
+   $slug=$base.'-'.$suffix++;
+  }
+ }
+
  public static function save_event(){
   self::verify();
   global $wpdb;
@@ -261,7 +282,7 @@ class VTP_Event_Create_UI {
   $now=current_time('mysql');
   $data=[
    'name'=>$name,
-   'slug'=>sanitize_title($name),
+   'slug'=>self::unique_event_slug($name,$id),
    'description'=>sanitize_textarea_field(wp_unslash($_POST['description']??'')),
    'location'=>sanitize_text_field(wp_unslash($_POST['location']??'')),
    'sponsors'=>self::legacy_sponsor_value($sponsors),

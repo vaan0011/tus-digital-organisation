@@ -23,25 +23,36 @@ class VTP_Events_Overview {
   $edit=absint($_GET['edit_event']??0);
   $view=sanitize_key($_GET['view']??($edit?'active':'active'));
 
-  if($edit || $view!=='active'){
+  if($edit){
    VTP_Event_Create_UI::render_page();
    return;
   }
 
-  self::render_overview();
+  if($view==='active'){
+   self::render_overview();
+   return;
+  }
+
+  if($view==='archive'){
+   self::render_archive();
+   return;
+  }
+
+  VTP_Event_Create_UI::render_page();
  }
 
- private static function render_nav(){
+ private static function render_nav($active=''){
   $items=[
-   ['label'=>'neues Event','url'=>admin_url('admin.php?page=vtp-events&view=new'),'external'=>false],
-   ['label'=>'Veranstaltungskalender','url'=>VTP_Public::calendar_url(),'external'=>true],
-   ['label'=>'Vorlagen','url'=>admin_url('admin.php?page=vtp-events&view=templates'),'external'=>false],
-   ['label'=>'Archiv','url'=>admin_url('admin.php?page=vtp-events&view=archive'),'external'=>false],
+   ['key'=>'new','label'=>'neues Event','url'=>admin_url('admin.php?page=vtp-events&view=new'),'external'=>false],
+   ['key'=>'calendar','label'=>'Veranstaltungskalender','url'=>VTP_Public::calendar_url(),'external'=>true],
+   ['key'=>'templates','label'=>'Vorlagen','url'=>admin_url('admin.php?page=vtp-events&view=templates'),'external'=>false],
+   ['key'=>'archive','label'=>'Archiv','url'=>admin_url('admin.php?page=vtp-events&view=archive'),'external'=>false],
   ];
   echo '<nav class="vtp-event-create-nav" aria-label="Event-Bereiche">';
   foreach($items as $item){
    $target=$item['external']?' target="_blank" rel="noopener noreferrer"':'';
-   echo '<a class="button vtp-event-nav-button"'.$target.' href="'.esc_url($item['url']).'">'.esc_html($item['label']).'</a>';
+   $active_class=$active===$item['key']?' is-active':'';
+   echo '<a class="button vtp-event-nav-button'.esc_attr($active_class).'"'.$target.' href="'.esc_url($item['url']).'">'.esc_html($item['label']).'</a>';
   }
   echo '</nav>';
  }
@@ -74,6 +85,20 @@ class VTP_Events_Overview {
    self::add_operational_counts($event);
   }
   return $rows;
+ }
+
+ private static function load_archived_events(){
+  global $wpdb;
+  $events=VTP_DB::table('events');
+  return $wpdb->get_results(
+   "SELECT * FROM $events
+    WHERE status='archiviert'
+    ORDER BY
+      CASE WHEN start_date IS NULL OR start_date='' OR start_date='0000-00-00' THEN 1 ELSE 0 END,
+      COALESCE(NULLIF(NULLIF(end_date,''),'0000-00-00'),start_date) DESC,
+      start_date DESC,
+      name ASC"
+  ) ?: [];
  }
 
  private static function add_operational_counts($event){
@@ -142,6 +167,33 @@ class VTP_Events_Overview {
   echo '</div></article>';
  }
 
+ private static function render_archived_event_card($event){
+  $event_id=absint($event->id);
+  $location=trim((string)($event->location??''));
+
+  echo '<article class="vtp-event-overview-item is-archived">';
+  echo '<div class="vtp-event-overview-card-head"><h3>'.esc_html($event->name).'</h3><span class="vtp-event-archive-badge">Archiviert</span></div>';
+  echo '<p class="vtp-event-overview-date">'.esc_html(self::format_date_range($event)).'</p>';
+  echo '<p class="vtp-event-overview-location">'.esc_html($location!==''?$location:'Ort noch offen').'</p>';
+  echo '<div class="vtp-event-overview-actions">';
+
+  echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">';
+  wp_nonce_field('vtp_restore_event');
+  echo '<input type="hidden" name="action" value="vtp_restore_event">';
+  echo '<input type="hidden" name="event_id" value="'.esc_attr($event_id).'">';
+  echo '<button type="submit" class="button button-primary vtp-event-restore-button">Event wiederherstellen</button>';
+  echo '</form>';
+
+  echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'" onsubmit="return confirm(&quot;Event wirklich endgültig löschen? Diese Aktion kann nicht rückgängig gemacht werden.&quot;);">';
+  wp_nonce_field('vtp_delete_event');
+  echo '<input type="hidden" name="action" value="vtp_delete_event">';
+  echo '<input type="hidden" name="event_id" value="'.esc_attr($event_id).'">';
+  echo '<button type="submit" class="button vtp-event-danger-button">Event dauerhaft löschen</button>';
+  echo '</form>';
+
+  echo '</div></article>';
+ }
+
  private static function render_column($title,$events,$state){
   echo '<section class="vtp-event-overview-column">';
   echo '<h2>'.esc_html($title).'</h2>';
@@ -173,5 +225,25 @@ class VTP_Events_Overview {
   self::render_column('Aktive Veranstaltungen',$active,'active');
   self::render_column('Geplante Veranstaltungen',$planned,'planned');
   echo '</div></div></div>';
+ }
+
+ private static function render_archive(){
+  $events=self::load_archived_events();
+
+  echo '<div class="wrap vtp vtp-modern vtp-event-create-page vtp-events-overview-page vtp-events-archive-page">';
+  echo '<h1>Events: TuS Veranstaltungen</h1>';
+  echo '<p class="description vtp-event-create-subtitle">Archivierte Veranstaltungen verwalten oder wiederherstellen</p>';
+  self::render_nav('archive');
+  echo '<section class="vtp-card vtp-events-overview-shell vtp-events-archive-shell">';
+  echo '<div class="vtp-event-overview-column">';
+  echo '<h2>Archivierte Veranstaltungen</h2>';
+  echo '<p class="description vtp-events-archive-description">Archivierte Events bleiben mit ihrer Planung erhalten und können wiederhergestellt oder dauerhaft gelöscht werden.</p>';
+  echo '<div class="vtp-event-overview-list vtp-events-archive-list">';
+  if(!$events){
+   echo '<div class="vtp-event-overview-empty">Noch keine archivierten Events vorhanden.</div>';
+  } else {
+   foreach($events as $event) self::render_archived_event_card($event);
+  }
+  echo '</div></div></section></div>';
  }
 }

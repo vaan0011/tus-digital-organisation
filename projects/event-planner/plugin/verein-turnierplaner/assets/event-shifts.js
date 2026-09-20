@@ -18,7 +18,17 @@
   var m=/^(\d{2}):(\d{2})$/.exec(value||'');
   return m ? Number(m[1])*60+Number(m[2]) : NaN;
  }
- function minutesToTime(value){ return pad(Math.floor(value/60))+':'+pad(value%60); }
+ function minutesToTime(value){
+  var normalized=((value%1440)+1440)%1440;
+  return pad(Math.floor(normalized/60))+':'+pad(normalized%60);
+ }
+ function addDaysToDate(value,days){
+  var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(value||'');
+  if(!m) return value||'';
+  var date=new Date(Date.UTC(Number(m[1]),Number(m[2])-1,Number(m[3])));
+  date.setUTCDate(date.getUTCDate()+Number(days||0));
+  return date.getUTCFullYear()+'-'+pad(date.getUTCMonth()+1)+'-'+pad(date.getUTCDate());
+ }
 
  function progressCard(label){
   return Array.from(document.querySelectorAll('.vtp-event-progress-card')).find(function(card){
@@ -152,7 +162,7 @@
   var panel=el('div','vtp-shift-generator');
   panel.hidden=true;
   panel.appendChild(el('h3','', 'Schichtserie generieren'));
-  panel.appendChild(el('p','description','Erzeuge mehrere aufeinanderfolgende Schichten für denselben Bereich. Die erzeugten Zeilen können vor dem Speichern einzeln angepasst werden.'));
+  panel.appendChild(el('p','description','Erzeuge mehrere aufeinanderfolgende Schichten für denselben Bereich. Start und Ende werden – sofern vorhanden – aus dem Programm des gewählten Tages vorbelegt.'));
 
   var grid=el('div','vtp-shift-generator-grid');
   var area=field('Bereich / Aufgabe','text','generatorArea','',{placeholder:'z. B. Ausschank'});
@@ -178,9 +188,31 @@
   grid.appendChild(custom);
   panel.appendChild(grid);
 
+  var programHint=el('p','description vtp-shift-program-hint','');
+  panel.appendChild(programHint);
   var error=el('p','vtp-shift-generator-error'); error.hidden=true; panel.appendChild(error);
   var apply=el('button','button button-primary vtp-shift-generate-apply','Serie übernehmen');
   apply.type='button'; panel.appendChild(apply);
+
+  var dateInput=date.querySelector('[data-field="generatorDate"]');
+  var startInput=start.querySelector('[data-field="generatorStart"]');
+  var endInput=end.querySelector('[data-field="generatorEnd"]');
+
+  function applyProgramWindow(dateValue){
+   var windowData=(data.programWindows||{})[dateValue];
+   if(windowData && windowData.start && windowData.end){
+    startInput.value=windowData.start;
+    endInput.value=windowData.end;
+    programHint.textContent='Aus dem Programm übernommen: '+windowData.start+'–'+windowData.end+' Uhr'+(windowData.endNextDay?' (Folgetag)':'')+'. Du kannst beide Zeiten jederzeit anpassen.';
+   } else {
+    startInput.value='';
+    endInput.value='';
+    programHint.textContent='Für diesen Tag sind noch keine vollständigen Programmzeiten hinterlegt. Bitte Von/Bis manuell festlegen.';
+   }
+  }
+
+  if(dateInput) dateInput.addEventListener('change',function(){ applyProgramWindow(dateInput.value); });
+  applyProgramWindow(dateInput?dateInput.value:'');
 
   select.addEventListener('change',function(){ custom.hidden=select.value!=='custom'; });
   apply.addEventListener('click',function(){
@@ -192,14 +224,28 @@
    var message='';
    if(!areaValue) message='Bitte einen Bereich oder eine Aufgabe angeben.';
    else if(!dateValue) message='Bitte ein Datum auswählen.';
-   else if(!Number.isFinite(from)||!Number.isFinite(to)||to<=from) message='Bitte einen gültigen Zeitraum angeben.';
+   else if(!Number.isFinite(from)||!Number.isFinite(to)||to===from) message='Bitte einen gültigen Zeitraum angeben.';
    else if(!Number.isFinite(block)||block<15) message='Bitte eine gültige Blocklänge ab 15 Minuten wählen.';
    if(message){ error.textContent=message; error.hidden=false; return; }
    error.hidden=true;
+
+   // Liegt "Bis" vor "Von", ist damit bewusst der Folgetag gemeint,
+   // z. B. 20:00 bis 02:00 Uhr.
+   if(to<from) to+=1440;
+
    var generated=[];
    for(var cursor=from;cursor<to;cursor+=block){
     var next=Math.min(cursor+block,to);
-    generated.push({area:areaValue,date:dateValue,start:minutesToTime(cursor),end:minutesToTime(next),slots:slotsValue,group:groupValue,signups:0});
+    var dayOffset=Math.floor(cursor/1440);
+    generated.push({
+     area:areaValue,
+     date:addDaysToDate(dateValue,dayOffset),
+     start:minutesToTime(cursor),
+     end:minutesToTime(next),
+     slots:slotsValue,
+     group:groupValue,
+     signups:0
+    });
    }
    onGenerate(generated);
   });

@@ -2,96 +2,117 @@
 
 ## Purpose
 
-Dieses Dokument beschreibt den aktuellen Arbeitsstandard für die Helferschichtplanung innerhalb eines Events.
+Dieses Dokument beschreibt den verbindlichen Arbeitsstandard für die Helferschichtplanung innerhalb eines Events.
 
-Die Helferschichten sind Bestandteil der Eventplanung und verwenden die bestehenden persistenten Tabellen `vtp_shifts` und `vtp_shift_signups`. Es wird keine zweite parallele Schichtdatenquelle aufgebaut.
+Die Helferschichten verwenden die bestehenden persistenten Tabellen `vtp_shifts` und `vtp_shift_signups`. Es wird keine zweite parallele Schichtdatenquelle aufgebaut.
 
 ## Core Principle
 
-**Schichten werden direkt am Event geplant, können einzeln angelegt oder als Serie erzeugt werden und bleiben anschließend vollständig editierbar.**
+**Schichten werden direkt am Event geplant, aus bereits vorhandenen Eventdaten sinnvoll vorbelegt und bleiben anschließend vollständig editierbar.**
 
-Die Personeneintragung erfolgt auf derselben persistenten Schichtbasis. Planung und tatsächliche Anmeldung bleiben damit miteinander verbunden.
+Doppelte Eingaben werden vermieden. Informationen, die bereits im Ablaufplan vorhanden sind, werden für die Schichtplanung wiederverwendet.
 
-## V1-Arbeitsablauf
+## Moderner Event-Workflow
 
-Im Event-Bearbeitungsscreen befindet sich unterhalb von `Aufgaben und Organisation` der aufklappbare Block `Helferschichten`.
+Im Event-Bearbeitungsscreen befindet sich der aufklappbare Block `Helferschichten`.
 
-### Schicht manuell hinzufügen
+Er ist die einzige aktive Schichtplanung im modernen Event-Workflow.
 
-`Schicht hinzufügen` erzeugt eine neue editierbare Zeile.
+Die früheren Blöcke
 
-Eine Schicht enthält:
+- `Helferbedarf für das Event`,
+- `Helferschichten generieren`,
+- `Schichtübersicht`
+
+werden dort nicht mehr angezeigt. Die alten Tabellen und Handler bleiben vorerst ausschließlich aus Rückwärtskompatibilität im Plugin erhalten.
+
+## Schicht manuell hinzufügen
+
+`Schicht hinzufügen` erzeugt eine direkt editierbare Zeile mit:
 
 - Bereich / Aufgabe,
 - Datum,
 - Startzeit,
 - Endzeit,
-- benötigte Helfer,
-- optionale Zuordnung zu Mannschaft / Abteilung / Gruppe,
-- aktuelle Belegung,
+- benötigten Helfern,
+- optionaler Zuordnung zu Mannschaft / Abteilung / Gruppe,
+- aktueller Belegung,
 - Löschen-Aktion.
 
-Alle Felder werden direkt bearbeitet. Es gibt keinen separaten Mini-Editmodus pro Zeile.
+Es gibt keinen separaten Mini-Editmodus pro Zeile. Gespeichert wird zentral über `Helferschichten speichern`.
 
-Gespeichert wird zentral über `Helferschichten speichern`.
+## Aufbau und Abbau
 
-### Schichtserie generieren
+Aufbau und Abbau bleiben im Ablaufplan **eigene organisatorische Tagesrollen** und sind keine Programmpunkte.
+
+Sobald für einen Aufbau- oder Abbau-Container Datum und Uhrzeit gepflegt sind, wird automatisch eine zugehörige Helferschicht bereitgestellt. Ein zusätzlicher `Übernehmen`-Klick ist nicht erforderlich.
+
+Automatisch aus dem Ablaufplan übernommen werden:
+
+- Bereich / Aufgabe = `Aufbau` bzw. `Abbau`,
+- Datum,
+- Startzeit.
+
+Bei der erstmaligen automatischen Anlage gelten als editierbare Startwerte:
+
+- Endzeit = Startzeit + 2 Stunden,
+- benötigte Helfer = 2.
+
+Endzeit, Helferzahl und Zuordnung können danach im Helferschicht-Block angepasst werden.
+
+Die technische Verknüpfung erfolgt persistent über `source_type` und `source_ref` an der Schicht. Dadurch werden Aufbau/Abbau nicht doppelt erzeugt und Änderungen von Datum oder Startzeit können eindeutig dem zugehörigen Tagescontainer folgen.
+
+Wird ein Aufbau-/Abbau-Container aus dem Ablaufplan entfernt, wird eine automatisch erzeugte Schicht ohne Anmeldungen ebenfalls entfernt. Existieren bereits Anmeldungen, bleibt die Schicht aus Gründen der Datenintegrität bestehen und wird nur von der Ablaufplan-Quelle entkoppelt.
+
+## Schichtserie generieren
 
 `Schichtserie generieren` erzeugt mehrere aufeinanderfolgende Schichten für denselben Bereich.
 
-Eingaben:
+Der gewünschte Tag wird **nicht über einen freien Date-Picker**, sondern über das Feld `Programmtag` ausgewählt. Angeboten werden ausschließlich reguläre Eventtage, für die im Ablaufplan ein vollständiger Programmzeitraum mit Start- und Endzeit vorhanden ist. Aufbau und Abbau erscheinen nicht in dieser Auswahl, weil sie als eigene organisatorische Schichten automatisch synchronisiert werden.
 
-- Bereich / Aufgabe,
-- Datum,
-- Zeitraum von / bis,
-- Blocklänge,
-- Helfer je Schicht,
-- optionale Zuordnung.
+Die Programmtage werden chronologisch angeboten, z. B.:
 
-Beispiel:
+- `Sonntag, 04.10.2026`,
+- `Montag, 05.10.2026`.
 
-`Ausschank`, 14:00–22:00, Blocklänge 120 Minuten, 3 Helfer je Schicht
+Der erste verfügbare Programmtag ist beim Öffnen des Generators vorausgewählt. Für den gewählten Programmtag werden `Von` und `Bis` automatisch aus dem Programm vorbelegt:
 
-erzeugt:
+- `Von` = früheste Startzeit eines regulären Programmpunkts,
+- `Bis` = späteste Endzeit eines regulären Programmpunkts,
+- Aufbau und Abbau zählen dabei ausdrücklich nicht als Programmpunkte.
 
-- 14:00–16:00,
-- 16:00–18:00,
-- 18:00–20:00,
-- 20:00–22:00.
+Beim Wechsel des Programmtags werden die Zeitvorschläge sofort aktualisiert. Die Zeiten bleiben Vorschläge und können vor der Generierung verändert werden.
 
-Die erzeugten Zeilen sind vor dem Speichern normal editierbar.
+Gibt es noch keinen Programmtag mit vollständigem Start- und Endzeitfenster, zeigt die Auswahl `Noch keine Programmtage verfügbar`. Einzelne Helferschichten können weiterhin unabhängig davon manuell angelegt werden.
 
-Die Generierung ersetzt keine bestehenden Schichten automatisch.
+Eine Endzeit vor der Startzeit bedeutet Folgetag. Beispiel: `20:00–02:00` läuft bis 02:00 Uhr des nächsten Kalendertags. Nach Mitternacht beginnende generierte Schichten erhalten automatisch das Datum des Folgetags.
+
+Die erzeugten Zeilen sind vor dem Speichern normal editierbar. Bestehende Schichten werden durch die Generierung nicht automatisch ersetzt.
 
 ## Persistenz
 
 Die fachliche Quelle für konkrete Helferschichten ist `vtp_shifts`.
 
-Die benötigte Helferzahl einer konkreten Schicht liegt in `slots_needed`.
+Die benötigte Helferzahl liegt in `slots_needed`. Helferanmeldungen werden über `vtp_shift_signups` mit der Schicht verknüpft.
 
-Öffentliche oder interne Helferanmeldungen werden über `vtp_shift_signups` mit der jeweiligen Schicht verknüpft.
+Bestehende Anmeldungen bleiben bei normaler Schichtbearbeitung erhalten. Beim bewussten Löschen einer bereits belegten Schicht warnt das UI vor dem Datenverlust.
 
-Bestehende Anmeldungen bleiben erhalten, wenn eine Schicht bearbeitet wird.
-
-Wird eine bereits belegte Schicht bewusst gelöscht, wird im UI vor dem Entfernen gewarnt. Beim anschließenden Speichern werden die zugehörigen Anmeldungen ebenfalls gelöscht.
+Schichten dürfen über Mitternacht laufen. `shift_date` bleibt das Startdatum der Schicht.
 
 ## Zuordnung zu Mannschaften / Abteilungen
 
-`assigned_group` bleibt die optionale Zuordnung einer Schicht.
+`assigned_group` ist die optionale Zuordnung einer Schicht.
 
-Damit können Schichten später beispielsweise einer Mannschaft, Abteilung oder sonstigen Gruppe zur Besetzung zugewiesen und über gruppenspezifische Helferansichten gefiltert werden.
-
-V1 verwendet dafür bewusst noch ein freies Textfeld. Eine zentrale Auswahl aus dem späteren Mannschafts-/Organisationsmodell wird erst eingeführt, wenn diese Quelle verbindlich verfügbar ist.
+V1 verwendet dafür noch ein freies Textfeld. Eine zentrale Auswahl aus dem späteren Mannschafts-/Organisationsmodell wird erst eingeführt, wenn diese Quelle verbindlich verfügbar ist.
 
 ## Fortschrittskacheln
 
-Die bestehenden Statuskacheln werden aus den realen Schichtdaten abgeleitet.
+Die Statuskacheln werden aus den realen Schichtdaten abgeleitet.
 
 ### Schichten
 
-- `0/0` = noch nicht geplant,
-- Schichten vorhanden, aber keine vollständig belegt = geplant,
-- teilweise vollständig belegt = Warn-/Zwischenzustand,
+- keine Schichten = noch nicht geplant,
+- Schichten vorhanden, aber nicht vollständig belegt = geplant / offen,
 - alle Schichten vollständig belegt = grün / belegt.
 
 ### Helfer
@@ -100,32 +121,17 @@ Die bestehenden Statuskacheln werden aus den realen Schichtdaten abgeleitet.
 - organisiert = vorhandene Anmeldungen, maximal bis zum jeweiligen Bedarf gezählt,
 - alle Plätze besetzt = grün / organisiert.
 
-Die Kachelwerte werden nicht separat manuell gepflegt.
-
-## Verhältnis zum alten Helferbedarf
-
-Die bestehende Tabelle `vtp_helper_needs` und die ältere Helferschicht-Verwaltungsseite bleiben vorerst aus Kompatibilitätsgründen erhalten.
-
-Im modernen Event-Bearbeitungsfluss wird der konkrete Schichtbedarf jedoch direkt über `vtp_shifts.slots_needed` gepflegt. Es soll keine doppelte Eingabe desselben konkreten Schichtbedarfs entstehen.
-
-Eine spätere Bereinigung der alten Helferbedarf-/Generatorlogik erfolgt separat, nachdem der neue Workflow im realen Einsatz bestätigt wurde.
+Die Werte werden nicht separat manuell gepflegt.
 
 ## Öffentliche Helferanmeldung
 
-Die vorhandene öffentliche Helferanmeldung liest bereits aus `vtp_shifts` und `vtp_shift_signups`.
+Die vorhandene öffentliche Helferanmeldung liest aus `vtp_shifts` und `vtp_shift_signups`.
 
-Neu im Event-Bearbeitungsscreen angelegte oder generierte Schichten können deshalb ohne zweite Datenpflege in dieser öffentlichen Ansicht verwendet werden.
+Im Event-Bearbeitungsscreen angelegte, generierte oder aus Aufbau/Abbau automatisch synchronisierte Schichten stehen damit auf derselben persistenten Basis für die Helferanmeldung zur Verfügung.
 
-Der öffentliche Helfer-Workflow selbst ist nicht Bestandteil dieser V1-Änderung und wird als nächster eigener Arbeitsblock weiterentwickelt.
+## Bewusst noch nicht Bestandteil
 
-## Nicht Bestandteil von V1
-
-- wiederkehrende Schichten über mehrere Tage mit einem Klick,
-- automatisches Ableiten von Schichten aus Programmpunkten,
-- automatische Mannschafts-/Abteilungsauswahl,
-- Prioritäten,
-- Check-in / tatsächlich geleistete Stunden,
-- automatischer Sollstunden-/Beitragsrabatt,
+- zentrale Mannschafts-/Abteilungsauswahl,
+- Check-in und tatsächlich geleistete Stunden,
+- personenzentrierte Jahres-/Rabattlogik,
 - automatische Eskalation offener Schichten.
-
-Diese Punkte werden erst ergänzt, wenn der Grundworkflow belastbar funktioniert.

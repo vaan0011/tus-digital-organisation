@@ -43,6 +43,86 @@ class VTP_Event_Shifts {
    ];
   }
 
+  // Pro Eventtag den realen Programmzeitraum als Default für die Schichtserie ermitteln.
+  // Aufbau/Abbau sind keine Programmpunkte und fließen deshalb bewusst nicht ein.
+  $items=VTP_DB::table('event_items');
+  $days=VTP_DB::table('event_days');
+  $program_rows=$wpdb->get_results($wpdb->prepare(
+   "SELECT i.item_date,i.start_time,i.end_time
+    FROM $items i
+    LEFT JOIN $days d ON d.id=i.event_day_id
+    WHERE i.event_id=%d
+      AND i.item_date IS NOT NULL
+      AND i.item_date<>''
+      AND COALESCE(i.item_type,'') NOT IN ('Aufbau','Abbau')
+      AND (d.id IS NULL OR d.day_type='event')
+    ORDER BY i.item_date,i.start_time,i.sort_order,i.id",
+   $event_id
+  ));
+
+  $window_minutes=[];
+  foreach($program_rows?:[] as $item){
+   $date=(string)$item->item_date;
+   $start=substr((string)$item->start_time,0,5);
+   $end=substr((string)$item->end_time,0,5);
+   if(!VTP_Plugin::is_valid_event_date($date) || !self::valid_time($start)) continue;
+
+   $start_minutes=self::time_minutes($start);
+   if(!isset($window_minutes[$date])){
+    $window_minutes[$date]=['start'=>$start_minutes,'end'=>null];
+   } else {
+    $window_minutes[$date]['start']=min($window_minutes[$date]['start'],$start_minutes);
+   }
+
+   if(self::valid_time($end)){
+    $end_minutes=self::time_minutes($end);
+    if($end_minutes<$start_minutes) $end_minutes+=DAY_IN_SECONDS/60;
+    if($end_minutes>$start_minutes){
+     if($window_minutes[$date]['end']===null || $end_minutes>$window_minutes[$date]['end']){
+      $window_minutes[$date]['end']=$end_minutes;
+     }
+    }
+   }
+  }
+
+  $program_windows=[];
+  foreach($window_minutes as $date=>$window){
+   if($window['end']===null) continue;
+   $start_minutes=(int)$window['start'];
+   $end_minutes=(int)$window['end'];
+   $program_windows[$date]=[
+    'start'=>sprintf('%02d:%02d',intdiv($start_minutes,60)%24,$start_minutes%60),
+    'end'=>sprintf('%02d:%02d',intdiv($end_minutes,60)%24,$end_minutes%60),
+    'endNextDay'=>$end_minutes>=1440,
+   ];
+  }
+
+  // Aufbau und Abbau sind organisatorische Tagesrollen. Wenn Datum und Uhrzeit
+  // gepflegt sind, können sie im Helferblock explizit als Schicht übernommen werden.
+  $operation_rows=$wpdb->get_results($wpdb->prepare(
+   "SELECT id,event_date,day_type,day_time,sort_order
+    FROM $days
+    WHERE event_id=%d AND day_type IN ('setup','teardown')
+    ORDER BY event_date,
+      CASE day_type WHEN 'setup' THEN 0 ELSE 2 END,
+      sort_order,id",
+   $event_id
+  ));
+  $operation_candidates=[];
+  foreach($operation_rows?:[] as $day){
+   $date=(string)$day->event_date;
+   $time=substr((string)$day->day_time,0,5);
+   if(!VTP_Plugin::is_valid_event_date($date) || !self::valid_time($time)) continue;
+   $type=$day->day_type==='setup'?'setup':'teardown';
+   $operation_candidates[]=[
+    'dayId'=>absint($day->id),
+    'type'=>$type,
+    'label'=>$type==='setup'?'Aufbau':'Abbau',
+    'date'=>$date,
+    'start'=>$time,
+   ];
+  }
+
   wp_enqueue_style('vtp-event-shifts',VTP_URL.'assets/event-shifts.css',['vtp-event-tasks'],VTP_VERSION);
   wp_enqueue_script('vtp-event-shifts',VTP_URL.'assets/event-shifts.js',['vtp-event-tasks'],VTP_VERSION,true);
   wp_localize_script('vtp-event-shifts','VTPEventShifts',[
@@ -52,6 +132,8 @@ class VTP_Event_Shifts {
    'actionUrl'=>admin_url('admin-post.php'),
    'nonce'=>wp_create_nonce('vtp_save_event_shifts_'.$event_id),
    'shifts'=>$shifts,
+   'programWindows'=>$program_windows,
+   'operationShiftCandidates'=>$operation_candidates,
   ]);
  }
 
@@ -103,7 +185,9 @@ class VTP_Event_Shifts {
    if($area==='') wp_die('Bitte für jede Helferschicht einen Bereich oder eine Aufgabe angeben.');
    if(!VTP_Plugin::is_valid_event_date($date)) wp_die('Bitte für jede Helferschicht ein gültiges Datum angeben.');
    if(!self::valid_time($start) || !self::valid_time($end)) wp_die('Bitte für jede Helferschicht gültige Start- und Endzeiten angeben.');
-   if(self::time_minutes($end)<=self::time_minutes($start)) wp_die('Das Ende einer Helferschicht muss nach ihrem Beginn liegen.');
+   // Eine kleinere Endzeit bedeutet bewusst: Ende am Folgetag, z. B. 22:00–02:00.
+   // Gleiche Start-/Endzeit bleibt ungültig, damit nicht versehentlich eine 24h-Schicht entsteht.
+   if(self::time_minutes($end)===self::time_minutes($start)) wp_die('Start- und Endzeit einer Helferschicht dürfen nicht identisch sein.');
 
    $validated[]=[
     'id'=>$id,

@@ -1,0 +1,10 @@
+.vtp-event-linked-tournament-list{display:flex;flex-direction:column;gap:10px;width:100%;margin:0 0 16px}
+.vtp-event-linked-tournament-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid var(--vtp-border,#dfe5ef);border-radius:10px;background:#fbfcfe}
+.vtp-event-linked-tournament-content{min-width:0}
+.vtp-event-linked-tournament-content strong{display:block;font-size:15px;line-height:1.3;color:#111827}
+.vtp-event-linked-tournament-content span{display:block;margin-top:4px;font-size:13px;line-height:1.35;color:var(--vtp-muted,#667085)}
+.vtp-event-edit-summary-card .vtp-event-linked-tournament-open{margin-top:0!important;min-height:40px;padding:0 14px!important;white-space:nowrap}
+.vtp-event-linked-tournament-empty{margin:0 0 16px!important;color:var(--vtp-muted,#667085)}
+.vtp-event-linked-tournament-actions{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:2px}
+.vtp-event-edit-summary-card .vtp-event-linked-tournament-actions .button{margin-top:0!important}
+@media(max-width:782px){.vtp-event-linked-tournament-item{grid-template-columns:1fr}.vtp-event-edit-summary-card .vtp-event-linked-tournament-open{width:100%;min-height:44px}.vtp-event-linked-tournament-actions,.vtp-event-linked-tournament-actions .button{width:100%}}
