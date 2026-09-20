@@ -68,13 +68,22 @@ Wird ein Aufbau-/Abbau-Container aus dem Ablaufplan entfernt, wird eine automati
 
 `Schichtserie generieren` erzeugt mehrere aufeinanderfolgende Schichten für denselben Bereich.
 
-Für den gewählten regulären Eventtag werden `Von` und `Bis` automatisch aus dem Programm vorbelegt:
+Der gewünschte Tag wird **nicht über einen freien Date-Picker**, sondern über das Feld `Programmtag` ausgewählt. Angeboten werden ausschließlich reguläre Eventtage, für die im Ablaufplan ein vollständiger Programmzeitraum mit Start- und Endzeit vorhanden ist. Aufbau und Abbau erscheinen nicht in dieser Auswahl, weil sie als eigene organisatorische Schichten automatisch synchronisiert werden.
+
+Die Programmtage werden chronologisch angeboten, z. B.:
+
+- `Sonntag, 04.10.2026`,
+- `Montag, 05.10.2026`.
+
+Der erste verfügbare Programmtag ist beim Öffnen des Generators vorausgewählt. Für den gewählten Programmtag werden `Von` und `Bis` automatisch aus dem Programm vorbelegt:
 
 - `Von` = früheste Startzeit eines regulären Programmpunkts,
 - `Bis` = späteste Endzeit eines regulären Programmpunkts,
 - Aufbau und Abbau zählen dabei ausdrücklich nicht als Programmpunkte.
 
-Die Zeiten bleiben Vorschläge und können vor der Generierung verändert werden.
+Beim Wechsel des Programmtags werden die Zeitvorschläge sofort aktualisiert. Die Zeiten bleiben Vorschläge und können vor der Generierung verändert werden.
+
+Gibt es noch keinen Programmtag mit vollständigem Start- und Endzeitfenster, zeigt die Auswahl `Noch keine Programmtage verfügbar`. Einzelne Helferschichten können weiterhin unabhängig davon manuell angelegt werden.
 
 Eine Endzeit vor der Startzeit bedeutet Folgetag. Beispiel: `20:00–02:00` läuft bis 02:00 Uhr des nächsten Kalendertags. Nach Mitternacht beginnende generierte Schichten erhalten automatisch das Datum des Folgetags.
 
