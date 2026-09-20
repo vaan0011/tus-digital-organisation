@@ -34,6 +34,16 @@ Damit gilt als feste Reihenfolge:
 
 `Veranstaltungsdaten → Aufgaben → Bewirtung → Helferschichten → Ablaufplan`
 
+## Technische Save-Logik
+
+Die vorhandenen WordPress-Save-Handler antworten nach erfolgreichem Speichern mit einem Redirect zurück zur jeweiligen Eventansicht.
+
+Beim globalen Speichern wird diesem Redirect bewusst **nicht** gefolgt. Der Redirect selbst gilt als Erfolgssignal des jeweiligen bestehenden Save-Handlers.
+
+Damit wird verhindert, dass die vollständige Eventseite zwischen den einzelnen Speicherschritten mehrfach im Hintergrund neu gerendert wird. Erst nachdem alle Bereiche erfolgreich gespeichert wurden, lädt der Browser die Eventseite genau einmal neu aus der Datenbank.
+
+Antwortet ein Save-Handler dagegen mit einem echten Fehlerstatus, wird der Gesamtspeicher abgebrochen. Soweit möglich wird die konkrete Servermeldung zusätzlich zur betroffenen Bereichsbezeichnung angezeigt.
+
 ## UX
 
 Im Block `Event abschließen` steht `Event speichern` ganz links als primäre blaue Aktion.
@@ -48,7 +58,7 @@ Nach erfolgreichem Abschluss wird die Eventseite neu aus der Datenbank geladen u
 
 `Event vollständig gespeichert.`
 
-Schlägt ein Bereich fehl, wird keine falsche Gesamterfolgsbestätigung angezeigt. Stattdessen erscheint eine Fehlermeldung mit dem betroffenen Bereich.
+Schlägt ein Bereich fehl, wird keine falsche Gesamterfolgsbestätigung angezeigt. Stattdessen erscheint eine Fehlermeldung mit dem betroffenen Bereich und – soweit vom Server geliefert – der konkreten Ursache.
 
 ## Relationship
 
