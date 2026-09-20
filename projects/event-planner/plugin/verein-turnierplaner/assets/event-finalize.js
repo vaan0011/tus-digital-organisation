@@ -67,20 +67,25 @@
   var payload=prepareForm(form,label);
   if(!payload) return;
 
-  // Erfolgreiche WordPress-Save-Handler antworten mit einem Redirect zurück zur
-  // Eventseite. Beim Gesamtspeicher folgen wir diesem Redirect bewusst nicht:
-  // Sonst würde die komplette Eventseite nach jedem einzelnen Block im
-  // Hintergrund neu gerendert. Der Redirect selbst ist bereits das
-  // Erfolgssignal des bestehenden Save-Handlers.
+  // WordPress-Save-Handler antworten mit einem Redirect zurück zur Eventseite.
+  // Browser behandeln redirect:'manual' bei gleichartigen Admin-POSTs nicht
+  // einheitlich: insbesondere Safari kann statt eines erkennbaren Redirects
+  // eine nicht erfolgreiche HTML-Antwort liefern. Deshalb folgen wir dem
+  // Redirect und werten die erfolgreiche Zielseite als Save-Erfolg.
   var response=await fetch(form.action,{
    method:(form.method||'post').toUpperCase(),
    body:payload,
    credentials:'same-origin',
-   redirect:'manual'
+   redirect:'follow'
   });
 
-  if(response.type==='opaqueredirect' || (response.status>=300 && response.status<400)) return;
   if(response.ok) return;
+  if(response.redirected){
+   try{
+    var target=new URL(response.url,window.location.href);
+    if(target.origin===window.location.origin && target.pathname.indexOf('/wp-admin/admin.php')!==-1 && target.searchParams.get('page')==='vtp-events') return;
+   } catch(e){}
+  }
 
   var detail=await responseErrorDetail(response);
   throw new Error('„'+label+'“ konnte nicht gespeichert werden.'+(detail?' '+detail:''));
