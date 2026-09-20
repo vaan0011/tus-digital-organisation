@@ -10,9 +10,9 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 ## Current Goal
 
-Das operative Dashboard V1 und der erste Bereich `TuS Eventhistorie` sind auf `main` umgesetzt.
+Der vollständige Event-Workflow einschließlich wiederverwendbarer Vorlagen ist auf `main` umgesetzt. Ein kompakter manueller End-to-End-Smoke-Test wurde am 20.09.2026 erfolgreich durchgeführt.
 
-Der nächste unmittelbare Projektfokus ist die manuelle Verifikation dieses aktuellen Stands im WordPress Playground. Danach wird die dokumentierte Event-Anlegen-UI in kleinen, persistenten und überprüfbaren Änderungen umgesetzt.
+Der nächste unmittelbare Projektfokus ist die Absicherung der beim gezielten Code-Audit gefundenen Datenintegritätsrisiken und anschließend die manuelle Regression dieser Korrekturen.
 
 Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
@@ -22,9 +22,7 @@ Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
 Die vom Nutzer bereitgestellten Mockups definieren Aufbau, Informationshierarchie und Vereinfachungsrichtung. Sie sind ausdrücklich **keine Farbquelle**; Farben und Komponenten bleiben an die bestehenden Event-Planner-/TuS-UI-Standards gebunden.
 
-Die automatisierten Preview- und Packaging-Workflows für PR #52, #58 und #61 waren erfolgreich. Das belegt die technische Integration, ersetzt aber noch nicht die manuelle Funktions- und Abnahmeprüfung.
-
-Der Baseline-Smoke-Test ist für den aktuellen Plugin-Stand weiterhin nicht vollständig abgeschlossen. Deshalb bleibt der formale Last Known Good offen.
+Die manuelle Prüfung bestätigte Event-Speichern, Vorlagen erstellen und verwenden, Schichten/Arbeitslisten, Turnierverknüpfung, Archivieren/Wiederherstellen und die mobile Darstellung. Der vollständige formale Test nach `SMOKE-TEST.md` ist damit noch nicht ersetzt; der formale Last Known Good bleibt offen.
 
 Langfristiges fachliches Zielbild:
 
@@ -38,13 +36,13 @@ Projektpfad:
 
 Aktuell dokumentierte Plugin-Version:
 
-`3.7.1`
+`3.8.45`
 
 Versionsstand:
 
-- Plugin-Header: `3.7.1`
-- `VTP_VERSION`: `3.7.1`
-- der frühere Versionsunterschied ist damit auf `main` behoben.
+- Plugin-Header: `3.8.45`
+- `VTP_VERSION`: `3.8.45`
+- Version `3.8.45` enthält die noch nicht gemergten Audit-Korrekturen auf Branch `event-planner/targeted-code-audit`.
 
 Historische reproduzierbare Baseline:
 
@@ -66,6 +64,9 @@ Relevante gemergte Änderungen:
 - PR #58 ergänzte den ersten Historienbereich aus vorhandenen persistenten Archivdaten.
 - PR #61 synchronisierte den Historienstand mit dem damaligen `main`; der daraus resultierende Plugin-Stand `3.7.1` ist der aktuelle Code-Ausgangspunkt.
 - Für PR #52, #58 und #61 liefen die WordPress-Playground-Preview- und Plugin-ZIP-Workflows erfolgreich.
+- PR #160 ergänzte nutzbare Event-Vorlagen.
+- PR #165 und #166 korrigierten die zuverlässige native Formularübermittlung für Event- und Vorlagenspeicherung.
+- PR #167 korrigierte die Turnieranlage und brachte `main` auf Plugin-Version `3.8.44`.
 
 ## Last Known Good
 
@@ -92,9 +93,11 @@ Ein neuer formaler Last Known Good wird erst für einen exakt referenzierten akt
 - Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
 - Die Persistenzregel aus PR #35 ist auf `main` dokumentiert.
 - Dashboard V1 und der erste Historienbereich sind über PR #52, #58 und #61 auf `main` integriert.
-- Die Plugin-Version ist in Header und `VTP_VERSION` konsistent auf `3.7.1`.
+- Die Plugin-Version ist in Header und `VTP_VERSION` auf dem Audit-Branch konsistent auf `3.8.45`.
 - Die automatisierten Preview- und Packaging-Workflows der drei aktuellen Dashboard-/Historien-PRs waren erfolgreich.
-- Eine vollständige manuelle Funktionsprüfung dieses aktuellen Stands ist damit noch nicht behauptet.
+- Der kompakte End-to-End-Smoke-Test vom 20.09.2026 war für Event-Speichern, Vorlagen, Arbeitslisten, Turnierverknüpfung, Archiv und mobile Darstellung erfolgreich.
+- Ein gezielter Code-Audit fand, dass Bewirtungseinträge beim Speichern neu angelegt wurden und bestehende Mitbring-Zusagen dadurch verwaisen konnten.
+- Derselbe Audit fand Race Conditions bei öffentlichen Schicht- und Mitbring-Anmeldungen sowie nicht-atomare Mehrfachspeicherungen für Aufgaben und Bewirtung.
 
 ## Dashboard Decisions V1
 
@@ -192,10 +195,9 @@ Helfer-Jahresauswertung:
 
 ## Open
 
-- Dashboard V1 und Eventhistorie müssen auf dem aktuellen `main` im WordPress Playground manuell gegen die in PR #52/#58 beschriebenen Testfälle geprüft werden.
+- Die Audit-Korrekturen in Version `3.8.45` müssen im WordPress Playground regressionsgetestet werden: bestehende Mitbring-Zusage nach Bewirtungsänderung, Löschschutz für belegte Mitbring-Einträge sowie parallele Anmeldeversuche am letzten freien Platz.
 - Für den aktuellen Plugin-Stand muss eine exakt referenzierte reproduzierbare Testbaseline festgelegt werden.
 - Der vollständige Baseline-Smoke-Test muss auf diesem aktuellen Stand durchgeführt und mit `PASSED` oder `FAILED` dokumentiert werden.
-- Die Event-Anlegen-UI aus `EVENT-FORM-UI.md` muss danach in kleinen Änderungen umgesetzt und verifiziert werden.
 - Vor jeder neuen dauerhaften Formular-/Fachdaten-Erweiterung muss die Datenbankpersistenz gemäß `DATA-PERSISTENCE.md` festgelegt werden.
 - Der bestehende Sponsoren-Sammelwert muss vor Umstellung auf strukturierte Sponsor-Zeilen hinsichtlich Rückwärtskompatibilität/Migration geprüft werden.
 - Für die Unterscheidung von Event und Camp ist eine rückwärtskompatible Event-Klassifikation erforderlich; bestehende Events müssen ohne Datenverlust als `event` weiterfunktionieren.
