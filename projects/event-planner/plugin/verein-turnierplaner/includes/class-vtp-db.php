@@ -74,7 +74,6 @@ class VTP_DB {
    public_page_id BIGINT UNSIGNED NULL,
    leader_token VARCHAR(80) NULL,
    leader_pin VARCHAR(20) NULL,
-   sponsors LONGTEXT NULL,
    parent_event VARCHAR(191) NULL,
    event_id BIGINT UNSIGNED NULL,
    created_at DATETIME NOT NULL,

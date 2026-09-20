@@ -290,7 +290,77 @@ class VTP_Plugin {
 
   echo '<div class="vtp-card"><h2>Archivieren / Löschen</h2><div class="vtp-actions-stack">'; if($t->status!=='archiviert'){ echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">'; wp_nonce_field('vtp_archive_tournament'); echo '<input type="hidden" name="action" value="vtp_archive_tournament"><input type="hidden" name="tournament_id" value="'.esc_attr($t->id).'">'; submit_button('Turnier archivieren','secondary','submit',false); echo '</form>'; } else { echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">'; wp_nonce_field('vtp_restore_tournament'); echo '<input type="hidden" name="action" value="vtp_restore_tournament"><input type="hidden" name="tournament_id" value="'.esc_attr($t->id).'">'; submit_button('Turnier wiederherstellen','secondary','submit',false); echo '</form>'; } echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'" onsubmit="return confirm(&quot;Turnier wirklich endgültig löschen? Diese Aktion kann nicht rückgängig gemacht werden.&quot;);">'; wp_nonce_field('vtp_delete_tournament'); echo '<input type="hidden" name="action" value="vtp_delete_tournament"><input type="hidden" name="tournament_id" value="'.esc_attr($t->id).'">'; submit_button('Turnier dauerhaft löschen','delete','submit',false); echo '</form></div></div>';
  }
- public function save_tournament(){ $this->verify('vtp_save_tournament'); global $wpdb; $id=absint($_POST['id']??0); $name=sanitize_text_field($_POST['name']); $now=current_time('mysql'); $data=['name'=>$name,'slug'=>sanitize_title($name),'description'=>sanitize_textarea_field($_POST['description']??''),'location'=>sanitize_text_field($_POST['location']??''),'sponsors'=>sanitize_textarea_field($_POST['sponsors']??''),'start_date'=>sanitize_text_field($_POST['start_date']??''),'start_time'=>sanitize_text_field($_POST['start_time']??'09:00'),'event_type'=>sanitize_key($_POST['event_type']??'jugendturnier'),'tournament_mode'=>sanitize_key($_POST['tournament_mode']??'groups_ko'),'ko_size'=>absint($_POST['ko_size']??4),'auto_groups'=>max(1,absint($_POST['auto_groups']??2)),'match_duration'=>max(1,absint($_POST['match_duration']??10)),'break_minutes'=>max(0,absint($_POST['break_minutes']??2)),'fields_count'=>max(1,absint($_POST['fields_count']??1)),'event_id'=>absint($_POST['event_id']??0),'updated_at'=>$now]; if($id){ $wpdb->update(VTP_DB::table('tournaments'),$data,['id'=>$id]); } else { $data['created_at']=$now; $data['leader_token']=wp_generate_password(32,false,false); $data['leader_pin']=(string)wp_rand(1000,9999); $data['status']='aktiv'; $wpdb->insert(VTP_DB::table('tournaments'),$data); $id=$wpdb->insert_id; } update_post_meta($id,'_vtp_min_team_rest',max(0,absint($_POST['min_team_rest']??1))); update_post_meta($id,'_vtp_max_teams',max(0,absint($_POST['max_teams']??0))); update_post_meta($id,'_vtp_public_registration',!empty($_POST['public_registration'])?'1':'0'); update_post_meta($id,'_vtp_third_place_match',!empty($_POST['third_place_match'])?'1':'0'); update_post_meta($id,'_vtp_all_placement_matches',!empty($_POST['all_placement_matches'])?'1':'0'); $this->ensure_page($id); $this->go(['edit'=>$id,'saved'=>1]); }
+ private function unique_tournament_slug($name,$tournament_id=0){
+  global $wpdb;
+  $table=VTP_DB::table('tournaments');
+  $base=sanitize_title($name);
+  if($base==='') $base='turnier';
+  $base=substr($base,0,180);
+  $slug=$base;
+  $suffix=2;
+  $tournament_id=absint($tournament_id);
+
+  while(true){
+   if($tournament_id){
+    $existing=(int)$wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE slug=%s AND id<>%d LIMIT 1",$slug,$tournament_id));
+   } else {
+    $existing=(int)$wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE slug=%s LIMIT 1",$slug));
+   }
+   if(!$existing) return $slug;
+   $slug=$base.'-'.$suffix++;
+  }
+ }
+
+ public function save_tournament(){
+  $this->verify('vtp_save_tournament');
+  global $wpdb;
+
+  $id=absint($_POST['id']??0);
+  $name=sanitize_text_field(wp_unslash($_POST['name']??''));
+  if($name==='') wp_die('Bitte einen Turniernamen angeben.');
+
+  $now=current_time('mysql');
+  $data=[
+   'name'=>$name,
+   'slug'=>$this->unique_tournament_slug($name,$id),
+   'description'=>sanitize_textarea_field(wp_unslash($_POST['description']??'')),
+   'location'=>sanitize_text_field(wp_unslash($_POST['location']??'')),
+   'sponsors'=>sanitize_textarea_field(wp_unslash($_POST['sponsors']??'')),
+   'start_date'=>sanitize_text_field(wp_unslash($_POST['start_date']??'')),
+   'start_time'=>sanitize_text_field(wp_unslash($_POST['start_time']??'09:00')),
+   'event_type'=>sanitize_key($_POST['event_type']??'jugendturnier'),
+   'tournament_mode'=>sanitize_key($_POST['tournament_mode']??'groups_ko'),
+   'ko_size'=>absint($_POST['ko_size']??4),
+   'auto_groups'=>max(1,absint($_POST['auto_groups']??2)),
+   'match_duration'=>max(1,absint($_POST['match_duration']??10)),
+   'break_minutes'=>max(0,absint($_POST['break_minutes']??2)),
+   'fields_count'=>max(1,absint($_POST['fields_count']??1)),
+   'event_id'=>absint($_POST['event_id']??0),
+   'updated_at'=>$now,
+  ];
+
+  if($id){
+   $ok=$wpdb->update(VTP_DB::table('tournaments'),$data,['id'=>$id]);
+   if($ok===false) wp_die('Das Turnier konnte nicht gespeichert werden.');
+  } else {
+   $data['created_at']=$now;
+   $data['leader_token']=wp_generate_password(32,false,false);
+   $data['leader_pin']=(string)wp_rand(1000,9999);
+   $data['status']='aktiv';
+   $ok=$wpdb->insert(VTP_DB::table('tournaments'),$data);
+   if($ok===false) wp_die('Das Turnier konnte nicht angelegt werden.');
+   $id=absint($wpdb->insert_id);
+   if(!$id) wp_die('Das Turnier wurde nicht eindeutig angelegt.');
+  }
+
+  update_post_meta($id,'_vtp_min_team_rest',max(0,absint($_POST['min_team_rest']??1)));
+  update_post_meta($id,'_vtp_max_teams',max(0,absint($_POST['max_teams']??0)));
+  update_post_meta($id,'_vtp_public_registration',!empty($_POST['public_registration'])?'1':'0');
+  update_post_meta($id,'_vtp_third_place_match',!empty($_POST['third_place_match'])?'1':'0');
+  update_post_meta($id,'_vtp_all_placement_matches',!empty($_POST['all_placement_matches'])?'1':'0');
+  $this->ensure_page($id);
+  $this->go(['edit'=>$id,'saved'=>1]);
+ }
  private function ensure_page($id){ global $wpdb; $t=$wpdb->get_row($wpdb->prepare('SELECT * FROM '.VTP_DB::table('tournaments').' WHERE id=%d',$id)); if(!$t) return 0; $content='[verein_turnier id="'.$id.'"]'; $page_id=absint($t->public_page_id); $post=['post_title'=>$t->name,'post_name'=>$t->slug,'post_content'=>$content,'post_status'=>'publish','post_type'=>'page']; if($page_id && get_post($page_id)){ $post['ID']=$page_id; wp_update_post($post); } else { $page_id=wp_insert_post($post); if($page_id && !is_wp_error($page_id)) $wpdb->update(VTP_DB::table('tournaments'),['public_page_id'=>$page_id],['id'=>$id]); } return $page_id; }
  public function create_public_page(){ $this->verify('vtp_create_public_page'); $id=absint($_POST['tournament_id']); $this->ensure_page($id); $this->go(['edit'=>$id,'created_page'=>1]); }
 public function print_pdf(){

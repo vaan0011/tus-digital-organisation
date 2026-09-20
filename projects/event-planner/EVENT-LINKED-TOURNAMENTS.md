@@ -51,3 +51,10 @@ Wenn noch kein Turnier verknüpft ist, wird erklärt, dass die Zuordnung im Turn
 ## Future Development
 
 Wenn der Turnierbereich später selbst auf die neue Event-Planner-UI umgestellt wird, kann der Einstieg aus dem Event optional einen Event-Kontext übergeben, um die Zuordnung dort noch schneller vorzubelegen. Die fachliche Source of Truth bleibt dabei die Turnierzuordnung.
+
+
+## Robuste Turnieranlage
+
+Beim Anlegen und Umbenennen eines Turniers wird ein freier technischer Slug erzeugt. Gleichnamige Turniere erhalten intern fortlaufende Suffixe wie `-2` und `-3`, während der sichtbare Name unverändert bleibt.
+
+Der Speicherhandler prüft Datenbankfehler und eine gültige neue Turnier-ID ausdrücklich. Eine Erfolgsmeldung ohne tatsächlich angelegtes Turnier ist damit nicht mehr zulässig.
