@@ -87,3 +87,12 @@ Damit wird insbesondere verhindert, dass Safari die zurückgelieferte WordPress-
 3. Es darf kein aus der WordPress-Admin-Seite extrahierter Fehlertext erscheinen.
 4. Nach dem abschließenden Reload muss `Event vollständig gespeichert.` erscheinen.
 5. Die gespeicherten Werte aller Arbeitsblöcke müssen erhalten bleiben.
+
+
+## Nativer Gesamtspeicher
+
+Die bestehenden Save-Handler sind klassische WordPress-Formularziele. Der Gesamtspeicher übermittelt die vorhandenen Formulare daher nacheinander als normale Formular-POSTs in einen unsichtbaren, gleichartigen Browserkontext.
+
+Damit verwendet jeder Arbeitsblock denselben Serverweg wie sein funktionierender Einzel-Speicherbutton. Die Orchestrierung hängt nicht mehr von der browserabhängigen Behandlung von Redirects durch `fetch()` ab.
+
+Ein Speicherschritt gilt erst als erfolgreich, wenn WordPress zurück zu `wp-admin/admin.php?page=vtp-events` geleitet hat. WordPress-Fehlerseiten und Zeitüberschreitungen brechen den Ablauf mit dem betroffenen Bereich ab.
