@@ -29,3 +29,10 @@ Das Verhalten gilt auch für normale Event-Anlage und Umbenennung, damit der gem
 7. Event-Tage, Aufgaben, Helferschichten und Bewirtung aus der Vorlage müssen vorhanden sein.
 8. Das ursprüngliche Event muss unverändert bestehen bleiben.
 9. Ein weiteres Event mit demselben sichtbaren Namen anlegen und prüfen, dass auch dieses erfolgreich gespeichert wird.
+
+
+## Nativer Anlegeweg
+
+Das neue Event wird über denselben klassischen WordPress-Formularweg angelegt wie ein Event ohne Vorlage. Dadurch wird der gemeinsame Event-Speicher einschließlich der eindeutigen Slug-Erzeugung zuverlässig ausgeführt.
+
+Nach der erfolgreichen WordPress-Rückleitung liest der Workflow die neue Event-ID aus der Zieladresse und wendet anschließend den Template-Snapshot an. Der Anlegeschritt verwendet bewusst kein `fetch()`, da klassische WordPress-Redirect-Handler browserabhängig keine verlässliche Fetch-Antwort liefern.
