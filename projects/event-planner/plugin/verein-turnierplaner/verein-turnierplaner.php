@@ -2,13 +2,13 @@
 /**
  * Plugin Name: Verein Turnierplaner
  * Description: Turnier-, Event- und Helferplanung für Fußballvereine: Turniere, Spielpläne, Ergebnisse, QR-Code, Sportfest-Ablauf, Bewirtung und Schichtpläne.
- * Version: 3.8.32
+ * Version: 3.8.33
  * Author: TuS 1901 Mingolsheim e.V.
  * Author URI: https://tus-mingolsheim.de
  * Text Domain: verein-turnierplaner
  */
 if (!defined('ABSPATH')) exit;
-define('VTP_VERSION', '3.8.32');
+define('VTP_VERSION', '3.8.33');
 define('VTP_FILE', __FILE__);
 define('VTP_DIR', plugin_dir_path(__FILE__));
 define('VTP_URL', plugin_dir_url(__FILE__));
@@ -24,6 +24,7 @@ require_once VTP_DIR.'includes/class-vtp-event-day-direct-edit.php';
 require_once VTP_DIR.'includes/class-vtp-event-program-section.php';
 require_once VTP_DIR.'includes/class-vtp-event-tasks.php';
 require_once VTP_DIR.'includes/class-vtp-event-shifts.php';
+require_once VTP_DIR.'includes/class-vtp-event-shift-program-days.php';
 require_once VTP_DIR.'includes/class-vtp-event-shift-operations.php';
 require_once VTP_DIR.'includes/class-vtp-event-catering.php';
 require_once VTP_DIR.'includes/class-vtp-event-finalize.php';
@@ -50,6 +51,7 @@ add_action('plugins_loaded', function(){
  VTP_Event_Program_Section::init();
  VTP_Event_Tasks::init();
  VTP_Event_Shifts::init();
+ VTP_Event_Shift_Program_Days::init();
  VTP_Event_Shift_Operations::init();
  VTP_Event_Catering::init();
  VTP_Event_Finalize::init();
