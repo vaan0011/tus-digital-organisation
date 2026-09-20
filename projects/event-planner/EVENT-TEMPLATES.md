@@ -84,6 +84,8 @@ Bei ausgewählter Vorlage:
 
 Aufbau und Abbau können vor bzw. nach dem eigentlichen Event-Zeitraum liegen und verändern den regulären Event-Endtermin nicht.
 
+Der vorbelegte Veranstaltungsname darf dem Namen eines bereits bestehenden Events entsprechen. Die Datenbank verwendet für Events einen eindeutigen technischen `slug`; der gemeinsame Event-Speicher erzeugt deshalb bei einer Namenskollision automatisch einen freien Slug (`name`, `name-2`, `name-3`, ...). Der sichtbare Veranstaltungsname wird dadurch nicht verändert.
+
 ## Architektur
 
 Die Vorlage erzeugt keine parallele Datenwelt. Nach dem Anwenden liegen die Daten in den bestehenden Event-Tabellen und werden danach ganz normal über die bestehenden Module bearbeitet:
