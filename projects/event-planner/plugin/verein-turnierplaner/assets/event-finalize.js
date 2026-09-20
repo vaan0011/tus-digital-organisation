@@ -46,49 +46,73 @@
   return new FormData(form);
  }
 
- async function responseErrorDetail(response){
-  try{
-   var text=await response.text();
-   if(!text) return '';
-   var detail=text;
-   if(/<[^>]+>/.test(text)){
-    var doc=new DOMParser().parseFromString(text,'text/html');
-    detail=(doc.body && doc.body.textContent) ? doc.body.textContent : text;
-   }
-   detail=detail.replace(/\s+/g,' ').trim();
-   if(detail.length>220) detail=detail.slice(0,217)+'…';
-   return detail;
-  } catch(e){
-   return '';
-  }
- }
-
  async function saveForm(form,label){
-  var payload=prepareForm(form,label);
-  if(!payload) return;
+  prepareForm(form,label);
 
-  // WordPress-Save-Handler antworten mit einem Redirect zurück zur Eventseite.
-  // Browser behandeln redirect:'manual' bei gleichartigen Admin-POSTs nicht
-  // einheitlich: insbesondere Safari kann statt eines erkennbaren Redirects
-  // eine nicht erfolgreiche HTML-Antwort liefern. Deshalb folgen wir dem
-  // Redirect und werten die erfolgreiche Zielseite als Save-Erfolg.
-  var response=await fetch(form.action,{
-   method:(form.method||'post').toUpperCase(),
-   body:payload,
-   credentials:'same-origin',
-   redirect:'follow'
-  });
+  // Die vorhandenen WordPress-Handler sind klassische Formularziele. Wir
+  // übermitteln jedes Formular deshalb nativ in einen unsichtbaren Frame.
+  // Dadurch verhält sich der Gesamtspeicher exakt wie der funktionierende
+  // Einzel-Speicherbutton und bleibt unabhängig von Fetch-Redirect-Sonderfällen.
+  return new Promise(function(resolve,reject){
+   var frame=document.createElement('iframe');
+   var frameName='vtp-save-frame-'+Date.now()+'-'+Math.random().toString(36).slice(2);
+   frame.name=frameName;
+   frame.hidden=true;
+   frame.setAttribute('aria-hidden','true');
 
-  if(response.ok) return;
-  if(response.redirected){
+   var hadTarget=form.hasAttribute('target');
+   var oldTarget=form.getAttribute('target');
+   var finished=false;
+   var timer=null;
+
+   function restore(){
+    if(timer) window.clearTimeout(timer);
+    if(hadTarget) form.setAttribute('target',oldTarget);
+    else form.removeAttribute('target');
+    window.setTimeout(function(){ frame.remove(); },0);
+   }
+
+   function fail(message){
+    if(finished) return;
+    finished=true;
+    restore();
+    reject(new Error('„'+label+'“ konnte nicht gespeichert werden.'+(message?' '+message:'')));
+   }
+
+   frame.addEventListener('load',function(){
+    if(finished) return;
+    var href='';
+    try{ href=frame.contentWindow.location.href; } catch(e){ fail('Die Serverantwort konnte nicht geprüft werden.'); return; }
+    if(!href || href==='about:blank') return;
+
+    try{
+     var target=new URL(href,window.location.href);
+     if(target.origin===window.location.origin && target.pathname.indexOf('/wp-admin/admin.php')!==-1 && target.searchParams.get('page')==='vtp-events'){
+      finished=true;
+      restore();
+      resolve();
+      return;
+     }
+
+     var body=frame.contentDocument && frame.contentDocument.body;
+     var detail=body ? body.textContent.replace(/\\s+/g,' ').trim() : '';
+     if(detail.length>220) detail=detail.slice(0,217)+'…';
+     fail(detail);
+    } catch(e){
+     fail('Unerwartete Serverantwort.');
+    }
+   });
+
+   timer=window.setTimeout(function(){ fail('Zeitüberschreitung beim Speichern.'); },20000);
+   document.body.appendChild(frame);
+   form.setAttribute('target',frameName);
+
    try{
-    var target=new URL(response.url,window.location.href);
-    if(target.origin===window.location.origin && target.pathname.indexOf('/wp-admin/admin.php')!==-1 && target.searchParams.get('page')==='vtp-events') return;
-   } catch(e){}
-  }
-
-  var detail=await responseErrorDetail(response);
-  throw new Error('„'+label+'“ konnte nicht gespeichert werden.'+(detail?' '+detail:''));
+    HTMLFormElement.prototype.submit.call(form);
+   } catch(e){
+    fail(e && e.message ? e.message : 'Formular konnte nicht gesendet werden.');
+   }
+  });
  }
 
  function reloadAsSaved(){
