@@ -104,6 +104,7 @@ class VTP_Event_Tasks {
   $sources=(array)($_POST['task_source']??[]);
   $kept=[];
   $now=current_time('mysql');
+  $wpdb->query('START TRANSACTION');
 
   foreach($titles as $i=>$raw_title){
    $title=sanitize_text_field(wp_unslash($raw_title));
@@ -131,20 +132,24 @@ class VTP_Event_Tasks {
    ];
 
    if($id && in_array($id,$existing,true)){
-    $wpdb->update($table,$data,['id'=>$id,'event_id'=>$event_id]);
+    $result=$wpdb->update($table,$data,['id'=>$id,'event_id'=>$event_id]);
+    if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Aufgaben konnten nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
     $kept[]=$id;
    } else {
     $data['created_at']=$now;
-    $wpdb->insert($table,$data);
-    if($wpdb->insert_id) $kept[]=absint($wpdb->insert_id);
+    $result=$wpdb->insert($table,$data);
+    if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Aufgaben konnten nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
+    $kept[]=absint($wpdb->insert_id);
    }
   }
 
   $remove=array_values(array_diff($existing,$kept));
   if($remove){
    $safe=implode(',',array_map('absint',$remove));
-   $wpdb->query("DELETE FROM $table WHERE event_id=".absint($event_id)." AND id IN ($safe)");
+   $result=$wpdb->query("DELETE FROM $table WHERE event_id=".absint($event_id)." AND id IN ($safe)");
+   if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Aufgaben konnten nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
   }
+  $wpdb->query('COMMIT');
 
   $url=add_query_arg(['page'=>'vtp-events','edit_event'=>$event_id,'tasks_saved'=>1],admin_url('admin.php'));
   wp_safe_redirect($url.'#vtp-event-tasks');
