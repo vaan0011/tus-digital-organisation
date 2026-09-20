@@ -78,10 +78,7 @@ Die öffentliche Ansicht zeigt Bedarf, bereits übernommene Menge und Restbedarf
 
 Die ungefilterten Gesamtübersichten `Aufgabenliste` und `Schichten / Mitbringen` sind Adminansichten.
 
-Sie sind geschützt durch:
-
-- einen Event-spezifischen Admin-PIN mit 4 bis 8 Ziffern,
-- oder einen bestehenden WordPress-Admin-Login.
+Sie sind **immer** durch den Event-spezifischen Admin-PIN mit 4 bis 8 Ziffern geschützt. Ein bestehender WordPress-Admin-Login ersetzt die PIN-Eingabe ausdrücklich nicht.
 
 Der PIN wird im Event-Backend im Bereich `Öffentliche Seiten` gesetzt oder geändert.
 
@@ -148,10 +145,12 @@ Im Event-Bearbeitungsscreen stehen unter `Öffentliche Seiten` direkte Links zu:
 
 Im selben Bereich kann der Event-Admin den gemeinsamen Admin-PIN für die beiden Gesamtübersichten setzen oder ändern.
 
+Auch wenn der Link direkt aus dem WordPress-Backend geöffnet wird, muss für die ungefilterte Gesamtübersicht zuerst die Event-PIN-Freigabe vorliegen.
+
 ## Datenschutz
 
 - Keine Registrierung für Personen- oder Mannschaftslinks erforderlich.
-- Die ungefilterten Admin-Gesamtübersichten sind PIN-geschützt.
+- Die ungefilterten Admin-Gesamtübersichten sind immer PIN-geschützt.
 - Kontaktdaten werden nicht in gefilterten öffentlichen Ansichten ausgegeben.
 - Kontaktdaten sind nur für die Eventorganisation vorgesehen.
 - Der Admin-PIN wird ausschließlich gehasht gespeichert.
