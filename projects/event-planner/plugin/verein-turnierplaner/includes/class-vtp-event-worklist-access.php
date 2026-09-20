@@ -109,7 +109,6 @@ class VTP_Event_Worklist_Access {
  }
 
  public static function has_admin_access($event_id){
-  if(current_user_can('manage_options')) return true;
   $hash=self::pin_hash($event_id);
   return $hash!=='' && self::cookie_is_valid($event_id,$hash);
  }
