@@ -44,6 +44,70 @@
   return p;
  }
 
+ function submitFormNatively(form){
+  return new Promise(function(resolve,reject){
+   var frame=document.createElement('iframe');
+   var frameName='vtp-template-create-'+Date.now()+'-'+Math.random().toString(36).slice(2);
+   frame.name=frameName;
+   frame.hidden=true;
+   frame.setAttribute('aria-hidden','true');
+
+   var hadTarget=form.hasAttribute('target');
+   var oldTarget=form.getAttribute('target');
+   var finished=false;
+   var timer=null;
+
+   function restore(){
+    if(timer) window.clearTimeout(timer);
+    if(hadTarget) form.setAttribute('target',oldTarget);
+    else form.removeAttribute('target');
+    window.setTimeout(function(){ frame.remove(); },0);
+   }
+
+   function fail(message){
+    if(finished) return;
+    finished=true;
+    restore();
+    reject(new Error(message||'Das Event konnte nicht angelegt werden.'));
+   }
+
+   frame.addEventListener('load',function(){
+    if(finished) return;
+    var href='';
+    try{ href=frame.contentWindow.location.href; } catch(e){ fail('Die Serverantwort konnte nicht geprüft werden.'); return; }
+    if(!href || href==='about:blank') return;
+
+    try{
+     var target=new URL(href,window.location.href);
+     var eventId=Number(target.searchParams.get('edit_event')||0);
+     if(target.origin===window.location.origin && target.pathname.indexOf('/wp-admin/admin.php')!==-1 && target.searchParams.get('page')==='vtp-events' && eventId){
+      finished=true;
+      restore();
+      resolve({url:target,eventId:eventId});
+      return;
+     }
+
+     var body=frame.contentDocument && frame.contentDocument.body;
+     var detail=body ? body.textContent.replace(/\\s+/g,' ').trim() : '';
+     if(detail.length>220) detail=detail.slice(0,217)+'…';
+     fail(detail||'Das Event konnte nicht angelegt werden.');
+    } catch(e){
+     fail('Unerwartete Serverantwort beim Anlegen des Events.');
+    }
+   });
+
+   timer=window.setTimeout(function(){ fail('Zeitüberschreitung beim Anlegen des Events.'); },20000);
+   document.body.appendChild(frame);
+   form.setAttribute('target',frameName);
+
+   try{
+    HTMLFormElement.prototype.submit.call(form);
+   } catch(e){
+    fail(e && e.message ? e.message : 'Das Event konnte nicht angelegt werden.');
+   }
+  });
+ }
+
  function enhanceNewEvent(data){
   var form=document.querySelector('.vtp-event-create-form');
   if(!form) return;
@@ -121,16 +185,8 @@
    var status=statusMessage(form,'Event wird angelegt und anschließend mit der Vorlage befüllt …',false);
 
    try{
-    var createResponse=await fetch(form.action,{
-     method:'POST',
-     body:new FormData(form),
-     credentials:'same-origin',
-     redirect:'follow'
-    });
-    if(!createResponse.ok) throw new Error('Das Event konnte nicht angelegt werden.');
-    var finalUrl=new URL(createResponse.url,window.location.origin);
-    var eventId=Number(finalUrl.searchParams.get('edit_event')||0);
-    if(!eventId) throw new Error('Das Event wurde nicht eindeutig erkannt.');
+    var created=await submitFormNatively(form);
+    var eventId=created.eventId;
 
     var applyData=new FormData();
     applyData.append('action','vtp_apply_event_template');
