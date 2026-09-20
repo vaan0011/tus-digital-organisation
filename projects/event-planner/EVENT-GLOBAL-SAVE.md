@@ -72,3 +72,18 @@ Schlägt ein Bereich fehl, wird keine falsche Gesamterfolgsbestätigung angezeig
 ## Future Development
 
 Sollten weitere persistente Arbeitsblöcke hinzukommen, werden sie nur dann in den Gesamtspeicher aufgenommen, wenn sie im Event-Bearbeitungsscreen editierbar sind und einen bestehenden belastbaren Save-Handler besitzen.
+
+
+## Browserübergreifende Redirect-Behandlung
+
+Die vorhandenen WordPress-Save-Handler leiten nach erfolgreichem POST zurück zur Eventseite. Der Gesamtspeicher folgt dieser Weiterleitung und bewertet sowohl eine erfolgreiche HTTP-Antwort als auch eine gleichartige Weiterleitung zur Eventseite als Erfolg.
+
+Damit wird insbesondere verhindert, dass Safari die zurückgelieferte WordPress-Admin-Seite als Fehlertext anzeigt. Erst eine tatsächliche fehlgeschlagene Serverantwort ohne gültige Weiterleitung beendet den Gesamtspeicher.
+
+### Regressionstest
+
+1. Alle Arbeitsblöcke eines Events einzeln speichern.
+2. Anschließend `Event speichern` in Safari ausführen.
+3. Es darf kein aus der WordPress-Admin-Seite extrahierter Fehlertext erscheinen.
+4. Nach dem abschließenden Reload muss `Event vollständig gespeichert.` erscheinen.
+5. Die gespeicherten Werte aller Arbeitsblöcke müssen erhalten bleiben.
