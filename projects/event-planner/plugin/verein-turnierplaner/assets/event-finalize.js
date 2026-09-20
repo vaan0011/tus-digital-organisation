@@ -46,11 +46,44 @@
   return new FormData(form);
  }
 
+ async function responseErrorDetail(response){
+  try{
+   var text=await response.text();
+   if(!text) return '';
+   var detail=text;
+   if(/<[^>]+>/.test(text)){
+    var doc=new DOMParser().parseFromString(text,'text/html');
+    detail=(doc.body && doc.body.textContent) ? doc.body.textContent : text;
+   }
+   detail=detail.replace(/\s+/g,' ').trim();
+   if(detail.length>220) detail=detail.slice(0,217)+'…';
+   return detail;
+  } catch(e){
+   return '';
+  }
+ }
+
  async function saveForm(form,label){
   var payload=prepareForm(form,label);
   if(!payload) return;
-  var response=await fetch(form.action,{method:(form.method||'post').toUpperCase(),body:payload,credentials:'same-origin',redirect:'follow'});
-  if(!response.ok) throw new Error('„'+label+'“ konnte nicht gespeichert werden.');
+
+  // Erfolgreiche WordPress-Save-Handler antworten mit einem Redirect zurück zur
+  // Eventseite. Beim Gesamtspeicher folgen wir diesem Redirect bewusst nicht:
+  // Sonst würde die komplette Eventseite nach jedem einzelnen Block im
+  // Hintergrund neu gerendert. Der Redirect selbst ist bereits das
+  // Erfolgssignal des bestehenden Save-Handlers.
+  var response=await fetch(form.action,{
+   method:(form.method||'post').toUpperCase(),
+   body:payload,
+   credentials:'same-origin',
+   redirect:'manual'
+  });
+
+  if(response.type==='opaqueredirect' || (response.status>=300 && response.status<400)) return;
+  if(response.ok) return;
+
+  var detail=await responseErrorDetail(response);
+  throw new Error('„'+label+'“ konnte nicht gespeichert werden.'+(detail?' '+detail:''));
  }
 
  function reloadAsSaved(){
