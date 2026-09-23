@@ -16,7 +16,7 @@ Tabellenplätze und Wettbewerbsdaten sind Momentaufnahmen und werden vor einer V
 
 ### Saison 2026/27
 
-Letzte Verifikation Spiel-/Wettbewerbsdaten: **14.09.2026**
+Letzte Verifikation Spiel-/Wettbewerbsdaten: **21.09.2026**
 Trainerstab-Stand: **18.09.2026**
 Primärquelle Spiel- und Wettbewerbsdaten: `fussball.de`
 
@@ -34,13 +34,13 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 3
+- Spiele: 4
 - Siege: 3
 - Unentschieden: 0
-- Niederlagen: 0
-- Tore: 7:3
+- Niederlagen: 1
+- Tore: 9:7
 - Punkte: 9
-- Tabellenplatz: **3**
+- Tabellenplatz: **4**
 
 ### Ergebnisse
 
@@ -49,6 +49,7 @@ Mannschaftsseite:
 | 30.08.2026 | 1 | TuS Mingolsheim | VfR Kronau | 3:2 |
 | 06.09.2026 | 2 | FV Neuthard | TuS Mingolsheim | 0:2 |
 | 13.09.2026 | 3 | TuS Mingolsheim | TSV Stettfeld | 2:1 |
+| 20.09.2026 | 4 | VfB Bretten 2 | TuS Mingolsheim | 4:2 |
 
 ## Herren 2 – TuS Mingolsheim 2
 
@@ -64,13 +65,13 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 3
+- Spiele: 4
 - Siege: 2
 - Unentschieden: 0
-- Niederlagen: 1
-- Tore: 12:7
+- Niederlagen: 2
+- Tore: 14:10
 - Punkte: 6
-- Tabellenplatz: **6**
+- Tabellenplatz: **5**
 
 ### Ergebnisse
 
@@ -79,6 +80,7 @@ Mannschaftsseite:
 | 30.08.2026 | 1 | TuS Mingolsheim 2 | VfR Kronau 2 | 5:1 |
 | 06.09.2026 | 2 | FV Ubstadt 2 | TuS Mingolsheim 2 | 2:6 |
 | 13.09.2026 | 3 | TuS Mingolsheim 2 | FV 1912 Wiesental 2 | 1:4 |
+| 20.09.2026 | 4 | Spvgg 1920 Oberhausen | TuS Mingolsheim 2 | 3:2 |
 
 ## Redaktionelle Nutzung
 
