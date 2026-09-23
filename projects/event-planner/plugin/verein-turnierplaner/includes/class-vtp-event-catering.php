@@ -96,6 +96,7 @@ class VTP_Event_Catering {
   if(!$exists) wp_die('Event nicht gefunden.');
 
   $categories=(array)($_POST['catering_category']??[]);
+  $ids=(array)($_POST['catering_id']??[]);
   $names=(array)($_POST['catering_item']??[]);
   $quantities=(array)($_POST['catering_quantity']??[]);
   $units=(array)($_POST['catering_unit']??[]);
@@ -119,6 +120,7 @@ class VTP_Event_Catering {
    if($unit==='') wp_die('Bitte für jeden Bewirtungseintrag eine Einheit angeben.');
 
    $validated[]=[
+    'id'=>absint($ids[$i]??0),
     'event_id'=>$event_id,
     'category'=>$category,
     'item_name'=>$name,
@@ -130,8 +132,36 @@ class VTP_Event_Catering {
    ];
   }
 
-  $wpdb->delete($table,['event_id'=>$event_id]);
-  foreach($validated as $row) $wpdb->insert($table,$row);
+  $existing=array_map('absint',$wpdb->get_col($wpdb->prepare("SELECT id FROM $table WHERE event_id=%d",$event_id))?:[]);
+  $kept=[];
+  $wpdb->query('START TRANSACTION');
+  foreach($validated as $row){
+   $id=$row['id'];
+   unset($row['id']);
+   if($id && in_array($id,$existing,true)){
+    $result=$wpdb->update($table,$row,['id'=>$id,'event_id'=>$event_id]);
+    if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Bewirtung konnte nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
+    $kept[]=$id;
+   } else {
+    $result=$wpdb->insert($table,$row);
+    if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Bewirtung konnte nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
+    $kept[]=absint($wpdb->insert_id);
+   }
+  }
+
+  $remove=array_values(array_diff($existing,$kept));
+  if($remove){
+   $safe=implode(',',array_map('absint',$remove));
+   $signups=VTP_DB::table('event_bring_signups');
+   $used=(int)$wpdb->get_var("SELECT COUNT(*) FROM $signups WHERE catering_item_id IN ($safe)");
+   if($used){
+    $wpdb->query('ROLLBACK');
+    wp_die('Ein entfernter Mitbring-Eintrag hat bereits Zusagen. Bitte zuerst die zugehörigen Zusagen löschen.');
+   }
+   $result=$wpdb->query("DELETE FROM $table WHERE event_id=".absint($event_id)." AND id IN ($safe)");
+   if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Bewirtung konnte nicht vollständig gespeichert werden. Es wurden keine Änderungen übernommen.'); }
+  }
+  $wpdb->query('COMMIT');
 
   $url=add_query_arg(['page'=>'vtp-events','edit_event'=>$event_id,'catering_saved'=>1],admin_url('admin.php'));
   wp_safe_redirect($url.'#vtp-event-catering');

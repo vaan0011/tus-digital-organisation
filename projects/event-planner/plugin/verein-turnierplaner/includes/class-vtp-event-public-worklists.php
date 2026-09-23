@@ -367,9 +367,15 @@ class VTP_Event_Public_Worklists {
   $now=current_time('mysql');
   $existing=absint($wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE task_id=%d",$task_id)));
   $data=['event_id'=>$event_id,'task_id'=>$task_id,'responder_name'=>$name,'feedback_status'=>$status,'note'=>$note?:null,'updated_at'=>$now];
-  if($existing) $wpdb->update($table,$data,['id'=>$existing]);
-  else { $data['created_at']=$now; $wpdb->insert($table,$data); }
-  if($status==='done') $wpdb->update($tasks,['status'=>'done','updated_at'=>$now],['id'=>$task_id,'event_id'=>$event_id]);
+  $wpdb->query('START TRANSACTION');
+  if($existing) $result=$wpdb->update($table,$data,['id'=>$existing]);
+  else { $data['created_at']=$now; $result=$wpdb->insert($table,$data); }
+  if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Rückmeldung konnte nicht gespeichert werden.'); }
+  if($status==='done'){
+   $result=$wpdb->update($tasks,['status'=>'done','updated_at'=>$now],['id'=>$task_id,'event_id'=>$event_id]);
+   if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Rückmeldung konnte nicht vollständig gespeichert werden.'); }
+  }
+  $wpdb->query('COMMIT');
 
   $event=self::event($event_id);
   $person=sanitize_text_field(wp_unslash($_POST['person']??''));
@@ -387,17 +393,21 @@ class VTP_Event_Public_Worklists {
   global $wpdb;
   $shifts=VTP_DB::table('shifts');
   $signups=VTP_DB::table('shift_signups');
+  $wpdb->query('START TRANSACTION');
   $shift=$wpdb->get_row($wpdb->prepare(
-   "SELECT s.*,COUNT(g.id) signups FROM $shifts s LEFT JOIN $signups g ON g.shift_id=s.id WHERE s.id=%d GROUP BY s.id",
+   "SELECT * FROM $shifts WHERE id=%d FOR UPDATE",
    $shift_id
   ));
-  if(!$shift || absint($shift->event_id)!==$event_id) wp_die('Schicht nicht gefunden.');
-  if(absint($shift->signups)>=max(1,absint($shift->slots_needed))) wp_die('Diese Schicht ist leider bereits voll.');
+  if(!$shift || absint($shift->event_id)!==$event_id){ $wpdb->query('ROLLBACK'); wp_die('Schicht nicht gefunden.'); }
+  $signup_count=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $signups WHERE shift_id=%d",$shift_id));
+  if($signup_count>=max(1,absint($shift->slots_needed))){ $wpdb->query('ROLLBACK'); wp_die('Diese Schicht ist leider bereits voll.'); }
 
   $name=sanitize_text_field(wp_unslash($_POST['name']??''));
-  if($name==='') wp_die('Bitte einen Namen angeben.');
+  if($name===''){ $wpdb->query('ROLLBACK'); wp_die('Bitte einen Namen angeben.'); }
   $contact=sanitize_text_field(wp_unslash($_POST['contact']??''));
-  $wpdb->insert($signups,['shift_id'=>$shift_id,'name'=>$name,'contact'=>$contact?:null,'created_at'=>current_time('mysql')]);
+  $result=$wpdb->insert($signups,['shift_id'=>$shift_id,'name'=>$name,'contact'=>$contact?:null,'created_at'=>current_time('mysql')]);
+  if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Anmeldung konnte nicht gespeichert werden.'); }
+  $wpdb->query('COMMIT');
 
   $event=self::event($event_id);
   $group=sanitize_text_field(wp_unslash($_POST['gruppe']??''));
@@ -416,20 +426,23 @@ class VTP_Event_Public_Worklists {
   global $wpdb;
   $catering=VTP_DB::table('event_catering_items');
   $table=self::bring_signup_table();
-  $item=$wpdb->get_row($wpdb->prepare("SELECT * FROM $catering WHERE id=%d AND event_id=%d AND category='bring'",$item_id,$event_id));
-  if(!$item) wp_die('Mitbring-Eintrag nicht gefunden.');
+  $wpdb->query('START TRANSACTION');
+  $item=$wpdb->get_row($wpdb->prepare("SELECT * FROM $catering WHERE id=%d AND event_id=%d AND category='bring' FOR UPDATE",$item_id,$event_id));
+  if(!$item){ $wpdb->query('ROLLBACK'); wp_die('Mitbring-Eintrag nicht gefunden.'); }
 
   $pledged=(float)$wpdb->get_var($wpdb->prepare("SELECT COALESCE(SUM(quantity),0) FROM $table WHERE catering_item_id=%d",$item_id));
   $remaining=max(0,(float)$item->quantity-$pledged);
   $raw_quantity=str_replace(',','.',sanitize_text_field(wp_unslash($_POST['quantity']??'')));
-  if(!is_numeric($raw_quantity) || (float)$raw_quantity<=0) wp_die('Bitte eine gültige Menge angeben.');
+  if(!is_numeric($raw_quantity) || (float)$raw_quantity<=0){ $wpdb->query('ROLLBACK'); wp_die('Bitte eine gültige Menge angeben.'); }
   $quantity=round((float)$raw_quantity,2);
-  if($quantity>$remaining+0.00001) wp_die('Die angegebene Menge ist größer als der noch offene Bedarf.');
+  if($quantity>$remaining+0.00001){ $wpdb->query('ROLLBACK'); wp_die('Die angegebene Menge ist größer als der noch offene Bedarf.'); }
 
   $name=sanitize_text_field(wp_unslash($_POST['name']??''));
-  if($name==='') wp_die('Bitte einen Namen angeben.');
+  if($name===''){ $wpdb->query('ROLLBACK'); wp_die('Bitte einen Namen angeben.'); }
   $contact=sanitize_text_field(wp_unslash($_POST['contact']??''));
-  $wpdb->insert($table,['event_id'=>$event_id,'catering_item_id'=>$item_id,'name'=>$name,'contact'=>$contact?:null,'quantity'=>$quantity,'created_at'=>current_time('mysql')]);
+  $result=$wpdb->insert($table,['event_id'=>$event_id,'catering_item_id'=>$item_id,'name'=>$name,'contact'=>$contact?:null,'quantity'=>$quantity,'created_at'=>current_time('mysql')]);
+  if($result===false){ $wpdb->query('ROLLBACK'); wp_die('Die Zusage konnte nicht gespeichert werden.'); }
+  $wpdb->query('COMMIT');
 
   $event=self::event($event_id);
   $group=sanitize_text_field(wp_unslash($_POST['gruppe']??''));
