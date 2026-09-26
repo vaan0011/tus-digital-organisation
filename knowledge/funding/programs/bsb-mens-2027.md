@@ -1,6 +1,6 @@
 # Programmdossier – BSB Nord M.E.N.S.
 
-**Stand / letzte Primärquellen-Verifizierung:** 2026-09-24  
+**Stand / letzte Primärquellen-Verifizierung:** 2026-09-26  
 **Status:** neu veröffentlicht / Bewerbung ab 01.11.2026  
 **Radarbewertung TuS:** **B – strategisch prüfen, noch kein A/B+**
 
@@ -19,6 +19,7 @@ Aufbau verbindlicher und nachhaltiger lokaler Vereinskooperationen, die sich hau
 - Personalkosten für neu geschaffene hauptberufliche Stellen in Kooperationen von mindestens zwei BSB-Nord-Mitgliedsvereinen.
 - Bei zusammen 300–999 Mitgliedern: eine Teilzeitstelle.
 - Ab zusammen 1.000 Mitgliedern: maximal eine Vollzeitstelle oder zwei Teilzeitstellen.
+- Ab zusammen 5.000 Mitgliedern: maximal zwei Vollzeitstellen oder vier Teilzeitstellen.
 - Zusätzlich bis zu acht verpflichtende Coaching-/Beratungseinheiten zu Struktur, Finanzierung und rechtlichen Fragen.
 
 ## Förderung
@@ -59,8 +60,6 @@ Telefon: 0721 / 18 08-13
 E-Mail: l.schneider@badischer-sportbund.de  
 Individuelle Beratung wird ausdrücklich angeboten.
 
-Zusätzlicher Kontakt: Patrick Orf, 0721 / 18 08-40, p.orf@badischer-sportbund.de.
-
 ## Auswahlkriterien / erkennbare Prioritäten
 
 Aus der Primärquelle ergeben sich insbesondere:
@@ -75,9 +74,11 @@ Aus der Primärquelle ergeben sich insbesondere:
 
 ## TuS-Fit
 
-Das Programm trifft die realen TuS-Themen **Ehrenamtsentlastung, Professionalisierung, Verwaltung und Organisationsentwicklung** fachlich sehr gut. Es ist aber aktuell **noch kein qualifizierter A-/B+-Treffer**, weil im TuS-OS kein konkretes Vorhaben dokumentiert ist, gemeinsam mit mindestens einem weiteren BSB-Nord-Verein eine neue hauptamtliche Management-/Verwaltungsstelle aufzubauen. Das bestehende Projekt `Arbeitsplatz Sportparkteam` wird nicht künstlich umetikettiert: dessen operativer Sportpark-Scope entspricht nicht dem M.E.N.S.-Förderzweck.
+Das Programm trifft die realen TuS-Themen **Ehrenamtsentlastung, Professionalisierung, Verwaltung und Organisationsentwicklung** fachlich sehr gut. Es ist aber aktuell **noch kein qualifizierter A-/B+-Treffer**, weil noch kein förderfähiger zweiter BSB-Nord-Mitgliedsverein als konkreter Kooperationspartner feststeht.
 
-Auch `Aufbau Digitale Vereinsorganisation` wird nicht automatisch in ein Personalprojekt umgebaut. M.E.N.S. wäre nur dann ein sauberer Fit, wenn der TuS unabhängig von der Förderung tatsächlich eine vereinsübergreifende hauptamtliche Verwaltungs-/Organisationsstruktur aufbauen möchte.
+Der **Jugendförderverein des TuS ist nach bestätigtem Vereinsstand kein Mitglied im BSB Nord und kann deshalb nicht als der erforderliche zweite M.E.N.S.-Kooperationsverein zählen.** Er wird nicht künstlich als förderfähiger Partner dargestellt. Falls seine fachliche Einbindung in Leistungen einer späteren Kooperation gewünscht ist, muss dies getrennt von der formalen Mindestpartnerschaft und vor Antragstellung mit dem BSB geklärt werden.
+
+Das bestehende Projekt `Arbeitsplatz Sportparkteam` wird nicht künstlich umetikettiert: dessen operativer Sportpark-Scope entspricht nicht dem M.E.N.S.-Förderzweck. Auch `Aufbau Digitale Vereinsorganisation` wird nicht automatisch in ein Personalprojekt umgebaut. M.E.N.S. ist nur dann ein sauberer Fit, wenn der TuS tatsächlich eine vereinsübergreifende hauptamtliche Verwaltungs-/Organisationsstruktur mit mindestens einem weiteren förderfähigen BSB-Nord-Verein aufbauen möchte.
 
 ## Mögliche Förderstory – nur bei echter strategischer Entscheidung
 
@@ -87,11 +88,12 @@ Mehrere lokale Sportvereine bündeln wiederkehrende Verwaltungs-, Organisations-
 
 ## Vergleichbare Bewilligungen
 
-Noch keine belastbaren Bewilligungen recherchierbar: Das Programm wurde am 23.09.2026 neu veröffentlicht und die erste Bewerbungsphase startet am 01.11.2026.
+Noch keine belastbaren Bewilligungen recherchierbar: Das Programm wurde im September 2026 neu veröffentlicht und die erste Bewerbungsphase startet am 01.11.2026.
 
 ## Risiken / offene Punkte
 
-- echter Kooperationspartner fehlt aktuell,
+- förderfähiger zweiter BSB-Nord-Mitgliedsverein fehlt aktuell,
+- Jugendförderverein ist kein BSB-Nord-Mitglied und zählt nicht als Mindestpartner,
 - hoher Eigenanteil über zwei Jahre,
 - Anschlussfinanzierung nach Förderende muss schon im Antrag plausibel sein,
 - neuer aktueller Freistellungsbescheid ist für den TuS voraussichtlich relevant,
@@ -101,4 +103,4 @@ Noch keine belastbaren Bewilligungen recherchierbar: Das Programm wurde am 23.09
 
 ## Nächste Aktion
 
-Bis zur Veröffentlichung der Bewerbungsunterlagen am 01.11.2026 **nicht auf A/B+ hochstufen**. Strategisch prüfen, ob der TuS unabhängig von der Förderung eine gemeinsame Verwaltungs-/Managementstelle mit mindestens einem regionalen BSB-Nord-Verein aufbauen möchte. Nur bei echtem Interesse: möglichen Partner identifizieren, Beratungsweg beim BSB nutzen und Kooperations-/Finanzierungsscope konkretisieren.
+Bis zur Veröffentlichung der Bewerbungsunterlagen am 01.11.2026 **nicht auf A/B+ hochstufen**. Bei echtem TuS-Interesse gezielt mindestens einen regionalen BSB-Nord-Mitgliedsverein identifizieren, der dieselbe strukturelle Verwaltungs-/Ehrenamtsentlastung tatsächlich braucht. Danach Beratungsweg beim BSB nutzen und Kooperations-, Aufgaben- und Finanzierungsmodell konkretisieren.
