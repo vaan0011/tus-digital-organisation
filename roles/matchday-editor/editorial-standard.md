@@ -53,10 +53,11 @@ Weitere veröffentlichte Spieldaten werden bei Bedarf ergänzend herangezogen.
 
 Diese Daten bilden zusammen mit dem Nutzer-Rohbericht die faktische Grundlage des Spielberichts. Die Torfolge kann als zeitliche Leitlinie für die Dramaturgie genutzt werden, ohne daraus nicht belegte Spielszenen abzuleiten.
 
-Die beiden dauerhaft bekannten Mannschaftsseiten sind:
+Die drei dauerhaft bekannten Mannschaftsseiten sind:
 
 - Herren 1: `https://www.fussball.de/mannschaft/tus-mingolsheim-tus-mingolsheim-baden/-/saison/2627/team-id/011MIDVOS8000000VTVG0001VTR8C1K7`
 - Herren 2: `https://www.fussball.de/mannschaft/tus-mingolsheim-2-tus-mingolsheim-baden/-/saison/2627/team-id/011MIA2PS4000000VTVG0001VTR8C1K7`
+- Frauen – SpG St. Leon / Mingolsheim: `https://www.fussball.de/mannschaft/spg-stleon-mingolsheim-vfb-st-leon-baden/-/saison/2627/team-id/01L4SUSE4O000000VV0AG80NVU8074QK`
 
 Bei einem Saisonwechsel werden die Mannschaftsseiten bzw. Saisonparameter überprüft und bei Bedarf aktualisiert.
 
@@ -133,7 +134,7 @@ Vor Fertigstellung muss eindeutig feststehen:
 
 Gleich oder ähnlich benannte Mannschaften dürfen nicht vermischt werden.
 
-Trainer- und Funktionsangaben sind ebenfalls eindeutig der Mannschaft zuzuordnen. Die aktuelle interne Referenz dafür ist `season-state.md`. Vor einer namentlichen Erwähnung eines Head-Coachs oder Co-Coachs werden dort Name, Funktion und Mannschaft geprüft. Trainerrollen werden nicht aus Erinnerung ergänzt und nicht zwischen Herren 1 und Herren 2 übertragen.
+Trainer- und Funktionsangaben sind ebenfalls eindeutig der Mannschaft zuzuordnen. Die aktuelle interne Referenz dafür ist `season-state.md`. Vor einer namentlichen Erwähnung eines Head-Coachs oder Co-Coachs werden dort Name, Funktion und Mannschaft geprüft. Trainerrollen werden nicht aus Erinnerung ergänzt und nicht zwischen den betreuten Mannschaften übertragen.
 
 ### 6. Google Drive als Spielberichtsarchiv
 
@@ -233,7 +234,7 @@ Nicht jeder einzelne Bericht wird zusätzlich in GitHub kopiert.
 
 Der Matchday Editor führt unter `season-state.md` einen kompakten, fortlaufend aktualisierten Arbeitsstand je Saison.
 
-Für Herren 1 und Herren 2 werden mindestens festgehalten:
+Für Herren 1, Herren 2 und die Frauenmannschaft werden mindestens festgehalten:
 
 - Saison und Wettbewerb,
 - aktueller Trainerstab mit Name, Funktion und Mannschaft,
