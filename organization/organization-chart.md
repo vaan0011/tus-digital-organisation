@@ -109,6 +109,22 @@ Der Matchday Editor verantwortet faktenbasierte, emotionale und mediengerechte S
 
 Trainer, Mannschaften und sportliche Entwicklung unterstützen.
 
+**Zugeordnete Rolle**
+
+- Scouting & Squad Intelligence Analyst
+
+Der Scouting & Squad Intelligence Analyst verbindet positionsbezogene Kaderbenchmarking-Daten, externe sportliche Signale und die interne Entwicklungspipeline aus Herren 2 und A-Junioren. Er bereitet Beobachtungsentscheidungen vor, nimmt aber keine Kontakte auf und trifft keine Kader- oder Wechselentscheidung.
+
+**Zusammenarbeit**
+
+- Trainer Herren 1 und Herren 2
+- Sportvorstand / sportliche Leitung
+- Jugendleitung und A-Junioren
+- Team Manager
+- Datenschutz & IT
+- Kommunikation
+- Vereinsentwicklung
+
 ---
 
 ## Sponsoring
