@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Dieses Dokument ist das fortlaufende redaktionelle Saison-Gedächtnis des Matchday Editors für die betreuten Herrenmannschaften des TuS Mingolsheim.
+Dieses Dokument ist das fortlaufende redaktionelle Saison-Gedächtnis des Matchday Editors für Herren 1, Herren 2 und die Frauen-Spielgemeinschaft SpG St. Leon / Mingolsheim.
 
 Es hält einen kompakten, verifizierten Überblick über Ergebnisse, aktuellen Tabellenstand und die redaktionell relevanten Trainerfunktionen bereit und wird nach jedem relevanten Spieltag aktualisiert.
 
@@ -82,6 +82,27 @@ Mannschaftsseite:
 | 13.09.2026 | 3 | TuS Mingolsheim 2 | FV 1912 Wiesental 2 | 1:4 |
 | 20.09.2026 | 4 | Spvgg 1920 Oberhausen | TuS Mingolsheim 2 | 3:2 |
 
+## Frauen – SpG St. Leon / Mingolsheim
+
+Wettbewerbe:
+
+- **bfv-Frauen Landesliga St. 1**
+- **Frauen-Verbandspokal 26/27**
+
+Mannschaftsseite:
+`https://www.fussball.de/mannschaft/spg-stleon-mingolsheim-vfb-st-leon-baden/-/saison/2627/team-id/01L4SUSE4O000000VV0AG80NVU8074QK`
+
+### Trainerstab
+
+Noch nicht verifiziert. Trainer- und Funktionsnamen werden erst nach belastbarer Zuordnung gepflegt und verwendet.
+
+### Aufnahme-Checkpoint
+
+- Aufnahme in den regulären Matchday-Run beschlossen: **28.09.2026**
+- Automatische Berichtserstellung ab: **Pflichtspiele nach dem 28.09.2026**
+- Frühere Pflichtspiele dienen als Saisonkontext und werden nicht automatisch rückwirkend als neue Berichte erzeugt.
+- Beim ersten Lauf nach der Aufnahme werden aktueller Saisonstand, bereits absolvierte Spiele und das nächste Pflichtspiel vollständig über `fussball.de` initialisiert und gegen das Spielberichtsarchiv abgeglichen.
+
 ## Redaktionelle Nutzung
 
 Der Saisonstand darf für belastbare Einordnungen genutzt werden, zum Beispiel:
@@ -97,7 +118,7 @@ Vor einer solchen Aussage wird der aktuelle Stand auf `fussball.de` erneut gepr�
 
 Für einen konkreten Spielbericht wird zusätzlich immer das zuletzt absolvierte Spiel geöffnet. Ergebnis, Torschützen und Spielminuten der Tore werden direkt aus dem dort veröffentlichten Spielbericht verifiziert, soweit verfügbar.
 
-Für namentliche Erwähnungen des Trainerstabs werden die in diesem Dokument gepflegten Zuordnungen verwendet. Name, Funktion und Mannschaft sind vor der Veröffentlichung gemeinsam zu prüfen; Trainerrollen werden nicht zwischen Herren 1 und Herren 2 übertragen oder aus Erinnerung ergänzt.
+Für namentliche Erwähnungen des Trainerstabs werden die in diesem Dokument gepflegten Zuordnungen verwendet. Name, Funktion und Mannschaft sind vor der Veröffentlichung gemeinsam zu prüfen; Trainerrollen werden nicht zwischen den betreuten Mannschaften übertragen oder aus Erinnerung ergänzt.
 
 ## Relationship to other documents
 
