@@ -66,7 +66,7 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 
 - Interne Mannschaften: Herren 1, Herren 2 und eigene A-Junioren.
 - Interne Wettbewerbe: Kreisliga Bruchsal, Kreisklasse B Bruchsal und A-Junioren Landesliga Mittelbaden.
-- Externe belastbare Hinweise: acht Erwachsene aus Kreisliga Bruchsal und Landesliga Mittelbaden sowie vier Spieler des Jahrgangs 2008 bis A-Junioren Verbandsliga Baden.
+- Externe belastbare Hinweise: acht Erwachsene aus Kreisliga Bruchsal und Landesliga Mittelbaden sowie vier Spieler des Jahrgangs 2008 in der A-Junioren Landesliga Mittelbaden; bei mehreren Jugendprofilen ist zusätzliche Verbandsliga-Erfahrung aus der Vorsaison öffentlich dokumentiert.
 - Positionsprüfung: Tor, Innenverteidigung, Außenverteidigung, zentrales Mittelfeld, Flügel / offensives Mittelfeld und Angriff.
 - Schwerpunkte: Angriff und Innenverteidigung wurden vertieft, ohne die übrigen Positionsgruppen auszuschließen.
 - Erwachsenensignale aus Verbandsliga Baden sowie zusätzliche Hinweise aus dem Heidelberger Teil des Radius waren in der begrenzten öffentlichen Stichprobe nicht belastbar genug für den Radar.
