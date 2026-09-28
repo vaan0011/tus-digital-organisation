@@ -15,9 +15,9 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 ### Status
 
 - Stand: **28.09.2026**
-- Phase: **Initialer Pilot vorbereitet**
+- Phase: **Erster Pilotlauf durchgeführt – menschliche Auswertung offen**
 - Wiederkehrender Run: **nicht freigegeben**
-- Operativer Scouting-Radar: **wird im ersten Pilotlauf als geschützte native Google-Tabelle angelegt**
+- Operativer Scouting-Radar: **[geschützte native Google-Tabelle `TuS Scouting – Pilot 2026/27`](https://docs.google.com/spreadsheets/d/1pfRegffiQnvJXGpQZnGUojz5ztkB23bjpmkE_kNKKLA/edit)**
 - Externe Kontaktaufnahme: **nicht freigegeben**
 
 ### Verbindlicher Pilot-Scope
@@ -62,22 +62,47 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 9. Keine Massenerhebung oder Umgehung von Plattformregeln.
 10. Personenbezogene Ergebnisse werden nicht im öffentlichen Repository gespeichert.
 
-### Aktuelle Queue
+### Datenabdeckung des Piloten
 
-1. geschützte Google-Tabelle `TuS Scouting – Pilot 2026/27` anlegen,
-2. Quellen- und Spaltenschema verifizieren,
-3. TuS-Benchmark für Herren 1, Herren 2 und Übergangsgruppe initialisieren,
-4. begrenzte externe Erwachsenensuche über alle Positionsgruppen durchführen,
-5. älteren A-Junioren-Jahrgang 2008 bis Verbandsliga begrenzt prüfen,
-6. Datenqualität und offene Beobachtungsfragen dokumentieren,
-7. Pilotbericht und nicht-personenbezogenen Runtime-Checkpoint schreiben,
-8. menschliche Entscheidung über Nutzen und möglichen Folgerhythmus vorbereiten.
+- Interne Mannschaften: Herren 1, Herren 2 und eigene A-Junioren.
+- Interne Wettbewerbe: Kreisliga Bruchsal, Kreisklasse B Bruchsal und A-Junioren Landesliga Mittelbaden.
+- Externe belastbare Hinweise: acht Erwachsene aus Kreisliga Bruchsal und Landesliga Mittelbaden sowie vier Spieler des Jahrgangs 2008 bis A-Junioren Verbandsliga Baden.
+- Positionsprüfung: Tor, Innenverteidigung, Außenverteidigung, zentrales Mittelfeld, Flügel / offensives Mittelfeld und Angriff.
+- Schwerpunkte: Angriff und Innenverteidigung wurden vertieft, ohne die übrigen Positionsgruppen auszuschließen.
+- Erwachsenensignale aus Verbandsliga Baden sowie zusätzliche Hinweise aus dem Heidelberger Teil des Radius waren in der begrenzten öffentlichen Stichprobe nicht belastbar genug für den Radar.
+- Belastbare Einsatzminuten waren öffentlich nicht verfügbar; deshalb wurden keine Pro-90-Werte berechnet.
+- Mehrquellenprofile wurden nur bei sicherer Identität zusammengeführt; erkennbare Quellenkonflikte bleiben als solche markiert.
 
 ### Checkpoint
 
-**Noch kein operativer Scouting-Lauf durchgeführt.**
+**Der erste operative Pilotlauf wurde am 28.09.2026 abgeschlossen.**
 
-Der erste Lauf beginnt mit dem Anlegen der geschützten operativen Quelle und der Prüfung, welche vergleichbaren TuS-Daten tatsächlich belastbar verfügbar sind.
+Erstellt und verifiziert wurden die geschützte native Google-Tabelle mit fünf Registern, die interne TuS-Benchmark, begrenzte externe Kandidatenhinweise, Jahrgang-2008-Hinweise, Quellen- und Datenqualitätslogik sowie konkrete Beobachtungsaufträge. Es gab keine Kontaktaufnahme und keine Kader-, Probetrainings-, Wechsel-, Vergütungs- oder Vertragsentscheidung.
+
+### Lessons Learned
+
+- FUSSBALL.DE ist für Wettbewerb, Ergebnisse und sichtbare offizielle Torstatistik belastbar, stellt aber bei den geprüften TuS-Teams keinen vollständigen öffentlichen Kader und keine verlässlichen Spielerminuten bereit.
+- Öffentliche TuS-Spielberichte liefern nützliche Ereignis- und Rollensignale, ersetzen aber keine vollständige Einsatzstatistik.
+- FuPa ist für eine begrenzte Entdeckung von Hinweisen nützlich, benötigt aber je Profil eine sichtbare Qualitätsbewertung und fallweise Gegenprüfung.
+- Die Positionsbezeichnung `Abwehr` reicht nicht aus, um einen Spieler als Innenverteidiger einzustufen.
+- Einzelne aktuelle Profil- und Spielberichtswerte widersprechen sich; solche Fälle bleiben Beobachtungs- oder Verifikationsauftrag statt Bewertung.
+- Die frühe Saisonstichprobe und fehlende Minuten begrenzen faire TuS-/Peer-Vergleiche deutlich.
+- Die eigene ältere A-Junioren-Übergangsgruppe lässt sich öffentlich nicht sicher nach Jahrgang, Rolle und Minuten abgrenzen; dafür sind intern freigegebene sportliche Daten erforderlich.
+
+### Aktuelle Queue
+
+1. geschützten Radar durch sportliche Leitung und Trainerteam prüfen,
+2. priorisierte 90-Minuten-Beobachtungen für Angriff, Abwehrrollen und Tor durchführen,
+3. bei externen Abwehrhinweisen zuerst die tatsächliche Innenverteidigerrolle verifizieren,
+4. interne Rollen, Einsätze und Minuten von Herren 2 sowie der eigenen Jahrgang-2008-Übergangsgruppe ergänzen,
+5. interne Entwicklungslösungen mit derselben Beobachtungsmatrix vor externer Priorisierung bewerten,
+6. Datenkonflikte vor jeder vertieften Bewertung auflösen,
+7. nach menschlichem Checkpoint Nutzen, Zugangsweg und möglichen Folgerhythmus bewerten,
+8. erst danach über einen regelmäßigen Lauf oder eine n8n-Integration entscheiden.
+
+### Nächste Aktion
+
+Die sportliche Leitung führt den ersten manuellen Checkpoint auf Basis der geschützten Tabelle und der offenen Beobachtungsaufträge durch. Ein wiederkehrender Run bleibt bis zu dieser Bewertung ausgesetzt.
 
 ### Stop- und Freigabestatus
 
@@ -87,7 +112,7 @@ Der erste Lauf beginnt mit dem Anlegen der geschützten operativen Quelle und de
 - Kontaktaufnahme: nicht freigegeben,
 - Probetraining / Wechselgespräch / Angebot: nicht freigegeben,
 - regelmäßiger automatischer Lauf: noch nicht freigegeben,
-- n8n-Integration: erst nach erfolgreichem Pilot und geklärtem Datenzugang bewerten.
+- n8n-Integration: erst nach Pilotbewertung und geklärtem Datenzugang bewerten.
 
 ## Relationship to other documents
 
