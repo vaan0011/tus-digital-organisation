@@ -19,6 +19,7 @@ Individuelle Kandidatendaten und Bewertungen gehören nicht in dieses öffentlic
 - `../../roles/scouting-analyst/role.md` – Auftrag und Verantwortung,
 - `../../roles/scouting-analyst/scouting-standard.md` – verbindliche Bewertungs- und Datenschutzlogik,
 - `../../roles/scouting-analyst/runtime.md` – Pilot- und spätere Runtime-Logik,
+- `../../roles/scouting-analyst/quality-assessment.md` – synthetisches Prüfset vor erweitertem Betrieb,
 - geschützte Google-Drive-Tabelle – operative TuS-Benchmark, Kandidaten und Beobachtungsaufträge.
 
 ### Nicht in GitHub
@@ -41,6 +42,8 @@ GitHub kann nicht-personenbezogen dokumentieren, welche Positionen und Suchräum
 - `../../roles/scouting-analyst/role.md`
 - `../../roles/scouting-analyst/scouting-standard.md`
 - `../../roles/scouting-analyst/runtime.md`
+- `../../roles/scouting-analyst/quality-assessment.md`
+- `../../standards/agent-quality-loop.md`
 - `../../knowledge/SECOND-BRAIN-STANDARD.md`
 - `../../architecture/memory-router.md`
 

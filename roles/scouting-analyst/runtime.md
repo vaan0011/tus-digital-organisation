@@ -148,7 +148,11 @@ Der Pilot endet, wenn:
 
 Ein leerer Positionsbereich ist zulässig, wenn die Quellen keine belastbare Aussage erlauben.
 
-### 11. Write-back
+### 11. Qualitätsprüfung vor erweitertem Betrieb
+
+Vor einer Freigabe eines regelmäßigen Laufs wird das synthetische [`quality-assessment.md`](quality-assessment.md) nach dem [Agent Quality Loop](../../standards/agent-quality-loop.md) ausgeführt und dokumentiert. Der Befund ergänzt die menschliche Pilotbewertung und ändert keine bestehenden Freigabegrenzen automatisch.
+
+### 12. Write-back
 
 Nach dem Pilot werden aktualisiert:
 
@@ -160,7 +164,7 @@ Nach dem Pilot werden aktualisiert:
 
 Kandidatennamen und individuelle Bewertungen werden nicht in GitHub geschrieben.
 
-### 12. Rückmeldung
+### 13. Rückmeldung
 
 Der Pilotbericht enthält kompakt:
 
@@ -176,10 +180,9 @@ Der Pilotbericht enthält kompakt:
 
 ## Aktueller Runtime-Checkpoint
 
-**Stand:** 2026-09-28  
-**Status:** Pilot vorbereitet, noch nicht ausgeführt.  
-**Nächster Checkpoint:** geschützten operativen Radar anlegen und TuS-Benchmark initialisieren.  
-**Trigger:** einmaliger Pilotlauf nach Merge der initialen OS-Rolle.  
+**Verbindlicher Stand:** [`knowledge/scouting/CURRENT-STATE.md`](../../knowledge/scouting/CURRENT-STATE.md).  
+**Stand 2026-09-28:** Der erste Pilot ist durchgeführt; menschliche Auswertung offen.  
+**Nächster Checkpoint:** sportliche Pilotbewertung; anschließend Qualitätsprüfset vor einer Entscheidung über regelmäßige Läufe ausführen.  
 **Wiederkehrender Lauf:** nicht freigegeben.
 
 ## Relationship to other documents
@@ -187,6 +190,8 @@ Der Pilotbericht enthält kompakt:
 - `role.md`
 - `scouting-standard.md`
 - `START-PROMPT.md`
+- `quality-assessment.md`
+- `../../standards/agent-quality-loop.md`
 - `../../knowledge/scouting/CURRENT-STATE.md`
 - `../../knowledge/scouting/SOURCE-REGISTER.md`
 - `../../standards/employee-runtime-standard.md`
