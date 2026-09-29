@@ -224,6 +224,15 @@ Der geschützte operative Scouting-Radar enthält mindestens folgende Register:
 
 Zugriff und Weitergabe werden auf den sportlich berechtigten Personenkreis begrenzt.
 
+
+Die Register `Externe Kandidaten` und `A-Jugend 2008` enthalten die Spalte `Kommentar` als manuelles Bewertungsfeld der sportlichen Leitung. Für diese Spalte gilt:
+
+- der Analyst befüllt, verändert oder löscht dort keine Inhalte,
+- neue Kandidatenzeilen erhalten in diesem Feld keinen automatisch erzeugten Text,
+- bestehende Kommentare werden bei jedem Lauf unverändert erhalten,
+- Kommentare dürfen als `interne Zusatzsicht` gelesen werden, bleiben aber klar von öffentlichen Fakten, Ableitungen und Datenqualität getrennt,
+- Kommentare und daraus abgeleitete personenbezogene Einzelbewertungen werden nicht in das öffentliche Repository übernommen.
+
 ### 12. Kandidatendossier
 
 Ein Dossier enthält soweit belastbar:
