@@ -144,6 +144,7 @@ Dieses Projekt ist nicht:
 ## Relationship to other documents
 
 - [`IMPULS-BOTS-AND-BOSSES-2026-09-29.md`](IMPULS-BOTS-AND-BOSSES-2026-09-29.md) – Podcastimpuls zu digitalen Arbeitsanteilen und menschlichen Entscheidungen
+- [`IMPULS-UNGESKRIPTET-KI-ORGANISATION-2026-09-29.md`](IMPULS-UNGESKRIPTET-KI-ORGANISATION-2026-09-29.md) – Interviewimpuls zu Rollen, Gedächtnis, Qualitätsprüfung und n8n
 - `PROJECT-STATE.md`
 - `../PROJECT-PORTFOLIO.md`
 - `../../vision/vision.md`
