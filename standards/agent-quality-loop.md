@@ -81,4 +81,4 @@ Allgemeine Kriterien, synthetische Fälle und nicht-personenbezogene Lessons Lea
 
 ## Future Development
 
-Nach dem Scouting-Pilot können Archivist, Matchday Editor und Funding & Grants Manager eigene, kurze Prüfsets erhalten. Kriterien und Rhythmus werden erst anhand realer Fehlerbilder und Arbeitsaufwände erweitert.
+Nach der Bewertung des Scouting-Piloten können Archivist, Matchday Editor und Funding & Grants Manager eigene, kurze Prüfsets erhalten. Kriterien und Rhythmus werden erst anhand realer Fehlerbilder und Arbeitsaufwände erweitert.
