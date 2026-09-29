@@ -87,6 +87,7 @@ Aber keine wichtige Erkenntnis soll verloren gehen.
 
 - `employee-operating-standard.md`
 - `approval-and-escalation.md`
+- `agent-quality-loop.md` – wiederholbare Prüfungen von Rollenverhalten; Befunde fließen in diesen Learning Loop zurück
 - `working-standards.md`
 - `../organization/culture.md`
 - `../core/core-principles.md`
