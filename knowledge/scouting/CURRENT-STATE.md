@@ -14,7 +14,7 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 
 ### Status
 
-- Stand: **28.09.2026**
+- Stand: **29.09.2026**
 - Phase: **Erster Pilotlauf durchgeführt – menschliche Auswertung offen**
 - Wiederkehrender Run: **nicht freigegeben**
 - Operativer Scouting-Radar: **[geschützte native Google-Tabelle `TuS Scouting – Pilot 2026/27`](https://docs.google.com/spreadsheets/d/1pfRegffiQnvJXGpQZnGUojz5ztkB23bjpmkE_kNKKLA/edit)**
@@ -34,7 +34,7 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 #### Externer Suchraum
 
 - Orientierungsradius etwa 35 Kilometer um Mingolsheim,
-- primär Bruchsal, Karlsruhe und Heidelberg,
+- primär Bruchsal, Karlsruhe, Heidelberg und Sinsheim,
 - passende angrenzende Staffeln nur bei realistischem Radius und Bedarf,
 - Kreisklassen und Kreisligen,
 - Landesligen Baden,
@@ -66,18 +66,19 @@ Es hält Scope, Runtime-Status, Quellenlage, Checkpoint und nächste Aktion fest
 
 - Interne Mannschaften: Herren 1, Herren 2 und eigene A-Junioren.
 - Interne Wettbewerbe: Kreisliga Bruchsal, Kreisklasse B Bruchsal und A-Junioren Landesliga Mittelbaden.
-- Externe belastbare Hinweise: acht Erwachsene aus Kreisliga Bruchsal und Landesliga Mittelbaden sowie vier Spieler des Jahrgangs 2008 in der A-Junioren Landesliga Mittelbaden; bei mehreren Jugendprofilen ist zusätzliche Verbandsliga-Erfahrung aus der Vorsaison öffentlich dokumentiert.
+- Externe belastbare Hinweise: zwölf Erwachsene aus Kreisliga Bruchsal, Kreisliga Heidelberg, Kreisliga Sinsheim, Landesliga Mittelbaden und Landesliga Rhein-Neckar sowie vier Spieler des Jahrgangs 2008 in der A-Junioren Landesliga Mittelbaden; bei mehreren Jugendprofilen ist zusätzliche Verbandsliga-Erfahrung aus der Vorsaison öffentlich dokumentiert.
 - Positionsprüfung: Tor, Innenverteidigung, Außenverteidigung, zentrales Mittelfeld, Flügel / offensives Mittelfeld und Angriff.
 - Schwerpunkte: Angriff und Innenverteidigung wurden vertieft, ohne die übrigen Positionsgruppen auszuschließen.
-- Erwachsenensignale aus Verbandsliga Baden sowie zusätzliche Hinweise aus dem Heidelberger Teil des Radius waren in der begrenzten öffentlichen Stichprobe nicht belastbar genug für den Radar.
+- Die Ergänzungsprüfung für Heidelberg und Sinsheim führte zu vier zusätzlichen Erwachsenenhinweisen: je ein Angriffs- und ein Abwehrprofil pro Kreis. Erwachsenensignale aus der Verbandsliga Baden waren in der begrenzten öffentlichen Stichprobe weiterhin nicht belastbar genug für den Radar.
+- Die A-Junioren Landesliga Rhein/Neckar und die angrenzenden Jugendstaffeln wurden ergänzend geprüft. Wegen unvollständiger öffentlicher Jahrgangs-, Positions- und Einsatzdaten wurde kein zusätzlicher 2008er-Hinweis erzwungen.
 - Belastbare Einsatzminuten waren öffentlich nicht verfügbar; deshalb wurden keine Pro-90-Werte berechnet.
 - Mehrquellenprofile wurden nur bei sicherer Identität zusammengeführt; erkennbare Quellenkonflikte bleiben als solche markiert.
 
 ### Checkpoint
 
-**Der erste operative Pilotlauf wurde am 28.09.2026 abgeschlossen.**
+**Der erste operative Pilotlauf wurde am 28.09.2026 abgeschlossen und am 29.09.2026 um Heidelberg und Sinsheim ergänzt.**
 
-Erstellt und verifiziert wurden die geschützte native Google-Tabelle mit fünf Registern, die interne TuS-Benchmark, begrenzte externe Kandidatenhinweise, Jahrgang-2008-Hinweise, Quellen- und Datenqualitätslogik sowie konkrete Beobachtungsaufträge. Es gab keine Kontaktaufnahme und keine Kader-, Probetrainings-, Wechsel-, Vergütungs- oder Vertragsentscheidung.
+Erstellt und verifiziert wurden die geschützte native Google-Tabelle mit fünf Registern, die interne TuS-Benchmark, begrenzte externe Kandidatenhinweise, Jahrgang-2008-Hinweise, Quellen- und Datenqualitätslogik sowie konkrete Beobachtungsaufträge. Die Ergänzung umfasst offizielle Wettbewerbsquellen für Heidelberg, Sinsheim und Rhein-Neckar sowie eigene Beobachtungsaufträge für beide Kreise. Es gab keine Kontaktaufnahme und keine Kader-, Probetrainings-, Wechsel-, Vergütungs- oder Vertragsentscheidung.
 
 ### Lessons Learned
 
@@ -88,11 +89,12 @@ Erstellt und verifiziert wurden die geschützte native Google-Tabelle mit fünf 
 - Einzelne aktuelle Profil- und Spielberichtswerte widersprechen sich; solche Fälle bleiben Beobachtungs- oder Verifikationsauftrag statt Bewertung.
 - Die frühe Saisonstichprobe und fehlende Minuten begrenzen faire TuS-/Peer-Vergleiche deutlich.
 - Die eigene ältere A-Junioren-Übergangsgruppe lässt sich öffentlich nicht sicher nach Jahrgang, Rolle und Minuten abgrenzen; dafür sind intern freigegebene sportliche Daten erforderlich.
+- Auch in Heidelberg und Sinsheim erlaubt die öffentliche Jugenddatenlage keine vollständige, sichere 2008er-Abdeckung; fehlende Jahrgangsnachweise bleiben eine harte Aufnahmegrenze.
 
 ### Aktuelle Queue
 
 1. geschützten Radar durch sportliche Leitung und Trainerteam prüfen,
-2. priorisierte 90-Minuten-Beobachtungen für Angriff, Abwehrrollen und Tor durchführen,
+2. priorisierte 90-Minuten-Beobachtungen für Angriff, Abwehrrollen und Tor durchführen, einschließlich der neuen Aufträge in Heidelberg und Sinsheim,
 3. bei externen Abwehrhinweisen zuerst die tatsächliche Innenverteidigerrolle verifizieren,
 4. interne Rollen, Einsätze und Minuten von Herren 2 sowie der eigenen Jahrgang-2008-Übergangsgruppe ergänzen,
 5. interne Entwicklungslösungen mit derselben Beobachtungsmatrix vor externer Priorisierung bewerten,
