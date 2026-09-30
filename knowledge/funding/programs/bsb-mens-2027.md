@@ -1,6 +1,6 @@
 # Programmdossier – BSB Nord M.E.N.S.
 
-**Stand / letzte Primärquellen-Verifizierung:** 2026-09-26  
+**Stand / letzte Primärquellen-Verifizierung:** 2026-09-30  
 **Status:** neu veröffentlicht / Bewerbung ab 01.11.2026  
 **Radarbewertung TuS:** **B – strategisch prüfen, noch kein A/B+**
 
@@ -35,7 +35,7 @@ Aufbau verbindlicher und nachhaltiger lokaler Vereinskooperationen, die sich hau
 
 - Bewerbungsunterlagen laut Primärquelle ab **01.11.2026** verfügbar.
 - Bewerbungsfrist: **31.03.2027**.
-- Phase 1: Datenblatt, Kooperationskonzept und Finanzierungsplan per E-Mail.
+- Phase 1: Datenblatt, Kooperationskonzept und Finanzierungsplan per E-Mail an Lisanne Schneider.
 - Phase 2: ca. zweistündiger Vor-Ort-Termin mit Konzept- und Finanzierungsplanvorstellung.
 - Auswahl: bis zu drei Vereinskooperationen.
 - Finale Entscheidung / Fördervertrag bis 31.05.2027.
@@ -51,7 +51,7 @@ Aufbau verbindlicher und nachhaltiger lokaler Vereinskooperationen, die sich hau
 
 ### Gemeinnützigkeitsnachweis
 
-Die veröffentlichte Programmseite verlangt ausdrücklich einen **gültigen Körperschaftsteuer-Freistellungsbescheid** mit dem Zweck Förderung des Sports. Eine konkrete maximale Altersgrenze des Bescheids wird auf der geprüften Programmseite nicht genannt. Der Nachweis gehört zu den Fördervoraussetzungen und ist deshalb für die Bewerbung einzuplanen; nicht erst für die Auszahlung. Für den TuS ist der erwartete neue aktuelle Bescheid im Herbst 2026 deshalb ein relevantes Gate vor Bewerbung.
+Die am 30.09.2026 erneut geprüfte Programmseite verlangt ausdrücklich einen **gültigen Körperschaftsteuer-Freistellungsbescheid** mit dem Zweck Förderung des Sports. Eine konkrete maximale Altersgrenze des Bescheids wird dort nicht genannt. Der Nachweis ist als Fördervoraussetzung bereits für die Bewerbung einzuplanen, nicht erst für die Auszahlung. Für den TuS ist der erwartete neue aktuelle Bescheid im Herbst 2026 deshalb ein relevantes Gate vor Bewerbung.
 
 ## Ansprechpartner
 
@@ -59,6 +59,10 @@ Die veröffentlichte Programmseite verlangt ausdrücklich einen **gültigen Kör
 Telefon: 0721 / 18 08-13  
 E-Mail: l.schneider@badischer-sportbund.de  
 Individuelle Beratung wird ausdrücklich angeboten.
+
+**Patrick Orf – Badischer Sportbund Nord**  
+Telefon: 0721 / 18 08-40  
+E-Mail: p.orf@badischer-sportbund.de
 
 ## Auswahlkriterien / erkennbare Prioritäten
 
