@@ -15,12 +15,12 @@ Der TuS verbiegt sein Digitalprojekt nicht für die Förderung. Die Initiative p
 **TuS-Projekt:** Aufbau Digitale Vereinsorganisation  
 **Programm:** Sportverein der Zukunft – mit BASF fit für die Digitalisierung  
 **Priorität:** **A – bewerben**  
-**Letzte Primärquellen-Verifizierung:** 2026-09-23  
+**Letzte Primärquellen-Verifizierung:** 2026-10-01  
 **Status:** Bewerbungsfenster offen; Bewerbung erfolgt durch Abschluss des Digital-Checks.
 
 ### Fit
 
-Die Initiative richtet sich an Breitensportvereine und begleitet ausgewählte Vereine über rund 18 Monate bei einem eigenen Digitalisierungsprojekt. Die offiziellen Themen umfassen Kommunikation, Mitgliederwesen, Organisation und Sportangebot. Das Coaching entwickelt mit dem Verein eine konkrete Roadmap und begleitet die Umsetzung über Fortschrittsmeetings und ein Abschlusscoaching.
+Die Initiative richtet sich an Breitensportvereine in der Metropolregion Rhein-Neckar und begleitet ausgewählte Vereine über rund 18 Monate bei einem eigenen Digitalisierungsprojekt. Die offiziellen Themen umfassen Kommunikation, Mitgliederwesen, Organisation und Sportangebot. Das Coaching entwickelt mit dem Verein eine konkrete Roadmap und begleitet die Umsetzung über Fortschrittsmeetings und ein Abschlusscoaching.
 
 Das passt unmittelbar zum bestehenden TuS-Projekt `Aufbau Digitale Vereinsorganisation`: digitale Prozesse, Wissenssicherung, Rollen und Übergaben, Mitglieder-/Backoffice-Prozesse, Kommunikation und Entlastung ehrenamtlich Verantwortlicher.
 
@@ -43,11 +43,11 @@ Bewerbungsweg: Online-Digital-Check auf `sportverein-der-zukunft.de`.
 
 ### Fristen / interne Vorfristen
 
-- offizielles Bewerbungsfenster: **01.09.2026 bis 18.10.2026**,
-- interne Empfehlung: Digital-Check und 800-Zeichen-Projektstory bis **30.09.2026** vorbereiten,
+- offizieller Start des Bewerbungsfensters: **01.09.2026**,
+- die am 01.10.2026 öffentlich ausgelesenen Primärseiten bestätigen, dass die Bewerbung aktuell offen ist,
+- die zuvor dokumentierte Endfrist **18.10.2026** bleibt im Dossier als Arbeitsfrist bestehen, wird vor finaler Einreichungsplanung jedoch nochmals direkt gegen Digital-Check/FAQ verifiziert,
 - interne Ziel-Einreichung: spätestens **09.10.2026**,
-- Auswahlkommission: Mitte November 2026,
-- Rückmeldung: direkt nach der Auswahlkommission.
+- Auswahlkommission: nach Ende des Bewerbungsfensters.
 
 ### Förderung / Eigenanteil
 
@@ -60,7 +60,7 @@ Die bereits dokumentierte 80-%-/20-%-Kostenlogik wird vor einer konkreten Ausgab
 
 ### Gemeinnützigkeits-/Freistellungsnachweis
 
-Die am 23.09.2026 erneut geprüften offiziellen öffentlichen Teilnahme- und Digital-Check-Seiten nennen für die Bewerbung **keinen Freistellungsbescheid und keinen aktuellen Gemeinnützigkeitsnachweis als Teilnahmevoraussetzung**. Der Digital-Check selbst ist für jeden Sportverein offen; für einen Coaching-Platz können sich unter anderem Vereine des Badischen Sportbundes Nord bewerben.
+Die am 01.10.2026 erneut geprüften offiziellen öffentlichen Teilnahme- und Digital-Check-Informationsseiten nennen für die Bewerbung **keinen Freistellungsbescheid und keinen aktuellen Gemeinnützigkeitsnachweis als Teilnahmevoraussetzung**. Der Digital-Check ist der Einstieg und zugleich die Bewerbungsplattform; für den TuS ist der Zugang über die regionale Zielgruppe und BSB-Nord-Zugehörigkeit fachlich passend.
 
 Damit ist diese Chance nach aktuellem veröffentlichtem Stand **bereits jetzt realistisch nutzbar und nicht vom erwarteten neuen Freistellungsbescheid im Herbst 2026 abhängig**. Falls im späteren Auswahl-/Fördervertrag zusätzliche Nachweise verlangt werden, sind diese vor Annahme der Förderung zu prüfen.
 
@@ -70,8 +70,8 @@ Für den Digital-Check bereithalten:
 
 - vollständiger Vereinsname, Adresse und Vereinsnummer,
 - Ansprechpartner mit Telefon und E-Mail,
-- Beschreibung der Motivation zur Teilnahme, maximal 800 Zeichen,
-- kurze Projektskizze, falls bereits vorhanden, maximal 800 Zeichen,
+- Beschreibung der Motivation zur Teilnahme,
+- kurze Projektskizze, falls bereits vorhanden,
 - belastbare Selbsteinschätzung zum heutigen digitalen Reifegrad,
 - internes motiviertes Projektteam.
 
@@ -79,30 +79,28 @@ Die Bewerbungstexte wurden bereits in Google Drive vorbereitet. Offen bleiben in
 
 ### Antragsweg / Auswahlkriterien
 
-Die Bewerbung ist in den kostenlosen Digital-Check integriert. Alle Teilnehmenden des Digital-Checks werden im Bewerbungsverfahren berücksichtigt. Der Check benötigt laut offizieller FAQ ungefähr 20–30 Minuten für die Beantwortung und kann unterbrochen und später fortgesetzt werden. Für die aktuelle Runde stehen **20 Coaching-Plätze** zur Verfügung. Die Auswahlkommission besteht laut offizieller FAQ aus Vertretern von BASF, Two Circles, Badischem Sportbund Nord, Sportbund Pfalz sowie den Sportkreisen Bergstraße und Worms.
-
-Die öffentliche FAQ nennt kein Punkteschema. Die TuS-Bewerbung soll deshalb den echten Digitalisierungsbedarf, den konkreten Nutzen für das Ehrenamt, einen realistischen Projektschwerpunkt und die Bereitschaft zur aktiven Mitarbeit über den Coaching-Zeitraum klar zeigen.
+Die Bewerbung ist in den kostenlosen Digital-Check integriert. Für die aktuelle Runde stehen **20 Coaching-Plätze** zur Verfügung. Die öffentliche Programmseite nennt kein Punkteschema. Die TuS-Bewerbung soll deshalb den echten Digitalisierungsbedarf, den konkreten Nutzen für das Ehrenamt, einen realistischen Projektschwerpunkt und die Bereitschaft zur aktiven Mitarbeit über den Coaching-Zeitraum klar zeigen.
 
 ### Vergleichbare Bewilligungen / belastbare Beispiele
 
-Der BSB Nord verweist auf erfolgreich abgeschlossene Projekte des ersten Zyklus. Die offiziellen Programmseiten zeigen, dass konkrete Digitalprojekte aus Vereinsorganisation, Mitgliederwesen, Kommunikation und Sportangebot in das Programm passen. Diese Beispiele stützen die TuS-Story `Ehrenamtsentlastung durch bessere digitale Vereinsprozesse`, sind aber keine Bewilligungsgarantie.
+Die offiziellen Programmseiten nennen konkrete frühere Digitalprojekte, darunter eine Vereins-App für interne Kommunikation sowie Videoanalyse/Wearables zur Trainingssteuerung. Zudem nennt die Initiative effiziente Vereinsverwaltung ausdrücklich als typischen Digitalisierungsbereich. Diese Beispiele stützen die TuS-Story `Ehrenamtsentlastung durch bessere digitale Vereinsprozesse`, sind aber keine Bewilligungsgarantie.
 
 ### Risiken / offene Punkte
 
 - nur 20 Coaching-Plätze; Auswahlverfahren,
-- Förderung maximal 2.000 Euro, daher finanziell kleiner als `Gemeinsam engagiert in BW V`,
+- Förderung maximal 2.000 Euro, daher finanziell kleiner als andere Zuschussprogramme,
 - Coaching verlangt über viele Monate ein tatsächlich engagiertes TuS-Projektteam,
 - genauer förderfähiger Kostenplan wird erst im Coaching-/Förderprozess final festgelegt,
-- mögliche spätere Vertrags-/Nachweispflichten zur Gemeinnützigkeit sind vor Annahme der Förderung erneut zu prüfen.
+- mögliche spätere Vertrags-/Nachweispflichten zur Gemeinnützigkeit sind vor Annahme der Förderung erneut zu prüfen,
+- Endfrist des aktuellen Bewerbungsfensters vor finaler Einreichung nochmals unmittelbar im Digital-Check/FAQ bestätigen.
 
 ### Nächste Aktion
 
-**Bewerbung zeitnah abschließen.** Die auf Google Drive bereits vorbereiteten 800-Zeichen-Texte zusammen mit Vereinsnummer und Ansprechpartner in den Digital-Check übernehmen und den Check vollständig abschließen. Die Bewerbung sollte nicht bis zur Schlusswoche liegen bleiben.
+**Bewerbung zeitnah abschließen.** Die auf Google Drive bereits vorbereiteten Bewerbungstexte zusammen mit Vereinsnummer und Ansprechpartner in den Digital-Check übernehmen und den Check vollständig abschließen. Die Bewerbung sollte nicht bis zur Schlusswoche liegen bleiben.
 
 ### Primärquellen
 
-- `https://www.sportverein-der-zukunft.de/digital-check/`
-- `https://sportverein-der-zukunft.de/Digital-Check-Registrierung/index.php/`
+- `https://www.sportverein-der-zukunft.de/`
 - `https://www.badischer-sportbund.de/service/digitalisierung/initiative-sportverein-der-zukunft/`
 
 ## Relationship to other documents
