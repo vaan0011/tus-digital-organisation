@@ -11,6 +11,7 @@ Stand: 2. Oktober 2026. Dieses Dokument beschreibt die tatsächlich eingerichtet
 | Traefik und Authgate | HTTPS und Zugang zur Weboberfläche | Traefik terminiert HTTPS; Authgate schützt die Anwendung zusätzlich vor dem n8n-Login. |
 | Google Cloud | Autorisierung für Google Drive | Ein Projekt mit aktivierter Drive API und OAuth-Client erlaubt `rclone` den Zugriff. Dort werden keine n8n-Backups gespeichert. |
 | Google Drive | Externe Sicherung | `restic` speichert verschlüsselte Sicherungen im Ordner `TuS-n8n-Backup/restic`; `rclone` stellt die Verbindung her. |
+| IONOS Mail Basic | Backup-Warnungen | Das Postfach `n8n@tus-mingolsheim.de` sendet und empfängt Warnungen bei fehlgeschlagenen Backups. |
 | Passwortmanager | Wiederherstellungsschlüssel | Das separate Passwort des restic-Repositorys ist privat hinterlegt. Ohne dieses Passwort sind die Drive-Sicherungen nicht wiederherstellbar. |
 | Mac des Betreibers | Frühere Zusatzkopie | Die manuelle, mit GPG verschlüsselte Sicherung vom 29. September 2026 wurde dorthin kopiert. Sie wird für die tägliche Sicherung nicht gebraucht; ob sie inzwischen gelöscht wurde, ist nicht bestätigt. |
 | GitHub | Dokumentation und Entwicklung | Dieses Repository enthält die Systemdokumentation. Hier liegen weder produktive n8n-Daten noch Backup-Schlüssel. |
@@ -24,13 +25,14 @@ Die frühere IONOS/Acronis-Backup-Lösung ist für diesen Server **nicht aktiv**
 3. `rclone` überträgt das verschlüsselte restic-Repository nach Google Drive. Der temporäre Datenbankexport wird nach dem Backup vom Server entfernt.
 4. `restic forget --prune` hält **7 tägliche, 4 wöchentliche und 6 monatliche** Sicherungspunkte vor. Das ist eine Aufbewahrungsregel, keine Garantie für eine bestimmte Zahl an Tagen mit erfolgreichen Backups.
 
-Der systemd-Timer `tus-n8n-backup.timer` startet täglich um **03:00 UTC** (05:00 Uhr deutscher Sommerzeit bzw. 04:00 Uhr Winterzeit) den Dienst `tus-n8n-backup.service`. Das ausführende Skript liegt unter `/usr/local/sbin/tus-n8n-backup`. Fehler und Ausgaben sind im systemd-Journal des Dienstes einsehbar. Eine automatische E-Mail-Benachrichtigung bei Fehlern ist derzeit **nicht eingerichtet**.
+Der systemd-Timer `tus-n8n-backup.timer` startet täglich um **03:00 UTC** (05:00 Uhr deutscher Sommerzeit bzw. 04:00 Uhr Winterzeit) den Dienst `tus-n8n-backup.service`. Das ausführende Skript liegt unter `/usr/local/sbin/tus-n8n-backup`. Fehler und Ausgaben sind im systemd-Journal des Dienstes einsehbar. Wenn der Backup-Dienst nach seinen Wiederholungsversuchen in den Fehlerzustand wechselt, startet `OnFailure=` den Dienst `tus-n8n-backup-alert.service`. Dieser sendet über IONOS SMTP eine Warnmail an `n8n@tus-mingolsheim.de` und versucht den Versand bei SMTP-Fehlern alle 10 Minuten erneut. Die Mail-Konfiguration und das Postfachpasswort liegen nur auf dem Server in einem root-geschützten Verzeichnis; sie gehören nicht in GitHub. Derzeit werden keine täglichen Erfolgsmails verschickt. Bei einem vollständigen Serverausfall kann dieser serverseitige Alarm nicht senden.
 
 ## Bisher geprüft
 
 - Der Backup-Lauf wurde manuell und anschließend über den systemd-Dienst erfolgreich ausgeführt; dabei entstanden zwei restic-Snapshots.
 - Dateien aus einem Snapshot wurden in ein temporäres Verzeichnis zurückgespielt und auf Vorhandensein geprüft.
 - Der Timer ist aktiviert; der erste reguläre Lauf ist für den **3. Oktober 2026 um 03:00 UTC** vorgesehen. Sein Erfolg ist zum Stand dieses Dokuments noch nicht belegt.
+- Der SMTP-Versand und das Warnskript wurden mit Testmails geprüft. `systemd-analyze verify` zeigte keine Fehler in den Backup- und Alarmdiensten, und `systemctl show` bestätigte die `OnFailure`-Verknüpfung. Ein tatsächlicher Backup-Fehler wurde für diesen Test nicht ausgelöst.
 - Ein vollständiger Wiederanlauf auf einem neuen Server einschließlich PostgreSQL-Import und n8n-Login wurde noch nicht getestet.
 
 ## Wiederherstellung und Zugang
