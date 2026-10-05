@@ -16,7 +16,7 @@ Tabellenplätze und Wettbewerbsdaten sind Momentaufnahmen und werden vor einer V
 
 ### Saison 2026/27
 
-Letzte Verifikation Spiel-/Wettbewerbsdaten: **21.09.2026**
+Letzte Verifikation Spiel-/Wettbewerbsdaten: **05.10.2026**
 Trainerstab-Stand: **18.09.2026**
 Primärquelle Spiel- und Wettbewerbsdaten: `fussball.de`
 
@@ -34,12 +34,12 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 4
-- Siege: 3
+- Spiele: 6
+- Siege: 4
 - Unentschieden: 0
-- Niederlagen: 1
-- Tore: 9:7
-- Punkte: 9
+- Niederlagen: 2
+- Tore: 15:12
+- Punkte: 12
 - Tabellenplatz: **4**
 
 ### Ergebnisse
@@ -50,6 +50,12 @@ Mannschaftsseite:
 | 06.09.2026 | 2 | FV Neuthard | TuS Mingolsheim | 0:2 |
 | 13.09.2026 | 3 | TuS Mingolsheim | TSV Stettfeld | 2:1 |
 | 20.09.2026 | 4 | VfB Bretten 2 | TuS Mingolsheim | 4:2 |
+| 27.09.2026 | 5 | TuS Mingolsheim | FC Germania Forst | 3:5 |
+| 04.10.2026 | 6 | FV Hambrücken | TuS Mingolsheim | 0:3 |
+
+### Nächstes Pflichtspiel
+
+- **10.10.2026, 15:00 Uhr:** FC Odenheim – TuS Mingolsheim (auswärts)
 
 ## Herren 2 – TuS Mingolsheim 2
 
@@ -65,22 +71,30 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Spiele: 4
+- Gewertete Spiele: 5
 - Siege: 2
 - Unentschieden: 0
-- Niederlagen: 2
-- Tore: 14:10
+- Niederlagen: 3
+- Tore: 16:13
 - Punkte: 6
-- Tabellenplatz: **5**
+- Tabellenplatz: **8**
 
 ### Ergebnisse
 
-| Datum | Spieltag | Heim | Gast | Ergebnis |
+| Datum | Spieltag | Heim | Gast | Ergebnis / Status |
 |---|---:|---|---|---:|
 | 30.08.2026 | 1 | TuS Mingolsheim 2 | VfR Kronau 2 | 5:1 |
 | 06.09.2026 | 2 | FV Ubstadt 2 | TuS Mingolsheim 2 | 2:6 |
 | 13.09.2026 | 3 | TuS Mingolsheim 2 | FV 1912 Wiesental 2 | 1:4 |
 | 20.09.2026 | 4 | Spvgg 1920 Oberhausen | TuS Mingolsheim 2 | 3:2 |
+| 27.09.2026 | 5 | TuS Mingolsheim 2 | FC Germania Forst 2 | **Abbruch – noch ohne Wertung** |
+| 04.10.2026 | 6 | FV Hambrücken 2 | TuS Mingolsheim 2 | 3:2 |
+
+Das abgebrochene Spiel vom 27.09.2026 wird bis zu einer bestätigten Wertung nicht in Spiele, Bilanz, Tore oder Punkte eingerechnet.
+
+### Nächstes Pflichtspiel
+
+- **11.10.2026, 13:00 Uhr:** SV Philippsburg 2 – TuS Mingolsheim 2 (auswärts)
 
 ## Frauen – SpG St. Leon / Mingolsheim
 
@@ -101,7 +115,38 @@ Noch nicht verifiziert. Trainer- und Funktionsnamen werden erst nach belastbarer
 - Aufnahme in den regulären Matchday-Run beschlossen: **28.09.2026**
 - Automatische Berichtserstellung ab: **Pflichtspiele nach dem 28.09.2026**
 - Frühere Pflichtspiele dienen als Saisonkontext und werden nicht automatisch rückwirkend als neue Berichte erzeugt.
-- Beim ersten Lauf nach der Aufnahme werden aktueller Saisonstand, bereits absolvierte Spiele und das nächste Pflichtspiel vollständig über `fussball.de` initialisiert und gegen das Spielberichtsarchiv abgeglichen.
+- Vollständiger Saisonstand erstmals initialisiert: **05.10.2026**
+- Automatisch berichtete Spiele seit Cutover: **30.09.2026 gegen Heidelberger SC** und **04.10.2026 bei FV Fortuna Kirchfeld**
+
+### Aktueller Ligastand
+
+- Spiele: 4
+- Siege: 2
+- Unentschieden: 0
+- Niederlagen: 2
+- Tore: 13:10
+- Punkte: 6
+- Tabellenplatz: **4**
+
+### Landesliga-Ergebnisse
+
+| Datum | Spieltag | Heim | Gast | Ergebnis |
+|---|---:|---|---|---:|
+| 22.09.2026 | 2 | SSV Waghäusel 2 | SpG St. Leon / Mingolsheim | 2:6 |
+| 27.09.2026 | 3 | SpG St. Leon / Mingolsheim | SpG Büchig / Neibsheim | 2:3 |
+| 30.09.2026 | 1 | SpG St. Leon / Mingolsheim | Heidelberger SC | 0:4 |
+| 04.10.2026 | 4 | FV Fortuna Kirchfeld | SpG St. Leon / Mingolsheim | 1:5 |
+
+### Verbandspokal-Ergebnisse
+
+| Datum | Runde | Heim | Gast | Ergebnis |
+|---|---|---|---|---:|
+| 16.09.2026 | nicht ausgewiesen | SpG St. Leon / Mingolsheim | Spvgg 06 Ketsch | 4:1 |
+| 23.09.2026 | nicht ausgewiesen | VfR Mannheim | SpG St. Leon / Mingolsheim | 1:8 |
+
+### Nächstes Pflichtspiel
+
+- **07.10.2026, 19:30 Uhr:** SpG St. Leon / Mingolsheim – Post Südstadt Karlsruhe (Verbandspokal, Heimspiel)
 
 ## Redaktionelle Nutzung
 
