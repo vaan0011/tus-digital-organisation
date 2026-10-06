@@ -1,5 +1,38 @@
 # Active Funding Opportunities
 
+## Runtime-Reconciliation 2026-10-06
+
+**Aktiv maßgeblich:** OPP-011 BASF = A; OPP-010 Aktionstaler = B+; OPP-001/002/003/004/009 gemäß ihren Opportunity Briefs.  
+**Geschlossen:** OPP-008 Gemeinsam engagiert in BW V – Frist 01.10.2026 abgelaufen, 2026 nicht genutzt.  
+Bei Widersprüchen mit älteren Entscheidungstabellen/OPP-008-Texten ist dieser Status maßgeblich.
+
+### OPP-011 – Aufbau Digitale Vereinsorganisation × Sportverein der Zukunft – mit BASF fit für die Digitalisierung
+
+**TuS-Projekt:** Aufbau Digitale Vereinsorganisation  
+**Programm:** Sportverein der Zukunft – mit BASF fit für die Digitalisierung  
+**Priorität:** **A – bewerben**  
+**Letzte Primärquellen-Verifizierung:** 2026-10-06  
+**Status:** Bewerbung offen; Digital-Check ist Bewerbungsweg.
+
+**Fit / Förderstory:** Direkter Fit zu Organisation, Mitgliederwesen, Kommunikation und digitaler Vereinsentwicklung. Empfohlene Story: **„Digitales Vereinsbüro – Ehrenamt entlasten, Wissen sichern und wiederkehrende Vereinsarbeit einfacher machen.“**
+
+**Frist / interne Vorfrist:** offizielle Bewerbung bis **18.10.2026**; interne Ziel-Einreichung **09.10.2026**.
+
+**Förderung:** rund 18 Monate Digital-Coaching; bis zu **2.000 € Projektförderung**. Projektbudget und konkrete förderfähige Ausgaben erst nach Auswahl/Coaching finalisieren.
+
+**Gemeinnützigkeitsnachweis:** Auf den am 06.10.2026 geprüften veröffentlichten BSB-Bewerbungsinformationen ist **kein Freistellungsbescheid als Voraussetzung des Digital-Checks** genannt. Daher aktuell nutzbar, ohne auf den neuen Herbst-Bescheid zu warten. Vor späterer Auszahlung/Projektförderung erneut formale Unterlagen prüfen.
+
+**Ansprechpartner:** Tim Geißler, Badischer Sportbund Nord, Tel. 0721/18 08-15, E-Mail: t.geissler@badischer-sportbund.de.
+
+**Benötigt:** Vereinsdaten/Vereinsnummer, Ansprechpartner, Digital-Check, kurze Motivation und Projektskizze; vorhandene vorbereitete Bewerbungsunterlage verwenden.
+
+**Auswahl / Risiken:** begrenzte Coaching-Plätze; Auswahlentscheidung durch Programmträger. Kein Anspruch auf Auswahl. Scope nicht künstlich erweitern.
+
+**Nächste Aktion:** Digital-Check abschließen und Bewerbung möglichst bis 09.10.2026 einreichen.
+
+---
+
+
 Stand: 2026-09-13 – Aktionstaler Kinder- und Jugendschutz 2.0 als neuer B+-Treffer ergänzt
 
 ## Purpose
