@@ -1,6 +1,18 @@
 # TuS Funding Radar
 
-Stand: 2026-09-10 – formale Projekte erneut abgeglichen
+## Aktueller Delta-Stand 2026-10-06
+
+| Reales Projekt / Vorhaben | Förderweg | Bewertung | Aktueller Status |
+|---|---|---|---|
+| Aufbau Digitale Vereinsorganisation | Sportverein der Zukunft – mit BASF fit für die Digitalisierung | **A – bewerben** | Digital-Check/Bewerbung bis 18.10.2026; interne Ziel-Einreichung 09.10.; kein Freistellungsbescheid als veröffentlichte Voraussetzung des Digital-Checks |
+| Aufbau Digitale Vereinsorganisation | Gemeinsam engagiert in BW V | **geschlossen** | Frist 01.10.2026 abgelaufen; 2026 nicht genutzt |
+| Kinder- und Jugendschutz | Aktionstaler Kinder- und Jugendschutz 2.0 | **B+** | konkrete Schutzaktion, Budget und kommunale Stellungnahme vorbereiten |
+| Vereinsorganisation / Ehrenamtsentlastung | M.E.N.S. | **B – strategisch vorbereiten** | Partnerverein + gültiger Freistellungsbescheid erforderlich; Jugendförderverein zählt nicht als BSB-Nord-Partner |
+
+Ältere Tabellen bleiben als historischer Recherche-Stand erhalten; bei Statuskonflikten gilt dieser Delta-Stand.
+
+
+Stand: 2026-10-06 – Runtime-Reconciliation
 
 ## Purpose
 
