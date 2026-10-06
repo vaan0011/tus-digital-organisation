@@ -1,6 +1,18 @@
 # Funding Calendar
 
-Stand: 2026-09-13 – Aktionstaler Kinder- und Jugendschutz 2.0 ergänzt
+## Aktuelle Fristen / Gates ab 2026-10-06
+
+- **09.10.2026 intern:** BASF „Sportverein der Zukunft“ – Digital-Check/Bewerbung TuS fertigstellen und möglichst einreichen.
+- **15.10.2026 intern:** Historienarchiv – Vorabskizze / EVALAG-Beratung für Stiftung Kulturgut.
+- **18.10.2026 offiziell:** BASF „Sportverein der Zukunft“ – Bewerbungsschluss.
+- **ab 01.11.2026:** M.E.N.S. – Bewerbungsfenster öffnet; TuS bleibt bis Partnerverein + Freistellungsbescheid nur strategische Vorbereitung.
+- **31.01.2027:** BSB Sportgeräteförderung 2026 / Stiftung Kulturgut – jeweilige dokumentierte Fristen beachten.
+- **31.03.2027:** M.E.N.S. Bewerbungsschluss; Aktionstaler Phase 1 endet.
+
+**Entfernt aus aktiver Queue:** Gemeinsam engagiert in BW V – Frist 01.10.2026 abgelaufen.
+
+
+Stand: 2026-10-06 – aktive Fristen reconciliert
 
 ## Purpose
 
