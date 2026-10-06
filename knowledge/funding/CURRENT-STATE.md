@@ -1,6 +1,17 @@
 # Funding Current State
 
-Stand: 2026-09-14 – aktive A-/B+-Pipeline mit aktuellen Primärquellen reconciliiert
+## Runtime-Reconciliation 2026-10-06
+
+- **OPP-011 – Sportverein der Zukunft / BASF × Aufbau Digitale Vereinsorganisation:** **A – bewerben**. Bewerbung über den Digital-Check bis **18.10.2026**; rund 18 Monate Coaching; bis zu 2.000 € Projektförderung. Auf den veröffentlichten Bewerbungsinformationen ist kein Freistellungsbescheid als Voraussetzung des Digital-Checks genannt. Interne Ziel-Einreichung: **09.10.2026**.
+- **OPP-008 – Gemeinsam engagiert in BW V:** **geschlossen / nicht genutzt**. Frist 01.10.2026 abgelaufen; nicht mehr als aktive B+-Chance führen.
+- **OPP-010 – Aktionstaler Kinder- und Jugendschutz 2.0:** **B+ – konkret vorbereiten**; Phase 1 bis 31.03.2027, kommunale Stellungnahme und konkreter Aktions-/Kostenplan offen.
+- **M.E.N.S.: B – strategisch vorbereiten**, noch nicht B+. Mindestens zwei BSB-Nord-Mitgliedsvereine und gültiger Freistellungsbescheid „Förderung des Sports“ erforderlich. Jugendförderverein ist kein BSB-Nord-Mitglied und zählt nicht als Mindestpartner.
+- Kellogg’s bleibt **bereits eingereicht**, REWE „Scheine für Vereine“ **bereits laufend**; beide nicht als neue Chancen melden.
+
+Diese Reconciliation ist bei Widersprüchen mit älteren, datierten Abschnitten dieses Dokuments maßgeblich.
+
+
+Stand: 2026-10-06 – Runtime-Reconciliation; aktive Pipeline gegen aktuellen Stand bereinigt
 
 ## Purpose
 
