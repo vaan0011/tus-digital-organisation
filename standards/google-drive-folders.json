@@ -1,0 +1,111 @@
+{
+  "stand": "2026-10-12",
+  "regel": "Keine dauerhafte Ablage im Hauptverzeichnis oder ChatGPT; Inhalt und Elternordner zurücklesen.",
+  "ordner": [
+    {
+      "schluessel": "archive",
+      "pfad": "Vereinshistorie/00 TuS Historie – Arbeitsarchiv",
+      "ordner_id": "161hdAmMhO7SMCjYNfd1O2E6lJjjtZIf6"
+    },
+    {
+      "schluessel": "archive-originals",
+      "pfad": "Vereinshistorie",
+      "ordner_id": "13P3JlbEvWnYYHoj3a98aEJsgpqiOGWKp"
+    },
+    {
+      "schluessel": "archive-transcripts",
+      "pfad": "Vereinshistorie/00 TuS Historie – Arbeitsarchiv/Transkriptionen",
+      "ordner_id": "1_sXRC6Gll6Fbd3gUxIKEDrM9pCllfAgm"
+    },
+    {
+      "schluessel": "archive-opponents",
+      "pfad": "Vereinshistorie/00 TuS Historie – Arbeitsarchiv/Gegner-Dossiers",
+      "ordner_id": "1DZv1j3_OYBZEAlNoz6fZcJDFGkf4OICq"
+    },
+    {
+      "schluessel": "funding",
+      "pfad": "Projekte/Förderprogramme",
+      "ordner_id": "1nkqOWU3Q1clv2ZzRF5ZspLHRNSZOJtvc"
+    },
+    {
+      "schluessel": "partner-concepts",
+      "pfad": "Sponsoring/02_KONZEPT",
+      "ordner_id": "1GBjY26U6110nETmskrEGqisNdPfVPONO"
+    },
+    {
+      "schluessel": "partner-operations",
+      "pfad": "Sponsoring/03_PARTNERENTWICKLUNG",
+      "ordner_id": "1hnSRogILTrFOC8QnBM95E6FZO-lgJTyd"
+    },
+    {
+      "schluessel": "match-reports",
+      "pfad": "Spielberichte",
+      "ordner_id": "1Uht_kKFKHhUSnoLr4jOYsQO988p9wdTC"
+    },
+    {
+      "schluessel": "coach-comments",
+      "pfad": "Spielberichte/Trainerkommentare",
+      "ordner_id": "1k7xTzSDkcsW7WOBc8Ug6GhVvnm-iTZdh"
+    },
+    {
+      "schluessel": "scouting",
+      "pfad": "Projekte/Team Manager",
+      "ordner_id": "1hh5zPTjCzEMraz4sxOVmjeG552XVWIvY"
+    },
+    {
+      "schluessel": "events",
+      "pfad": "Projekte/Events",
+      "ordner_id": "1k4Bym617QaPqFrZzO7pewtIWZB3nx3xJ"
+    },
+    {
+      "schluessel": "led",
+      "pfad": "Projekte/LED Anzeigetafel",
+      "ordner_id": "1rHoCwcmDK1Ffk5DRZM5f2TfYkrH72s0d"
+    },
+    {
+      "schluessel": "sportpark",
+      "pfad": "Sportpark",
+      "ordner_id": "1itXKRBjkCD1i4_YY9hsZr1lpX0l5fR24"
+    },
+    {
+      "schluessel": "board",
+      "pfad": "Vorstand",
+      "ordner_id": "1CfyNS5zGPNKIZqLcNJWF2EZYUrlnwAz0"
+    },
+    {
+      "schluessel": "nonprofit",
+      "pfad": "Vorstand/Gemeinnützigkeit",
+      "ordner_id": "1KKJqqCd6H-h-aT0Jw7cYwAjlUOuq059C"
+    },
+    {
+      "schluessel": "forms",
+      "pfad": "Dokumente",
+      "ordner_id": "1wq2GDmrI_AmDCvUk-9C1QKsXCmfARaOJ"
+    },
+    {
+      "schluessel": "assets",
+      "pfad": "Dateien",
+      "ordner_id": "1XdARscjQFzbaCYAB6K_jOz_HfMWdhRKG"
+    },
+    {
+      "schluessel": "photos",
+      "pfad": "Bilder",
+      "ordner_id": "1HVax2tlfHs4yP44KAM__Hq3fini1-9c9"
+    },
+    {
+      "schluessel": "fankurve",
+      "pfad": "Fankurve",
+      "ordner_id": "1qpJsvnUZcRr3hpERdnNv99996fr9Lhr6"
+    },
+    {
+      "schluessel": "fankurve-production",
+      "pfad": "Projekte/Spieltagsheft",
+      "ordner_id": "18jn4_sC18cIEnxZ8LThIYFq9zj9TLrv_"
+    },
+    {
+      "schluessel": "wordpress",
+      "pfad": "Wordpress",
+      "ordner_id": "16DxrnJWgzcmdnVSsxJ66oP2R6JjyHm5c"
+    }
+  ]
+}

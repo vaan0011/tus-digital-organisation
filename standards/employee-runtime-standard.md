@@ -50,6 +50,8 @@ Eine Runtime-Ausführung folgt grundsätzlich diesem Ablauf:
 
 Ein Zwischenbericht an einen Menschen ist **keine Stop Condition**.
 
+Für Drive-Ergebnisse gelten `google-drive-filing-standard.md` und `google-drive-folders.json`. Schritt 8 ist erst abgeschlossen, wenn Inhalt und Ziel-Elternordner verifiziert wurden. Leere Dokumente oder falsch abgelegte Dateien sind fehlgeschlagene Write-backs; keine fertigen Checkpoints darauf stützen.
+
 ### 3. Arbeitsauslöser
 
 Mögliche Trigger sind insbesondere:

@@ -10,6 +10,10 @@ Sie verbindet das nicht-vertrauliche Organisationswissen in GitHub mit der gesch
 
 > **Partnerschaften werden aus dem aktuellen Bedarf, dem nächsten belastbaren Schritt und einer gepflegten operativen Queue weiterentwickelt – nicht aus Chat-Erinnerung.**
 
+## Verbindliche Drive-Ablage
+
+Vor jeder Drive-Schreiboperation gelten [Google-Drive-Ablagestandard](../../standards/google-drive-filing-standard.md) und [Zielordnerverzeichnis](../../standards/google-drive-folders.json). Ergebnisse im passenden Fach-/Projektordner erstellen oder sofort dorthin zuordnen; vorhandene Dateien aktualisieren statt Laufkopien erzeugen. Inhalt und Elternordner zurücklesen, bevor Ergebnis oder Checkpoint als fertig gilt.
+
 ## Main Content
 
 ### 1. Sources of Truth

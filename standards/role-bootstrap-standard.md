@@ -26,6 +26,8 @@ Vor wesentlicher Arbeit führt ein Rollen-Chat grundsätzlich folgende Schritte 
 6. nur die für die konkrete Aufgabe benötigten Skills und Fachquellen laden,
 7. bei vorhandener Runtime am dokumentierten Queue-/Checkpoint-Zustand fortsetzen.
 
+Vor einer Drive-Schreiboperation zusätzlich `standards/google-drive-filing-standard.md` und das Zielordnerverzeichnis `standards/google-drive-folders.json` lesen. Die fachlich richtige Ablage und Rücklese gehören zum Auftrag, nicht zu einem späteren Aufräumlauf.
+
 ### 2. Keine Wissensduplikation im Startprompt
 
 Ein Startprompt soll keine umfangreichen Kopien von:

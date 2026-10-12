@@ -10,6 +10,10 @@ Die Runtime sorgt dafür, dass Förderarbeit nicht bei einer einmaligen Recherch
 
 > **Der Funding Manager sucht nicht nach Förderprogrammen um der Programme willen. Er sucht finanzierbare Wege für echte TuS-Projekte.**
 
+## Verbindliche Drive-Ablage
+
+Vor jeder Drive-Schreiboperation gelten [Google-Drive-Ablagestandard](../../standards/google-drive-filing-standard.md) und [Zielordnerverzeichnis](../../standards/google-drive-folders.json). Ergebnisse im passenden Fach-/Projektordner erstellen oder sofort dorthin zuordnen; vorhandene Dateien aktualisieren statt Laufkopien erzeugen. Inhalt und Elternordner zurücklesen, bevor Ergebnis oder Checkpoint als fertig gilt.
+
 ## Main Content
 
 ### 1. Dauerhafter Auftrag
