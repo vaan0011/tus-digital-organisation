@@ -1,5 +1,15 @@
 # Funding Current State
 
+## Gemeinnützigkeitsnachweis Hauptverein – Dokumenteneingang 2026-10-12
+
+- **Rechtsträger:** Turn- und Sportverein 1901 e. V. Bad Mingolsheim (**Hauptverein**). Kein Nachweis für Förderverein oder Jugendförderverein.
+- **Quelle:** Finanzamt Bruchsal, **Anlage zum Bescheid für 2024 zur Körperschaftsteuer**, datiert **27.07.2026**. Diese Anlage enthält die Feststellung einer **teilweisen Körperschaftsteuerbefreiung gemäß § 5 Abs. 1 Nr. 9 KStG** sowie als steuerbegünstigten gemeinnützigen Zweck **Förderung des Sports (§ 52 Abs. 2 Satz 1 Nr. 21 AO)**.
+- **Ablage:** [Google Drive – Gemeinnützigkeit, PDF-Scan der Anlage, Seite 1](https://drive.google.com/file/d/1zn0e6UL9rYYqoSnBAN6nejOJ9st6Uhbo/view).
+- **Nachweisstatus:** Auf **Seite 1** der Anlage stehen die entscheidenden Feststellungen zur teilweisen Körperschaftsteuerbefreiung und zum gemeinnützigen Zweck „Förderung des Sports“. Diese Seite wird auf Nutzerhinweis als **regelmäßig ausreichender Gemeinnützigkeitsnachweis für Förderanträge** geführt. „Fortsetzung siehe Seite 2“ bedeutet hier **keine generelle Nachforderung oder Förder-Sperre**. Es handelt sich präzise um eine Anlage zum Körperschaftsteuerbescheid; Anforderungen einzelner Fördergeber können abweichen.
+- **Verwendung in Förderanträgen:** Diese aktuelle Anlage (Seite 1) als **verfügbaren, im Regelfall verwendbaren Gemeinnützigkeitsnachweis des Hauptvereins** vormerken und bei passenden Förderprogrammen heranziehen. Nur wenn die konkreten Förderrichtlinien mehr verlangen (z. B. vollständiger Bescheid, weitere Seiten oder ein anderer Nachweistyp), Unterlagen gezielt nachfordern. Rechtsträger, Aktualität und Antragszeitpunkt weiterhin programmspezifisch prüfen.
+- **Wiedervorlage für Förderradar:** Insbesondere **OPP-009 Volksbank Heimatverbunden**, **M.E.N.S.** (Sportzweck nun auf der vorliegenden Seite nachgewiesen, zweiter BSB-Nord-Mitgliedsverein weiter erforderlich), passende **DSEE-/Ehrenamts-/Digitalprogramme** und sonstige Programme mit Gemeinnützigkeitsnachweis erneut auf ihre formalen Gates prüfen. **OPP-011 BASF-Digital-Check** bleibt unabhängig davon fristgebunden (18.10.2026). **WISO 2026** und **OPP-008** bleiben geschlossen.
+- **Nächste interne Aufgabe:** Keine pauschale Nachforderung von Seite 2. Nur bei konkreter Nachweisanforderung eines Fördergebers zusätzliche Bescheidseiten oder Unterlagen anfragen.
+
 ## Runtime-Reconciliation 2026-10-06
 
 - **OPP-011 – Sportverein der Zukunft / BASF × Aufbau Digitale Vereinsorganisation:** **A – bewerben**. Bewerbung über den Digital-Check bis **18.10.2026**; rund 18 Monate Coaching; bis zu 2.000 € Projektförderung. Auf den veröffentlichten Bewerbungsinformationen ist kein Freistellungsbescheid als Voraussetzung des Digital-Checks genannt. Interne Ziel-Einreichung: **09.10.2026**.

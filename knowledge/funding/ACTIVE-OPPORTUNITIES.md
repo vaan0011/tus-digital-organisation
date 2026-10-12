@@ -1,5 +1,9 @@
 # Active Funding Opportunities
 
+## Dokumenten-Update 2026-10-12 – Gemeinnützigkeitsnachweis Hauptverein
+
+Für den Hauptverein liegt eine neue **Anlage zum Körperschaftsteuerbescheid 2024 (27.07.2026)** des Finanzamts Bruchsal vor. Die vorliegende **Seite 1** bestätigt den gemeinnützigen Zweck **Förderung des Sports** und die teilweise Körperschaftsteuerbefreiung. [Scan in Google Drive](https://drive.google.com/file/d/1zn0e6UL9rYYqoSnBAN6nejOJ9st6Uhbo/view). **Verwendung:** Seite 1 enthält die entscheidenden Feststellungen und wird als **im Regelfall ausreichender Gemeinnützigkeitsnachweis des Hauptvereins** für OPP-009 und weitere passende Programme vorgehalten. Die bloße Fortsetzung auf Seite 2 ist **kein pauschaler Blocker**. Zusätzliche Seiten nur anfordern, wenn ein Fördergeber sie ausdrücklich verlangt. Die programmspezifische Akzeptanz ist jeweils zu prüfen. Keine Status-/Prioritätsänderung bestehender Förderchancen allein durch den Dokumenteneingang. Details in [CURRENT-STATE.md](CURRENT-STATE.md).
+
 ## Runtime-Reconciliation 2026-10-06
 
 **Aktiv maßgeblich:** OPP-011 BASF = A; OPP-010 Aktionstaler = B+; OPP-001/002/003/004/009 gemäß ihren Opportunity Briefs.  
