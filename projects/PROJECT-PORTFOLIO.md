@@ -217,3 +217,15 @@ Kleine operative Fortschritte innerhalb eines Projekts werden nicht automatisch 
 ## Future Development
 
 Das Portfolio bleibt kompakt und wird nicht zu einem zweiten Projektmanagement-System ausgebaut. Der nächste Reifegewinn entsteht durch aktuelle Projektzustände, eindeutige fachliche Owner, geklärte Systemgrenzen und eine belastbare Priorisierung der nun sichtbaren Infrastruktur- und Organisationsprojekte.
+### Portfolio-Nachtrag 12.10.2026 – Partnerprojekte 2027
+
+Die folgenden **Partner-/Eventchancen** sind in der operativen Partnership-Pipeline erfasst. Sie werden nicht ohne gesonderte Scope-/Owner-Entscheidung als zusätzliche formale Repository-Projekte oder als gesicherte Erlöse gezählt. Detail: `../knowledge/sponsoring/PARTNERKONZEPT-2-0-AKQUISE-PLAYBOOK.md`.
+
+| Chance | Phase | Referenz | Nächster Schritt | Abhängigkeit |
+|---|---|---|---|---|
+| Rasenpflege 2027, drei Plätze inkl. Tiefenlochung | Discovery | CRM018; Google-Drive-Projektsicherung / vorhandener Projektzustand | Leistungsumfang und aktuelles Angebot; Infrastrukturpartner prüfen | ca. 12.000 € historische **Kosten**schätzung, keine zugesagte Finanzierung |
+| Jugendturnier Januar – Wochenende I | Discovery | CRM020 | Termin, Hallen-/Namensrechte und Partnerpaket prüfen | Schönbornhalle, bestehende Event-/Werberechte |
+| Jugendturnier Januar – Wochenende II | Discovery | CRM021 | Termin, Hallen-/Namensrechte und Partnerpaket prüfen | Schönbornhalle, bestehende Event-/Werberechte |
+| Jugendsportfest Juli – Naming und Zukunftsmeile | Discovery | CRM022 | Flächen-/Sicherheitsplan, Ausbildung, Mobilität, Aussteller | Probefahrten nur bei genehmigter Trennung und Versicherung |
+
+**Akquise-Gesprächsteam:** 1. Vorsitzender und Finanzvorstand Thomas. **Digitaler Partnership Manager:** Vorbereitung, Partnerstories, Anschreiben, CRM-Nachverfolgung. **Getränkelieferant 2027** bleibt als bereits formalisiertes aktives Projekt besonders dringlich (Winterfeier 05.01.2027). Keine externen Zusagen ohne Freigabe.
