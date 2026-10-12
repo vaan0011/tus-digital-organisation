@@ -341,6 +341,17 @@ Priorität A – vor verbindlicher Beauftragung:
 11. goracon-Sponsoringfläche und Referenzfreigabe bewusst freigeben oder nachverhandeln,
 12. Founding-Partner-Leistungsrahmen und erste Moment-Partner-Rollen für reale Akquisegespräche festlegen.
 
+
+### Anbieterprüfung EconSocial Sport (12.10.2026)
+
+**Einordnung:** Alternative Finanzierungs-/Betreiberoption zum vorhandenen goracon-Angebot, **kein neues Doppelprojekt**. Status bleibt Discovery, keine Anbieterentscheidung oder Beauftragung.
+
+**Zu prüfen:** tatsächlicher Null-Euro-Leistungsumfang (Display, Statik, Fundament, Montage, Stromanschluss, Software, Service, Versicherung), Eigentum und Vertragsbindung, 5-Jahres-Konditionen, wirtschaftliche Gegenleistungen, Exklusivität, bestehende TuS-Partner, eigenständige TuS-Werbevermarktung und vollständiger Erlösverbleib, Nutzungsrechte und Werbezeitquoten, Rechte für Spielbetrieb und Non-Matchday, freie Ausrichtung/Drehbarkeit, Displaymaße und Steuerung, Genehmigungen, Datenschutz/Content-Freigabe, Ausfall/Haftung und Kosten nach Laufzeit.
+
+**Entscheidungsgate:** schriftlicher Mustervertrag und verbindliche Vermarktungsrechte vor Bewertung. Vergleichsrechnung EconSocial (inkl. entgangener Werbeerlöse und Betriebskosten) gegen Eigeninvestition goracon (48.779 € netto Angebotsstand, Preisbindung abgelaufen; Nebenkosten offen). Keine unbelegten Aussagen als Vertragszusage behandeln.
+
+**Erstgespräch:** Leitfaden als Google Doc; nach Gespräch Antworten, Unterlagen und TCO in diesem Projektzustand dokumentieren. Nächste Aktion: EconSocial um Mustervertrag, Leistungsbeschreibung und konkrete Zusage zu frei vermarktbaren TuS-Werbeflächen bitten.
+
 ### 14. Nächster sinnvoller Schritt
 
 Solange die Preisbindung bis 30.09.2026 läuft:
