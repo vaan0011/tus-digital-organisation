@@ -7,7 +7,7 @@ Discovery – neues, noch nicht beauftragtes Vorhaben.
 
 ## Bedarf und Umfang
 - Rasenpflege einschließlich Tiefenlochung für **drei Plätze** im Jahr **2027**.
-- **Kostenrahmen: ca. 12.000 €**, vom TuS genannt; Schätzwert, kein geprüftes Angebot oder freigegebenes Budget.
+- **Kostenrahmen: ca. 12.000 €**, Kostenschätzung des TuS **auf Basis von Vergangenheitswerten**; kein aktuelles Angebot und kein freigegebenes Budget.
 - Welche drei Plätze, Pflegeumfang, Anbieter, Termine, fachlicher Owner, Finanzierung und Beschaffungsstatus sind noch zu klären.
 
 ## Ziel
