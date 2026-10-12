@@ -344,6 +344,9 @@ Priorität A – vor verbindlicher Beauftragung:
 
 ### Anbieterprüfung EconSocial Sport (12.10.2026)
 
+**Erstgespräch EconSocial terminiert:** Freitag, 16.10.2026, 09:45 Uhr (Europe/Berlin). Gesprächsleitfaden: https://docs.google.com/document/d/1EjWq-VJ5Qh3qYJZN2toAWv-lU6Os8nADCdLpsGHpSaE/edit . Gesprächspartner und Format/Ort noch offen. Nach dem Termin Antworten und Unterlagen dokumentieren.
+
+
 **Einordnung:** Alternative Finanzierungs-/Betreiberoption zum vorhandenen goracon-Angebot, **kein neues Doppelprojekt**. Status bleibt Discovery, keine Anbieterentscheidung oder Beauftragung.
 
 **Zu prüfen:** tatsächlicher Null-Euro-Leistungsumfang (Display, Statik, Fundament, Montage, Stromanschluss, Software, Service, Versicherung), Eigentum und Vertragsbindung, 5-Jahres-Konditionen, wirtschaftliche Gegenleistungen, Exklusivität, bestehende TuS-Partner, eigenständige TuS-Werbevermarktung und vollständiger Erlösverbleib, Nutzungsrechte und Werbezeitquoten, Rechte für Spielbetrieb und Non-Matchday, freie Ausrichtung/Drehbarkeit, Displaymaße und Steuerung, Genehmigungen, Datenschutz/Content-Freigabe, Ausfall/Haftung und Kosten nach Laufzeit.
