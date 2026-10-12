@@ -16,7 +16,7 @@ Tabellenplätze und Wettbewerbsdaten sind Momentaufnahmen und werden vor einer V
 
 ### Saison 2026/27
 
-Letzte Verifikation Spiel-/Wettbewerbsdaten: **05.10.2026**
+Letzte Verifikation Spiel-/Wettbewerbsdaten: **12.10.2026**
 Trainerstab-Stand: **18.09.2026**
 Primärquelle Spiel- und Wettbewerbsdaten: `fussball.de`
 
@@ -29,17 +29,17 @@ Mannschaftsseite:
 
 ### Trainerstab
 
-- Head-Coach: **Michael Sabljo**
+- Head-Coach: **Mihael Sabljo**
 - Co-Coach: **Maximilian Löchner**
 
 ### Aktueller Saisonstand
 
-- Spiele: 6
-- Siege: 4
+- Spiele: 7
+- Siege: 5
 - Unentschieden: 0
 - Niederlagen: 2
-- Tore: 15:12
-- Punkte: 12
+- Tore: 18:13
+- Punkte: 15
 - Tabellenplatz: **4**
 
 ### Ergebnisse
@@ -52,10 +52,11 @@ Mannschaftsseite:
 | 20.09.2026 | 4 | VfB Bretten 2 | TuS Mingolsheim | 4:2 |
 | 27.09.2026 | 5 | TuS Mingolsheim | FC Germania Forst | 3:5 |
 | 04.10.2026 | 6 | FV Hambrücken | TuS Mingolsheim | 0:3 |
+| 10.10.2026 | 7 | FC Odenheim | TuS Mingolsheim | 1:3 |
 
 ### Nächstes Pflichtspiel
 
-- **10.10.2026, 15:00 Uhr:** FC Odenheim – TuS Mingolsheim (auswärts)
+- **18.10.2026, 15:00 Uhr:** TuS Mingolsheim – FVgg Neudorf (Heimspiel)
 
 ## Herren 2 – TuS Mingolsheim 2
 
@@ -71,13 +72,13 @@ Mannschaftsseite:
 
 ### Aktueller Saisonstand
 
-- Gewertete Spiele: 5
-- Siege: 2
+- Gewertete Spiele: 6
+- Siege: 3
 - Unentschieden: 0
 - Niederlagen: 3
-- Tore: 16:13
-- Punkte: 6
-- Tabellenplatz: **8**
+- Tore: 20:14
+- Punkte: 9
+- Tabellenplatz: **6**
 
 ### Ergebnisse
 
@@ -89,12 +90,13 @@ Mannschaftsseite:
 | 20.09.2026 | 4 | Spvgg 1920 Oberhausen | TuS Mingolsheim 2 | 3:2 |
 | 27.09.2026 | 5 | TuS Mingolsheim 2 | FC Germania Forst 2 | **Abbruch – noch ohne Wertung** |
 | 04.10.2026 | 6 | FV Hambrücken 2 | TuS Mingolsheim 2 | 3:2 |
+| 11.10.2026 | 7 | SV Philippsburg 2 | TuS Mingolsheim 2 | 1:4 |
 
 Das abgebrochene Spiel vom 27.09.2026 wird bis zu einer bestätigten Wertung nicht in Spiele, Bilanz, Tore oder Punkte eingerechnet.
 
 ### Nächstes Pflichtspiel
 
-- **11.10.2026, 13:00 Uhr:** SV Philippsburg 2 – TuS Mingolsheim 2 (auswärts)
+- **18.10.2026, 13:00 Uhr:** TuS Mingolsheim 2 – SpG Graben 2 / Neudorf 2 (Heimspiel)
 
 ## Frauen – SpG St. Leon / Mingolsheim
 
@@ -116,16 +118,16 @@ Noch nicht verifiziert. Trainer- und Funktionsnamen werden erst nach belastbarer
 - Automatische Berichtserstellung ab: **Pflichtspiele nach dem 28.09.2026**
 - Frühere Pflichtspiele dienen als Saisonkontext und werden nicht automatisch rückwirkend als neue Berichte erzeugt.
 - Vollständiger Saisonstand erstmals initialisiert: **05.10.2026**
-- Automatisch berichtete Spiele seit Cutover: **30.09.2026 gegen Heidelberger SC** und **04.10.2026 bei FV Fortuna Kirchfeld**
+- Automatisch berichtete Spiele seit Cutover: **30.09.2026 gegen Heidelberger SC**, **04.10.2026 bei FV Fortuna Kirchfeld**, **07.10.2026 gegen Post Südstadt Karlsruhe (Verbandspokal)** und **11.10.2026 gegen Post Südstadt Karlsruhe 2 (flex)**
 
 ### Aktueller Ligastand
 
-- Spiele: 4
-- Siege: 2
+- Spiele: 5
+- Siege: 3
 - Unentschieden: 0
 - Niederlagen: 2
-- Tore: 13:10
-- Punkte: 6
+- Tore: 16:10
+- Punkte: 9
 - Tabellenplatz: **4**
 
 ### Landesliga-Ergebnisse
@@ -136,6 +138,7 @@ Noch nicht verifiziert. Trainer- und Funktionsnamen werden erst nach belastbarer
 | 27.09.2026 | 3 | SpG St. Leon / Mingolsheim | SpG Büchig / Neibsheim | 2:3 |
 | 30.09.2026 | 1 | SpG St. Leon / Mingolsheim | Heidelberger SC | 0:4 |
 | 04.10.2026 | 4 | FV Fortuna Kirchfeld | SpG St. Leon / Mingolsheim | 1:5 |
+| 11.10.2026 | 5 | SpG St. Leon / Mingolsheim | Post Südstadt Karlsruhe 2 (flex) | 3:0 |
 
 ### Verbandspokal-Ergebnisse
 
@@ -143,10 +146,11 @@ Noch nicht verifiziert. Trainer- und Funktionsnamen werden erst nach belastbarer
 |---|---|---|---|---:|
 | 16.09.2026 | nicht ausgewiesen | SpG St. Leon / Mingolsheim | Spvgg 06 Ketsch | 4:1 |
 | 23.09.2026 | nicht ausgewiesen | VfR Mannheim | SpG St. Leon / Mingolsheim | 1:8 |
+| 07.10.2026 | Achtelfinale | SpG St. Leon / Mingolsheim | Post Südstadt Karlsruhe | 1:4 |
 
 ### Nächstes Pflichtspiel
 
-- **07.10.2026, 19:30 Uhr:** SpG St. Leon / Mingolsheim – Post Südstadt Karlsruhe (Verbandspokal, Heimspiel)
+- **18.10.2026, 17:30 Uhr:** FC Frauenweiler – SpG St. Leon / Mingolsheim (Landesliga, auswärts)
 
 ## Redaktionelle Nutzung
 
