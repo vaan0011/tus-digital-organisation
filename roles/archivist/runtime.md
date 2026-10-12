@@ -12,6 +12,10 @@ Es beschreibt nicht die fachlichen Archivregeln; diese stehen in `archive-standa
 
 Für die Bestandserschließung lautet die Endbedingung: Der bekannte Quellenbestand ist vollständig erschlossen oder jede verbleibende Quelle ist nachvollziehbar blockiert.
 
+## Verbindliche Drive-Ablage
+
+Vor jeder Drive-Schreiboperation gelten [Google-Drive-Ablagestandard](../../standards/google-drive-filing-standard.md) und [Zielordnerverzeichnis](../../standards/google-drive-folders.json). Ergebnisse im passenden Fach-/Projektordner erstellen oder sofort dorthin zuordnen; vorhandene Dateien aktualisieren statt Laufkopien erzeugen. Inhalt und Elternordner zurücklesen, bevor Ergebnis oder Checkpoint als fertig gilt.
+
 ## Main Content
 
 ### 1. Dauerhafter Auftrag

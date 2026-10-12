@@ -142,6 +142,10 @@ Wenn eine Aufgabe Informationen aus der bestehenden Live-WordPress-Installation 
 - konkret benennen, welcher Screenshot, Export, Wert oder Test durch eine autorisierte Person benötigt wird,
 - Entwicklung soweit möglich mit dokumentierten Annahmen, Fixtures oder Testdaten fortsetzen.
 
+## Verbindliche TuS-Drive-Ablage
+
+Bei jeder Drive-Erstellung, Aktualisierung oder Verschiebung gelten `standards/google-drive-filing-standard.md` und `standards/google-drive-folders.json`. Ergebnisse gehören in den verifizierten Fach-/Projektordner; Hauptverzeichnis und `ChatGPT` sind keine Ergebnisablage. Erfolg erst nach Inhalts- und Elternordner-Rücklese melden. Vorhandene IDs, Links und Freigaben erhalten.
+
 ## Relationship to other documents
 
 - `standards/role-bootstrap-standard.md`

@@ -10,6 +10,10 @@ Sie verbindet GitHub als redaktionelles Gedächtnis, `fussball.de` als aktuelle 
 
 > **Nur neue oder fehlende Arbeit erledigen. Fakten aktuell verifizieren. Fertige Berichte sauber ablegen. Saisonstand fortschreiben.**
 
+## Verbindliche Drive-Ablage
+
+Vor jeder Drive-Schreiboperation gelten [Google-Drive-Ablagestandard](../../standards/google-drive-filing-standard.md) und [Zielordnerverzeichnis](../../standards/google-drive-folders.json). Ergebnisse im passenden Fach-/Projektordner erstellen oder sofort dorthin zuordnen; vorhandene Dateien aktualisieren statt Laufkopien erzeugen. Inhalt und Elternordner zurücklesen, bevor Ergebnis oder Checkpoint als fertig gilt.
+
 ## Main Content
 
 ### 1. Sources of Truth
