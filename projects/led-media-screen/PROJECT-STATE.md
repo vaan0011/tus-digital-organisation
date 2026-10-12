@@ -350,7 +350,7 @@ Priorität A – vor verbindlicher Beauftragung:
 
 **Entscheidungsgate:** schriftlicher Mustervertrag und verbindliche Vermarktungsrechte vor Bewertung. Vergleichsrechnung EconSocial (inkl. entgangener Werbeerlöse und Betriebskosten) gegen Eigeninvestition goracon (48.779 € netto Angebotsstand, Preisbindung abgelaufen; Nebenkosten offen). Keine unbelegten Aussagen als Vertragszusage behandeln.
 
-**Erstgespräch:** Leitfaden als Google Doc; nach Gespräch Antworten, Unterlagen und TCO in diesem Projektzustand dokumentieren. Nächste Aktion: EconSocial um Mustervertrag, Leistungsbeschreibung und konkrete Zusage zu frei vermarktbaren TuS-Werbeflächen bitten.
+**Erstgespräch:** [Gesprächsleitfaden EconSocial Sport](https://docs.google.com/document/d/1EjWq-VJ5Qh3qYJZN2toAWv-lU6Os8nADCdLpsGHpSaE/edit) mit Fragen, Unterlagencheckliste und Protokollfeldern; nach Gespräch Antworten, Unterlagen und TCO in diesem Projektzustand dokumentieren. Nächste Aktion: EconSocial um Mustervertrag, Leistungsbeschreibung und konkrete Zusage zu frei vermarktbaren TuS-Werbeflächen bitten.
 
 ### 14. Nächster sinnvoller Schritt
 
