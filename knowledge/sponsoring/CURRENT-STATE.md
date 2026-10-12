@@ -311,3 +311,12 @@ Operative Partnerstände bleiben dagegen im geschützten nativen CRM.
 Der nächste Reifegewinn kommt jetzt aus realer Anwendung: Homepage-Einstieg prototypisieren, Vertriebsunterlagen schaffen, Bestandspartner sauber führen und die Partner-Journey mit echten Gesprächen und Aktivierungen testen.
 
 Neue Dokumentation wird nur ergänzt, wenn sie wiederkehrende Arbeit tatsächlich verbessert.
+### Update 12.10.2026 – Partnerkonzept 2.0 in Akquisephase
+
+- Verbindliche fachliche Arbeitsgrundlage: [Partnerkonzept 2.0 – Akquise-Playbook](PARTNERKONZEPT-2-0-AKQUISE-PLAYBOOK.md). Enthält Projekt- und Preis-Hypothesen, Partnerrollen, Story-Ansätze, Anschreiben, Gesprächsablauf und priorisierte Maßnahmen; keine genehmigten Angebote.
+- **Gesprächsteam:** 1. Vorsitzender und Finanzvorstand Thomas führen strategische Partner- und Lieferantengespräche. Digitaler Partnership Manager bereitet vor und führt CRM-Nachverfolgung. Keine automatische externe Ansprache.
+- **Höchste operative Priorität:** Getränkelieferant 2027 und sichere Versorgung Januar; Rothenberger-Ausstieg laut Vorstandsnachverfolgung, Umfang noch zu prüfen. Detail: `../../projects/getraenkelieferant-2027/PROJECT-STATE.md`.
+- **Drei Jugend-Eventchancen:** zwei Januar-Turnierwochenenden Schönbornhalle (CRM020, CRM021) und Jugendsportfest Juli mit Zukunftsmeile, Azubi-, Mobilitäts-/Jobrad- und Ausstellerideen (CRM022). Projekt-/Event-Rechte und Termine vor Vermarktung klären.
+- **Sportpark-Naming:** `../../projects/sportpark-namensrechte/PROJECT-STATE.md`; ambitioniertes Premium-Ziel ist unvalidiert. LED-, Event- und Sportparkrechte nicht doppelt vermarkten.
+- **Rasenpflege 2027:** drei Plätze, ca. 12.000 € historische **Kostenschätzung**, kein bestätigter Sponsoringerlös (CRM018).
+- Operative Source of Truth bleibt das geschützte native Partner-CRM; vertrauliche Partnerdaten nicht im Repository duplizieren.
