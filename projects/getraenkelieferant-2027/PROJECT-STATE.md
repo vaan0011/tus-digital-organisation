@@ -80,3 +80,16 @@ Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsv
 ## Future Development
 
 Nach Entscheidung werden Anbieter, Konditionsmodell, Startdatum, Ansprechpartner und Übergabe in laufende Kiosk-/Eventbeschaffung dokumentiert. Danach kann das Projekt abgeschlossen werden.
+## Update 12.10.2026 – Partnerkonzept 2.0 und Januar-Versorgung
+
+**Abweichung zum bisherigen Anbietermodell:** Laut Vorstandsnachverfolgung übernimmt Rothenberger die Belieferung ab 2027 nicht mehr. Ob dies Veranstaltungen **und** Kiosk betrifft, ist anhand Originalvereinbarung und Finanzvorstand zu klären. Rothenberger daher **nicht** ohne neue Bestätigung als verfügbare Kioskoption behandeln. Noch kein Nachfolger bestätigt.
+
+**Kritische Termine:** Winterfeier 05.01.2027; Jugend-Hallenturnier 16./17.01.2027. Die fünf bekannten 2026er Bedarfsblöcke ergeben 17.083,52 € **brutto Einkaufsvolumen**, kein Sponsoringerlös. Kiosk-Jahresbedarf fehlt; historische Referenz 2025 ca. 510 Kisten plus Wein ist zu validieren.
+
+**Operative Gesprächsführung:** 1. Vorsitzender und Finanzvorstand Thomas gemeinsam; digitaler Partnership Manager bereitet Warenkorb, Anbieterbriefing, Angebotsmatrix, Anschreiben und CRM-Nachverfolgung vor. Projekt-Owner für laufende Beschaffungsorganisation weiterhin ausdrücklich festzulegen.
+
+**Vergleichsmodell:** (A) Veranstaltungen, (B) Veranstaltungen + Kiosk, identischer Warenkorb; Kommission, Rücknahme, Pfand, Kühlung, Equipment, Notfalllieferung, Lieferfähigkeit im Januar und Vertrags-/Markenrechte prüfen. Getränke Thome als Kandidat; weitere geeignete regionale Anbieter intern qualifizieren. Höpfner-Bestandsrechte vor Zusagen prüfen. Lieferangebot und mögliche Hydration-Partnerschaft getrennt bewerten.
+
+**Interne Zieltermine (Vorschlag, nicht freigegeben):** Rechte/Owner bis 16.10.; Anfrage bis 23.10.; Vergleichsangebote bis 06.11.; Bewertung bis 13.11.; Vorstandsentscheidung bis 20.11.; Dezember Übergabe und Notfallplanung. Falls Terminplan nicht erreichbar, Übergangsversorgung Januar organisieren.
+
+**Playbook:** `../../knowledge/sponsoring/PARTNERKONZEPT-2-0-AKQUISE-PLAYBOOK.md`. Externe Anfragen und Verträge nur nach Freigabe.
