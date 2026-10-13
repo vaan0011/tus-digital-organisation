@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen und Kommunikation ausgewertet, drei weitere Kategorie-Auswertungstexte ausstehend.  
+**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen, Kommunikation und Organisation ausgewertet, zwei weitere Kategorie-Auswertungstexte ausstehend.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -148,9 +148,49 @@ Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kate
 
 
 
-### 2.4 Organisation – Originaltext
+### 2.4 Organisation – Quellenauswertung
 
-*Ausstehend.*
+**Quelle:** drei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (Nutzer-Upload). Quellennah strukturierte Wiedergabe der Indikatoren und Empfehlungen; keine vollständige wortgetreue Transkription. Screenshots bleiben Originalquelle.
+
+**Kategorieergebnis:** **3,4 / 5 – Stufe 3 „Fortgeschritten“**.
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Organisationsstrategie & Ziele | 5,0 |
+| Gemeinsames Verständnis | 3,0 |
+| Prozesse | 3,3 |
+| Tools | 3,2 |
+| Infrastruktur | 2,5 |
+
+**Definitionen laut Bericht:** Organisationsstrategie & Ziele: Ausrichtung digitaler Vereinsverwaltung an Strategie und konkreten Zielen. Gemeinsames Verständnis: vereinsweit geteiltes Bild digitaler Verwaltung. Prozesse: Automatisierung und Digitalisierungsgrad der Verwaltung. Tools: Nutzung von Office-/Workspace-, Planungs- und Buchungswerkzeugen. Infrastruktur: digitale technische Steuerung von Sportstätten.
+
+**Handlungsempfehlungen des Berichts – quellennahe Zusammenfassung:**
+
+1. **Strategie regelmäßig evaluieren:** Zweckmäßigkeit der Vereinsorganisation bei internen/externen Veränderungen überprüfen und Prozesse/Strukturen gegebenenfalls anpassen; technische Entwicklungen beobachten.
+2. **Gemeinsame Vision und SMART-Ziele erarbeiten:** Workshop zur digitalen Verwaltung, Meilensteine und für alle nachvollziehbare Ziele; im TuS vorhandene Vision zuerst gemeinsam validieren, nicht ohne Anlass neu erfinden.
+3. **Verantwortlichkeiten klären:** Rollen, Aufgaben und Ressourcen (Zeit, Budget, Schulungen) für Einführung und Betrieb festlegen; bei Bedarf externe Expertise nutzen.
+4. **Regelmäßige Abstimmung und Dokumentation:** Fortschritt, Hindernisse und Best Practices austauschen, Ergebnisse nachvollziehbar festhalten.
+5. **Prozessstandards etablieren:** Kernprozesse wie Mitgliederverwaltung, Beitragsabrechnung und Veranstaltungsplanung innerhalb der nächsten Monate vereinheitlichen.
+6. **Digitale Verwaltung und Automatisierung ausbauen:** Papierlose Abläufe, Terminplanung, Rechnungsstellung und Kapazitätsmanagement als mögliche Anwendungsfelder.
+7. **Tool-Landschaft bedarfsgerecht erweitern:** Beispielsweise Hallenbelegung, Kursplanung, Projektmanagement – aber nicht automatisch neue Systeme beschaffen.
+8. **Tools integrieren:** Datensilos, doppelte Erfassung und redundante Arbeit durch gemeinsame Datenablagen, Kalender-/Aufgabensynchronisation und Schnittstellen reduzieren.
+9. **Halbjährliche Tool-Evaluierung:** Nutzen, Weiterbetrieb, Ergänzung oder Ersatz bestehender Werkzeuge prüfen.
+10. **Digitale Infrastruktur erfassen und integrieren:** Vorhandene Sportstätten-/Gebäudetechnik und möglichen Bedarf an Energie-, Zugangs- und Sicherheitssteuerung prüfen; mögliche Erweiterungen nach Nutzen und Umsetzbarkeit priorisieren.
+11. **Modulare und skalierbare Lösungen bevorzugen:** Erweiterbarkeit, Wartbarkeit und Vermeidung von Abhängigkeiten berücksichtigen.
+
+**TuS-Interpretation (eigene Einschätzung, keine BASF-Originalaussage):** Die **Organisationsstrategie mit 5,0** ist sehr weit, aber **gemeinsames Verständnis (3,0), Prozesse (3,3) und Tools (3,2)** zeigen eine Umsetzungs- und Adoptionslücke. Das Projekt Sarah / TuS-OS soll bestehende Arbeitsabläufe für die Menschen im Verein nutzbar machen. **Infrastruktur 2,5** misst hier vor allem digitale Steuerung von Sportstätten; das widerspricht nicht zwingend **Infrastruktur 5,0** in der Kategorie „Voraussetzungen“, die technische Grundvoraussetzungen erfasst. Keine Aussage über tatsächliche Gebäudetechnik ohne Inventur.
+
+**Anschlussaktionen – Vorschläge, nicht beschlossen:**
+
+- Mit einem konkreten Verwaltungsprozess als Pilot starten: Ist-Ablauf, Engpässe, verantwortliche Menschen, gewünschtes Ergebnis und Erfolgskriterium gemeinsam definieren.
+- Bestehende Standards und Projektportfolio des TuS-OS nutzen; keine zweite parallele Prozess-/Projektliste anlegen.
+- Einführung und Betrieb je Fachprozess menschlich verantworten lassen; digitale Agenten unterstützen, ersetzen keine Zuständigkeit.
+- Google Drive, WordPress, n8n und bestehende Systeme anhand echter Datenflüsse verbinden; Datenschutz, Berechtigungen und Fehlerbehandlung einplanen.
+- Neue Tools nur bei nachgewiesenem Bedarf und vertretbarem Betrieb einführen; bestehende Lösungen zuerst integrieren.
+- Für Sportstättensteuerung zunächst tatsächlichen Bestand und wirtschaftlichen Nutzen erfassen, keine voreilige Beschaffung.
+- Kurze, entscheidungsorientierte Workshops statt zusätzlicher routinemäßiger Meetings; Ergebnisse und Owner im OS dokumentieren.
+
+
 
 ### 2.5 Mitgliederwesen – Originaltext
 
