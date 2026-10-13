@@ -1,6 +1,6 @@
 # Funding Current State
 
-**Stand:** 2026-10-13 – Runtime-Lauf und Primärquellenprüfung
+**Stand:** 2026-10-13 – BASF-Einreichungsbestätigung ergänzt
 
 ## Operativer Status
 
@@ -17,11 +17,11 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 
 ## Aktive A-/B+-Pipeline
 
-1. **OPP-011 – Aufbau Digitale Vereinsorganisation × Sportverein der Zukunft / BASF: A – bewerben**
+1. **OPP-011 – Aufbau Digitale Vereinsorganisation × Sportverein der Zukunft / BASF: eingereicht – Auswahl offen**
    - Bewerbung über Digital-Check bis **18.10.2026**.
    - 18 Monate Coaching; bis zu 2.000 € Förderung, maximal 80 % der förderfähigen Aufwendungen; mindestens 20 % Eigenanteil; eigene Personalkosten ausgeschlossen.
    - Die veröffentlichte Bewerbung nennt keinen Freistellungsbescheid als Voraussetzung.
-   - Einreichungsstatus im OS weiterhin nicht nachgewiesen. Interne Sofortfrist: **13.10.2026**.
+   - **Einreichung durch Nutzer am 13.10.2026 ausdrücklich bestätigt:** Digital-Check erfolgreich abgeschlossen; Bewerbung für 20 Coaching-Plätze im Auswahlverfahren. Digitalisierungsfaktor 3,7/5, Stufe 4 „Experte“. Keine Förderzusage.
 
 2. **OPP-010 – Kinder- und Jugendschutz × Aktionstaler 2.0: B+ – konkret vorbereiten**
    - bis 2.000 € Sach-/Honorarkosten; kein verpflichtender Eigenanteil.
@@ -64,11 +64,11 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 
 ## Aktuelle Queue
 
-1. **Heute:** BASF-Digital-Check/Bewerbung abschließen oder Einreichung im OS dokumentieren.
+1. **BASF:** Bewerbung vom 13.10. bestätigt; Auswahlentscheidung abwarten und Eingang einer Nachricht dokumentieren.
 2. **Bis 15.10.:** Historienarchiv-Vorabskizze für EVALAG fertigstellen.
 3. **Bis 16.10. 09:45:** EconSocial-Erstgespräch vorbereiten; keine Zusage im Gespräch.
 4. Aktionstaler: Projekt-Owner, Aktionsscope, Budget und kommunale Stellungnahme festziehen.
-5. Bis 25.10.: REWE-Scheine zuordnen; danach Prämien bis 08.11. bestellen.
+5. **REWE:** laut Nutzer eigenständig im Griff; keine weiteren Erinnerungen oder operativen Rückfragen.
 
 ## Heute verifizierte Primärquellen
 
