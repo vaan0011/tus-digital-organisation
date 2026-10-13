@@ -1,10 +1,18 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-09-11 – WISO 2026 geschlossen; Ersatzförderung als aktiver Suchauftrag aufgenommen  
+**Stand:** 2026-10-13 – BASF-Bewerbung zeitkritisch; aktueller Hauptvereinsnachweis liegt vor
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
 **Fachlicher Projekt-Owner:** noch nicht explizit benannt
+
+## Förderupdate 13.10.2026
+
+- **OPP-011 Sportverein der Zukunft / BASF:** A – bewerben; Digital-Check bis 18.10.2026, Einreichung im OS noch nicht nachgewiesen. Förderung: 18 Monate Coaching, bis 2.000 €, maximal 80 %; mindestens 20 % Eigenanteil.
+- Empfohlene Story: **„Digitales Vereinsbüro – Ehrenamt entlasten, Wissen sichern und wiederkehrende Vereinsarbeit einfacher machen.“**
+- Für den Hauptverein liegt seit 12.10.2026 ein aktueller, im Regelfall nutzbarer Nachweis für den gemeinnützigen Zweck Förderung des Sports vor. BASF nennt ihn für den Digital-Check nicht als Pflicht.
+- WISO 2026 und Gemeinsam engagiert in BW V bleiben geschlossen.
+- Sofortaktion: Digital-Check heute abschließen oder erfolgte Einreichung mit Bestätigung dokumentieren.
 
 ## Purpose
 
