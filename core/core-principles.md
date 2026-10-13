@@ -8,6 +8,8 @@ Sie bilden die gemeinsame Denkweise für Architektur, Entwicklung, Organisation 
 
 Jede zukünftige Entscheidung soll mit diesen Prinzipien vereinbar sein.
 
+**Geltungsbereich:** Fachliche Kernobjekte, Datenhoheit, Architektur und Plugin-Grenzen. Für die organisationsweiten Leitideen ist [`../organization/guiding-principles.md`](../organization/guiding-principles.md) der Einstieg; dieses Dokument erläutert die fachlich-technischen Konsequenzen. Bestehende ADRs und fachliche Standards bleiben für ihre konkreten Entscheidungen verbindlich.
+
 ---
 
 ## Core Principle

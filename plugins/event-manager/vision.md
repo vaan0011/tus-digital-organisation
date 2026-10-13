@@ -1,5 +1,7 @@
 # Event Manager Vision
 
+> **Einordnung:** Historisches fachliches Konzept, kein eigener Produkt- oder Entwicklungsstand. Das tatsächlich entwickelte WordPress-Plugin und die aktuellen Entscheidungen liegen unter [`../../projects/event-planner/`](../../projects/event-planner/). Bei Abweichungen ist der aktuelle Projektzustand samt Code maßgeblich.
+
 ## Purpose
 
 Der Event Manager unterstützt den vollständigen Lebenszyklus einer Vereinsveranstaltung.
@@ -774,14 +776,9 @@ Dazu gehören insbesondere:
 - `../../core/core-principles.md`
 - `../../architecture/platform-architecture.md`
 
-## Planned Documents
+## Mögliche spätere Ergänzungen
 
-- `event-types.md`
-- `design-system.md`
-- `requirements.md`
-- `interfaces.md`
-- `roadmap.md`
-- `changelog.md`
+Eventtypen, Design, Anforderungen, Schnittstellen und Entwicklungsplanung werden **nur bei realem Bedarf** dokumentiert – möglichst direkt in den bereits vorhandenen Event-Planner-Quellen. Die früher skizzierten Dokumentnamen sind keine Pflichtdateien oder freigegebenen Spezifikationen.
 
 ## Future Development
 

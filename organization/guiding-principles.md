@@ -6,6 +6,8 @@ Diese Leitprinzipien bilden das Fundament unserer digitalen Organisation. Sie be
 
 Technologien verändern sich. Unsere Werte und Arbeitsprinzipien bleiben.
 
+**Einordnung:** Dies ist der organisationsweite Werte- und Leitprinzipienrahmen. `organization-principles.md` konkretisiert ihn für die Zusammenarbeit; `../core/core-principles.md` konkretisiert ihn für Domänen-, Daten- und Plattformentscheidungen. Fachliche Regeln und beschlossene Architekturentscheidungen stehen weiterhin in den jeweils zuständigen Standards bzw. ADRs – sie werden hier nicht dupliziert.
+
 ---
 
 ## 1. Der Verein steht im Mittelpunkt.

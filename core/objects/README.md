@@ -32,6 +32,8 @@ Zu den Core-Objekten gehören unter anderem:
 
 Weitere Objekte werden ergänzt, sobald sie pluginübergreifend benötigt werden.
 
+**Noch nicht spezifiziert:** `location.md` (Standort) und `picture.md` (Bild) sind derzeit leer. Sie definieren kein belastbares Fach- oder Datenmodell und dürfen nicht wie bestehende Schnittstellen behandelt werden.
+
 ---
 
 ## Relationship to other documents

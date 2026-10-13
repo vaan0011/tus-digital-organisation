@@ -125,7 +125,8 @@ Für Coding-Agents gilt **Minimum Effective Change**:
 - kleine robuste Änderungen großen Refactorings vorziehen,
 - gezielte Tests zuerst ausführen; breite Suites nur bei entsprechendem Risiko,
 - identische Suchen oder teure Tests nicht ohne neue Evidenz wiederholen,
-- keine optionalen Verbesserungen nach erledigtem Auftrag automatisch anhängen.
+- keine optionalen Verbesserungen nach erledigtem Auftrag automatisch anhängen,
+- keine leeren Dateien, Platzhalter-Spezifikationen oder komplette Dokumentgerüste auf Vorrat anlegen: Neue Dokumente brauchen einen konkreten Inhalt und eine eindeutige fachliche Heimat. Bestehende leere Dateien sind **offene Modelllücken, keine verbindlichen Regeln**.
 
 Wenn der Scope während der Arbeit wesentlich wächst, mehrere neue Architekturfragen öffnet oder ein unklarer Langlauf entsteht, wird ein reproduzierbarer Checkpoint erstellt und der zusätzliche Scope getrennt behandelt.
 
