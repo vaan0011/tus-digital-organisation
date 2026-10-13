@@ -1,0 +1,18 @@
+name: Repository-Hygiene
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-hygiene:
+    name: Datei- und Projektstruktur prüfen
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+      - name: Strukturelle Hygiene prüfen
+        run: python3 scripts/check_repository_hygiene.py
