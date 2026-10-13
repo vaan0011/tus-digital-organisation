@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen, Kommunikation und Organisation ausgewertet, zwei weitere Kategorie-Auswertungstexte ausstehend.  
+**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen, Kommunikation, Organisation und Mitgliederwesen ausgewertet; Sportangebot noch ausstehend.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -22,7 +22,7 @@
 
 **Differenz zwischen Gesamtfaktor und Selbsteinschätzung:** +0,9 Punkte. Kein externer Benchmark oder Kausalnachweis. Die Einstufung „Experte“ ist die Systemkategorie des Fragebogens und bedeutet nicht, dass alle Prozesse produktiv digitalisiert sind.
 
-## 2. Originaltexte der sechs Kategorien – Eingang offen
+## 2. Kategorie-Auswertungen – fortlaufende Erfassung
 
 Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kategorie dokumentiert, getrennt von Interpretation und Maßnahmen. Nicht erhaltene Texte werden nicht rekonstruiert oder erfunden.
 
@@ -244,3 +244,39 @@ Der persönliche Ergebnislink enthält ein Zugriffstoken. **Nicht in das Reposit
 ## 6. Fortschreibung / nächster Eingang
 
 Für jeden weiteren Kategorie-Auswertungstext: (1) Originaltext vollständig aufnehmen, (2) Aussage und Beleg von TuS-Interpretation trennen, (3) konkrete Maßnahmen/Entscheidungsbedarf ableiten, (4) Projektzustand nur bei materieller Änderung anpassen. Bestehendes Dokument fortschreiben, **keine Kopien je Kategorie**.
+
+
+
+### 2.5 Mitgliederwesen – Quellenauswertung
+
+**Quelle:** zwei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (Nutzer-Upload). Inhaltliche, quellennahe Erfassung; keine vollständige wortgetreue Transkription. Screenshots bleiben Originalquelle.
+
+**Kategorieergebnis:** **3,9 / 5 – Stufe 4 „Experte“**.
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Mitgliederstrategie & Ziele | 4,5 |
+| Services für Mitglieder | 3,6 |
+| Mitgliederverwaltung | 3,5 |
+
+**Definitionen laut Bericht:** Mitgliederstrategie & Ziele erfasst die strategische Ausrichtung der Mitgliederbindung und -gewinnung. Services für Mitglieder betrachtet Anmeldungen und Selbstverwaltung, beispielsweise über Mitgliederportale. Mitgliederverwaltung bewertet digitale Unterstützung bei Anmelde- und Buchhaltungsprozessen.
+
+**Handlungsempfehlungen des Berichts – quellennahe Zusammenfassung:**
+
+1. Mitgliederstruktur analysieren, Angebote auf Bedürfnisse und Interessen ausrichten.
+2. Fortgeschrittene Lösungen wie CRM-Systeme prüfen, um Mitgliederprofile zu verwalten und Trends zu erkennen.
+3. Mitgliederstrategie regelmäßig überprüfen und neue Zielgruppen, etwa Jugendliche und Familien, berücksichtigen.
+4. Angebote konsequent aus Mitgliedersicht gestalten; Beispiele: Online-Anmeldungen und digitale Mitgliederplattformen.
+5. Digitale Services wie Vereinsapps, Online-Plattformen und E-Mail-Automationen prüfen und Mitgliederfeedback einholen.
+6. Besonders zeitintensive Prozesse priorisieren, etwa Beitragsverwaltung, Mitgliedsanmeldungen oder Kursorganisation.
+7. Mit einfachen cloudbasierten Verwaltungswerkzeugen starten, soweit sie fachlich sinnvoll sind.
+
+**TuS-OS-Einordnung – eigene Interpretation, keine BASF-Aussage:**
+
+Die BASF-Empfehlungen zur Einführung von Self-Service-Portalen und weiteren Tools sind **keine automatische Produktanforderung**. Maßgeblich sind die bereits in `vision/vision.md`, `organization/philosophy.md` und `README.md` verankerten Prinzipien: Organisation vor Technologie; digitale Mitarbeiter entlasten Menschen; Werkzeuge sind nachgelagert. Ziel ist nicht die Schulung aller Mitglieder und Funktionsträger auf zusätzliche Software, sondern die **möglichst einfache Beauftragung eines digitalen Mitarbeiters**, der innerhalb klarer Berechtigungen Aufgaben in den Fachsystemen ausführt. Ein Portal bleibt eine mögliche, nicht zwingende Schnittstelle.
+
+**Mögliche Pilotfälle, noch nicht beschlossen:** Adressänderung, Mitgliedsbescheinigung, Mitgliedsanmeldung, Fragen zu Beiträgen und Statusauskünfte. Kündigungen und beitrags-/vertragswirksame Änderungen erfordern gesonderte rechtliche Prüfung, Authentifizierung, Nachvollziehbarkeit und geeignete menschliche Freigaben. Keine unbelegten Aussagen über heute bereits automatisierte Funktionen treffen.
+
+**Messung der Wirkung:** Zeitaufwand pro Anliegen, Anteil ohne manuelle Nacharbeit erledigter Vorgänge, Rückfragen, Fehlerquote, Bearbeitungsdauer und Zufriedenheit der Mitglieder; nicht die Zahl eingeführter Apps oder geschulter Tool-Anwender.
+
+**Offen:** Tatsächlichen Ist-Prozess der Mitgliederverwaltung, Datenquellen, Zuständigkeiten, Zugriffsrechte und Einwilligungs-/Datenschutzanforderungen vor einem technischen Vorhaben prüfen.
