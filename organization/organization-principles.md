@@ -6,6 +6,8 @@ Dieses Dokument beschreibt die grundlegenden organisatorischen Prinzipien der Tu
 
 Sie gelten für Menschen und digitale Mitarbeiter gleichermaßen.
 
+**Geltungsbereich:** Konkrete Zusammenarbeit, Delegation und Verantwortung im Alltag. Die organisationsweiten Leitideen stehen in [`guiding-principles.md`](guiding-principles.md). Dieses Dokument ergänzt sie, ist aber keine zweite unabhängige Werteordnung. Konkrete Freigaben, Rollenrechte und Abläufe richten sich nach den zuständigen Rollen, Standards und ADRs.
+
 ---
 
 ## Core Principle

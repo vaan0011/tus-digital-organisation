@@ -33,7 +33,7 @@ Die fachlich verbindlichen Details liegen in:
 - `logo.md` für offizielle Logos,
 - `colors.md` für freigegebene Markenfarben und deren semantische Bedeutung,
 - `typography.md` für freigegebene Schriften,
-- `visual-language.md` für Bild- und Formensprache,
+- `visual-language.md` als vorgesehener Dokumentationsort für Bild- und Formensprache (**noch leer; daraus folgt derzeit keine freigegebene Regel**),
 - `ui-standard.md` für digitale Bedienoberflächen,
 - `product-types.md` für produktspezifische Anforderungen.
 

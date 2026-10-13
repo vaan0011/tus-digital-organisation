@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Der Ordner **plugins** enthält alle funktionalen Bausteine der digitalen Vereinsplattform.
+Der Ordner `plugins/` enthält **fachliche Konzepte** zur modularen digitalen Vereinsorganisation. Er ist kein zweiter Ablageort für produktiven WordPress-Code.
 
-Jedes Plugin löst eine klar abgegrenzte Aufgabe und kann unabhängig weiterentwickelt werden.
+Der aktuell umgesetzte Verein-Turnierplaner liegt unter [`../projects/event-planner/`](../projects/event-planner/) und besitzt dort seinen verbindlichen Projektzustand, die Implementierung und die Tests. `plugins/event-manager/` ist ergänzendes konzeptionelles Fachwissen, **kein zweites Event-Manager-Produkt**.
 
 ---
 
@@ -16,18 +16,11 @@ Dadurch finden sich Entwickler und digitale Mitarbeiter schnell zurecht und neue
 
 ---
 
-## Standardstruktur
+## Dokumentation nach tatsächlichem Bedarf
 
-Jedes Plugin besitzt folgende Dokumente:
+Eine fachliche Vision, ein Datenmodell oder eine Schnittstellenbeschreibung wird nur dokumentiert, wenn dafür ein **konkreter, noch nicht anderswo abgedeckter Bedarf** besteht. `requirements.md`, `roadmap.md`, `changelog.md` und weitere mögliche Dokumenttypen sind **keine Pflichtdateien und keine leeren Startgerüste**.
 
-- `vision.md` – Ziel und Zweck
-- `requirements.md` – Funktionen und fachliche Anforderungen
-- `data-model.md` – Datenstruktur und Beziehungen
-- `interfaces.md` – Verbindungen zu anderen Systemen
-- `roadmap.md` – Geplante Erweiterungen
-- `changelog.md` – Entwicklungshistorie
-
-Je nach Plugin können weitere Dokumente ergänzt werden.
+Für reale Event-Planner-Änderungen ist `../projects/event-planner/PROJECT-STATE.md` der Einstieg. Bestehende dortige Spezifikationen nicht unter `plugins/` kopieren. Konzepte in `plugins/event-manager/` werden bei konkreten Umsetzungen mit der führenden Projektquelle abgeglichen.
 
 ---
 

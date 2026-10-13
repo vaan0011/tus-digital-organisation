@@ -44,6 +44,10 @@ Die Organisation übernimmt einen großen Teil der Einarbeitung.
 
 ---
 
+## Noch offene HR-Dokumentation
+
+`recruitment.md`, `onboarding.md`, `career.md` und `skills.md` sind aktuell leere Platzhalter für künftige fachliche Ausarbeitung, **keine bereits gültigen Personalprozesse**. Konkrete Rollen- und Mitarbeiterregeln stehen bis dahin unter `../../roles/`, `../README.md` und den zuständigen Standards.
+
 ## Relationship to other documents
 
 - recruitment.md

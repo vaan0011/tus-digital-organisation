@@ -1,4 +1,6 @@
-# Vision
+# Vision – organisatorische Erläuterung
+
+> **Führende Vision:** [`../vision/vision.md`](../vision/vision.md). Diese Datei beschreibt ergänzend das organisatorische Selbstverständnis und Vermächtnis; sie ist keine zweite unabhängig gepflegte Gesamtvision.
 
 ## Unsere Vision
 
