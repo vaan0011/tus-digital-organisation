@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen, Kommunikation, Organisation und Mitgliederwesen ausgewertet; Sportangebot noch ausstehend.  
+**Status:** Alle sechs Kategorien (Strategie, Voraussetzungen, Kommunikation, Organisation, Mitgliederwesen und Sportangebot) anhand der Screenshots ausgewertet.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -22,7 +22,7 @@
 
 **Differenz zwischen Gesamtfaktor und Selbsteinschätzung:** +0,9 Punkte. Kein externer Benchmark oder Kausalnachweis. Die Einstufung „Experte“ ist die Systemkategorie des Fragebogens und bedeutet nicht, dass alle Prozesse produktiv digitalisiert sind.
 
-## 2. Kategorie-Auswertungen – fortlaufende Erfassung
+## 2. Auswertungen aller sechs Kategorien
 
 Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kategorie dokumentiert, getrennt von Interpretation und Maßnahmen. Nicht erhaltene Texte werden nicht rekonstruiert oder erfunden.
 
@@ -280,3 +280,42 @@ Die BASF-Empfehlungen zur Einführung von Self-Service-Portalen und weiteren Too
 **Messung der Wirkung:** Zeitaufwand pro Anliegen, Anteil ohne manuelle Nacharbeit erledigter Vorgänge, Rückfragen, Fehlerquote, Bearbeitungsdauer und Zufriedenheit der Mitglieder; nicht die Zahl eingeführter Apps oder geschulter Tool-Anwender.
 
 **Offen:** Tatsächlichen Ist-Prozess der Mitgliederverwaltung, Datenquellen, Zuständigkeiten, Zugriffsrechte und Einwilligungs-/Datenschutzanforderungen vor einem technischen Vorhaben prüfen.
+
+
+### 2.6 Sportangebot – Quellenauswertung
+
+**Quelle:** drei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (Nutzer-Upload). Quellennahe Zusammenfassung, keine vollständige wortgetreue Transkription; Screenshots bleiben Originalquelle.
+
+**Kategorieergebnis:** **2,5 / 5 – Stufe 3 „Fortgeschritten“** (niedrigster Kategorienwert).
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Sportstrategie und Ziele | 4,5 |
+| Digitale Services | 1,4 |
+| Digitale Sportangebote | 1,7 |
+
+**Definitionen laut Bericht:** Sportstrategie und Ziele erfasst die sportliche Strategie und Zielsetzung. Digitale Services bewertet u. a. Onlinebuchung, E-Learning-Trainingsmaterial, digitale Sprechstunden und Livestreams. Digitale Sportangebote erfasst digitalisierte Fitnessgeräte, digitale Sportstunden, Wearables und weitere trainingsunterstützende Technologien.
+
+**Handlungsempfehlungen des Berichts – quellennahe Zusammenfassung:**
+
+1. **Sportstrategie weiter professionalisieren:** langfristige nachhaltige Ziele, gesellschaftliche Trends (Gesundheitsbewusstsein, Inklusion, Digitalisierung), 3- bis 5-Jahresplan mit wirtschaftlichen Aspekten, Infrastruktur, Zielgruppen und möglichen Online-Kursen.
+2. **Innovationen pilotieren:** etwa Kursbuchungs-Apps oder KI-gestützte Trainingsanalyse; innerhalb der nächsten Monate eine Technologie testen, Feedback von Trainern, Mitgliedern und Schlüsselpersonen einholen.
+3. **Mitglieder stärker beteiligen:** kurze Befragungen und Feedback nach Kursen, Ideen für neue Angebote sammeln.
+4. **Bedarfsanalyse für digitale Services:** Bedarf an Buchungssystemen und digitalen Trainingsplänen mit vorhandener Infrastruktur abgleichen; kurzfristige Mitgliederumfrage als Vorschlag.
+5. **Pilot für digitale Services:** einfaches Online-Buchungssystem für Kurse/Trainingszeiten als Beispiel; Anwenderfreundlichkeit und Schulungen, Erfahrungsaustausch mit anderen Vereinen.
+6. **Langfristige Servicestrategie:** nach Bedarf ggf. E-Learning, digitale Trainingspläne oder digitale Beratungsangebote stufenweise entwickeln.
+7. **Digitale Sportkurse:** ein oder zwei Online-Kurse als mögliche Pilotprojekte, auch unter Nutzung etablierter Konferenzwerkzeuge; Trainer für Plattformenutzung schulen.
+8. **Videoanalyse und Tracking:** Pilot in geeigneter Sportart, optional Wearables/Apps; Trainer- und Teilnehmerfeedback auswerten.
+9. **Smarte Sportgeräte:** mögliche Geräte samt Kosten-Nutzen, Kompatibilität und Integration recherchieren; Vorstand entscheidet über eventuelle Pilotanschaffungen.
+
+**TuS-Einordnung (eigene Interpretation, nicht BASF-Originalaussage):** Der geringe Wert bei digitalen Services und Sportangeboten zeigt primär **wenige technologiegestützte Sportformate** im Sinne des Fragebogens. Er belegt weder schlechte sportliche Qualität noch automatisch einen Bedarf für Online-Sportkurse, Wearables oder smarte Geräte. Die starke Sportstrategie (4,5) ist separat zu würdigen. Die verbindliche TuS-OS-Philosophie „Organisation vor Technologie“ und „digitale Mitarbeiter entlasten Menschen“ bleibt maßgeblich: **Trainer sollen Sport gestalten und Sarah organisatorische Arbeit abnehmen**, nicht neue Software erlernen müssen.
+
+**Mögliche nutzerorientierte Anwendungsfälle – nicht beschlossen:** Trainer fragt Sarah in Alltagssprache nach Trainingsideen, einer Organisationsübersicht, Terminabstimmung, Platz-/Materialbedarf oder einer Helferliste; Sarah bereitet zulässige Vorgänge vor, nutzt bestehende Systeme und holt erforderliche menschliche Entscheidungen ein. Trainingsanalyse oder digitale Kursformate nur bei nachgewiesenem sportfachlichem Bedarf, Einwilligungen und angemessenem Datenschutz, insbesondere bei Kindern und Jugendlichen.
+
+**Priorisierungsregel:** Keine Beschaffung oder zusätzliche App allein zur Verbesserung eines BASF-Scores. Zuerst Nutzen für Trainer und Mitglieder, tatsächliche Nachfrage, laufender Betrieb, Kosten, Integration und Risiken prüfen. Erfolg anhand der Zeitentlastung und Qualität der Sportorganisation statt der Anzahl digitaler Geräte messen.
+
+## 5. Gesamtfazit nach Abschluss aller sechs Kategorieauswertungen
+
+**Quellenbefund:** Gesamt 3,7/5, Stufe 4 „Experte“, Selbsteinschätzung 2,8/5. Starke Strategie-Werte (u. a. Organisation 5,0; Sportstrategie 4,5), Entwicklungsbedarf bei interner Kommunikation (2,8), operativen Prozessen/Integration (3,3/3,2), digitalen Sportservices (1,4) und digitalen Sportangeboten (1,7). Unterschiedliche Infrastrukturindikatoren messen unterschiedliche Aspekte. Der Wert „Strategie Allgemein 0,0“ bleibt methodisch ungeklärt.
+
+**TuS-OS-Schlussfolgerung:** BASF ist eine externe Standortbestimmung, **keine Roadmap-Vorgabe**. Das bestehende Leitbild priorisiert einfache Aufträge an digitale Mitarbeiter, sichere und verlässliche Ausführung, weniger manuelle Arbeit für Ehrenamtliche und Menschen als Entscheider. Neue Tools, Kurse, Schulungen oder Sportgeräte sind nur dann gerechtfertigt, wenn sie einen konkreten fachlichen Bedarf decken. Die Antragsentscheidung im BASF-Coachingverfahren ist weiterhin offen; eine Zusage wird nicht behauptet.
