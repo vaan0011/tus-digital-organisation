@@ -1,9 +1,33 @@
 # PROJECT STATE – TuS LED Media Screen
 
-**Stand:** 2026-09-10  
+**Stand:** 2026-10-13 – EconSocial-Erstgespräch terminiert; Finanzierungsalternative in Prüfung
 **Status:** Discovery  
 **Beschaffung / Umsetzung:** Noch nicht gestartet  
 **Fachlicher Projekt-Owner:** noch offen
+
+## Projektupdate 13.10.2026 – EconSocial Sport
+
+**Status:** EconSocial wird als Finanzierungs- und Vermarktungsalternative zum bisherigen Kauf-/Founding-Partner-Modell geprüft. Es handelt sich nicht um einen Zuschuss.
+
+**Erstgespräch:** Freitag, **16.10.2026, 09:45 Uhr**, Videocall.
+
+**Offizieller Modellstand laut Anbieter:** Tafel, Montage, Software, Wartung und Partnerakquise ohne Anschaffungskosten für den Verein; Verein trägt Strom. Laufzeit fünf Jahre, danach automatischer Eigentumsübergang ohne Zahlung. EconSocial gewinnt und wählt die Werbepartner; ordentliche Kündigung während der Laufzeit ausgeschlossen. Website nennt Partnerpakete ab 1.950 € zzgl. MwSt. und beschreibt das Tätigkeitsgebiet als Rheinland-Pfalz, Hessen und Nordrhein-Westfalen.
+
+**Entscheidende offene Gates:**
+
+- Ist Bad Schönborn/Baden-Württemberg tatsächlich liefer- und betreuungsfähig?
+- Darf der TuS zusätzlich eigene Sponsoren auf derselben Tafel vermarkten?
+- Welche garantierten Slots/Sendezeiten erhält der TuS und verbleiben die Erlöse vollständig beim Verein?
+- Wie werden bestehende TuS-Partner, Branchenexklusivität und Kontaktrechte geschützt?
+- Welche Nebenkosten verbleiben: Stromanschluss, Fundament, Genehmigung, Statik, Tiefbau, Versicherung, Datenverbindung, Rückbau?
+- Welche Technik, Abmessungen, Helligkeit und Drehbarkeit sind enthalten und wie ist der Vergleich zum goracon-Angebot?
+- Was geschieht bei ausbleibender Partnerakquise, Defekt, Insolvenz oder vorzeitigem Projektende?
+
+**Verhandlungsziel:** Anzeigetafel ohne Anschaffungskosten, aber mit vertraglich gesicherten eigenen TuS-Werberechten und zusätzlichen Sponsoringerlösen.
+
+**Gesprächsleitfaden:** https://docs.google.com/document/d/1EjWq-VJ5Qh3qYJZN2toAWv-lU6Os8nADCdLpsGHpSaE/edit
+
+Keine Zusage oder Beauftragung im Erstgespräch. Entscheidung erst nach Mustervertrag, vollständiger Leistungs-/Kostenabgrenzung, technischer Prüfung, Standort-/Genehmigungsklärung und Vorstandsbeschluss.
 
 ## Purpose
 
