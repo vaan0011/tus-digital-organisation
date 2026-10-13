@@ -28,6 +28,7 @@ Ein Runtime-Lauf kann ausgelöst werden durch:
 - manuellen Auftrag,
 - neues oder geändertes Projekt,
 - gemergten Pull Request mit Projektwirkung,
+- konkreten Dokumentations- oder Repository-Hygienebefund mit Einfluss auf eine Projektquelle,
 - neuen Funding-/Sponsoring-/Design-/Entwicklungsbefund mit Projektwirkung,
 - gelöste oder neu entstandene Blockade,
 - neue Projektidee mit ausreichender Relevanz,
@@ -60,7 +61,8 @@ Arbeitseinheiten sind insbesondere:
 4. neue qualifizierte Funding-/Sponsoring-/Design-/Entwicklungsbefunde,
 5. neue Vorhaben, die die Kriterien eines Projektkandidaten erfüllen könnten,
 6. mögliche Doppelungen oder Überschneidungen,
-7. Projekte ohne reproduzierbaren nächsten Schritt.
+7. Projekte ohne reproduzierbaren nächsten Schritt,
+8. belegte Dokumentationskonflikte oder Hygieneprüfungsfehler mit Auswirkungen auf Portfolio oder Projektzustände.
 
 Es wird keine parallele Aufgabenliste nur für die Runtime angelegt, solange diese Queue aus dem Portfolio selbst und den betroffenen Detailquellen ableitbar bleibt.
 
@@ -114,6 +116,17 @@ Für jedes betroffene formale Projekt werden mindestens geprüft:
 - Aktualität des `PROJECT-STATE.md`.
 
 Keine künstlichen Updates: Wenn sich fachlich nichts geändert hat, bleibt der Projektzustand unverändert.
+
+#### Projektbezogene Dokumentationspflege beim regulären Lauf
+
+Der Portfolio Manager prüft **nur bei berührten Projekten oder konkretem Anlass** zusätzlich:
+
+- Stimmen die nächsten Schritte und Statusaussagen in `PROJECT-STATE.md`, Portfolio und gemergtem Code-/Entscheidungsstand überein? Ein Merge belegt Quellcodeänderungen, aber **keinen** erfolgreichen manuellen Test, produktiven Rollout oder Förderbescheid.
+- Verweisen betroffene Dokumente auf eine eindeutige führende Fachquelle oder enthalten sie sich widersprechende Parallelstände? Veraltete Referenzen nach Möglichkeit korrigieren oder als historisch kennzeichnen, ohne fachliche Details ins Portfolio zu kopieren.
+- Meldet der bestehende GitHub-Check `Repository-Hygiene` einen strukturellen Fehler? Bei projektbezogenen Dokumentationsproblemen die verantwortliche Quelle korrigieren; bei technischen CI-/Skriptproblemen an den WordPress Developer bzw. die zuständige Entwicklungsrolle übergeben. Den grünen Check **nicht** als semantische oder fachliche Freigabe ausgeben.
+- Gibt es ungenutzte Platzhalter oder neue Dokumente ohne klare fachliche Heimat? Nur im betroffenen Kontext klären; bereits beschlossene Source-of-Truth-Regeln unter `knowledge/SECOND-BRAIN-STANDARD.md` und `architecture/memory-router.md` verwenden.
+
+Dies ist eine **Erweiterung des bestehenden Portfolio-Abgleichs**, kein separater Repository-Crawler, keine neue Rolle und keine zusätzliche Ablage. Es wird weder das gesamte Repository bei jedem Lauf reread noch eine neue Vollinventur oder ein fixer Dokumentenpflege-Zeitplan ausgelöst. Befunde außerhalb der Projektzuständigkeit werden mit Quelle und konkretem Handlungsbedarf an die zuständige Rolle übergeben; rein dokumentarische, belegte Korrekturen folgen der Reconciliation-Regel aus Abschnitt 6.
 
 ### 9. Querschnitts-Handoffs
 
