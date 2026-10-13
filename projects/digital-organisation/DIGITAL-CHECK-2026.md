@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorie-Auswertungstexte folgen und werden abschnittsweise ergänzt.  
+**Status:** Baseline dokumentiert; Kategorie Strategie ausgewertet, fünf weitere Kategorie-Auswertungstexte ausstehend.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -26,9 +26,48 @@
 
 Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kategorie dokumentiert, getrennt von Interpretation und Maßnahmen. Nicht erhaltene Texte werden nicht rekonstruiert oder erfunden.
 
-### 2.1 Strategie – Originaltext
+### 2.1 Strategie – Quellenauswertung
 
-*Ausstehend.*
+**Quelle:** drei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (im Chat bereitgestellt). Die folgende Erfassung bewahrt die inhaltlichen Aussagen und die konkreten Handlungsempfehlungen, ist jedoch keine buchstabengetreue Transkription sämtlicher erläuternder Fließtexte. Original-Screenshots bleiben maßgeblich.
+
+**Kategorieergebnis:** **4,6 / 5 – Stufe 5 „Vorreiter“**.
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Strategie & Ziele | 4,8 |
+| Offenheit / Haltung | 5,0 |
+| Status Quo | 4,0 |
+| Strategie Allgemein | 0,0 |
+
+**Definitionen laut Auswertung:** „Strategie & Ziele“ erfasst klares Digitalisierungsbild, definierte Ziele und Umsetzungsplan; „Offenheit / Haltung“ die Auseinandersetzung mit Digitalisierung und ihre Relevanz im Verein; „Status quo“ den selbst eingeschätzten Entwicklungsstand; „Strategie Allgemein“ Orientierung an Leitbild und konkreten Zielen.
+
+**Empfehlungen des Berichts – inhaltlich strukturiert:**
+
+1. Digitalisierung als festen Teil der Vereinsstrategie, der Jahres- und Budgetplanung verankern und regelmäßig überprüfen.
+2. Fortschrittliche Maßnahmen erproben (Datenanalysen, KI-gestütztes Mitgliedermanagement, Vereins-App), Prozesse automatisieren und Nutzen evaluieren.
+3. Erfolge dokumentieren und Best Practices teilen; Austausch mit Sportvereinen, Verbänden, Wirtschaft und Unternehmen suchen.
+4. Digitale Strategie in strategische Leitlinien und Entscheidungen integrieren.
+5. Mitglieder und Mitarbeitende innerhalb der nächsten drei Monate durch Umfragen, Workshops und Schulungen aktiv einbinden; digitale Kommunikations- und Wissensplattformen nutzen.
+6. Digitalen Vorreiteranspruch sichtbar machen und Erfahrungen über soziale wie persönliche Kanäle weitergeben.
+7. Eine fortlaufende priorisierte Projektliste führen; innerhalb der nächsten drei Monate priorisieren.
+8. Halbjährlich Ideen der Mitglieder sammeln und Beteiligung an Umsetzungen fördern.
+9. Innovative Ansätze erproben und ihre Auswirkungen messen.
+10. **Separater Empfehlungsteil zu „Strategie Allgemein“:** übergeordnete Mission, langfristige Strategie und SMART-Ziele formulieren. Dieser Teil enthält die Einschätzung, der Verein handle überwiegend „ad hoc“ statt strategisch.
+
+**Auffälligkeit / Interpretationsgrenze:** Der Teilindikator „Strategie Allgemein“ steht bei **0,0**, obwohl Strategie & Ziele **4,8**, Offenheit **5,0** und das Kategorieergebnis **4,6** betragen. Der Text zur vermeintlich fehlenden Gesamtstrategie widerspricht den anderen Ergebnissen und der dokumentierten TuS-OS-Strategie. **Nicht als gesicherte Schwäche des TuS übernehmen.** Ob 0,0 für fehlende Daten, eine Bewertungsbesonderheit oder einen tatsächlichen negativen Befund steht, ist ungeklärt; gegebenenfalls beim Veranstalter nachfragen.
+
+**TuS-Einordnung (eigene Interpretation, keine BASF-Originalaussage):** Bestehende Vision, GitHub-Projektportfolio und dokumentierte Rollen/Prozesse sprechen gegen einen generellen Strategiemangel. Das operative Defizit ist eher die vereinsweite Verankerung und nachweisbare Nutzung. Nicht ohne Not neue Mission/Projektliste parallel zum vorhandenen OS aufbauen.
+
+**Konkrete Anschlussaktionen (Vorschläge, noch keine beschlossenen Termine):**
+
+- Im Vorstand klären, wie Digitalisierung in Jahresziele, Budget und Vereinsentwicklung integriert wird.
+- Bestehendes Projektportfolio priorisieren und Vorhaben an Ehrenamtsentlastung und realem Bedarf messen.
+- Einbindung von Vorstand, Trainern, Betreuern und Mitgliedern über kurze Bedarfsgespräche/Workshops pilotieren.
+- Für ausgewählte Digitalprojekte Nutzen, Nutzung und Aufwand messbar machen.
+- Erfahrungen und funktionierende Prozesse dokumentieren und geeignete Best Practices später teilen.
+- Unklarheit „Strategie Allgemein = 0,0“ als offene Methodenfrage festhalten, ohne daraus vorschnell einen Maßnahmenauftrag abzuleiten.
+
+
 
 ### 2.2 Voraussetzungen – Originaltext
 
