@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorie Strategie ausgewertet, fünf weitere Kategorie-Auswertungstexte ausstehend.  
+**Status:** Baseline dokumentiert; Kategorien Strategie und Voraussetzungen ausgewertet, vier weitere Kategorie-Auswertungstexte ausstehend.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -69,9 +69,45 @@ Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kate
 
 
 
-### 2.2 Voraussetzungen – Originaltext
+### 2.2 Voraussetzungen – Quellenauswertung
 
-*Ausstehend.*
+**Quelle:** zwei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (vom Nutzer im Chat bereitgestellt). Inhaltliche Erfassung der Aussagen und Empfehlungen, keine vollständige wortgetreue Transkription; Screenshots sind Originalquelle.
+
+**Kategorieergebnis:** **3,9 / 5 – Stufe 4 „Experte“**.
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Mitarbeiter | 3,0 |
+| Finanzen | 3,0 |
+| Bereitschaft | 4,5 |
+| Infrastruktur | 5,0 |
+
+**Definitionen laut Auswertung:** „Mitarbeiter“ erfasst digitale Kompetenzen, personelle Aufstellung und Weiterbildung; „Finanzen“ ein festes Digitalisierungsbudget; „Bereitschaft“ die Veränderungsbereitschaft von Mitarbeitenden und Funktionsträgern; „Infrastruktur“ die technischen Voraussetzungen auf dem Vereinsgelände.
+
+**Handlungsempfehlungen des Berichts – quellennahe Zusammenfassung:**
+
+1. **Digitalisierungs-Ansprechpartner schaffen:** Zuständige Person benennen und notwendige Ressourcen klären.
+2. **Wissenslücken identifizieren:** Fehlende Fähigkeiten im Team erfassen und gezielt durch Workshops oder Webinare entwickeln.
+3. **Expertenwissen nutzen:** Externe Fachleute projektbezogen zur Ergänzung interner Kapazitäten einbinden.
+4. **Budget-Kontinuität schaffen:** Ein dauerhaftes Budget für Digitalisierung in der Finanzplanung vorsehen; Ziele zur realistischen Mittelplanung konkretisieren.
+5. **Externe Finanzierungsquellen nutzen:** Passende Digitalisierungsförderungen recherchieren.
+6. **Hohe Veränderungsbereitschaft nutzen:** Mitglieder stärker in Projekte einbeziehen, Workshops und Ideensammlungen anbieten.
+7. **Infrastruktur aktuell halten:** Regelmäßig Zustand und Ersatzbeschaffungsbedarf prüfen.
+8. **Weitere technische Lösungen evaluieren:** Zusätzliche Technologien nur bei tatsächlichem Prozessnutzen erwägen.
+
+**Wichtige Interpretationsgrenzen:** Der Bericht formuliert, der Verein habe ein Digitalisierungsbudget vorgesehen, aber noch nicht verwendet, und verfüge über stabiles WLAN und geeignete Geräte. Diese Aussagen stammen aus der Fragebogen-Auswertung; sie sind **nicht** als unabhängig überprüfte Haushalts- oder Infrastruktur-Fakten zu behandeln. Insbesondere flächendeckendes stabiles WLAN, tatsächlicher Budgetbeschluss und Qualifikationsstand müssen bei Bedarf intern validiert werden.
+
+**TuS-Interpretation (keine BASF-Originalaussage):** Der TuS hat mit GitHub-OS, n8n und Google Drive bereits technische und organisatorische Grundlagen. Die größten Anschlussfragen sind die **verbindliche menschliche Zuständigkeit**, die **breite digitale Befähigung** sowie **verlässliche Finanzierung und Betrieb**. Digitale Rollen ersetzen keine rechtsverbindliche Vereins-/Vorstandsverantwortung.
+
+**Konkrete Anschlussaktionen – Vorschläge, noch nicht beschlossen:**
+
+- Im Vorstand einen fachlichen Digitalisierungsverantwortlichen samt Vertretung, Mandat und Kapazität klären; Projekt-Owner nicht ohne Beschluss fingieren.
+- Kompetenzen und Bedarf von Vorstand, Trainern und Betreuern erheben; kleine praxisorientierte Schulungs-/Pilotformate entwickeln.
+- Tatsächliche Digitalausgaben, Betriebskosten und verfügbares Jahresbudget erfassen; Fördermöglichkeiten nur bei Projektfit nutzen.
+- Infrastruktur-Check auf realem Vereinsgelände: WLAN-Abdeckung, Zugänge, Endgeräte, Berechtigungen, Backups, Wiederherstellung und laufende Wartung.
+- Hohe im Check ausgewiesene Bereitschaft durch tatsächliche Beteiligung und Nutzungsfeedback überprüfen.
+
+
 
 ### 2.3 Kommunikation – Originaltext
 
