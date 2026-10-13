@@ -12,7 +12,7 @@ Sie ist kein Tagebuch und wird nur aktualisiert, wenn sich der relevante Projekt
 
 Der vollständige Event-Workflow einschließlich wiederverwendbarer Vorlagen ist auf `main` umgesetzt. Ein kompakter manueller End-to-End-Smoke-Test wurde am 20.09.2026 erfolgreich durchgeführt.
 
-Der nächste unmittelbare Projektfokus ist die Absicherung der beim gezielten Code-Audit gefundenen Datenintegritätsrisiken und anschließend die manuelle Regression dieser Korrekturen.
+Die Datenintegritätskorrekturen aus dem gezielten Code-Audit sind seit PR #168 (23.09.2026) auf `main`. Der nächste unmittelbare Fokus ist die **manuelle Regression genau dieses aktuellen Stands** und anschließend ein vollständig dokumentierter Baseline-Smoke-Test; ein formaler Last Known Good ist weiterhin nicht bestätigt.
 
 Verbindliche Logik-, UI- und Datenhaltungsquellen:
 
@@ -42,7 +42,7 @@ Versionsstand:
 
 - Plugin-Header: `3.8.45`
 - `VTP_VERSION`: `3.8.45`
-- Version `3.8.45` enthält die noch nicht gemergten Audit-Korrekturen auf Branch `event-planner/targeted-code-audit`.
+- Version `3.8.45` enthält die über PR #168 am 23.09.2026 nach `main` gemergten Audit-Korrekturen. Das ist der aktuelle Repository-Code, kein bestätigter produktiver Deployment- oder LKG-Stand.
 
 Historische reproduzierbare Baseline:
 
@@ -62,11 +62,12 @@ Relevante gemergte Änderungen:
 - PR #35 übernahm die verbindliche Datenbank-Persistenzregel; der frühere Branch `event-planner/persistence-rule` ist damit abgeschlossen.
 - PR #52 setzte Dashboard UI V1 auf `main` um.
 - PR #58 ergänzte den ersten Historienbereich aus vorhandenen persistenten Archivdaten.
-- PR #61 synchronisierte den Historienstand mit dem damaligen `main`; der daraus resultierende Plugin-Stand `3.7.1` ist der aktuelle Code-Ausgangspunkt.
+- PR #61 synchronisierte den Historienstand mit dem damaligen `main` (historischer Plugin-Stand `3.7.1`; nicht mehr der aktuelle Code-Ausgangspunkt).
 - Für PR #52, #58 und #61 liefen die WordPress-Playground-Preview- und Plugin-ZIP-Workflows erfolgreich.
 - PR #160 ergänzte nutzbare Event-Vorlagen.
 - PR #165 und #166 korrigierten die zuverlässige native Formularübermittlung für Event- und Vorlagenspeicherung.
-- PR #167 korrigierte die Turnieranlage und brachte `main` auf Plugin-Version `3.8.44`.
+- PR #167 korrigierte die Turnieranlage und brachte `main` damals auf Plugin-Version `3.8.44`.
+- PR #168 integrierte die Datenintegritätskorrekturen und Plugin-Version `3.8.45` am 23.09.2026 nach `main`; die vier beschriebenen manuellen Regressionsfälle sind dadurch nicht automatisch als bestanden bestätigt.
 
 ## Last Known Good
 
@@ -93,7 +94,7 @@ Ein neuer formaler Last Known Good wird erst für einen exakt referenzierten akt
 - Das fachliche Zielbild des Event Planners ist in `FUNCTIONAL-SCOPE.md` definiert.
 - Die Persistenzregel aus PR #35 ist auf `main` dokumentiert.
 - Dashboard V1 und der erste Historienbereich sind über PR #52, #58 und #61 auf `main` integriert.
-- Die Plugin-Version ist in Header und `VTP_VERSION` auf dem Audit-Branch konsistent auf `3.8.45`.
+- Die Plugin-Version ist in Header und `VTP_VERSION` auf `main` konsistent auf `3.8.45` (Quellcodeprüfung, kein Nachweis der Produktivinstallation).
 - Die automatisierten Preview- und Packaging-Workflows der drei aktuellen Dashboard-/Historien-PRs waren erfolgreich.
 - Der kompakte End-to-End-Smoke-Test vom 20.09.2026 war für Event-Speichern, Vorlagen, Arbeitslisten, Turnierverknüpfung, Archiv und mobile Darstellung erfolgreich.
 - Ein gezielter Code-Audit fand, dass Bewirtungseinträge beim Speichern neu angelegt wurden und bestehende Mitbring-Zusagen dadurch verwaisen konnten.
@@ -260,20 +261,14 @@ Gemeinsame Mannschafts- und Personenidentitäten werden vor dauerhafter Doppelpf
 
 ## Active Development
 
-Kein aktiver Entwicklungsbranch und kein offener Pull Request.
-
-Der aktuelle Produktcode liegt auf `main`. Dashboard V1 und der erste Historienbereich wurden über PR #52, #58 und #61 integriert. Der nächste Entwicklungsbranch beginnt erst nach der manuellen Verifikation dieses Stands.
+Beim Check am 13.10.2026 waren keine offenen Pull Requests im Repository vorhanden. Der Event-Planner-Produktcode einschließlich PR #168 liegt auf `main`. Vor weiterer funktionaler Entwicklung stehen die gezielte manuelle Regression und die Ermittlung eines aktuellen formalen Last Known Good aus.
 
 ## Next Meaningful Step
 
-1. aktuellen `main`-Stand mit Plugin-Version `3.7.1` im WordPress Playground öffnen,
-2. Dashboard V1, Historien-Leerzustand, archivierte Daten, Jahresauswahl, Filter, Navigation, Responsive-Verhalten und Datenunverändertheit manuell prüfen,
-3. Ergebnis mit `PASSED` oder konkretem reproduzierbarem Fehler dokumentieren,
-4. bei erfolgreicher Prüfung einen exakten aktuellen Baseline-Kandidaten festhalten und den vollständigen `SMOKE-TEST.md` abschließen,
-5. danach Event-Navigation und Formularlayout als kleinen UI-/Datenmodell-PR umsetzen,
-6. für jedes neue dauerhafte Feld vorab die Datenbankpersistenz definieren und mit `Speichern → Reload → erneut öffnen` prüfen,
-7. Sponsoren-Sammelfeld separat und rückwärtskompatibel auf strukturierte persistente Sponsor-Zeilen umstellen,
-8. Camp-/Aufgabenlogik anschließend in weiteren kleinen, überprüfbaren Inkrementen umsetzen.
+1. Den aktuellen `main`-Commit mit Plugin-Version `3.8.45` im WordPress Playground als **neuen Testkandidaten** öffnen; eine alte `3.6.0`-Baseline oder Version `3.7.1` dafür nicht als aktuellen Stand verwenden.
+2. Die vier Regressionsfälle aus [PR #168](https://github.com/vaan0011/tus-digital-organisation/pull/168) prüfen: Mitbring-Zusage bleibt nach Bearbeitung erhalten, belegter Eintrag darf nicht versehentlich gelöscht werden, keine parallele Überbuchung bei letzter Schichtkapazität und letzter Restmenge.
+3. Den vollständigen `SMOKE-TEST.md` sowie Dashboard-/Historienprüfung mit exakt referenziertem Commit, Testumgebung und `PASSED`/`FAILED` dokumentieren. Ein erfolgreicher früherer Teiltest ersetzt diesen Nachweis nicht.
+4. **Erst danach** einen formalen Last Known Good festhalten und den nächsten kleinen Entwicklungsauftrag aus `FUNCTIONAL-SCOPE.md` priorisieren; für jedes neue persistente Feld gilt weiterhin `DATA-PERSISTENCE.md`.
 
 ## Update Rule
 
