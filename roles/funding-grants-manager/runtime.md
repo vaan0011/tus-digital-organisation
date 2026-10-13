@@ -194,32 +194,29 @@ Doppelte Pflege derselben Detailinformation wird vermieden.
 
 ### 13. Aktueller Runtime-Checkpoint
 
-**Stand:** 2026-09-11
+**Stand:** 2026-10-13
 
 Abgeschlossen:
 
-- aktuellen Funding-Stand auf `main` gebootstrapt und heutige Primärquellen für die aktive Queue erneut geprüft,
-- WISO-Frist als abgelaufen bestätigt; auf `main` weiterhin kein Einreichungsnachweis dokumentiert,
-- neues formales Projekt `Trainingskleidung Ausstattungsgrundstock` gegen bestehende Förderwege gespiegelt,
-- **neuen B+-Treffer OPP-007** `Trainingskleidung × Kellogg’s Herzensprojekt 2026` qualifiziert,
-- vereinsinterne Kellogg’s-Projektauswahl als Gate dokumentiert: nur ein Projekt pro Verein,
-- Funding-Empfehlung dokumentiert: Trainingskleidung für Kellogg’s bevorzugen, sofern reales Angebot ≤ 5.000 €, während Großfeldtore separat über die starke BSB-Sportgeräteförderung weiterlaufen,
-- BSB Sportgeräte, BSB Sportstättenbau, § 16i, BSB Inklusion, Jugendstiftung und Aktion Mensch gegen aktuelle offizielle Quellen re-verifiziert,
-- keine neuen belastbaren A-Treffer aus LEADER/Jugend/Inklusion konstruiert, weil weiterhin kein entsprechendes umsetzungsreifes reales TuS-Projekt dokumentiert ist.
+- Rollen-/Funding-Standards, Memory Router, aktuelle Funding-Sources-of-Truth und förderrelevante Projektzustände von `main` geladen.
+- BASF, Aktionstaler, BSB Sportgeräte, BSB Sportstättenbau, Stiftung Kulturgut, Volksbank Heimatverbunden und EconSocial gegen aktuelle Primärquellen geprüft.
+- widersprüchliche alte Septembertabellen aus Current State, Radar, Kalender und Active Opportunities entfernt.
+- OPP-011 BASF als zeitkritisches A bestätigt; Einreichungsstatus weiterhin nicht nachgewiesen.
+- Hauptvereinsnachweis vom 27.07.2026 programmspezifisch eingeordnet.
+- EconSocial als Nicht-Zuschuss-Finanzierungsalternative im LED-Projekt dokumentiert; Erstgespräch 16.10.2026, 09:45 Uhr, Videocall.
+- keine zusätzliche belastbare A-Chance gefunden.
 
 Aktive Queue:
 
-1. **bis 18.09.2026:** Arbeitsplatz-Förderfähigkeit beim Jobcenter Bruchsal vorabklären; kein Arbeitsvertrag vorher.
-2. **bis 23.09.2026:** Kellogg’s-Go/No-Go und Auswahl **Trainingskleidung vs. Großfeldtore**.
-3. Bei Trainingskleidung-Go: reales SPORTINN/Joma-Angebot, konkreten Bestand, 400-Zeichen-Text und Voting-Plan bis 24.09. schließen; Ziel-Einreichung 25.09.
-4. BSB-Komponentenklärung vor jeder Torbestellung; BSB-Chance unabhängig von Kellogg’s weiterführen.
-5. Historienarchiv-Vorabskizze bis 15.10.2026.
-6. WISO nur dann auf `eingereicht` setzen, wenn ein belastbarer externer Einreichungsnachweis vorliegt; sonst 2026 geschlossen lassen.
+1. BASF-Digital-Check sofort abschließen bzw. Einreichung dokumentieren; offizielle Frist 18.10.2026.
+2. Historienarchiv-Vorabskizze bis 15.10.2026.
+3. EconSocial-Erstgespräch 16.10.2026 vorbereiten; keine Zusage.
+4. Aktionstaler-Scope, Owner, Budget und kommunale Stellungnahme.
+5. REWE-Zuordnung bis 25.10. und Prämienbestellung bis 08.11.
 
 Externe Gates:
 
-- keine Antragseinreichung ohne menschliche Freigabe,
-- keine Jobcenter-/Förderstellen-Kontaktaufnahme ohne Freigabe,
+- keine Antragseinreichung oder externe Kontaktaufnahme ohne Freigabe,
 - keine Bestellung, Beauftragung, Eigenmittel- oder Vorfinanzierungszusage,
 - keine personenbezogenen Jobcenter-Daten im Repository.
 
