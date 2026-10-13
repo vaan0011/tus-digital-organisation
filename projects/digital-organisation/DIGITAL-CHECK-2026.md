@@ -209,13 +209,27 @@ Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kate
 - **Organisation 3,4:** hoher Nutzen durch Standardisierung, Dokumentenqualität, Wissenstransfer und Automatisierung.
 - **Sportangebot 2,5:** bislang nachrangige Digitalisierung von Sport-/Trainingsprozessen; keine Aussage über sportliche Qualität.
 
+## 3a. Verbindliche Interpretationsleitlinie des TuS (Nutzerklärung vom 13.10.2026)
+
+**Ziel der TuS Digital Organisation ist nicht, alle Mitglieder und Funktionsträger im Umgang mit immer mehr Software zu schulen. Ziel ist, die Bedien- und Koordinationslast möglichst vollständig von Ehrenamtlichen auf digitale Mitarbeiter zu verlagern.** Ein Mensch soll seinen Auftrag in Alltagssprache an Sarah bzw. den zuständigen digitalen Mitarbeiter richten können; die Organisation erledigt die zulässigen Arbeitsschritte über ihre internen Systeme und liefert ein Ergebnis oder eine gezielte Rückfrage.
+
+**Prinzip: Auftrag statt Tool-Bedienung.** Digitale Systeme sind Infrastruktur im Hintergrund, keine verpflichtenden neuen Oberflächen für jeden Ehrenamtlichen. Beispiel: Ein Trainer bittet Sarah, eine Abschlussfeier vorzubereiten; statt mehrere Anwendungen selbst bedienen zu müssen, erhält er einen abgestimmten Vorschlag und notwendige Freigabefragen.
+
+**Abgrenzung:** Betreiber und fachlich Verantwortliche brauchen technische Kompetenz, Datenschutz-, Sicherheits- und Prozesswissen. Rechtsverbindliche, sensible oder risikoreiche Entscheidungen bleiben bei berechtigten Menschen; Sarah muss nachvollziehbar, kontrollierbar und fehlertolerant arbeiten. Niemand wird gezwungen, sensible Daten über ungeeignete Kanäle zu senden.
+
+**Konsequenz für die BASF-Auswertung:** Empfehlungen zu Schulungen, Vereins-Apps, zusätzlichen Tools und digitaler Kompetenz sind **nicht automatisch TuS-Projektziele**. Sie werden am tatsächlichen Entlastungsnutzen gemessen. Schulungen nur für erforderliche Betreiberrollen oder zur sicheren, einfachen Beauftragung und Kontrolle. Bestehende TuS-Maßnahmen müssen daran gemessen werden, ob sie zusätzliche Bedienpflichten abbauen statt schaffen.
+
+**Bevorzugte Erfolgsindikatoren:** Zeitaufwand der Ehrenamtlichen pro erledigtem Vorgang; Zahl der notwendigen Tool-Wechsel und manuellen Eingaben; Anteil der Anliegen, die ohne Tool-Bedienung durch Antragstellende erledigt werden; Qualität und Verlässlichkeit der Ergebnisse; Zahl der nötigen Rückfragen und Freigaben; tatsächliche Nutzung und Zufriedenheit.
+
+**Status:** strategische Klarstellung durch den Nutzer; konkrete Umsetzung, Freigabe- und Rollenmodelle je Fachprozess noch zu definieren.
+
 ## 4. Entwicklungsziele / vorläufige Maßnahmenhypothesen
 
 | Priorität | Ziel | Mögliche Messgröße | Status |
 |---|---|---|---|
 | 1 | Vereinswissen sichern und Nachfolge erleichtern | Auffindbarkeit; dokumentierte Übergaben | Zielbild, noch keine Baseline |
 | 2 | Wiederkehrende Verwaltungsprozesse standardisieren | Zahl tatsächlich genutzter Standards/Prozesse | Zielbild, noch keine Baseline |
-| 3 | Ehrenamtliche, Trainer und Betreuer befähigen | aktive Nutzer je Rolle; Feedback | Zielbild, noch keine Baseline |
+| 3 | Ehrenamtliche, Trainer und Betreuer von Tool-Bedienung entlasten | Bearbeitungszeit, manuelle Eingaben, Tool-Wechsel, Ergebnisqualität | Zielbild, noch keine Baseline |
 | 4 | Interne Kommunikation und Zuständigkeiten verbinden | Doppelpflege, Durchlaufzeit, Übergaben | Zielbild, noch keine Baseline |
 | 5 | Digitale Team-, Spieltags- und Helferprozesse gezielt ausbauen | reale Nutzung ausgewählter Module | Zielbild, noch keine Baseline |
 
