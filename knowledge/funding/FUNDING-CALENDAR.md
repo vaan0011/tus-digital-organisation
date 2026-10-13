@@ -4,24 +4,29 @@
 
 | Datum / Sperre | Programm / Projekt | Priorität | Nächste Aktion |
 |---|---|---|---|
-| **13.10.2026 intern – heute** | BASF / Aufbau Digitale Vereinsorganisation | **A** | Digital-Check und Bewerbung abschließen oder Einreichungsnachweis im OS dokumentieren |
+| **13.10.2026 – erledigt** | BASF / Aufbau Digitale Vereinsorganisation | **eingereicht** | Veranstalter bestätigt Digital-Check und Bewerbung; Auswahl für 20 Coaching-Plätze abwarten |
 | **15.10.2026 intern** | Stiftung Kulturgut / Historienarchiv | **B+** | Vorabskizze fertigstellen und EVALAG-Beratung vorbereiten |
 | **16.10.2026, 09:45** | EconSocial / LED Media Screen | Finanzierungsalternative | Videocall; Werberechte, Gebiet, Vertrag, Kosten, Technik und Genehmigung klären; keine Zusage |
-| **18.10.2026 offiziell** | BASF „Sportverein der Zukunft“ | **A** | letzter Bewerbungstag |
-| **25.10.2026** | REWE Scheine für Vereine | laufend | letzte Zuordnung vorhandener Scheine |
+| **18.10.2026 offiziell** | BASF „Sportverein der Zukunft“ | **erledigt** | Bewerbungsfenster endet; TuS-Einreichung bereits 13.10. bestätigt |
+
 | **01.11.2026** | M.E.N.S. | **B** | Bewerbungsfenster öffnet; erst nach Partnerverein-Gate weiterqualifizieren |
-| **08.11.2026** | REWE Scheine für Vereine | laufend | letzte Prämienbestellung |
+
 | **30.11.2026** | Kellogg’s Herzensprojekt | eingereicht | Voting-/Entscheidungsstand nachhalten |
 | **31.01.2027** | BSB Sportgeräte 2026 / Großfeldtore | **A** | vollständiger Online-Antrag mit Rechnung und Zahlungsnachweis |
 | **31.01.2027** | Stiftung Kulturgut / Historienarchiv | **B+** | Antrag nur nach positivem institutionellem Vorabcheck |
 | **31.03.2027** | M.E.N.S. | **B** | Bewerbungsschluss, falls zweiter BSB-Nord-Verein und Unterlagen vollständig |
 | **31.03.2027** | Aktionstaler Phase 1 | **B+** | Projektende der Phase 1; 4–6 Wochen Bearbeitungsvorlauf einplanen |
 
-## Rückwärtsplanung BASF
+## BASF: Bewerbung abgeschlossen
 
-- 13.10.: Motivation und Projektskizze jeweils max. 800 Zeichen finalisieren; Vereinsdaten/Vereinsnummer und Ansprechpartner bereithalten.
-- 13.–17.10.: Digital-Check vollständig abschließen, Ergebnisbericht sichern und Einreichung dokumentieren.
-- 18.10.: nur Notfallpuffer, nicht Zieltermin.
+- 13.10.2026: Digital-Check erfolgreich abgeschlossen; Veranstalter bestätigt ausdrücklich die Einreichung der Bewerbung und Teilnahme am Auswahlverfahren für 20 Coaching-Plätze.
+- Ergebnis: Digitalisierungsfaktor 3,7/5; Stufe 4 „Experte“.
+- Nächster Schritt: Auswahlentscheidung abwarten. Noch keine Förderzusage.
+- Persönlicher Ergebnislink enthält Zugangstoken und wird nicht öffentlich im Repository abgelegt.
+
+## REWE
+
+- Laut Nutzer ist „Scheine für Vereine“ eigenständig in Bearbeitung; keine Erinnerungen oder Handlungsaufforderungen mehr.
 
 ## Rückwärtsplanung Historienarchiv
 
