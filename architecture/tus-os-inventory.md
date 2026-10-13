@@ -2,6 +2,8 @@
 
 Stand: 2026-09-10 – erste organisationsweite OS-/Second-Brain-Inventur
 
+> **Historische Bestandsaufnahme (10.09.2026).** Zahlen und offene Punkte in diesem Dokument beschreiben den damaligen Zustand. Für aktuelle Projektzahlen gilt `../projects/PROJECT-PORTFOLIO.md`; für laufende Betriebs- und Fachstände gelten die jeweils zuständigen `PROJECT-STATE.md` bzw. `CURRENT-STATE.md`.
+
 ## Purpose
 
 Dieses Dokument macht sichtbar, welche Bausteine der TuS Digital Organisation bereits existieren, welche Funktion sie im zukünftigen TuS-OS übernehmen und welche Lücken noch geschlossen werden müssen.

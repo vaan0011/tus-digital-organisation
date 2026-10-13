@@ -32,10 +32,10 @@ Für Designarbeit gelten insbesondere:
 - `product-types.md` – Unterschiede zwischen Merch, Print, Tickets, Social, Web und UI
 - `design-workflow.md` – verbindlicher Arbeits- und Iterationsprozess
 - `design-production-system.md` – Produktionsstraße von kreativer Gestaltung zu kontrolliertem Final Asset
-- `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `generative-design-standard.md` – Einsatz generativer Bildwerkzeuge
 - `social-event-visual-standard.md` – verbindliche Qualitätsregeln für Social Posts, Stories, Plakate und Eventkommunikation
 - `production-standard.md` – verbindliche Reinzeichnung und deterministische Produktionsweise
+- `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `print-preflight-checklist.md` – verpflichtende Endkontrolle vor Druck-/Produktionsfreigabe
 - `prompt-guidelines.md` – Aufbau belastbarer Designprompts
 - `merch/` – Merch-spezifischer Current State, Production-Master-Verweise und Artwork-Logik

@@ -12,7 +12,7 @@
 - Empfohlene Story: **„Digitales Vereinsbüro – Ehrenamt entlasten, Wissen sichern und wiederkehrende Vereinsarbeit einfacher machen.“**
 - Für den Hauptverein liegt seit 12.10.2026 ein aktueller, im Regelfall nutzbarer Nachweis für den gemeinnützigen Zweck Förderung des Sports vor. BASF nennt ihn für den Digital-Check nicht als Pflicht.
 - WISO 2026 und Gemeinsam engagiert in BW V bleiben geschlossen.
-- **Baseline:** [Digital-Check 2026](DIGITAL-CHECK-2026.md) mit Gesamtwert 3,7/5, Stufe 4 „Experte“, sechs Kategorien und vorläufigen Entwicklungszielen. Die sechs ausführlichen Auswertungstexte folgen; nicht als vorhanden markieren.
+- **Baseline:** [Digital-Check 2026](DIGITAL-CHECK-2026.md) mit Gesamtwert 3,7/5, Stufe 4 „Experte“, sechs Kategorien und vorläufigen Entwicklungszielen. Fünf ausführliche Kategorienauswertungen liegen vor; nur die Auswertung zum Sportangebot ist noch ausstehend.
 
 ## Purpose
 
@@ -223,7 +223,7 @@ Besonders relevant sind:
 3. Kandidaten nach `jetzt nutzbar` und `nach aktuellem Gemeinnützigkeitsnachweis nutzbar` trennen.
 4. Den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand, Zeitraum und offenem Budget strukturieren.
 5. Die aktuell bereits real eingesetzten Rollen/Runtimes als Pilotierungs- und Wirkungsbelege erfassen.
-6. Sobald der neue Gemeinnützigkeitsnachweis vorliegt, davon abhängige Programme erneut formal prüfen.
+6. Bei konkretem Nachweisbedarf den bereits vorliegenden Gemeinnützigkeitsnachweis vom 27.07.2026 gegen die jeweiligen Förderbedingungen und den antragsberechtigten Rechtsträger prüfen.
 
 ## Relationship to other documents
 

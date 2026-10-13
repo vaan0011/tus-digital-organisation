@@ -81,7 +81,9 @@ architecture/
 core/
     Kernobjekte
     Grundprinzipien
-    Entscheidungen
+
+decisions/
+    Verbindliche Entscheidungen (ADRs)
 
 design/
     Brand Identity
