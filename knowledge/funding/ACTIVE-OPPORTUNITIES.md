@@ -44,6 +44,12 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 **Einreichungsnachweis:** Nutzer hat die ausdrückliche Veranstalterbestätigung vorgelegt: „Ihr habt den Digital-Check erfolgreich abgeschlossen und damit eure Bewerbung für die Initiative eingereicht.“ Berücksichtigung im Auswahlverfahren für 20 Coaching-Plätze. Digital-Check-Ergebnis 13.10.2026: Gesamt 3,7/5, Stufe 4 Experte; Strategie 4,6, Voraussetzungen 3,9, Kommunikation 3,6, Organisation 3,4, Mitgliederwesen 3,9, Sportangebot 2,5. Personalisierter Ergebnislink ist zugangstokenhaltig und wird aus Datenschutzgründen nicht öffentlich im Repository gespeichert. **Noch keine Förderzusage.**
 
+**Auswertung Digital-Check (Baseline 13.10.2026, Selbstauskunft):** Gesamt 3,7/5, Einstufung Stufe 4 „Experte“, eigene Selbsteinschätzung 2,8/5 (Abstand +0,9). Kategorien: Strategie 4,6; Voraussetzungen 3,9; Mitgliederwesen 3,9; Kommunikation 3,6; Organisation 3,4; Sportangebot 2,5. Die Einordnung beruht auf den Angaben im Check, nicht auf einem externen technischen Audit. Besonders die 4,6 bei Strategie belegen die starke konzeptionelle Grundlage; die 3,4 in Organisation und 3,6 in Kommunikation zeigen Bedarf an Umsetzung und vereinsweiter Nutzung. Die 2,5 beim Sportangebot zeigen einen bisher nachrangigen Digitalisierungsbereich, keine Bewertung der sportlichen Qualität.
+
+**Handlungsableitung für das reale TuS-Projekt:** (1) Vereinswissen strukturiert sichern und Nachfolgefähigkeit erhöhen; (2) wiederkehrende Verwaltungsabläufe standardisieren und automatisieren; (3) Ehrenamtliche, Trainer und Betreuer befähigen und einbinden; (4) interne Kommunikation und Zuständigkeiten verbinden; (5) digitale Team-/Spieltag-/Helferprozesse bedarfsgerecht ausbauen. Erfolg zusätzlich zum nächsten Digital-Check an nachvollziehbaren Indikatoren messen: aktive Nutzer je Rolle, dokumentierte/standardisierte Abläufe, Übergaben, Zeitersparnis bei wiederkehrenden Tätigkeiten und Anteil tatsächlich genutzter digitaler Prozesse. Erneute Standortbestimmung ungefähr Oktober 2027 erwägen; kein automatischer Termin.
+
+**Interpretationsgrenze:** Hohe Strategie-Wertung nicht als Nachweis für flächendeckende Einführung ausgeben. Die BASF-Bewerbung ist bestätigt, Auswahl/Förderung bleiben offen.
+
 **Risiken / offene Punkte:** Nur 20 Coaching-Plätze; Entscheidung und etwaige spätere Nachweispflichten offen.
 
 **Nächste Aktion:** Auswahlentscheidung abwarten; Mitteilung und etwaige Nachweisanforderungen nach Eingang dokumentieren.
