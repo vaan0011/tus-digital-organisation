@@ -14,7 +14,7 @@ Der TuS verbiegt sein Digitalprojekt nicht für die Förderung. Die Initiative p
 
 **TuS-Projekt:** Aufbau Digitale Vereinsorganisation  
 **Programm:** Sportverein der Zukunft – mit BASF fit für die Digitalisierung  
-**Priorität:** **A – bewerben**  
+**Priorität:** **A – eingereicht, Auswahl offen**  
 **Letzte Primärquellen-Verifizierung:** 2026-10-01  
 **Status:** Bewerbung und Digital-Check am 13.10.2026 eingereicht und bestätigt; Auswahlentscheidung offen, keine Förderzusage.
 
@@ -44,8 +44,8 @@ Bewerbungsweg: Online-Digital-Check auf `sportverein-der-zukunft.de`.
 ### Fristen / interne Vorfristen
 
 - offizieller Start des Bewerbungsfensters: **01.09.2026**,
-- die am 01.10.2026 öffentlich ausgelesenen Primärseiten bestätigen, dass die Bewerbung aktuell offen ist,
-- die zuvor dokumentierte Endfrist **18.10.2026** bleibt im Dossier als Arbeitsfrist bestehen, wird vor finaler Einreichungsplanung jedoch nochmals direkt gegen Digital-Check/FAQ verifiziert,
+- am 01.10.2026 wurde das damals offene Bewerbungsfenster anhand der veröffentlichten Primärseiten geprüft; inzwischen am 13.10.2026 eingereicht,
+- veröffentlichte Bewerbungsfrist **18.10.2026** (historischer Bewerbungskontext; Einreichung am 13.10.2026 bestätigt),
 - historische interne Ziel-Einreichung: **09.10.2026** (tatsächlich am 13.10.2026 bestätigt),
 - Auswahlkommission: nach Ende des Bewerbungsfensters.
 
@@ -62,7 +62,7 @@ Die bereits dokumentierte 80-%-/20-%-Kostenlogik wird vor einer konkreten Ausgab
 
 Die am 01.10.2026 erneut geprüften offiziellen öffentlichen Teilnahme- und Digital-Check-Informationsseiten nennen für die Bewerbung **keinen Freistellungsbescheid und keinen aktuellen Gemeinnützigkeitsnachweis als Teilnahmevoraussetzung**. Der Digital-Check ist der Einstieg und zugleich die Bewerbungsplattform; für den TuS ist der Zugang über die regionale Zielgruppe und BSB-Nord-Zugehörigkeit fachlich passend.
 
-Damit ist diese Chance nach aktuellem veröffentlichtem Stand **bereits jetzt realistisch nutzbar und nicht vom erwarteten neuen Freistellungsbescheid im Herbst 2026 abhängig**. Falls im späteren Auswahl-/Fördervertrag zusätzliche Nachweise verlangt werden, sind diese vor Annahme der Förderung zu prüfen.
+Die Bewerbung wurde am 13.10.2026 erfolgreich eingereicht. Ein Nachweis für den gemeinnützigen Zweck Förderung des Sports liegt inzwischen für den Hauptverein vor (siehe `../CURRENT-STATE.md`); zusätzliche Nachweise sowie der antragsberechtigte Rechtsträger sind bei konkreter Anforderung zu prüfen. Falls im späteren Auswahl-/Fördervertrag zusätzliche Nachweise verlangt werden, sind diese vor Annahme der Förderung zu prüfen.
 
 ### Benötigte Unterlagen / Informationen
 
@@ -92,15 +92,20 @@ Die offiziellen Programmseiten nennen konkrete frühere Digitalprojekte, darunte
 - Coaching verlangt über viele Monate ein tatsächlich engagiertes TuS-Projektteam,
 - genauer förderfähiger Kostenplan wird erst im Coaching-/Förderprozess final festgelegt,
 - mögliche spätere Vertrags-/Nachweispflichten zur Gemeinnützigkeit sind vor Annahme der Förderung erneut zu prüfen,
-- Endfrist des aktuellen Bewerbungsfensters vor finaler Einreichung nochmals unmittelbar im Digital-Check/FAQ bestätigen.
+- Auswahlentscheidung offen; Bedingungen und Nachweispflichten vor Förderzusage bzw. Annahme erneut prüfen.
 
 ### Nächste Aktion
 
 **Auswahlentscheidung abwarten.** Eine Rückmeldung der Initiative dokumentieren. Bei einer Zusage die konkreten Förderbedingungen, den richtigen Rechtsträger, das Projektteam, den Eigenanteil und die Meilensteine vor jeder Beauftragung klären. Aktueller operativer Förderstatus: [`CURRENT-STATE.md`](../CURRENT-STATE.md).
 
+### Weitere historisch recherchierte Kontaktoption
+
+Das ältere Dossier (Prüfstand 04.10.2026) nannte ergänzend **Ulrich Spettmann (BASF)** als veröffentlichten Programmkontakt (Tel. +49 621 60-20330; `ulrich.spettmann@basf.com`). Ansprechpartner und Zuständigkeit vor Kontaktaufnahme aktuell verifizieren; keine Ansprache ohne Freigabe.
+
 ### Primärquellen
 
 - `https://www.sportverein-der-zukunft.de/`
+- `https://www.basf.com/global/de/who-we-are/organization/locations/europe/german-sites/ludwigshafen/neighbor-basf/gesellschaftliches-engagement/woran-wir-arbeiten/sport/sportverein-der-zukunft`
 - `https://www.badischer-sportbund.de/service/digitalisierung/initiative-sportverein-der-zukunft/`
 
 ## Relationship to other documents
