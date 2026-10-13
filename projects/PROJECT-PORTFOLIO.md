@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-09-16 – Homepage-Projekt formalisiert
+Stand: 2026-10-13 – Projektbestand abgeglichen; fachliche Detailstände bleiben in den Projekten
 
 ## Purpose
 
@@ -20,8 +20,8 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Drive-Prüfung ergibt:
 
-- **22 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **4 Aktiv**, **1 Geplant** und **17 Discovery**,
+- **24 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **4 Aktiv**, **1 Geplant** und **19 Discovery**,
 - weitere reale Projektkandidaten aus Infrastruktur-, Archiv- und Förderarbeit,
 - laufende Facharbeit und Regelbetrieb bleiben bewusst außerhalb des Projektmodells.
 
@@ -50,8 +50,9 @@ Die explizite Projektentscheidung hebt `Kunstrasen` vom bisherigen Kandidaten zu
 | Neuaufbau TuS-Homepage | Kommunikation; technischer Owner: WordPress Developer; fachlicher Owner offen | Aktiv | `homepage/PROJECT-STATE.md` | Besucher-/Funktionslandkarte in Homepage-Standard und UI-Mockup spiegeln; danach Sportmedia-Provider-Spike sowie WordPress-/PHP-/Staging-Baseline klären und minimales Theme-Inkrement umsetzen | Theme liefert Look; WordPress/Fachplugins liefern Content, Daten und Funktionen; Colibri erst nach Staging-Migration ablösen | Entwicklung, Design, Team Manager, Event Planner, Platzbelegung, Partnerdaten, Datenschutz, Archiv |
 | Sportpark-Namensrechte 2027 | Sponsoring / Partnership Manager; Projekt-Owner offen | Discovery | `sportpark-namensrechte/PROJECT-STATE.md` | Namens-/Nutzungsrechte und Bestandsverträge prüfen, Premium-Leistungskatalog und Partnerfit qualifizieren | Fünfjahresmodell; 10.000–12.000 EUR/Jahr ambitioniertes, unbestätigtes Premium-Ziel; LED-/Exklusivitätsrechte getrennt halten | Partnership, Vorstand, Finanzen/Steuer, Infrastruktur, Kommunikation |
 | LED Media Screen | Sponsoring / Infrastruktur / Kommunikation; Owner offen | Discovery | `led-media-screen/PROJECT-STATE.md` | Technik, Fundament, Strom, Genehmigung und Gesamtfinanzierung klären | keine Bestellung ausgelöst | Partnership, Funding, Infrastruktur, Finanzen, Vorstand |
-| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; Owner offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | Ersatzförderung recherchieren und Aufbauarbeitspakete weiter schärfen | Aufbauprojekt, nicht dauerhafter Regelbetrieb | Funding, Portfolio, Entwicklung, Datenschutz/IT, Vorstand |
+| Aufbau Digitale Vereinsorganisation | Vereinsentwicklung / Digitalisierung; Owner offen | Aktiv | `digital-organisation/PROJECT-STATE.md` | BASF-Bewerbung vom 13.10.2026: Auswahlentscheidung abwarten; Aufbauarbeitspakete und messbaren Nutzen weiter schärfen | Aufbauprojekt, nicht dauerhafter Regelbetrieb | Funding, Portfolio, Entwicklung, Datenschutz/IT, Vorstand |
 | Großfeldtore Haupt- und Trainingsplatz | Sport / Infrastruktur; Owner offen | Geplant | `grossfeldtore-haupt-trainingsplatz/PROJECT-STATE.md` | BSB-Konfiguration, Eigentums-/Nutzungsstatus, Netze, Versand, Fundament und Gesamtpreis klären | vor Bestellung förder-/budgetseitig absichern | Funding, Sport, Infrastruktur, Finanzen, Vorstand |
+| Rasenpflege 2027 | Sportpark / Infrastruktur; Owner offen | Discovery | `rasenpflege-2027/PROJECT-STATE.md` | für die drei Plätze Pflegeumfang einschließlich Tiefenlochung und Ausführungsfenster 2027 mit dem Sportparkteam klären; aktuelles Angebot einholen | ca. 12.000 EUR historische Kostenschätzung, noch kein Budget, Auftrag oder Förderzusage | Sportpark, Funding, Partnerschaften, Finanzen |
 | Arbeitsplatz Sportparkteam | Sportpark / Infrastruktur / Vereinsentwicklung; Owner offen | Discovery | `arbeitsplatz-sportparkteam/PROJECT-STATE.md` | Förderfähigkeit/Jobcenter klären und danach Tätigkeitsprofil/Stundenmodell | Beschäftigungs- und Finanzierungsvoraussetzungen offen | Funding, Partnership, Infrastruktur, Finanzen/Lohn, Datenschutz |
 | Trainingskleidung Ausstattungsgrundstock | Sport / Ausstattung / Partnerships; Owner offen | Discovery | `trainingskleidung-ausstattungsgrundstock/PROJECT-STATE.md` | Hauptpartnerangebot, Leads, Rechte und Größenverteilung klären | SPORTINN/Joma bleibt Ausrüster; separater Finanzierungspartner | Partnership, Sport, Finanzen, Design |
 | Kinder- und Jugendschutz einführen | Jugend / Vereinsentwicklung / Schutz & Prävention; Owner zu benennen | Discovery | `kinder-jugendschutz/PROJECT-STATE.md` | Vorstandsverantwortung und Vertrauenspersonen bestimmen, §72a klären, Risikoanalyse starten | Schutzfälle nicht in normale KI-/n8n-Queues | Jugend, Vorstand, Datenschutz, Trainer/Betreuer |

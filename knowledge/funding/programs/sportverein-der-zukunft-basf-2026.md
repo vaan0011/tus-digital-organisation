@@ -16,7 +16,7 @@ Der TuS verbiegt sein Digitalprojekt nicht für die Förderung. Die Initiative p
 **Programm:** Sportverein der Zukunft – mit BASF fit für die Digitalisierung  
 **Priorität:** **A – bewerben**  
 **Letzte Primärquellen-Verifizierung:** 2026-10-01  
-**Status:** Bewerbungsfenster offen; Bewerbung erfolgt durch Abschluss des Digital-Checks.
+**Status:** Bewerbung und Digital-Check am 13.10.2026 eingereicht und bestätigt; Auswahlentscheidung offen, keine Förderzusage.
 
 ### Fit
 
@@ -46,7 +46,7 @@ Bewerbungsweg: Online-Digital-Check auf `sportverein-der-zukunft.de`.
 - offizieller Start des Bewerbungsfensters: **01.09.2026**,
 - die am 01.10.2026 öffentlich ausgelesenen Primärseiten bestätigen, dass die Bewerbung aktuell offen ist,
 - die zuvor dokumentierte Endfrist **18.10.2026** bleibt im Dossier als Arbeitsfrist bestehen, wird vor finaler Einreichungsplanung jedoch nochmals direkt gegen Digital-Check/FAQ verifiziert,
-- interne Ziel-Einreichung: spätestens **09.10.2026**,
+- historische interne Ziel-Einreichung: **09.10.2026** (tatsächlich am 13.10.2026 bestätigt),
 - Auswahlkommission: nach Ende des Bewerbungsfensters.
 
 ### Förderung / Eigenanteil
@@ -75,7 +75,7 @@ Für den Digital-Check bereithalten:
 - belastbare Selbsteinschätzung zum heutigen digitalen Reifegrad,
 - internes motiviertes Projektteam.
 
-Die Bewerbungstexte wurden bereits in Google Drive vorbereitet. Offen bleiben insbesondere die finalen Vereins-/Ansprechpartnerdaten und der vollständige Abschluss des Digital-Checks.
+Bewerbung und Digital-Check wurden am 13.10.2026 abgeschlossen; die Einreichung wurde bestätigt. Zusätzliche Unterlagen erst auf Anforderung für das Auswahl- oder Förderverfahren vorbereiten.
 
 ### Antragsweg / Auswahlkriterien
 
@@ -96,7 +96,7 @@ Die offiziellen Programmseiten nennen konkrete frühere Digitalprojekte, darunte
 
 ### Nächste Aktion
 
-**Bewerbung zeitnah abschließen.** Die auf Google Drive bereits vorbereiteten Bewerbungstexte zusammen mit Vereinsnummer und Ansprechpartner in den Digital-Check übernehmen und den Check vollständig abschließen. Die Bewerbung sollte nicht bis zur Schlusswoche liegen bleiben.
+**Auswahlentscheidung abwarten.** Eine Rückmeldung der Initiative dokumentieren. Bei einer Zusage die konkreten Förderbedingungen, den richtigen Rechtsträger, das Projektteam, den Eigenanteil und die Meilensteine vor jeder Beauftragung klären. Aktueller operativer Förderstatus: [`CURRENT-STATE.md`](../CURRENT-STATE.md).
 
 ### Primärquellen
 
@@ -113,4 +113,4 @@ Die offiziellen Programmseiten nennen konkrete frühere Digitalprojekte, darunte
 
 ## Future development
 
-Nach Einreichung Status auf `eingereicht / Auswahl ausstehend` setzen. Nach Auswahlentscheidung Förderbedingungen, konkrete Kostenpositionen, Projektteam, Messgrößen und Coaching-Meilensteine in Projekt- und Funding-State übernehmen.
+Nach der Auswahlentscheidung Förderbedingungen, konkrete Kostenpositionen, Projektteam, Messgrößen und Coaching-Meilensteine in Projekt- und Funding-State übernehmen.
