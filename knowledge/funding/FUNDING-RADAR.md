@@ -1,6 +1,6 @@
 # TuS Funding Radar
 
-**Stand:** 2026-10-13 – aktueller Projekt-/Programm-Abgleich
+**Stand:** 2026-10-13 – aktualisierter Projekt-/Programm-Abgleich einschließlich Web-Recherche
 
 > Erst Vereinsprojekt, dann Förderprogramm. Ein Vorhaben wird nicht für eine Ausschreibung verbogen.
 
@@ -8,13 +8,37 @@
 
 | ID | Reales TuS-Projekt | Programm | Ebene | Bewertung | Aktueller Befund |
 |---|---|---|---|---|---|
-| OPP-011 | Aufbau Digitale Vereinsorganisation | Sportverein der Zukunft – BASF | Unternehmen / Verband | **A – bewerben** | Digital-Check bis 18.10.; Einreichung nicht dokumentiert; 18 Monate Coaching, bis 2.000 €, max. 80 % |
+| OPP-011 | Aufbau Digitale Vereinsorganisation | Sportverein der Zukunft – BASF | Unternehmen / Verband | **eingereicht – Auswahl offen** | Bewerbung am 13.10.2026 bestätigt; 20 Coaching-Plätze, Auswahl abwarten |
 | OPP-010 | Kinder- und Jugendschutz | Aktionstaler 2.0 | Land / Zivilgesellschaft | **B+** | bis 2.000 €, kein Pflicht-Eigenanteil; kommunale Stellungnahme und noch nicht begonnene Aktion erforderlich |
 | OPP-001 | Großfeldtore | BSB Sportgeräteförderung | Verband / Land | **A** | 30 % anerkannter Aufwand; Anschaffung 2026, Antrag 31.01.2027 |
 | OPP-002 | Umkleideböden | BSB Vereinssportstättenbau | Verband / Land | **A – Vorabklärung** | 30 %; gültiger Freistellungsbescheid; Start-/Vertragssperre; Scope offen |
 | OPP-003 | Historienarchiv | Stiftung Kulturgut BW | Stiftung / Land | **B+** | Erschließung/Digitalisierung passt; Stichtag 31.01.2027; institutionelles Gate |
 | OPP-004 | Arbeitsplatz Sportparkteam | § 16i / § 16e SGB II | Bund / Jobcenter | **B+** | individuelle Förderfähigkeit offen; kein Vertrag vor Zusage |
 | OPP-009 | geeignete konkrete TuS-Projekte | Volksbank Heimatverbunden | regional / Unternehmen | **B+** | laufend; Konto/Rechtsträger/Nachweis zuerst klären |
+
+## Neu identifizierte Programme – Recherche vom 13.10.2026
+
+| Programm | TuS-Projektfit | Einstufung / nächstes Gate |
+|---|---|---|
+| **Aktion Mensch: Sport und Kultur vor Ort – Miteinander Begegnung schaffen** | Konkretes neues inklusives Sportangebot, ggf. Jugend-/Mädchenbereich oder DFB Vereinsheim 2.0, **nur mit echter Teilhabe von Menschen mit Behinderung** | **B+ – Bedarf und Projektidee klären**. Bis 50.000 €, mind. 10 % Eigenmittel, max. 2 Jahre. Offizielle Förderbedingungen, Trägerfähigkeit, Zeitfenster und Vorhabenbeginn vor Antrag prüfen. Keine Förderung für allgemeine Vereinsdigitalisierung unterstellen. |
+| **WLSB-Sportstiftung Förderpreise 2026** | Ehrenamts-/Generationenprojekt, digitale soziale Kompetenz, Nachhaltigkeit im Sportpark – nur bei nachweisbar realisiertem, vorbildhaftem Projekt | **B – konkrete Preisbewerbung prüfen**. Bewerbung bis **15.02.2027**; je Kategorie 4.000 € Hauptpreis bzw. zweimal 1.500 € Anerkennungspreis. Keine Investitionszusage und keine Projektförderung im Voraus. |
+| **LEADER Kraichgau – nächste Runde** | Jugendräume, gemeinschaftliche Sportpark-/Vereinsheim-Infrastruktur bei regionalem Mehrwert | **B – beobachten und Vorberatung**. Sechster Aufruf **30.09.2026 geschlossen**; neuer Aufruf nicht bestätigt. Gebietskulisse, Umsetzungsreife, Rechtsträger und Investitions-/Genehmigungslage vorab klären. |
+| **BSB Nord Integration durch Sport – nächste Runde** | Reale Integrationsmaßnahme mit jungen Menschen, Mädchen/Frauen, Menschen mit Migrationsgeschichte oder sozial Benachteiligten | **B – nächste Runde beobachten**. 2026 Antragsfrist **30.06.2026 abgelaufen**; keine 2027-Frist behaupten. |
+| **DSEE 100xDigital – nächste Runde** | Aufbau Digitale Vereinsorganisation, Wissenstransfer und Entlastung | **B – beobachten**, keine bestätigte offene 2026-Runde. |
+| **DSEE Mikroförderung – nächste Runde** | Ehrenamtsgewinnung und Vereinsentwicklung | **B – beobachten**. 2026-Frist 30.09.2026 abgelaufen; Fördergebiet und neue Bedingungen neu prüfen. |
+
+**Explizit ausgeschlossen:** NRW „2.000 × 1.000 Euro für das Engagement“ mit KI-Schwerpunkt 2026: nur für Antragstellende aus Nordrhein-Westfalen, daher kein TuS-Fit trotz inhaltlicher Nähe.
+
+**Quellen / erneute Prüfung vor Antrag:** 
+- https://www.aktion-mensch.de/foerderung/angebote/foerderfinder
+- https://www.aktion-mensch.de/foerderung/beratung/aktuelles
+- https://www.wlsb.de/geschaeftsstelle-stellenangebote-gremien-mitglied-werden/wlsb-sportstiftung/foerderung
+- https://www.kraichgau-gestalte-mit.de/sechster-leader-projektaufruf-der-lag-kraichgau/
+- https://www.kraichgau-gestalte-mit.de/bewerbung/
+- https://www.badischer-sportbund.de/zuschuesse/integration-durch-sport/
+- https://www.nordrhein-westfalen-foerdert.nrw/foerdermassnahmen/2000-x-1000-euro-fuer-das-engagement-2026
+
+**TuS-Fit-Prinzip:** Keine App, Schulung oder neue Technik als Selbstzweck. Förderprojekt muss realen Vereinsnutzen stiften und zu bestehendem Projektzustand passen. Vor Antrag prüfen: Rechtsträger, Fördergebiet, Frist, Vorhabenbeginn, Eigenmittel, Doppelförderung, Bewilligungs-/Vergabeauflagen.
 
 ## B – vorbereiten / beobachten
 
