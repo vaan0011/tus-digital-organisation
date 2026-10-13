@@ -37,6 +37,7 @@ Der Project Portfolio Manager verantwortet insbesondere:
 - Sichtbarmachen von Projektüberschneidungen und Doppelentwicklungen,
 - Erkennen von Projekten ohne klaren Owner oder ohne nächsten Schritt,
 - Erkennen veralteter Projektzustände,
+- bei regulären Portfolio-Läufen konkrete projektbezogene Dokumentationskonflikte und strukturelle Hygiene-Befunde aus bestehenden GitHub-Prüfungen aufnehmen, ohne das Repository pauschal vollständig zu auditieren,
 - Verknüpfen von Projekten mit Fördermittel-, Sponsoring-, Design-, Entwicklungs-, Archiv- oder anderen Arbeitsbereichen,
 - Sicherung von Projektabschluss und Übergabe in den dauerhaften Organisationsbestand.
 
