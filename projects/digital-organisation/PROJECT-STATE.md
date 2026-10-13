@@ -1,6 +1,6 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-10-13 – BASF-Bewerbung zeitkritisch; aktueller Hauptvereinsnachweis liegt vor
+**Stand:** 2026-10-13 – BASF-Bewerbung eingereicht; Digital-Check-Baseline dokumentiert
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
@@ -8,11 +8,11 @@
 
 ## Förderupdate 13.10.2026
 
-- **OPP-011 Sportverein der Zukunft / BASF:** A – bewerben; Digital-Check bis 18.10.2026, Einreichung im OS noch nicht nachgewiesen. Förderung: 18 Monate Coaching, bis 2.000 €, maximal 80 %; mindestens 20 % Eigenanteil.
+- **OPP-011 Sportverein der Zukunft / BASF:** Bewerbung und Digital-Check am 13.10.2026 vom Veranstalter bestätigt; Auswahl für 20 Coaching-Plätze offen. Förderung: 18 Monate Coaching, bis 2.000 €, maximal 80 %; mindestens 20 % Eigenanteil.
 - Empfohlene Story: **„Digitales Vereinsbüro – Ehrenamt entlasten, Wissen sichern und wiederkehrende Vereinsarbeit einfacher machen.“**
 - Für den Hauptverein liegt seit 12.10.2026 ein aktueller, im Regelfall nutzbarer Nachweis für den gemeinnützigen Zweck Förderung des Sports vor. BASF nennt ihn für den Digital-Check nicht als Pflicht.
 - WISO 2026 und Gemeinsam engagiert in BW V bleiben geschlossen.
-- Sofortaktion: Digital-Check heute abschließen oder erfolgte Einreichung mit Bestätigung dokumentieren.
+- **Baseline:** [Digital-Check 2026](DIGITAL-CHECK-2026.md) mit Gesamtwert 3,7/5, Stufe 4 „Experte“, sechs Kategorien und vorläufigen Entwicklungszielen. Die sechs ausführlichen Auswertungstexte folgen; nicht als vorhanden markieren.
 
 ## Purpose
 
@@ -218,7 +218,7 @@ Besonders relevant sind:
 
 ### 11. Nächster sinnvoller Schritt
 
-1. WISO 2026 als geschlossen behandeln und nicht weiter auf Einreichungsstatus prüfen.
+1. BASF-Auswahlentscheidung abwarten; die sechs angekündigten Kategorie-Auswertungstexte quellengetreu in `DIGITAL-CHECK-2026.md` ergänzen.
 2. Funding & Grants Manager recherchiert systematisch alternative Förderprogramme für die Digitale Vereinsorganisation.
 3. Kandidaten nach `jetzt nutzbar` und `nach aktuellem Gemeinnützigkeitsnachweis nutzbar` trennen.
 4. Den Aufbauzustand in wenige messbare Arbeitspakete mit Ziel, Ergebnis, Aufwand, Zeitraum und offenem Budget strukturieren.
