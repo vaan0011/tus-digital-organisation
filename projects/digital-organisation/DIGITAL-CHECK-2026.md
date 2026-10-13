@@ -2,7 +2,7 @@
 
 **Stand / Erhebungsdatum:** 13.10.2026  
 **Quelle:** Digital-Check „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, Ergebnisübersicht vom Nutzer im Chat bereitgestellt.  
-**Status:** Baseline dokumentiert; Kategorien Strategie und Voraussetzungen ausgewertet, vier weitere Kategorie-Auswertungstexte ausstehend.  
+**Status:** Baseline dokumentiert; Kategorien Strategie, Voraussetzungen und Kommunikation ausgewertet, drei weitere Kategorie-Auswertungstexte ausstehend.  
 **Quellentyp:** strukturierte Selbstauskunft, keine unabhängige technische Prüfung.  
 **Zuständiges Projekt:** [Aufbau Digitale Vereinsorganisation](PROJECT-STATE.md). Förderstatus separat in [OPP-011](../../knowledge/funding/ACTIVE-OPPORTUNITIES.md).
 
@@ -109,9 +109,44 @@ Die vom Nutzer angekündigten Auswertungstexte werden **quellengetreu** pro Kate
 
 
 
-### 2.3 Kommunikation – Originaltext
+### 2.3 Kommunikation – Quellenauswertung
 
-*Ausstehend.*
+**Quelle:** drei Screenshots der BASF-Kategorieauswertung vom 13.10.2026 (Nutzer-Upload). Inhaltliche Erfassung und Zusammenfassung; keine vollständige wortgetreue Abschrift. Screenshots sind Originalquelle.
+
+**Kategorieergebnis:** **3,6 / 5 – Stufe 4 „Experte“**.
+
+| Teilindikator | Originalwert |
+|---|---:|
+| Kommunikationsstrategie & Ziele | 4,0 |
+| Interne Kommunikation | 2,8 |
+| Externe Kommunikation | 3,8 |
+| Reichweite Ziel- und Interessensgruppen | 4,0 |
+
+**Definitionen laut Bericht:** Kommunikationsstrategie & Ziele misst Ausrichtung an übergeordneter Strategie; interne Kommunikation den Einsatz digitaler Werkzeuge für interne Zielgruppen; externe Kommunikation die Nutzung digitaler Kanäle nach außen; Reichweite, wie gut interne und externe Zielgruppen digital erreicht werden.
+
+**Handlungsempfehlungen – quellennahe Zusammenfassung:**
+
+1. Kommunikationsstrategie regelmäßig durch Umfragen und Mitgliederfeedback evaluieren.
+2. Neue Trends wie KI-gestützte Tools und automatisierte Kommunikationssysteme auf Effizienz- und Entlastungspotenzial prüfen.
+3. Für die interne Kommunikation personalisierte Newsletter als möglichen ersten Schritt erwägen.
+4. Vereins-App als Option prüfen, um Informationen zu bündeln und Interaktion zu ermöglichen; Nutzungsanalysen zur Weiterentwicklung nur unter Beachtung von Datenschutz und Datensparsamkeit.
+5. Externe Zielgruppen differenzierter analysieren; Inhalte und Kanäle an deren Bedürfnissen ausrichten; Website und Social Media aktuell, ansprechend und informativ halten.
+6. Analysewerkzeuge zur Verbesserung von Website und Social Media prüfen.
+7. Zusätzliche Kanäle nur bei ausreichenden Ressourcen für regelmäßige Content-Pflege ausbauen.
+8. Bestehende Erfolge und Reichweite regelmäßig überprüfen; neue Zielgruppen und ggf. interaktive Formate erschließen.
+
+**TuS-Einordnung (eigene Interpretation, nicht BASF-Originaltext):** Die **interne Kommunikation (2,8)** ist die deutlichste Schwachstelle dieser Kategorie, trotz **4,0** bei Strategie und Reichweite. Im TuS-OS liegt der größte Hebel daher in zuverlässigen, rollenbezogenen Informationsflüssen zwischen Vorstand, Trainern, Betreuern, Eltern und Ehrenamtlichen; externe Kanäle allein lösen diese Aufgabe nicht. Eine neue eigenständige App ist **keine beschlossene Anforderung**: zuerst bestehende Website, Mitgliederportal-Ideen und Kommunikationswege auf Nutzbarkeit prüfen.
+
+**Konkrete Anschlussaktionen – Vorschläge, nicht beschlossen:**
+
+- Kommunikationswege und Informationsbrüche anhand weniger realer Vereinsprozesse erfassen (z. B. Trainerinformation, Helfereinsatz, Vorstandsbeschluss).
+- Zielgruppen und Verantwortlichkeiten definieren: Wer informiert wen, über welchen Kanal, mit welcher Verbindlichkeit?
+- Einfache Rückkanäle für Fragen, Feedback und Verbesserungsvorschläge pilotieren.
+- Wiederkehrende Benachrichtigungen gezielt automatisieren; Datenschutz, Einwilligungen und menschliche Freigabe berücksichtigen.
+- Externe Reichweite nicht nur quantitativ, sondern nach tatsächlichem Nutzen für Mitglieder, Partner und Interessierte bewerten.
+- Vor neuer App-/Plattformentscheidung Anforderungen, Betriebskosten und Akzeptanz prüfen.
+
+
 
 ### 2.4 Organisation – Originaltext
 
