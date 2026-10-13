@@ -8,7 +8,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 | ID | Projekt | Chance | Priorität | Frist / Sperre | Nächster Schritt |
 |---|---|---|---|---|---|
-| OPP-011 | Aufbau Digitale Vereinsorganisation | Sportverein der Zukunft / BASF | **A – bewerben** | 18.10.2026 | heute Digital-Check abschließen oder Einreichung dokumentieren |
+| OPP-011 | Aufbau Digitale Vereinsorganisation | Sportverein der Zukunft / BASF | **eingereicht – Auswahl offen** | Bewerbung 13.10.2026; offizielle Frist 18.10.2026 | Entscheidung über 20 Coaching-Plätze abwarten |
 | OPP-010 | Kinder- und Jugendschutz | Aktionstaler 2.0 | **B+** | Phase 1 bis 31.03.2027; 4–6 Wochen Vorlauf | Aktion, Budget und kommunale Stellungnahme festziehen |
 | OPP-001 | Großfeldtore | BSB Sportgeräteförderung | **A** | Anschaffung 2026; Antrag 31.01.2027 | Komponenten vor Kauf klären |
 | OPP-002 | Umkleideböden | BSB Vereinssportstättenbau | **A – Vorabklärung** | kein Start/Vertrag vor Baufreigabe | Scope, Kosten, Unterlagen und Nutzungsrecht klären |
@@ -21,7 +21,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 ## OPP-011 – Aufbau Digitale Vereinsorganisation × Sportverein der Zukunft
 
 **Programm / Fördergeber:** „Sportverein der Zukunft – mit BASF fit für die Digitalisierung“, BASF / Two Circles mit BSB Nord  
-**Priorität:** **A – bewerben**  
+**Status:** **Bewerbung am 13.10.2026 erfolgreich eingereicht; Auswahl offen**  
 **Letzte Primärquellen-Verifizierung:** 13.10.2026
 
 **Fit:** Das reale Aufbauprojekt trifft die Programmbereiche Organisation, Kommunikation, Mitgliederwesen und digitale Vereinsentwicklung. Der Schwerpunkt bleibt die Entlastung des Ehrenamts, Wissenssicherung und bessere wiederkehrende Vereinsarbeit.
@@ -42,9 +42,11 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 **Vergleichbare Bewilligungen:** Offizielle Best-Practice-Projekte früherer Zyklen betreffen u. a. digitale Kommunikation, Organisation und Mitgliederarbeit. Keine Auswahlgarantie.
 
-**Risiken / offene Punkte:** Einreichungsstatus im OS nicht dokumentiert; begrenzte Plätze; Projekt nicht zu breit beschreiben.
+**Einreichungsnachweis:** Nutzer hat die ausdrückliche Veranstalterbestätigung vorgelegt: „Ihr habt den Digital-Check erfolgreich abgeschlossen und damit eure Bewerbung für die Initiative eingereicht.“ Berücksichtigung im Auswahlverfahren für 20 Coaching-Plätze. Digital-Check-Ergebnis 13.10.2026: Gesamt 3,7/5, Stufe 4 Experte; Strategie 4,6, Voraussetzungen 3,9, Kommunikation 3,6, Organisation 3,4, Mitgliederwesen 3,9, Sportangebot 2,5. Personalisierter Ergebnislink ist zugangstokenhaltig und wird aus Datenschutzgründen nicht öffentlich im Repository gespeichert. **Noch keine Förderzusage.**
 
-**Nächste Aktion:** Digital-Check heute abschließen und Einreichung dokumentieren.
+**Risiken / offene Punkte:** Nur 20 Coaching-Plätze; Entscheidung und etwaige spätere Nachweispflichten offen.
+
+**Nächste Aktion:** Auswahlentscheidung abwarten; Mitteilung und etwaige Nachweisanforderungen nach Eingang dokumentieren.
 
 **Primärquellen:** https://sportverein-der-zukunft.de/digital-check/ · https://sportverein-der-zukunft.de/projektfoerderung/ · https://www.badischer-sportbund.de/service/digitalisierung/initiative-sportverein-der-zukunft/
 
@@ -196,4 +198,4 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 - OPP-008 Gemeinsam engagiert in BW V: geschlossen, 2026 nicht genutzt.
 - WISO 2026: geschlossen; kein Einreichungsnachweis suchen.
 - Kellogg’s: laut Nutzer bereits eingereicht.
-- REWE: laufend; Zuordnung bis 25.10., Prämienbestellung bis 08.11.
+- REWE: laut Nutzer eigenständig in Bearbeitung; keine Erinnerungen oder Handlungsaufforderungen.
