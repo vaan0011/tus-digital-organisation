@@ -93,3 +93,45 @@ Nach Entscheidung werden Anbieter, Konditionsmodell, Startdatum, Ansprechpartner
 **Interne Zieltermine (Vorschlag, nicht freigegeben):** Rechte/Owner bis 16.10.; Anfrage bis 23.10.; Vergleichsangebote bis 06.11.; Bewertung bis 13.11.; Vorstandsentscheidung bis 20.11.; Dezember Übergabe und Notfallplanung. Falls Terminplan nicht erreichbar, Übergangsversorgung Januar organisieren.
 
 **Playbook:** `../../knowledge/sponsoring/PARTNERKONZEPT-2-0-AKQUISE-PLAYBOOK.md`. Externe Anfragen und Verträge nur nach Freigabe.
+
+
+## Update 15.10.2026 – Thome-Konzept und weiterer Anbieter
+
+### Verbindlicher Vergleichsscope
+
+Die erste Angebots- und Partnerphase umfasst sechs feststehende Veranstaltungen:
+
+1. Winterfeier im Januar,
+2. Jugendturnier Januar – Wochenende 1,
+3. Jugendturnier Januar – Wochenende 2,
+4. Maibaumaufstellung,
+5. Jahrmarkt,
+6. Sportfest im Juli.
+
+Der Kiosk ist ausdrücklich nicht Bestandteil der ersten Phase. Es werden keine Pilotveranstaltungen vorgeschlagen; Verbrauchs- und Rechnungsdaten der bestehenden Events bilden die Anfragebasis.
+
+### Anbieter und Partneransatz
+
+- **Getränke Thome:** individuelles internes Partnerkonzept ist ausgearbeitet und im geschützten Fachordner verifiziert.
+- **Getränke Böllinger:** weiterer möglicher Getränkelieferant im Vergleich; Konditionen, Logistik und Partnerschaftsinteresse noch offen.
+
+Bei Thome wird ein Mix geprüft aus:
+
+- marktgerechter und verlässlicher Getränkebelieferung,
+- Sachleistungen wie Schürzen, Sonnenschirme/Beschattung, Mehrwegbecher, Theken-/Eventausstattung und gegebenenfalls Kühltechnik,
+- einem gesonderten jährlichen finanziellen Förderbeitrag,
+- abgestimmter Vor-Ort-, Online-, Social- und Print-Sichtbarkeit.
+
+Arbeitsslogan: `Thome. Gut versorgt. Gemeinsam gefeiert.` Der Begriff `Dritte Halbzeit` ist ausgeschlossen. Der Slogan und jede Markennutzung benötigen Partnerfreigabe.
+
+Google-Drive-Fachordner:
+
+`https://drive.google.com/drive/folders/19S8X_Lh-E4z0EwnSWmgQj1N6GQ9xsbDO`
+
+### Wirtschaftliche und rechtliche Trennung
+
+Lieferangebot und Partnerschaft werden getrennt bewertet. Ein wirtschaftlich schlechteres Lieferangebot wird nicht durch eine Sponsorleistung schöngerechnet. Höpfner-/Marken-/Exklusivitätsrechte, der genaue Umfang des Rothenberger-Ausstiegs und die Lieferfähigkeit im Januar bleiben vor externer Anfrage zu klären.
+
+### Nächster Schritt
+
+Bis 16.10.2026 Projekt-Owner und Bestandsrechte klären. Danach identischen Event-Warenkorb für Thome und Böllinger freigeben und versenden; Sponsoring-/Sachleistungsteil separat ausweisen. Externe Anfrage nur nach Freigabe durch das Gesprächsteam aus 1. Vorsitzendem und Finanzvorstand Thomas.
