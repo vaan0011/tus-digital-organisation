@@ -320,3 +320,12 @@ Neue Dokumentation wird nur ergänzt, wenn sie wiederkehrende Arbeit tatsächlic
 - **Sportpark-Naming:** `../../projects/sportpark-namensrechte/PROJECT-STATE.md`; ambitioniertes Premium-Ziel ist unvalidiert. LED-, Event- und Sportparkrechte nicht doppelt vermarkten.
 - **Rasenpflege 2027:** drei Plätze, ca. 12.000 € historische **Kostenschätzung**, kein bestätigter Sponsoringerlös (CRM018).
 - Operative Source of Truth bleibt das geschützte native Partner-CRM; vertrauliche Partnerdaten nicht im Repository duplizieren.
+
+
+### Update 15.10.2026 – Sportpark 2031 und Getränkepartner
+
+- **Sportpark 2031:** Das Sportpark-Namensrecht ist laut Vorstand intern frei. Das verifizierte Fünfjahreskonzept verbindet eine langfristige Namenspartnerschaft mit einem sichtbaren jährlichen Sportparkprojekt; eine optionale Unterstützung regulärer Teilzeitbeschäftigung im Sportparkteam bleibt ein gesonderter Finanzierungsbaustein.
+- **Partnerstories vorhanden:** Sparkasse Kraichgau, Volksbank Kraichgau, MAYA Hausbau und SEW-EURODRIVE. Alle Unterlagen sind interne, nicht versendete Arbeitsentwürfe. MAYA und Sparkasse bleiben A-Leads; Volksbank und SEW wurden wegen belastbarem Regional-/Sport- bzw. Ausbildungsfit als B-Leads ins CRM aufgenommen.
+- **Sportparkteam:** Jobcenter-Vorabklärung für zwei bestehende Maßnahmenteilnehmende am 13.10.2026 versendet. Förderinstrument, individuelle Förderfähigkeit, Höhe und Laufzeit offen; keine Arbeitsplatzzusage und keine gesicherte Finanzierung.
+- **Getränkelieferant 2027:** Thome-Partnerkonzept für sechs feste Events fertig; Kiosk und Pilotlogik ausgeschlossen. Gewünscht ist eine getrennte Kombination aus Lieferangebot, Geldbeitrag und Sachleistungen, insbesondere Schürzen, Beschattung und Mehrwegbecher. Getränke Böllinger ist weiterer Vergleichskandidat. Interne Rechte-/Owner-Klärung ist bis 16.10.2026 fällig.
+- **Zeitkritisch:** EconSocial-LED-Erstgespräch am 16.10.2026, 09:45 Uhr; Mustervertrag, vollständiger Leistungsumfang und TuS-Vermarktungsrechte bleiben Entscheidungsgates.
