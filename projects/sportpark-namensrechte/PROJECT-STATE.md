@@ -1,6 +1,8 @@
 # Sportpark-Namensrechte 2027
 
-Status: Discovery. Ziel: eine langfristige strategische Partnerschaft für den gesamten Sportpark, mit messbarem Nutzen für TuS und Partner.
+Stand: 2026-10-15
+
+Status: Akquisevorbereitung / Partnerqualifizierung. Ziel: eine langfristige strategische Partnerschaft für den gesamten Sportpark, mit messbarem Nutzen für TuS und Partner.
 
 Konzept: Namensrecht plus gemeinsam geplante Aktivierungen in Nachwuchs, Familien, Karriere, Gemeinschaft und Sportpark. Keine pauschale Exklusivität über andere Partnerwelten oder Werbeflächen. Bestehende Verträge und LED-Rechte bleiben unberührt, bis geklärt.
 
@@ -53,3 +55,42 @@ Vor Angebot Baseline erheben: Nutzungstage und Veranstaltungen, kontrollierbare 
 3. Konkreten Rechte- und Leistungskatalog inklusive Aufwand, Beschilderung, Pflege und Rückbau kalkulieren.
 4. Kandidatenbezogene Win-win-Gesprächsleitfäden und Angebotsvarianten vorbereiten.
 5. Vorstand entscheidet über externe Ansprache, Angebotspreise, Laufzeit, Exklusivität und Vertrag. Keine externe Ansprache ohne Freigabe.
+
+
+## Update 15.10.2026 – Sportpark 2031
+
+### Bestätigter Arbeitsstand
+
+- Das Sportpark-Namensrecht ist laut Vorstand intern frei; eine bestehende Namensrechtsvergabe muss nicht abgelöst werden.
+- Verfügungs-, Eigentums-/Pacht-, Beschilderungs-, Steuer- und Vertragsrechte bleiben vor einem externen Angebot zu prüfen.
+- Das Partnerprodukt wird als Fünfjahresprogramm `Sportpark 2031` entwickelt: Namenspartnerschaft plus ein gemeinsam geplantes, sichtbares Sportparkprojekt pro Jahr.
+- Die mögliche Unterstützung regulärer Teilzeitbeschäftigung im Sportparkteam ist ein gesonderter optionaler Baustein. Sie ist weder durch den Namensrechtsbeitrag noch durch das Jobcenter bereits finanziert.
+- Persönliche Geschichten der betroffenen Menschen werden nur mit deren ausdrücklicher Einwilligung extern verwendet.
+
+### Verifizierte Arbeitsunterlagen
+
+Google-Drive-Projektordner:
+
+`https://drive.google.com/drive/folders/10eVEX2LJdcyt39sq2wiZXlu0Tlo2W7e8`
+
+Enthalten und inhaltlich verifiziert:
+
+- Leitkonzept und Angebotslogik `Sportpark 2031`,
+- Sparkasse Kraichgau – `Hier wächst Zukunft`,
+- Volksbank Kraichgau – `Gemeinsam mehr bewegen`,
+- MAYA Hausbau – `Ein Zuhause für Generationen`,
+- SEW-EURODRIVE – `Wir geben Zukunft Antrieb`.
+
+Alle Unterlagen sind interne Akquiseentwürfe; keine Story wurde versendet und kein Unternehmen hat Interesse, Budget, Preis oder Leistung bestätigt.
+
+### Partnerqualifizierung
+
+- **MAYA Hausbau:** warmer A-Kontakt; individuelle Story bereit.
+- **Sparkasse Kraichgau:** bestehende A-Beziehung; individuelle Story bereit; aktueller Leistungsumfang intern verifizieren.
+- **Volksbank Kraichgau:** qualifizierter B-Neukandidat. Offizielle Quellen belegen 2026 regionale Vereinsförderung und eine laufende Premium-Sportpartnerschaft; TuS-Interesse und Namensrechtsbudget offen.
+- **SEW-EURODRIVE:** qualifizierter B-Neukandidat. Offizielle Quellen belegen starken Ausbildungsbezug in Bruchsal/Graben-Neudorf; Sponsoringinteresse und zuständiger Entscheider offen.
+- Kirchgeßner und Robert Mächtel bleiben weitere Bestandskandidaten, erhalten aber erst nach Bestands- und Projektfitprüfung ein individuelles Dossier.
+
+### Nächster Entscheidungsschritt
+
+Das Gesprächsteam aus 1. Vorsitzendem und Finanzvorstand Thomas wählt den ersten Ansprachekandidaten. Vor externer Kontaktaufnahme werden der verfügbare Rechtekatalog, die Abgrenzung zu LED-/Event-/Bestandsrechten, die steuerliche Rechtseinheit und die Kontaktfreigabe dokumentiert. Preis- und Laufzeitszenarien bleiben unverbindliche Arbeitsanker.
