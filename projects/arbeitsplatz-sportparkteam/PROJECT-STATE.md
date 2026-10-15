@@ -200,3 +200,32 @@ Der Projektzustand wird aktualisiert, sobald sich einer dieser Punkte ändert:
 - Vertragsstatus,
 - Beschäftigungsbeginn,
 - Perspektive nach Förderende.
+
+
+## Update 15.10.2026 – zwei Beschäftigungsperspektiven
+
+Dieser Abschnitt ersetzt den älteren Ein-Personen-Arbeitsstand und den damals noch offenen Arbeitgeber-Erstkontakt.
+
+### Aktueller Sachstand
+
+- Im Sportparkteam arbeiten aktuell **zwei Personen** in derselben öffentlich geförderten Arbeitsgelegenheit.
+- Die laufenden Vereinbarungen werden nach Nutzerangabe jeweils für sechs Monate verlängert.
+- Zielbild sind zwei reguläre sozialversicherungspflichtige Teilzeitbeschäftigungen, zunächst mit jeweils ungefähr 20 Wochenstunden als Prüfszenario. Stunden, Lohn, Vertragsart und tatsächliche Arbeitgeberkosten sind nicht beschlossen.
+- Die zuständige Sachbearbeiterin hatte nach Nutzerangabe auf eine mögliche Förderung über drei Jahre hingewiesen. Das konkrete Instrument, die individuelle Förderfähigkeit, Förderhöhe, Laufzeit und Degression sind noch nicht schriftlich bestätigt.
+- Die Arbeitgeber-Vorabklärung beim Jobcenter Bruchsal wurde am 13.10.2026 versendet. Angefragt wurden insbesondere § 16e/§ 16i bzw. ein anderes einschlägiges Instrument, individuelle Prüfung beider Personen, Förderhöhe/-dauer, Arbeitgebervoraussetzungen, zulässige Tätigkeiten, Antragsreihenfolge sowie ergänzende Hilfen.
+- Bis zur schriftlichen Förderklärung werden keine Arbeitsverträge geschlossen und keine Förderung in der Finanzplanung als sicher angesetzt.
+
+### Verbindung zu Sportpark 2031
+
+Die Beschäftigungsperspektive ist ein eigenständiger Finanzierungsbaustein innerhalb des Sportpark-Zielbilds:
+
+1. öffentliche Beschäftigungsförderung,
+2. tragfähiger TuS-Eigenanteil,
+3. optionale Partnerbeiträge für das Sportparkteam,
+4. getrennt davon Namensrecht und jährliche Sportpark-Entwicklungsprojekte.
+
+Ein Namenspartner finanziert nicht automatisch beide Teilzeitstellen. Persönliche Namen und Lebensgeschichten werden nicht in öffentliche Akquiseunterlagen übernommen; personenbezogene Kommunikation erfolgt nur mit ausdrücklicher Einwilligung.
+
+### Nächste Aktion
+
+Rückmeldung des Jobcenters abwarten und für **jede Person getrennt** dokumentieren: Förderinstrument, Förderfähigkeit, Prozentsatz, Dauer, Restarbeitgeberkosten, zulässiger Beginn und notwendige Unterlagen. Parallel ein gemeinsames Tätigkeitsprofil sowie belastbare 20-Stunden-Kostenmodelle erstellen. Danach Vorstandsgate für Beschäftigung und Finanzierung.
