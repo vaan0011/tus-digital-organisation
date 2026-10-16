@@ -137,7 +137,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 ## OPP-003 – Historienarchiv × Stiftung Kulturgut Baden-Württemberg
 
 **Priorität:** **B+ – konkret vorbereiten**  
-**Letzte Primärquellen-Verifizierung:** 13.10.2026; Friststatus am 16.10.2026 fortgeschrieben
+**Letzte Primärquellen-Verifizierung:** 16.10.2026
 
 **Fit / Story:** **„Vereinsgeschichte als lokales Gedächtnis – Bestände erschließen, sichern, digital zugänglich machen.“** Die Stiftung fördert Erwerb, Erschließung, Erhaltung und Digitalisierung von Archiv- und Bibliotheksgut.
 
