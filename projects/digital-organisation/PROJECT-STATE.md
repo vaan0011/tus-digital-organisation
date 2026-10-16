@@ -1,6 +1,6 @@
 # PROJECT STATE – Aufbau Digitale Vereinsorganisation
 
-**Stand:** 2026-10-13 – BASF-Bewerbung eingereicht; Digital-Check-Baseline dokumentiert
+**Stand:** 2026-10-16 – Förderalternativen erneut geprüft; kein neuer A-/B+-Treffer
 **Status:** Aktiv  
 **Phase:** Aufbau / Konsolidierung  
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
