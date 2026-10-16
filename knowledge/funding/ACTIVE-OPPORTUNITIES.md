@@ -1,6 +1,6 @@
 # Active Funding Opportunities
 
-**Stand:** 2026-10-13 – nur operative A-/B+-Chancen
+**Stand:** 2026-10-16 – nur operative A-/B+-Chancen
 
 Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden zeitkritische Bedingungen erneut geprüft und die erforderliche menschliche Freigabe eingeholt.
 
@@ -12,7 +12,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 | OPP-010 | Kinder- und Jugendschutz | Aktionstaler 2.0 | **B+** | Phase 1 bis 31.03.2027; 4–6 Wochen Vorlauf | Aktion, Budget und kommunale Stellungnahme festziehen |
 | OPP-001 | Großfeldtore | BSB Sportgeräteförderung | **A** | Anschaffung 2026; Antrag 31.01.2027 | Komponenten vor Kauf klären |
 | OPP-002 | Umkleideböden | BSB Vereinssportstättenbau | **A – Vorabklärung** | kein Start/Vertrag vor Baufreigabe | Scope, Kosten, Unterlagen und Nutzungsrecht klären |
-| OPP-003 | Historienarchiv | Stiftung Kulturgut BW | **B+** | 31.01.2027; intern 15.10.2026 | EVALAG-Vorabskizze |
+| OPP-003 | Historienarchiv | Stiftung Kulturgut BW | **B+ – Entscheidung nötig** | 31.01.2027; interne Vorfrist 15.10.2026 verstrichen | Go/No-Go; bei Go EVALAG-Vorabskizze sofort abschließen |
 | OPP-004 | Arbeitsplatz Sportparkteam | § 16i / § 16e SGB II | **B+** | kein Arbeitsvertrag vor positiver Rückmeldung | Arbeitgeber-/Personenförderfähigkeit klären |
 | OPP-009 | konkretes TuS-Projekt | Volksbank Heimatverbunden | **B+** | keine allgemeine Frist | Konto/Rechtsträger/Nachweis klären |
 
@@ -137,13 +137,13 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 ## OPP-003 – Historienarchiv × Stiftung Kulturgut Baden-Württemberg
 
 **Priorität:** **B+ – konkret vorbereiten**  
-**Letzte Primärquellen-Verifizierung:** 13.10.2026
+**Letzte Primärquellen-Verifizierung:** 13.10.2026; Friststatus am 16.10.2026 fortgeschrieben
 
 **Fit / Story:** **„Vereinsgeschichte als lokales Gedächtnis – Bestände erschließen, sichern, digital zugänglich machen.“** Die Stiftung fördert Erwerb, Erschließung, Erhaltung und Digitalisierung von Archiv- und Bibliotheksgut.
 
 **Ansprechpartner:** Sabine Berganski, EVALAG, 06221/405462-92, antragstiftungkulturgut@evalag.de; StiftungKulturgut@mwk.bwl.de.
 
-**Frist / Vorfristen:** offizielle Stichtage 31.01. und 31.07. jährlich; Ziel 31.01.2027. Vorabskizze bis 15.10.2026.
+**Frist / Vorfristen:** offizielle Stichtage 31.01. und 31.07. jährlich; Ziel 31.01.2027. Die interne Vorfrist 15.10.2026 ist verstrichen; ein fertiger Skizzenstand ist in den aktuellen Förderquellen nicht dokumentiert.
 
 **Förderung / Eigenanteil:** nach bisheriger Richtlinienprüfung Mindestförderung 5.000 €; nichtstaatliche Träger regelmäßig 25 % Eigenanteil. Vor Vollantrag aktuell bestätigen.
 
@@ -155,7 +155,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 **Risiken:** institutionelle Eignung, professioneller Publikations-/Metadatenweg, Eigenanteil und nicht förderfähige Hard-/Software.
 
-**Nächste Aktion:** EVALAG-Vorabskizze mit konkreten Fragen versandfertig machen; Kontakt nur nach Freigabe.
+**Nächste Aktion:** Sofort Go/No-Go für den Stichtag 31.01.2027 treffen. Bei Go EVALAG-Vorabskizze mit konkreten Fragen versandfertig machen; Kontakt nur nach Freigabe.
 
 **Primärquelle:** https://mwk.baden-wuerttemberg.de/de/kunst-kultur/kultursparten/archivwesen-und-kulturgut
 
@@ -164,7 +164,7 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 ## OPP-004 – Arbeitsplatz Sportparkteam × § 16i / § 16e SGB II
 
 **Priorität:** **B+ – vorabklären**  
-**Letzte Primärquellen-Verifizierung:** 11.09.2026
+**Letzte Primärquellen-Verifizierung:** 16.10.2026
 
 **Fit / Story:** reguläre sozialversicherungspflichtige Beschäftigung im Sportpark mit Teilhabe, Coaching/Qualifizierung und nachhaltiger Perspektive.
 
@@ -172,7 +172,9 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 **Förderung / Sperre:** § 16i kann je nach individueller Entscheidung über fünf Jahre gestaffelte Lohnkostenzuschüsse ermöglichen; § 16e ist Rückfalloption. Kein Arbeitsvertrag vor positiver Jobcenter-Rückmeldung.
 
-**Benötigt:** persönliche Förderfähigkeit, Arbeitgeberprozess, Tätigkeitsprofil, Stunden-/Kostenmodell und Anschlussfinanzierung; keine personenbezogenen Daten ins Repository.
+**Aktueller Verfahrensstand:** Die Arbeitgeber-Vorabklärung für zwei Personen wurde am 13.10.2026 an das Jobcenter Bruchsal versendet. Instrument, individuelle Förderfähigkeit, Prozentsatz, Dauer und zulässiger Vertragsbeginn sind noch nicht schriftlich bestätigt.
+
+**Benötigt:** für jede Person getrennte Jobcenter-Aussage, Arbeitgeberprozess, gemeinsames Tätigkeitsprofil, 20-Stunden-Kostenmodell und Anschlussfinanzierung; keine personenbezogenen Daten ins Repository.
 
 **Nächste Aktion:** Arbeitgeber-Erstkontakt nach Freigabe und individuelle Förderfähigkeit klären.
 
