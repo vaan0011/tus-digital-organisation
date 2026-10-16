@@ -149,6 +149,8 @@ Vor Kontakt, Antrag, Bestellung, Beauftragung oder finanzieller Bindung werden z
 
 **Benötigt:** Bestandsbeschreibung, landesgeschichtlicher Bezug, Erschließungs-/Digitalisierungsplan, dauerhafter Zugangs-/Datenbankweg, Zeitplan, Kosten- und Finanzierungsplan, institutionelle Eignung, interne Freigabe und ggf. Archivpartner.
 
+**Gemeinnützigkeitsnachweis:** Die veröffentlichte Förderrichtlinie (Stand November 2025) nennt keinen Freistellungsbescheid oder anderen Gemeinnützigkeitsnachweis – weder bei Antragstellung noch vor Auszahlung. Formal antragsberechtigt sind juristische Personen mit Sitz in Baden-Württemberg; offen bleibt, ob der TuS als „vergleichbare Einrichtung“ zu Archiv, Bibliothek oder Museum anerkannt wird. Genau dieses institutionelle Gate ist vor dem Vollantrag mit EVALAG zu klären.
+
 **Antragsweg / Auswahl:** EVALAG; fachliche Bedeutung, Zugänglichkeit, Standards und Tragfähigkeit. Direkte Antragsfähigkeit des TuS vorab klären.
 
 **Vergleichbare Bewilligung:** MARCHIVUM Mannheim erhielt 2023 Förderung für „Vereinsgeschichte als Stadtgeschichte“ mit Vereinsbeständen; wegen kommunalem Archivträger nur Passungsevidenz, keine Garantie.
