@@ -6,6 +6,16 @@
 **Fachlicher Bereich:** Vereinsentwicklung / Digitalisierung  
 **Fachlicher Projekt-Owner:** noch nicht explizit benannt
 
+## Förderupdate 16.10.2026
+
+- Die erneute Primärquellenprüfung hat **keinen neuen belastbaren A- oder B+-Treffer** für den allgemeinen Aufbau der digitalen Vereinsorganisation ergeben.
+- Aktion Mensch öffnet die nächste allgemeine Antragsphase vom **01.01. bis 15.02.2027**, fördert aber nur konkrete inklusive und partizipative Vorhaben; allgemeine interne Digitalisierung oder Organisationsentwicklung reicht nicht. Ein Finanzamtsbescheid zum Nachweis der Gemeinnützigkeit ist bereits bei Antragstellung erforderlich.
+- „Gut Beraten!“ läuft noch bis **31.10.2026** und finanziert bis zu 4.000 € externe Beratung, ist aber auf konkrete Bürgerbeteiligungsprojekte in Quartiersentwicklung, ländlichem Raum, Mobilität oder Energie/Klimaschutz begrenzt. Der heutige Projektscope ist dafür nicht hinreichend konkret; keine künstliche Umdeutung.
+- DSEE 100xDigital und Mikroförderung bleiben mangels bestätigter offener passender Runde Beobachtungsposten.
+- Der Nachweis des Hauptvereins vom 27.07.2026 beseitigt den früheren pauschalen Nachweisblocker, ersetzt aber nicht die programmspezifische Prüfung von Nachweistyp, Aktualität, Rechtsträger und Einreichungszeitpunkt.
+
+Primärquellen: https://www.aktion-mensch.de/foerderung · https://www.aktion-mensch.de/foerderung/angebote/schnell-check · https://allianz-fuer-beteiligung.de/foerderprogramme/gut-beraten/
+
 ## Förderupdate 13.10.2026
 
 - **OPP-011 Sportverein der Zukunft / BASF:** Bewerbung und Digital-Check am 13.10.2026 vom Veranstalter bestätigt; Auswahl für 20 Coaching-Plätze offen. Förderung: 18 Monate Coaching, bis 2.000 €, maximal 80 %; mindestens 20 % Eigenanteil.
