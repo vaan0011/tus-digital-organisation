@@ -1,6 +1,6 @@
 # Funding Current State
 
-**Stand:** 2026-10-13 – BASF-Einreichungsbestätigung ergänzt
+**Stand:** 2026-10-16 – Historienarchiv-Vorfrist eskaliert; Sportparkteam-Vorabklärung synchronisiert
 
 ## Operativer Status
 
@@ -39,11 +39,12 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
    - technischer Scope und Kosten fehlen.
 
 5. **OPP-003 – Historienarchiv × Stiftung Kulturgut Baden-Württemberg: B+ – konkret vorbereiten**
-   - nächster Stichtag 31.01.2027; interne Vorabskizze/Beratung bis **15.10.2026**.
-   - institutionelle Eignung und Publikations-/Datenbankweg vor Vollantrag klären.
+   - nächster Stichtag 31.01.2027; die interne Vorfrist 15.10.2026 ist ohne dokumentierte fertige Vorabskizze verstrichen.
+   - **Sofort-Gate:** entscheiden, ob der Stichtag 31.01.2027 weiter verfolgt wird; bei Go EVALAG-Vorabskizze und institutionellen Vorabcheck jetzt abschließen.
 
 6. **OPP-004 – Arbeitsplatz Sportparkteam × § 16i/§ 16e SGB II: B+ – vorabklären**
-   - individuelle Förderfähigkeit offen; kein Arbeitsvertrag vor positiver Jobcenter-Rückmeldung.
+   - Arbeitgeber-Vorabklärung für zwei Personen wurde am 13.10.2026 versendet; individuelle Förderfähigkeit, Instrument, Dauer und Förderhöhe bleiben offen.
+   - Kein Arbeitsvertrag vor schriftlich positiver Jobcenter-Rückmeldung.
 
 7. **OPP-009 – Volksbank Kraichgau Heimatverbunden: B+ – konkret vorbereiten**
    - laufende Plattform ohne allgemeine Frist; Konto-, Rechtsträger- und Nachweisakzeptanz vor Projektanlage klären.
@@ -52,8 +53,9 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 
 - **M.E.N.S.: B.** Bewerbung 01.11.2026–31.03.2027; mindestens zwei BSB-Nord-Mitgliedsvereine und gültiger Freistellungsbescheid mit Zweck Förderung des Sports. Der Jugendförderverein ersetzt den zweiten BSB-Nord-Verein nicht.
 - DSEE 100xDigital: 2026 geschlossen; nächste Ausschreibung beobachten.
+- Aktion Mensch: nächste Antragsphase **01.01.–15.02.2027**; nur bei realem inklusivem Vorhaben. Gemeinnützigkeitsnachweis als Finanzamtsbescheid bei Antragstellung erforderlich; kein allgemeiner Digitalisierungsfit.
 - DSEE Mikroförderprogramm: nur bei realem Engagementprojekt und positivem Standort-/Nachweis-Gate.
-- EconSocial Sport ist für den LED Media Screen eine Finanzierungs-/Vermarktungsalternative, kein Zuschussprogramm. Erstgespräch am 16.10.2026 um 09:45 Uhr per Videocall; Werberechte, Gebiet, Vertragsbindung und Nebenkosten sind die zentralen Gates.
+- EconSocial Sport bleibt für den LED Media Screen eine Finanzierungs-/Vermarktungsalternative, kein Zuschussprogramm. Das Ergebnis des für 16.10.2026 angesetzten Erstgesprächs ist in den Förderquellen nicht dokumentiert und wird nicht als Förderfortschritt gewertet.
 
 ## Geschlossen / laufend
 
@@ -64,13 +66,13 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 
 ## Aktuelle Queue
 
-1. **BASF:** Bewerbung vom 13.10. bestätigt; Auswahlentscheidung abwarten und Eingang einer Nachricht dokumentieren.
-2. **Bis 15.10.:** Historienarchiv-Vorabskizze für EVALAG fertigstellen.
-3. **Bis 16.10. 09:45:** EconSocial-Erstgespräch vorbereiten; keine Zusage im Gespräch.
+1. **Historienarchiv – überfällig:** Go/No-Go für den Stichtag 31.01.2027 treffen; bei Go die EVALAG-Vorabskizze und institutionelle Vorabfrage sofort abschließen.
+2. **BASF:** Bewerbung vom 13.10. bestätigt; Auswahlentscheidung abwarten und Eingang einer Nachricht dokumentieren.
+3. **Sportparkteam:** schriftliche Jobcenter-Antwort für beide Personen getrennt abwarten und dokumentieren; vorher keine Arbeitsverträge.
 4. Aktionstaler: Projekt-Owner, Aktionsscope, Budget und kommunale Stellungnahme festziehen.
 5. **REWE:** laut Nutzer eigenständig im Griff; keine weiteren Erinnerungen oder operativen Rückfragen.
 
-## Heute verifizierte Primärquellen
+## Am 16.10.2026 verifizierte Primärquellen
 
 - BASF/Two Circles Digital-Check: https://sportverein-der-zukunft.de/digital-check/
 - BASF Projektförderung: https://sportverein-der-zukunft.de/projektfoerderung/
@@ -79,4 +81,8 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 - BSB Sportgeräte: https://www.badischer-sportbund.de/zuschuesse/sportgeraete/
 - BSB Sportstätten: https://www.badischer-sportbund.de/zuschuesse/sportstaetten/
 - Stiftung Kulturgut: https://mwk.baden-wuerttemberg.de/de/kunst-kultur/kultursparten/archivwesen-und-kulturgut
+- Aktion Mensch – Förderzyklen: https://www.aktion-mensch.de/foerderung
+- Aktion Mensch – Förderfähigkeit/Nachweis: https://www.aktion-mensch.de/foerderung/angebote/schnell-check
+- Aktion Mensch – Förderfinder: https://www.aktion-mensch.de/foerderung/angebote/foerderfinder
+- Gut Beraten!: https://allianz-fuer-beteiligung.de/foerderprogramme/gut-beraten/
 - EconSocial Sport: https://econsocial-sport.de/
