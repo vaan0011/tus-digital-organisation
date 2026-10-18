@@ -1,140 +1,172 @@
-# Ehrenamt stärken – Zusammenarbeit von Menschen und digitalen Mitarbeitern
+# Wissensdossier: Stärkenorientiertes Ehrenamt und Zusammenarbeit mit digitalen Mitarbeitern
 
 **Stand:** 18.10.2026  
-**Status:** Konkreter Organisationsvorschlag mit Pilotplan; noch keine Vorstandsfreigabe, keine neue Rolle, kein neues IT-Projekt.  
-**Geltungsbereich:** Vereinsentwicklung, Ehrenamtskoordination und die Schnittstellen zu bestehenden Projekten, Fachrollen und digitalen Mitarbeitern.
+**Status:** Externer Lernimpuls / interne Analyse. **Keine beschlossene Organisationsänderung, kein Pilot, keine Aufgabenvergabe, keine neue Rolle.**  
+**Zweck:** Das Wissen aus dem Podcast *Vereinsstrategen* für die TuS Digital Organisation sichern, von eigenen Hypothesen unterscheiden und für spätere Verbesserungen wiederauffindbar machen.
 
-## 1. Ausgangspunkt und Ziel
+## 1. Quelle und Aussagequalität
 
-Der TuS ist ein Sportverein, keine IT-Abteilung. Die digitale Organisation soll den Menschen mehr Zeit für Sport, Gemeinschaft, persönliche Beziehungen und Freude am Ehrenamt ermöglichen. Nicht jede Aufgabe braucht einen Amtsinhaber und nicht jeder engagierte Mensch möchte eine Dauerverpflichtung.
+- **Primärimpuls:** Vereinsstrategen, Folge 174, „Typgerecht engagieren: Das Geheimnis dauerhafter Vereinsbindung“, veröffentlicht am 06.10.2026, ca. 40 Minuten: https://podcasts.apple.com/de/podcast/vereinsstrategen/id1541848175?i=1000793357409
+- **Quellenstatus am 18.10.2026:** Episodenbeschreibung auf Apple Podcasts und weiteren Podcast-Verzeichnissen verifiziert. Ein vollständig zugängliches, zuverlässig überprüftes Transkript dieser Episode war bei der erneuten Recherche **nicht verfügbar**. Deshalb werden unten keine genauen Zitate oder Zeitmarken behauptet. Die Aussagen über die Folge beschränken sich auf belegte Themen; alle weitergehenden Schlussfolgerungen sind ausdrücklich **TuS-Interpretationen**.
+- **Belegte Themen aus der Episodenbeschreibung:** Big-Five-/OCEAN-Modell, Passung zwischen Persönlichkeitsmerkmalen und ehrenamtlichen Aufgaben (u. a. Finanzen, Jugendleitung, Sponsoring), Risiko unpassender Aufgaben und Überforderung. Das Modell ist keine verlässliche alleinige Entscheidungshilfe zur Besetzung von Vereinsämtern.
+- **Angrenzende, getrennte Quelle:** Vereinsstrategen, Folge 170 vom 11.08.2026, „Die 5 größten Fehler bei der Ehrenamtsgewinnung – und wie du sie vermeidest“; diese thematisiert laut Episodenbeschreibung kleinere Aufgabenpakete, persönliche Ansprache, flexible Strukturen und Engagementförderung. Diese Punkte **nicht fälschlich als wortgleiche Aussagen aus Folge 174 ausgeben**.
+- **Eigenes TuS-Lernen:** Die praktische Ableitung für Ehrenamt, Organisation, digitale Rollen und Prozesse steht unten. Sie ist keine übernommene Handlungsanweisung des Podcasts.
 
-**Leitsatz:** Wir verteilen Vereinsarbeit nicht nur nach Verfügbarkeit, sondern bieten freiwillige, überschaubare Aufgaben an, die zu Interessen, Fähigkeiten und zeitlichen Möglichkeiten passen.
+## 2. Kernlernen und Abgrenzung
 
-Dies ergänzt die bereits geltenden Prinzipien „Der Mensch steht vor der Aufgabe“, „Menschen werden unterstützt, nicht ersetzt“ und „Organisation vor Technologie“. Satzungsmäßige Zuständigkeiten, Schutzpflichten und rechtliche Verantwortlichkeiten werden dadurch **nicht** geändert.
+**Arbeitsannahme für den TuS:** Nicht nur die verfügbare Zeit, sondern auch Interesse, Eignung für die konkrete Tätigkeit, Freude, Autonomie, Unterstützung und erlebte Belastung beeinflussen, ob Ehrenamt langfristig gelingt. Deshalb betrachten wir **Menschen UND Aufgaben UND Rahmenbedingungen**; wir reduzieren Motivation nicht auf ein Persönlichkeitsprofil.
 
-Der Impuls stammt aus dem Austausch zur Podcastfolge *Vereinsstrategen – Typgerecht engagieren: Das Geheimnis dauerhafter Vereinsbindung* (Oktober 2026). Die nachstehenden Maßnahmen sind **unsere eigene Ableitung für den TuS**, keine Übernahme eines vermeintlich verbindlichen Persönlichkeitstypsystems.
+Das Big-Five-Modell beschreibt Dimensionen, keine starren Menschentypen. Es darf nicht genutzt werden, um Menschen auf Kategorien festzulegen, ihre Leistungsfähigkeit zu diagnostizieren oder Aufgaben automatisch zuzuweisen. **Keine verpflichtenden Tests, verdeckten Profile, persönlichen Eignungsscores oder KI-gestützten Persönlichkeitsurteile.**
 
-## 2. Was sich für menschliche Ehrenamtliche ändert
+Eine hilfreiche Frage lautet: **„Wie gestalten wir diese Aufgabe so, dass jemand sie freiwillig, kompetent, gut unterstützt und mit Freude übernehmen kann?“** Das kann auch bedeuten, den Zuschnitt der Aufgabe zu ändern, nicht den Menschen.
 
-1. **Einstieg ohne Amt:** Interessierte können eine konkrete, befristete Aufgabe übernehmen, ohne eine Vorstands- oder Dauerfunktion ausfüllen zu müssen.
-2. **Wahlmöglichkeit:** Jede Person darf Themen, Aufgaben, Zeitrahmen und Grenzen selbst benennen – und ohne Rechtfertigung Nein sagen.
-3. **Klarer Auftrag:** Vor dem Start sind Ergebnis, Zeitbedarf, Ansprechperson, Zuständigkeit, Termin und notwendige Freigaben verständlich.
-4. **Persönliche Begleitung:** Ein menschlicher Ansprechpartner begrüßt, erklärt, beantwortet Fragen und bedankt sich; KI ersetzt diese Beziehung nicht.
-5. **Entlastung statt Unsichtbarkeit:** Wiederkehrende Verwaltung, Protokollierung, Terminabstimmungen und Erinnerungen werden, wo sinnvoll, durch digitale Mitarbeiter vorbereitet oder vereinfacht.
-6. **Faire Lastenverteilung:** Wiederholt belastete Personen werden in persönlichen Gesprächen nach Grenzen und Unterstützung gefragt. Keine Überwachung oder Bewertung ihres Verhaltens.
-7. **Lernen und Anerkennung:** Nach Aufgaben fragen wir kurz nach Freude, Hürden und Verbesserungsideen; auch kleine Beiträge werden sichtbar wertgeschätzt.
-8. **Verantwortung bleibt menschlich:** Satzungsämter, Kinder- und Jugendschutz, Konflikte, Auswahl von Personen, externe Zusagen und verbindliche Entscheidungen verbleiben bei den jeweils zuständigen Menschen.
+## 3. Fünf Linsen für jede zukünftige externe Lernerkenntnis
 
-Auch Menschen, die langfristig Verantwortung tragen wollen, brauchen verlässliche Rollen. Kleine Aufgabenpakete **ergänzen** dauerhafte Funktionen, statt sie pauschal zu ersetzen.
+Bei Podcasts, Fachartikeln, Beratungen oder Vereinserfahrungen sollte die Dokumentation dieselben Fragen beantworten.
 
-## 3. Was sich für digitale Mitarbeiter ändert
+### A. Delegation an digitale Mitarbeiter: Was kann weg von den Ehrenamtlichen?
 
-Digitale Mitarbeiter werden nicht daran gemessen, wie viele neue Workflows sie erzeugen, sondern daran, **wie viel echte Arbeit, Suchaufwand und Abstimmung sie menschlichen Kollegen abnehmen**.
+**Prüffragen:**
+- Welche zeitaufwendigen Teilaufgaben sind Recherche, Strukturierung, Entwurf, Abgleich, Erinnerung oder Dokumentation?
+- Welche Entscheidungen, Beziehungen, Freigaben, Aufsichts- und Schutzpflichten müssen bei Menschen bleiben?
+- Sind Quellen vorhanden und verlässlich? Ist die Handlung reversibel, überprüfbar und durch bestehende Rechte gedeckt?
+- Würde Digitalisierung echte Entlastung schaffen oder nur eine weitere Oberfläche und zusätzliche Pflege erzeugen?
 
-| Bestehende Rolle / Bereich | Konkrete Unterstützung | Klare Grenze |
-| --- | --- | --- |
-| **Sarah / Geschäftsstelle** | Hilfegesuche koordinieren, Aufgabenbeschreibungen vorbereiten, Ansprechpartner und Fristen aus vorhandenen Quellen zusammenführen, freundliche Kommunikationsentwürfe erstellen | Keine eigenständige Verpflichtung, Ansprache, Bewertung oder Zuteilung von Menschen ohne Freigabe |
-| **Event Planner / Veranstaltungen** | Festaufgaben nach Schichten, Vorbereitung, Einkauf, Bewirtung, Auf- und Abbau zerlegen; Aufgabenstatus und Übergaben pflegen | Ein menschlicher Eventverantwortlicher bestätigt Bedarf, Besetzung und Änderungen |
-| **Partnership Manager / Sponsoring** | Aufgaben für Akquise, Partnerpflege, Layout, CRM-Pflege und Medien voneinander trennen; Vorlagen und Nachbereitung übernehmen | Beziehung, Verhandlung, Zusagen und heikle Kontakte bleiben bei Menschen |
-| **Jugendkoordination / Trainerunterstützung** | Elternhilfen für Turniere, Fahrten und Veranstaltungen als kleine Pakete vorbereiten; Traineradministration reduzieren | Eltern-/Kinderdaten, Aufsicht, Schutzfälle und persönliche Gespräche nicht in offene KI-Queues |
-| **Project Portfolio Manager** | Bei bestehenden Vorhaben auf fehlende menschliche Zuständigkeit, unklare Aufgaben oder Doppelarbeit hinweisen | Kein zweites Ehrenamts-Projektmanagement und keine künstliche Statusänderung |
-| **Datenschutzrolle** | Vor einem Pilot mit personenbezogenen Daten Datenumfang, Berechtigungen, Aufbewahrung und geeignete Systeme prüfen | Keine frei zugängliche Talente-/Persönlichkeitsdatenbank, keine ungeprüften Integrationen |
+**Einteilung zur späteren Prüfung (keine neuen Berechtigungen):**
+1. **Digital vorbereiten:** z. B. unpersönliche Aufgabenbeschreibungen, Checklisten, Terminübersichten, Entwürfe, Informationen aus bestehenden Quellen zusammentragen.
+2. **Digital nach bestehender Freigabe unterstützen:** z. B. bestätigte Aufgabenstände dokumentieren, freigegebene Vorlagen nutzen, administrative Übergaben vorbereiten. Bestehende Approval-Regeln gelten weiterhin.
+3. **Menschlich verantworten:** z. B. Freiwillige gewinnen und persönlich ansprechen, Zusagen und Grenzen vereinbaren, Konflikte lösen, Sponsorenbeziehungen führen, Kinder- und Jugendschutz, amtliche oder rechtlich bindende Entscheidungen.
 
-**Arbeitsregel für alle digitalen Rollen:**
-- Aus vorhandenem Projekt- und Eventwissen zunächst **anonyme, unbesetzte Aufgabenpakete** ableiten.
-- Fehlende menschliche Verantwortliche oder offensichtlich zu große Aufgaben früh benennen.
-- Für Vorschläge nur freiwillig und zweckgebunden mitgeteilte Interessen/Verfügbarkeiten berücksichtigen; kein verborgenes Profiling, Ranking oder Big-Five-Scoring.
-- Vorschläge sind **Angebote an menschliche Koordinatoren**. Diese fragen Personen selbst und bestätigen die Zusage.
-- Nur die minimal nötigen Informationen speichern; keine privaten Angaben, Einschätzungen zu Motivation, Gesundheit oder Belastbarkeit in GitHub.
-- Bestehende Quellen verwenden: GitHub für allgemeine Regeln und anonyme Aufgabenmuster; geeignete geschützte Ablage für personenbezogene Daten; Event Planner bzw. bestehende Projektstruktur für konkrete Arbeit.
-- Keine neue App, Mitarbeiterrolle, Tabelle oder n8n-Automatisierung ohne nachgewiesenen Bedarf und Freigabe.
+**Lernpunkt:** Ein digitaler Mitarbeiter ist dann erfolgreich, wenn menschliche Kollegen spürbar weniger Verwaltungsaufwand haben – nicht wenn die KI möglichst viele Aktivitäten erzeugt.
 
-## 4. Zehn konkrete Verbesserungsmaßnahmen
+### B. Digitale Mitarbeiter und Rollen: Wohin gehört das Gelernte?
 
-**Status aller Punkte: vorgeschlagen, nicht als laufend oder beschlossen ausgeben.** Priorität ist eine Arbeitsempfehlung, keine vom Vorstand gesetzte Projektpriorität.
+Die bestehende Trennung im TuS-OS bleibt verbindlich:
+- **Organisationswissen / Wissensdossier:** Externe Impulse, Begründungen, Hypothesen und offene Fragen werden **zuerst hier** festgehalten.
+- **Bestehende Rollenbeschreibung:** Nur eine **dauerhafte, geprüfte** Änderung am fachlichen Auftrag, an Grenzen, Verantwortung oder Definition of Done wird dort später aufgenommen. Ein Podcast allein begründet keine neue Rolle.
+- **Rollenstandard / Prozessstandard:** Wiederholbare **validierte** Methode zur Ausführung einer Aufgabe oder Übergabe; nur bei erkennbarem Nutzen und mit Freigabe.
+- **Individuelle digitale Mitarbeiterakte:** Nur persönliche Konfiguration, zugewiesene Rollen, Fähigkeiten und Entwicklungsziele eines konkreten digitalen Mitarbeiters; keine Kopien der fachlichen Learnings.
+- **Projektzustand:** Nur wenn ein bestehendes Projekt durch echte Entscheidung oder konkrete Arbeit einen neuen Zustand bekommt.
+- **ADRs / verpflichtende Standards:** Nur bei einer tatsächlich getroffenen verbindlichen Entscheidung, nicht um einen externen Ratschlag automatisch zur Regel zu erheben.
 
-| Nr. | Priorität | Nächster Schritt | Vorgeschlagener Verantwortungsbereich | Ergebnis / Nachweis |
+**Entscheidungslogik:** Erkenntnis → auf TuS übertragen → bestehende Zuständigkeit finden → Passung und Grenzen prüfen → gegebenenfalls Regeländerung **vorschlagen** → nach Freigabe die kanonische Stelle ändern. Querverweis statt Duplikat. So arbeitet unser bestehender `standards/learning-loop.md`.
+
+### C. Interne Prozesse: Was könnten wir überdenken?
+
+| Möglicher Prozess-Lernpunkt (noch nicht eingeführt) | Kritische Prüf-Frage |
+| --- | --- |
+| Aufgaben von Amtsverantwortung unterscheiden | Welche Tätigkeiten benötigen wirklich ein dauerhaftes Amt, welche sind freiwillige Teilaufgaben? |
+| Umfang und Ergebnis sichtbar machen | Ist für einen Helfer klar, was zu tun ist, wie lange es ungefähr dauert, wer entscheidet und wann es fertig ist? |
+| Angebote statt Druck | Können Mitglieder zusagen oder ohne soziale Nachteile ablehnen? |
+| Übergaben und Einarbeitung vereinfachen | Wie findet ein neuer Mensch ohne Insiderwissen die wichtigsten Informationen? |
+| Ausnahmen und Verantwortung erkennen | Wo darf die KI Entwürfe vorbereiten, aber nicht eigenständig mit Personen disponieren oder Zusagen machen? |
+| Entlastung als Qualitätskriterium nutzen | Reduziert die digitale Unterstützung tatsächlich Zeit, Doppelpflege, Unterbrechungen oder Sucharbeit? |
+| Lernen aus Erfahrung | Fragen wir nach gelungenen Aufgaben, Frustration und Verbesserung – ohne Menschen zu überwachen? |
+
+**Wichtig:** Dies sind Prüfperspektiven, **keine** neuen Arbeitsanweisungen an Trainer, Jugend, Sponsoring oder Vorstand.
+
+### D. Menschliche Ehrenamtliche: Was lernen wir über Zusammenarbeit?
+
+- Menschen haben verschiedene Motive und Talente. Freiwillig geäußerte Interessen sind nützlicher als von KI zugewiesene Typen.
+- Der Zuschnitt einer Aufgabe und die soziale Umgebung lassen sich verändern. „Fehlbesetzung“ muss kein Makel des Menschen sein.
+- Zugehörigkeit, Wertschätzung und persönliche Ansprache können nicht an eine Datenbank delegiert werden.
+- Wiederkehrend engagierte Personen brauchen echte Mitgestaltung und die Möglichkeit, Grenzen zu setzen.
+- Wenige Menschen sollen nicht deshalb immer mehr tragen, weil sie verlässlich sind; faire Verteilung ist Organisationsverantwortung.
+- Kleinere Beiträge und dauerhafte Ämter sind **komplementär**. Ehrenamt darf nicht auf isolierte Mikroaufgaben reduziert werden.
+- Jede spätere Erfassung individueller Interessen, Kontaktdaten oder Verfügbarkeiten braucht ein transparentes, datensparsames Verfahren. Keine Speicherung persönlicher Profile in GitHub.
+
+**Nicht beschlossene Fragen an uns:** Wissen wir, welche Vereinsaufgaben als sinnstiftend oder frustrierend erlebt werden? Ist die Arbeit freiwillig gestaltbar? Welche Bedingungen erleichtern es Menschen, sich einzubringen? Diese Fragen werden hier festgehalten, **ohne** bereits Befragungen oder Personenevaluationen anzustoßen.
+
+### E. Grenzen, Risiken und Evidenz
+
+- Die Episodenbeschreibung ist eine Informationsquelle, keine empirische Bewertung für den TuS.
+- Psychologische Modelle liefern mögliche Gesprächsanregungen, keine Zuweisungsalgorithmen oder Garantien gegen Burnout.
+- KI ist bei Informationen über konkrete Personen besonders vorsichtig einzusetzen; keine vertraulichen Notizen, psychologischen Einschätzungen oder Jugend-/Kinderdaten in offenen Rollen-Queues.
+- Alle späteren Prozessänderungen unterliegen dem bestehenden `approval-and-escalation.md` und den Zuständigkeiten des Vereins.
+
+## 4. Betroffene bestehende digitale Rollen: Lernhinweise, keine sofortigen Rollenanpassungen
+
+| Rolle / Verantwortung | Relevantes Lernen | Potenziell delegierbarer Anteil | Bleibt bei Menschen / Grenze | Dokumentationsziel *erst bei Bestätigung* |
 | --- | --- | --- | --- | --- |
-| 1 | P1 | In Sponsoring, Veranstaltungen und Jugend je 1–2 Gespräche mit aktiven Helfern führen: Was kostet unnötig Zeit, wo fehlt Entlastung? | Vereinsentwicklung + jeweilige menschliche Bereichsleitung | Kurze Problemliste ohne personenbezogene Bewertungen |
-| 2 | P1 | Aus bestehenden Arbeiten zunächst 10–15 kleine Helfer-Aufgaben identifizieren | Jeweilige Fachverantwortliche; Sarah entwirft | Einfacher Aufgabenpool, keine neue Plattform |
-| 3 | P1 | Für jedes Paket Ergebnis, Dauer, Termin, Ansprechpartner, Einarbeitung und Freigabe dokumentieren | Fachverantwortliche; digitale Unterstützung | Wiederverwendbare Aufgabenkarte |
-| 4 | P1 | Vor dem Test einen menschlichen Pilot-Koordinator sowie Stellvertretung bestimmen | Vorstand / Vereinsentwicklung | Benannte Zuständigkeit; kein „alle kümmern sich“ |
-| 5 | P1 | Datenschutz und Zugriffe klären, bevor Namen, Interessen oder Zusagen zentral erfasst werden | Datenschutz + Vorstand | Freigegebener Minimalprozess und Ablageort |
-| 6 | P2 | Freiwillige persönlich und über bestehende Vereinskanäle für **konkrete** Aufgaben ansprechen | Jugend-/Event-/Sponsoringverantwortliche | Erste freiwillige Zusagen, ohne Druck |
-| 7 | P2 | Einfache Einführung: Wer hilft? Was ist zu tun? Wen frage ich? Woran erkenne ich „fertig“? | Fachverantwortliche + Sarah | 1-seitige Checkliste / Buddy-Prinzip |
-| 8 | P2 | Pro Pilotbereich eine wirklich lästige Verwaltungsroutine durch vorhandene digitale Mitarbeiter vereinfachen | Jeweilige digitale Fachrolle + menschlicher Owner | Vergleich Vorher/Nachher; keine neue Insellösung |
-| 9 | P2 | Zusagen und Überschneidungen sichtbar machen; bei Mehrfachbelastung **persönlich** nach Unterstützung fragen | Menschlicher Pilot-Koordinator | Weniger unangekündigte Zusatzaufgaben |
-| 10 | P3 | Nach Pilotende kurze Rückmeldungen einholen und über Fortführung entscheiden | Vereinsentwicklung + Vorstand | Lernnotiz und Entscheidung: fortführen, ändern oder beenden |
+| **Sarah / Geschäftsstelle** | Freiwillige sollen von unnötiger Administration entlastet werden | Neutrale Aufgabenentwürfe, Orientierung aus vorhandenen Quellen, Übergabevorbereitung | Persönliche Ansprache, verbindliche Zusage, Datensparsamkeit | Gemeinsamer Organisations-/Arbeitsstandard, nicht Mitarbeiterpersönlichkeit |
+| **Event Planner / Veranstaltungsorganisation** | Ein großes Ehrenamt besteht aus unterschiedlichen Tätigkeiten | Funktionale Aufgabenstruktur, Vorlagen, Schicht- und Materialentwürfe | Helferzusagen, Einsatzentscheidungen, persönliche Betreuung | Bestehender Event-Prozess / fachliches Plugin |
+| **Partnership Manager** | Akquise, Beziehungspflege und Administration brauchen unterschiedliche Stärken | Briefings, Vorlagen, Dokumentation und Recherche | Beziehung, Verhandlung, Zusagen | Bestehender Rollenstandard, falls dauerhaft nützlich |
+| **Jugendbereich / Trainerorganisation** | Entlastung und sinnvolle Beteiligung von Eltern und Unterstützern | Allgemeine Helferinformationen und Einarbeitungsvorlagen | Aufsicht, persönliche Führung, Jugendschutz, sensible Daten | Bestehender Jugendprozess, sofern vorhanden und fachlich freigegeben |
+| **Project Portfolio Manager** | Transparenz über Aufwand und Verantwortungsgrenzen hilft der Organisation | Auf fehlende Rollen/Owner oder unklare Schnittstellen in Projekten hinweisen | Keine Personalauswahl, kein zweites Ehrenamts-Tracking | Vorhandener Portfolio-Standard, nur bei relevanter dauerhafter Änderung |
+| **Data Protection Manager** | Fähigkeiten und Verfügbarkeiten können personenbezogen und schutzbedürftig sein | Datenschutzfolgen und zulässige Datenflüsse vorab analysieren | Rechtsgrundlagen/Freigaben nicht durch KI ersetzen | Datenschutzstandard, wenn ein konkreter Verarbeitungsprozess entschieden wurde |
 
-### Minimale Aufgabenkarte
+**Keine neue Rolle „Ehrenamtsagent“ ableiten.** Die Fragestellung ist bereichsübergreifend; erst wenn in realer Arbeit eine eigenständige dauerhafte Verantwortung erkennbar wird, wäre eine neue Rolle überhaupt zu prüfen.
 
-- **Aufgabe / Nutzen für den TuS:** Was wird konkret besser?
-- **Ergebnis / Definition of Done:** Woran ist die Aufgabe fertig?
-- **Wann / Zeitumfang:** Termin, Dauer bzw. Schicht; Schätzung als solche kennzeichnen.
-- **Geeignet für:** Hilfreiche Fähigkeiten oder Interessen; keine zwingenden Persönlichkeitstypen.
-- **Kontakt / Freigabe:** Menschlicher Ansprechpartner und entscheidungsbefugte Person.
-- **Unterstützung:** Vorlagen, Anleitungen, digitale Zuarbeit.
-- **Grenzen:** Was gehört ausdrücklich nicht zur Aufgabe?
-- **Besetzung:** Erst nach freiwilliger Zusage im dafür freigegebenen System; keine Namensdaten in GitHub.
+## 5. Struktur eines wiederverwendbaren Lernbausteins
 
-### Erste Beispielpakete (zur fachlichen Validierung)
+Die folgenden Felder dienen als **Dokumentationsformat** für relevante externe Impulse – **kein** automatischer Erfassungsauftrag und keine zusätzliche Datenbank:
 
-- **Fankurve / Sponsoring:** Zwei Anzeigen druckfertig vorbereiten; Designstandard und Freigabe beim verantwortlichen Redaktionsteam.
-- **Partnerbetreuung:** Für eine bestehende Veranstaltung Partnerleistungen aus vereinbarten Unterlagen prüfen und fehlende Rückmeldungen an den menschlichen Ansprechpartner melden.
-- **Jugendturnier:** Eine zeitlich begrenzte Helferschicht koordinieren oder einen Aufbauabschnitt begleiten; Jugendverantwortliche behalten die Gesamtaufsicht.
-- **Sportpark:** Angebote für eine klar definierte Maßnahme einholen und vergleichbar aufbereiten; keine eigenständige Bestellung.
-- **Veranstaltungen:** Materialliste für ein konkretes Event aus Vorjahresunterlagen aufbereiten; Eventleitung prüft.
+| Feld | Inhalt |
+| --- | --- |
+| Quelle | Link, Titel, Datum, ggf. Zeitmarke nur bei geprüftem Original |
+| Originalaussage / Evidenzgrad | Was ist belegt? Beschreibung, geprüftes Transkript, Studie oder eigene Erfahrung? |
+| TuS-Interpretation | Warum könnte das für uns relevant sein? |
+| Betroffene Menschen | Welche ehrenamtlichen Erfahrungen und Belastungen berührt es? |
+| Delegationspotenzial | Digital vorbereiten / digital nach Freigabe unterstützen / menschlich belassen |
+| Prozessrelevanz | Welcher bestehende Ablauf oder welche Schnittstelle könnte verbessert werden? |
+| Rollenbezug | Welche **existierende** Rolle könnte lernen? Keine voreilige neue Rollenbeschreibung |
+| Risiken / Grenzen | Datenschutz, Verantwortung, Rechtslage, fachliche Unsicherheit, Aufwand |
+| Ablageziel | Fachwissen, Rollenstandard, Prozessdokument, Projekt oder Entscheidung – nur falls später bestätigt |
+| Reifegrad | **Quelle erfasst → Interpretation → zu prüfen → validiert → freigegeben → verankert** |
+| Entscheidung | Falls später entschieden: durch wen, wann, Verweis; sonst „offen“ |
 
-Das sind **Beispiele**, noch keine freigegebenen Besetzungen oder verbindlichen Zeitaufwände.
+## 6. Aus dieser Episode extrahierte Lernkarten
 
-## 5. Pilot über ca. 90 Tage – ohne neue App
+### L-174-01 – Passung statt bloßer Besetzung
+- **Quelle:** Folge 174, Episodenbeschreibung (Thema Big Five und Aufgabenpassung).
+- **TuS-Deutung:** Nicht ausschließlich die Stelle oder das Amt besetzen, sondern Aufgaben und Rahmenbedingungen an den Menschen denken.
+- **Menschen:** Passung, Freiwilligkeit, eigene Interessen und Grenzen achten.
+- **Digital:** Aufgaben *beschreiben*, nicht Personen automatisch als „geeignet“ einstufen.
+- **Prozess:** Rollen-/Aufgabenzuschnitt als Prüffrage.
+- **Reifegrad:** Interpretation; keine Einführungsentscheidung.
 
-| Phase | Schwerpunkt | Akzeptanzkriterium |
-| --- | --- | --- |
-| **Woche 1–2** | Bereichsverantwortliche, Engpässe und Aufgabenpakete klären | Pilot-Koordinator benannt; mindestens drei echte Engpässe beschrieben |
-| **Woche 3–4** | 10–15 Aufgabenentwürfe prüfen; freiwillige Ansprache und Datenschutzweg festlegen | Aufgaben sind verständlich und zuständig; kein personenbezogener Datenwildwuchs |
-| **Woche 5–8** | Erste kleine Aufgaben vergeben und digitale Zuarbeit testen | Tatsächlich erledigte Pakete und dokumentierte Reibungspunkte |
-| **Woche 9–12** | Mitwirkende persönlich befragen; Vereinfachungen und Fortsetzung entscheiden | Kurzes Review mit menschlicher Entscheidung |
+### L-174-02 – Überforderung als Organisationssignal
+- **Quelle:** Folge 174, Episodenbeschreibung (Thematisierung möglicher Überlastung).
+- **TuS-Deutung:** Überlastung kann auch von unklaren, unpassenden oder zu großen Paketen herrühren; Ursachen nicht allein bei Personen suchen.
+- **Menschen:** Persönliche Gespräche, Grenzen respektieren, keine verdeckte Erfassung.
+- **Digital:** Auf zu umfangreiche Aufgaben und fehlende Zuständigkeiten in sachlichen Prozessen hinweisen.
+- **Prozess:** Umfang, Handoffs und wiederkehrende Verwaltung kritisch betrachten.
+- **Reifegrad:** Interpretation; keine Diagnose und kein Monitoring.
 
-**Zu erheben (nur aggregiert und ohne Personenbewertung):** Anzahl angebotener/angenommener/abgeschlossener Aufgaben, Anzahl freiwillig neu Mitwirkender, wahrgenommene Entlastung, Zeitaufwand für Koordination, Gründe für nicht passende Pakete, Wunsch nach erneutem Mitwirken. **Vor dem Pilot** Ausgangslage soweit praktikabel ermitteln; keine angeblichen Ist-Werte erfinden.
+### L-174-03 – Persönlichkeitswissen als Perspektive, nicht Entscheidung
+- **Quelle:** Folge 174, Episodenbeschreibung (Big Five/OCEAN).
+- **TuS-Deutung:** Unterschiedliche Arbeitsweisen anerkennen. Persönlichkeit allein bestimmt keine Aufgabenfähigkeit und ersetzt kein persönliches Gespräch.
+- **Menschen:** Keine Etiketten oder Tests als Eintrittsbedingung.
+- **Digital:** Kein Big-Five-Scoring, kein Personalmatching auf vermuteten Eigenschaften.
+- **Prozess:** In späteren Rollen-/Aufgabenbeschreibungen allenfalls beobachtbare Anforderungen statt „ideale Typen“ benennen.
+- **Reifegrad:** Schutzleitlinie als **Vorschlag**, bestehende Datenschutz- und Freigaberegeln gelten unabhängig davon.
 
-**Erfolg ist nicht:** möglichst viele Profile anlegen, Freiwillige durch KI bewerten, jede private Stunde erfassen oder eine weitere Software einführen.
+### L-170-01 – Niedrigschwellige Aufgabenpakete *(andere Episode!)*
+- **Quelle:** Folge 170 vom 11.08.2026, Episodenbeschreibung; **nicht** Folge 174.
+- **TuS-Deutung:** Kleine Beiträge könnten Einstieg ermöglichen, ohne dass sofort ein Daueramt übernommen wird.
+- **Menschen:** Persönliche Einladung, freiwillige, klar begrenzte Beteiligung.
+- **Digital:** Aufgabenentwürfe, Informationsblätter und bestehende Planungsunterlagen strukturieren.
+- **Prozess:** Aufgabenpakete als mögliche Ergänzung zu Satzungsämtern.
+- **Reifegrad:** Interpretation; keine Beauftragung eines Pilotprojekts.
 
-**Erfolg ist:** Aufgaben werden verlässlicher erledigt, Menschen fühlen sich gehört und entlastet, neue Helfer können mit wenig Hürde beitragen.
+## 7. Was das Dokument *nicht* auslöst
 
-## 6. Schutz, Datenschutz und Grenzen
+1. Keine Befragung, keine Ansprache von Mitgliedern und keine Erfassung ihrer persönlichen Eigenschaften.
+2. Kein 90-Tage-Pilot, keine zehn priorisierten Umsetzungsaufgaben, keine Termine, Budgets oder Owner-Zuweisung.
+3. Keine neue Rolle, kein neuer digitaler Mitarbeiter, keine neue App, keine Runtime, kein n8n-Workflow.
+4. Keine eigenmächtige Änderung bestehender Rollenbeschreibungen oder verbindlicher Arbeitsstandards.
+5. Keine Änderung an bestehenden Projektständen; der verweisende Aufbauprojektstand bleibt unverändert fachlich.
 
-- **Freiwilligkeit und Zweckbindung:** Daten über Interessen und Zeitmöglichkeiten nur mit transparenter Information und passend geklärter Rechtsgrundlage verarbeiten; Einwilligung ist nicht pauschal für alle Verarbeitungen vorauszusetzen.
-- **Minimaldaten:** Wenn ein Helfer eine Aufgabe zusagt, brauchen zuständige Menschen primär Kontaktmöglichkeit, konkrete Aufgabe, Zeitraum und ggf. notwendige Qualifikation; keine Persönlichkeitsdiagnosen oder versteckten Eignungsnoten.
-- **Vertraulichkeit:** Namen, Kontaktangaben, interne Bewertungen und Kinder-/Elterndaten nicht in dieses Repository oder öffentlich sichtbare Aufgabenlisten schreiben.
-- **Recht und Schutz:** Jugend- und Kinderschutzprozesse, Datenschutz-/Verschwiegenheitspflichten, zuständige Vorstandsfreigaben und Aufsicht werden vom Pilot nicht ersetzt.
-- **Keine Automatik zur Ansprache oder Zuordnung:** Personenbezogene Matching-Vorschläge erst nach Freigabe des Verfahrens, nur transparent und nicht als bindende Entscheidung; anfänglich reicht menschliche Auswahl.
-- **Kein Leistungsüberwachungssystem:** Eine Aufgabe ist eine Zusage, kein Anlass für Überwachung oder Vergleiche von Ehrenamtlichen.
+**Künftiger Verwendungszweck:** Bei tatsächlichen späteren Vereinsentwicklungs-, Digitalisierungs- oder Prozessentscheidungen kann eine zuständige Person die relevanten Lernkarten lesen und entscheiden, ob daraus eine geprüfte Verbesserung wird.
 
-## 7. Einordnung in die bestehende Organisation
-
-- **Keine neue permanente Stelle „Ehrenamtsmanager“** und kein separates Projekt im Portfolio, solange ein zeitlich begrenzter Pilot innerhalb der bestehenden Vereinsentwicklung genügt.
-- Der Pilot gehört fachlich zur laufenden Aufbauarbeit der digitalen Vereinsorganisation, dort insbesondere zu **AP5 – Wirkung und Pilotierung**. Er berührt vorhandene Fachprojekte, ohne deren Scope, Owner, Status oder Budget zu ändern.
-- Der Event Planner bleibt das Werkzeug für Eventaufgaben. Das Projektportfolio bleibt Überblick, **kein** zusätzliches personenbezogenes Aufgabenregister.
-- Sarah und die Rollen unterstützen einen **menschlich verantworteten** Prozess. Die Einführung einer neuen technischen Datenhaltung ist eine spätere, separate Entscheidung.
-
-## 8. Offene Entscheidungen für den Vorstand
-
-1. **Pilot ja/nein?** Drei Bereiche gleichzeitig oder erst ein einziges Event?
-2. **Wer ist menschlicher Pilot-Koordinator und wer vertritt ihn/sie?** Keine Person wird hier ohne Zusage benannt.
-3. **Welche realen Termine und Aufgaben** eignen sich als erster Test?
-4. **Welche Systeme dürfen welche Daten enthalten?** Datenschutz prüft vor Aufnahme personenbezogener Daten.
-5. **Wann findet das Review statt** und wer entscheidet über die Fortführung?
-
-Bis dahin ist dieses Dokument ein **konkreter Verbesserungsvorschlag**, keine Freigabe, keine Personalmaßnahme und kein produktiver KI-Matching-Prozess.
-
-## Referenzen
+## 8. Bestehende Quellen im TuS-OS
 
 - [Leitprinzipien](guiding-principles.md)
+- [Organisationsprinzipien](organization-principles.md)
 - [TuS DNA](organization-dna.md)
-- [Organisationsmodell](organization-model.md)
-- [Mitarbeiter-Arbeitsstandard](../standards/employee-operating-standard.md)
-- [Freigaben und Eskalation](../standards/approval-and-escalation.md)
-- [Aufbau Digitale Vereinsorganisation – Projektstand](../projects/digital-organisation/PROJECT-STATE.md)
-- [Veranstaltungsorganisation 2026/27 – Projektstand](../projects/veranstaltungsorganisation-2026-27/PROJECT-STATE.md)
-- [Vereinsstrategen-Folge bei Apple Podcasts](https://podcasts.apple.com/de/podcast/vereinsstrategen/id1541848175?i=1000793357409)
+- [Rollenmodell](../roles/README.md)
+- [Digitale Mitarbeiter](../employees/README.md)
+- [Learning Loop](../standards/learning-loop.md)
+- [Arbeitsstandard](../standards/employee-operating-standard.md)
+- [Freigaben & Eskalationen](../standards/approval-and-escalation.md)
+- [Aufbau Digitale Vereinsorganisation](../projects/digital-organisation/PROJECT-STATE.md)
