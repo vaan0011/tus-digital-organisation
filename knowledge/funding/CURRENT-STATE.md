@@ -1,6 +1,6 @@
 # Funding Current State
 
-**Stand:** 2026-10-16 – Historienarchiv-Vorfrist eskaliert; Sportparkteam-Vorabklärung synchronisiert
+**Stand:** 2026-10-18 – BASF-Einreichung fristgerecht; M.E.N.S.- und Aktion-Mensch-Termine verifiziert
 
 ## Operativer Status
 
@@ -51,9 +51,9 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 
 ## Strategisch vorbereiten / beobachten
 
-- **M.E.N.S.: B.** Bewerbung 01.11.2026–31.03.2027; mindestens zwei BSB-Nord-Mitgliedsvereine und gültiger Freistellungsbescheid mit Zweck Förderung des Sports. Der Jugendförderverein ersetzt den zweiten BSB-Nord-Verein nicht.
+- **M.E.N.S.: B.** Bewerbung 01.11.2026–31.03.2027; Unterlagen ab 01.11. verfügbar. Mindestens zwei seit drei Jahren zugehörige BSB-Nord-Mitgliedsvereine und gültiger Körperschaftsteuer-Freistellungsbescheid mit Zweck Förderung des Sports. Förderfähig ist eine neue gemeinsame Stelle: maximal 50 % der Personalkosten im ersten und 30 % im zweiten Beschäftigungsjahr, bei Vollzeit höchstens 50.000 € über zwei Jahre; Teilzeit anteilig. Ohne identifizierten Partnerverein keine B+-Hochstufung.
 - DSEE 100xDigital: 2026 geschlossen; nächste Ausschreibung beobachten.
-- Aktion Mensch: nächste Antragsphase **01.01.–15.02.2027**; nur bei realem inklusivem Vorhaben. Gemeinnützigkeitsnachweis als Finanzamtsbescheid bei Antragstellung erforderlich; kein allgemeiner Digitalisierungsfit.
+- Aktion Mensch: nächste Antragsphase **01.01.–15.02.2027**; zusätzliche Förderangebote werden offiziell am **02.11.2026** veröffentlicht. Nur bei realem inklusivem Vorhaben. Gemeinnützigkeitsnachweis als Finanzamtsbescheid bei Antragstellung erforderlich; kein allgemeiner Digitalisierungsfit.
 - DSEE Mikroförderprogramm: nur bei realem Engagementprojekt und positivem Standort-/Nachweis-Gate.
 - EconSocial Sport bleibt für den LED Media Screen eine Finanzierungs-/Vermarktungsalternative, kein Zuschussprogramm. Das Ergebnis des für 16.10.2026 angesetzten Erstgesprächs ist in den Förderquellen nicht dokumentiert und wird nicht als Förderfortschritt gewertet.
 
@@ -67,12 +67,12 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 ## Aktuelle Queue
 
 1. **Historienarchiv – überfällig:** Go/No-Go für den Stichtag 31.01.2027 treffen; bei Go die EVALAG-Vorabskizze und institutionelle Vorabfrage sofort abschließen.
-2. **BASF:** Bewerbung vom 13.10. bestätigt; Auswahlentscheidung abwarten und Eingang einer Nachricht dokumentieren.
+2. **BASF:** Bewerbung vom 13.10. bestätigt und damit vor dem Fristende 18.10. eingereicht; Auswahlentscheidung abwarten und Eingang einer Nachricht dokumentieren.
 3. **Sportparkteam:** schriftliche Jobcenter-Antwort für beide Personen getrennt abwarten und dokumentieren; vorher keine Arbeitsverträge.
 4. Aktionstaler: Projekt-Owner, Aktionsscope, Budget und kommunale Stellungnahme festziehen.
 5. **REWE:** laut Nutzer eigenständig im Griff; keine weiteren Erinnerungen oder operativen Rückfragen.
 
-## Am 16.10.2026 verifizierte Primärquellen
+## Am 18.10.2026 verifizierte Primärquellen
 
 - BASF/Two Circles Digital-Check: https://sportverein-der-zukunft.de/digital-check/
 - BASF Projektförderung: https://sportverein-der-zukunft.de/projektfoerderung/
@@ -84,5 +84,7 @@ Für den Turn- und Sportverein 1901 e. V. Bad Mingolsheim liegt die Anlage zum K
 - Aktion Mensch – Förderzyklen: https://www.aktion-mensch.de/foerderung
 - Aktion Mensch – Förderfähigkeit/Nachweis: https://www.aktion-mensch.de/foerderung/angebote/schnell-check
 - Aktion Mensch – Förderfinder: https://www.aktion-mensch.de/foerderung/angebote/foerderfinder
+- Aktion Mensch – neue Förderangebote/Termine: https://www.aktion-mensch.de/foerderung/beratung/aktuelles
+- BSB Nord M.E.N.S.: https://www.badischer-sportbund.de/zuschuesse/mens/
 - Gut Beraten!: https://allianz-fuer-beteiligung.de/foerderprogramme/gut-beraten/
 - EconSocial Sport: https://econsocial-sport.de/
