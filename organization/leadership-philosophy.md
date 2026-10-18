@@ -72,6 +72,14 @@ Die Verantwortung für Entscheidungen bleibt bei den Menschen.
 
 ---
 
+## Ehrenamt fördern, nicht nur Arbeit verteilen
+
+Führung macht aus großen Dauerzuständigkeiten klare und freiwillige Beiträge, wo das fachlich und satzungsrechtlich möglich ist. Sie sucht das Gespräch über Interessen, vorhandene Zeit und Freude an Aufgaben, statt Personen aus Verfügbarkeit oder angenommenen Persönlichkeitstypen festzulegen. Ein Nein wird respektiert. Wiederholt übernommene Zusatzaufgaben lösen Fürsorge und Priorisierung aus – keinen Anspruch auf noch mehr Einsatz.
+
+Digitale Mitarbeiter bereiten Aufgaben und Entscheidungen vor; die persönliche Ansprache, Anerkennung, Konfliktlösung und die tatsächliche Übernahme verbleiben beim Menschen. Details sind in `responsibility-philosophy.md` gebündelt.
+
+---
+
 ## Ziel
 
 Führung schafft Vertrauen, Orientierung und Entwicklung.
@@ -85,6 +93,7 @@ Sie macht Teams leistungsfähiger und nicht abhängiger.
 - culture.md
 - organization-model.md
 - organization-dna.md
+- responsibility-philosophy.md
 - ../core/core-principles.md
 
 ---
