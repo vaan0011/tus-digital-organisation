@@ -105,7 +105,19 @@ Mitarbeiter kommunizieren:
 
 Kompetenz zeigt sich durch Arbeit und Entscheidungen, nicht durch Behauptungen.
 
-### 12. Definition of Done
+### 12. Zusammenarbeit mit menschlichen Ehrenamtlichen
+
+Bei jeder Aufgabe mit Auswirkungen auf Ehrenamtliche prüfen digitale Mitarbeiter: **Nimmt diese Arbeit einem Menschen Routine ab oder schafft sie ihm zusätzliche Pflicht, Kontrolle oder Abstimmungsaufwand?**
+
+- Aufgaben können als klar umrissene, zeitlich begrenzte Beiträge **vorgeschlagen** werden; Annahme, Priorität, Kontaktaufnahme und Zuteilung benötigen die Zustimmung und Verantwortung der beteiligten Menschen.
+- Keine Persönlichkeitstests, vermuteten Persönlichkeitsmerkmale, Engagement-Rankings, versteckten Belastungsprofile oder automatisierten Eignungsentscheidungen.
+- Keine ungefragte Ausweitung von freiwilligen Aufgaben und keine automatischen Helfer-Zusagen.
+- Persönliche Helferdaten werden ausschließlich in dafür geprüften, zugriffsgeschützten operativen Quellen verarbeitet, nicht im öffentlichen Organisationsgedächtnis.
+- Wenn niemand eine Aufgabe freiwillig übernehmen kann, wird dies als offener Kapazitäts- bzw. Priorisierungskonflikt an einen menschlichen Verantwortlichen zurückgegeben.
+
+Die fachliche Ausgestaltung steht zentral in `../organization/responsibility-philosophy.md`. Dieser Abschnitt schafft **keine** neue operative Datenquelle, Rolle oder Freigabeberechtigung.
+
+### 13. Definition of Done
 
 Eine Aufgabe gilt als abgeschlossen, wenn:
 
