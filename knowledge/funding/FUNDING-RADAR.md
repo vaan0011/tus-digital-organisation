@@ -1,6 +1,6 @@
 # TuS Funding Radar
 
-**Stand:** 2026-10-16 – aktualisierter Projekt-/Programm-Abgleich einschließlich Web-Recherche
+**Stand:** 2026-10-18 – Primärquellen-Refresh; kein neuer A-/B+-Treffer
 
 > Erst Vereinsprojekt, dann Förderprogramm. Ein Vorhaben wird nicht für eine Ausschreibung verbogen.
 
@@ -16,11 +16,11 @@
 | OPP-004 | Arbeitsplatz Sportparkteam | § 16i / § 16e SGB II | Bund / Jobcenter | **B+** | individuelle Förderfähigkeit offen; kein Vertrag vor Zusage |
 | OPP-009 | geeignete konkrete TuS-Projekte | Volksbank Heimatverbunden | regional / Unternehmen | **B+** | laufend; Konto/Rechtsträger/Nachweis zuerst klären |
 
-## Ergänzend geprüfte Programme – Stand 16.10.2026
+## Ergänzend geprüfte Programme – Stand 18.10.2026
 
 | Programm | TuS-Projektfit | Einstufung / nächstes Gate |
 |---|---|---|
-| **Aktion Mensch: Sport und Kultur vor Ort – Miteinander Begegnung schaffen** | Nur ein konkretes neues inklusives Sport-/Kulturangebot mit echter Teilhabe und Partizipation; kein allgemeiner Digitalisierungs- oder Organisationsfit | **B – Projekt-Gate zuerst.** Nächste allgemeine Antragsphase 01.01.–15.02.2027. Aktion Mensch verlangt bei Antragstellung einen Gemeinnützigkeitsnachweis als Bescheid des Finanzamts; der TuS-Nachweis vom 27.07.2026 ist grundsätzlich passend, im konkreten DIAS-Antrag aber erneut zu prüfen. Ohne reales inklusives Vorhaben keine Hochstufung. |
+| **Aktion Mensch: Sport und Kultur vor Ort – Miteinander Begegnung schaffen** | Nur ein konkretes neues inklusives Sport-/Kulturangebot mit echter Teilhabe und Partizipation; kein allgemeiner Digitalisierungs- oder Organisationsfit | **B – Projekt-Gate zuerst.** Nächste allgemeine Antragsphase 01.01.–15.02.2027; zusätzliche Förderangebote werden am 02.11.2026 veröffentlicht. Aktion Mensch verlangt bei Antragstellung einen Gemeinnützigkeitsnachweis als Bescheid des Finanzamts; der TuS-Nachweis vom 27.07.2026 ist grundsätzlich passend, im konkreten DIAS-Antrag aber erneut zu prüfen. Ohne reales inklusives Vorhaben keine Hochstufung. |
 | **WLSB-Sportstiftung Förderpreise 2026** | Ehrenamts-/Generationenprojekt, digitale soziale Kompetenz, Nachhaltigkeit im Sportpark – nur bei nachweisbar realisiertem, vorbildhaftem Projekt | **B – konkrete Preisbewerbung prüfen**. Bewerbung bis **15.02.2027**; je Kategorie 4.000 € Hauptpreis bzw. zweimal 1.500 € Anerkennungspreis. Keine Investitionszusage und keine Projektförderung im Voraus. |
 | **LEADER Kraichgau – nächste Runde** | Jugendräume, gemeinschaftliche Sportpark-/Vereinsheim-Infrastruktur bei regionalem Mehrwert | **B – beobachten und Vorberatung**. Sechster Aufruf **30.09.2026 geschlossen**; neuer Aufruf nicht bestätigt. Gebietskulisse, Umsetzungsreife, Rechtsträger und Investitions-/Genehmigungslage vorab klären. |
 | **BSB Nord Integration durch Sport – nächste Runde** | Reale Integrationsmaßnahme mit jungen Menschen, Mädchen/Frauen, Menschen mit Migrationsgeschichte oder sozial Benachteiligten | **B – nächste Runde beobachten**. 2026 Antragsfrist **30.06.2026 abgelaufen**; keine 2027-Frist behaupten. |
@@ -34,6 +34,8 @@
 - https://www.aktion-mensch.de/foerderung
 - https://www.aktion-mensch.de/foerderung/angebote/foerderfinder
 - https://www.aktion-mensch.de/foerderung/angebote/schnell-check
+- https://www.aktion-mensch.de/foerderung/beratung/aktuelles
+- https://www.badischer-sportbund.de/zuschuesse/mens/
 - https://allianz-fuer-beteiligung.de/foerderprogramme/gut-beraten/
 - https://www.wlsb.de/geschaeftsstelle-stellenangebote-gremien-mitglied-werden/wlsb-sportstiftung/foerderung
 - https://www.kraichgau-gestalte-mit.de/sechster-leader-projektaufruf-der-lag-kraichgau/
@@ -47,7 +49,7 @@
 
 | Projektfeld | Programm / Weg | Bewertung | Gate |
 |---|---|---|---|
-| Vereinsorganisation / Ehrenamtsentlastung | M.E.N.S. | **B** | zweiter BSB-Nord-Mitgliedsverein + gültiger Sport-Freistellungsbescheid; 01.11.2026–31.03.2027 |
+| Vereinsorganisation / Ehrenamtsentlastung | M.E.N.S. | **B** | 01.11.2026–31.03.2027; mindestens zwei seit drei Jahren zugehörige BSB-Nord-Mitgliedsvereine. Neue gemeinsame Stelle: max. 50 % Personalkosten Jahr 1, 30 % Jahr 2; Vollzeit max. 50.000 € über zwei Jahre, Teilzeit anteilig. Gültiger Körperschaftsteuer-Freistellungsbescheid mit Sportzweck; zweiter Partnerverein fehlt. |
 | Digitale Vereinsorganisation | DSEE 100xDigital | **B – nächste Runde beobachten** | 2026 geschlossen; neue Ausschreibung abwarten |
 | Engagementprojekt | DSEE Mikroförderprogramm | **B** | reales Teilprojekt, Standortförderfähigkeit und aktueller Nachweis |
 | Kunstrasen / Bewässerung | BSB Sportstättenbau / Kommune / LEADER | **B** | Scope, Eigentum/Nutzung, Genehmigung, Kosten und Finanzierung fehlen |
@@ -84,5 +86,7 @@ Der Hauptverein verfügt seit 12.10.2026 über einen aktuellen, im Regelfall ver
 - https://mwk.baden-wuerttemberg.de/de/kunst-kultur/kultursparten/archivwesen-und-kulturgut
 - https://www.aktion-mensch.de/foerderung
 - https://www.aktion-mensch.de/foerderung/angebote/schnell-check
+- https://www.aktion-mensch.de/foerderung/beratung/aktuelles
+- https://www.badischer-sportbund.de/zuschuesse/mens/
 - https://allianz-fuer-beteiligung.de/foerderprogramme/gut-beraten/
 - https://econsocial-sport.de/
