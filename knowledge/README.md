@@ -20,6 +20,10 @@ Vor neuer Arbeit wird geprüft, was bereits gewusst, entschieden, gelernt, verwo
 
 - [`SECOND-BRAIN-STANDARD.md`](SECOND-BRAIN-STANDARD.md) – organisationsweiter Standard für Wissensarten, kanonische Quellen, Chat-Migration, Anti-Loop-Regeln und Wissenspflege
 
+### Kuratierte externe Lernimpulse
+
+- [`vereinsstrategen-kuratierte-erkenntnisse.md`](vereinsstrategen-kuratierte-erkenntnisse.md) – quellenbasierte, bewusst gefilterte Erkenntnisse aus dem Vereinsstrategen-Podcast; keine neue Rolle, kein zusätzliches Backlog und keine automatisch gültigen Standards.
+
 ### Aktuelle explizite Wissensdomänen
 
 - [`archive/`](archive/) – Historienarchiv, Quellen-/Register-Routing, aktueller Einstieg und Archiv-Second-Brain
