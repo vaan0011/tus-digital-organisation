@@ -166,7 +166,7 @@ Bereits umgesetzt bzw. organisationsweit eingeführt sind unter anderem:
 - Zeitersparnis, weniger Doppelpflege und schnelleren Wissenstransfer erfassen,
 - daraus belastbare Wirkungsargumente ableiten.
 
-**Ergänzender Vorschlag für AP5 (Stand 18.10.2026):** Ein zeitlich begrenzter, menschlich koordinierter Pilot zu kleinteiligen Ehrenamtsaufgaben, Entlastung und digitaler Zuarbeit ist unter [`../../organization/ehrenamt-staerken-und-entlasten.md`](../../organization/ehrenamt-staerken-und-entlasten.md) konkretisiert. Noch keine Vorstandsfreigabe; keine Änderung an Ownern, Projektscope, Prioritäten oder bestehenden Fachprojekten.
+**Wissensreferenz (Stand 18.10.2026):** Die externe Lernquelle zu typgerechtem Ehrenamt und ihre mögliche Bedeutung für menschliche und digitale Mitarbeiter ist unter [`../../organization/ehrenamt-staerken-und-entlasten.md`](../../organization/ehrenamt-staerken-und-entlasten.md) dokumentiert. **Keine Pilotierung beschlossen oder beauftragt;** kein neues AP, keine Änderung an Ownern, Projektumfang oder Prioritäten.
 
 #### AP6 – Förderprojekt schärfen
 
