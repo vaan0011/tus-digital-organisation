@@ -137,7 +137,7 @@ Eine Aufgabe gilt als abgeschlossen, wenn:
 - `../core/core-principles.md`
 - `../organization/guiding-principles.md`
 - `../organization/culture.md`
-- `../organization/ehrenamt-staerken-und-entlasten.md` – vorgeschlagener Ehrenamts-Pilot und Mensch-KI-Aufgabenteilung; noch keine neue verbindliche Regel
+- `../organization/ehrenamt-staerken-und-entlasten.md` – quellenkritisches Lernwissen über Ehrenamt und Mensch-KI-Zusammenarbeit; keine neue verbindliche Regel
 
 ## Future Development
 
