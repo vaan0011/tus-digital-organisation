@@ -168,6 +168,8 @@ Für menschliche und digitale Mitarbeiter gelten insbesondere:
 6. `standards/working-standards.md`
 7. `employees/daily-work-cycle.md`
 
+Das Konzept zur **stärkenorientierten Ehrenamtsentwicklung** mit konkretem Pilotplan sowie Aufgabenverteilung zwischen Menschen und digitalen Mitarbeitern liegt unter [`organization/ehrenamt-staerken-und-entlasten.md`](organization/ehrenamt-staerken-und-entlasten.md). Es ist als noch nicht vorstandsseitig freigegebener Vorschlag gekennzeichnet.
+
 Rollen ergänzen diese gemeinsamen Standards um fachliche Verantwortung und konkrete Arbeitsregeln. Ein rollenspezifisches Runtime-Profil beschreibt zusätzlich Queue, Checkpoint, autonomen Entscheidungsbereich, Stop Conditions und Eskalationen.
 
 ---
