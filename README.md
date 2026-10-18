@@ -101,6 +101,7 @@ organization/
     Organisationsmodell
     TuS DNA
     Werte
+    Ehrenamtsentwicklung und Mensch-KI-Zusammenarbeit
 
 roles/
     Dauerhafte Rollen
