@@ -1,14 +1,15 @@
 # Funding Calendar
 
-**Stand:** 2026-10-16
+**Stand:** 2026-10-18
 
 | Datum / Sperre | Programm / Projekt | Priorität | Nächste Aktion |
 |---|---|---|---|
 | **13.10.2026 – erledigt** | BASF / Aufbau Digitale Vereinsorganisation | **eingereicht** | Veranstalter bestätigt Digital-Check und Bewerbung; Auswahl für 20 Coaching-Plätze abwarten |
 | **15.10.2026 intern – überfällig** | Stiftung Kulturgut / Historienarchiv | **B+ – Entscheidung nötig** | Kein fertiger Skizzenstand dokumentiert; Go/No-Go für 31.01.2027 und bei Go sofort EVALAG-Vorabskizze abschließen |
-| **18.10.2026 offiziell** | BASF „Sportverein der Zukunft“ | **erledigt** | Bewerbungsfenster endet; TuS-Einreichung bereits 13.10. bestätigt |
+| **18.10.2026 offiziell – erledigt** | BASF „Sportverein der Zukunft“ | **eingereicht** | TuS-Einreichung bereits am 13.10. bestätigt; nur Auswahlentscheidung nachhalten |
 
-| **01.11.2026** | M.E.N.S. | **B** | Bewerbungsfenster öffnet; erst nach Partnerverein-Gate weiterqualifizieren |
+| **01.11.2026** | M.E.N.S. | **B** | Bewerbungsunterlagen werden veröffentlicht; erst nach Identifikation eines zweiten BSB-Nord-Mitgliedsvereins weiterqualifizieren |
+| **02.11.2026** | Aktion Mensch / zusätzliche Förderangebote | **B – Screening** | Neu veröffentlichte Angebote gegen reale TuS-Projekte prüfen; keine allgemeine Digitalisierung unterstellen |
 
 | **30.11.2026** | Kellogg’s Herzensprojekt | eingereicht | Voting-/Entscheidungsstand nachhalten |
 | **01.01.–15.02.2027** | Aktion Mensch / nur konkretes inklusives TuS-Vorhaben | **B – Projekt-Gate** | Ohne reale Zielgruppe und partizipativ entwickeltes Vorhaben kein Antrag; Finanzamtsbescheid bei Antragstellung erforderlich |
