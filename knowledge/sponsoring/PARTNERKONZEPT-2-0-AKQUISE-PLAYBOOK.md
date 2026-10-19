@@ -21,6 +21,7 @@ Operative Partnerdaten, Kontaktpersonen, Angebote, individuelle Vertragswerte un
 | Jugendsportfest Juli | 2.000–5.000 € Naming-Testkorridor | Rechte, Reichweite und Leistungskatalog klären |
 | Zukunftsmeile beim Jugendsportfest | 150–500 € je einfache Ausstellerfläche; 500–2.000 € größere Aktivierung als Testwerte | Sicherheitskonzept, Flächen, Personal, Besucherprofil, Ausstellung/Probefahrten |
 | Trainingskleidung Ausstattungsgrundstock | 2.435 € Warenwert für 50 Core-Sets | Beschaffungsbedarf, kein bestätigter Partnerumsatz; Ausrüster und Finanzierungspartner trennen |
+| Arbeitsplatz Sportparkteam – Perspektive & Teilhabe | 1–2 sozialversicherungspflichtige Teilzeitstellen als Prüfziel, **kein gesicherter Stellenetat oder Partnererlös** | [Projektstand](../../projects/arbeitsplatz-sportparkteam/PROJECT-STATE.md): IB-Schnittstelle, Organisation und Sportparkbetrieb; personenbezogene Förderung und Arbeitgeberkosten je Fall offen; Partnerbeiträge erst nach Kosten-/Förderprüfung beziffern |
 
 **Keine Addition von Alternativen:** Event-Einzel-Naming und Serienpartnerschaft nicht doppelt zählen; LED-Rechte, Sportparkrechte und Eventrechte getrennt inventarisieren. Brutto-/Netto- und Sachleistungen gesondert führen. Kein Umsatzforecast ohne qualifizierte Pipeline.
 
