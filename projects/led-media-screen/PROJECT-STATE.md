@@ -1,6 +1,6 @@
 # PROJECT STATE – TuS LED Media Screen
 
-**Stand:** 2026-10-13 – EconSocial-Erstgespräch terminiert; Finanzierungsalternative in Prüfung
+**Stand:** 2026-10-19 – EconSocial-Vertragsentwurf geprüft; keine Unterschrift; Nachverhandlung erforderlich
 **Status:** Discovery  
 **Beschaffung / Umsetzung:** Noch nicht gestartet  
 **Fachlicher Projekt-Owner:** noch offen
@@ -391,6 +391,21 @@ Solange die Preisbindung bis 30.09.2026 läuft:
 - danach belastbaren Gesamtfinanzierungsbedarf und Go/No-Go-Vorlage erstellen.
 
 Keine Bestellung wird durch diesen Projektstand ausgelöst.
+
+## Update 19.10.2026 – EconSocial-Vertragsprüfung
+
+Der geschützte EconSocial-Vertragsentwurf vom 16.10.2026 und die interne Vertragsanalyse vom 17.10.2026 liegen verifiziert im bestehenden LED-Projektordner. Vertragsdetails und vertrauliche Konditionen werden nicht nach GitHub dupliziert.
+
+**Entscheidungsstand:** Der aktuelle Entwurf ist nicht unterschriftsreif. Es wurde keine Beauftragung, Preis-, Werbe-, Exklusivitäts- oder Vertragszusage erteilt.
+
+**Materielle Gates:** Vor einem möglichen Go müssen insbesondere die TuS-Partner- und Vermarktungshoheit, feste eigene Nutzungs- und Werberechte, Schutz bestehender Partner und Exklusivitäten, Genehmigungs- und Ausstiegslogik, technische Leistungsbeschreibung und Support, vollständige Neben- und Betriebskosten sowie Datenschutz/AVV und rechtliche Prüfung schriftlich belastbar geklärt sein.
+
+**Nächster Schritt:** Vorstand und Projektteam entscheiden intern bis 23.10.2026, ob mit einem klaren schriftlichen Forderungskatalog nachverhandelt wird. Bis zu einem nachgebesserten Vertrag, technischer und genehmigungsrechtlicher Klärung sowie vollständiger TCO-Betrachtung gilt ausdrücklich: keine Unterschrift.
+
+Geschützte Referenzen:
+
+- EconSocial-Vertragsentwurf: Drive-Datei `1D-GB-JOS-v5MiyHcR-if0C8n5hQ1rn-R`
+- Interne Vertragsanalyse: Drive-Datei `1lWtlXTYLjdHbpweLoUr_qz2c_asa8GmmYJWWT6UcYmg`
 
 ## Relationship to other documents
 
