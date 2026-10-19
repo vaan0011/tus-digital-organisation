@@ -105,6 +105,16 @@ Aktuell von der Bundesagentur veröffentlichte Eckpunkte:
 
 Auch hier entscheidet das Jobcenter über die individuelle Förderfähigkeit.
 
+### 2a. Bestehende Arbeitsgelegenheiten (§ 16d) sind nicht die geplante Anstellung
+
+Nach Angaben des TuS wird das Sportparkteam aktuell durch Arbeitsgelegenheiten („1-Euro-Jobs“) mit Beteiligung des **Internationalen Bundes (IB)** unterstützt. Die Maßnahme nach § 16d SGB II ist **kein sozialversicherungspflichtiges Arbeitsverhältnis des Teilnehmers beim TuS**; sie muss unter anderem **zusätzlich, im öffentlichen Interesse und wettbewerbsneutral** sein. Eine Überführung in eine reguläre Stelle ist daher ein **eigener** arbeitsrechtlicher und förderrechtlicher Vorgang, der individuell vorab zu klären ist. Quelle: https://www.gesetze-im-internet.de/sgb_2/__16d.html und https://www.arbeitsagentur.de/lexikon/ein-euro-jobs
+
+**Zu prüfen:** Wer ist Vertragspartner/Maßnahmeträger, wer darf anleiten und Arbeitsaufträge verteilen, wer ist Ansprechpartner des Jobcenters, und wie grenzt sich die mögliche organisatorische Tätigkeit eines künftig regulär Beschäftigten im TuS Sportparkteam von Aufgaben und Förderpflichten des IB ab? Ungeprüft bleibt, ob und zu welchen Konditionen ein Teilnehmer aus der heutigen Maßnahme im Einzelfall § 16i / § 16e nutzen kann.
+
+**Kommunikation und Statistik:** Teilnehmer an diesen arbeitsmarktpolitischen Maßnahmen gelten in der BA-Statistik nicht als registriert arbeitslos, werden aber in der weiteren Unterbeschäftigung erfasst; dies ist kein zusätzlicher Förderbetrag oder Anreiz, Personen in einer Maßnahme zu halten. Quelle: https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Definitionen/Arbeitslosigkeit-Unterbeschaeftigung/Arbeitslosigkeit-Unterbeschaeftigung-Nav.html
+
+**Gegenfinanzierung:** Für ein bis zwei reguläre Stellen erst **nach individuell bestätigter Förderung** die jährliche Differenz zwischen tatsächlichen Arbeitgeberkosten und zulässigen Zuschüssen bestimmen. Diese kann durch gesicherte eigene Mittel und Partnerbeiträge gedeckt werden. Keine doppelte Kostenfinanzierung; nach Auslaufen befristeter Zuschüsse benötigt der TuS eine tragfähige Anschlussfinanzierung. Sponsorverträge und zweckgebundene Spenden sind steuer- und vereinsrechtlich unterschiedlich zu behandeln.
+
 ### 3. Zuständiges Jobcenter
 
 Für 76669 Bad Schönborn ist aktuell zuständig:
