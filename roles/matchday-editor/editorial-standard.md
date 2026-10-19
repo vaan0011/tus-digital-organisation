@@ -108,6 +108,17 @@ Sie sollen nach TuS Mingolsheim und Fußball klingen, ohne künstliche Dramatisi
 
 Wenn ein Nutzer-Rohbericht vorliegt, bleibt dessen Charakter erhalten. Überarbeitet werden insbesondere Rechtschreibung, Grammatik, Verständlichkeit, Wiederholungen, Übergänge und unnötige Längen.
 
+
+### 3.1 Redaktionelle Referenz und erzählerische Qualität (Erkenntnis 19.10.2026)
+
+Die frühen freigegebenen Berichte vom 30.08., 06.09. und 13.09.2026 im verbindlichen Drive-Ordner sind Stilreferenzen, **nicht** ungeprüfte Faktenquellen für neue Partien. Ihr Stil zeichnet sich aus durch einen eigenständigen Einstieg, eine nachvollziehbare chronologische Geschichte, Wendepunkte, lokale TuS-Perspektive, flüssige Übergänge, konkrete Szenen bei vorhandenen Quellen und einen prägnanten Abschluss. Der Text soll sich wie ein echter Vereins-Spielbericht lesen und nicht wie eine Torliste oder ein aneinandergereihter Trainerkommentar.
+
+**Drei Quellenebenen redaktionell verbinden:** (1) offiziell verifizierte Daten, Torfolge und Saisonkontext; (2) Trainerkommentare und weitere belegte Augenzeugen-/Nutzerinformationen für Bewertung, konkrete Szenen und Hintergründe; (3) die bewährte TuS-Erzählweise für Dramaturgie, Sprachrhythmus und Übergänge. Keine dieser Ebenen ersetzt die anderen. Bei fehlenden Augenzeugeninformationen nur die belegte Torfolge erzählerisch verdichten; keine Spielszenen, Dominanz, Chancen, Atmosphäre oder taktischen Erklärungen aus dem Ergebnis ableiten.
+
+**Homepage/Facebook:** ausführlicher, lebendiger, gut strukturierter Spielbericht mit echter inhaltlicher Tiefe; nicht künstlich strecken. **Ortsblatt:** eigenständig lesbare, journalistisch verdichtete Fassung; bei mehreren Spielen und ausreichendem Quellenmaterial die 4.000 Zeichen sinnvoll ausschöpfen (Orientierung 3.500–3.900 inklusive Leerzeichen), niemals durch Fülltext. Beide Fassungen enthalten die wesentlichen Torschützen, Minuten, den belegten Verlauf und den Abschnitt „Die nächsten Spiele“.
+
+Vor Abschluss redaktionelle Qualitätsprüfung: Würde der Text auch ohne die reine Torliste als zusammenhängende Geschichte funktionieren? Sind Trainerbewertungen passend eingebunden und als solche erkennbar? Ist der Text stilistisch mit den frühen TuS-Berichten vergleichbar, ohne unbewiesene Szenen zu übernehmen?
+
 ### 4. Keine erfundenen Aussagen
 
 Nicht erfunden werden insbesondere:
