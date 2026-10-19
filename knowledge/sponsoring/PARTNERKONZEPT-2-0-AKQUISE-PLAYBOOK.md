@@ -21,6 +21,7 @@ Operative Partnerdaten, Kontaktpersonen, Angebote, individuelle Vertragswerte un
 | Jugendsportfest Juli | 2.000–5.000 € Naming-Testkorridor | Rechte, Reichweite und Leistungskatalog klären |
 | Zukunftsmeile beim Jugendsportfest | 150–500 € je einfache Ausstellerfläche; 500–2.000 € größere Aktivierung als Testwerte | Sicherheitskonzept, Flächen, Personal, Besucherprofil, Ausstellung/Probefahrten |
 | Trainingskleidung Ausstattungsgrundstock | 2.435 € Warenwert für 50 Core-Sets | Beschaffungsbedarf, kein bestätigter Partnerumsatz; Ausrüster und Finanzierungspartner trennen |
+| Arbeitsplatz Sportparkteam – Perspektive & Teilhabe | 1–2 sozialversicherungspflichtige Teilzeitstellen als Prüfziel, **kein gesicherter Stellenetat oder Partnererlös** | [Projektstand](../../projects/arbeitsplatz-sportparkteam/PROJECT-STATE.md): IB-Schnittstelle, Organisation und Sportparkbetrieb; personenbezogene Förderung und Arbeitgeberkosten je Fall offen; Partnerbeiträge erst nach Kosten-/Förderprüfung beziffern |
 
 **Keine Addition von Alternativen:** Event-Einzel-Naming und Serienpartnerschaft nicht doppelt zählen; LED-Rechte, Sportparkrechte und Eventrechte getrennt inventarisieren. Brutto-/Netto- und Sachleistungen gesondert führen. Kein Umsatzforecast ohne qualifizierte Pipeline.
 
@@ -33,6 +34,8 @@ Operative Partnerdaten, Kontaktpersonen, Angebote, individuelle Vertragswerte un
 - **Sportpark-/Infrastrukturpartner:** „Ein Sportpark ist mehr als ein Spielfeld: Hier entsteht Gemeinschaft.“ Potenzieller Fit MAYA Hausbau, Mächtel, Kirchgeßner; Rechte, Interessen und Budgets unbestätigt.
 - **Nachwuchs-/Eventpartner:** „Wer junge Menschen stärkt, stärkt die Zukunft der Region.“ Potenzieller Fit Sparkasse Kraichgau.
 - **Matchday-Momentpartner:** Tor, Ecke, Wechsel, MVP, Warm-up, Halbzeit; nur bei gesicherten Medien-/LED-Rechten und zuverlässig ausspielbaren Leistungen.
+
+**Sportparkteam als potenzielle Wirkungspartnerschaft (19.10.2026, intern):** Unternehmen könnten dazu beitragen, ein bis zwei Arbeitsplätze zu verstetigen, deren Aufgaben Sportparkpflege, Organisation und Abstimmung mit dem Internationalen Bund umfassen. Öffentliche Förderung ist eine *mögliche, fallbezogene Einnahmequelle für den Arbeitgeber*, kein Zusageersatz für eine mehrjährige Finanzierung. Als Gesprächshypothese sind gemeinsame gesellschaftliche Wirkung und ein verlässlich betriebener Sportpark plausibel; ein Vertrag benötigt eine klar definierte Gegenleistung oder korrekt eingeordnete Unterstützung. Förderhöhe, Restkosten und mögliche steuerliche Behandlung (Werbesponsoring versus Spende) sind vor Angeboten zu klären. Eine Partnerschaft darf weder die AGH-Teilnehmenden zu Werbezwecken instrumentalisieren noch persönliche Lebenslagen offenlegen. Einnahmen aus Namensrechten und LED nur einplanen, wenn sie **tatsächlich** für diese Zwecke zur Verfügung stehen; nicht nochmals als eigenständigen Erlös rechnen. Projektwahrheit: `../../projects/arbeitsplatz-sportparkteam/PROJECT-STATE.md`. Keine CRM-Kontakte oder Konditionen in GitHub.
 
 **Partnerstory-Standard:** Unternehmensziel → gemeinsame Aktivierung → Nutzen für Menschen → nachweisbares Ergebnis. Die obigen Sätze sind **Pitch-Ideen**, keine tatsächlich durchgeführten Partnerschaften oder belegten Wirkungen.
 

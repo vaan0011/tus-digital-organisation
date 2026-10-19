@@ -108,6 +108,16 @@ Erste Hilfe, Prävention, Gesundheit, Arbeitsschutz, Sportgesundheit und Sicherh
 
 Ehrenamt, Sportparkteam, soziale Beschäftigung, Nachhaltigkeit, gesellschaftliche Projekte und internationale Hilfe.
 
+#### 4.5.1 Sportparkteam: Perspektive, Arbeit und Teilhabe (Konzeptstand 19.10.2026)
+
+Das **bereits bestehende** [Projekt Arbeitsplatz Sportparkteam](../../projects/arbeitsplatz-sportparkteam/PROJECT-STATE.md) ist ein konkreter Anwendungsfall für **Gemeinschaft & Wirkung**, **Karriere, Ausbildung & Arbeit** sowie **Sportpark & Infrastruktur**. Im Sportpark unterstützt nach Vereinsangabe der Internationale Bund (IB) die laufenden Arbeitsgelegenheiten (§ 16d SGB II); die Maßnahme schafft keine verlässliche Dauerbesetzung, weil die Integration in reguläre Beschäftigung ihr eigentliches Ziel ist.
+
+**Weiterentwicklungsziel (noch kein Beschäftigungs- oder Finanzierungsbeschluss):** Eine oder zwei sozialversicherungspflichtige TuS-Teilzeitstellen könnten dauerhaft praktische Sportparkarbeit **und** definierte organisatorische Aufgaben (Einsatzabstimmung, Material/Termine, Anleitung, geregelte Schnittstelle zum IB) übernehmen. Der Verein darf sich nicht auf dauerhaft verfügbare Teilnehmende einer Arbeitsgelegenheit verlassen. Zuständigkeit und rechtliche Grenzen zwischen TuS, IB und Jobcenter sind vor einer Aufgabenzuweisung zu klären.
+
+**Partnerlogik:** Geprüfte öffentliche Lohnförderung + tragfähiger TuS-Anteil + mehrjährige zweckbezogene Partnerbeiträge könnten Beschäftigung über die Förderung hinaus absichern. Für Sponsoren zählen **nachweisbare Wirkung** (verlässlicher Sportpark, Entlastung des Ehrenamts, reguläre Beschäftigung, Qualifizierung) und nur tatsächlich vereinbarte Gegenleistungen. Keine persönlichen Förder- oder Sozialdaten als Akquisegeschichte. Mehrere Förderinstrumente und Sponsoring dürfen **nicht** doppelt auf dieselben Kosten angerechnet werden; Behandlung von Sponsoring und Spenden und die zuständige Rechtseinheit sind vor einer Zusage zu prüfen.
+
+Das ist eine **bestehende Projekt- und Partnerwelt-Verknüpfung, kein achtes Partnerfeld, kein zweites Förderprojekt und kein bestätigter Sponsorumsatz**. Konkrete Finanzierung und Status liegen ausschließlich im Arbeitsplatz-Projekt; Partneranfragen und Verträge im geschützten CRM. Sportpark-Namensrechte und LED-Erlöse bleiben separate Produkte und sind nicht automatisch für Personal reserviert.
+
 #### 4.6 Events & Netzwerk
 
 Bestehende TuS-Veranstaltungen, Partnerveranstaltungen, Firmenformate, PartnerTreff und Networking.
