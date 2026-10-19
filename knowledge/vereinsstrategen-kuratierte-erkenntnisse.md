@@ -63,6 +63,65 @@
 **OS-Abgleich:** [Portfolio-Standard](../roles/project-portfolio-manager/portfolio-standard.md), [Iteration/Progress](../standards/iteration-and-progress.md) und bestehende `PROJECT-STATE.md`-Struktur entsprechen dem Kern. **Prüffrage:** Erleichtert die derzeitige Darstellung tatsächlich Entscheidungen – oder halten wir nur Dokumente aktuell?  
 **Reifegrad:** Transkript geprüft; Bestätigung mit Qualitätsfrage an bestehenden Betrieb.
 
+## Nächster A-Sichtungsblock (19.10.2026) – sechs Themen, zunächst **kein** Volltranskript-Abschluss
+
+**Evidenzstand:** Bei dieser Runde waren die direkten Podigee-Transkriptseiten technisch nicht zuverlässig lesbar. Zu #165 lag ein überprüfbarer **Transkriptauszug (00:00–ca. 00:08)** auf [Podscan](https://www.podscan.fm/podcasts/vereinsstrategen/episodes/165-zuhorerfrage-wenig-erwachsene-viele-kinder-wie-du-trotzdem-nicht-auf-aufgaben-sitzen-bleibst) vor; die übrigen fünf Folgen wurden anhand der **offiziellen Episodenbeschreibungen im [Vereinsstrategen-Archiv](https://vereinsstrategen.podigee.io/archive)** vorgefiltert. **Daraus keine vollständige Transkriptlektüre, kein geprüftes wörtliches Zitat und keine verbindliche Prozessänderung ableiten.** Im Drive-Katalog bleiben diese sechs Folgen bei „Vorfilter“; ein tatsächlicher Volltextabgleich steht aus.
+
+### #165 – Wenig Erwachsene, viele Kinder: Eltern und Jugendliche einbinden
+**Quellenstand:** Podcastbeschreibung und Transkriptauszug 00:01–00:08; keine Volltranskriptprüfung.  
+**Impuls:** Eltern bei klar begrenzten Unterstützungsaufgaben persönlich und respektvoll ansprechen, statt sie als selbstverständliche Arbeitsreserve zu behandeln. Rotation kann Verbindlichkeit schaffen, erzeugt aber ebenfalls Koordinationsarbeit; ältere Jugendliche benötigen passende Aufgaben und verantwortliche Begleitung.  
+**TuS-Nutzen:** Für Jugendteams, Trainerentlastung, Event Planner und Elternkommunikation. **Relevante OS-Spannung:** Im bestehenden [Mitglieder-&-Engagement-Projekt](../projects/member-engagement/PROJECT-STATE.md) sind Sollstunden und Beitragsanerkennung als offene Fachfragen vorgesehen. Eine künftige Umsetzung muss mit dem Grundsatz **freiwilliges Engagement ohne Druck** konsistent sein und zwischen verpflichtender Satzungs-/Beitragsregel, freiwilliger Mitarbeit und persönlicher Belastung differenzieren. Nicht suggerieren, Eltern hätten ohne Beschluss eine Helferpflicht.  
+**Digital delegierbar:** Team Manager/Event Planner könnten Terminübersichten, verständliche Aufgaben und vorbereitete Erinnerungen liefern – **erst aus legitim erfassten Aufgaben/Zusagen**; digitale Mitarbeiter rekrutieren und beurteilen keine Kinder.  
+**Disposition:** **Neu und prüfenswert ist die Konsistenzprüfung zur geplanten Sollstunden-/Anerkennungslogik**; allgemeine kleine Aufgabenpakete sind im Ehrenamtskonzept bereits beschrieben. Kein neues Helferregister, keine neuen verpflichtenden Elternaufgaben.
+
+### #163 – PERMA-Lead: Stärkenorientierte Führung
+**Quellenstand:** Offizielle Episodenbeschreibung, noch nicht vollständiges Transkript.  
+**Impuls:** Motivation und nachhaltiges Engagement hängen mit positiver Führung, Beziehungen, Sinn und Wertschätzung zusammen; das PERMA-Lead-Modell dient als Gesprächsrahmen, nicht als verpflichtendes Diagnosetool.  
+**TuS-Nutzen:** Vorstand, Trainer- und Ehrenamtskoordination. **Bereits in [Leadership Philosophy](../organization/leadership-philosophy.md) und [Responsibility Philosophy](../organization/responsibility-philosophy.md) abgedeckt**: Menschen entwickeln, Orientierung geben, keine KI-Bewertung persönlicher Eigenschaften.  
+**Digital delegierbar:** Zeitaufwendige Organisation/Briefings reduzieren, sodass menschliche Führung Zeit für Gespräche und Anerkennung hat.  
+**Disposition:** **Keine neue Regel oder Rolle**; Volltranskript nur auf neue, nicht bereits bekannte Argumente prüfen.
+
+### #159 – Kinderschutzkonzept praktisch und vertrauensvoll vermitteln
+**Quellenstand:** Offizielle Episodenbeschreibung mit Gast Clemens Dymke, noch nicht vollständiges Transkript.  
+**Impuls:** Kinderschutz umfasst fachliche Bausteine, Handlungsfähigkeit im Verdachtsfall, kompetente Ansprechpartner und Kommunikation ohne pauschalen Generalverdacht gegen Übungsleitungen. **Der Podcast ist keine Rechts- oder Schutzfallberatung.**  
+**TuS-Nutzen:** Gerade wegen des großen Jugendbereichs ist zu **prüfen**, ob im bestehenden Vereinskontext ein aktuelles, verantwortetes Schutzkonzept samt Meldeweg und sachgerechter Information für Eltern, Trainer und Jugendliche tatsächlich auffindbar ist. **Aus dieser Sichtung folgt nicht, dass ein solches Konzept fehlt.**  
+**Digital delegierbar:** Nur freigegebene allgemeine Informationen, Kontakt- und Verfahrenshinweise leicht auffindbar machen; auf passende menschliche Ansprechstellen verweisen. **Keine automatische Sachverhaltsbewertung, Verdächtigungen, sensiblen Kinderdaten in frei zugänglichen KI-/GitHub-Prozessen oder verdeckte Fallakten.**  
+**Disposition:** **Relevante Bestandsprüffrage**; fachlich und datenschutzrechtlich nur durch Verantwortliche klären, keine eigenmächtige Schutzprozessänderung.
+
+### #150 – Change-Baukasten: Nicht jeden Prozess gleich behandeln
+**Quellenstand:** Offizielle Episodenbeschreibung, noch nicht vollständiges Transkript.  
+**Impuls:** Persönliche Gewohnheit ist nicht dasselbe wie ein organisationsübergreifender Ablauf. Veränderung benötigt zuerst Problem- und Prioritätsklärung, keine reflexhaften neuen Werkzeuge.  
+**TuS-Nutzen:** Bestätigt [Learning Loop](../standards/learning-loop.md), OS-Prinzip der kleinen iterativen Verbesserungen und das Portfolio-Prinzip „Details im Projekt“.  
+**Digital delegierbar:** Ein digitaler Mitarbeiter kann den bestehenden Ablauf, die tatsächlichen Reibungspunkte und eine kleinere Variante sichtbar machen; Standards nur mit Freigabe verändern.  
+**Disposition:** **Schon weitgehend vorhanden**; keine weitere Change-Methode als Pflichtstandard ins OS aufnehmen.
+
+### #144 – Storytelling für Sponsoring, Fankurve und Öffentlichkeitsarbeit
+**Quellenstand:** Offizielle Episodenbeschreibung, noch nicht vollständiges Transkript.  
+**Impuls:** Geschichten erreichen Menschen besser als reine Informations- oder Leistungsaufzählungen; die Beschreibung nennt u. a. Drei-Akt-Struktur, Pixar-Pitch und Freytag-Pyramide als **mögliche** Erzählhilfen, nicht als universelle Formvorschrift.  
+**TuS-Nutzen:** Hohe Projektpassung zu **Fankurve**, Spielberichten, Partnerstories, Adventskalender, Jugend- und Sportparkkommunikation. Die bestehende Partnerstrategie setzt bereits auf reale Wirkungsgeschichten.  
+**Digital delegierbar:** Vorhandene **verifizierte Fakten** und freigegebene Trainer-/Personenstimmen zu einem verständlichen Textentwurf strukturieren; menschliche Redaktion prüft Ton, Wahrheit, Bildrechte, Veröffentlichung und ggf. Sponsorenfreigabe. **Keine erfundenen Zitate, Emotionen, Zahlen oder Betroffenen-Geschichten.**  
+**Disposition:** **Ein hilfreicher Qualitätscheck für bestehende Inhalte**, kein neuer Contentprozess und keine zusätzliche redaktionelle Rolle.
+
+### #142 – Community: Zugehörigkeit statt bloße Reichweite
+**Quellenstand:** Offizielle Episodenbeschreibung, noch nicht vollständiges Transkript.  
+**Impuls:** Vereinskultur, erlebbare Zugehörigkeit und Geschichten können Mitgliederbindung und Engagementbereitschaft stärken. Reichweite allein ist nicht gleich Verbundenheit.  
+**TuS-Nutzen:** **Fankurve, Heimspieltage, Jugend und [Mitglieder-&-Engagement](../projects/member-engagement/PROJECT-STATE.md)** sollten aus Mitgliedersicht über Zusammengehörigkeit gedacht werden, nicht nur über Likes, Registrierungen oder Sollstunden.  
+**Digital delegierbar:** Veranstaltungskommunikation, bestehende Erlebnisse und Mitgliederinformationen verständlich vorbereiten – **nicht** emotionale Beziehungen automatisieren oder zusätzliche Apps bauen.  
+**Disposition:** **Querschnittlicher Blick auf vorhandene Projekte**, aber kein neues Community-Produkt und keine neue Engagement-Metrik ohne konkreten Nutzen.
+
+### Verdichtung aus diesem Sichtungsblock
+
+**Neue oder zu prüfende Aspekte, keine Umsetzung beauftragt:**
+1. **Elternengagement und Beitrags-/Sollstundenmodell:** Gibt es eine faire, satzungs- und datenschutzkonforme Trennung von freiem Ehrenamt, zugesagter Hilfe und möglichen bereits beschlossenen Beitragsregeln, bevor wir zusätzliche Helferlogik entwickeln?
+2. **Kinderschutz:** Finden Menschen das **bestehende** Schutzkonzept und die verantwortlichen Ansprechpersonen im Ernstfall schnell und verständlich? Erst Bestand klären, niemals Fallmanagement in ein KI-Tool verlagern.
+3. **Redaktionelle Qualität:** Könnte die bestehende Fankurve-/Partnerarbeit auf verifizierte menschliche Geschichten statt rein auf Reichweiten- und Textproduktion optimiert werden?
+
+**Bewusst nicht übernommen:** Neues Führungsmodell als Vorschrift, weiterer Change-Workflow, neues Vereins-Wiki, neue Freiwilligen-App, Elternpflichten ohne Entscheidung, neue KI-Personenprofile oder Kinderschutz-Fallautomatisierung.
+
+**Bearbeitungsgrenze:** Die sechs Folgen sind **vorselektiert und auf TuS-Relevanz abgeglichen, nicht im Volltext abgeschlossen**. Falls bei künftiger vollständiger Transkriptlektüre nichts über diese Impulse hinausgeht, wird die Darstellung konsolidiert statt erweitert.
+
+---
+
 ## Verdichtung: Was ist nach sieben Folgen wirklich neu?
 
 **Bereits vorhanden – nicht doppelt einführen:** stärkenorientiertes Ehrenamt, persönliche Verantwortung, menschliche Freigaben, Projekte statt ausschließlich Ämter, kleine Iterationen, zentraler Wissensbestand, Partnerziel- und Beziehungsorientierung, Partner-CRM mit Jahreszyklus.
