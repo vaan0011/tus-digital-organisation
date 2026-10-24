@@ -1,6 +1,6 @@
 # PROJECT STATE – TuS LED Media Screen
 
-**Stand:** 2026-10-19 – EconSocial-Vertragsentwurf geprüft; keine Unterschrift; Nachverhandlung erforderlich
+**Stand:** 2026-10-24 – EconSocial-Entscheidungsgate seit 23.10.2026 überfällig; keine Freigabe; keine Unterschrift
 **Status:** Discovery  
 **Beschaffung / Umsetzung:** Noch nicht gestartet  
 **Fachlicher Projekt-Owner:** noch offen
@@ -406,6 +406,14 @@ Geschützte Referenzen:
 
 - EconSocial-Vertragsentwurf: Drive-Datei `1D-GB-JOS-v5MiyHcR-if0C8n5hQ1rn-R`
 - Interne Vertragsanalyse: Drive-Datei `1lWtlXTYLjdHbpweLoUr_qz2c_asa8GmmYJWWT6UcYmg`
+
+## Update 24.10.2026 – Entscheidungsgate überfällig
+
+Die interne Frist vom 23.10.2026 ist ohne dokumentierten Vorstand-/Projektteam-Beschluss abgelaufen. In CRM, Projektzustand und den seitdem geänderten Drive-Artefakten ist weder eine Freigabe zur Nachverhandlung noch eine Unterschrift dokumentiert.
+
+**Operativer Status:** Nachverhandlung blockiert durch fehlenden Beschluss und weiterhin offenen fachlichen Projekt-Owner. Der Vertragsentwurf bleibt nicht unterschriftsreif.
+
+**Nächste Aktion:** Vorstand/Projektteam entscheidet unverzüglich, ob EconSocial anhand des vorhandenen schriftlichen Forderungskatalogs nachverhandelt werden soll, und benennt dafür einen Projekt-Owner. Bis dahin keine externe Zusage und keine Unterschrift.
 
 ## Relationship to other documents
 
