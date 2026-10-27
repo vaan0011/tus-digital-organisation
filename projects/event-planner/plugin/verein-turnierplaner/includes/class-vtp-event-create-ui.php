@@ -154,6 +154,8 @@ class VTP_Event_Create_UI {
   echo '<label class="vtp-event-field"><span>Veranstaltungsbeschreibung</span><textarea name="description" rows="6"></textarea></label>';
   self::field('zusätzlicher Link zur Veranstaltung','content_url','','url');
   echo '<label class="vtp-event-calendar"><span>Veranstaltung im öffentlichen Kalender anzeigen?</span><span class="vtp-checkbox-line"><input type="checkbox" name="calendar_visible" value="1" checked> <span>im öffentlichen Veranstaltungskalender anzeigen</span></span></label>';
+  $suggested_pin=(string)wp_rand(10000000,99999999);
+  echo '<div class="vtp-event-field"><label for="vtp-initial-worklist-pin"><span>Admin-PIN für öffentliche Arbeitslisten</span></label><input id="vtp-initial-worklist-pin" name="initial_worklist_pin" type="text" inputmode="numeric" pattern="[0-9]{8}" minlength="8" maxlength="8" autocomplete="off" value="'.esc_attr($suggested_pin).'" required><p class="description">Diesen PIN vor dem Speichern notieren und nur berechtigten Personen mitteilen. Er wird später nicht mehr angezeigt, kann aber geändert werden.</p></div>';
   echo '</div></div></div>';
   echo '</section>';
 
@@ -310,6 +312,12 @@ class VTP_Event_Create_UI {
    wp_die('Die Sponsoren konnten nicht dauerhaft gespeichert werden.');
   }
   $wpdb->query('COMMIT');
+
+  if(!empty($data['created_at'])){
+   $pin=preg_replace('/\\D+/','',wp_unslash($_POST['initial_worklist_pin']??''));
+   if(!preg_match('/^\\d{8}$/',$pin)) wp_die('Bitte einen gültigen achtstelligen Admin-PIN eingeben.');
+   if(!VTP_Event_Worklist_Access::initialize_pin($id,$pin)) wp_die('Event angelegt, aber die Admin-PIN konnte nicht eingerichtet werden. Bitte in der Eventverwaltung einen PIN setzen.');
+  }
 
   self::ensure_event_pages($id);
   wp_safe_redirect(add_query_arg(['page'=>'vtp-events','edit_event'=>$id,'saved'=>1],admin_url('admin.php')));
