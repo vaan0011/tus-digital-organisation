@@ -13,6 +13,7 @@ define('VTP_FILE', __FILE__);
 define('VTP_DIR', plugin_dir_path(__FILE__));
 define('VTP_URL', plugin_dir_url(__FILE__));
 require_once VTP_DIR.'includes/class-vtp-db.php';
+require_once VTP_DIR.'includes/class-vtp-event-lifecycle.php';
 require_once VTP_DIR.'includes/class-vtp-plugin.php';
 require_once VTP_DIR.'includes/class-vtp-public.php';
 require_once VTP_DIR.'includes/class-vtp-dashboard.php';
