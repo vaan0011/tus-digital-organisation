@@ -52,7 +52,7 @@ class VTP_Event_Shift_Attendance {
   $event_id=self::authorize($_POST['event_id']??0);
   $signup_id=absint($_POST['signup_id']??0);
   $status=sanitize_key(wp_unslash($_POST['attendance_status']??''));
-  if(!in_array($status,['registered','no_show'],true)) wp_die('Ungültiger Anwesenheitsstatus.');
+  if(!in_array($status,['registered','attended','no_show'],true)) wp_die('Ungültiger Anwesenheitsstatus.');
   check_admin_referer('vtp_worklist_shift_attendance_'.$event_id.'_'.$signup_id);
 
   global $wpdb;
@@ -96,6 +96,7 @@ class VTP_Event_Shift_Attendance {
   ?>
   <style>
    .vtp-worklist-attendance .vtp-attendance-status{display:inline-flex;align-items:center;min-height:28px;padding:0 9px;border-radius:999px;font-size:12px;font-weight:800;background:#f2f4f7;color:#475467;margin-top:7px}
+   .vtp-worklist-attendance .vtp-attendance-status.is-attended{background:#e7f7ed;color:#186b39;border:1px solid #9dd5b2}
    .vtp-worklist-attendance .vtp-attendance-status.is-no-show{background:#fff0f0;color:#8a1c1c;border:1px solid #f2b8b8}
    .vtp-worklist-attendance .vtp-worklist-admin-row.is-no-show{border-left:5px solid #dc3232}
    .vtp-worklist-attendance .vtp-attendance-no-show{border-color:#b42318!important;color:#b42318!important;background:#fff!important}
@@ -103,16 +104,16 @@ class VTP_Event_Shift_Attendance {
   </style>
   <div id="vtp-shift-attendance-management" style="display:none">
    <section class="vtp-section vtp-worklist-admin-management vtp-worklist-attendance">
-    <div class="vtp-worklist-admin-head"><div><span class="vtp-worklist-admin-badge">Admin</span><h2>Anwesenheit Helferschichten</h2><p>No-Shows markieren, ohne die ursprüngliche Anmeldung zu löschen. Echte Absagen werden weiterhin über „Anmeldung löschen“ entfernt.</p></div></div>
+    <div class="vtp-worklist-admin-head"><div><span class="vtp-worklist-admin-badge">Admin</span><h2>Anwesenheit Helferschichten</h2><p>Teilnahme bewusst bestätigen, damit der Einsatz in der Jahresübersicht gezählt wird. No-Shows werden ausgeschlossen; bei Änderungen kann die Bestätigung zurückgesetzt werden.</p></div></div>
     <?php if($flash==='no_show'): ?><p class="vtp-worklist-admin-success"><strong>Person wurde als „Nicht erschienen“ markiert.</strong></p><?php elseif($flash==='reset'): ?><p class="vtp-worklist-admin-success"><strong>No-Show-Markierung wurde zurückgesetzt.</strong></p><?php endif; ?>
     <div class="vtp-worklist-admin-list">
      <?php if(!$rows): ?><p>Keine Schichtanmeldungen vorhanden.</p><?php endif; ?>
-     <?php foreach($rows?:[] as $row): $no_show=((string)$row->attendance_status==='no_show'); ?>
+     <?php foreach($rows?:[] as $row): $no_show=((string)$row->attendance_status==='no_show'); $attended=((string)$row->attendance_status==='attended'); ?>
       <div class="vtp-worklist-admin-row <?php echo $no_show?'is-no-show':''; ?>">
        <div>
         <strong><?php echo esc_html($row->name); ?></strong>
         <div class="vtp-worklist-admin-meta"><?php echo esc_html($row->assigned_group?:'Nicht zugeordnet'); ?> · <?php echo esc_html($row->area_name); ?> · <?php echo esc_html(date_i18n('d.m.Y',strtotime($row->shift_date)).' '.substr($row->start_time,0,5).'–'.substr($row->end_time,0,5).' Uhr'); ?><?php if($row->contact): ?> · <?php echo esc_html($row->contact); ?><?php endif; ?></div>
-        <span class="vtp-attendance-status <?php echo $no_show?'is-no-show':''; ?>"><?php echo $no_show?'Nicht erschienen':'Angemeldet'; ?></span>
+        <span class="vtp-attendance-status <?php echo $no_show?'is-no-show':''; ?>"><?php echo $no_show?'Nicht erschienen':($attended?'Teilgenommen':'Angemeldet'); ?></span>
        </div>
        <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
         <input type="hidden" name="action" value="vtp_worklist_shift_attendance">
@@ -120,9 +121,10 @@ class VTP_Event_Shift_Attendance {
         <input type="hidden" name="signup_id" value="<?php echo esc_attr($row->signup_id); ?>">
         <input type="hidden" name="attendance_status" value="<?php echo $no_show?'registered':'no_show'; ?>">
         <?php wp_nonce_field('vtp_worklist_shift_attendance_'.$event_id.'_'.absint($row->signup_id)); ?>
-        <?php if($no_show): ?>
-         <button type="submit" class="vtp-worklist-admin-secondary">Markierung zurücksetzen</button>
+        <?php if($no_show || $attended): ?>
+         <button type="submit" class="vtp-worklist-admin-secondary">Auf angemeldet zurücksetzen</button>
         <?php else: ?>
+         <button type="submit" name="attendance_status" value="attended" class="vtp-worklist-admin-secondary">Teilnahme bestätigen</button>
          <button type="submit" class="vtp-worklist-admin-secondary vtp-attendance-no-show" onclick="return confirm('Diese Person wirklich als nicht erschienen markieren? Die Anmeldung bleibt zur Dokumentation erhalten.')">Nicht erschienen</button>
         <?php endif; ?>
        </form>
