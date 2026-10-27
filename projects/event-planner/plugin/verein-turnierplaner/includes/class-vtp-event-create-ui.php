@@ -280,6 +280,11 @@ class VTP_Event_Create_UI {
   $name=sanitize_text_field(wp_unslash($_POST['name']??''));
   if($name==='') wp_die('Bitte einen Veranstaltungsnamen angeben.');
 
+  $initial_pin='';
+  if(!$id){
+   $initial_pin=preg_replace('/\\D+/','',wp_unslash($_POST['initial_worklist_pin']??''));
+   if(!preg_match('/^\\d{8}$/',$initial_pin)) wp_die('Bitte einen gültigen achtstelligen Admin-PIN eingeben.');
+  }
   $sponsors=self::collect_sponsors();
   $now=current_time('mysql');
   $data=[
@@ -314,9 +319,7 @@ class VTP_Event_Create_UI {
   $wpdb->query('COMMIT');
 
   if(!empty($data['created_at'])){
-   $pin=preg_replace('/\\D+/','',wp_unslash($_POST['initial_worklist_pin']??''));
-   if(!preg_match('/^\\d{8}$/',$pin)) wp_die('Bitte einen gültigen achtstelligen Admin-PIN eingeben.');
-   if(!VTP_Event_Worklist_Access::initialize_pin($id,$pin)) wp_die('Event angelegt, aber die Admin-PIN konnte nicht eingerichtet werden. Bitte in der Eventverwaltung einen PIN setzen.');
+   if(!VTP_Event_Worklist_Access::initialize_pin($id,$initial_pin)) wp_die('Event angelegt, aber die Admin-PIN konnte nicht eingerichtet werden. Bitte in der Eventverwaltung einen PIN setzen.');
   }
 
   self::ensure_event_pages($id);
