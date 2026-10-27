@@ -60,27 +60,12 @@ class VTP_Events_Overview {
  private static function load_events(){
   global $wpdb;
   $events=VTP_DB::table('events');
-  $today=current_time('Y-m-d');
-
-  // Event-Grunddaten bewusst separat laden. Ein Fehler in einer operativen
-  // Nebenabfrage darf niemals die Eventkarte selbst verschwinden lassen.
-  $sql=$wpdb->prepare(
-   "SELECT * FROM $events
-    WHERE COALESCE(status,'')<>'archiviert'
-      AND (
-       start_date IS NULL
-       OR start_date=''
-       OR start_date='0000-00-00'
-       OR COALESCE(NULLIF(NULLIF(end_date,''),'0000-00-00'),start_date) >= %s
-      )
-    ORDER BY
-      CASE WHEN start_date IS NULL OR start_date='' OR start_date='0000-00-00' THEN 1 ELSE 0 END,
-      start_date ASC,
-      name ASC",
-   $today
-  );
-
-  $rows=$wpdb->get_results($sql) ?: [];
+  // Always include past, non-archived events; the lifecycle board classifies them.
+  $rows=$wpdb->get_results(
+   "SELECT * FROM $events WHERE COALESCE(status,'')<>'archiviert'
+    ORDER BY CASE WHEN start_date IS NULL OR start_date='' OR start_date='0000-00-00' THEN 1 ELSE 0 END,
+             start_date ASC, name ASC"
+  ) ?: [];
   foreach($rows as $event){
    self::add_operational_counts($event);
   }
@@ -159,6 +144,7 @@ class VTP_Events_Overview {
   echo '<h3>'.esc_html($event->name).'</h3>';
   echo '<p class="vtp-event-overview-date">'.esc_html(self::format_date_range($event)).'</p>';
   echo '<p class="vtp-event-overview-location">'.esc_html($location!==''?$location:'Ort noch offen').'</p>';
+  if($state==='completed') echo '<p class="vtp-event-overview-completion">Abschluss / Archivierung ausstehend</p>';
   echo '<div class="vtp-event-overview-actions">';
   echo '<a class="button vtp-event-outline-button" href="'.esc_url($edit_url).'">Öffnen</a>';
   if($program_count>0){
@@ -199,7 +185,7 @@ class VTP_Events_Overview {
   echo '<h2>'.esc_html($title).'</h2>';
   echo '<div class="vtp-event-overview-list">';
   if(!$events){
-   $message=$state==='active'?'Aktuell befindet sich keine Veranstaltung in der operativen Planung.':'Aktuell sind keine weiteren Veranstaltungen vorgemerkt.';
+   $message='Keine Veranstaltungen in dieser Phase.';
    echo '<div class="vtp-event-overview-empty">'.esc_html($message).'</div>';
   } else {
    foreach($events as $event) self::render_event_card($event,$state);
@@ -209,21 +195,17 @@ class VTP_Events_Overview {
 
  private static function render_overview(){
   $rows=self::load_events();
-  $active=[];
-  $planned=[];
-  foreach($rows as $event){
-   if(self::is_operationally_active($event)) $active[]=$event;
-   else $planned[]=$event;
-  }
+  $phases=VTP_Event_Lifecycle::group($rows);
 
   echo '<div class="wrap vtp vtp-modern vtp-event-create-page vtp-events-overview-page">';
   echo '<h1>Events: TuS Veranstaltungen</h1>';
-  echo '<p class="description vtp-event-create-subtitle">Übersicht aller anstehenden TuS Veranstaltungen</p>';
+  echo '<p class="description vtp-event-create-subtitle">Alle nicht archivierten Veranstaltungen – vom Planen bis zum Abschluss</p>';
   self::render_nav();
   echo '<div class="vtp-card vtp-events-overview-shell">';
   echo '<div class="vtp-events-overview-grid">';
-  self::render_column('Aktive Veranstaltungen',$active,'active');
-  self::render_column('Geplante Veranstaltungen',$planned,'planned');
+  self::render_column('Anstehend',$phases['upcoming'],'upcoming');
+  self::render_column('Am Laufen',$phases['running'],'running');
+  self::render_column('Durchgeführt – Abschluss offen',$phases['completed'],'completed');
   echo '</div></div></div>';
  }
 
