@@ -32,6 +32,18 @@ class VTP_Event_Worklist_Access {
   ) $c;");
  }
 
+ public static function initialize_pin($event_id,$pin){
+  $event_id=absint($event_id);
+  if(!$event_id || !current_user_can('manage_options') || !preg_match('/^\\d{8}$/',(string)$pin)) return false;
+  global $wpdb;
+  self::ensure_schema();
+  // An existing PIN must never be overwritten by automatic initialization.
+  return $wpdb->query($wpdb->prepare(
+   'INSERT IGNORE INTO '.self::table().' (event_id,pin_hash,updated_at) VALUES (%d,%s,%s)',
+   $event_id,wp_hash_password((string)$pin),current_time('mysql')
+  ))===1 || self::pin_is_set($event_id);
+ }
+
  public static function pin_is_set($event_id){
   global $wpdb;
   self::ensure_schema();
