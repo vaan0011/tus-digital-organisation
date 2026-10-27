@@ -2,19 +2,20 @@
 /**
  * Plugin Name: Verein Turnierplaner
  * Description: Turnier-, Event- und Helferplanung für Fußballvereine: Turniere, Spielpläne, Ergebnisse, QR-Code, Sportfest-Ablauf, Bewirtung und Schichtpläne.
- * Version: 3.8.45
+ * Version: 3.8.46
  * Author: TuS 1901 Mingolsheim e.V.
  * Author URI: https://tus-mingolsheim.de
  * Text Domain: verein-turnierplaner
  */
 if (!defined('ABSPATH')) exit;
-define('VTP_VERSION', '3.8.45');
+define('VTP_VERSION', '3.8.46');
 define('VTP_FILE', __FILE__);
 define('VTP_DIR', plugin_dir_path(__FILE__));
 define('VTP_URL', plugin_dir_url(__FILE__));
 require_once VTP_DIR.'includes/class-vtp-db.php';
 require_once VTP_DIR.'includes/class-vtp-plugin.php';
 require_once VTP_DIR.'includes/class-vtp-public.php';
+require_once VTP_DIR.'includes/class-vtp-event-lifecycle.php';
 require_once VTP_DIR.'includes/class-vtp-dashboard.php';
 require_once VTP_DIR.'includes/class-vtp-dashboard-history.php';
 require_once VTP_DIR.'includes/class-vtp-event-create-ui.php';
