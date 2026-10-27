@@ -1,6 +1,6 @@
 .vtp-events-overview-page{max-width:1500px}
 .vtp-events-overview-shell{padding:28px!important}
-.vtp-events-overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px}
+.vtp-events-overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .vtp-event-overview-column h2{font-size:24px!important;margin:0 0 20px!important;color:#111827}
 .vtp-event-overview-list{display:flex;flex-direction:column;gap:18px}
 .vtp-event-overview-item{position:relative;background:#fff;border:1px solid var(--vtp-border);border-radius:16px;padding:22px 24px;box-shadow:0 1px 5px rgba(15,23,42,.04);overflow:hidden}
@@ -25,3 +25,7 @@
 .vtp-events-archive-list{max-width:1100px}
 @media(max-width:1000px){.vtp-events-overview-grid{grid-template-columns:1fr;gap:28px}}
 @media(max-width:780px){.vtp-events-overview-shell{padding:16px!important}.vtp-event-overview-item{padding:18px 18px 18px 22px}.vtp-event-overview-column h2{font-size:21px!important}.vtp-event-overview-item h3{font-size:20px!important}.vtp-event-overview-date,.vtp-event-overview-location{font-size:16px}.vtp-event-overview-card-head{align-items:flex-start;flex-direction:column}.vtp-event-overview-actions{align-items:stretch;flex-direction:column}.vtp-event-overview-actions form,.vtp-event-overview-actions .button{width:100%}}
+
+.vtp-event-overview-item.is-completed:before{background:var(--vtp-accent,#b7192b)}
+.vtp-event-overview-item.is-running:before{background:#15965d}
+.vtp-event-overview-completion{font-weight:700;color:var(--vtp-accent,#b7192b);margin:10px 0}
