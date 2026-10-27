@@ -15,6 +15,7 @@ define('VTP_URL', plugin_dir_url(__FILE__));
 require_once VTP_DIR.'includes/class-vtp-db.php';
 require_once VTP_DIR.'includes/class-vtp-plugin.php';
 require_once VTP_DIR.'includes/class-vtp-public.php';
+require_once VTP_DIR.'includes/class-vtp-event-phases.php';
 require_once VTP_DIR.'includes/class-vtp-dashboard.php';
 require_once VTP_DIR.'includes/class-vtp-dashboard-history.php';
 require_once VTP_DIR.'includes/class-vtp-event-create-ui.php';
