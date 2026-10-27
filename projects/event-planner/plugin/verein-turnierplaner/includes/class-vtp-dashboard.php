@@ -50,14 +50,11 @@ class VTP_Dashboard {
   $scount=(int)$wpdb->get_var("SELECT COUNT(*) FROM $shifts_table s INNER JOIN $events_table e ON e.id=s.event_id WHERE e.status<>'archiviert'");
 
   $event_type_select=$has_event_type?",COALESCE(event_type,'event') AS dashboard_type":",'event' AS dashboard_type";
-  $event_rows=$wpdb->get_results($wpdb->prepare("SELECT id,name,start_date,end_date,location $event_type_select FROM $events_table WHERE status<>'archiviert' AND (end_date IS NULL OR end_date='' OR end_date>=%s) ORDER BY COALESCE(start_date,'9999-12-31') ASC LIMIT 12",$today));
-  $tournament_rows=$wpdb->get_results($wpdb->prepare("SELECT id,name,start_date,location,'tournament' AS dashboard_type FROM $tournaments_table WHERE status<>'archiviert' AND (start_date IS NULL OR start_date='' OR start_date>=%s) ORDER BY COALESCE(start_date,'9999-12-31') ASC LIMIT 12",$today));
-  $upcoming=array_merge($event_rows?:[],$tournament_rows?:[]);
-  usort($upcoming,function($a,$b){
-   $ad=$a->start_date?:'9999-12-31'; $bd=$b->start_date?:'9999-12-31';
-   return $ad===$bd?strcasecmp((string)$a->name,(string)$b->name):strcmp($ad,$bd);
-  });
-  $upcoming=array_slice($upcoming,0,12);
+  // Keep all unarchived records visible; date only controls the board phase.
+  $event_rows=$wpdb->get_results("SELECT id,name,start_date,end_date,location $event_type_select FROM $events_table WHERE status<>'archiviert' ORDER BY start_date ASC,name ASC");
+  $tournament_rows=$wpdb->get_results("SELECT id,name,start_date,start_date AS end_date,location,'tournament' AS dashboard_type FROM $tournaments_table WHERE status<>'archiviert' ORDER BY start_date ASC,name ASC");
+  $all_rows=array_merge($event_rows?:[],$tournament_rows?:[]);
+  $board=VTP_Event_Lifecycle::group($all_rows,$today);
 
   $tasks=[];
   $past=$wpdb->get_results($wpdb->prepare("SELECT id,name,start_date,end_date $event_type_select FROM $events_table WHERE status<>'archiviert' AND COALESCE(NULLIF(end_date,''),start_date)<%s ORDER BY COALESCE(NULLIF(end_date,''),start_date) ASC LIMIT 8",$today));
@@ -65,7 +62,8 @@ class VTP_Dashboard {
    $tasks[]=['label'=>$ev->name.': abschließen / archivieren','url'=>add_query_arg(['page'=>'vtp-events','edit_event'=>$ev->id],admin_url('admin.php')),'kind'=>'event'];
   }
 
-  foreach($event_rows?:[] as $ev){
+  foreach(array_merge($board['upcoming'],$board['running']) as $ev){
+   if($ev->dashboard_type==='tournament') continue;
    $items=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $items_table WHERE event_id=%d",$ev->id));
    if($items===0) $tasks[]=['label'=>$ev->name.': Programm fehlt','url'=>add_query_arg(['page'=>'vtp-events','edit_event'=>$ev->id],admin_url('admin.php')),'kind'=>'event'];
    $needs=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $needs_table WHERE event_id=%d",$ev->id));
@@ -80,6 +78,7 @@ class VTP_Dashboard {
   }
 
   foreach($tournament_rows?:[] as $t){
+   if(VTP_Event_Lifecycle::phase($t->start_date,$t->start_date,$today)==='completed') continue;
    $teams=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('teams').' WHERE tournament_id=%d',$t->id));
    $matches=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('matches').' WHERE tournament_id=%d',$t->id));
    if($teams===0) $tasks[]=['label'=>$t->name.': Teams fehlen','url'=>add_query_arg(['page'=>'vtp','edit'=>$t->id],admin_url('admin.php')),'kind'=>'tournament'];
@@ -102,20 +101,26 @@ class VTP_Dashboard {
   }
   echo '</div>';
 
-  echo '<div class="vtp-dashboard-content">';
-  echo '<section class="vtp-card vtp-dashboard-panel"><h2>Übersicht</h2>';
-  if(!$upcoming){ echo '<p class="vtp-dashboard-empty">Keine anstehenden Events, Turniere oder Camps.</p>'; }
-  else {
-   echo '<div class="vtp-dashboard-list">';
-   foreach($upcoming as $row){
-    $type=$row->dashboard_type==='camp'?'Camp':($row->dashboard_type==='tournament'?'Turnier':'Event');
-    $url=$row->dashboard_type==='tournament'?add_query_arg(['page'=>'vtp','edit'=>$row->id],admin_url('admin.php')):add_query_arg(['page'=>'vtp-events','edit_event'=>$row->id],admin_url('admin.php'));
-    $end=property_exists($row,'end_date')?$row->end_date:null;
-    echo '<a class="vtp-dashboard-list-item" href="'.esc_url($url).'"><span class="vtp-dashboard-type">'.esc_html($type).'</span><span class="vtp-dashboard-main"><strong>'.esc_html($row->name).'</strong><small>'.esc_html(self::format_date($row->start_date,$end)).($row->location?' · '.esc_html($row->location):'').'</small></span><span aria-hidden="true">›</span></a>';
+  echo '<section class="vtp-card vtp-dashboard-board"><h2>Übersicht</h2><div class="vtp-dashboard-board-grid">';
+  foreach(['upcoming'=>'Anstehend','running'=>'Am Laufen','completed'=>'Durchgeführt'] as $phase=>$label){
+   echo '<section class="vtp-dashboard-board-column"><h3>'.esc_html($label).' <span>'.count($board[$phase]).'</span></h3>';
+   if(!$board[$phase]) echo '<p class="vtp-dashboard-empty">Keine Veranstaltungen</p>';
+   else {
+    echo '<div class="vtp-dashboard-list">';
+    foreach($board[$phase] as $row){
+     $type=$row->dashboard_type==='camp'?'Camp':($row->dashboard_type==='tournament'?'Turnier':'Event');
+     $url=$row->dashboard_type==='tournament'?add_query_arg(['page'=>'vtp','edit'=>$row->id],admin_url('admin.php')):add_query_arg(['page'=>'vtp-events','edit_event'=>$row->id],admin_url('admin.php'));
+     $end=property_exists($row,'end_date')?$row->end_date:null;
+     echo '<a class="vtp-dashboard-list-item" href="'.esc_url($url).'"><span class="vtp-dashboard-type">'.esc_html($type).'</span><span class="vtp-dashboard-main"><strong>'.esc_html($row->name).'</strong><small>'.esc_html(self::format_date($row->start_date,$end)).'</small>';
+     if($phase==='completed') echo '<small>Abschluss / Archivierung offen</small>';
+     echo '</span><span aria-hidden="true">›</span></a>';
+    }
+    echo '</div>';
    }
-   echo '</div>';
+   echo '</section>';
   }
-  echo '</section>';
+  echo '</div></section>';
+  echo '<div class="vtp-dashboard-content">';
 
   echo '<section class="vtp-card vtp-dashboard-panel"><h2>Offene Aufgaben</h2>';
   if(!$tasks){ echo '<p class="vtp-dashboard-empty">Aktuell sind keine automatisch erkannten Aufgaben offen.</p>'; }
