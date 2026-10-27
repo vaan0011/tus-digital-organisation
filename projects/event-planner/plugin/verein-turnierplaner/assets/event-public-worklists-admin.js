@@ -36,6 +36,60 @@
   state.className='vtp-worklist-pin-state';
   state.textContent=access.configured?'Admin-PIN ist gesetzt':'Admin-PIN noch nicht gesetzt';
   box.appendChild(state);
+  if(access.configured){
+   var revealButton=document.createElement('button');
+   revealButton.type='button';
+   revealButton.className='button';
+   revealButton.textContent='PIN anzeigen';
+   var revealValue=document.createElement('code');
+   revealValue.style.marginLeft='10px';
+   revealValue.hidden=true;
+   var copyButton=document.createElement('button');
+   copyButton.type='button';
+   copyButton.className='button';
+   copyButton.textContent='PIN kopieren';
+   copyButton.hidden=true;
+   var revealMessage=document.createElement('small');
+   revealMessage.style.display='block';
+   revealMessage.setAttribute('role','status');
+   revealButton.addEventListener('click',function(){
+    if(!revealValue.hidden){
+     revealValue.textContent='';
+     revealValue.hidden=true;
+     copyButton.hidden=true;
+     revealButton.textContent='PIN anzeigen';
+     revealMessage.textContent='';
+     return;
+    }
+    revealButton.disabled=true;
+    var payload=new URLSearchParams({
+     action:'vtp_reveal_worklist_pin',
+     event_id:String(access.eventId),
+     nonce:access.revealNonce
+    });
+    fetch(access.ajaxUrl,{method:'POST',body:payload,credentials:'same-origin',cache:'no-store'})
+     .then(function(r){return r.json();})
+     .then(function(result){
+      if(!result.success){revealMessage.textContent=(result.data&&result.data.message)||'PIN nicht verfügbar.';return;}
+      revealValue.textContent=result.data.pin;
+      revealValue.hidden=false;
+      copyButton.hidden=false;
+      revealButton.textContent='PIN ausblenden';
+     })
+     .catch(function(){revealMessage.textContent='PIN konnte nicht geladen werden.';})
+     .finally(function(){revealButton.disabled=false;});
+   });
+   copyButton.addEventListener('click',function(){
+    if(!revealValue.textContent) return;
+    if(navigator.clipboard&&window.isSecureContext){
+     navigator.clipboard.writeText(revealValue.textContent).then(function(){revealMessage.textContent='PIN kopiert.';},function(){revealMessage.textContent='Kopieren nicht möglich.';});
+    } else revealMessage.textContent='PIN bitte manuell kopieren.';
+   });
+   box.appendChild(revealButton);
+   box.appendChild(revealValue);
+   box.appendChild(copyButton);
+   box.appendChild(revealMessage);
+  }
   if(access.saved){
    var saved=document.createElement('div');
    saved.className='vtp-worklist-pin-saved';

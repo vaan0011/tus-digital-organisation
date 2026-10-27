@@ -9,6 +9,7 @@ class VTP_Event_Worklist_Access {
   self::ensure_schema();
   add_action('admin_enqueue_scripts',[__CLASS__,'admin_assets'],30);
   add_action('admin_post_vtp_save_worklist_pin',[__CLASS__,'save_pin']);
+  add_action('wp_ajax_vtp_reveal_worklist_pin',[__CLASS__,'ajax_reveal_pin']);
   add_action('admin_post_nopriv_vtp_worklist_pin_login',[__CLASS__,'pin_login']);
   add_action('admin_post_vtp_worklist_pin_login',[__CLASS__,'pin_login']);
   add_action('template_redirect',[__CLASS__,'protect_query_pages'],8);
@@ -32,16 +33,67 @@ class VTP_Event_Worklist_Access {
   ) $c;");
  }
 
+
+ private static function encrypted_pin_option($event_id){
+  return 'vtp_worklist_pin_encrypted_'.absint($event_id);
+ }
+
+ private static function encrypt_pin($event_id,$pin){
+  if(!function_exists('openssl_encrypt') || !function_exists('random_bytes')) return false;
+  try {
+   $iv=random_bytes(12);
+   $tag='';
+   $key=hash('sha256',wp_salt('auth').'|vtp-worklist-pin|'.absint($event_id),true);
+   $ciphertext=openssl_encrypt((string)$pin,'aes-256-gcm',$key,OPENSSL_RAW_DATA,$iv,$tag);
+   if($ciphertext===false) return false;
+   return base64_encode($iv.$tag.$ciphertext);
+  } catch(Throwable $e){ return false; }
+ }
+
+ private static function decrypt_pin($event_id){
+  if(!function_exists('openssl_decrypt')) return '';
+  $encoded=get_option(self::encrypted_pin_option($event_id),'');
+  if(!is_string($encoded) || $encoded==='') return '';
+  $data=base64_decode($encoded,true);
+  if($data===false || strlen($data)<29) return '';
+  $iv=substr($data,0,12);
+  $tag=substr($data,12,16);
+  $ciphertext=substr($data,28);
+  $key=hash('sha256',wp_salt('auth').'|vtp-worklist-pin|'.absint($event_id),true);
+  $pin=openssl_decrypt($ciphertext,'aes-256-gcm',$key,OPENSSL_RAW_DATA,$iv,$tag);
+  if(!is_string($pin) || !preg_match('/^\d{4,8}$/',$pin)) return '';
+  // Do not reveal a stale value if the hash has been independently changed.
+  return wp_check_password($pin,self::pin_hash($event_id)) ? $pin : '';
+ }
+
+ public static function ajax_reveal_pin(){
+  if(!current_user_can('manage_options')) wp_send_json_error(['message'=>'Nicht berechtigt.'],403);
+  $event_id=absint($_POST['event_id']??0);
+  if(!$event_id || !check_ajax_referer('vtp_reveal_worklist_pin_'.$event_id,'nonce',false)){
+   wp_send_json_error(['message'=>'Ungültige Anfrage.'],403);
+  }
+  nocache_headers();
+  $pin=self::decrypt_pin($event_id);
+  if($pin==='') wp_send_json_error(['message'=>'Die bisherige PIN kann nicht angezeigt werden. Bitte einmalig einen neuen PIN setzen.'],404);
+  wp_send_json_success(['pin'=>$pin]);
+ }
+
  public static function initialize_pin($event_id,$pin){
   $event_id=absint($event_id);
   if(!$event_id || !current_user_can('manage_options') || !preg_match('/^\\d{8}$/',(string)$pin)) return false;
   global $wpdb;
   self::ensure_schema();
   // An existing PIN must never be overwritten by automatic initialization.
-  return $wpdb->query($wpdb->prepare(
+  if(self::pin_is_set($event_id)) return true;
+  $sealed=self::encrypt_pin($event_id,$pin);
+  if($sealed===false) return false;
+  $result=$wpdb->query($wpdb->prepare(
    'INSERT IGNORE INTO '.self::table().' (event_id,pin_hash,updated_at) VALUES (%d,%s,%s)',
    $event_id,wp_hash_password((string)$pin),current_time('mysql')
-  ))===1 || self::pin_is_set($event_id);
+  ));
+  if($result!==1) return self::pin_is_set($event_id);
+  update_option(self::encrypted_pin_option($event_id),$sealed,false);
+  return true;
  }
 
  public static function pin_is_set($event_id){
@@ -67,6 +119,8 @@ class VTP_Event_Worklist_Access {
    'actionUrl'=>admin_url('admin-post.php'),
    'nonce'=>wp_create_nonce('vtp_save_worklist_pin_'.$event_id),
    'saved'=>!empty($_GET['worklist_pin_saved']),
+   'ajaxUrl'=>admin_url('admin-ajax.php'),
+   'revealNonce'=>wp_create_nonce('vtp_reveal_worklist_pin_'.$event_id),
   ]);
  }
 
@@ -81,10 +135,13 @@ class VTP_Event_Worklist_Access {
   global $wpdb;
   self::ensure_schema();
   $table=self::table();
+  $sealed=self::encrypt_pin($event_id,$pin);
+  if($sealed===false) wp_die('Sichere PIN-Speicherung ist auf diesem Server nicht verfügbar.');
   $data=['pin_hash'=>wp_hash_password($pin),'updated_at'=>current_time('mysql')];
   $exists=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $table WHERE event_id=%d",$event_id));
   $ok=$exists ? $wpdb->update($table,$data,['event_id'=>$event_id]) : $wpdb->insert($table,array_merge(['event_id'=>$event_id],$data));
   if($ok===false) wp_die('PIN konnte nicht gespeichert werden.');
+  update_option(self::encrypted_pin_option($event_id),$sealed,false);
 
   $url=add_query_arg(['page'=>'vtp-events','edit_event'=>$event_id,'worklist_pin_saved'=>1],admin_url('admin.php'));
   wp_safe_redirect($url);
