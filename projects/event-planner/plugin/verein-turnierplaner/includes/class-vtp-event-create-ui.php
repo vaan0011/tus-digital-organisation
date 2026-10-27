@@ -312,6 +312,7 @@ class VTP_Event_Create_UI {
   $wpdb->query('COMMIT');
 
   self::ensure_event_pages($id);
+  VTP_Event_Public_Worklists::ensure_tasks_page($id);
   wp_safe_redirect(add_query_arg(['page'=>'vtp-events','edit_event'=>$id,'saved'=>1],admin_url('admin.php')));
   exit;
  }
