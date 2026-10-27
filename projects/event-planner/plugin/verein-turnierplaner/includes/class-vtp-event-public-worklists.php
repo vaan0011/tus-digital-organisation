@@ -10,6 +10,7 @@ class VTP_Event_Public_Worklists {
   add_filter('query_vars',[__CLASS__,'query_vars']);
   add_action('template_redirect',[__CLASS__,'template_redirect'],9);
   add_shortcode('verein_aufgabenliste',[__CLASS__,'tasks_shortcode']);
+  add_action('admin_init',[__CLASS__,'ensure_existing_event_page']);
   // Override the legacy helper shortcode with the combined shifts/bring view.
   add_shortcode('verein_helferplan',[__CLASS__,'teamwork_shortcode']);
 
@@ -71,6 +72,32 @@ class VTP_Event_Public_Worklists {
   return $vars;
  }
 
+ public static function ensure_existing_event_page(){
+  if(!current_user_can('manage_options') || sanitize_key($_GET['page']??'')!=='vtp-events') return;
+  $event_id=absint($_GET['edit_event']??0);
+  if($event_id) self::ensure_tasks_page($event_id);
+ }
+
+ public static function ensure_tasks_page($event_id){
+  $event_id=absint($event_id);
+  if(!$event_id || !current_user_can('manage_options')) return 0;
+  global $wpdb;
+  $table=VTP_DB::table('events');
+  $event=$wpdb->get_row($wpdb->prepare("SELECT id,name FROM $table WHERE id=%d",$event_id));
+  if(!$event) return 0;
+  $existing=get_posts(['post_type'=>'page','post_status'=>['publish','draft','private'],'meta_key'=>'_vtp_tasks_event_id','meta_value'=>(string)$event_id,'numberposts'=>1,'fields'=>'ids']);
+  if($existing && get_post($existing[0])) return absint($existing[0]);
+  $post_id=wp_insert_post([
+   'post_type'=>'page','post_status'=>'publish',
+   'post_title'=>'Aufgabenliste: '.$event->name,
+   'post_name'=>sanitize_title('aufgabenliste-'.$event->name),
+   'post_content'=>'[verein_aufgabenliste id="'.$event_id.'"]',
+  ],true);
+  if(is_wp_error($post_id) || !$post_id) return 0;
+  update_post_meta($post_id,'_vtp_tasks_event_id',$event_id);
+  return absint($post_id);
+ }
+
  private static function enqueue_assets(){
   wp_enqueue_style('vtp-public',VTP_URL.'assets/public.css',['dashicons'],VTP_VERSION);
   wp_enqueue_style('vtp-event-public-worklists',VTP_URL.'assets/event-public-worklists.css',['vtp-public'],VTP_VERSION);
@@ -78,7 +105,8 @@ class VTP_Event_Public_Worklists {
 
  public static function tasks_url($event,$person=''){
   $event_id=absint(is_object($event)?($event->id??0):$event);
-  $url=home_url('/?vtp_tasks='.$event_id);
+  $pages=get_posts(['post_type'=>'page','post_status'=>['publish','private'],'meta_key'=>'_vtp_tasks_event_id','meta_value'=>(string)$event_id,'numberposts'=>1,'fields'=>'ids']);
+  $url=$pages ? get_permalink($pages[0]) : home_url('/?vtp_tasks='.$event_id);
   if($person!=='') $url=add_query_arg('person',$person,$url);
   return $url;
  }
