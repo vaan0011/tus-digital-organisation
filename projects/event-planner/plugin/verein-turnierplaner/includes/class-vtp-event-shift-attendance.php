@@ -63,6 +63,10 @@ class VTP_Event_Shift_Attendance {
    $signup_id,$event_id
   ));
   if(!$exists) wp_die('Schichtanmeldung nicht gefunden.');
+  if($status==='attended'){
+   $date=$wpdb->get_var($wpdb->prepare("SELECT s.shift_date FROM $signups g INNER JOIN $shifts s ON s.id=g.shift_id WHERE g.id=%d AND s.event_id=%d",$signup_id,$event_id));
+   if(!$date || $date>current_time('Y-m-d')) wp_die('Eine zukünftige Schicht kann noch nicht als geleistet bestätigt werden.');
+  }
 
   $ok=$wpdb->update($signups,[
    'attendance_status'=>$status,
@@ -124,7 +128,7 @@ class VTP_Event_Shift_Attendance {
         <?php if($no_show || $attended): ?>
          <button type="submit" class="vtp-worklist-admin-secondary">Auf angemeldet zurücksetzen</button>
         <?php else: ?>
-         <button type="submit" name="attendance_status" value="attended" class="vtp-worklist-admin-secondary">Teilnahme bestätigen</button>
+         <?php if((string)$row->shift_date<=current_time('Y-m-d')): ?><button type="submit" name="attendance_status" value="attended" class="vtp-worklist-admin-secondary">Teilnahme bestätigen</button><?php endif; ?>
          <button type="submit" class="vtp-worklist-admin-secondary vtp-attendance-no-show" onclick="return confirm('Diese Person wirklich als nicht erschienen markieren? Die Anmeldung bleibt zur Dokumentation erhalten.')">Nicht erschienen</button>
         <?php endif; ?>
        </form>
