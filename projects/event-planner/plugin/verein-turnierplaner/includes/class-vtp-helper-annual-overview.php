@@ -64,7 +64,7 @@ class VTP_Helper_Annual_Overview {
    $name=trim((string)$row->name);
    $contact=trim((string)$row->contact);
    // Contact helps distinguish identical names, but is not authoritative membership identity.
-   $key=mb_strtolower($name.'|'.$contact);
+   $key=strtolower($name.'|'.$contact);
    if(!isset($people[$key])){
     $people[$key]=['name'=>$name,'minutes'=>0,'shifts'=>0,'events'=>[],'details'=>[]];
    }
