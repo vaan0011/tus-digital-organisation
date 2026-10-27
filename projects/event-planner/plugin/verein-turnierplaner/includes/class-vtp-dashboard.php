@@ -92,7 +92,7 @@ class VTP_Dashboard {
   echo '<a class="button" href="'.esc_url(admin_url('admin.php?page=vtp-events&view=new')).'">neues Event</a>';
   echo '<a class="button" href="'.esc_url(admin_url('admin.php?page=vtp&view=new')).'">neues Turnier</a>';
   echo '<a class="button" href="'.esc_url(admin_url('admin.php?page=vtp-events&view=new&event_type=camp')).'">neues Camp</a>';
-  echo '<a class="button" href="'.esc_url(admin_url('admin.php?page=vtp-helpers')).'">Schichten öffnen</a>';
+  echo '<a class="button" href="'.esc_url(admin_url('admin.php?page=vtp-helpers')).'">Helferübersicht</a>';
   echo '</div>';
 
   echo '<div class="vtp-dashboard-kpis">';
