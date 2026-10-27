@@ -62,7 +62,7 @@ class VTP_Dashboard {
    $tasks[]=['label'=>$ev->name.': abschließen / archivieren','url'=>add_query_arg(['page'=>'vtp-events','edit_event'=>$ev->id],admin_url('admin.php')),'kind'=>'event'];
   }
 
-  foreach($board['upcoming'] as $ev){
+  foreach(array_merge($board['upcoming'],$board['running']) as $ev){
    if($ev->dashboard_type==='tournament') continue;
    $items=(int)$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $items_table WHERE event_id=%d",$ev->id));
    if($items===0) $tasks[]=['label'=>$ev->name.': Programm fehlt','url'=>add_query_arg(['page'=>'vtp-events','edit_event'=>$ev->id],admin_url('admin.php')),'kind'=>'event'];
