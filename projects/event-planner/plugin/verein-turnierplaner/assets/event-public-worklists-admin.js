@@ -53,6 +53,14 @@
    revealMessage.style.display='block';
    revealMessage.setAttribute('role','status');
    revealButton.addEventListener('click',function(){
+    if(!revealValue.hidden){
+     revealValue.textContent='';
+     revealValue.hidden=true;
+     copyButton.hidden=true;
+     revealButton.textContent='PIN anzeigen';
+     revealMessage.textContent='';
+     return;
+    }
     revealButton.disabled=true;
     var payload=new URLSearchParams({
      action:'vtp_reveal_worklist_pin',
@@ -67,14 +75,6 @@
       revealValue.hidden=false;
       copyButton.hidden=false;
       revealButton.textContent='PIN ausblenden';
-      revealButton.onclick=function(){
-       revealValue.textContent='';
-       revealValue.hidden=true;
-       copyButton.hidden=true;
-       revealButton.textContent='PIN anzeigen';
-       revealButton.onclick=null;
-       revealButton.disabled=false;
-      };
      })
      .catch(function(){revealMessage.textContent='PIN konnte nicht geladen werden.';})
      .finally(function(){revealButton.disabled=false;});
