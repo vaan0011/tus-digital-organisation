@@ -1,1 +1,35 @@
-(function(){'use strict';function ready(){var root=document.querySelector('.vtp-modern'),nav=document.querySelector('.vtp-tournament-workspaces');if(!root||!nav)return;var mapping={organisation:['turnierdaten','sponsoren'],teilnehmer:['teams','gruppen','schiedsrichter'],spielplan:['spielplan'],spieltag:['turnierleitung','ergebnisse']};var sections=[];Object.keys(mapping).forEach(function(key){mapping[key].forEach(function(id){var item=document.getElementById(id);if(item){var wrapper=item.closest('.vtp-top-grid');var panel=wrapper&&id==='turnierdaten'?wrapper:item;panel.dataset.vtpTournamentPanel=key;sections.push(panel);}});});if(!sections.length)return;function select(key,updateHash){if(!mapping[key])return;sections.forEach(function(section){section.hidden=section.dataset.vtpTournamentPanel!==key;});nav.querySelectorAll('[data-vtp-tournament-tab]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.vtpTournamentTab===key));});if(updateHash&&history.replaceState)history.replaceState(null,'','#'+mapping[key][0]);}nav.querySelectorAll('[data-vtp-tournament-tab]').forEach(function(b){b.addEventListener('click',function(){select(b.dataset.vtpTournamentTab,true);});});function keyFromHash(){var id=location.hash.slice(1);for(var k in mapping){if(mapping[k].indexOf(id)!==-1)return k;}return null;}root.classList.add('vtp-tournament-focused');select(keyFromHash()||'organisation',false);window.addEventListener('hashchange',function(){var target=keyFromHash();if(target)select(target,false);});document.querySelectorAll('.vtp-assistant a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){var target=keyFromHash();var id=a.getAttribute('href').slice(1);for(var k in mapping){if(mapping[k].indexOf(id)!==-1){select(k,false);break;}}});});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready);else ready();})();
+(function(){
+ 'use strict';
+ function ready(){
+  var nav=document.querySelector('.vtp-tournament-workspaces');
+  if(!nav) return;
+  // Navigational shortcuts only: never hide tournament functionality.
+  var groups={
+   organisation:'turnierdaten',
+   teilnehmer:'teams',
+   spielplan:'spielplan',
+   spieltag:'turnierleitung'
+  };
+  var buttons=nav.querySelectorAll('[data-vtp-tournament-tab]');
+  // Recover any previously hidden content (for example after partial page updates).
+  document.querySelectorAll('[data-vtp-tournament-panel]').forEach(function(panel){
+   panel.hidden=false;
+   panel.removeAttribute('data-vtp-tournament-panel');
+  });
+  buttons.forEach(function(button){
+   button.setAttribute('aria-pressed','false');
+   button.addEventListener('click',function(){
+    var key=button.getAttribute('data-vtp-tournament-tab');
+    var target=document.getElementById(groups[key]);
+    if(!target) return;
+    buttons.forEach(function(item){ item.setAttribute('aria-pressed',String(item===button)); });
+    var box=target.closest('.vtp-top-grid');
+    (box&&key==='organisation'?box:target).scrollIntoView({behavior:'smooth',block:'start'});
+    if(history.replaceState) history.replaceState(null,'','#'+target.id);
+   });
+  });
+  // Existing deep links to Teams, Groups, Referees, etc. remain usable.
+ }
+ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',ready);
+ else ready();
+})();
