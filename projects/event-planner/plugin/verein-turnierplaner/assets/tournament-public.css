@@ -1,0 +1,25 @@
+/* Shared Event shell; tournament-specific layout without duplicating theme brand tokens. */
+.vtp-tournament-public{max-width:1180px}
+.vtp-tournament-public .vtp-event-shell{overflow:hidden}
+.vtp-tournament-public .vtp-event-head{align-items:center}
+.vtp-tournament-public .vtp-event-head h1{overflow-wrap:anywhere}
+.vtp-tournament-description{margin:16px 0 0;color:var(--evt-muted,#667085);line-height:1.6}
+.vtp-tournament-public-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:0 40px 24px;background:#fff}
+.vtp-tournament-public-stats>div{background:#f8fafc;border:1px solid var(--evt-border,#e7edf2);padding:15px;border-radius:14px;display:flex;flex-direction:column;gap:6px;align-items:center}
+.vtp-tournament-public-stats strong{font-size:25px;color:var(--evt-text,#162033)}
+.vtp-tournament-public-stats span{font-size:13px;color:var(--evt-muted,#667085)}
+.vtp-tournament-public .vtp-event-tabs{background:#fff!important;position:static;scroll-margin-top:24px}
+.vtp-tournament-public .vtp-section{margin:0;border:0;border-radius:0;box-shadow:none;padding:28px 40px 12px;scroll-margin-top:24px}
+.vtp-tournament-public .vtp-section + .vtp-section{border-top:1px solid var(--evt-border,#e7edf2)}
+.vtp-tournament-public .vtp-section h2{font-size:26px;margin:0 0 18px;color:var(--evt-text,#162033)}
+.vtp-tournament-public .vtp-match{background:#fff;border:1px solid var(--evt-border,#e7edf2);border-radius:14px;padding:16px;margin:12px 0}
+.vtp-tournament-public .vtp-meta{color:var(--evt-muted,#667085)}
+.vtp-tournament-public .vtp-teams{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);min-width:0;overflow-wrap:anywhere}
+.vtp-tournament-public .vtp-teams strong{white-space:nowrap;color:var(--evt-text,#162033)}
+.vtp-tournament-public .vtp-badge{background:var(--wp--preset--color--primary,var(--evt-blue,#2f6fc5))}
+.vtp-tournament-public .vtp-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.vtp-tournament-public .vtp-table-wrap table{width:100%;min-width:550px}
+.vtp-tournament-public .vtp-place{min-width:0}
+.vtp-tournament-public .vtp-sponsors img{width:auto;height:auto;max-width:120px;max-height:60px}
+@media(max-width:900px){.vtp-tournament-public-stats{padding:0 22px 22px}.vtp-tournament-public .vtp-section{padding:24px 22px 12px}}
+@media(max-width:560px){.vtp-tournament-public-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:0 14px 18px}.vtp-tournament-public-stats>div{padding:12px 5px}.vtp-tournament-public-stats strong{font-size:20px}.vtp-tournament-public-stats span{font-size:11px}.vtp-tournament-public .vtp-section{padding:20px 14px 12px}.vtp-tournament-public .vtp-match{padding:12px}.vtp-tournament-public .vtp-teams{gap:7px;font-size:13px}.vtp-tournament-public .vtp-teams strong{font-size:17px}}
