@@ -6,7 +6,14 @@ class VTP_Plugin {
   add_action('admin_menu',[$this,'menu']); add_action('admin_enqueue_scripts',[$this,'assets']);
   foreach(['save_tournament','archive_tournament','restore_tournament','delete_tournament','save_teams','save_group_editor','regenerate_pin','generate_matches','generate_final_round','save_results','save_match_order','create_public_page','print_pdf','print_referees_pdf','save_sponsors','save_event','archive_event','restore_event','delete_event','save_event_items','save_helper_needs','generate_shifts','delete_shift','delete_signup','save_shift_assignments','save_referees','regenerate_referee_pin','delete_registration'] as $a) add_action('admin_post_vtp_'.$a,[$this,$a]);
  }
- public function assets($h){ if(strpos($h,'vtp')!==false || strpos($h,'turnierplaner')!==false) wp_enqueue_style('vtp-admin',VTP_URL.'assets/admin.css',[],VTP_VERSION); }
+ public function assets($h){
+  if(strpos($h,'vtp')===false && strpos($h,'turnierplaner')===false) return;
+  wp_enqueue_style('vtp-admin',VTP_URL.'assets/admin.css',[],VTP_VERSION);
+  if(sanitize_key($_GET['page']??'')==='vtp'){
+   wp_enqueue_style('vtp-tournament-center',VTP_URL.'assets/tournament-center.css',['vtp-admin'],VTP_VERSION);
+   if(absint($_GET['edit']??0)) wp_enqueue_script('vtp-tournament-center',VTP_URL.'assets/tournament-center.js',[],VTP_VERSION,true);
+  }
+ }
  public function menu(){
   add_menu_page('TuS Eventplaner','TuS Eventplaner','manage_options','vtp-dashboard',[$this,'dashboard_page'],'dashicons-calendar-alt',26);
   add_submenu_page('vtp-dashboard','Dashboard','Dashboard','manage_options','vtp-dashboard',[$this,'dashboard_page']);
@@ -96,7 +103,7 @@ class VTP_Plugin {
     $finishedCount=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('matches').' WHERE tournament_id=%d AND status=%s',$t->id,'finished'));
     echo '<div class="vtp-tournament-hero"><div><h2>'.esc_html($t->name).'</h2><p>'.esc_html($this->type_label($t->event_type)).($t->start_date?' · '.esc_html(date_i18n('d.m.Y',strtotime($t->start_date))):'').($t->start_time?' · '.esc_html(substr($t->start_time,0,5)).' Uhr':'').($t->location?' · '.esc_html($t->location):'').'</p></div><div class="vtp-hero-kpis"><span><strong>'.esc_html($teamCount).'</strong> Teams</span><span><strong>'.esc_html($matchCount).'</strong> Spiele</span><span><strong>'.esc_html($finishedCount).'</strong> beendet</span><form class="vtp-tournament-switch" method="get" action="'.esc_url(admin_url('admin.php')).'"><input type="hidden" name="page" value="vtp"><select name="edit" onchange="this.form.submit()">';
     foreach($rows as $rr){ echo '<option value="'.esc_attr($rr->id).'" '.selected($t->id,$rr->id,false).'>'.esc_html($rr->name).'</option>'; }
-    echo '</select></form></div></div><nav class="vtp-tabs"><a href="#turnierdaten">Übersicht</a><a href="#turnierleitung">Turnierleitung</a><a href="#teams">Teams</a><a href="#gruppen">Gruppen</a><a href="#schiedsrichter">Schiedsrichter</a><a href="#sponsoren">Sponsoren</a><a href="#spielplan">Spielplan</a><a href="#ergebnisse">Ergebnisse</a></nav>';
+    echo '</select></form></div></div><nav class="vtp-tournament-workspaces" aria-label="Turnierbereiche"><button type="button" data-vtp-tournament-tab="organisation" aria-pressed="true">Organisation</button><button type="button" data-vtp-tournament-tab="teilnehmer" aria-pressed="false">Teilnehmer</button><button type="button" data-vtp-tournament-tab="spielplan" aria-pressed="false">Spielplan</button><button type="button" data-vtp-tournament-tab="spieltag" aria-pressed="false">Spieltag</button></nav>';
     $this->render_tournament_assistant($t);
 
     echo '<div class="vtp-grid vtp-top-grid vtp-single-edit"><div class="vtp-card vtp-turnierdaten-card" id="turnierdaten">';
@@ -104,6 +111,7 @@ class VTP_Plugin {
     $this->render_tournament_form($t,$events);
     echo '</details></div></div>';
     $this->manage($t);
+    echo '<p class="description vtp-tournament-focus-hint">Die Arbeitsbereiche bündeln vorhandene Formulare. Alle Werte werden weiterhin in den bisherigen Turnierfunktionen gespeichert.</p>';
     echo '</div>';
     return;
   }
@@ -121,6 +129,25 @@ class VTP_Plugin {
     echo '<div class="vtp-card vtp-wide"><h2>Archivierte Turniere</h2><p class="description">Hier werden ausschließlich archivierte Turniere angezeigt. Neue Turniere legst du im Bereich „Neues Turnier anlegen“ an.</p>';
   } else {
     echo '<div class="vtp-card vtp-wide"><h2>Aktive Turniere</h2><p class="description">Wähle ein Turnier aus, um Teams, Gruppen, Spielplan und Ergebnisse zu bearbeiten.</p>';
+  }
+  if($view==='active'){
+   $phase_groups=VTP_Event_Lifecycle::group($rows);
+   echo '<div class="vtp-tournament-phase-board">';
+   foreach(['upcoming'=>'Anstehend','running'=>'Am Laufen','completed'=>'Durchgeführt'] as $phase=>$label){
+    echo '<section class="vtp-tournament-phase-column"><h2>'.esc_html($label).' <span>'.count($phase_groups[$phase]).'</span></h2>';
+    if(!$phase_groups[$phase]) echo '<p class="vtp-tournament-phase-empty">Keine Turniere in dieser Phase.</p>';
+    foreach($phase_groups[$phase] as $item){
+     $team_count=(int)$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.VTP_DB::table('teams').' WHERE tournament_id=%d',$item->id));
+     $date=$item->start_date?date_i18n('d.m.Y',strtotime($item->start_date)):'Termin offen';
+     $url=add_query_arg(['page'=>'vtp','edit'=>$item->id],admin_url('admin.php'));
+     echo '<article class="vtp-tournament-phase-card"><h3>'.esc_html($item->name).'</h3><p>'.esc_html($date).' · '.esc_html($team_count).' Teams</p>';
+     if($phase==='completed') echo '<p class="vtp-tournament-phase-notice">Abschluss / Archivierung offen</p>';
+     echo '<a class="button vtp-event-outline-button" href="'.esc_url($url).'">Turnier öffnen</a></article>';
+    }
+    echo '</section>';
+   }
+   echo '</div></div></div>';
+   return;
   }
   echo '<div class="vtp-tournament-cards vtp-tournament-card-grid">';
   if(!$rows){ echo '<p>'.($view==='archive'?'Noch keine archivierten Turniere vorhanden.':'Noch keine aktiven Turniere vorhanden.').'</p>'; }
