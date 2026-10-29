@@ -1,6 +1,6 @@
 # PROJECT-STATE – Getränkelieferant 2027
 
-Stand: 2026-09-15 – formale Projektanlage auf Basis des laufenden Angebotsvergleichs
+Stand: 2026-10-29 – Thome-Erstkontakt erfolgt; vergleichbare Bedarfsanfrage und interne Rechteklärung offen
 
 ## Purpose
 
@@ -135,3 +135,30 @@ Lieferangebot und Partnerschaft werden getrennt bewertet. Ein wirtschaftlich sch
 ### Nächster Schritt
 
 Bis 16.10.2026 Projekt-Owner und Bestandsrechte klären. Danach identischen Event-Warenkorb für Thome und Böllinger freigeben und versenden; Sponsoring-/Sachleistungsteil separat ausweisen. Externe Anfrage nur nach Freigabe durch das Gesprächsteam aus 1. Vorsitzendem und Finanzvorstand Thomas.
+
+
+## Update 29.10.2026 – Thome-Erstkontakt und Vergleichsvorbereitung
+
+### Belegter Fortschritt
+
+- Am 28.10.2026 fand ein persönlicher Erstkontakt mit Getränke Thome statt.
+- Thome bat um eine E-Mail mit dem Vorjahresbedarf je Veranstaltung.
+- Eine aufgeschlüsselte Angebotsgrundlage für den Festbetrieb 2027 wurde intern für Thome vorbereitet.
+- Für Getränke Zolk wurde dieselbe Vergleichsgrundlage intern vorbereitet. Zolk ist damit ein zusätzlicher Vergleichskandidat; ein Kontakt oder Angebot ist noch nicht belegt.
+- Getränke Böllinger bleibt Vergleichskandidat. Auch hier ist noch kein Angebot belegt.
+
+### Weiterhin offene Governance
+
+Der Erstkontakt ersetzt den bisherigen Status „externe Ansprache vollständig blockiert“, löst aber die internen Governance-Punkte nicht:
+
+- fachlicher Projekt-Owner weiterhin offen,
+- Höpfner-/Marken-/Exklusivitäts- und sonstige Bestandsrechte weiterhin nicht dokumentiert geklärt,
+- Umfang des Rothenberger-Ausstiegs weiterhin zu bestätigen,
+- keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage erteilt.
+
+### Nächster Schritt
+
+1. Getränke Thome die vorbereitete Bedarfsanfrage mit den 2026er Mengen je Veranstaltung senden; der Versand ist eine externe Kommunikation und bleibt freigabepflichtig.
+2. Zolk und Böllinger nur mit identischem Festbetriebs-Scope anfragen, damit Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vergleichbar bleiben.
+3. Lieferangebot und mögliche Partnerschaft weiterhin getrennt bewerten.
+4. Projekt-Owner, Bestandsrechte und eine belastbare Januar-Übergangsversorgung parallel klären.
