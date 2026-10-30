@@ -1,6 +1,6 @@
 # TuS Project Portfolio
 
-Stand: 2026-10-13 – Projektbestand abgeglichen; fachliche Detailstände bleiben in den Projekten
+Stand: 2026-10-30 – Projekt Spielerbarometer ergänzt; übrige Detailstände unverändert
 
 ## Purpose
 
@@ -20,8 +20,8 @@ Andere Mitarbeiter sollen von hier aus schnell erkennen können, welche Vorhaben
 
 Die aktuelle Repository- und Drive-Prüfung ergibt:
 
-- **24 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
-- davon **4 Aktiv**, **1 Geplant** und **19 Discovery**,
+- **25 formale Projekte** unter `projects/`, jeweils mit `README.md` und `PROJECT-STATE.md`,
+- davon **5 Aktiv**, **1 Geplant** und **19 Discovery**,
 - weitere reale Projektkandidaten aus Infrastruktur-, Archiv- und Förderarbeit,
 - laufende Facharbeit und Regelbetrieb bleiben bewusst außerhalb des Projektmodells.
 
@@ -46,6 +46,7 @@ Die explizite Projektentscheidung hebt `Kunstrasen` vom bisherigen Kandidaten zu
 | Partner Hub | Sponsoring / Partnership Manager | Discovery | `partner-hub/PROJECT-STATE.md` | gemeinsame Partnerdatenbasis, Rollen/Freigaben, Account-Lifecycle und MVP-Grenzen konkretisieren | partnerseitige Oberfläche für bestehende Partner | Sponsoring, Entwicklung, Design, Homepage, Event Planner |
 | Partnerportal | Sponsoring / Partnership Manager | Discovery | `partner-portal/PROJECT-STATE.md` | reale Sponsorendaten und Steuer-Ist konsolidieren und internes MVP reduzieren | internes TuS-Arbeitswerkzeug; gemeinsame Partnerdatenbasis mit Partner Hub | Sponsoring, Finanzen/Steuer, Entwicklung, Design |
 | TuS Tauschbörse | Gesellschaft & Soziales; Owner offen | Discovery | `reuse-marketplace/PROJECT-STATE.md` | Vermittlungsablauf, Datenschutz/Missbrauchsschutz und Spendenweg konkretisieren | noch kein produktiver Implementierungsstand | Entwicklung, Design, Datenschutz, Gesellschaft & Soziales |
+| TuS Spielerbarometer | Sport / Vereinsentwicklung / Vorstand; fachlicher Owner zu benennen | Aktiv | `spielerbarometer/PROJECT-STATE.md` | Google-Forms-Responderlink über gebundenes Apps Script erstellen, Zugang/Datenschutz testen und erste Welle 2026-H2 durchführen | wiederkehrende anonyme/pseudonyme Spielerbefragung; Rohantworten nur geschütztes Google Sheet, niemals öffentlich in GitHub | Sport, Vorstand, Kommunikation, Datenschutz, Vereinsentwicklung |
 | Team Manager | Sport; Owner offen | Discovery | `team-manager/PROJECT-STATE.md` | neun offene Datenklärungen auflösen, bestätigte Seed-Daten erzeugen und danach Schema sowie kleines Trainingsdaten-Inkrement umsetzen; Provider-Spike parallel fortführen | keine parallele Mannschafts-/Personendatenwelt | Sport, Entwicklung, Datenschutz, Platzbelegung, Homepage |
 | Neuaufbau TuS-Homepage | Kommunikation; technischer Owner: WordPress Developer; fachlicher Owner offen | Aktiv | `homepage/PROJECT-STATE.md` | Besucher-/Funktionslandkarte in Homepage-Standard und UI-Mockup spiegeln; danach Sportmedia-Provider-Spike sowie WordPress-/PHP-/Staging-Baseline klären und minimales Theme-Inkrement umsetzen | Theme liefert Look; WordPress/Fachplugins liefern Content, Daten und Funktionen; Colibri erst nach Staging-Migration ablösen | Entwicklung, Design, Team Manager, Event Planner, Platzbelegung, Partnerdaten, Datenschutz, Archiv |
 | Sportpark-Namensrechte 2027 | Sponsoring / Partnership Manager; Projekt-Owner offen | Discovery | `sportpark-namensrechte/PROJECT-STATE.md` | Namens-/Nutzungsrechte und Bestandsverträge prüfen, Premium-Leistungskatalog und Partnerfit qualifizieren | Fünfjahresmodell; 10.000–12.000 EUR/Jahr ambitioniertes, unbestätigtes Premium-Ziel; LED-/Exklusivitätsrechte getrennt halten | Partnership, Vorstand, Finanzen/Steuer, Infrastruktur, Kommunikation |
