@@ -14,7 +14,7 @@ Operativer Projekt-Checkpoint für den Aufbau und die wiederkehrende Durchführu
 
 Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten, zugänglichen Google-Forms-Antwortlink validieren und erst nach Datenschutz-/Funktionsprüfung an die Mannschaften verteilen.
 
-### Verified (30.10.2026)
+### Verified (30.10.2026, nach erfolgreichem Formularlauf)
 
 - Der fachliche Fragenkatalog v1.0 ist abgestimmt: 24 feste Bewertungsfragen, fünf optionale Freitexte, optionale Mannschaftsangabe und priorisierte Verbesserungsfelder.
 - Wiederholung zweimal pro Saison geplant: November/Dezember und Mai/Juni.
@@ -33,7 +33,7 @@ Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten,
 ### Open Gates Before Sending
 
 1. Datenschutzinformationen in verständlicher Form final prüfen: Zweck, Verantwortliche, Löschfristen, Zugriff und Umgang mit kritischem Feedback.
-2. Apps Script innerhalb des privaten Master-Sheets einmalig ausführen und die Google-Forms-Verknüpfung kontrollieren.
+2. Im vorhandenen Form prüfen, dass die 24 Kernfragen, fünf Freitexte, Mannschaftswahl und Prioritätsauswahl vollständig und richtig dargestellt werden.
 3. Formulareinstellungen prüfen: kein Login-/E-Mail-Zwang, keine Ergebniseinsicht für Antwortende, keine Bearbeitungsrechte für Dritte.
 4. Testeintrag senden und prüfen, dass Rohantworten nur in der privaten Datenbasis erscheinen; Testeintrag anschließend aus dem produktiven Bestand entfernen.
 5. Öffentlichen Antwortlink in einem privaten Browserfenster testen.
