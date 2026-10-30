@@ -24,6 +24,10 @@ Verbindlicher fachlicher Funktionsrahmen:
 
 `FUNCTIONAL-SCOPE.md`
 
+Konzept für persönlichen Ticketverkauf mit grafischem Saalplan:
+
+`OFFLINE-TICKETING-SAALPLAN.md`
+
 Verbindliche Dashboard- und Auswertungslogik:
 
 `DASHBOARD-LOGIC.md`
