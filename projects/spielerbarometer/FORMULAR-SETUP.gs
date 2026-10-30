@@ -38,7 +38,7 @@ const SB = Object.freeze({
 });
 
 function erstelleWelle(welle) {
-  if (!/^20\\d{2}-H[12]$/.test(String(welle))) {
+  if (!/^20\d{2}-H[12]$/.test(String(welle))) {
     throw new Error("Welle muss z. B. 2026-H2 oder 2027-H1 heißen.");
   }
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -57,11 +57,11 @@ function erstelleWelle(welle) {
   const out = ss.getSheetByName(SB.answerSheet);
   if (!catalog || !waves || !out) throw new Error("Datenbasis-Tabs fehlen.");
   const entries = catalog.getDataRange().getValues().slice(1)
-    .filter(row => /^(Q\\d{2}|F\\d{2}|P01)$/.test(String(row[0])));
+    .filter(row => /^(Q\d{2}|F\d{2}|P01)$/.test(String(row[0])));
 
   const form = FormApp.create(SB.title + " " + welle);
   form.setDescription(
-    "Deine Meinung. Unser Verein. Gemeinsam besser werden.\\n" +
+    "Deine Meinung. Unser Verein. Gemeinsam besser werden.\n" +
     "Freiwillige Spielerbefragung der 1. und 2. Mannschaft (ca. 8–10 Minuten). " +
     "Wir erfassen keine Namen und keine E-Mail-Adressen. Die Angaben werden " +
     "ausschließlich für die Weiterentwicklung des Vereins ausgewertet. " +
@@ -91,13 +91,13 @@ function erstelleWelle(welle) {
     form.addPageBreakItem().setTitle(groupName).setHelpText(description);
     for (const [id,group,question] of entries) {
       if (group !== groupName) continue;
-      if (/^Q\\d{2}$/.test(id)) {
+      if (/^Q\d{2}$/.test(id)) {
         form.addMultipleChoiceItem()
           .setTitle(id + " – " + question)
           .setChoiceValues(SB.ratingValues)
           .setHelpText("1 = trifft überhaupt nicht zu | 5 = trifft voll und ganz zu")
           .setRequired(true);
-      } else if (/^F\\d{2}$/.test(id)) {
+      } else if (/^F\d{2}$/.test(id)) {
         form.addParagraphTextItem().setTitle(id + " – " + question).setRequired(false);
       }
     }
@@ -184,7 +184,7 @@ function synchronisiereAntworten() {
       const answers = {};
       for (const item of response.getItemResponses()) {
         const title = item.getItem().getTitle();
-        const match = title.match(/^(Q\\d{2}|F\\d{2}|P01|TEAM)\\s*[–-]/);
+        const match = title.match(/^(Q\d{2}|F\d{2}|P01|TEAM)\s*[–-]/);
         if (match) answers[match[1]] = item.getResponse();
       }
       const rating = v => /^[1-5]$/.test(String(v||"")) ? Number(v) : "";
