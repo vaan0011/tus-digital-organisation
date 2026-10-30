@@ -280,3 +280,11 @@ Diese Datei wird aktualisiert, wenn mindestens eines zutrifft:
 - eine langfristige Entscheidung wurde getroffen,
 - ein relevanter Branch oder PR übernimmt die aktive Arbeit,
 - ein Risiko oder Blocker verändert den nächsten sinnvollen Schritt.
+
+## New Workstream – Offline-Ticketverkauf / grafischer Saalplan (30.10.2026)
+
+- Nutzerauftrag: Für die Winterfeier werden Karten persönlich verkauft. Bisher existierte ein grafisch wie der Saal angeordnetes Excel mit Tischen, Sitzplätzen und Markierungen verkaufter Sitze. Diese Tätigkeit soll in den bestehenden Event Planner integriert werden, nicht als Online-Shop.
+- Fachlicher MVP-Arbeitsentwurf: `OFFLINE-TICKETING-SAALPLAN.md`. Die generelle Ticketing-Vision existiert bereits in `plugins/event-manager/ticketing.md`.
+- Die Original-Excel-Saalplan-Datei war unter den am 30.10.2026 verbundenen Google-Drive-Dateien nicht auffindbar; keine Tischzahlen oder Geometrie erfinden. Vor der grafischen Implementierung echte Vorlage beschaffen und verifizieren.
+- Nächster Schritt: Layout der Originalvorlage prüfen, dann im eigenen Implementierungs-PR Eventanbindung, gesicherte Persistenz und Offline-Verkaufsworkflow bauen und testen. Diese Konzept-Änderung enthält **noch keinen Produktivcode** und keine Freigabe zur Installation.
+- Bei Implementierungsbeginn aktuellen `main`-Code erneut prüfen: Plugin-Einstiegsdatei meldete bei der Sichtung `3.8.49`, dieser Projekt-Checkpoint dokumentiert historisch noch `3.8.45`. Versionsabgleich im Implementierungs-PR nachführen.
