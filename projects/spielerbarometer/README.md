@@ -34,7 +34,8 @@ Die fachliche Wahrheit des aktuellen Umfragekatalogs und die vertraulichen Ergeb
 ## Relationship to other documents
 
 - `PROJECT-STATE.md` – aktueller Stand und nächste Schritte
-- `FORMULAR-SETUP.gs` – einmalig ausführbares Formular-Setup mit fortlaufender Wellenunterstützung
+- `FORMULAR-SETUP.gs` – erzeugt neue Google-Forms-Wellen aus dem privaten Sheet
+- `BESTEHENDES-FORMULAR-BEFUELLEN.gs` – befüllt ein bereits manuell angelegtes, leeres Google Form direkt über dessen Apps Script; erstellt kein Duplikat
 - `../team-manager/README.md` – Mannschaftsmodell, ohne personenbezogene Kopplung
 - `../PROJECT-PORTFOLIO.md` – Gesamtportfolio
 - `../../standards/learning-loop.md` – Maßnahmen und Lernen
