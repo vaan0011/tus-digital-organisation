@@ -20,6 +20,7 @@ Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten,
 - Wiederholung zweimal pro Saison geplant: November/Dezember und Mai/Juni.
 - Neues Projektverzeichnis innerhalb von `TuS Projekte` in Google Drive ist angelegt; separate Verzeichnisse für Fragebogen/Kommunikation, vertrauliche Datenbasis und aggregierte Maßnahmen.
 - Ein native Google Doc mit dem Masterfragebogen und eine **nicht freigegebene** Google-Sheets-Datenbasis mit Auswertungsgrundstruktur wurden angelegt.
+- Für ein vom Nutzer bereits manuell angelegtes, leeres Google Form ist `BESTEHENDES-FORMULAR-BEFUELLEN.gs` vorbereitet. Das Script ist direkt aus diesem Form über Apps Script auszuführen; der tatsächliche Formularinhalt ist noch nicht aus der Ferne bestätigt.
 - Die Verbindung eines produktiven Google-Forms-Formulars mit der Datenbasis ist **noch nicht erfolgt**. Das direkte Google-Forms-Erstellen und öffentliche Freigeben ist mit dem aktuell verbundenen Google-Drive-Werkzeug nicht möglich. Das bereitgestellte `FORMULAR-SETUP.gs` kann dafür mit Google Apps Script im TuS-Konto ausgeführt werden.
 - Keine echten Spielerantworten erfasst; keine öffentliche Datenfreigabe vorgenommen.
 
@@ -41,7 +42,7 @@ Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten,
 
 ### Next Meaningful Step
 
-`erstelleWelle('2026-H2')` aus `FORMULAR-SETUP.gs` im privaten Google-Sheets-Apps-Script ausführen, Form überprüfen, Datenschutz-/Veröffentlichungsgate abschließen und Starttermin der ersten Welle bestätigen.
+Das vom Nutzer angelegte leere Google Form über `BESTEHENDES-FORMULAR-BEFUELLEN.gs` mit `bestehendesFormularBefuellen()` (im Form gebundenes Apps Script) befüllen. Verbindung zur privaten Datenbasis prüfen, Form auf Vollständigkeit testen, Datenschutz-/Veröffentlichungsgate abschließen und erst dann erste Welle verteilen. `FORMULAR-SETUP.gs` bleibt als Alternative für weitere neue Wellen.
 
 ### Future Development
 
