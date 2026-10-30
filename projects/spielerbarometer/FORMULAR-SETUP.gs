@@ -5,7 +5,7 @@
  * "TuS Spielerbarometer – Datenbasis und Auswertung (VERTRAULICH)"
  * unter Erweiterungen > Apps Script ablegen.
  *
- * Erststart: erstelleWelle('2026-H2')
+ * Erststart: setup2026H2() im Apps-Script-Editor auswählen und ausführen
  * Folgewellen: erstelleWelle('2027-H1') / erstelleWelle('2027-H2') ...
  * Nachimport/Fehlerreparatur: synchronisiereAntworten()
  *
@@ -36,6 +36,8 @@ const SB = Object.freeze({
     "Zusammenarbeit zwischen Spielern, Trainern und Vorstand"
   ]
 });
+
+function setup2026H2() { return erstelleWelle('2026-H2'); }
 
 function erstelleWelle(welle) {
   if (!/^20\d{2}-H[12]$/.test(String(welle))) {
