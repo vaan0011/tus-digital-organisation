@@ -11,17 +11,19 @@ Operativer Projekt-Checkpoint für den Aufbau und die wiederkehrende Durchführu
 ## Main Content
 
 ### Current Goal
+Erste Welle `2026-H2` als bestehendes Google Form v1.1 (31 Bewertungsfragen, 6 Freitextfragen) datensparsam erproben; die private Auswertung und Datenschutzfreigabe prüfen, ehe der Link breit an die Mannschaften verteilt wird.
 
-Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten, zugänglichen Google-Forms-Antwortlink validieren und erst nach Datenschutz-/Funktionsprüfung an die Mannschaften verteilen.
+### Verified (31.10.2026)
+- Das bestehende Google Form wurde per gebundenem Apps Script v1.1 aktualisiert; das Ausführungsprotokoll bestätigt am 31.10.2026 um 18:36 Uhr `ERFOLG: Formular v1.1 aktualisiert.`; der zweite Reparaturlauf hat keine Elemente dupliziert und bestehende Antworten erhalten.
+- Fachlicher Umfang: 24 ursprüngliche Bewertungsfragen, davon Q04 und Q05 mit aktualisiertem Wortlaut, sieben neue Aussagen zu Trainerteam (T01–T03) und Spieltag (S01–S04), sowie sechs optionale Freitexte (F01–F06), optionale Mannschaftsangabe und Priorisierung.
+- Die ausdrücklich ausgeschlossenen Fragen zu Torwarttraining/Torwarttrainer werden **nicht** erhoben, da eine Anonymisierung bei wenigen Torhütern nicht sichergestellt wäre.
+- Bewertungsoptionen sind als fünf ausgeschriebene Zustimmungsstufen (1 bis 5) umgesetzt; Fragen können übersprungen werden.
+- Google Forms schreibt in das private Antworttab `Formularantworten 1`. Die sieben neuen Bewertungen und F06 erscheinen dort in zusätzlichen Spalten, unabhängig von der visuellen Reihenfolge der Fragen. Die zuvor erfassten Antworten sind erhalten geblieben.
+- Im privaten Sheet `ANTWORTEN_IMPORT` übernehmen neue Formelspalten `AJ:AQ` die Felder T01–T03, S01–S04 und F06; die v1.0-Daten bleiben unverändert.
+- `AUSWERTUNG` enthält die zusätzlichen Kennzahlen `Ø Trainerteam` (J) und `Ø Spieltag` (K). Die Kennzahl eines Bereichs wird nur gezeigt, wenn **jede** darin enthaltene Bewertungsfrage von wenigstens sieben Antwortenden derselben Mannschaft und Welle beantwortet wurde. Die bestehende Kernkennzahl `Ø Gesamt` bezieht sich weiterhin nur auf Q01–Q24, um die Zeitreihe nicht unbeabsichtigt zu verändern.
+- Q04 und Q05 haben mit v1.1 eine neue Bedeutung beziehungsweise Formulierung; sie dürfen nicht ohne Vorbehalt mit älteren Wellen verglichen werden.
+- Eine aktuelle **Testantwort nach dem Umbau**, die tatsächlich durch die neuen Auswertungsspalten läuft, sowie die formale Datenschutz-/Teilnehmerzugriffsprüfung stehen noch aus.
 
-### Verified (30.10.2026, nach erfolgreichem Formularlauf)
-
-- Der fachliche Fragenkatalog v1.0 ist abgestimmt: 24 feste Bewertungsfragen, fünf optionale Freitexte, optionale Mannschaftsangabe und priorisierte Verbesserungsfelder.
-- Wiederholung zweimal pro Saison geplant: November/Dezember und Mai/Juni.
-- Neues Projektverzeichnis innerhalb von `TuS Projekte` in Google Drive ist angelegt; separate Verzeichnisse für Fragebogen/Kommunikation, vertrauliche Datenbasis und aggregierte Maßnahmen.
-- Ein native Google Doc mit dem Masterfragebogen und eine **nicht freigegebene** Google-Sheets-Datenbasis mit Auswertungsgrundstruktur wurden angelegt.
-- Die Verbindung eines produktiven Google-Forms-Formulars mit der Datenbasis ist **noch nicht erfolgt**. Das direkte Google-Forms-Erstellen und öffentliche Freigeben ist mit dem aktuell verbundenen Google-Drive-Werkzeug nicht möglich. Das bereitgestellte `FORMULAR-SETUP.gs` kann dafür mit Google Apps Script im TuS-Konto ausgeführt werden.
-- Keine echten Spielerantworten erfasst; keine öffentliche Datenfreigabe vorgenommen.
 
 ### Intended Public / Private Boundary
 
@@ -31,17 +33,14 @@ Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten,
 - Der GitHub-Repository-Status `public` ist kein Ort für echte Befragungsdaten.
 
 ### Open Gates Before Sending
-
-1. Datenschutzinformationen in verständlicher Form final prüfen: Zweck, Verantwortliche, Löschfristen, Zugriff und Umgang mit kritischem Feedback.
-2. Im vorhandenen Form prüfen, dass die 24 Kernfragen, fünf Freitexte, Mannschaftswahl und Prioritätsauswahl vollständig und richtig dargestellt werden.
-3. Formulareinstellungen prüfen: kein Login-/E-Mail-Zwang, keine Ergebniseinsicht für Antwortende, keine Bearbeitungsrechte für Dritte.
-4. Testeintrag senden und prüfen, dass Rohantworten nur in der privaten Datenbasis erscheinen; Testeintrag anschließend aus dem produktiven Bestand entfernen.
-5. Öffentlichen Antwortlink in einem privaten Browserfenster testen.
-6. Erst dann den Antwortlink in den beiden Mannschaftsgruppen teilen.
+1. Formularvorschau auf Mobilgerät und Desktop prüfen: genau sieben neue Trainer-/Spieltagaussagen plus ein neuer Freitext; keine Torwartfragen; alle 31 Bewertungsfragen mit fünf Optionen.
+2. Testantwort nach v1.1 abgeben und sicherstellen, dass T01–T03, S01–S04 und F06 in `Formularantworten 1` und `ANTWORTEN_IMPORT` korrekt ankommen.
+3. Datenschutztext und Einstellungen kontrollieren: keine E-Mail-Erfassung, keine ungewollte Anmeldung, keine Einsicht in Antworten oder Bearbeitungsrechte, keine Nennung sensibler Vorfälle in Freitext.
+4. Bereits vorhandene interne Antwortdatensätze überprüfen, bevor etwas gelöscht oder in die produktive Statistik übernommen wird; keine pauschale Löschung annehmen.
+5. Öffentlich nur zusammengefasste, hinreichend große Auswertungen; Freitexte nicht roh weitergeben. Erst nach Prüfung den Link breit verteilen.
 
 ### Next Meaningful Step
-
-`erstelleWelle('2026-H2')` aus `FORMULAR-SETUP.gs` im privaten Google-Sheets-Apps-Script ausführen, Form überprüfen, Datenschutz-/Veröffentlichungsgate abschließen und Starttermin der ersten Welle bestätigen.
+Eine explizite Testantwort **nach v1.1** aus der Formularvorschau einreichen, neue Datenfelder und das datenschutzkonforme Auswertungsverhalten verifizieren, den Testdatensatz dann bewusst behandeln und die Welle freigeben.
 
 ### Future Development
 
