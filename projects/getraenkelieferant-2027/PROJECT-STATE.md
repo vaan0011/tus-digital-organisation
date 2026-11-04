@@ -1,6 +1,6 @@
 # PROJECT-STATE – Getränkelieferant 2027
 
-Stand: 2026-10-29 – Thome-Erstkontakt erfolgt; vergleichbare Bedarfsanfrage und interne Rechteklärung offen
+Stand: 2026-11-04 – Zolk-Anfrage versendet; Thome-Bedarfsmail und belastbarer Dreiervergleich offen
 
 ## Purpose
 
@@ -162,3 +162,25 @@ Der Erstkontakt ersetzt den bisherigen Status „externe Ansprache vollständig 
 2. Zolk und Böllinger nur mit identischem Festbetriebs-Scope anfragen, damit Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vergleichbar bleiben.
 3. Lieferangebot und mögliche Partnerschaft weiterhin getrennt bewerten.
 4. Projekt-Owner, Bestandsrechte und eine belastbare Januar-Übergangsversorgung parallel klären.
+
+
+## Update 04.11.2026 – Zolk-Anfrage versendet
+
+### Belegter Fortschritt
+
+- Die vergleichbare Festbetriebs-Anfrage an Getränke Zolk wurde nach Nutzerbestätigung versendet.
+- Damit sind Getränke Thome, Getränke Zolk und Getränke Böllinger als aktueller Dreier-Vergleich gesetzt.
+- Für Thome ist der persönliche Erstkontakt belegt; die angeforderte Bedarfsmail ist in den verfügbaren operativen Quellen weiterhin nicht als versendet dokumentiert.
+- Für Böllinger ist der Kandidatenstatus belegt; Versand oder Angebot sind weiterhin nicht dokumentiert.
+- In dem verbundenen Gmail-Konto war keine zugehörige versendete Nachricht auffindbar. Der Zolk-Status stützt sich daher auf die direkte Nutzerbestätigung; Kontaktdaten werden nicht nach GitHub übernommen.
+
+### Zeitkritischer nächster Schritt
+
+Der interne Zieltermin für Vergleichsangebote ist der 06.11.2026. Bis dahin:
+
+1. Zolk-Eingang bzw. Rückmeldung nachhalten,
+2. Thome die vorbereitete Anfrage mit identischem Festbetriebs-Scope und Vorjahresmengen senden,
+3. bei Böllinger Versand- und Angebotsstatus dokumentieren,
+4. Rückläufe in der bestehenden Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment, Januar-Lieferfähigkeit und getrenntem Partnerschaftspotenzial bewerten.
+
+Projekt-Owner, Höpfner-/Bestandsrechte und die Januar-Übergangsversorgung bleiben offene Governance-Punkte. Es besteht weiterhin keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
