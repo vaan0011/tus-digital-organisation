@@ -181,3 +181,24 @@ Nach jedem abgeschlossenen Ligaspiel werden Ergebnis und Saisonbilanz aktualisie
 Ändert sich die Besetzung des Trainerstabs, wird die Zuordnung hier aktualisiert, damit der Matchday Editor künftig mit dem neuen Stand bootet.
 
 Bei Saisonwechsel wird ein neuer Saisonabschnitt angelegt; frühere Saisonstände bleiben als historischer Überblick erhalten.
+
+## Redaktioneller Nachtrag – 09.11.2026 (PR, bis Merge nicht auf main)
+
+Die nachstehenden Einzelspiele wurden anhand der am 09.11.2026 vom Verein bereitgestellten fussball.de-Spielübersichten mit Ergebnis, Halbzeitstand, Torfolge und Wettbewerb abgeglichen. Dies ist **kein vollständig nachgeführter Saisonstand**: Zwischen 12.10. und 08.11. liegen weitere noch gegen Archiv und Spielplan abzugleichende Spiele. Spiele/S/U/N, Tabellenplätze, Punktestand und Torverhältnis der obigen veralteten Gesamtbilanzen wurden daher bewusst **nicht** fortgeschrieben.
+
+| Datum | Team | Wettbewerb / Spieltag | Spiel | Ergebnis (HZ) | Tore |
+|---|---|---|---|---|---|
+| 08.11.2026 | Herren 1 | Kreisliga Bruchsal / 11 | SV Kickers Büchig – TuS Mingolsheim | 0:3 (0:1) | Ugur Kaptan 23., Maximilian von Weyrother 64., Patrick Kerti 76. |
+| 08.11.2026 | Herren 2 | Kreisklasse B Bruchsal St. 2 / 11 | TSV Langenbrücken – TuS Mingolsheim 2 | 3:1 (1:0) | TSV: Rafael Buscholl 20., Alexander Pinter 53./86.; TuS: Sebastian Rohm 60. |
+| 07.11.2026 | Frauen | Landesliga St. 1 / 8 | SpG St. Leon / Mingolsheim – ATSV Mutschelbach 2 | 4:0 (3:0) | Lisa Weiß 8./38., Sarah Geis 37., Kimberly Heger 59. |
+
+Archivierte Sammelfassungen für diese drei Spiele:
+- Vollständiger Spielbericht: https://docs.google.com/document/d/1Je_Kj9SrAuwOnkAi9kcHU_VqD3ME6cmbtSMCs-4Cqm0/edit
+- Ortsblatt: https://docs.google.com/document/d/1gPYqyUO0jxCUWhCfCvcjJrUwoX4FGNJaPTdqqBFCrFQ/edit
+
+Nächste Pflichtspiele laut fussball.de-Mannschaftsspielplänen (Abruf 09.11.2026):
+- Herren 1: 15.11.2026, 14:30 Uhr – FC Östringen 2 (Heim)
+- Herren 2: 15.11.2026, 12:30 Uhr – SpG FC Weiher 2 / SV Zeutern 2 (Heim)
+- Frauen: 15.11.2026, 18:00 Uhr – FC-Astoria Walldorf (flex) (Auswärts)
+
+**Offene Queue:** Pflichtspiele zwischen dem veralteten Saison-Checkpoint und dem 07./08.11.2026, einschließlich der noch nicht im Archiv sichtbaren vollständigen Berichte des 01.11.2026, einzeln verifizieren und auf bestehende Dokumente abgleichen; anschließend Gesamtbilanz und Tabellenstand sauber fortschreiben. Keine pauschale Fertigmeldung dieser Lücke. Für 07./08.11.2026 lag kein neuer Trainerkommentar vor.
