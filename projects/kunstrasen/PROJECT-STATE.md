@@ -70,3 +70,11 @@ Belastbar dokumentiert sind die drei möglichen Flächenvarianten und deren Kost
 ## Future Development
 
 Nach Scope-Entscheidung wird das Projekt um Vorplanung, Genehmigungen, aktuelle Angebote, Förder-/Finanzierungsplan, Beschluss, Vergabe, Bau, Abnahme und Übergabe in den Betrieb ergänzt.
+
+## Spielerbarometer 2026-H2 – Nutzerbedarf (11.11.2026)
+
+Aus den vertraulichen Freitexten der 1. Herren ergibt sich erneut Interesse an einer Kunstrasenlösung. Gleichzeitig wird der bestehende Sportparkbereich **Anlage und Ausstattung insgesamt mit 4,30/5** bewertet. Einzelwünsche sind daher **kein** Mandat für die unmittelbar vollständige Realisierung eines Großprojekts.
+
+**Konsequenz für Discovery:** Bedarf und tatsächliche Winter-/Kapazitätsengpässe für Großfeld, Torwartfläche und Kleinspielfeld zusammen mit Jugend, Sport und Platzbelegung konkretisieren; Varianten, Trägerschaft und aktualisierte Investitions- und Betriebskosten ermitteln. Historische Orientierungswerte nicht als aktuelle Angebote behandeln.
+
+**Priorität:** mittelfristige Planungs-/Förderprüfung, **nicht automatisch** Vorrang vor umsetzbaren Sportpark- und Coaching-Maßnahmen. Referenz: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`; Originalfreitexte bleiben geschützt in Drive.

@@ -269,3 +269,11 @@ Der Projektzustand wird aktualisiert, wenn sich mindestens eines ändert:
 - technische Betriebsarchitektur,
 - relevante Pilotierung,
 - Abschlusskriterien oder Übergang in den Regelbetrieb.
+
+## Spielerbarometer 2026-H2 – organisatorischer Lernimpuls (11.11.2026)
+
+Bei 19 der 1. Herrenmannschaft zugeordneten Fragebögen gehören **Kommunikation/Informationsfluss** und **Zusammenarbeit Spieler–Trainer–Vorstand** mit jeweils acht Nennungen zu den häufigsten Verbesserungsschwerpunkten. Daraus kann ein **kleiner menschlich verantworteter Kommunikationspilot** entstehen (Ansprechperson, Gesprächs-/Feedbackzyklus, transparentes Nachhalten von Maßnahmen).
+
+**Abgrenzung:** Zuerst Verantwortlichkeit und gelebten Prozess klären; nicht automatisch ein digitales Portal, eine neue Datenbank oder einen Chatbot entwickeln. Die digitale Organisation darf höchstens Verwaltung, Erinnerung und Maßnahmenübersicht entlasten. Datenschutz, Vertraulichkeit und Freiwilligkeit wahren.
+
+**Status:** Prüfimpuls; keine Änderung an Aufbauprojekt, Rollen, Budget oder Produktprioritäten beschlossen. Referenz: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`.

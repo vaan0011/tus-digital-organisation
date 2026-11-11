@@ -59,3 +59,11 @@ Belastbar ist nur, dass ein früherer Registrierungsprozess vorbereitet wurde. A
 ## Future Development
 
 Bei positivem Go wird der Projektzustand um aktuellen Leistungsumfang, Owner, Datenschutzfreigabe, Rollout, Nutzungscheck und späteren Übergang in Regelbetrieb ergänzt.
+
+## Spielerbarometer 2026-H2 – fachliche Bedarfshypothese (11.11.2026)
+
+Die 1. Herren sieht Verbesserungspotenzial beim **individuellen Entwicklungsfeedback** (Bewertungsdurchschnitt 3,21/5) und bei nachvollziehbaren sportlichen Entscheidungen. Das ist zunächst ein Wunsch an die menschliche Trainerarbeit und **kein** Nachweis, dass ein digitales Trainings-Tool benötigt wird.
+
+**Für die Discovery:** Erst mit Sport/Trainern klären, ob und wie ein kurzes Entwicklungsgespräch oder eine freiwillige Feedback-Routine ohne zusätzliche Software wirksam ist. Nur bei klar benannter Lücke prüfen, ob Advanced Football diese tatsächlich datensparsam und besser als bestehende Abläufe unterstützt.
+
+**Keine Scope-/Prioritätsänderung beschlossen;** kein Rückgriff auf historische personenbezogene Trainerdateien. Referenz: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`.

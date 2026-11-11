@@ -87,3 +87,11 @@ Personenbezogene oder sensible Finanz-/Vertragsdetails bleiben im geschützten D
 ## Future Development
 
 Nach Abschluss von Vision, Bedarf und Bestandsaufnahme wird eine priorisierte TuS-Maßnahmenroadmap erzeugt. Konkrete bauliche Maßnahmen werden anschließend in ihren eigenen Projektakten weitergeführt.
+
+## Spielerbarometer 2026-H2 – Infrastruktur- und Betriebsimpulse (11.11.2026)
+
+Die 1. Herren bewertet Anlage/Ausstattung insgesamt positiv (4,30/5). Im vertraulichen qualitativen Feedback wurden dennoch einzelne technische Sanitärthemen, der Bedarf an einem verlässlichen Gastronomieangebot und weitere Sportparkfunktionalitäten angesprochen.
+
+**Abgrenzung:** Dusche/Abfluss/Temperatur und vorhandene Geräte zuerst als technische Wartungsfälle im Sportpark-Regelbetrieb prüfen. Den langfristigen gastronomischen Betrieb als gesonderte Betreiber-/Vereinsheimfrage im Bedarfskapitel berücksichtigen. Erst wenn sich nach Bestandsaufnahme ein baulicher Investitionsbedarf bestätigt, als eigenes Projekt oder Teilmaßnahme dieser DFB-Rahmenplanung führen.
+
+**Nächster Schritt:** zuständige Ansprechpartner im Vereinsheim-/Sportparkteam aufnehmen und in Bestands-/Bedarfsanalyse einordnen; keine Betreiberentscheidung oder Baufreigabe aus der Befragung ableiten. Referenz: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`.
