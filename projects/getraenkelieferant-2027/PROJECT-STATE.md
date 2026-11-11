@@ -211,7 +211,7 @@ Der interne Zieltermin 06.11.2026 für vergleichbare Angebote ist ohne dokumenti
 
 ## Update 11.11.2026 – Getränke Thome hat abgesagt
 
-- Der 1. Vorsitzende meldet am 11.11.2026 ausdrücklich: **Getränke Thome hat dem TuS abgesagt**. Absagegrund, genaues Datum und Umfang der Absage sind noch nicht dokumentiert.
+- Der 1. Vorsitzende meldet am 11.11.2026 ausdrücklich: **Getränke Thome hat dem TuS abgesagt**. **Begründung laut Nutzer:** Thome ist ausgelastet und kann nicht alle TuS-Veranstaltungen versorgen. Das genaue Absagedatum bleibt unklar. Es handelt sich damit um eine **Kapazitäts-/Lieferfähigkeitsabsage für den benötigten vollständigen Event-Scope**, nicht um ein dokumentiertes grundsätzliches Desinteresse an einer Partnerschaft.
 - Thome ist damit **kein aktiver Kandidat** mehr für die laufende Lieferantenauswahl 2027; die bisher vorgesehene Thome-Bedarfsanfrage entfällt. Historische Thome-Konzeptunterlagen bleiben als solche bestehen, sind aber nicht mehr aktive Akquisegrundlage.
 - **Zolk:** Anfrage laut Nutzerbestätigung versendet, Rückmeldung/Angebot nicht belegt. **Böllinger:** Kandidat, Versand/Angebot nicht belegt.
 - Der bisherige Dreiervergleich ist nicht mehr möglich; Vergleichsscope und Alternativen sind anhand tatsächlich verfügbarer Anbieter neu zu bewerten, ohne Preise oder Zusagen anzunehmen.
