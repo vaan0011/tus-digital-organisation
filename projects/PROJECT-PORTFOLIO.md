@@ -231,3 +231,29 @@ Die folgenden **Partner-/Eventchancen** sind in der operativen Partnership-Pipel
 | Jugendsportfest Juli – Naming und Zukunftsmeile | Discovery | CRM022 | Flächen-/Sicherheitsplan, Ausbildung, Mobilität, Aussteller | Probefahrten nur bei genehmigter Trennung und Versicherung |
 
 **Akquise-Gesprächsteam:** 1. Vorsitzender und Finanzvorstand Thomas. **Digitaler Partnership Manager:** Vorbereitung, Partnerstories, Anschreiben, CRM-Nachverfolgung. **Getränkelieferant 2027** bleibt als bereits formalisiertes aktives Projekt besonders dringlich (Winterfeier 05.01.2027). Keine externen Zusagen ohne Freigabe.
+
+### Portfolio-Nachtrag 11.11.2026 – Spielerbarometer 2026-H2
+
+**Neue Evidenz, noch keine beschlossene Repriorisierung:** Das Spielerbarometer 2026-H2 hat 20 eingegangene Fragebögen (19 zu 1. Herren, 0 zu 2. Herren, 1 ohne Mannschaftsangabe). Die Mannschaftsauswertung beruht nur auf den 19 zugeordneten Fragebögen; Mehrfachteilnahmen können nicht sicher ausgeschlossen werden. Aggregierte Befunde und Entscheidungslogik: [`spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`](spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md). Vertrauliche PDF mit den Originalfreitexten ausschließlich im privaten Drive, **nicht im öffentlichen TuS-OS**.
+
+**Sportliche Kernthemen:** Spieltagscoaching (Themenwert 3,44/5), individuelles Feedback (3,21/5), Fairness und Nachvollziehbarkeit sportlicher Entscheidungen. Als Verbesserungsprioritäten nennen die 19 zugeordneten Fragebögen am häufigsten Kommunikation/Informationsfluss und Zusammenarbeit Spieler–Trainer–Vorstand (je acht Nennungen). Das sind **Wahrnehmungen**, keine personenbezogenen Leistungs- oder Schuldzuweisungen.
+
+| Bestehendes Projekt / Bereich | Input für die Triage | Empfehlung vor Beschluss | Status unverändert |
+|---|---|---|---|
+| `spielerbarometer/` + sportliche Leitung | Bedarf an Spieltagscoaching, klarer Kommunikation und individueller Entwicklung | zuerst Gespräch mit sportlicher Leitung/Trainern; drei messbare Verbesserungsmaßnahmen und Prüftermine definieren | Aktiv |
+| `grossfeldtore-haupt-trainingsplatz/` | zusätzliche große Tore für Training als Bedarfssignal | aktuellen Hülsentor-/Versetzungsplan auf tatsächlich verbleibenden Bedarf prüfen; Förderung/Budget vorher klären | Geplant |
+| `rasenpflege-2027/` | positiver Platz-Gesamteindruck, dennoch technisch notwendige Pflege möglich | Tiefenlochung/Sanden mit Sportparkteam unabhängig vom subjektiven Rating fachlich prüfen | Discovery |
+| `kunstrasen/` | qualitative Hinweise auf Kunstrasenwunsch | langfristige Variantenprüfung; Trägerschaft, Scope und aktualisierte Kosten zuerst klären | Discovery |
+| `dfb-vereinsheim-2-0/` | einzelne Hinweise zu Sanitärbetrieb und langfristigem Gastroangebot | kleine Störungen im Regelbetrieb abstellen; investive Bedarfe erst nach Bestandsaufnahme abgrenzen | Discovery |
+| `advanced-football/` | Entwicklungsfeedback als sportliche Lücke | zunächst menschlichen Feedback-Prozess erproben; Digitalisierung nur mit bestätigtem Nutzen | Discovery |
+| `digital-organisation/` | Wunsch nach proaktivem Spieler–Trainer–Vorstand-Dialog | kleiner organisatorischer Pilot statt vorschneller Neuentwicklung einer Software | Aktiv |
+
+**Vorläufige Prioritätsempfehlung:**
+- **A / kurzfristig und ohne große Investition:** gemeinsamer Coaching-/Feedback-/Dialog-Pilot, praktische Sportparkwartungschecks.
+- **A / bestehende Beschaffung konkretisieren:** Großfeldtore nach Sicherheit, Kosten und Förderprüfung.
+- **B / fachlich und finanziell klären:** Rasenpflege 2027 und Kunstrasenoptionen.
+- **B / Bedarfsaufnahme:** Vereinsheim-Betrieb und bauliche Themen.
+
+**Neue Kandidaten (noch keine formalen Projekte):** `Spieltagscoaching & Trainerkommunikation`, `Spielerentwicklung & Feedbackgespräche` sowie – nur bei sauberem Scope – `Dialog Spieler–Trainer–Vorstand`. Fachlich zu prüfen, ob dies zeitlich begrenzte Projekte oder dauerhaftes sportliches Regelgeschäft sind. Projektgründung, Budget, Prioritäts- oder Owneränderungen bleiben einer ausdrücklichen Vereinsentscheidung vorbehalten.
+
+**Nächster Portfolioschritt:** Vorstand + sportliche Leitung entscheiden über maximal drei konkrete Maßnahmen mit Owner, messbarem Ergebnis und Prüftermin; danach erst Scope/Status/Priorität der betroffenen formalen Projekte aktualisieren.
