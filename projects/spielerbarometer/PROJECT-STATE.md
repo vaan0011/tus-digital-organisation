@@ -1,48 +1,63 @@
-# TuS Spielerbarometer – Project State
+# TuS Spielerbarometer – PROJECT-STATE
 
-## Purpose
+**Stand:** 11.11.2026 – Welle 2026-H2 abgeschlossen, vertrauliche Endauswertung in Google Drive gespeichert.  
+**Status:** Aktiv (wiederkehrendes Instrument; erste Umfrage abgeschlossen, Ableitung von Maßnahmen offen).  
+**Fachlicher Bereich:** Sport / Vorstand / Vereinsentwicklung.  
+**Fachlicher Owner:** vom Vorstand und sportlicher Leitung noch formell zu benennen.
 
-Operativer Projekt-Checkpoint für den Aufbau und die wiederkehrende Durchführung des halbjährlichen Spielerbarometers.
+## Zweck und Grundsatz
 
-## Core Principle
+**Teilnahme einfach; Antworten vertraulich; Ergebnisse nur aggregiert; daraus konkrete Verbesserungen ableiten.**
 
-**Teilnahme für Spieler einfach; Rücklauf vertraulich; Handlungsergebnisse transparent und wiederholbar.**
+Halbjährliche freiwillige Spielerbefragung (November/Dezember und Mai/Juni) für 1. und 2. Herren. Keine Namen und E-Mail-Adressen; die freiwillige Mannschaftsangabe und Freitexte sind vertraulich. Mindestgruppe für veröffentlichte Teamauswertungen: sieben; kleine Teilgruppen wie Torhüter werden nicht separat bewertet.
 
-## Main Content
+## Verifizierter Endstand 2026-H2
 
-### Current Goal
+- Google Form v1.1 erfolgreich aktualisiert: 31 numerisch bewertbare Fragen (24 Stammfragen Q01–Q24 + 3 Trainerteamfragen T01–T03 + 4 Spieltagfragen S01–S04), sechs optionale Freitexte F01–F06, freiwillige Mannschaftsangabe und bis zu zwei Verbesserungsprioritäten.
+- Die beiden Torwartfragen wurden wegen der fehlenden sicheren Anonymisierbarkeit **ausgeschlossen**. Q04 und Q05 haben ab v1.1 geänderten Wortlaut und sind nicht vorbehaltlos historisch vergleichbar.
+- Formularantworten werden in einem **privaten** Google Sheet erfasst; `ANTWORTEN_IMPORT` normiert die Ergebnisse, `AUSWERTUNG` stellt Team-/Themenmittelwerte dar.
+- Zum Abschluss 20 ausgefüllte Fragebögen: 19 für 1. Herren; **0** für 2. Herren; 1 ohne Teamangabe. Die nicht zugeordnete Einsendung darf nicht einer Mannschaft zugeschrieben werden. Anonyme Mehrfachteilnahme kann nicht technisch ausgeschlossen werden.
+- Letzter erfasster Rohdaten-Zeitstempel: 09.11.2026, 19:12 Uhr. Die Datengrundlage wurde am 11.11.2026 erneut geprüft.
+- Die vertrauliche **10-seitige PDF-Endauswertung** samt vollständig unverändertem Originalwortlaut der Freitexte wurde am 11.11.2026 in Google Drive unter `TuS Projekte / TuS Spielerbarometer / 02 Datenbasis – vertraulich` gespeichert; Berechtigungen: nicht öffentlich geteilt, nur Eigentümerkonto.
+- Für GitHub ist nur die **anonymisierte, nicht rückverfolgbare** Ergebnis- und Projektübersetzung in [`FEEDBACK-PORTFOLIO-2026-H2.md`](FEEDBACK-PORTFOLIO-2026-H2.md) zulässig. Keine Rohantworten, keine direkten Freitextzitate, keine individuellen Antwortverläufe, keine personenbezogenen Trainer-Rankings.
 
-Erste Befragungswelle `2026-H2` für die 1. und 2. Herrenmannschaft vorbereiten, zugänglichen Google-Forms-Antwortlink validieren und erst nach Datenschutz-/Funktionsprüfung an die Mannschaften verteilen.
+## Fachliche Ergebnisse und Relevanz
 
-### Verified (30.10.2026, nach erfolgreichem Formularlauf)
+Für die 1. Herren liegt der Kernindex über die ursprünglichen 24 Fragen bei **3,93/5**. Die starken Bereiche sind Anlage und Ausstattung (**4,30**), Grundzufriedenheit und Kommunikation/Vereinsführung (je **4,01**). Der niedrigste Themenblock ist Spieltag und Coaching (**3,44**). Die stärksten Entwicklungshinweise betreffen aktives Coaching, Fairness/Nachvollziehbarkeit sportlicher Entscheidungen und individuelles Entwicklungsfeedback.
 
-- Der fachliche Fragenkatalog v1.0 ist abgestimmt: 24 feste Bewertungsfragen, fünf optionale Freitexte, optionale Mannschaftsangabe und priorisierte Verbesserungsfelder.
-- Wiederholung zweimal pro Saison geplant: November/Dezember und Mai/Juni.
-- Neues Projektverzeichnis innerhalb von `TuS Projekte` in Google Drive ist angelegt; separate Verzeichnisse für Fragebogen/Kommunikation, vertrauliche Datenbasis und aggregierte Maßnahmen.
-- Ein native Google Doc mit dem Masterfragebogen und eine **nicht freigegebene** Google-Sheets-Datenbasis mit Auswertungsgrundstruktur wurden angelegt.
-- Die Verbindung eines produktiven Google-Forms-Formulars mit der Datenbasis ist **noch nicht erfolgt**. Das direkte Google-Forms-Erstellen und öffentliche Freigeben ist mit dem aktuell verbundenen Google-Drive-Werkzeug nicht möglich. Das bereitgestellte `FORMULAR-SETUP.gs` kann dafür mit Google Apps Script im TuS-Konto ausgeführt werden.
-- Keine echten Spielerantworten erfasst; keine öffentliche Datenfreigabe vorgenommen.
+In den zwei gewählten Verbesserungsprioritäten der 19 zugeordneten Fragebögen stehen **Kommunikation und Informationsfluss** sowie **Zusammenarbeit zwischen Spielern, Trainern und Vorstand** mit je acht Nennungen vorne.
 
-### Intended Public / Private Boundary
+Diese Werte sind Wahrnehmungen und kein Beweis für individuelle Fehlleistungen.
 
-- **Öffentlich / teilnehmendenzugänglich:** ausschließlich der **Google-Forms-Responder-Link**; keine Editorlinks und keine Einsicht in Antwortzusammenfassungen.
-- **Privat:** Google-Sheets-Datenbasis, Rohantworten, Freitexte, Formularbearbeitungslink und Auswertungsvorlagen. Zugriff nur für explizit benannte Verantwortliche.
-- **Externe Kommunikation:** zusammengefasste, datensparsame Ergebnisse und Verbesserungsmaßnahmen, keine Einzelfälle.
-- Der GitHub-Repository-Status `public` ist kein Ort für echte Befragungsdaten.
+## Übergabe in Maßnahmen und Portfolio
 
-### Open Gates Before Sending
+Die Verbindung zu vorhandenen Projekten steht in [`FEEDBACK-PORTFOLIO-2026-H2.md`](FEEDBACK-PORTFOLIO-2026-H2.md) und im zentralen `PROJECT-PORTFOLIO.md`.
 
-1. Datenschutzinformationen in verständlicher Form final prüfen: Zweck, Verantwortliche, Löschfristen, Zugriff und Umgang mit kritischem Feedback.
-2. Im vorhandenen Form prüfen, dass die 24 Kernfragen, fünf Freitexte, Mannschaftswahl und Prioritätsauswahl vollständig und richtig dargestellt werden.
-3. Formulareinstellungen prüfen: kein Login-/E-Mail-Zwang, keine Ergebniseinsicht für Antwortende, keine Bearbeitungsrechte für Dritte.
-4. Testeintrag senden und prüfen, dass Rohantworten nur in der privaten Datenbasis erscheinen; Testeintrag anschließend aus dem produktiven Bestand entfernen.
-5. Öffentlichen Antwortlink in einem privaten Browserfenster testen.
-6. Erst dann den Antwortlink in den beiden Mannschaftsgruppen teilen.
+**Offene Entscheidung:** Nach sportlicher und vorstandsseitiger Bewertung höchstens drei umsetzbare Maßnahmen auswählen, fachliche Owner und Prüftermine festlegen; kleine Alltagsverbesserungen im Regelbetrieb lassen und nur abgegrenzte Vorhaben als neue Projekte anlegen.
 
-### Next Meaningful Step
+## Datenschutz / Risiken
 
-`erstelleWelle('2026-H2')` aus `FORMULAR-SETUP.gs` im privaten Google-Sheets-Apps-Script ausführen, Form überprüfen, Datenschutz-/Veröffentlichungsgate abschließen und Starttermin der ersten Welle bestätigen.
+- Ergebnisse nicht als Personal- oder Trainerbenotung verwenden.
+- Freitext-Wortlaut kann identifizierende Merkmale enthalten und bleibt ausschließlich in der beschränkt zugänglichen PDF-/Rohdatenablage.
+- Keine öffentliche Veröffentlichung ganzer Antworten oder kleiner Teilgruppen.
+- Auch 19 Fragebögen belegen ohne Teilnahmebeschränkung nicht 19 verschiedene Personen; 2. Herren wurde nicht erreicht.
+- Teilnehmerlink und Formularberechtigungen für Folgewellen vor erneuter Nutzung prüfen; Datenspeicherung und Löschfristen festlegen.
 
-### Future Development
+## Nächste Schritte
 
-Nach jeder Welle maximal drei Maßnahmen, Verantwortliche und Prüftermin festhalten. Wellen durch `erstelleWelle('2027-H1')` usw. neu erzeugen, unveränderte Kernfragen beibehalten, getrennte Roh-Antworttabs und normierte Trenddaten in der privaten Basis verwalten.
+1. Sportliche Leitung/Vorstand anhand der anonymisierten Zusammenfassung drei konkrete Maßnahmen priorisieren (inkl. Regelbetrieb vs. Projekt).
+2. Vertraulichen PDF-Appendix ausschließlich in berechtigtem Kreis nutzen; keine Texte in öffentliches GitHub kopieren.
+3. Kurz kommunizieren, welche Verbesserungen geprüft, beschlossen oder zurückgestellt werden.
+4. Einfache Wirkungsindikatoren definieren; in der nächsten Umfrage Fortschritt abgleichen.
+5. Zweite Mannschaft separat auf fehlende Beteiligung und mögliche organisatorische Ursachen prüfen, **ohne** Einzelpersonen nach Antworten zu fragen.
+
+## Referenzen
+
+- [Anonymisierte Portfolio-Impulse](FEEDBACK-PORTFOLIO-2026-H2.md)
+- [Zentrales Projektportfolio](../PROJECT-PORTFOLIO.md)
+- Google Drive: `TuS Projekte/TuS Spielerbarometer` (Formular, geschützte Datenbasis, vertrauliche Endauswertung)
+- `FORMULAR-SETUP.gs`, `BESTEHENDES-FORMULAR-BEFUELLEN.gs` (historische Einrichtung; nicht zur erneuten Ausführung auf dem bestehenden Formular)
+
+## Future Development
+
+Jede weitere Halbjahreswelle führt zur Überprüfung von Maßnahmen, nicht zu einem separaten Software- oder Trainerbewertungsprojekt. Vergleichbarkeit der Fragen und Datenschutz bleiben dokumentierte Qualitätskriterien.
