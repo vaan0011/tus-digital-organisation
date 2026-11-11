@@ -1,6 +1,6 @@
 # PROJECT-STATE – Getränkelieferant 2027
 
-Stand: 2026-11-04 – Zolk-Anfrage versendet; Thome-Bedarfsmail und belastbarer Dreiervergleich offen
+Stand: 2026-11-11 – Angebotsziel 06.11. überfällig; belastbarer Dreiervergleich und Januar-Übergangsversorgung offen
 
 ## Purpose
 
@@ -184,3 +184,26 @@ Der interne Zieltermin für Vergleichsangebote ist der 06.11.2026. Bis dahin:
 4. Rückläufe in der bestehenden Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment, Januar-Lieferfähigkeit und getrenntem Partnerschaftspotenzial bewerten.
 
 Projekt-Owner, Höpfner-/Bestandsrechte und die Januar-Übergangsversorgung bleiben offene Governance-Punkte. Es besteht weiterhin keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
+
+
+## Update 11.11.2026 – Angebotsziel überfällig
+
+Der interne Zieltermin 06.11.2026 für vergleichbare Angebote ist ohne dokumentierten belastbaren Dreiervergleich verstrichen.
+
+### Verifizierter Stand
+
+- Belegt bleibt die nach Nutzerbestätigung versendete Zolk-Anfrage.
+- Eine aktuelle Zolk-Rückmeldung oder ein Zolk-Angebot ist in den verfügbaren operativen Quellen nicht dokumentiert.
+- Für Thome ist der Erstkontakt vom 28.10.2026 belegt; der Versand der angeforderten Bedarfsmail ist weiterhin nicht dokumentiert.
+- Für Böllinger sind weder Versand noch Angebot dokumentiert.
+- Im verbundenen Gmail-Konto waren am 11.11.2026 keine einschlägigen Nachrichten seit dem 04.11.2026 auffindbar.
+- Projekt-Owner, Höpfner-/Bestandsrechte und eine belastbare Januar-Übergangsversorgung bleiben offen.
+- Es besteht weiterhin keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
+
+### Zeitkritische nächste Aktion
+
+1. Zolk-Rückmeldung unmittelbar nachhalten.
+2. Thome die vorbereitete Bedarfsmail mit identischem Festbetriebs-Scope senden.
+3. Bei Böllinger Versand- und Angebotsstatus klären.
+4. Die bestehende Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vervollständigen; Partnerschaft getrennt bewerten.
+5. Projekt-Owner, Bestandsrechte und Übergangsversorgung für die Winterfeier am 05.01.2027 sowie die Jugend-Hallenturniere am 16./17.01.2027 festlegen.
