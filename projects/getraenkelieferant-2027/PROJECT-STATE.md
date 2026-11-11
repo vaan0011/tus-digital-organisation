@@ -207,3 +207,13 @@ Der interne Zieltermin 06.11.2026 für vergleichbare Angebote ist ohne dokumenti
 3. Bei Böllinger Versand- und Angebotsstatus klären.
 4. Die bestehende Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vervollständigen; Partnerschaft getrennt bewerten.
 5. Projekt-Owner, Bestandsrechte und Übergangsversorgung für die Winterfeier am 05.01.2027 sowie die Jugend-Hallenturniere am 16./17.01.2027 festlegen.
+
+
+## Update 11.11.2026 – Getränke Thome hat abgesagt
+
+- Der 1. Vorsitzende meldet am 11.11.2026 ausdrücklich: **Getränke Thome hat dem TuS abgesagt**. Absagegrund, genaues Datum und Umfang der Absage sind noch nicht dokumentiert.
+- Thome ist damit **kein aktiver Kandidat** mehr für die laufende Lieferantenauswahl 2027; die bisher vorgesehene Thome-Bedarfsanfrage entfällt. Historische Thome-Konzeptunterlagen bleiben als solche bestehen, sind aber nicht mehr aktive Akquisegrundlage.
+- **Zolk:** Anfrage laut Nutzerbestätigung versendet, Rückmeldung/Angebot nicht belegt. **Böllinger:** Kandidat, Versand/Angebot nicht belegt.
+- Der bisherige Dreiervergleich ist nicht mehr möglich; Vergleichsscope und Alternativen sind anhand tatsächlich verfügbarer Anbieter neu zu bewerten, ohne Preise oder Zusagen anzunehmen.
+- **Dringend:** Versorgung für Winterfeier 05.01.2027 und Jugend-Hallenturniere 16./17.01.2027 absichern. Zolk nachhalten, Böllinger-Status klären, gegebenenfalls weiteren realistisch lieferfähigen Anbieter prüfen. Projekt-Owner, Rothenberger-Ausstieg und Höpfner-/Bestandsrechte weiterhin klären.
+- Lieferanten- und Sponsoringbewertung getrennt halten; externe Kontaktaufnahme und verbindliche Zusagen bleiben freigabepflichtig.
