@@ -27,3 +27,11 @@ Erhalt bzw. Verbesserung der Bespielbarkeit und Pflege der Rasenflächen durch b
 
 ## Abgrenzung
 Abgegrenzte Pflegekampagne 2027, nicht automatisch die laufende Sportparkpflege und nicht das Kunstrasen- oder Bewässerungsprojekt.
+
+## Spielerbarometer 2026-H2 – Ergänzung zum Nutzerblick (11.11.2026)
+
+Der Infrastruktur-Themenblock wurde von der 1. Herrenmannschaft insgesamt positiv bewertet (4,30/5). Das ist **kein** Argument gegen Tiefenlochung, Sanden und fachgerechte Regenerationsmaßnahmen: subjektive aktuelle Zufriedenheit und technischer Pflegebedarf sind unterschiedliche Kriterien.
+
+**Nächste fachliche Prüfung:** Sportparkteam stellt Leistungsumfang pro Platz, Priorität, Pflegefenster, Wirkung, benötigte Sachleistungen und ein aktuelles Angebot zusammen. Die Befragung allein bestätigt weder die technische Notwendigkeit noch den Kostenrahmen; das Projekt bleibt Discovery.
+
+**Priorität:** anhand Pflegezustand, Machbarkeit und Finanzierung entscheiden; nicht mit dem Kunstrasen-Projekt vermischen. Referenz: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`.
