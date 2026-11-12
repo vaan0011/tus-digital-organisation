@@ -1,6 +1,6 @@
 # PROJECT-STATE – Getränkelieferant 2027
 
-Stand: 2026-11-11 – Angebotsziel 06.11. überfällig; belastbarer Dreiervergleich und Januar-Übergangsversorgung offen
+Stand: 2026-11-12 – Thome kapazitätsbedingt ausgeschieden; Zolk/Böllinger und Januar-Übergangsversorgung offen
 
 ## Purpose
 
@@ -39,10 +39,12 @@ Bei den Hallenturnieren wurden nach Rückgaben 887 PET-Flaschen als realer Verbr
 
 ### 3. Aktuelle Anbietersicht
 
-- Getränke Thome, St. Leon-Rot: als möglicher neuer Anbieter in Prüfung; vergleichbares Angebot noch einzuholen.
-- Getränkemarkt Rothenberger: bisherige Referenz und mögliche Kioskoption; zukünftiger Status für Veranstaltungen ist zu klären.
+- Getränke Thome, St. Leon-Rot: aus der aktiven Auswahl ausgeschieden; laut Nutzerbestätigung ausgelastet und nicht in der Lage, alle benötigten TuS-Veranstaltungen zu versorgen.
+- Getränke Zolk, Östringen: Anfrage laut Nutzerbestätigung versendet; Rückmeldung oder Angebot nicht dokumentiert.
+- Getränke Böllinger: Vergleichskandidat; Kontakt-, Versand- und Angebotsstatus nicht dokumentiert.
+- Getränkemarkt Rothenberger: laut Vorstandsnachverfolgung ist ein Ausstieg ab 2027 bekannt; genauer Umfang für Veranstaltungen und Kiosk bleibt zu bestätigen. Nicht ohne neue Bestätigung als verfügbare Option behandeln.
 
-Weitere Anbieter können ergänzt werden, wenn sie Preis/Service/Logistik realistisch verbessern.
+Weitere Anbieter werden nur ergänzt, wenn Zolk und Böllinger die vollständige Eventversorgung einschließlich der Januartermine nicht belastbar abdecken.
 
 ### 4. Wichtige Auswahlkriterien
 
@@ -57,16 +59,17 @@ Weitere Anbieter können ergänzt werden, wenn sie Preis/Service/Logistik realis
 
 ### 5. Last Known Good
 
-Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsvergleich konsolidiert. Der Kiosk fehlt noch, daher ist das Jahresvolumen noch nicht vollständig.
+Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsvergleich konsolidiert. Die Zolk-Anfrage ist laut Nutzerbestätigung versendet. Thome hat wegen Auslastung und fehlender Kapazität für den vollständigen Event-Scope abgesagt. Für Zolk und Böllinger liegt kein dokumentiertes Angebot vor; die Januarversorgung ist nicht abgesichert.
 
 ### 6. Nächster sinnvoller Schritt
 
-1. Kiosk-Jahres-/Bestelldaten nachziehen.
-2. Bedarfsprofil als einheitliche Anfragegrundlage finalisieren.
-3. Thome und ggf. weitere Anbieter auf identischen Scope anbieten lassen: Veranstaltungen sowie optional Veranstaltungen + Kiosk.
-4. Rothenberger-Bestandskonditionen/Kioskoption als Referenz dokumentieren.
-5. Angebote nach Preis, Service, Flexibilität, Kiosk und Partnerschaft bewerten.
-6. Vorstand entscheidet Zielmodell und Anbieter.
+1. Zolk-Rückmeldung unmittelbar nachhalten.
+2. Bei Böllinger Kontakt-, Versand- und Angebotsstatus klären und bei Bedarf den identischen Festbetriebs-Scope freigeben.
+3. Belastbare Übergangsversorgung für Winterfeier am 05.01.2027 und Jugend-Hallenturniere am 16./17.01.2027 sichern.
+4. Nur falls Zolk und Böllinger den vollständigen Scope nicht abdecken, einen weiteren realistisch lieferfähigen Anbieter prüfen.
+5. Projekt-Owner, Rothenberger-Ausstiegsumfang sowie Höpfner-/Bestandsrechte klären.
+6. Lieferangebote nach Preis, Rücknahme, Logistik, Equipment und Lieferfähigkeit bewerten; Partnerschaftspotenzial getrennt ausweisen.
+7. Vorstand entscheidet Zielmodell und Anbieter.
 
 ## Relationship to other documents
 
