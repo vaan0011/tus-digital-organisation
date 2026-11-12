@@ -329,3 +329,11 @@ Neue Dokumentation wird nur ergänzt, wenn sie wiederkehrende Arbeit tatsächlic
 - **Sportparkteam:** Jobcenter-Vorabklärung für zwei bestehende Maßnahmenteilnehmende am 13.10.2026 versendet. Förderinstrument, individuelle Förderfähigkeit, Höhe und Laufzeit offen; keine Arbeitsplatzzusage und keine gesicherte Finanzierung.
 - **Getränkelieferant 2027:** Thome-Partnerkonzept für sechs feste Events fertig; Kiosk und Pilotlogik ausgeschlossen. Gewünscht ist eine getrennte Kombination aus Lieferangebot, Geldbeitrag und Sachleistungen, insbesondere Schürzen, Beschattung und Mehrwegbecher. Getränke Böllinger ist weiterer Vergleichskandidat. Interne Rechte-/Owner-Klärung ist bis 16.10.2026 fällig.
 - **Zeitkritisch:** EconSocial-LED-Erstgespräch am 16.10.2026, 09:45 Uhr; Mustervertrag, vollständiger Leistungsumfang und TuS-Vermarktungsrechte bleiben Entscheidungsgates.
+
+
+### Update 12.11.2026 – Thome aus aktueller Lieferantenauswahl ausgeschieden
+
+- **Getränke Thome:** laut Nutzerbestätigung Absage wegen Auslastung; Thome kann nicht alle benötigten TuS-Veranstaltungen versorgen. Damit kein aktiver Kandidat mehr für den vollständigen Festbetrieb 2027. Die Absage ist als Kapazitäts-/Lieferfähigkeitsentscheidung einzuordnen, nicht als belegtes grundsätzliches Partnerschaftsdesinteresse.
+- **Verbleibende aktive Prüfung:** Zolk-Anfrage versendet, Rückmeldung/Angebot offen; bei Böllinger sind Kontakt-, Versand- und Angebotsstatus offen.
+- **Priorität:** Versorgung für Winterfeier 05.01.2027 und Jugend-Hallenturniere 16./17.01.2027 absichern. Nur wenn Zolk und Böllinger den vollständigen Scope nicht belastbar abdecken, weiteren lieferfähigen Anbieter prüfen.
+- **Offene Governance:** Projekt-Owner, Rothenberger-Ausstiegsumfang sowie Höpfner-/Bestandsrechte. Keine Lieferanten-, Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
