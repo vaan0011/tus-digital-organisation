@@ -45,7 +45,7 @@ Bei den Hallenturnieren wurden nach Rückgaben 887 PET-Flaschen als realer Verbr
 - Getränke Wipfler: vollständige Angebotsgrundlage für sechs Veranstaltungen vorbereitet und im Drive-Projektordner verifiziert; Kontakt oder Versand nicht belegt.
 - Getränkemarkt Rothenberger: laut Vorstandsnachverfolgung ist ein Ausstieg ab 2027 bekannt; genauer Umfang für Veranstaltungen und Kiosk bleibt zu bestätigen. Nicht ohne neue Bestätigung als verfügbare Option behandeln.
 
-Weitere Anbieter werden nur ergänzt, wenn Zolk und Böllinger die vollständige Eventversorgung einschließlich der Januartermine nicht belastbar abdecken.
+Weitere Anbieter werden nur ergänzt, wenn Zolk, Böllinger und Wipfler die vollständige Eventversorgung einschließlich der Januartermine nicht belastbar abdecken.
 
 ### 4. Wichtige Auswahlkriterien
 
