@@ -67,7 +67,7 @@ Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsv
 1. Zolk-Rückmeldung unmittelbar nachhalten.
 2. Wipfler-Kontakt und Versand der vollständigen Anfragegrundlage ausdrücklich freigeben oder verwerfen.
 3. Bei Böllinger Kontakt-, Versand- und Angebotsstatus klären und bei Bedarf den identischen Festbetriebs-Scope freigeben.
-4. Belastbare Übergangsversorgung für Winterfeier am 05.01.2027 und Jugend-Hallenturniere am 16./17.01.2027 sichern.
+4. Belastbare Übergangsversorgung für die Winterfeier am 05.01.2027 sowie die Jugend-Hallenturniere am 09./10.01.2027 und 23./24.01.2027 sichern.
 5. Nur falls Zolk, Böllinger und Wipfler den vollständigen Scope nicht abdecken, einen weiteren realistisch lieferfähigen Anbieter prüfen.
 6. Projekt-Owner, Rothenberger-Ausstiegsumfang sowie Höpfner-/Bestandsrechte klären.
 7. Lieferangebote nach Preis, Rücknahme, Logistik, Equipment und Lieferfähigkeit bewerten; Partnerschaftspotenzial getrennt ausweisen.
