@@ -337,3 +337,11 @@ Neue Dokumentation wird nur ergänzt, wenn sie wiederkehrende Arbeit tatsächlic
 - **Verbleibende aktive Prüfung:** Zolk-Anfrage versendet, Rückmeldung/Angebot offen; bei Böllinger sind Kontakt-, Versand- und Angebotsstatus offen.
 - **Priorität:** Versorgung für Winterfeier 05.01.2027 und Jugend-Hallenturniere 16./17.01.2027 absichern. Nur wenn Zolk und Böllinger den vollständigen Scope nicht belastbar abdecken, weiteren lieferfähigen Anbieter prüfen.
 - **Offene Governance:** Projekt-Owner, Rothenberger-Ausstiegsumfang sowie Höpfner-/Bestandsrechte. Keine Lieferanten-, Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
+
+
+### Update 18.11.2026 – Wipfler als zusätzlicher Getränkekandidat vorbereitet
+
+- Für Getränke Wipfler ist eine vollständige Angebotsgrundlage für sechs Veranstaltungen einschließlich veranstaltungsbezogener 2026-Verbrauchsdaten und Infrastrukturbedarf vorbereitet und im bestehenden Getränkelieferanten-Projektordner verifiziert.
+- Ein Versand oder Kontakt ist nicht belegt. Wipfler wird daher als vorbereiteter, noch nicht aktiv kontaktierter Vergleichskandidat geführt.
+- Die aktive Versorgungsklärung umfasst damit: Zolk angefragt/Rückmeldung offen, Böllinger Status offen, Wipfler Unterlage bereit/Kontaktfreigabe offen; Thome ausgeschieden.
+- Zeitkritisch bleibt die Januarversorgung am 05.01., 09./10.01. und 23./24.01.2027. Keine Lieferanten-, Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
