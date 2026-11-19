@@ -1,47 +1,63 @@
-# TuS Spielerbarometer – Project State
+# TuS Spielerbarometer – PROJECT-STATE
 
-## Purpose
+**Stand:** 11.11.2026 – Welle 2026-H2 abgeschlossen, vertrauliche Endauswertung in Google Drive gespeichert.  
+**Status:** Aktiv (wiederkehrendes Instrument; erste Umfrage abgeschlossen, Ableitung von Maßnahmen offen).  
+**Fachlicher Bereich:** Sport / Vorstand / Vereinsentwicklung.  
+**Fachlicher Owner:** vom Vorstand und sportlicher Leitung noch formell zu benennen.
 
-Operativer Projekt-Checkpoint für den Aufbau und die wiederkehrende Durchführung des halbjährlichen Spielerbarometers.
+## Zweck und Grundsatz
 
-## Core Principle
+**Teilnahme einfach; Antworten vertraulich; Ergebnisse nur aggregiert; daraus konkrete Verbesserungen ableiten.**
 
-**Teilnahme für Spieler einfach; Rücklauf vertraulich; Handlungsergebnisse transparent und wiederholbar.**
+Halbjährliche freiwillige Spielerbefragung (November/Dezember und Mai/Juni) für 1. und 2. Herren. Keine Namen und E-Mail-Adressen; die freiwillige Mannschaftsangabe und Freitexte sind vertraulich. Mindestgruppe für veröffentlichte Teamauswertungen: sieben; kleine Teilgruppen wie Torhüter werden nicht separat bewertet.
 
-## Main Content
+## Verifizierter Endstand 2026-H2
 
-### Current Goal
-Erste Welle `2026-H2` als bestehendes Google Form v1.1 (31 Bewertungsfragen, 6 Freitextfragen) datensparsam erproben; die private Auswertung und Datenschutzfreigabe prüfen, ehe der Link breit an die Mannschaften verteilt wird.
+- Google Form v1.1 erfolgreich aktualisiert: 31 numerisch bewertbare Fragen (24 Stammfragen Q01–Q24 + 3 Trainerteamfragen T01–T03 + 4 Spieltagfragen S01–S04), sechs optionale Freitexte F01–F06, freiwillige Mannschaftsangabe und bis zu zwei Verbesserungsprioritäten.
+- Die beiden Torwartfragen wurden wegen der fehlenden sicheren Anonymisierbarkeit **ausgeschlossen**. Q04 und Q05 haben ab v1.1 geänderten Wortlaut und sind nicht vorbehaltlos historisch vergleichbar.
+- Formularantworten werden in einem **privaten** Google Sheet erfasst; `ANTWORTEN_IMPORT` normiert die Ergebnisse, `AUSWERTUNG` stellt Team-/Themenmittelwerte dar.
+- Zum Abschluss 20 ausgefüllte Fragebögen: 19 für 1. Herren; **0** für 2. Herren; 1 ohne Teamangabe. Die nicht zugeordnete Einsendung darf nicht einer Mannschaft zugeschrieben werden. Anonyme Mehrfachteilnahme kann nicht technisch ausgeschlossen werden.
+- Letzter erfasster Rohdaten-Zeitstempel: 09.11.2026, 19:12 Uhr. Die Datengrundlage wurde am 11.11.2026 erneut geprüft.
+- Die vertrauliche **10-seitige PDF-Endauswertung** samt vollständig unverändertem Originalwortlaut der Freitexte wurde am 11.11.2026 in Google Drive unter `TuS Projekte / TuS Spielerbarometer / 02 Datenbasis – vertraulich` gespeichert; Berechtigungen: nicht öffentlich geteilt, nur Eigentümerkonto.
+- Für GitHub ist nur die **anonymisierte, nicht rückverfolgbare** Ergebnis- und Projektübersetzung in [`FEEDBACK-PORTFOLIO-2026-H2.md`](FEEDBACK-PORTFOLIO-2026-H2.md) zulässig. Keine Rohantworten, keine direkten Freitextzitate, keine individuellen Antwortverläufe, keine personenbezogenen Trainer-Rankings.
 
-### Verified (31.10.2026)
-- Das bestehende Google Form wurde per gebundenem Apps Script v1.1 aktualisiert; das Ausführungsprotokoll bestätigt am 31.10.2026 um 18:36 Uhr `ERFOLG: Formular v1.1 aktualisiert.`; der zweite Reparaturlauf hat keine Elemente dupliziert und bestehende Antworten erhalten.
-- Fachlicher Umfang: 24 ursprüngliche Bewertungsfragen, davon Q04 und Q05 mit aktualisiertem Wortlaut, sieben neue Aussagen zu Trainerteam (T01–T03) und Spieltag (S01–S04), sowie sechs optionale Freitexte (F01–F06), optionale Mannschaftsangabe und Priorisierung.
-- Die ausdrücklich ausgeschlossenen Fragen zu Torwarttraining/Torwarttrainer werden **nicht** erhoben, da eine Anonymisierung bei wenigen Torhütern nicht sichergestellt wäre.
-- Bewertungsoptionen sind als fünf ausgeschriebene Zustimmungsstufen (1 bis 5) umgesetzt; Fragen können übersprungen werden.
-- Google Forms schreibt in das private Antworttab `Formularantworten 1`. Die sieben neuen Bewertungen und F06 erscheinen dort in zusätzlichen Spalten, unabhängig von der visuellen Reihenfolge der Fragen. Die zuvor erfassten Antworten sind erhalten geblieben.
-- Im privaten Sheet `ANTWORTEN_IMPORT` übernehmen neue Formelspalten `AJ:AQ` die Felder T01–T03, S01–S04 und F06; die v1.0-Daten bleiben unverändert.
-- `AUSWERTUNG` enthält die zusätzlichen Kennzahlen `Ø Trainerteam` (J) und `Ø Spieltag` (K). Die Kennzahl eines Bereichs wird nur gezeigt, wenn **jede** darin enthaltene Bewertungsfrage von wenigstens sieben Antwortenden derselben Mannschaft und Welle beantwortet wurde. Die bestehende Kernkennzahl `Ø Gesamt` bezieht sich weiterhin nur auf Q01–Q24, um die Zeitreihe nicht unbeabsichtigt zu verändern.
-- Q04 und Q05 haben mit v1.1 eine neue Bedeutung beziehungsweise Formulierung; sie dürfen nicht ohne Vorbehalt mit älteren Wellen verglichen werden.
-- Eine aktuelle **Testantwort nach dem Umbau**, die tatsächlich durch die neuen Auswertungsspalten läuft, sowie die formale Datenschutz-/Teilnehmerzugriffsprüfung stehen noch aus.
+## Fachliche Ergebnisse und Relevanz
 
+Für die 1. Herren liegt der Kernindex über die ursprünglichen 24 Fragen bei **3,93/5**. Die starken Bereiche sind Anlage und Ausstattung (**4,30**), Grundzufriedenheit und Kommunikation/Vereinsführung (je **4,01**). Der niedrigste Themenblock ist Spieltag und Coaching (**3,44**). Die stärksten Entwicklungshinweise betreffen aktives Coaching, Fairness/Nachvollziehbarkeit sportlicher Entscheidungen und individuelles Entwicklungsfeedback.
 
-### Intended Public / Private Boundary
+In den zwei gewählten Verbesserungsprioritäten der 19 zugeordneten Fragebögen stehen **Kommunikation und Informationsfluss** sowie **Zusammenarbeit zwischen Spielern, Trainern und Vorstand** mit je acht Nennungen vorne.
 
-- **Öffentlich / teilnehmendenzugänglich:** ausschließlich der **Google-Forms-Responder-Link**; keine Editorlinks und keine Einsicht in Antwortzusammenfassungen.
-- **Privat:** Google-Sheets-Datenbasis, Rohantworten, Freitexte, Formularbearbeitungslink und Auswertungsvorlagen. Zugriff nur für explizit benannte Verantwortliche.
-- **Externe Kommunikation:** zusammengefasste, datensparsame Ergebnisse und Verbesserungsmaßnahmen, keine Einzelfälle.
-- Der GitHub-Repository-Status `public` ist kein Ort für echte Befragungsdaten.
+Diese Werte sind Wahrnehmungen und kein Beweis für individuelle Fehlleistungen.
 
-### Open Gates Before Sending
-1. Formularvorschau auf Mobilgerät und Desktop prüfen: genau sieben neue Trainer-/Spieltagaussagen plus ein neuer Freitext; keine Torwartfragen; alle 31 Bewertungsfragen mit fünf Optionen.
-2. Testantwort nach v1.1 abgeben und sicherstellen, dass T01–T03, S01–S04 und F06 in `Formularantworten 1` und `ANTWORTEN_IMPORT` korrekt ankommen.
-3. Datenschutztext und Einstellungen kontrollieren: keine E-Mail-Erfassung, keine ungewollte Anmeldung, keine Einsicht in Antworten oder Bearbeitungsrechte, keine Nennung sensibler Vorfälle in Freitext.
-4. Bereits vorhandene interne Antwortdatensätze überprüfen, bevor etwas gelöscht oder in die produktive Statistik übernommen wird; keine pauschale Löschung annehmen.
-5. Öffentlich nur zusammengefasste, hinreichend große Auswertungen; Freitexte nicht roh weitergeben. Erst nach Prüfung den Link breit verteilen.
+## Übergabe in Maßnahmen und Portfolio
 
-### Next Meaningful Step
-Eine explizite Testantwort **nach v1.1** aus der Formularvorschau einreichen, neue Datenfelder und das datenschutzkonforme Auswertungsverhalten verifizieren, den Testdatensatz dann bewusst behandeln und die Welle freigeben.
+Die Verbindung zu vorhandenen Projekten steht in [`FEEDBACK-PORTFOLIO-2026-H2.md`](FEEDBACK-PORTFOLIO-2026-H2.md) und im zentralen `PROJECT-PORTFOLIO.md`.
 
-### Future Development
+**Offene Entscheidung:** Nach sportlicher und vorstandsseitiger Bewertung höchstens drei umsetzbare Maßnahmen auswählen, fachliche Owner und Prüftermine festlegen; kleine Alltagsverbesserungen im Regelbetrieb lassen und nur abgegrenzte Vorhaben als neue Projekte anlegen.
 
-Nach jeder Welle maximal drei Maßnahmen, Verantwortliche und Prüftermin festhalten. Wellen durch `erstelleWelle('2027-H1')` usw. neu erzeugen, unveränderte Kernfragen beibehalten, getrennte Roh-Antworttabs und normierte Trenddaten in der privaten Basis verwalten.
+## Datenschutz / Risiken
+
+- Ergebnisse nicht als Personal- oder Trainerbenotung verwenden.
+- Freitext-Wortlaut kann identifizierende Merkmale enthalten und bleibt ausschließlich in der beschränkt zugänglichen PDF-/Rohdatenablage.
+- Keine öffentliche Veröffentlichung ganzer Antworten oder kleiner Teilgruppen.
+- Auch 19 Fragebögen belegen ohne Teilnahmebeschränkung nicht 19 verschiedene Personen; 2. Herren wurde nicht erreicht.
+- Teilnehmerlink und Formularberechtigungen für Folgewellen vor erneuter Nutzung prüfen; Datenspeicherung und Löschfristen festlegen.
+
+## Nächste Schritte
+
+1. Sportliche Leitung/Vorstand anhand der anonymisierten Zusammenfassung drei konkrete Maßnahmen priorisieren (inkl. Regelbetrieb vs. Projekt).
+2. Vertraulichen PDF-Appendix ausschließlich in berechtigtem Kreis nutzen; keine Texte in öffentliches GitHub kopieren.
+3. Kurz kommunizieren, welche Verbesserungen geprüft, beschlossen oder zurückgestellt werden.
+4. Einfache Wirkungsindikatoren definieren; in der nächsten Umfrage Fortschritt abgleichen.
+5. Zweite Mannschaft separat auf fehlende Beteiligung und mögliche organisatorische Ursachen prüfen, **ohne** Einzelpersonen nach Antworten zu fragen.
+
+## Referenzen
+
+- [Anonymisierte Portfolio-Impulse](FEEDBACK-PORTFOLIO-2026-H2.md)
+- [Zentrales Projektportfolio](../PROJECT-PORTFOLIO.md)
+- Google Drive: `TuS Projekte/TuS Spielerbarometer` (Formular, geschützte Datenbasis, vertrauliche Endauswertung)
+- `FORMULAR-SETUP.gs`, `BESTEHENDES-FORMULAR-BEFUELLEN.gs` (historische Einrichtung; nicht zur erneuten Ausführung auf dem bestehenden Formular)
+
+## Future Development
+
+Jede weitere Halbjahreswelle führt zur Überprüfung von Maßnahmen, nicht zu einem separaten Software- oder Trainerbewertungsprojekt. Vergleichbarkeit der Fragen und Datenschutz bleiben dokumentierte Qualitätskriterien.

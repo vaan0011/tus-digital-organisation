@@ -1,6 +1,6 @@
 # PROJECT-STATE – Getränkelieferant 2027
 
-Stand: 2026-10-29 – Thome-Erstkontakt erfolgt; vergleichbare Bedarfsanfrage und interne Rechteklärung offen
+Stand: 2026-11-18 – Wipfler-Anfragegrundlage vorbereitet; Zolk/Böllinger und Januarversorgung weiterhin offen
 
 ## Purpose
 
@@ -39,10 +39,13 @@ Bei den Hallenturnieren wurden nach Rückgaben 887 PET-Flaschen als realer Verbr
 
 ### 3. Aktuelle Anbietersicht
 
-- Getränke Thome, St. Leon-Rot: als möglicher neuer Anbieter in Prüfung; vergleichbares Angebot noch einzuholen.
-- Getränkemarkt Rothenberger: bisherige Referenz und mögliche Kioskoption; zukünftiger Status für Veranstaltungen ist zu klären.
+- Getränke Thome, St. Leon-Rot: aus der aktiven Auswahl ausgeschieden; laut Nutzerbestätigung ausgelastet und nicht in der Lage, alle benötigten TuS-Veranstaltungen zu versorgen.
+- Getränke Zolk, Östringen: Anfrage laut Nutzerbestätigung versendet; Rückmeldung oder Angebot nicht dokumentiert.
+- Getränke Böllinger: Vergleichskandidat; Kontakt-, Versand- und Angebotsstatus nicht dokumentiert.
+- Getränke Wipfler: vollständige Angebotsgrundlage für sechs Veranstaltungen vorbereitet und im Drive-Projektordner verifiziert; Kontakt oder Versand nicht belegt.
+- Getränkemarkt Rothenberger: laut Vorstandsnachverfolgung ist ein Ausstieg ab 2027 bekannt; genauer Umfang für Veranstaltungen und Kiosk bleibt zu bestätigen. Nicht ohne neue Bestätigung als verfügbare Option behandeln.
 
-Weitere Anbieter können ergänzt werden, wenn sie Preis/Service/Logistik realistisch verbessern.
+Weitere Anbieter werden nur ergänzt, wenn Zolk, Böllinger und Wipfler die vollständige Eventversorgung einschließlich der Januartermine nicht belastbar abdecken.
 
 ### 4. Wichtige Auswahlkriterien
 
@@ -57,16 +60,18 @@ Weitere Anbieter können ergänzt werden, wenn sie Preis/Service/Logistik realis
 
 ### 5. Last Known Good
 
-Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsvergleich konsolidiert. Der Kiosk fehlt noch, daher ist das Jahresvolumen noch nicht vollständig.
+Die Rechnungen von fünf Bedarfsblöcken sind ausgewertet und im Drive-Angebotsvergleich konsolidiert. Die Zolk-Anfrage ist laut Nutzerbestätigung versendet. Thome hat wegen Auslastung und fehlender Kapazität für den vollständigen Event-Scope abgesagt. Für Zolk und Böllinger liegt kein dokumentiertes Angebot vor. Für Wipfler liegt eine verifizierte Anfragegrundlage, aber kein Versandnachweis vor; die Januarversorgung ist nicht abgesichert.
 
 ### 6. Nächster sinnvoller Schritt
 
-1. Kiosk-Jahres-/Bestelldaten nachziehen.
-2. Bedarfsprofil als einheitliche Anfragegrundlage finalisieren.
-3. Thome und ggf. weitere Anbieter auf identischen Scope anbieten lassen: Veranstaltungen sowie optional Veranstaltungen + Kiosk.
-4. Rothenberger-Bestandskonditionen/Kioskoption als Referenz dokumentieren.
-5. Angebote nach Preis, Service, Flexibilität, Kiosk und Partnerschaft bewerten.
-6. Vorstand entscheidet Zielmodell und Anbieter.
+1. Zolk-Rückmeldung unmittelbar nachhalten.
+2. Wipfler-Kontakt und Versand der vollständigen Anfragegrundlage ausdrücklich freigeben oder verwerfen.
+3. Bei Böllinger Kontakt-, Versand- und Angebotsstatus klären und bei Bedarf den identischen Festbetriebs-Scope freigeben.
+4. Belastbare Übergangsversorgung für die Winterfeier am 05.01.2027 sowie die Jugend-Hallenturniere am 09./10.01.2027 und 23./24.01.2027 sichern.
+5. Nur falls Zolk, Böllinger und Wipfler den vollständigen Scope nicht abdecken, einen weiteren realistisch lieferfähigen Anbieter prüfen.
+6. Projekt-Owner, Rothenberger-Ausstiegsumfang sowie Höpfner-/Bestandsrechte klären.
+7. Lieferangebote nach Preis, Rücknahme, Logistik, Equipment und Lieferfähigkeit bewerten; Partnerschaftspotenzial getrennt ausweisen.
+8. Vorstand entscheidet Zielmodell und Anbieter.
 
 ## Relationship to other documents
 
@@ -162,3 +167,68 @@ Der Erstkontakt ersetzt den bisherigen Status „externe Ansprache vollständig 
 2. Zolk und Böllinger nur mit identischem Festbetriebs-Scope anfragen, damit Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vergleichbar bleiben.
 3. Lieferangebot und mögliche Partnerschaft weiterhin getrennt bewerten.
 4. Projekt-Owner, Bestandsrechte und eine belastbare Januar-Übergangsversorgung parallel klären.
+
+
+## Update 04.11.2026 – Zolk-Anfrage versendet
+
+### Belegter Fortschritt
+
+- Die vergleichbare Festbetriebs-Anfrage an Getränke Zolk wurde nach Nutzerbestätigung versendet.
+- Damit sind Getränke Thome, Getränke Zolk und Getränke Böllinger als aktueller Dreier-Vergleich gesetzt.
+- Für Thome ist der persönliche Erstkontakt belegt; die angeforderte Bedarfsmail ist in den verfügbaren operativen Quellen weiterhin nicht als versendet dokumentiert.
+- Für Böllinger ist der Kandidatenstatus belegt; Versand oder Angebot sind weiterhin nicht dokumentiert.
+- In dem verbundenen Gmail-Konto war keine zugehörige versendete Nachricht auffindbar. Der Zolk-Status stützt sich daher auf die direkte Nutzerbestätigung; Kontaktdaten werden nicht nach GitHub übernommen.
+
+### Zeitkritischer nächster Schritt
+
+Der interne Zieltermin für Vergleichsangebote ist der 06.11.2026. Bis dahin:
+
+1. Zolk-Eingang bzw. Rückmeldung nachhalten,
+2. Thome die vorbereitete Anfrage mit identischem Festbetriebs-Scope und Vorjahresmengen senden,
+3. bei Böllinger Versand- und Angebotsstatus dokumentieren,
+4. Rückläufe in der bestehenden Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment, Januar-Lieferfähigkeit und getrenntem Partnerschaftspotenzial bewerten.
+
+Projekt-Owner, Höpfner-/Bestandsrechte und die Januar-Übergangsversorgung bleiben offene Governance-Punkte. Es besteht weiterhin keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
+
+
+## Update 11.11.2026 – Angebotsziel überfällig
+
+Der interne Zieltermin 06.11.2026 für vergleichbare Angebote ist ohne dokumentierten belastbaren Dreiervergleich verstrichen.
+
+### Verifizierter Stand
+
+- Belegt bleibt die nach Nutzerbestätigung versendete Zolk-Anfrage.
+- Eine aktuelle Zolk-Rückmeldung oder ein Zolk-Angebot ist in den verfügbaren operativen Quellen nicht dokumentiert.
+- Für Thome ist der Erstkontakt vom 28.10.2026 belegt; der Versand der angeforderten Bedarfsmail ist weiterhin nicht dokumentiert.
+- Für Böllinger sind weder Versand noch Angebot dokumentiert.
+- Im verbundenen Gmail-Konto waren am 11.11.2026 keine einschlägigen Nachrichten seit dem 04.11.2026 auffindbar.
+- Projekt-Owner, Höpfner-/Bestandsrechte und eine belastbare Januar-Übergangsversorgung bleiben offen.
+- Es besteht weiterhin keine Preis-, Vertrags-, Rabatt- oder Exklusivitätszusage.
+
+### Zeitkritische nächste Aktion
+
+1. Zolk-Rückmeldung unmittelbar nachhalten.
+2. Thome die vorbereitete Bedarfsmail mit identischem Festbetriebs-Scope senden.
+3. Bei Böllinger Versand- und Angebotsstatus klären.
+4. Die bestehende Vergleichsmatrix nach Preis, Rücknahme, Logistik, Equipment und Januar-Lieferfähigkeit vervollständigen; Partnerschaft getrennt bewerten.
+5. Projekt-Owner, Bestandsrechte und Übergangsversorgung für die Winterfeier am 05.01.2027 sowie die Jugend-Hallenturniere am 16./17.01.2027 festlegen.
+
+
+## Update 11.11.2026 – Getränke Thome hat abgesagt
+
+- Der 1. Vorsitzende meldet am 11.11.2026 ausdrücklich: **Getränke Thome hat dem TuS abgesagt**. **Begründung laut Nutzer:** Thome ist ausgelastet und kann nicht alle TuS-Veranstaltungen versorgen. Das genaue Absagedatum bleibt unklar. Es handelt sich damit um eine **Kapazitäts-/Lieferfähigkeitsabsage für den benötigten vollständigen Event-Scope**, nicht um ein dokumentiertes grundsätzliches Desinteresse an einer Partnerschaft.
+- Thome ist damit **kein aktiver Kandidat** mehr für die laufende Lieferantenauswahl 2027; die bisher vorgesehene Thome-Bedarfsanfrage entfällt. Historische Thome-Konzeptunterlagen bleiben als solche bestehen, sind aber nicht mehr aktive Akquisegrundlage.
+- **Zolk:** Anfrage laut Nutzerbestätigung versendet, Rückmeldung/Angebot nicht belegt. **Böllinger:** Kandidat, Versand/Angebot nicht belegt.
+- Der bisherige Dreiervergleich ist nicht mehr möglich; Vergleichsscope und Alternativen sind anhand tatsächlich verfügbarer Anbieter neu zu bewerten, ohne Preise oder Zusagen anzunehmen.
+- **Dringend:** Versorgung für Winterfeier 05.01.2027 und Jugend-Hallenturniere 16./17.01.2027 absichern. Zolk nachhalten, Böllinger-Status klären, gegebenenfalls weiteren realistisch lieferfähigen Anbieter prüfen. Projekt-Owner, Rothenberger-Ausstieg und Höpfner-/Bestandsrechte weiterhin klären.
+- Lieferanten- und Sponsoringbewertung getrennt halten; externe Kontaktaufnahme und verbindliche Zusagen bleiben freigabepflichtig.
+
+
+## Update 18.11.2026 – Wipfler als vorbereiteter Vergleichskandidat
+
+- Für Getränke Wipfler liegt eine vollständige dreiseitige Angebotsgrundlage mit Stand 13.11.2026 vor.
+- Sie deckt sechs Veranstaltungen ab: Winterfeier 05.01.2027, Hallenturniere 09./10.01. und 23./24.01.2027, Maibaumaufstellung 23.04.2027, Jahrmarkt 08.–10.05.2027 und Jugendsportfest 09.–11.07.2027.
+- Enthalten sind der veranstaltungsbezogene Material-/Servicebedarf, die 2026er Verbrauchsmengen je Fest, Gesamtmengen sowie Angebotsanforderungen zu Preisen, Rücknahme, Leihtechnik, Logistik, Wochenend-Nachversorgung und Preisbindung.
+- Die Anfragegrundlage wurde unter unveränderter Datei-ID in der fachlich richtigen Drive-Projektablage verifiziert: `1Aj_lPfDcLFge9q-abOiv2oJQMCCW4XGM` im Ordner `1oqy6LVrInvy3jS3sMDRkM1GMR72ilC_F`.
+- Ein Kontakt oder Versand an Wipfler ist in den verfügbaren Quellen nicht belegt. Wipfler ist deshalb **vorbereiteter Vergleichskandidat**, nicht angefragter oder zugesagter Lieferant.
+- Nächster Freigabepunkt: Kontaktaufnahme und Versand der Unterlage ausdrücklich freigeben oder verwerfen. Externe Kommunikation bleibt freigabepflichtig.

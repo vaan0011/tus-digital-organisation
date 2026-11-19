@@ -269,3 +269,11 @@ Vor Bestellung eine einzige finale Beschaffungsprüfung durchführen:
 ## Future Development
 
 Nach Bestellung wird der Projektzustand um Auftragsnummer, Liefertermin, Rechnung, Förderantrag, Fundament-/Einbautermin und Inbetriebnahme ergänzt. Nach erfolgreicher Umsetzung und Übergabe in den normalen Sportparkbetrieb kann das Projekt abgeschlossen werden.
+
+## Spielerbarometer 2026-H2 – Bedarfssignal (11.11.2026)
+
+Die anonymisierte Endbefragung 1. Herren (19 zugeordnete Fragebögen) bestätigt als **qualitatives, nicht repräsentatives Bedarfssignal** den Wunsch nach zusätzlichen großen Toren für den Trainingsbetrieb. Dies passt unmittelbar zum bestehenden Vorhaben, die mobilen Großfeldtore nach Installation neuer Hülsentore vom Hauptplatz auf die Trainingsflächen umzusetzen.
+
+**Konkret prüfen:** Nach Umsetzung der Versetzungsplanung verbleibende Toranzahl und Nutzbarkeit je Trainingsfläche mit Sport und Jugend abgleichen; zusätzliche Anschaffungen nur bei erwiesenem Mehrbedarf. Die Umfrage ersetzt weder Budget-/Förderprüfung noch technische und sicherheitsrelevante Auswahl.
+
+**Priorität:** Bestehende Beschaffungs-/Fördergates zügig bearbeiten; **keine** Bestellung, Förderzusage oder prioritäre Budgetfreigabe aus dem Feedback ableiten. Details: `../spielerbarometer/FEEDBACK-PORTFOLIO-2026-H2.md`.
